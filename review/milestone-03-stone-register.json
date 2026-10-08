@@ -2,7 +2,7 @@
   "schema": "hirc.stone-register/1",
   "milestone_id": "HIRC-M03",
   "title": "Determinism and cultural information-environment integration",
-  "status": "STONE_001_AND_SOURCE_STUDY_PASS_REQUIREMENTS_READY",
+  "status": "STONE_002_PASS_DECISION_AND_CULTURE_MAP_READY",
   "created_on": "2026-10-08",
   "control": {
     "goal_ref": "HIRC-GOAL-VERSION-002",
@@ -112,7 +112,7 @@
     {
       "id": "M03-S002",
       "outcome": "Integrate U186-U191 into the canonical requirements generator and regenerate the machine/readable requirement pair without changing unrelated rows.",
-      "status": "READY",
+      "status": "PASS",
       "prerequisites": ["M03-S001A"],
       "owner": "current_project_controller",
       "canonical_writer": "current_project_controller",
@@ -128,7 +128,7 @@
     {
       "id": "M03-S003",
       "outcome": "Integrate DTM-001-DTM-005 into the current joint decision matrix with exact target and rationale traces.",
-      "status": "CAPTURED",
+      "status": "READY",
       "prerequisites": ["M03-S002"],
       "owner": "current_project_controller",
       "canonical_writer": "current_project_controller",
@@ -144,7 +144,7 @@
     {
       "id": "M03-S004",
       "outcome": "Author one cultural-commons revision map that preserves HIRC-I022 and makes HIRC-I023 information-environment shaping its controlling design correction.",
-      "status": "CAPTURED",
+      "status": "READY",
       "prerequisites": ["M03-S002"],
       "owner": "current_project_controller",
       "canonical_writer": "current_project_controller",

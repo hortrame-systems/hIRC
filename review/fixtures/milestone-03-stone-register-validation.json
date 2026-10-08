@@ -2,11 +2,11 @@
   "schema": "hirc.stone-register-validation/1",
   "register": {
     "path": "review/milestone-03-stone-register.json",
-    "sha256": "dabe3349e2ee821de793e1080da6ea908a24144f0977314f4888228512692042"
+    "sha256": "b4a613d44f0de0e0b024aef0aea8bd68a5e5c56d4346d0cf3b27cf2e27bffd2f"
   },
   "validator": {
     "path": "review/fixtures/validate_milestone_03_stone_register.py",
-    "sha256": "8bbe80a303999b93d58e03eb788d471a14c26acfe5cfd138384346efb8cc4a45"
+    "sha256": "bca9163d9750cddad51a82b53374fc4fd81abe7c5b023d7e5a4120599942bd22"
   },
   "positive": {
     "accepted": true,
@@ -45,7 +45,7 @@
       "name": "premature_active",
       "expected_error": "premature",
       "errors": [
-        "M03-S003:premature:M03-S002"
+        "M03-S005:premature:M03-S004"
       ],
       "rejected": true
     },
@@ -68,7 +68,7 @@
   ],
   "all_adverse_rejected": true,
   "corrections": [
-    "After M03-S002 legitimately became READY, the premature-active adverse mutation no longer represented a violation. It was retargeted from M03-S002 to dependent M03-S003, whose M03-S002 prerequisite is not PASS."
+    "The premature-active adverse mutation became stale as targeted stones legitimately advanced. It now selects the first CAPTURED stone with an unmet prerequisite, preserving the invariant across register progress."
   ],
   "claim": "Deterministic graph/field/gate validation only; not semantic correctness, implementation, peer consensus or runtime evidence."
 }

@@ -54,6 +54,8 @@ contains commands or scripts.
 - [Integrated release-boundary reconciliation addendum](revision-map-addendum-integrated-boundary-v1.json)
 - [Elder succession revision-map addendum](revision-map-addendum-elder-succession-v1.json)
 - [Determinism revision-map addendum](revision-map-addendum-determinism-v1.json)
+- [Deterministic requirements generator](build_requirements_v1_1.py)
+- [Determinism requirements integration validation](fixtures/determinism-requirements-validation.json)
 - [Joint consensus decision-matrix draft 1 — preserved predecessor](joint-consensus-matrix-draft-v1.json)
 - [Joint consensus decision-matrix draft 2 — preserved predecessor](joint-consensus-matrix-draft-v2.json)
 - [Joint consensus decision-matrix draft 3 — preserved predecessor](joint-consensus-matrix-draft-v3.json)

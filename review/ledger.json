@@ -1436,30 +1436,30 @@
       "id": "HIRC-M03-STONE-REGISTER-001",
       "kind": "tiny_stone_dependency_register_and_deterministic_gate_evidence",
       "path": "review/milestone-03-stone-register.json",
-      "status": "STONE_001_AND_SOURCE_STUDY_PASS_REQUIREMENTS_READY",
+      "status": "STONE_002_PASS_DECISION_AND_CULTURE_MAP_READY",
       "governed_scope": "milestone_03_determinism_and_cultural_information_environment_integration",
-      "sha256": "dabe3349e2ee821de793e1080da6ea908a24144f0977314f4888228512692042",
-      "bytes": 24534,
+      "sha256": "b4a613d44f0de0e0b024aef0aea8bd68a5e5c56d4346d0cf3b27cf2e27bffd2f",
+      "bytes": 24522,
       "members": [
         {
           "path": "review/milestone-03-stone-register.md",
-          "sha256": "7c4369e700c895f007d6ef3e0b79d22fb371084daa51e669b60aa6e943ffff52",
-          "bytes": 3888
+          "sha256": "1b7f147304a9bd18068011d93cbd40f78920a72a9972e2be2ffc8a9d3025c694",
+          "bytes": 3876
         },
         {
           "path": "review/fixtures/validate_milestone_03_stone_register.py",
-          "sha256": "8bbe80a303999b93d58e03eb788d471a14c26acfe5cfd138384346efb8cc4a45",
-          "bytes": 7115
+          "sha256": "bca9163d9750cddad51a82b53374fc4fd81abe7c5b023d7e5a4120599942bd22",
+          "bytes": 7529
         },
         {
           "path": "review/fixtures/milestone-03-stone-register-validation.json",
-          "sha256": "89a07e064e96914003f5f2128290682635e65bc8791c2a173057f0f108fd3e2a",
-          "bytes": 2046
+          "sha256": "478fb51245447043d3397c5a7474f3c0b39dd42f5d4d125b0cbcdbab17f72676",
+          "bytes": 2047
         }
       ],
       "source_bindings": ["HIRC-I019", "HIRC-I020", "HIRC-I021", "HIRC-I022", "HIRC-I023", "HIRC-I024", "HIRC-STEPPING-STONE-PROTOCOL-001"],
       "limits": "Stone 001 mechanically validates graph/field/gate invariants and six adverse mutations; it does not prove semantic correctness, implementation, peer consensus or runtime behavior",
-      "next_action": "Begin only requirements integration stone M03-S002; later stones remain dependency-gated"
+      "next_action": "Choose one READY branch: M03-S003 joint-matrix integration or M03-S004 cultural-commons revision map; dependent stones remain gated"
     },
     {
       "id": "HIRC-MILESTONE-02D",
@@ -1548,13 +1548,42 @@
       "next_action": "Qualified permanent successor maps and tests the information-environment correction before cultural runtime work"
     },
     {
+      "id": "HIRC-REQUIREMENTS-GENERATOR-001",
+      "kind": "deterministic_requirements_generator_and_integration_validation",
+      "path": "review/build_requirements_v1_1.py",
+      "status": "PASS_M03_S002_REQUIREMENTS_SCOPE_PEER_SEMANTIC_REVIEW_ATTACHED_TO_S003",
+      "governed_scope": "deterministic_generation_of_requirements_machine_and_readable_pair",
+      "sha256": "ecb8c5a4030bb08bca831990e2fd5761f9d9a7123136473e173395b4b41c5728",
+      "bytes": 11396,
+      "members": [
+        {
+          "path": "review/fixtures/validate_determinism_requirements.py",
+          "sha256": "115ac9209fca31f13d51c8c1f450bf603d02780ff472453e3386911530ad37ab",
+          "bytes": 9668
+        },
+        {
+          "path": "review/fixtures/determinism-requirements-validation.json",
+          "sha256": "ef450bc4987a5dc1b744edb95ca8387ee8d7966b4f89c86be42f21cb0b52975b",
+          "bytes": 3061
+        }
+      ],
+      "source_bindings": ["HIRC-I021", "HIRC-REVISION-MAP-DETERMINISM-001", "HIRC-M03-STONE-REGISTER-001", "HIRC-SOURCE-001"],
+      "before_ref": "73f7174e975ad881509f3e3035f7974b8ac98a3e",
+      "before_requirements": 218,
+      "after_requirements": 224,
+      "before_revision_decisions": 127,
+      "after_revision_decisions": 132,
+      "limits": "Exact generator, unchanged predecessor semantics and machine/readable parity at planning scope; not implementation, whole peer consensus, runtime behavior or security validation",
+      "next_action": "M03-S003 integrates DTM-001–005 into the separate joint decision matrix and attaches independent security/semantic review before PASS"
+    },
+    {
       "id": "HIRC-MASTER-DRAFT-BUNDLE-001",
       "kind": "integrated_master_and_requirements_working_draft_bundle",
       "path": "drafts/README.md",
       "status": "DEBT_DURING_GENERATION_PENDING_PEER_CONSENSUS",
       "governed_scope": "project_master_plan_and_requirements_revision",
-      "sha256": "7146221f6408d46ccdc4bd1669d5015b0c2cd5fed5e34ad34dc7d499f64f0503",
-      "bytes": 1095,
+      "sha256": "0f458857efc0b6e2e7fc45e5e382d4db9955ad7d6d74e7f15f03e1b55af5638f",
+      "bytes": 1191,
       "members": [
         {
           "path": "drafts/hirc_bridge_security_profile_v0_1-draft.md",
@@ -1598,13 +1627,13 @@
         },
         {
           "path": "drafts/hirc_requirements_v1_1-draft.json",
-          "sha256": "717bcbe6cdc165bd7912eb47d09a7015a33ddfef9a1fbeb596343a372079f6d6",
-          "bytes": 238392
+          "sha256": "5740b33db4647199a9c5ac4a5303d209e145a22fc0d90400fa0d52e6f87af007",
+          "bytes": 239848
         },
         {
           "path": "drafts/hirc_requirements_v1_1-draft.md",
-          "sha256": "96a170555bd8f9ed72dcefa4e01e588d64037cad1a801ce27205f0eae2ba1efd",
-          "bytes": 51216
+          "sha256": "892a3a61534e0f109adbcc0476b0bbe947c414d374c28e9cafae11c7deec5fdb",
+          "bytes": 52889
         },
         {
           "path": "drafts/hirc_threat_model_v1_0-draft.md",
@@ -1632,8 +1661,8 @@
         "HIRC-REVISION-MAP-DETERMINISM-001",
         "HIRC-AGENTIC-CULTURE-CANDIDATE-001-S1"
       ],
-      "limits": "Integrated working master plus 218-requirement/127-decision generated registers, threat/foundation/release/licensing/milestone/stone profiles; new determinism U186–U191/DTM-001–005 and the cultural information-environment correction are captured in the master/candidates but generated register, threat and matrix integration is held for the qualified successor",
-      "next_action": "Qualified successor integrates the held additions and obtains independent permanent-peer challenge before freezing Master Plan 1.1"
+      "limits": "Integrated working master plus a 224-requirement/132-revision-decision generated requirements pair, while the separate joint decision matrix remains at 127 decisions pending M03-S003; threat/foundation/release/licensing/milestone/stone profiles remain drafts and cultural information-environment integration is still held by later stones",
+      "next_action": "Complete the separately gated matrix and cultural-information stones, then obtain independent permanent-peer challenge before freezing Master Plan 1.1"
     },
     {
       "id": "HIRC-REVIEW-INDEX-001",
@@ -1641,8 +1670,8 @@
       "path": "review/README.md",
       "status": "ACTIVE",
       "governed_scope": "internal_design_review",
-      "sha256": "4a4fd76223c56a4fb7e5e377fa90c9ea236090ac408f9f8a035717cd24ee9dc6",
-      "bytes": 8472,
+      "sha256": "88474affd721c09dfccc04252edc99cc12425ae18e1adb0bb206b02385e631f7",
+      "bytes": 8644,
       "next_action": "Link the accepted consensus and final revisions when created"
     }
   ],

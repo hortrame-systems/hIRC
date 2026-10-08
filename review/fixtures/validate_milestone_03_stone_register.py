@@ -140,7 +140,15 @@ def adverse_tests(data: dict) -> list[dict]:
     run("duplicate_id", lambda d: d["stones"][1].update(id="M03-S001"), "duplicate-id")
     run("missing_prerequisite", lambda d: d["stones"][1]["prerequisites"].append("M03-NOT-THERE"), "missing-prerequisite")
     run("cycle", lambda d: d["stones"][0]["prerequisites"].append("M03-S015"), "cycle")
-    run("premature_active", lambda d: d["stones"][3].update(status="ACTIVE"), "premature")
+    def make_dependent_stone_premature(d: dict) -> None:
+        by_id = {stone["id"]: stone for stone in d["stones"]}
+        for stone in d["stones"]:
+            if stone["status"] == "CAPTURED" and any(by_id[item]["status"] != "PASS" for item in stone["prerequisites"]):
+                stone["status"] = "ACTIVE"
+                return
+        raise RuntimeError("no captured dependent stone available for adverse mutation")
+
+    run("premature_active", make_dependent_stone_premature, "premature")
     run("missing_adverse_cases", lambda d: d["stones"][3].update(adverse_cases=[]), "adverse_cases")
     run("missing_recovery", lambda d: d["stones"][4].update(recovery=""), "recovery")
     return cases
@@ -160,7 +168,7 @@ def main() -> int:
         "adverse": adverse,
         "all_adverse_rejected": all(item["rejected"] for item in adverse),
         "corrections": [
-            "After M03-S002 legitimately became READY, the premature-active adverse mutation no longer represented a violation. It was retargeted from M03-S002 to dependent M03-S003, whose M03-S002 prerequisite is not PASS."
+            "The premature-active adverse mutation became stale as targeted stones legitimately advanced. It now selects the first CAPTURED stone with an unmet prerequisite, preserving the invariant across register progress."
         ],
         "claim": "Deterministic graph/field/gate validation only; not semantic correctness, implementation, peer consensus or runtime evidence.",
     }

@@ -1,0 +1,77 @@
+{
+  "schema": "hirc.determinism-requirements-validation/1",
+  "stone": "M03-S002",
+  "before": {
+    "git_ref": "73f7174e975ad881509f3e3035f7974b8ac98a3e",
+    "git_blob_content_json_sha256": "70658f7341215b1e99f3d9b725bcdcec7137d8d663ff80fae4a0d90e88d9af92",
+    "git_blob_content_markdown_sha256": "338c3c73ca734e6fa33aa08e7dd493a72b2c9ebfe0a671859bcae8490bd6f55b",
+    "recorded_pre_generation_worktree_json_sha256": "717bcbe6cdc165bd7912eb47d09a7015a33ddfef9a1fbeb596343a372079f6d6",
+    "recorded_pre_generation_worktree_markdown_sha256": "96a170555bd8f9ed72dcefa4e01e588d64037cad1a801ce27205f0eae2ba1efd",
+    "requirements": 218,
+    "revision_decisions": 127
+  },
+  "after": {
+    "json_sha256": "5740b33db4647199a9c5ac4a5303d209e145a22fc0d90400fa0d52e6f87af007",
+    "markdown_sha256": "892a3a61534e0f109adbcc0476b0bbe947c414d374c28e9cafae11c7deec5fdb",
+    "requirements": 224,
+    "revision_decisions": 132
+  },
+  "generator": {
+    "path": "review/build_requirements_v1_1.py",
+    "sha256": "ecb8c5a4030bb08bca831990e2fd5761f9d9a7123136473e173395b4b41c5728"
+  },
+  "determinism_map": {
+    "path": "review/revision-map-addendum-determinism-v1.json",
+    "sha256": "3a35f35ad986fd6f1e1f8d9f42cf82b5770ae2647f3ac78ad6bc670b8f0b2a0b"
+  },
+  "positive": {
+    "accepted": true,
+    "errors": []
+  },
+  "adverse": [
+    {
+      "name": "duplicate_requirement_id",
+      "expected_error": "duplicate-requirement-id",
+      "errors": [
+        "duplicate-requirement-id",
+        "new-requirement-set",
+        "readable-parity",
+        "requirement-count"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "missing_hirc_i021_binding",
+      "expected_error": "determinism-binding:U186",
+      "errors": [
+        "determinism-binding:U186"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "renumbered_predecessor",
+      "expected_error": "predecessor-drift",
+      "errors": [
+        "new-requirement-set",
+        "predecessor-drift",
+        "readable-parity"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "generated_readable_mismatch",
+      "expected_error": "readable-parity",
+      "errors": [
+        "readable-parity"
+      ],
+      "rejected": true
+    }
+  ],
+  "all_adverse_rejected": true,
+  "corrections": [
+    "Initial readable-pair validation assumed every requirement ID began with U and falsely omitted preserved D001-D032 rows. The validator now derives valid IDs from the machine register.",
+    "The second check compared global JSON order with the readable view, but the readable generator intentionally groups rows by domain. Parity now compares exact ID membership/count plus each row's status, title and acceptance text.",
+    "Generation overwrites the working requirement pair, so validation now reads the immutable before-state from the pinned S002 start commit rather than the mutable working tree."
+  ],
+  "claim": "Exact U186-U191/DTM-001-DTM-005 generator integration, unchanged predecessor rows and machine/readable parity only; not implementation, peer consensus or runtime evidence."
+}

@@ -1,6 +1,6 @@
 # Milestone 03 stone register
 
-**Status:** STONE_001_AND_SOURCE_STUDY_PASS_REQUIREMENTS_READY
+**Status:** STONE_002_PASS_DECISION_AND_CULTURE_MAP_READY
 
 **Canonical source:** `review/milestone-03-stone-register.json`
 
@@ -11,9 +11,9 @@ remain limited to each stone's declared evidence. Runtime and Bridge remain disa
 |---|---|---|---|---|
 | M03-S001 | PASS | — | Freeze one complete ordered Milestone 03 dependency graph with claim-scoped tests, recovery and hard advance gates. | M03-S001A |
 | M03-S001A | PASS | M03-S001 | Validate the complete Eoyang 2001 source study and produce a bounded, adversarially reviewed candidate change set without treating coherence or CDE as a control objective. | M03-S002 |
-| M03-S002 | READY | M03-S001A | Integrate U186-U191 into the canonical requirements generator and regenerate the machine/readable requirement pair without changing unrelated rows. | M03-S003, M03-S004 |
-| M03-S003 | CAPTURED | M03-S002 | Integrate DTM-001-DTM-005 into the current joint decision matrix with exact target and rationale traces. | M03-S013 |
-| M03-S004 | CAPTURED | M03-S002 | Author one cultural-commons revision map that preserves HIRC-I022 and makes HIRC-I023 information-environment shaping its controlling design correction. | M03-S005, M03-S007 |
+| M03-S002 | PASS | M03-S001A | Integrate U186-U191 into the canonical requirements generator and regenerate the machine/readable requirement pair without changing unrelated rows. | M03-S003, M03-S004 |
+| M03-S003 | READY | M03-S002 | Integrate DTM-001-DTM-005 into the current joint decision matrix with exact target and rationale traces. | M03-S013 |
+| M03-S004 | READY | M03-S002 | Author one cultural-commons revision map that preserves HIRC-I022 and makes HIRC-I023 information-environment shaping its controlling design correction. | M03-S005, M03-S007 |
 | M03-S005 | CAPTURED | M03-S004 | Integrate accepted cultural information-environment requirements into the canonical requirement generator and readable pair. | M03-S006 |
 | M03-S006 | CAPTURED | M03-S005 | Integrate cultural information-environment decisions into the joint matrix without claiming peer consensus. | M03-S010, M03-S013 |
 | M03-S007 | CAPTURED | M03-S004 | Define a typed cultural artifact and provenance contract with audience, privacy, originals, dissent, correction and supersession semantics. | M03-S008 |

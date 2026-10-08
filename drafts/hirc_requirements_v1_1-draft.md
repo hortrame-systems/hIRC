@@ -1,8 +1,10 @@
 # hIRC requirements 1.1 — working draft
 
-**Status:** draft pending whole-packet peer consensus  
-**Requirements:** 218 (151 preserved predecessor; 67 new/corrective)  
-**Revision decisions:** 127 pending final disposition
+**Status:** draft pending whole-packet peer consensus
+
+**Requirements:** 224 (151 preserved predecessor; 73 new/corrective)
+
+**Revision decisions:** 132 pending final disposition
 
 This view is generated from the preserved 1.0 requirements and the current revision-map candidates. The JSON file is the machine-readable draft. A captured requirement is not implementation or verification.
 
@@ -11,6 +13,7 @@ This view is generated from the preserved 1.0 requirements and the current revis
 - U064 is superseded by the current permanent-only actor policy; no temporary-agent route remains.
 - U119 is preserved as historical source wording and succeeded by the foundation-native whole-onboarding requirements.
 - U125/U150-C1 use USD 42,424,243 per named-human licence per year as the planning unit; final legal duration, tiers and commercial activation remain held.
+- U186-U191 are quality-first determinism requirements captured for design and testing; they are not implementation evidence.
 - Every security/privacy impact, dependency and executable acceptance-test link still requires final peer reconciliation.
 
 ## Agent
@@ -144,6 +147,16 @@ This view is generated from the preserved 1.0 requirements and the current revis
 |---|---|---|---|---|
 | U113 | PARTIAL | P1 | Permitted source data is preserved as high-value | Source originals and decisions restore with evidence lineage |
 | U114 | PARTIAL | P1 | Logs carefully preserved and archived | Consistent snapshot and replay restore test passes |
+
+## Determinism
+
+| ID | Status | Phase | Requirement | Acceptance |
+|---|---|---|---|---|
+| U186 | REQUESTED_NOT_IMPLEMENTED | P0 | Make every quality-preserving hIRC contract deterministic by default | Each component has a determinism disposition; exact local inputs/state/version reproduce the same contract result; quality/security/privacy/sovereignty/recovery regressions block adoption |
+| U187 | REQUESTED_NOT_IMPLEMENTED | P0 | Keep genuine judgment and external uncertainty explicit instead of faking deterministic certainty | Ambiguous/open-world cases record judgment/evidence/uncertainty and remain proposals; external outcomes remain requested/sent/accepted/observed; unknown never becomes zero/success/failure |
+| U188 | REQUESTED_NOT_IMPLEMENTED | P1 | Use deterministic typed gates around every stochastic model/provider proposal | No stochastic output supplies identity, privacy, consent, capability, effect, journal, release or recovery authority; exact route/input/output evidence is retained |
+| U189 | REQUESTED_NOT_IMPLEMENTED | P3 | Make randomized pairing, sampling and allocation auditable and replay-verifiable without enabling advance gaming | Versioned algorithm binds eligible set/state and committed unpredictable entropy/seed derivation; outcome replays after the fact; qualification/consent/independence remain separate |
+| U190 | REQUESTED_NOT_IMPLEMENTED | P0 | Bind deterministic build, migration, release, recovery and milestone gates to exact versions and evidence | Inputs/toolchain/schema/configuration/test vectors/output and recovery are reproducible; deterministic wrong semantics and rollback limitations remain visible |
 
 ## Experience
 
@@ -375,6 +388,12 @@ This view is generated from the preserved 1.0 requirements and the current revis
 | U008 | PARTIAL | P2 | Reconstruct what changed while the operator was absent | Return digest distinguishes observed changes from guesses |
 | U009 | REQUESTED_NOT_IMPLEMENTED | P2 | Avoid forced manual project tracking | Normal work requires no manual status edits |
 | U010 | PARTIAL | P2 | Prevent forgotten work and commitments | Orphan/stale/blocked work is detected and followed up |
+
+## Quality
+
+| ID | Status | Phase | Requirement | Acceptance |
+|---|---|---|---|---|
+| U191 | REQUESTED_NOT_IMPLEMENTED | ALL | Reject deterministic simplifications that reduce required quality | False precision, bias/common mode, brittle/liveness, predictable-security, Goodhart, accessibility/usability and operator-burden tests pass before a judgment process is replaced by a deterministic rule |
 
 ## Release governance
 

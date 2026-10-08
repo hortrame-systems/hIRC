@@ -5,6 +5,7 @@
   "predecessor": {
     "path": "human_transfer/hirc_master_plan_v1_0.zip",
     "archive_sha256": "8590813fa1309143c594be14c05e6fcf45ea1163fa80445556c01e08dc200b22",
+    "requirements_member": "hirc_master_plan_v1_0/hirc_requirements_v1_0.json",
     "requirements_member_sha256": "5078b72dc32412ff1fdb058ed21e0226ae6d44ec78c7115f4165c88677ce44a5"
   },
   "source_maps": [
@@ -62,6 +63,11 @@
       "id": "HIRC-REVISION-MAP-ELDER-SUCCESSION-001",
       "path": "review/revision-map-addendum-elder-succession-v1.json",
       "sha256": "28ea209c1c057db6abfedb89765baa6e2f6a0da205353d5afa793e56550a9655"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-DETERMINISM-001",
+      "path": "review/revision-map-addendum-determinism-v1.json",
+      "sha256": "3a35f35ad986fd6f1e1f8d9f42cf82b5770ae2647f3ac78ad6bc670b8f0b2a0b"
     }
   ],
   "requirements": [
@@ -4225,6 +4231,120 @@
       "dependencies": [],
       "acceptance_test_refs": [],
       "evidence_status": "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "U186",
+      "origin": "USER",
+      "domain": "Determinism",
+      "title": "Make every quality-preserving hIRC contract deterministic by default",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Each component has a determinism disposition; exact local inputs/state/version reproduce the same contract result; quality/security/privacy/sovereignty/recovery regressions block adoption",
+      "predecessor_status": null,
+      "superseded_by": [],
+      "governing_sources": [
+        "HIRC-REVISION-MAP-DETERMINISM-001"
+      ],
+      "rationale_refs": [],
+      "security_privacy_impact": "PENDING_REQUIREMENT_LEVEL_ASSESSMENT",
+      "dependencies": [],
+      "acceptance_test_refs": [],
+      "evidence_status": "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "U187",
+      "origin": "USER",
+      "domain": "Determinism",
+      "title": "Keep genuine judgment and external uncertainty explicit instead of faking deterministic certainty",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Ambiguous/open-world cases record judgment/evidence/uncertainty and remain proposals; external outcomes remain requested/sent/accepted/observed; unknown never becomes zero/success/failure",
+      "predecessor_status": null,
+      "superseded_by": [],
+      "governing_sources": [
+        "HIRC-REVISION-MAP-DETERMINISM-001"
+      ],
+      "rationale_refs": [],
+      "security_privacy_impact": "PENDING_REQUIREMENT_LEVEL_ASSESSMENT",
+      "dependencies": [],
+      "acceptance_test_refs": [],
+      "evidence_status": "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "U188",
+      "origin": "USER",
+      "domain": "Determinism",
+      "title": "Use deterministic typed gates around every stochastic model/provider proposal",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "No stochastic output supplies identity, privacy, consent, capability, effect, journal, release or recovery authority; exact route/input/output evidence is retained",
+      "predecessor_status": null,
+      "superseded_by": [],
+      "governing_sources": [
+        "HIRC-REVISION-MAP-DETERMINISM-001"
+      ],
+      "rationale_refs": [],
+      "security_privacy_impact": "PENDING_REQUIREMENT_LEVEL_ASSESSMENT",
+      "dependencies": [],
+      "acceptance_test_refs": [],
+      "evidence_status": "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "U189",
+      "origin": "USER",
+      "domain": "Determinism",
+      "title": "Make randomized pairing, sampling and allocation auditable and replay-verifiable without enabling advance gaming",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3",
+      "acceptance": "Versioned algorithm binds eligible set/state and committed unpredictable entropy/seed derivation; outcome replays after the fact; qualification/consent/independence remain separate",
+      "predecessor_status": null,
+      "superseded_by": [],
+      "governing_sources": [
+        "HIRC-REVISION-MAP-DETERMINISM-001"
+      ],
+      "rationale_refs": [],
+      "security_privacy_impact": "PENDING_REQUIREMENT_LEVEL_ASSESSMENT",
+      "dependencies": [],
+      "acceptance_test_refs": [],
+      "evidence_status": "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "U190",
+      "origin": "USER",
+      "domain": "Determinism",
+      "title": "Bind deterministic build, migration, release, recovery and milestone gates to exact versions and evidence",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Inputs/toolchain/schema/configuration/test vectors/output and recovery are reproducible; deterministic wrong semantics and rollback limitations remain visible",
+      "predecessor_status": null,
+      "superseded_by": [],
+      "governing_sources": [
+        "HIRC-REVISION-MAP-DETERMINISM-001"
+      ],
+      "rationale_refs": [],
+      "security_privacy_impact": "PENDING_REQUIREMENT_LEVEL_ASSESSMENT",
+      "dependencies": [],
+      "acceptance_test_refs": [],
+      "evidence_status": "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "U191",
+      "origin": "USER",
+      "domain": "Quality",
+      "title": "Reject deterministic simplifications that reduce required quality",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "ALL",
+      "acceptance": "False precision, bias/common mode, brittle/liveness, predictable-security, Goodhart, accessibility/usability and operator-burden tests pass before a judgment process is replaced by a deterministic rule",
+      "predecessor_status": null,
+      "superseded_by": [],
+      "governing_sources": [
+        "HIRC-REVISION-MAP-DETERMINISM-001"
+      ],
+      "rationale_refs": [],
+      "security_privacy_impact": "PENDING_REQUIREMENT_LEVEL_ASSESSMENT",
+      "dependencies": [],
+      "acceptance_test_refs": [],
+      "evidence_status": "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED"
     }
   ],
   "revision_decisions": [
@@ -6353,13 +6473,98 @@
       "joint_status": "PENDING_RECONCILIATION",
       "final_artifact_refs": [],
       "test_refs": []
+    },
+    {
+      "id": "DTM-001",
+      "source_map": "HIRC-REVISION-MAP-DETERMINISM-001",
+      "targets": [
+        "master:invariants",
+        "foundation-kernel",
+        "component-contracts"
+      ],
+      "change": "Add DeterminismDisposition and quality-first deterministic-default rule to every component.",
+      "basis": [
+        "HIRC-I021",
+        "U186",
+        "U187"
+      ],
+      "joint_status": "PENDING_RECONCILIATION",
+      "final_artifact_refs": [],
+      "test_refs": []
+    },
+    {
+      "id": "DTM-002",
+      "source_map": "HIRC-REVISION-MAP-DETERMINISM-001",
+      "targets": [
+        "action-broker",
+        "provider-adapters",
+        "model-runtime"
+      ],
+      "change": "Treat stochastic/model output as proposal while deterministic current-state gates own consequential effects and exact observations.",
+      "basis": [
+        "U188"
+      ],
+      "joint_status": "PENDING_RECONCILIATION",
+      "final_artifact_refs": [],
+      "test_refs": []
+    },
+    {
+      "id": "DTM-003",
+      "source_map": "HIRC-REVISION-MAP-DETERMINISM-001",
+      "targets": [
+        "debate-pairing",
+        "competition-scheduler",
+        "sampling"
+      ],
+      "change": "Use committed-entropy/replay-verifiable selection over a frozen eligible set without converting randomness into independence/consent/authority.",
+      "basis": [
+        "U189"
+      ],
+      "joint_status": "PENDING_RECONCILIATION",
+      "final_artifact_refs": [],
+      "test_refs": []
+    },
+    {
+      "id": "DTM-004",
+      "source_map": "HIRC-REVISION-MAP-DETERMINISM-001",
+      "targets": [
+        "build",
+        "migration",
+        "release",
+        "recovery",
+        "milestone-gates"
+      ],
+      "change": "Bind deterministic artifacts to exact input/tool/schema/config/test/output identities and preserve recovery/semantic limits.",
+      "basis": [
+        "U190"
+      ],
+      "joint_status": "PENDING_RECONCILIATION",
+      "final_artifact_refs": [],
+      "test_refs": []
+    },
+    {
+      "id": "DTM-005",
+      "source_map": "HIRC-REVISION-MAP-DETERMINISM-001",
+      "targets": [
+        "evaluation",
+        "requirements-tests",
+        "stepping-stone-protocol"
+      ],
+      "change": "Add quality-regression and deterministic-error amplification cases before replacing contextual judgment.",
+      "basis": [
+        "U191",
+        "HIRC-STEPPING-STONE-PROTOCOL-001"
+      ],
+      "joint_status": "PENDING_RECONCILIATION",
+      "final_artifact_refs": [],
+      "test_refs": []
     }
   ],
   "counts": {
-    "requirements": 218,
-    "revision_decisions": 127,
+    "requirements": 224,
+    "revision_decisions": 132,
     "original_requirements": 151,
-    "new_requirements": 67
+    "new_requirements": 73
   },
   "completion_rule": "Every requirement needs final security/privacy impact, dependencies, executable acceptance-test references, evidence status and accepted/dissent/held peer disposition before this register becomes canonical.",
   "nonclaim": "Draft integration register; not whole consensus, implementation, test evidence, legal review, security assurance, admission, release or Bridge authority."
