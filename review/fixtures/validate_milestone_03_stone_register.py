@@ -91,6 +91,27 @@ def validate(data: dict) -> list[str]:
     terminals = [stone["id"] for stone in stones if not stone.get("next_eligible")]
     if terminals != ["M03-S015"]:
         errors.append("terminal")
+
+    execution = data.get("execution_state")
+    ready_ids = sorted(stone["id"] for stone in stones if stone.get("status") == "READY")
+    if not isinstance(execution, dict):
+        errors.append("execution-state")
+    else:
+        declared_ready = execution.get("ready_stones")
+        if declared_ready != ready_ids:
+            errors.append("execution-ready-mismatch")
+        if not isinstance(execution.get("scoped_holds"), list):
+            errors.append("scoped-holds")
+        elif any(item not in by_id for item in execution["scoped_holds"]):
+            errors.append("unknown-scoped-hold")
+        else:
+            runnable_ids = sorted(item for item in ready_ids if item not in execution["scoped_holds"])
+            if execution.get("runnable_stones") != runnable_ids:
+                errors.append("execution-runnable-mismatch")
+            if runnable_ids and execution.get("state") != "RUNNABLE":
+                errors.append("global-stall-with-runnable-work")
+        if not isinstance(execution.get("rule"), str) or not execution["rule"].strip():
+            errors.append("execution-rule")
     return sorted(set(errors))
 
 
@@ -151,6 +172,7 @@ def adverse_tests(data: dict) -> list[dict]:
     run("premature_active", make_dependent_stone_premature, "premature")
     run("missing_adverse_cases", lambda d: d["stones"][3].update(adverse_cases=[]), "adverse_cases")
     run("missing_recovery", lambda d: d["stones"][4].update(recovery=""), "recovery")
+    run("global_stall_with_ready_work", lambda d: d["execution_state"].update(state="HELD"), "global-stall-with-runnable-work")
     return cases
 
 

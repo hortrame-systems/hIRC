@@ -46,6 +46,12 @@ deterministic and replayable bounded-random controls and rejects a one-authority
 feed, opaque ranking, engagement optimization, suppressed minority access,
 randomness-as-independence and removal of direct-source escape.
 
+`hirc-cultural-participation.candidate.schema.json` and its synthetic validation
+cover visible reversible defaults/subscriptions, voluntary dissent and exit,
+preserved standing/resource floors and valid transition history. Dark defaults,
+hidden subscriptions, exit penalties, conformity access, retaliation and invalid
+transitions are rejected.
+
 `validation-result.json` records five positive and three adverse fixture checks
 using PowerShell `Test-Json` 7.0.0.0. See `validation-notes.md` for scope and the
 repaired runner-setup failure. This is structural schema behavior only.

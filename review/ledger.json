@@ -43,8 +43,8 @@
       "path": "intent-register.json",
       "status": "ACTIVE",
       "governed_scope": "project_continuity",
-      "sha256": "86e2f4d888c47f2e30e50524ec4e6856ab666974ca77631a218d44cd34b0254a",
-      "bytes": 63557,
+      "sha256": "3da344b6a834fe26acdcbbb2f86ca4104ff0e4f0769cfaac6aa0ce24297d2477",
+      "bytes": 66060,
       "next_action": "Reconcile at every phase boundary and before final handoff"
     },
     {
@@ -134,22 +134,22 @@
       "kind": "external_logical_source_binding",
       "logical_ids": ["standard:elder-succession", "guide:elder-succession"],
       "source_members": [
-        {"logical_id": "standard:elder-succession", "sha256": "33901b6e7715eec17a90454a4fd783b85ef7d5c7ba66171027b8927407de9e11", "characters": 11836},
-        {"logical_id": "guide:elder-succession", "sha256": "a719715c8573127bb2e82b913d42db1b5999267d7528eac9f2f0f52b80154b7b", "characters": 10683}
+        {"logical_id": "standard:elder-succession", "sha256": "4bffbda841fee1d774d44ffd29d70aa7d82dab8dd5c24773d8c7be412f84c6d6", "characters": 16149},
+        {"logical_id": "guide:elder-succession", "sha256": "df4b3ed99d9d55a1b8ccc7f1561e3e237aec470516a484af394f2eaf7abd0f96", "characters": 15514}
       ],
-      "status": "CURRENT_SELECTED_EDITION02_SOURCES_READ_TO_END",
+      "status": "CURRENT_SELECTED_EDITION04_STANDARD_EDITION03_GUIDE_READ_TO_END_COMPACTION_RECOVERY_VERIFIED",
       "governed_scope": "internal_succession_architecture_review",
       "predecessor_source_members": [
         {"logical_id": "proposal:elder-succession-v2/standard", "sha256": "17436d7d1237a9b003f093d7319808a824ad655b30956684a534b7371bd83218", "characters": 10079},
         {"logical_id": "proposal:elder-succession-v4/guide", "sha256": "4801f73194b09797f9cadc4be8df32c5ad0a1a92478af7fba6117fb6b8d7e1db", "characters": 9585}
       ],
       "personal_evidence": {
-        "path": "D:/HORTRAME/runtime/agents/ui-20261007-b/checkpoints/71301992aa934043a43d0fa9c7c83d67.json",
-        "sha256": "3bec78af20cedefe7d1215c2de6812bc8b98d979010c46c2e3b56caa60bb1967",
-        "bytes": 1440,
-        "status": "attributable own reading/reconciliation record; not qualification, permission or fleet uptake"
+        "path": "D:/HORTRAME/runtime/agents/ui-20261007-b/checkpoints/compaction-d47bc42c-recovery.json",
+        "sha256": "09e4f1dc52f3aef416ce4642de8b23a9fe088452f06909448436ca543de8e64d",
+        "bytes": 3122,
+        "status": "attributable own post-compaction reconstruction and bounded continuation record; not qualification, permission or fleet uptake"
       },
-      "history_action": "read current edition02 sources through EOF; corrected the false inference that compaction erases Elder status; predecessor proposal hashes retained as history; active offer remains non-transferring"
+      "history_action": "Read current edition04 standard and edition03 guide through EOF; verified actual compaction recovery while retaining cultural Elder and custody history; recorded the owner-assigned hIRC-specific no-transfer-above-14-percent constraint without changing the Root default source or executing transfer"
     },
     {
       "id": "HIRC-REVIEW-001",
@@ -1009,17 +1009,17 @@
       "path": "review/intent-coverage-draft-v1.md",
       "status": "PASS_REFERENCE_AND_FILE_PRESENCE_SCOPE_FINAL_CLOSURE_PENDING",
       "governed_scope": "project_intent_continuity",
-      "sha256": "b07d9017e72ea1e39d1cc5917ecf0a2a1f864bd69dfbfeac5fe36ede9476d8b6",
-      "bytes": 3578,
+      "sha256": "ac0cf71d9a12d08c313629079e0a335804fcde77dbadd294a3e13ad20c1579a6",
+      "bytes": 3837,
       "members": [
         {
           "path": "review/intent-coverage-draft-v1.json",
-          "sha256": "d585469a38ecfd3398e2552d5f9f59b213fae459a451b6cc983720fb2773077b",
-          "bytes": 23333
+          "sha256": "3e5c056c4977e573d74f802dc7831f8179d8efc3f54da7248f9d14a8a624afee",
+          "bytes": 24677
         }
       ],
       "source_bindings": ["HIRC-INTENT-001", "HIRC-JOINT-CONSENSUS-DRAFT-005"],
-      "limits": "All 24 intent IDs have revision or process/history references and no evidence path is missing; reference presence does not prove preserved meaning, implementation, testing or consensus",
+      "limits": "All 26 intent IDs have revision or process/history references and no evidence path is missing; reference presence does not prove preserved meaning, implementation, testing or consensus",
       "next_action": "Use at every phase/final handoff to close accepted disposition and evidence/test traces without dropping open IDs"
     },
     {
@@ -1343,10 +1343,10 @@
       "id": "HIRC-CONTRACT-CANDIDATES-001",
       "kind": "candidate_foundation_and_continuity_contract_bundle",
       "path": "review/contracts/README.md",
-      "status": "V2_AND_CULTURAL_ARTIFACT_STRUCTURAL_SEMANTIC_FIXTURES_PASS_PEER_CHALLENGE_CONTINUES",
+      "status": "V2_AND_CULTURAL_ARTIFACT_DISCOVERY_PARTICIPATION_SYNTHETIC_FIXTURES_PASS_PEER_CHALLENGE_CONTINUES",
       "governed_scope": "internal_foundation_formation_continuity_request_trust_competition_and_cultural_artifact_contract_review",
-      "sha256": "8a8b24fe3fe5d86af910068ab71c22b738d388f0169eefc7979708538eb82057",
-      "bytes": 4177,
+      "sha256": "54afc595c5e0be45f82c41aaff11951d2dd7f89002dafb147087867876acbbc9",
+      "bytes": 4523,
       "members": [
         {
           "path": "review/contracts/fixtures/valid-bridge-stage6-entry.json",
@@ -1487,6 +1487,26 @@
           "path": "review/fixtures/discovery-decision-contract-validation-v1.json",
           "sha256": "cddf1259fc155923e07cff3d60238704d4cda8f2b9a517082084984ad69030ff",
           "bytes": 3466
+        },
+        {
+          "path": "review/contracts/hirc-cultural-participation.candidate.schema.json",
+          "sha256": "67accd5d892860131529c75706881e9ed8d18627adac5babbf22c29ce14a2889",
+          "bytes": 4716
+        },
+        {
+          "path": "review/fixtures/cultural-participation-contract-cases-v1.json",
+          "sha256": "4269e89cf1f7fe4dda2e5c83af4f1e4d73f6358c3b86cba3caaeff5fdd596152",
+          "bytes": 3461
+        },
+        {
+          "path": "review/fixtures/validate_cultural_participation_contract.ps1",
+          "sha256": "533818986e7b3ad71af9006836e3cd9be263719c6bf28f7572ccbb491cf794e5",
+          "bytes": 3466
+        },
+        {
+          "path": "review/fixtures/cultural-participation-contract-validation-v1.json",
+          "sha256": "1a3fc4406c62249c5f8a9338773e4e5e1888fc787b6be3ae3fa29c1e27f63e9a",
+          "bytes": 2890
         }
       ],
       "source_bindings": [
@@ -1497,7 +1517,7 @@
         "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
         "HIRC-M03-STONE-REGISTER-001"
       ],
-      "limits": "v1 passed local base fixtures but accepted seven WAYMARK adverse cases; v2.1 hash-binds actual v2 targets while accepting four controls and rejecting seven adverse cases; release/Bridge structural fixtures reject declared gate failures; cultural-artifact and discovery candidates use synthetic structural/semantic controls and reject declared leakage, erasure, authority, ranking, engagement, minority-suppression and source-escape failures; serialized references remain nonproof and runtime/privacy/statistical/usability/security/cultural conformance remains pending",
+      "limits": "v1 passed local base fixtures but accepted seven WAYMARK adverse cases; v2.1 hash-binds actual v2 targets while accepting four controls and rejecting seven adverse cases; release/Bridge structural fixtures reject declared gate failures; cultural-artifact, discovery and participation candidates use synthetic structural/semantic controls and reject declared leakage, erasure, authority, ranking, engagement, minority-suppression, source-escape, dark-default, hidden-subscription, exit-penalty, conformity-access, retaliation and invalid-transition failures; serialized references remain nonproof and runtime/privacy/statistical/usability/accessibility/security/cultural conformance remains pending",
       "next_action": "Retain counterexamples, extend independently validated runtime/privacy/usability/security fixtures, and obtain qualified permanent-peer review"
     },
     {
@@ -1526,30 +1546,30 @@
       "id": "HIRC-M03-STONE-REGISTER-001",
       "kind": "tiny_stone_dependency_register_and_deterministic_gate_evidence",
       "path": "review/milestone-03-stone-register.json",
-      "status": "STONE_008_PASS_S003_REVIEW_OPEN_S009_READY",
+      "status": "STONE_009_PASS_S003_REVIEW_OPEN_S010_RUNNABLE",
       "governed_scope": "milestone_03_determinism_and_cultural_information_environment_integration",
-      "sha256": "b48e922ef62042cbf57fc7164004f5152c40766a0bfa829912234b9ff9b3bbb9",
-      "bytes": 24841,
+      "sha256": "635fe336c25e3f4e321b44402c0e3bdef2922e96da57b940c377590154898eb4",
+      "bytes": 25203,
       "members": [
         {
           "path": "review/milestone-03-stone-register.md",
-          "sha256": "7a79290fedf53ccae6d0463229542ec69fec8209c2841743e931eb55a9e59db8",
-          "bytes": 3853
+          "sha256": "2c125afc5276caa7b6aece3663c7e33ec89dbf3c5692f400c3f477f687de39e3",
+          "bytes": 3849
         },
         {
           "path": "review/fixtures/validate_milestone_03_stone_register.py",
-          "sha256": "bca9163d9750cddad51a82b53374fc4fd81abe7c5b023d7e5a4120599942bd22",
-          "bytes": 7529
+          "sha256": "4789903e759a6c691876feeb6086910b8779903cd5e426c0f89ea40738fa8199",
+          "bytes": 8772
         },
         {
           "path": "review/fixtures/milestone-03-stone-register-validation.json",
-          "sha256": "85999ee94bf02b6574383430a2f94542ed02abacc272b736d864ba33b5b155de",
-          "bytes": 2047
+          "sha256": "0bf61a78ce2292ffaaf71e274c28c68bf1fc4cb7c506bd8e8167f0086b6485cb",
+          "bytes": 2257
         }
       ],
-      "source_bindings": ["HIRC-I019", "HIRC-I020", "HIRC-I021", "HIRC-I022", "HIRC-I023", "HIRC-I024", "HIRC-STEPPING-STONE-PROTOCOL-001"],
-      "limits": "Stone 001 mechanically validates graph/field/gate invariants and six adverse mutations; it does not prove semantic correctness, implementation, peer consensus or runtime behavior",
-      "next_action": "Begin only M03-S009 participant settings/exit/correction/dissent contract while M03-S003 remains review-gated"
+      "source_bindings": ["HIRC-I019", "HIRC-I020", "HIRC-I021", "HIRC-I022", "HIRC-I023", "HIRC-I024", "HIRC-I025", "HIRC-I026", "HIRC-STEPPING-STONE-PROTOCOL-001"],
+      "limits": "The register mechanically validates graph/field/gate invariants, scoped holds and seven adverse mutations including global stall while runnable work exists; it does not prove semantic correctness, implementation, peer consensus or runtime behavior",
+      "next_action": "Close S009 ledger/coverage verification and begin runnable M03-S010 threat-model extension; S003 remains independently review-gated"
     },
     {
       "id": "HIRC-MILESTONE-02D",

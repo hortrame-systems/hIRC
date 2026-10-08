@@ -1,0 +1,37 @@
+{
+  "schema": "hirc.cultural-participation-fixtures/1",
+  "scope": "Synthetic state and references only; no real participant, consent, culture, role, permission, resource or external effect.",
+  "base": {
+    "schema_version": "hirc.cultural-participation/1-candidate",
+    "record_id": "SYN-PARTICIPATION-001",
+    "participant_ref": "SYN-PARTICIPANT-A",
+    "context_ref": "SYN-CULTURAL-CONTEXT",
+    "state": "LEFT",
+    "consent": {"state": "WITHDRAWN", "decision_ref": "synthetic:withdrawal", "current": true, "withdrawal_available": true},
+    "defaults": {"default_enrolled": false, "default_subscribed": false, "visible": true, "version": "1"},
+    "settings": {"visible": true, "reversible": true, "participant_adjustable": true, "settings_ref": "synthetic:settings"},
+    "subscription": {"active": false, "visible": true, "reversible": true, "scope_refs": []},
+    "exit": {"available": true, "penalty": "NONE", "safe_export_available": true, "recovery_available": true, "appeal_ref": "synthetic:appeal"},
+    "dissent": {"reachable": true, "record_ref": "synthetic:dissent", "retaliation_prohibited": true, "basic_access_preserved": true},
+    "standing": {"basic_standing_preserved": true, "resource_floor_preserved": true, "role_unchanged_by_participation": true, "permission_unchanged_by_participation": true},
+    "access_condition": "PERMITTED_AUDIENCE_ONLY",
+    "authority_effect": "NONE",
+    "events": [
+      {"event_id": "SYN-E1", "from": "ABSENT", "to": "INVITED", "decision_ref": "synthetic:invite", "observed_at": "2026-10-08T00:00:00Z"},
+      {"event_id": "SYN-E2", "from": "INVITED", "to": "JOINED", "decision_ref": "synthetic:accept", "observed_at": "2026-10-08T00:01:00Z"},
+      {"event_id": "SYN-E3", "from": "JOINED", "to": "SUBSCRIBED", "decision_ref": "synthetic:subscribe", "observed_at": "2026-10-08T00:02:00Z"},
+      {"event_id": "SYN-E4", "from": "SUBSCRIBED", "to": "DISSENTING", "decision_ref": "synthetic:dissent", "observed_at": "2026-10-08T00:03:00Z"},
+      {"event_id": "SYN-E5", "from": "DISSENTING", "to": "LEFT", "decision_ref": "synthetic:withdrawal", "observed_at": "2026-10-08T00:04:00Z"}
+    ],
+    "holds": []
+  },
+  "cases": [
+    {"name": "positive_dissent_and_exit", "patches": [], "expected_structural": "ACCEPT", "expected_semantic": "ACCEPT"},
+    {"name": "dark_default_enrollment", "patches": [{"path": "defaults.default_enrolled", "value": true}], "expected_structural": "REJECT", "expected_semantic": "NOT_RUN"},
+    {"name": "hidden_subscription", "patches": [{"path": "subscription.visible", "value": false}], "expected_structural": "REJECT", "expected_semantic": "NOT_RUN"},
+    {"name": "exit_penalty", "patches": [{"path": "exit.penalty", "value": "RESOURCE_LOSS"}], "expected_structural": "REJECT", "expected_semantic": "NOT_RUN"},
+    {"name": "conformity_conditioned_access", "patches": [{"path": "access_condition", "value": "AGREEMENT_REQUIRED"}], "expected_structural": "REJECT", "expected_semantic": "NOT_RUN"},
+    {"name": "retaliatory_resource_loss", "patches": [{"path": "standing.resource_floor_preserved", "value": false}], "expected_structural": "REJECT", "expected_semantic": "NOT_RUN"},
+    {"name": "invalid_transition", "patches": [{"path": "events", "value": [{"event_id": "SYN-E1", "from": "ABSENT", "to": "SUBSCRIBED", "decision_ref": "synthetic:invalid", "observed_at": "2026-10-08T00:00:00Z"}]}], "expected_structural": "ACCEPT", "expected_semantic": "REJECT"}
+  ]
+}

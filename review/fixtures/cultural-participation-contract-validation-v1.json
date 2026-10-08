@@ -1,0 +1,91 @@
+{
+  "schema": "hirc.cultural-participation-validation/1",
+  "stone": "M03-S009",
+  "schema_binding": {
+    "path": "review/contracts/hirc-cultural-participation.candidate.schema.json",
+    "sha256": "67accd5d892860131529c75706881e9ed8d18627adac5babbf22c29ce14a2889"
+  },
+  "fixture_binding": {
+    "path": "review/fixtures/cultural-participation-contract-cases-v1.json",
+    "sha256": "4269e89cf1f7fe4dda2e5c83af4f1e4d73f6358c3b86cba3caaeff5fdd596152"
+  },
+  "harness_binding": {
+    "path": "review/fixtures/validate_cultural_participation_contract.ps1",
+    "sha256": "533818986e7b3ad71af9006836e3cd9be263719c6bf28f7572ccbb491cf794e5"
+  },
+  "runtime": {
+    "powershell": "7.6.5",
+    "test_json_module": "7.0.0.0"
+  },
+  "cases": [
+    {
+      "name": "positive_dissent_and_exit",
+      "expected_structural": "ACCEPT",
+      "actual_structural": "ACCEPT",
+      "expected_semantic": "ACCEPT",
+      "actual_semantic": "ACCEPT",
+      "semantic_errors": [],
+      "pass": true
+    },
+    {
+      "name": "dark_default_enrollment",
+      "expected_structural": "REJECT",
+      "actual_structural": "REJECT",
+      "expected_semantic": "NOT_RUN",
+      "actual_semantic": "NOT_RUN",
+      "semantic_errors": [],
+      "pass": true
+    },
+    {
+      "name": "hidden_subscription",
+      "expected_structural": "REJECT",
+      "actual_structural": "REJECT",
+      "expected_semantic": "NOT_RUN",
+      "actual_semantic": "NOT_RUN",
+      "semantic_errors": [],
+      "pass": true
+    },
+    {
+      "name": "exit_penalty",
+      "expected_structural": "REJECT",
+      "actual_structural": "REJECT",
+      "expected_semantic": "NOT_RUN",
+      "actual_semantic": "NOT_RUN",
+      "semantic_errors": [],
+      "pass": true
+    },
+    {
+      "name": "conformity_conditioned_access",
+      "expected_structural": "REJECT",
+      "actual_structural": "REJECT",
+      "expected_semantic": "NOT_RUN",
+      "actual_semantic": "NOT_RUN",
+      "semantic_errors": [],
+      "pass": true
+    },
+    {
+      "name": "retaliatory_resource_loss",
+      "expected_structural": "REJECT",
+      "actual_structural": "REJECT",
+      "expected_semantic": "NOT_RUN",
+      "actual_semantic": "NOT_RUN",
+      "semantic_errors": [],
+      "pass": true
+    },
+    {
+      "name": "invalid_transition",
+      "expected_structural": "ACCEPT",
+      "actual_structural": "ACCEPT",
+      "expected_semantic": "REJECT",
+      "actual_semantic": "REJECT",
+      "semantic_errors": [
+        "invalid-transition",
+        "terminal-state-mismatch"
+      ],
+      "pass": true
+    }
+  ],
+  "all_cases_pass": true,
+  "protected_real_bodies_used": false,
+  "claim": "Synthetic structural and transition behavior only; not real consent, voluntariness, accessibility, non-retaliation, standing, permission or runtime evidence."
+}

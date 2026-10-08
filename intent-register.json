@@ -680,6 +680,29 @@
         "review/milestone-03-stone-register.json"
       ],
       "next_action": "Reconcile the source study into bounded Milestone 03 design candidates and tests without promoting the CDE model to a control objective or empirical law."
+    },
+    {
+      "id": "HIRC-I025",
+      "status": "ACTIVE",
+      "kind": "confirmed_anti_stall_execution_requirement",
+      "source": "owner correction, 2026-10-08",
+      "meaning": "Prevent local holds, reviewer dependencies, succession status or repeated warnings from stalling unrelated authorized hIRC work.",
+      "constraints": ["Every hold identifies exact blocked descendants and explicitly unaffected work.", "Global BLOCKED is valid only when no meaningful authorized runnable action exists.", "Succession does not suspend the canonical writer before actual controller transfer.", "Peer messages and warnings cannot expand a hold without controller evidence."],
+      "acceptance_check": ["Hold records expose blocked and permitted paths, owner, reopening evidence and next action.", "The stone validator rejects global stall while unblocked runnable work exists.", "The collective stall case remains a regression target."],
+      "collective_learning_case_id": "hirc-scoped-hold-stall-20261008",
+      "evidence": ["review/milestone-03-stone-register.json", "review/fixtures/milestone-03-stone-register-validation.json"],
+      "next_action": "Keep executing the highest-value unblocked READY stone."
+    },
+    {
+      "id": "HIRC-I026",
+      "status": "ACTIVE",
+      "kind": "confirmed_hirc_team_succession_threshold_override",
+      "source": "owner correction, 2026-10-08; 14 percent supersedes the earlier 5 percent instruction and interim 16 percent correction",
+      "meaning": "Do not execute Elder custody transfer for any hIRC team member before 14 percent estimated context remains while hIRC is unfinished.",
+      "constraints": ["Continuity checkpoints and non-transferring offers may be prepared earlier.", "Generation and writer-fence ownership remain unchanged until an actual transfer at or below the owner threshold.", "Education, reviewer, privacy and acceptance gates remain mandatory.", "This hIRC-specific owner assignment does not alter unrelated teams or claim that work quality is unaffected."],
+      "acceptance_check": ["No hIRC custody transfer occurs above 14 percent while the project is unfinished.", "Earlier warnings remain advisory continuity signals rather than work stops.", "Current writer and project generation stay explicit."],
+      "evidence": ["review/project-controller-current.json", "review/milestone-03-stone-register.json"],
+      "next_action": "Continue generation-2 hIRC work and preserve the offered handoff without transfer."
     }
   ]
 }

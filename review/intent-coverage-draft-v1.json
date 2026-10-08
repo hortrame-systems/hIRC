@@ -4,7 +4,7 @@
   "status": "DRAFT_CURRENT_INTAKE_COVERAGE",
   "intent_register": {
     "path": "intent-register.json",
-    "sha256": "86e2f4d888c47f2e30e50524ec4e6856ab666974ca77631a218d44cd34b0254a"
+    "sha256": "3da344b6a834fe26acdcbbb2f86ca4104ff0e4f0769cfaac6aa0ce24297d2477"
   },
   "revision_maps": [
     {
@@ -542,6 +542,42 @@
       "missing_evidence_paths": [],
       "acceptance_check_count": 5,
       "next_action": "Reconcile the source study into bounded Milestone 03 design candidates and tests without promoting the CDE model to a control objective or empirical law."
+    },
+    {
+      "intent_id": "HIRC-I025",
+      "status": "ACTIVE",
+      "kind": "confirmed_anti_stall_execution_requirement",
+      "coverage": "PROCESS_OR_HISTORY_MAPPED",
+      "revision_map_ids": [],
+      "process_or_history_artifact_ids": [
+        "HIRC-M03-STONE-REGISTER-001",
+        "HIRC-STEPPING-STONE-PROTOCOL-001"
+      ],
+      "evidence_paths": [
+        "review/milestone-03-stone-register.json",
+        "review/fixtures/milestone-03-stone-register-validation.json"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 3,
+      "next_action": "Keep executing the highest-value unblocked READY stone."
+    },
+    {
+      "intent_id": "HIRC-I026",
+      "status": "ACTIVE",
+      "kind": "confirmed_hirc_team_succession_threshold_override",
+      "coverage": "PROCESS_OR_HISTORY_MAPPED",
+      "revision_map_ids": [],
+      "process_or_history_artifact_ids": [
+        "HIRC-PROJECT-CONTROLLER-CURRENT",
+        "HIRC-M03-STONE-REGISTER-001"
+      ],
+      "evidence_paths": [
+        "review/project-controller-current.json",
+        "review/milestone-03-stone-register.json"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 3,
+      "next_action": "Continue generation-2 hIRC work and preserve the offered handoff without transfer."
     }
   ],
   "unmapped_intent_ids": [],

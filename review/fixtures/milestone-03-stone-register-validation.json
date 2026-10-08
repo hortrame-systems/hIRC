@@ -2,11 +2,11 @@
   "schema": "hirc.stone-register-validation/1",
   "register": {
     "path": "review/milestone-03-stone-register.json",
-    "sha256": "b48e922ef62042cbf57fc7164004f5152c40766a0bfa829912234b9ff9b3bbb9"
+    "sha256": "635fe336c25e3f4e321b44402c0e3bdef2922e96da57b940c377590154898eb4"
   },
   "validator": {
     "path": "review/fixtures/validate_milestone_03_stone_register.py",
-    "sha256": "bca9163d9750cddad51a82b53374fc4fd81abe7c5b023d7e5a4120599942bd22"
+    "sha256": "4789903e759a6c691876feeb6086910b8779903cd5e426c0f89ea40738fa8199"
   },
   "positive": {
     "accepted": true,
@@ -45,7 +45,7 @@
       "name": "premature_active",
       "expected_error": "premature",
       "errors": [
-        "M03-S010:premature:M03-S009"
+        "M03-S011:premature:M03-S010"
       ],
       "rejected": true
     },
@@ -62,6 +62,14 @@
       "expected_error": "recovery",
       "errors": [
         "M03-S004:recovery"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "global_stall_with_ready_work",
+      "expected_error": "global-stall-with-runnable-work",
+      "errors": [
+        "global-stall-with-runnable-work"
       ],
       "rejected": true
     }

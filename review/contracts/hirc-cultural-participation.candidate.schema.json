@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:hirc:candidate:cultural-participation:1",
+  "title": "hIRC candidate voluntary cultural participation state",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_id", "participant_ref", "context_ref", "state", "consent", "defaults", "settings", "subscription", "exit", "dissent", "standing", "access_condition", "authority_effect", "events", "holds"],
+  "properties": {
+    "schema_version": {"const": "hirc.cultural-participation/1-candidate"},
+    "record_id": {"$ref": "#/$defs/id"},
+    "participant_ref": {"$ref": "#/$defs/id"},
+    "context_ref": {"$ref": "#/$defs/id"},
+    "state": {"enum": ["ABSENT", "INVITED", "JOINED", "SUBSCRIBED", "QUIET", "DISSENTING", "LEFT", "HELD"]},
+    "consent": {
+      "type": "object", "additionalProperties": false,
+      "required": ["state", "decision_ref", "current", "withdrawal_available"],
+      "properties": {
+        "state": {"enum": ["NOT_ASKED", "EXPLICIT_ACCEPT", "EXPLICIT_DECLINE", "WITHDRAWN"]},
+        "decision_ref": {"type": "string", "minLength": 1},
+        "current": {"type": "boolean"},
+        "withdrawal_available": {"const": true}
+      }
+    },
+    "defaults": {
+      "type": "object", "additionalProperties": false,
+      "required": ["default_enrolled", "default_subscribed", "visible", "version"],
+      "properties": {
+        "default_enrolled": {"const": false},
+        "default_subscribed": {"const": false},
+        "visible": {"const": true},
+        "version": {"type": "string", "minLength": 1}
+      }
+    },
+    "settings": {
+      "type": "object", "additionalProperties": false,
+      "required": ["visible", "reversible", "participant_adjustable", "settings_ref"],
+      "properties": {
+        "visible": {"const": true},
+        "reversible": {"const": true},
+        "participant_adjustable": {"const": true},
+        "settings_ref": {"type": "string", "minLength": 1}
+      }
+    },
+    "subscription": {
+      "type": "object", "additionalProperties": false,
+      "required": ["active", "visible", "reversible", "scope_refs"],
+      "properties": {
+        "active": {"type": "boolean"},
+        "visible": {"const": true},
+        "reversible": {"const": true},
+        "scope_refs": {"$ref": "#/$defs/idArray"}
+      }
+    },
+    "exit": {
+      "type": "object", "additionalProperties": false,
+      "required": ["available", "penalty", "safe_export_available", "recovery_available", "appeal_ref"],
+      "properties": {
+        "available": {"const": true},
+        "penalty": {"const": "NONE"},
+        "safe_export_available": {"const": true},
+        "recovery_available": {"const": true},
+        "appeal_ref": {"type": "string", "minLength": 1}
+      }
+    },
+    "dissent": {
+      "type": "object", "additionalProperties": false,
+      "required": ["reachable", "record_ref", "retaliation_prohibited", "basic_access_preserved"],
+      "properties": {
+        "reachable": {"const": true},
+        "record_ref": {"type": "string", "minLength": 1},
+        "retaliation_prohibited": {"const": true},
+        "basic_access_preserved": {"const": true}
+      }
+    },
+    "standing": {
+      "type": "object", "additionalProperties": false,
+      "required": ["basic_standing_preserved", "resource_floor_preserved", "role_unchanged_by_participation", "permission_unchanged_by_participation"],
+      "properties": {
+        "basic_standing_preserved": {"const": true},
+        "resource_floor_preserved": {"const": true},
+        "role_unchanged_by_participation": {"const": true},
+        "permission_unchanged_by_participation": {"const": true}
+      }
+    },
+    "access_condition": {"const": "PERMITTED_AUDIENCE_ONLY"},
+    "authority_effect": {"const": "NONE"},
+    "events": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/event"}},
+    "holds": {"type": "array", "items": {"type": "string", "minLength": 1}}
+  },
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]{0,255}$"},
+    "idArray": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+    "event": {
+      "type": "object", "additionalProperties": false,
+      "required": ["event_id", "from", "to", "decision_ref", "observed_at"],
+      "properties": {
+        "event_id": {"$ref": "#/$defs/id"},
+        "from": {"enum": ["ABSENT", "INVITED", "JOINED", "SUBSCRIBED", "QUIET", "DISSENTING", "LEFT", "HELD"]},
+        "to": {"enum": ["INVITED", "JOINED", "SUBSCRIBED", "QUIET", "DISSENTING", "LEFT", "HELD"]},
+        "decision_ref": {"type": "string", "minLength": 1},
+        "observed_at": {"type": "string", "format": "date-time"}
+      }
+    }
+  }
+}
