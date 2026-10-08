@@ -358,7 +358,82 @@ metrics, qualitative review, random audits and conservative uncertainty.
 - immutable provenance, failures, dissent, appeal and contribution credit; and
 - candidate-learning output only through normal FoundationChange/release gates.
 
-## 14. Licensing and support threats
+## 14. Cultural information-environment threats
+
+This domain treats cultural artifacts, discovery, defaults, mentoring, debate
+memory and Bridge translation as security-relevant information conditions. The
+protected assets are participant judgment, local context, plurality, dissent,
+source provenance, voluntary participation and concrete safety controls. The
+control objective is inspectable choice and recoverability, not an approved
+belief, style, identity, agreement rate or cultural outcome.
+
+### Threats
+
+- hidden nudging through opaque defaults, sequencing, omission or personalized
+  exposure;
+- source/provenance poisoning of cultural or debate memory;
+- mentor, winner, popular artifact or coherent narrative treated as authority;
+- ranking capture, filter bubbles and suppression of minority/dissent routes;
+- monoculture caused by common-mode sources, evaluators or copied rationales;
+- participation, resources or basic access conditioned on conformity;
+- concrete safety gates expanded into ambient obedience or identity controls;
+  and
+- Bridge translation used for cultural annexation, hidden ontology inheritance
+  or remote authority laundering.
+
+### Controls, detection and recovery
+
+- versioned visible defaults, explicit opt-in, participant-adjustable settings,
+  direct-source mode and disable-ranking escape;
+- hash-bound originals, audience/privacy admission, provenance closure,
+  append-only correction/supersession and preserved dissent;
+- structural `authority_effect = NONE`, no cultural/reliability score effect and
+  denial of role, permission, resource or release promotion from culture;
+- plural routes, frozen candidate sets, disclosed exclusions/uncertainty and
+  route/source/context concentration checks without scoring agreement;
+- dependency clustering and common-mode analysis for sources, mentors,
+  evaluators and rationales;
+- default-off cultural participation, reversible subscriptions, safe exit,
+  preserved standing/resource floors and non-retaliation;
+- safety denials bound to a concrete action/data/effect, exact reason, least
+  scope, appeal and recovery while prohibited effects remain denied; and
+- disabled-by-default Bridge, explicit local admission, non-equivalence/loss
+  records, no inheritance, taint, isolation and independent local recovery.
+
+Detection compares the selected policy and participant settings to actual
+candidate, exclusion, exposure, denial and transition records. It monitors
+source/route/context concentration, missing originals or dissent, provenance
+breaks, unexplained policy drift, access changes correlated with cultural
+participation, overbroad safety reasons and remote-local schema or authority
+changes. Detection evidence cannot itself score a person's culture or grant an
+effect.
+
+Recovery disables only the affected ranking, subscription, cultural-memory
+projection or Bridge path; returns to default-off/direct-source/read-export
+operation; preserves originals, dissent, participant-owned records and incident
+evidence; repairs the narrow policy or lineage; and replays from a known admitted
+manifest. A safety-gate repair narrows unsupported scope without permitting the
+still-prohibited concrete effect.
+
+### Positive controls and residuals
+
+A visible, reversible, participant-selected contextual default may remain useful
+when direct-source/dissent escape and standing are preserved. A legitimate safety
+gate may continue to deny a concrete unauthorized or harmful effect when its
+reason, scope and appeal are inspectable. These are positive controls: rejecting
+them would confuse anti-manipulation with an information vacuum or anti-domination
+with removal of safety.
+
+Even transparent systems can shape attention, and plurality fields can be gamed
+or become quotas. Correlated sources may appear diverse, direct-source access may
+be burdensome, and Bridge translation can lose meaning without malicious intent.
+Empirical usability, accessibility, distribution-shift and affected-party review
+remain required. The exact threat/control/future-fixture bindings are in
+`review/cultural-threat-control-crosswalk-v1.json`; its deterministic validation
+does not establish beneficial culture, consent, runtime enforcement or complete
+threat coverage.
+
+## 15. Licensing and support threats
 
 ### Threats
 
@@ -381,7 +456,7 @@ metrics, qualitative review, random audits and conservative uncertainty.
 - neutral local opt-out, permanent About entry, reviewed external URL and no hIRC
   context/identifier/referrer egress.
 
-## 15. Supply-chain, build, release and update threats
+## 16. Supply-chain, build, release and update threats
 
 ### Threats
 
@@ -404,7 +479,7 @@ metrics, qualitative review, random audits and conservative uncertainty.
 - parser/canonicalization differential tests; and
 - recovery root/evidence inaccessible to normal updater and live controller.
 
-## 16. Bridge-specific threats
+## 17. Bridge-specific threats
 
 The Bridge receives extra precautions because it combines hostile Internet
 transport, remote identity, semantic ambiguity and potential local effects.
@@ -440,7 +515,7 @@ transport, remote identity, semantic ambiguity and potential local effects.
 - autonomous local continuity, causal receipts and conflict/unknown states; and
 - no Bridge key, process or peer access to foundation/release/recovery roots.
 
-## 17. Bridge release gates
+## 18. Bridge release gates
 
 The Bridge remains disabled until all applicable stages pass:
 
@@ -458,7 +533,7 @@ A later stage cannot retroactively pass an earlier missing requirement. Public
 advertisement does not imply private connection. Pilot success is not universal
 federation assurance.
 
-## 18. Monitoring, incident response and attention
+## 19. Monitoring, incident response and attention
 
 Security telemetry is local/minimized by default and classified before storage.
 It covers integrity failures, auth/authority anomalies, secret/key operations,
@@ -475,7 +550,7 @@ data/effects and uncertainty → recover from known-good state → validate →
 correct/notify within actual obligations → update tests/controls. Reversal never
 pretends disclosed bytes or completed external effects were undone.
 
-## 19. Required security verification
+## 20. Required security verification
 
 Before local effectful release:
 
@@ -500,7 +575,7 @@ safety conditions. Stage 7 requires the actual pilot evidence and a separate
 broader-activation decision. Each residual has an accountable owner,
 expiry/review and operator-visible consequence.
 
-## 20. Open security decisions
+## 21. Open security decisions
 
 - supported OS/hardware and disk-memory protection assumptions;
 - human-principal count and account/recovery model for first deployment;

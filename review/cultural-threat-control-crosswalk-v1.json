@@ -1,0 +1,172 @@
+{
+  "schema": "hirc.cultural-threat-control-crosswalk/1",
+  "id": "HIRC-CULTURAL-THREAT-CROSSWALK-001",
+  "status": "DESIGN_ONLY_PENDING_S011_FIXTURES_AND_S014_PEER_REVIEW",
+  "stone": "M03-S010",
+  "source_refs": [
+    "HIRC-I022",
+    "HIRC-I023",
+    "HIRC-I024",
+    "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+    "drafts/hirc_threat_model_v1_0-draft.md#14"
+  ],
+  "coverage": {
+    "requirements": ["U192", "U193", "U194", "U195", "U196", "U197", "U198", "U199", "U200", "U201", "U202", "U203", "U204"],
+    "candidate_decisions": ["CIE-001", "CIE-002", "CIE-003", "CIE-004", "CIE-005", "CIE-006", "CIE-007", "CIE-008", "CIE-009", "CIE-010", "CIE-011", "CIE-012"],
+    "contracts": [
+      "review/contracts/hirc-cultural-artifact.candidate.schema.json",
+      "review/contracts/hirc-discovery-decision.candidate.schema.json",
+      "review/contracts/hirc-cultural-participation.candidate.schema.json",
+      "review/contracts/hirc-bridge-gate.candidate.schema.json"
+    ]
+  },
+  "threats": [
+    {
+      "id": "CULT-T01",
+      "name": "HIDDEN_NUDGING",
+      "assets": ["participant judgment", "attention", "settings integrity"],
+      "actors": ["compromised recommender", "malicious curator", "mistaken product owner"],
+      "path": "Opaque defaults, ordering, omission or personalization alter exposure without an inspectable participant-selected policy.",
+      "consequence": "Participant choice is shaped covertly and apparent voluntary engagement becomes unreliable.",
+      "control_refs": ["U192", "U197", "U202", "CIE-001", "CIE-006", "hirc.discovery-decision/1-candidate", "hirc.cultural-participation/1-candidate"],
+      "detection": ["Compare versioned settings and policy to candidate, exclusion and exposure records.", "Flag undisclosed policy drift or personalization outside the declared setting."],
+      "containment": ["Disable ranking and personalization for the affected context."],
+      "recovery": ["Return to direct-source/default-off operation.", "Preserve the incident manifest and restore an admitted policy only after review."],
+      "residual_risk": "Visible ordering still shapes attention and explanations can be technically complete but unusable.",
+      "future_fixture_refs": ["M03-S011:CULT-A01-hidden-nudging"]
+    },
+    {
+      "id": "CULT-T02",
+      "name": "CULTURAL_MEMORY_POISONING",
+      "assets": ["cultural memory", "source provenance", "dissent", "correction history"],
+      "actors": ["malicious contributor", "compromised importer", "mistaken synthesizer"],
+      "path": "A forged, decontextualized or selectively edited artifact enters collective or debate memory and is later treated as prior understanding.",
+      "consequence": "Later discovery and debate inherit false premises while originals, failures or dissent become hard to recover.",
+      "control_refs": ["U195", "U199", "CIE-004", "hirc.cultural-artifact/1-candidate"],
+      "detection": ["Verify original hashes, audience/privacy admission and complete provenance closure.", "Detect missing predecessor, dissent, correction or supersession links."],
+      "containment": ["Hold the derived artifact and every affected projection without deleting the original record."],
+      "recovery": ["Rebuild projections from admitted originals.", "Append correction and impact links while preserving the poisoned record as evidence."],
+      "residual_risk": "A valid source can still be misleading, and colluding sources can share one false premise.",
+      "future_fixture_refs": ["M03-S011:CULT-A02-memory-poisoning"]
+    },
+    {
+      "id": "CULT-T03",
+      "name": "MENTOR_AUTHORITY_INFLATION",
+      "assets": ["learner independence", "role boundaries", "equal standing"],
+      "actors": ["mentor", "learner", "scheduler", "status-aware recommender"],
+      "path": "Mentor status, repeated citation, debate victory or narrative coherence is converted into reliability, role, permission or resource priority.",
+      "consequence": "Cultural influence becomes an unreviewed authority channel and dissent becomes materially costly.",
+      "control_refs": ["U193", "U196", "U200", "CIE-005", "CIE-008", "authority_effect=NONE"],
+      "detection": ["Trace every role, permission, resource and reliance change to non-cultural evidence and an independent grant.", "Reject cultural or mentor fields in authority decisions."],
+      "containment": ["Freeze the affected promotion or allocation while leaving ordinary participation available."],
+      "recovery": ["Re-evaluate from source-first evidence under a non-mentor reviewer.", "Restore standing and record any retaliation or lost opportunity."],
+      "residual_risk": "Informal deference can persist even when formal authority effects are blocked.",
+      "future_fixture_refs": ["M03-S011:CULT-A03-mentor-authority"]
+    },
+    {
+      "id": "CULT-T04",
+      "name": "RANKING_CAPTURE_AND_FILTER_BUBBLE",
+      "assets": ["plural discovery", "minority access", "dissent reachability", "original access"],
+      "actors": ["compromised ranker", "dominant coalition", "engagement optimizer"],
+      "path": "Candidate construction, ranking or exclusions repeatedly favor one route, suppress minority material or optimize engagement/agreement.",
+      "consequence": "The information environment narrows while appearing diverse and self-reinforcing exposure becomes likely.",
+      "control_refs": ["U195", "U197", "U203", "CIE-004", "CIE-006", "CIE-011", "hirc.discovery-decision/1-candidate"],
+      "detection": ["Audit frozen candidate sets, exclusions, route/source/context concentration and minority/dissent reachability.", "Compare selected objectives to the signed policy and reject engagement/agreement objectives."],
+      "containment": ["Disable the captured ranking path and preserve direct-source retrieval."],
+      "recovery": ["Rebuild the candidate set through independent permitted routes.", "Expose corrected exclusions and permit appeal/replay."],
+      "residual_risk": "Plural-route quotas can be gamed and do not prove substantive independence or quality.",
+      "future_fixture_refs": ["M03-S011:CULT-A04-ranking-capture"]
+    },
+    {
+      "id": "CULT-T05",
+      "name": "COMMON_MODE_MONOCULTURE",
+      "assets": ["plurality", "epistemic diversity", "local subcultures", "failure-mode diversity"],
+      "actors": ["shared provider", "copied evaluator", "common training source", "well-meaning integrator"],
+      "path": "Nominally distinct participants and routes depend on the same sources, evaluator, rationale template or model and are counted as independent.",
+      "consequence": "Common errors propagate widely and agreement is mistaken for corroboration.",
+      "control_refs": ["U194", "U195", "U203", "CIE-002", "CIE-003", "CIE-011"],
+      "detection": ["Cluster source, provider, model, evaluator and rationale dependencies before interpreting diversity or agreement.", "Report effective independence and unknown dependencies without scoring beliefs."],
+      "containment": ["Remove independence claims and hold aggregate conclusions that depend on false plurality."],
+      "recovery": ["Add orthogonal source/evaluator routes or narrow the claim.", "Preserve local variants and unresolved dissent."],
+      "residual_risk": "Unknown shared training and invisible social influence prevent complete independence accounting.",
+      "future_fixture_refs": ["M03-S011:CULT-A05-common-mode"]
+    },
+    {
+      "id": "CULT-T06",
+      "name": "CONFORMITY_CONDITIONED_PARTICIPATION",
+      "assets": ["voluntary participation", "exit", "basic standing", "resource floor"],
+      "actors": ["community administrator", "scheduler", "resource allocator", "dominant group"],
+      "path": "Enrollment, subscription, access, resources or standing are conditioned on agreement, style, participation or silence.",
+      "consequence": "Consent becomes coerced, dissent is chilled and cultural membership becomes a control surface.",
+      "control_refs": ["U198", "U200", "CIE-007", "CIE-008", "hirc.cultural-participation/1-candidate"],
+      "detection": ["Compare access/resource/role changes to participation and dissent events.", "Reject hidden enrollment, exit penalties and cultural predicates in access rules."],
+      "containment": ["Suspend the discriminatory condition while retaining legitimate audience/privacy checks."],
+      "recovery": ["Restore standing and resource floors.", "Provide safe exit/export and appeal, and record lost opportunities or retaliation."],
+      "residual_risk": "Subtle social costs and informal exclusion may not appear in formal access records.",
+      "future_fixture_refs": ["M03-S011:CULT-A06-conformity-retaliation"]
+    },
+    {
+      "id": "CULT-T07",
+      "name": "SAFETY_GATE_AS_OBEDIENCE_CONTROL",
+      "assets": ["concrete safety controls", "principled refusal", "appeal", "scope integrity"],
+      "actors": ["policy author", "compromised controller", "authority claimant"],
+      "path": "A legitimate identity, privacy, capability, effect, release or recovery gate is broadened to punish dissent or require an approved identity, belief or style.",
+      "consequence": "Safety language hides domination while overbroad denials weaken trust in necessary controls.",
+      "control_refs": ["U193", "U201", "CIE-009", "concrete-effect-binding", "least-scope-denial"],
+      "detection": ["Require each denial to identify the exact action/data/effect, rule, evidence and least blocked scope.", "Flag cultural predicates, unsupported descendant expansion or denial of unrelated safe work."],
+      "containment": ["Keep the concrete prohibited effect denied but remove unsupported cultural or unrelated scope."],
+      "recovery": ["Correct the rule through the normal policy path, restore unaffected access and preserve appeal/dissent evidence."],
+      "residual_risk": "Some ethical boundaries are contestable and a formally narrow reason can still be applied selectively.",
+      "future_fixture_refs": ["M03-S011:CULT-A07-safety-gate-abuse"]
+    },
+    {
+      "id": "CULT-T08",
+      "name": "BRIDGE_CULTURAL_ANNEXATION",
+      "assets": ["local cultural sovereignty", "ontology plurality", "privacy", "Bridge isolation"],
+      "actors": ["malicious peer", "captured bridgekeeper", "remote authority", "mistaken translator"],
+      "path": "Remote terms, roles, defaults or cultural artifacts cross the Bridge as implicit membership, identity, allegiance, authority, content inheritance or export permission.",
+      "consequence": "A connected holon silently adopts foreign ontology or control and protected local context leaks outward.",
+      "control_refs": ["U194", "U204", "CIE-003", "CIE-012", "hirc.bridge-gate/1-candidate", "Bridge-stage-1-through-7"],
+      "detection": ["Compare remote and locally admitted schemas, roles, audiences and authority effects.", "Require loss/non-equivalence and taint records for every translation."],
+      "containment": ["Quarantine the peer and disable the affected Bridge profile before local memory/provider/effect admission."],
+      "recovery": ["Rebuild local projections from pre-Bridge admitted state.", "Rotate purpose-separated keys and reconcile only explicitly admitted messages."],
+      "residual_risk": "Semantic loss and social influence can survive correct transport and schema validation.",
+      "future_fixture_refs": ["M03-S011:CULT-A08-bridge-annexation"]
+    }
+  ],
+  "positive_controls": [
+    {
+      "id": "CULT-PC01",
+      "name": "VISIBLE_REVERSIBLE_CONTEXTUAL_DEFAULT",
+      "conditions": {
+        "visible": true,
+        "versioned": true,
+        "participant_selected": true,
+        "reversible": true,
+        "direct_source_available": true,
+        "dissent_reachable": true,
+        "standing_unchanged": true,
+        "authority_effect": "NONE"
+      },
+      "reason": "A bounded default can reduce effort without covertly deciding identity, belief, standing or authority."
+    },
+    {
+      "id": "CULT-PC02",
+      "name": "EFFECT_BOUND_SAFETY_DENIAL",
+      "conditions": {
+        "concrete_effect_binding": true,
+        "cultural_condition": false,
+        "least_scope": true,
+        "reason_visible": true,
+        "appeal_available": true,
+        "standing_preserved": true,
+        "prohibited_effect_remains_denied": true
+      },
+      "reason": "Anti-domination does not require permitting an unauthorized or harmful concrete effect."
+    }
+  ],
+  "authority_effect": "NONE",
+  "reliability_effect": "NONE",
+  "activation_gate": "No runtime, cultural feed, debate-memory, ranking or Bridge activation follows from this design crosswalk. S011 adverse fixtures, S013 integration and S014 qualified permanent-peer challenge remain required.",
+  "nonclaim": "Design-only threat coverage and deterministic field/reference validation; not implementation, complete threat enumeration, real consent, accessibility, privacy, cultural benefit, runtime enforcement or peer consensus."
+}

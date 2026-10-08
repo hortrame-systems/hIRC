@@ -1,6 +1,6 @@
 # Milestone 03 stone register
 
-**Status:** STONE_009_PASS_S003_REVIEW_OPEN_S010_READY
+**Status:** STONE_010_PASS_S003_REVIEW_OPEN_S011_READY
 
 **Canonical source:** `review/milestone-03-stone-register.json`
 
@@ -19,8 +19,8 @@ remain limited to each stone's declared evidence. Runtime and Bridge remain disa
 | M03-S007 | PASS | M03-S004 | Define a typed cultural artifact and provenance contract with audience, privacy, originals, dissent, correction and supersession semantics. | M03-S008 |
 | M03-S008 | PASS | M03-S007 | Define typed discovery and recommendation-rationale contracts with plural routes, disclosed basis, bounded variation and original access. | M03-S009 |
 | M03-S009 | PASS | M03-S008 | Define participant-controlled settings, subscriptions, exit, correction and dissent-reachability contracts without retaliation. | M03-S010 |
-| M03-S010 | READY | M03-S006, M03-S009 | Extend the threat model for manipulation, cultural capture, ranking capture, monoculture, conformity and safety-gate abuse. | M03-S011 |
-| M03-S011 | CAPTURED | M03-S010 | Create and run adverse fixtures that distinguish information-environment support from behavioral control. | M03-S012 |
+| M03-S010 | PASS | M03-S006, M03-S009 | Extend the threat model for manipulation, cultural capture, ranking capture, monoculture, conformity and safety-gate abuse. | M03-S011 |
+| M03-S011 | READY | M03-S010 | Create and run adverse fixtures that distinguish information-environment support from behavioral control. | M03-S012 |
 | M03-S012 | CAPTURED | M03-S011 | Define candidate environment-quality measures that do not reward agreement, participation, retention, imitation or ideological convergence. | M03-S013 |
 | M03-S013 | CAPTURED | M03-S003, M03-S006, M03-S012 | Reconcile the accepted Milestone 03 candidate changes across master, explained view, requirements, matrix, threat model, delivery profile, coverage and ledger. | M03-S014 |
 | M03-S014 | CAPTURED | M03-S013 | Obtain independent permanent-peer product, security, privacy and anti-domination challenge and reconcile every consequence-bearing finding or justified NO_CHANGE. | M03-S015 |

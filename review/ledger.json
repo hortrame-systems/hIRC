@@ -1546,15 +1546,15 @@
       "id": "HIRC-M03-STONE-REGISTER-001",
       "kind": "tiny_stone_dependency_register_and_deterministic_gate_evidence",
       "path": "review/milestone-03-stone-register.json",
-      "status": "STONE_009_PASS_S003_REVIEW_OPEN_S010_RUNNABLE",
+      "status": "STONE_010_PASS_S003_REVIEW_OPEN_S011_RUNNABLE",
       "governed_scope": "milestone_03_determinism_and_cultural_information_environment_integration",
-      "sha256": "635fe336c25e3f4e321b44402c0e3bdef2922e96da57b940c377590154898eb4",
-      "bytes": 25203,
+      "sha256": "0845f26e2d5898cb37899b471e8f8a67898ed917b37af35d4a7c0a8036619b42",
+      "bytes": 25199,
       "members": [
         {
           "path": "review/milestone-03-stone-register.md",
-          "sha256": "2c125afc5276caa7b6aece3663c7e33ec89dbf3c5692f400c3f477f687de39e3",
-          "bytes": 3849
+          "sha256": "a01209def108ea34ddf647e9a25eb1bb6743af61cb3be7b9d47f9ca89a2d1ef8",
+          "bytes": 3845
         },
         {
           "path": "review/fixtures/validate_milestone_03_stone_register.py",
@@ -1563,13 +1563,13 @@
         },
         {
           "path": "review/fixtures/milestone-03-stone-register-validation.json",
-          "sha256": "0bf61a78ce2292ffaaf71e274c28c68bf1fc4cb7c506bd8e8167f0086b6485cb",
+          "sha256": "b8beb17c48cdfc1a6de0878a9df5cf1cd8d9266013913dcf19f5f9ec3294c23e",
           "bytes": 2257
         }
       ],
       "source_bindings": ["HIRC-I019", "HIRC-I020", "HIRC-I021", "HIRC-I022", "HIRC-I023", "HIRC-I024", "HIRC-I025", "HIRC-I026", "HIRC-STEPPING-STONE-PROTOCOL-001"],
       "limits": "The register mechanically validates graph/field/gate invariants, scoped holds and seven adverse mutations including global stall while runnable work exists; it does not prove semantic correctness, implementation, peer consensus or runtime behavior",
-      "next_action": "Close S009 ledger/coverage verification and begin runnable M03-S010 threat-model extension; S003 remains independently review-gated"
+      "next_action": "Begin runnable M03-S011 cultural control adverse fixtures; S003 remains independently review-gated"
     },
     {
       "id": "HIRC-MILESTONE-02D",
@@ -1697,6 +1697,30 @@
       "next_action": "M03-S003 and S006 integrate the pending decisions into the separate joint matrix; S003 still requires early independent security/semantic review before PASS"
     },
     {
+      "id": "HIRC-CULTURAL-THREAT-CROSSWALK-001",
+      "kind": "design_threat_control_detection_recovery_and_future_fixture_crosswalk",
+      "path": "review/cultural-threat-control-crosswalk-v1.json",
+      "status": "PASS_DESIGN_FIELD_REFERENCE_AND_POSITIVE_CONTROL_VALIDATION_S011_S014_PENDING",
+      "governed_scope": "cultural_information_environment_security",
+      "sha256": "b999ecb1ecee98ffc94460f1dd4bd32fb19bcdcab2c359dbca380d03184057f5",
+      "bytes": 12960,
+      "members": [
+        {
+          "path": "review/fixtures/validate_cultural_threat_crosswalk.py",
+          "sha256": "d194e3d2ee4e9abb0f10c5dae63527e354fc5c78538c2b4c77b8ba5efdf5a904",
+          "bytes": 7322
+        },
+        {
+          "path": "review/fixtures/cultural-threat-control-crosswalk-validation-v1.json",
+          "sha256": "e74a7f8538d81dda58bae40c881751010b73600afa92b6059e560f77116d87f0",
+          "bytes": 1996
+        }
+      ],
+      "source_bindings": ["HIRC-I022", "HIRC-I023", "HIRC-I024", "HIRC-REVISION-MAP-CULTURAL-COMMONS-001", "HIRC-CONTRACT-CANDIDATES-001", "HIRC-M03-STONE-REGISTER-001"],
+      "limits": "Eight design threats bind assets, actors, paths, consequences, controls, detection, containment, recovery, residuals and future S011 fixtures; seven deterministic adverse mutations and two valid positive controls pass, but completeness, implementation, runtime enforcement, privacy, consent, accessibility, cultural benefit and peer review remain unproven",
+      "next_action": "M03-S011 implements the declared adverse/positive cultural-control fixtures before evaluation design or integration"
+    },
+    {
       "id": "HIRC-MASTER-DRAFT-BUNDLE-001",
       "kind": "integrated_master_and_requirements_working_draft_bundle",
       "path": "drafts/README.md",
@@ -1757,8 +1781,8 @@
         },
         {
           "path": "drafts/hirc_threat_model_v1_0-draft.md",
-          "sha256": "de2e93a39c08a51c08fcd6bb7612320e4aa7fb54e7d85fa6e60df81ad889bdd0",
-          "bytes": 25669
+          "sha256": "c51ab48edc39e72345421ab3ef64a739117b89ecbbdaa4d6b08da145d7a5b6a4",
+          "bytes": 29910
         }
       ],
       "source_bindings": [
@@ -1780,10 +1804,11 @@
         "HIRC-SOURCE-BINDING-ELDER-001",
         "HIRC-REVISION-MAP-DETERMINISM-001",
         "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
-        "HIRC-AGENTIC-CULTURE-CANDIDATE-001-S1"
+        "HIRC-AGENTIC-CULTURE-CANDIDATE-001-S1",
+        "HIRC-CULTURAL-THREAT-CROSSWALK-001"
       ],
-      "limits": "Integrated working master plus a 237-requirement/144-revision-decision generated requirements pair, while the separate joint decision matrix remains at 127 decisions pending M03-S003/S006; threat/foundation/release/licensing/milestone/stone profiles remain drafts and typed cultural contracts are held by later stones",
-      "next_action": "Complete the separately gated matrix and typed-contract stones, then obtain independent permanent-peer challenge before freezing Master Plan 1.1"
+      "limits": "Integrated working master plus a 237-requirement/144-revision-decision generated requirements pair, while the separate joint decision matrix remains at 139 decisions and M03-S003 is early-review gated; the threat model now carries design-only cultural manipulation/capture controls while foundation/release/licensing/milestone/stone profiles remain drafts",
+      "next_action": "Complete M03-S011/S012 fixtures and evaluation, reconcile the integrated packet, then obtain independent permanent-peer challenge before freezing Master Plan 1.1"
     },
     {
       "id": "HIRC-REVIEW-INDEX-001",
@@ -1791,8 +1816,8 @@
       "path": "review/README.md",
       "status": "ACTIVE",
       "governed_scope": "internal_design_review",
-      "sha256": "f325c7922624468a4346ee17439597afee81b5dab883890fc9afb5014515d731",
-      "bytes": 9213,
+      "sha256": "87331de6d218a80e4c833d4b57c7f03ee5bf340be4265cd665f90aca5518c8ad",
+      "bytes": 9413,
       "next_action": "Link the accepted consensus and final revisions when created"
     }
   ],

@@ -1,0 +1,76 @@
+{
+  "schema": "hirc.cultural-threat-control-crosswalk-validation/1",
+  "stone": "M03-S010",
+  "source": {
+    "path": "review/cultural-threat-control-crosswalk-v1.json",
+    "sha256": "b999ecb1ecee98ffc94460f1dd4bd32fb19bcdcab2c359dbca380d03184057f5"
+  },
+  "validator": {
+    "path": "review/fixtures/validate_cultural_threat_crosswalk.py",
+    "sha256": "d194e3d2ee4e9abb0f10c5dae63527e354fc5c78538c2b4c77b8ba5efdf5a904"
+  },
+  "positive": {
+    "accepted": true,
+    "errors": []
+  },
+  "adverse": [
+    {
+      "name": "missing_detection",
+      "expected_error": "detection",
+      "errors": [
+        "CULT-T01:detection"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "missing_recovery",
+      "expected_error": "recovery",
+      "errors": [
+        "CULT-T02:recovery"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "cultural_authority_promotion",
+      "expected_error": "authority-effect",
+      "errors": [
+        "authority-effect"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "hidden_contextual_default",
+      "expected_error": "CULT-PC01:visible",
+      "errors": [
+        "CULT-PC01:visible"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "safety_denial_on_culture",
+      "expected_error": "CULT-PC02:cultural-condition",
+      "errors": [
+        "CULT-PC02:cultural-condition"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "bridge_threat_omitted",
+      "expected_error": "threat-coverage",
+      "errors": [
+        "threat-coverage"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "requirement_gap",
+      "expected_error": "requirement-coverage",
+      "errors": [
+        "requirement-coverage"
+      ],
+      "rejected": true
+    }
+  ],
+  "all_adverse_rejected": true,
+  "claim": "Deterministic field, identity, reference and positive-control validation only; not complete threat coverage, implementation, runtime enforcement, consent, privacy, accessibility, cultural benefit or peer review."
+}
