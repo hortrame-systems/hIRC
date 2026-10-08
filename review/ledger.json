@@ -1381,8 +1381,8 @@
       "members": [
         {
           "path": "milestones/README.md",
-          "sha256": "db6c628c02e6d2ec49634ae7a4c4e8a527e38b2f3f9a88d069da206a048e332f",
-          "bytes": 661
+          "sha256": "1f885a3b356bb4a5ca586d75879321533ebdece3df829b619ffaa3f473a8d498",
+          "bytes": 728
         },
         {
           "path": "milestones/MILESTONE-02D-PUSH-RECEIPT.md",
@@ -1403,9 +1403,17 @@
       "governed_scope": "cumulative_plan_work_through_determinism_and_agentic_culture_intake",
       "sha256": "14f1ee35a50b7c3b17d6d7737da6b95012866fbd3385b74442bede7c37d32135",
       "bytes": 9062,
+      "members": [
+        {
+          "path": "milestones/MILESTONE-02F-PUSH-RECEIPT.md",
+          "sha256": "0e86d3264e6e515d22ac6c10bb9cb13151ab0eee4d51d3bdd59bab384c875084",
+          "bytes": 1476
+        }
+      ],
       "source_bindings": ["HIRC-I021", "HIRC-I022", "HIRC-DETERMINISM-CANDIDATE-001", "HIRC-AGENTIC-CULTURE-CANDIDATE-001", "HIRC-M02E", "HIRC-M02F"],
+      "content_commit": "68c39cd115c9f98cf3cc0a9d6d41f98fd4385032",
       "push_state": "HELD_AFTER_PRIOR_SANDBOX_NETWORK_FAILURE_AND_TWO_INTERRUPTED_ESCALATIONS",
-      "next_action": "Commit the bounded checkpoint locally, record its exact hash, then await authorized push and verify the remote ref"
+      "next_action": "Await authorized push, verify the remote ref, and append an immutable success receipt"
     },
     {
       "id": "HIRC-MASTER-DRAFT-BUNDLE-001",
