@@ -1319,19 +1319,26 @@
       "id": "HIRC-MILESTONE-02D",
       "kind": "cumulative_milestone_git_checkpoint",
       "path": "milestones/MILESTONE-02D.md",
-      "status": "READY_FOR_CONTENT_COMMIT_AND_PUSH",
+      "status": "LOCAL_COMPLETE_PUSH_HELD",
       "governed_scope": "cumulative_plan_work_through_milestone_02d",
-      "sha256": "7548602e1dbd213f9b0f669470e9e96b36e839a17fb767717f639f0f3e221459",
-      "bytes": 14535,
+      "sha256": "4fadcccb403f32c3bd2b1f792b96e5533705cd9a969a79daccc0fd8f6323ff0b",
+      "bytes": 14940,
       "members": [
         {
           "path": "milestones/README.md",
-          "sha256": "f9189b3fc3c0f1ea7e624ed6078b2182ed25c761863aa7f504fd4895baeeca9b",
-          "bytes": 477
+          "sha256": "195ff0c7cab92c10150f1b561db0c6c998afc97575483476b91d9d5dd1b0c1a6",
+          "bytes": 567
+        },
+        {
+          "path": "milestones/MILESTONE-02D-PUSH-RECEIPT.md",
+          "sha256": "68b39d349f878ddfc63ee6c35057f62c5d30069d7dd354779b8bd0efce599476",
+          "bytes": 1457
         }
       ],
       "source_bindings": ["HIRC-I019", "HIRC-I020", "HIRC-M02D", "HIRC-PROJECT-CONTROLLER-G2-COMPLETION"],
-      "next_action": "Create milestone content commit, record receipt, push branch and verify remote ref"
+      "content_commit": "709c4d8",
+      "push_state": "HELD_AFTER_SANDBOX_NETWORK_FAILURE_AND_TWO_INTERRUPTED_ESCALATIONS",
+      "next_action": "Owner approves exact git push or pushes manually; then verify remote ref and append immutable success receipt"
     },
     {
       "id": "HIRC-MASTER-DRAFT-BUNDLE-001",

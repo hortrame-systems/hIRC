@@ -1,11 +1,11 @@
 # Milestone 02D — cumulative hIRC plan checkpoint
 
 **Date:** 2026-10-08  
-**Status at authoring:** READY_FOR_CONTENT_COMMIT_AND_PUSH  
+**Status:** LOCAL_COMPLETE_PUSH_HELD
 **Branch:** `codex/hirc-master-plan-security`  
 **Predecessor Git HEAD:** `36bd2ae6d06fd558ae2d6068c3ae5a964491c0ce`  
-**Milestone content commit:** PENDING  
-**Remote push:** PENDING
+**Milestone content commit:** `709c4d8` (`709c4d8…`)
+**Remote push:** HELD — remote branch not observed
 
 ## 1. Objective and goal
 
@@ -291,11 +291,18 @@ The milestone content commit is the commit containing this report and all
 governed files at this boundary. After it is created, its SHA and observed remote
 push will be recorded in a small completion receipt commit.
 
+The content commit was created locally as `709c4d8`. Sandboxed push failed with
+`getaddrinfo() thread failed to start`. The required unsandboxed `git push`
+approval was interrupted twice before authorization, so no remote update is
+claimed. Exact evidence and repair path are recorded in
+`MILESTONE-02D-PUSH-RECEIPT.md`.
+
 ## 17. Next milestone
 
 1. freeze unread rows as explicit holds or obtain qualified independent/owner
    disposition without fabricating two-peer consensus;
 2. close document-level generation debt and final validations;
-3. create/push the Milestone 02D content and receipt commits; and
+3. obtain actual network approval or a human-performed push for the two local
+   milestone commits and verify the remote ref; and
 4. begin the next implementation milestone only under its accepted enabled
    profile and gates, after first publishing its complete stepping-stone register.

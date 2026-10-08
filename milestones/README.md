@@ -7,5 +7,5 @@ the [milestone protocol](../drafts/hirc_milestone_git_protocol_v0_1-draft.md).
 Earlier milestones were recorded in `review/` but were not individually pushed;
 Milestone 02D is the explicit catch-up Git checkpoint.
 
-- [Milestone 02D — cumulative plan checkpoint](MILESTONE-02D.md)
-
+- [Milestone 02D — cumulative plan checkpoint, local commit/push held](MILESTONE-02D.md)
+- [Milestone 02D push-hold receipt](MILESTONE-02D-PUSH-RECEIPT.md)
