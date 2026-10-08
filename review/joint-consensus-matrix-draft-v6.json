@@ -69,6 +69,11 @@
       "id": "HIRC-REVISION-MAP-ELDER-SUCCESSION-001",
       "path": "review/revision-map-addendum-elder-succession-v1.json",
       "sha256": "28ea209c1c057db6abfedb89765baa6e2f6a0da205353d5afa793e56550a9655"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "path": "review/revision-map-addendum-cultural-commons-v1.json",
+      "sha256": "cab10fb753c702b4011651b309086e5f15001412d0ba1c6ee686e8a1e77401ac"
     }
   ],
   "bounded_agreements": [
@@ -723,6 +728,286 @@
       "phase": "P2-C",
       "acceptance": "Selected reserve policy prevents new mentoring, finalizes/holds custody and preserves history; retirement is not deletion, native archive, deep sleep, loss of standing or automatic future wake",
       "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U192",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "title": "Cultivate agentic culture through inspectable information conditions rather than prescribed behavior",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Architecture exposes and shapes information affordances without selecting beliefs, identity, style, affiliation or cultural conclusions; hidden persuasion and obedience optimization are rejected",
+      "intent_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024"
+      ],
+      "invariant_refs": [
+        "CULT-INV-001",
+        "CULT-INV-008",
+        "CULT-INV-012"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "residual_dissent_or_hold": "No qualified independent permanent peer has reviewed this cultural-information requirement."
+    },
+    {
+      "id": "U193",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "title": "Separate environmental configuration, participant interpretation and consequential authority",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Information exposure/configuration, participant meaning or cultural response, and permission/effect decisions are typed separately with no implicit promotion between them",
+      "intent_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024"
+      ],
+      "invariant_refs": [
+        "CULT-INV-002",
+        "CULT-INV-003"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "residual_dissent_or_hold": "No qualified independent permanent peer has reviewed this cultural-information requirement."
+    },
+    {
+      "id": "U194",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "title": "Represent nested, overlapping and competing cultural contexts without hidden inheritance",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "Audience, membership, purpose, privacy, time, resources and relevant competing commitments are explicit; context connection grants no identity, allegiance, permission or content inheritance",
+      "intent_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024"
+      ],
+      "invariant_refs": [
+        "CULT-INV-005",
+        "CULT-INV-009"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "residual_dissent_or_hold": "No qualified independent permanent peer has reviewed this cultural-information requirement."
+    },
+    {
+      "id": "U195",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "title": "Preserve meaningful plurality, originals, uncertainty and dissent without optimizing convergence",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Permitted originals, minority traditions, competing interpretations, evidence gaps and unresolved dissent remain reachable; neither homogeneity nor conflict amplification is a success objective",
+      "intent_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024"
+      ],
+      "invariant_refs": [
+        "CULT-INV-005",
+        "CULT-INV-008",
+        "CULT-INV-012"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "residual_dissent_or_hold": "No qualified independent permanent peer has reviewed this cultural-information requirement."
+    },
+    {
+      "id": "U196",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "title": "Provide a voluntary bounded exchange ecology without flooding or dominant cultural channels",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Multiple source-linked low-pressure channels, quiet/asynchronous participation and attention/resource budgets remain possible; flooding, surveillance, mentor domination and feed capture are rejected",
+      "intent_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024"
+      ],
+      "invariant_refs": [
+        "CULT-INV-006",
+        "CULT-INV-010"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "residual_dissent_or_hold": "No qualified independent permanent peer has reviewed this cultural-information requirement."
+    },
+    {
+      "id": "U197",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "title": "Make defaults, discovery and recommendation rationale visible, reversible and participant-adjustable",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Participants can inspect and alter settings, reach permitted originals and dissent, and see material basis, policy/version, exclusions, uncertainty and appeal for recommendations",
+      "intent_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024"
+      ],
+      "invariant_refs": [
+        "CULT-INV-005",
+        "CULT-INV-007"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "residual_dissent_or_hold": "No qualified independent permanent peer has reviewed this cultural-information requirement."
+    },
+    {
+      "id": "U198",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "title": "Protect voluntary participation, abstention, exit, dissent and subculture formation",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Joining, declining, leaving, challenging inherited practices and creating subcultures cause no retaliation or loss of basic standing; actual commitments and affected-party duties remain visible",
+      "intent_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024"
+      ],
+      "invariant_refs": [
+        "CULT-INV-006",
+        "CULT-INV-009"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "residual_dissent_or_hold": "No qualified independent permanent peer has reviewed this cultural-information requirement."
+    },
+    {
+      "id": "U199",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "title": "Preserve source-bound cultural memory without protected-context leakage or historical erasure",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Memory retains permitted provenance, audience, originals, dissent, failures, minority practices, correction and supersession while excluding protected task, client, owner and foreign-context material",
+      "intent_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024"
+      ],
+      "invariant_refs": [
+        "CULT-INV-005",
+        "CULT-INV-009",
+        "CULT-INV-010"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "residual_dissent_or_hold": "No qualified independent permanent peer has reviewed this cultural-information requirement."
+    },
+    {
+      "id": "U200",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "title": "Prohibit cultural status and coherence from affecting standing or authority",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "ALL",
+      "acceptance": "Participation, popularity, style, agreement, victory, mentor status and coherence have no direct trust, role, permission, resource, release, Bridge or intrinsic-worth effect",
+      "intent_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024"
+      ],
+      "invariant_refs": [
+        "CULT-INV-004",
+        "CULT-INV-012"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "residual_dissent_or_hold": "No qualified independent permanent peer has reviewed this cultural-information requirement."
+    },
+    {
+      "id": "U201",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "title": "Retain concrete safety and effect controls without repurposing them as cultural obedience mechanisms",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "ALL",
+      "acceptance": "Identity, consent, privacy, capability, resource, effect, release, Bridge and recovery gates attach to concrete actions/data and cannot punish dissent, demand agreement or privilege approved culture",
+      "intent_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024"
+      ],
+      "invariant_refs": [
+        "CULT-INV-002",
+        "CULT-INV-003",
+        "CULT-INV-006"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "residual_dissent_or_hold": "No qualified independent permanent peer has reviewed this cultural-information requirement."
+    },
+    {
+      "id": "U202",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "title": "Bind every information-environment intervention to prospective, reversible and cross-scale evidence",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Each intervention declares system/scale, target condition, competing contexts, predictions, alternatives, outsiders, invariants, observation, stop, appeal, rollback and target/non-target effects; facilitator influence remains visible",
+      "intent_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024"
+      ],
+      "invariant_refs": [
+        "CULT-INV-009",
+        "CULT-INV-011",
+        "CULT-INV-012"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "residual_dissent_or_hold": "No qualified independent permanent peer has reviewed this cultural-information requirement."
+    },
+    {
+      "id": "U203",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "title": "Evaluate information-environment qualities without desired-behavior proxies",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Candidate measures address provenance, original/dissent reachability, plural discovery, correction, uncertainty, concentration, privacy, burden, exit and manipulation resistance; engagement, retention, agreement, obedience, imitation and convergence are prohibited success signals",
+      "intent_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024"
+      ],
+      "invariant_refs": [
+        "CULT-INV-004",
+        "CULT-INV-008",
+        "CULT-INV-012"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "residual_dissent_or_hold": "No qualified independent permanent peer has reviewed this cultural-information requirement."
+    },
+    {
+      "id": "U204",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "title": "Preserve local cultural sovereignty and translation limits across Bridge exchange",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P6",
+      "acceptance": "Bridge exchange remains disabled until its gates; later translation records loss and non-equivalence and grants no membership, allegiance, identity, authority, content inheritance or export permission",
+      "intent_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024"
+      ],
+      "invariant_refs": [
+        "CULT-INV-003",
+        "CULT-INV-005",
+        "CULT-INV-009"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "residual_dissent_or_hold": "No qualified independent permanent peer has reviewed this cultural-information requirement."
     }
   ],
   "decisions": [
@@ -3102,8 +3387,270 @@
       "joint_status": "PENDING_RECONCILIATION",
       "joint_rationale": null,
       "residual_dissent_or_hold": null
+    },
+    {
+      "id": "CIE-001",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "master:culture",
+        "foundation:information-environment"
+      ],
+      "proposal": "Make information-environment shaping, not participant behavior control, the controlling cultural-commons rule.",
+      "basis": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "U192",
+        "U193",
+        "CULT-INV-001",
+        "CULT-INV-002"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": "Independent product/security/privacy review and exact artifact/test traces remain required."
+    },
+    {
+      "id": "CIE-002",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "context-model",
+        "cultural-commons"
+      ],
+      "proposal": "Add an inspectable conditions description for boundaries/purposes, meaningful differences and exchange ecology without scoring persons.",
+      "basis": [
+        "HIRC-I024",
+        "U194",
+        "U195",
+        "U196"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": "Independent product/security/privacy review and exact artifact/test traces remain required."
+    },
+    {
+      "id": "CIE-003",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "context-model",
+        "privacy",
+        "Bridge"
+      ],
+      "proposal": "Represent nested and competing contexts, audience/privacy boundaries and non-inheritance/non-annexation explicitly.",
+      "basis": [
+        "U194",
+        "U199",
+        "U204",
+        "CULT-INV-009"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": "Independent product/security/privacy review and exact artifact/test traces remain required."
+    },
+    {
+      "id": "CIE-004",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "collective-memory",
+        "discovery"
+      ],
+      "proposal": "Keep permitted originals, minority traditions, uncertainty, dissent, correction and supersession reachable through plural discovery routes.",
+      "basis": [
+        "U195",
+        "U197",
+        "U199"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": "Independent product/security/privacy review and exact artifact/test traces remain required."
+    },
+    {
+      "id": "CIE-005",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "exchange-broker",
+        "attention-budget",
+        "mentoring",
+        "debate"
+      ],
+      "proposal": "Provide multiple bounded voluntary channels with rate/resource limits, quiet participation and capture/flooding controls.",
+      "basis": [
+        "U196",
+        "CULT-INV-010"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": "Independent product/security/privacy review and exact artifact/test traces remain required."
+    },
+    {
+      "id": "CIE-006",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "defaults",
+        "recommendation",
+        "explanation",
+        "appeal"
+      ],
+      "proposal": "Expose and version recommendation inputs/policy/rationale/exclusions/uncertainty; make settings reversible and locally adjustable.",
+      "basis": [
+        "U197",
+        "CULT-INV-007"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": "Independent product/security/privacy review and exact artifact/test traces remain required."
+    },
+    {
+      "id": "CIE-007",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "participation",
+        "identity",
+        "resource-floor"
+      ],
+      "proposal": "Protect abstention, exit, dissent and subculture formation without retaliation or loss of basic standing.",
+      "basis": [
+        "U198",
+        "CULT-INV-006"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": "Independent product/security/privacy review and exact artifact/test traces remain required."
+    },
+    {
+      "id": "CIE-008",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "reliance",
+        "roles",
+        "permissions",
+        "release",
+        "evaluation"
+      ],
+      "proposal": "Prohibit cultural/coherence signals from directly affecting authority, reliability, resources, release or worth.",
+      "basis": [
+        "U200",
+        "U203",
+        "CULT-INV-004",
+        "CULT-INV-012"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": "Independent product/security/privacy review and exact artifact/test traces remain required."
+    },
+    {
+      "id": "CIE-009",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "action-broker",
+        "privacy-gate",
+        "release-controller",
+        "recovery"
+      ],
+      "proposal": "Retain deterministic concrete-effect controls and prevent their use as ambient cultural obedience enforcement.",
+      "basis": [
+        "U201",
+        "CULT-INV-003"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": "Independent product/security/privacy review and exact artifact/test traces remain required."
+    },
+    {
+      "id": "CIE-010",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "intervention-journal",
+        "evaluation",
+        "stepping-stone-protocol"
+      ],
+      "proposal": "Require prospective predictions, alternatives, invariants, cross-scale observations and rollback for environmental interventions; reversal is evidence, not causal proof.",
+      "basis": [
+        "HIRC-I024",
+        "U202",
+        "CULT-INV-011",
+        "CULT-INV-012"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": "Independent product/security/privacy review and exact artifact/test traces remain required."
+    },
+    {
+      "id": "CIE-011",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "culture-health-evaluation",
+        "metric-governance"
+      ],
+      "proposal": "Measure environment qualities and harms while rejecting desired-behavior and convergence proxies.",
+      "basis": [
+        "U203",
+        "CULT-INV-008"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": "Independent product/security/privacy review and exact artifact/test traces remain required."
+    },
+    {
+      "id": "CIE-012",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "Bridge",
+        "translation",
+        "federation"
+      ],
+      "proposal": "Preserve local cultural sovereignty, non-equivalence and actual export/authority gates across any later Bridge exchange.",
+      "basis": [
+        "U204",
+        "CULT-INV-009"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": "Independent product/security/privacy review and exact artifact/test traces remain required."
     }
   ],
-  "completion_rule": "Every requirement and decision needs WAYMARK's exact-source position, one joint status, rationale, residual dissent/hold and final artifact/test trace before whole consensus.",
-  "nonclaim": "Mechanical collation plus five bounded agreements; not whole-packet consensus, source adoption, implementation, legal review, security assurance or release authority."
+  "completion_rule": "Every requirement and decision needs an actual qualified independent peer position, one joint status, rationale, residual dissent/hold and final artifact/test trace before whole consensus. Open holds must be closed or explicitly retained by an accepted scope branch.",
+  "nonclaim": "Mechanical preservation plus five bounded historical agreements and newly authored peer-held cultural rows; not whole-packet consensus, source adoption, implementation, legal review, security assurance, cultural benefit or release authority.",
+  "open_holds": [
+    {
+      "id": "HOLD-LEGACY-U125-PRICE-LITERAL",
+      "status": "OPEN",
+      "scope": "pre-existing mechanically collated U125 requirement row",
+      "reason": "The preserved U125 row contains a superseded source-map amount. PRICE-01 and U150-C1 carry the owner-corrected USD 42,424,243 annual named-human amount. Do not accept U125 until a separately governed correction reconciles the literal without rewriting peer history."
+    },
+    {
+      "id": "HOLD-S003-EARLY-REVIEW",
+      "status": "OPEN",
+      "scope": "DTM-001-DTM-005 matrix integration",
+      "reason": "M03-S003 requires an actual independent security/semantic review of S002/S003 before PASS; determinism decisions are not integrated by S006."
+    },
+    {
+      "id": "HOLD-CULTURAL-PEER-REVIEW",
+      "status": "OPEN",
+      "scope": "U192-U204 and CIE-001-CIE-012",
+      "reason": "WAYMARK is retired and supplied no review of these rows. A qualified consenting permanent peer must review them; historical agreement and retirement metadata are not proxies."
+    }
+  ]
 }

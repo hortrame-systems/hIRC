@@ -1,0 +1,83 @@
+{
+  "schema": "hirc.cultural-matrix-integration-validation/1",
+  "stone": "M03-S006",
+  "before": {
+    "git_ref": "75a173eb12dd13afa6805ed51c2c0944e0ec44e7",
+    "json_sha256": "b20a035bcde2f0891ba1be1b5f4e75994ebce0e297eb3f41bde4f3461c9d7606",
+    "requirements": 67,
+    "decisions": 127
+  },
+  "after": {
+    "json_sha256": "dc788b19c113d295b18227a8cb801a48d8b377d245cf41e8b3a8eeebbec9e3f7",
+    "requirements": 80,
+    "decisions": 139,
+    "open_holds": 3
+  },
+  "generator": {
+    "path": "review/integrate_cultural_decisions_matrix.py",
+    "sha256": "e58ab534561b69c6d09a911fc17128dcbc67cb7b1eb1b84606ab238e30db923a"
+  },
+  "cultural_map": {
+    "path": "review/revision-map-addendum-cultural-commons-v1.json",
+    "sha256": "cab10fb753c702b4011651b309086e5f15001412d0ba1c6ee686e8a1e77401ac"
+  },
+  "positive": {
+    "accepted": true,
+    "errors": []
+  },
+  "adverse": [
+    {
+      "name": "candidate_presented_as_consensus",
+      "expected_error": "decision-peer-hold-or-basis:CIE-001",
+      "errors": [
+        "decision-peer-hold-or-basis:CIE-001"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "missing_dissent_hold",
+      "expected_error": "decision-peer-hold-or-basis:CIE-001",
+      "errors": [
+        "decision-peer-hold-or-basis:CIE-001"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "overwritten_peer_owned_decision",
+      "expected_error": "peer-owned-drift:decisions",
+      "errors": [
+        "peer-owned-drift:decisions"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "orphan_decision_basis",
+      "expected_error": "decision-peer-hold-or-basis:CIE-001",
+      "errors": [
+        "decision-peer-hold-or-basis:CIE-001",
+        "decision-requirement-coverage"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "duplicate_decision_id",
+      "expected_error": "duplicate-decision-id",
+      "errors": [
+        "duplicate-decision-id",
+        "new-decision-set"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "missing_price_conflict_hold",
+      "expected_error": "open-hold-set",
+      "errors": [
+        "open-hold-set",
+        "price-conflict-hold"
+      ],
+      "rejected": true
+    }
+  ],
+  "all_adverse_rejected": true,
+  "claim": "Exact peer-held U192-U204/CIE-001-CIE-012 matrix collation, predecessor immutability, source/basis closure and explicit open holds only; not peer consensus, correction of inherited rows, implementation or runtime evidence."
+}

@@ -66,6 +66,8 @@ contains commands or scripts.
 - [Joint consensus decision-matrix draft 4 — preserved predecessor](joint-consensus-matrix-draft-v4.json)
 - [Joint consensus decision-matrix draft 5 — preserved predecessor](joint-consensus-matrix-draft-v5.json)
 - [Joint consensus decision-matrix draft 6 — current intake](joint-consensus-matrix-draft-v6.json)
+- [Cultural-decision matrix integrator](integrate_cultural_decisions_matrix.py)
+- [Cultural-decision matrix integration validation](fixtures/cultural-matrix-integration-validation.json)
 - [Master Plan 1.0 → 1.1 predecessor crosswalk draft](predecessor-crosswalk-draft-v1.md)
 - [Canonical intent-to-revision coverage draft](intent-coverage-draft-v1.md)
 - [Candidate onboarding and successor contracts](contracts/README.md)

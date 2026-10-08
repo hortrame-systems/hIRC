@@ -2,7 +2,7 @@
   "schema": "hirc.stone-register/1",
   "milestone_id": "HIRC-M03",
   "title": "Determinism and cultural information-environment integration",
-  "status": "STONE_005_PASS_S003_REVIEW_OPEN_S006_S007_READY",
+  "status": "STONE_006_PASS_S003_REVIEW_OPEN_S007_READY",
   "created_on": "2026-10-08",
   "control": {
     "goal_ref": "HIRC-GOAL-VERSION-002",
@@ -176,7 +176,7 @@
     {
       "id": "M03-S006",
       "outcome": "Integrate cultural information-environment decisions into the joint matrix without claiming peer consensus.",
-      "status": "READY",
+      "status": "PASS",
       "prerequisites": ["M03-S005"],
       "owner": "current_project_controller",
       "canonical_writer": "current_project_controller",

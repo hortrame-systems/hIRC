@@ -951,19 +951,38 @@
     },
     {
       "id": "HIRC-JOINT-CONSENSUS-DRAFT-006",
-      "kind": "mechanically_collated_peer_consensus_matrix_draft",
+      "kind": "mechanically_collated_peer_consensus_matrix_draft_with_explicit_open_holds",
       "path": "review/joint-consensus-matrix-draft-v6.json",
       "status": "DRAFT_PENDING_WHOLE_PACKET_RECONCILIATION",
       "governed_scope": "internal_joint_design_review",
-      "sha256": "7daf54c02f4104e048ef9ff1ac5e1e564ff113e4ce715dcd26c92e61f78930e0",
-      "bytes": 136892,
+      "sha256": "dc788b19c113d295b18227a8cb801a48d8b377d245cf41e8b3a8eeebbec9e3f7",
+      "bytes": 157025,
+      "members": [
+        {
+          "path": "review/integrate_cultural_decisions_matrix.py",
+          "sha256": "e58ab534561b69c6d09a911fc17128dcbc67cb7b1eb1b84606ab238e30db923a",
+          "bytes": 5438
+        },
+        {
+          "path": "review/fixtures/validate_cultural_matrix_integration.py",
+          "sha256": "092b491e30d92e32008d04cd1491367e6736513a715f790b912cc45b4964268d",
+          "bytes": 8866
+        },
+        {
+          "path": "review/fixtures/cultural-matrix-integration-validation.json",
+          "sha256": "4818bbd9ffc913d635ecc4cc1868ae680742a62063a1a13bac5dc15da0d2a6e5",
+          "bytes": 2457
+        }
+      ],
       "source_bindings": [
         "HIRC-JOINT-CONSENSUS-DRAFT-005",
         "HIRC-REVISION-MAP-ELDER-SUCCESSION-001",
-        "HIRC-SOURCE-BINDING-ELDER-001"
+        "HIRC-SOURCE-BINDING-ELDER-001",
+        "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+        "HIRC-M03-STONE-REGISTER-001"
       ],
-      "limits": "Mechanical collation of 67 requirements and 127 revision decisions; WST/GoalVersion2 and IB rows are bounded agreements while Elder and remaining whole consensus are pending",
-      "next_action": "WAYMARK continues exact packet positions; both reviewers freeze rationale, dissent/holds and final artifact/test traces"
+      "limits": "Mechanical preservation of 67 requirements/127 decisions plus 13 cultural requirements/12 cultural decisions held for independent review; five historical bounded agreements remain, three explicit holds remain open, DTM rows are not integrated, and no whole consensus or inherited correction is claimed",
+      "next_action": "A qualified independent peer reviews the cultural rows; separately resolve the early S003 review and legacy U125 price-literal hold without rewriting peer history"
     },
     {
       "id": "HIRC-PREDECESSOR-CROSSWALK-DRAFT-001",
@@ -1465,15 +1484,15 @@
       "id": "HIRC-M03-STONE-REGISTER-001",
       "kind": "tiny_stone_dependency_register_and_deterministic_gate_evidence",
       "path": "review/milestone-03-stone-register.json",
-      "status": "STONE_005_PASS_S003_REVIEW_OPEN_S006_S007_READY",
+      "status": "STONE_006_PASS_S003_REVIEW_OPEN_S007_READY",
       "governed_scope": "milestone_03_determinism_and_cultural_information_environment_integration",
-      "sha256": "21ab25e30faaab4215729d94b0a33e1899b1bd9b34d8fb77e43447ce2004b2f5",
-      "bytes": 24855,
+      "sha256": "cf814b95f4b9da6b8165c218087c1c1194d428edabecd125f3b9003adc7d51fd",
+      "bytes": 24849,
       "members": [
         {
           "path": "review/milestone-03-stone-register.md",
-          "sha256": "628630df7036b0196690c039443f3b8900223fc7df98e111a8e9f8d21ce82626",
-          "bytes": 3867
+          "sha256": "53db7765cf4907aa9d9ee37f68aae7d47d8a305dcb88ded32ead94fe5a16047d",
+          "bytes": 3861
         },
         {
           "path": "review/fixtures/validate_milestone_03_stone_register.py",
@@ -1482,13 +1501,13 @@
         },
         {
           "path": "review/fixtures/milestone-03-stone-register-validation.json",
-          "sha256": "144f31e14717d571583f5b02dead7a9ece98955a282b62be669769c54b5043bd",
+          "sha256": "74b8a16170f1f61a8f2c3e7c47687a179192c5cd0d2e09c1b62c99ea9a51f4cb",
           "bytes": 2047
         }
       ],
       "source_bindings": ["HIRC-I019", "HIRC-I020", "HIRC-I021", "HIRC-I022", "HIRC-I023", "HIRC-I024", "HIRC-STEPPING-STONE-PROTOCOL-001"],
       "limits": "Stone 001 mechanically validates graph/field/gate invariants and six adverse mutations; it does not prove semantic correctness, implementation, peer consensus or runtime behavior",
-      "next_action": "Choose M03-S006 cultural-decision matrix integration or M03-S007 typed provenance contract; M03-S003 remains READY but cannot PASS without early independent review"
+      "next_action": "Begin only M03-S007 typed provenance contract while M03-S003 remains review-gated; later matrix-dependent stones remain gated"
     },
     {
       "id": "HIRC-MILESTONE-02D",
@@ -1710,8 +1729,8 @@
       "path": "review/README.md",
       "status": "ACTIVE",
       "governed_scope": "internal_design_review",
-      "sha256": "be31a9db259eefd72f164ef5c2fcbbcf1f5cf643833be8522ad8061d7362d065",
-      "bytes": 9027,
+      "sha256": "f325c7922624468a4346ee17439597afee81b5dab883890fc9afb5014515d731",
+      "bytes": 9213,
       "next_action": "Link the accepted consensus and final revisions when created"
     }
   ],

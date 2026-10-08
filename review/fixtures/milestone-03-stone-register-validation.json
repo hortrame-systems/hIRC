@@ -2,7 +2,7 @@
   "schema": "hirc.stone-register-validation/1",
   "register": {
     "path": "review/milestone-03-stone-register.json",
-    "sha256": "21ab25e30faaab4215729d94b0a33e1899b1bd9b34d8fb77e43447ce2004b2f5"
+    "sha256": "cf814b95f4b9da6b8165c218087c1c1194d428edabecd125f3b9003adc7d51fd"
   },
   "validator": {
     "path": "review/fixtures/validate_milestone_03_stone_register.py",
