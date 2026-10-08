@@ -1,0 +1,125 @@
+{
+  "schema": "hirc.cultural-artifact-contract-validation/1",
+  "stone": "M03-S007",
+  "schema_binding": {
+    "path": "review/contracts/hirc-cultural-artifact.candidate.schema.json",
+    "sha256": "0f8eb54d369ce184fe2b635a7481d95cd30e6f78ebb63b77ad2bd0c6dcdd4ed3"
+  },
+  "fixture_binding": {
+    "path": "review/fixtures/cultural-artifact-contract-cases-v1.json",
+    "sha256": "64de5641121e9a9d62325e243da40c246f658dec69d8e6a5bba4656de2e59d41"
+  },
+  "harness_binding": {
+    "path": "review/fixtures/validate_cultural_artifact_contract.ps1",
+    "sha256": "d22ed791697cf3cea5ba09e5c355f3b4c5e1a7d4cb2eec5ebad53582847157af"
+  },
+  "runtime": {
+    "powershell": "7.6.5",
+    "test_json_module": "7.0.0.0"
+  },
+  "cases": [
+    {
+      "name": "positive_candidate",
+      "expected_structural": "ACCEPT",
+      "actual_structural": "ACCEPT",
+      "expected_semantic": "ACCEPT",
+      "actual_semantic": "ACCEPT",
+      "structural_error_count": 0,
+      "structural_errors": [],
+      "semantic_errors": [],
+      "pass": true
+    },
+    {
+      "name": "positive_corrected",
+      "expected_structural": "ACCEPT",
+      "actual_structural": "ACCEPT",
+      "expected_semantic": "ACCEPT",
+      "actual_semantic": "ACCEPT",
+      "structural_error_count": 0,
+      "structural_errors": [],
+      "semantic_errors": [],
+      "pass": true
+    },
+    {
+      "name": "protected_source_leak",
+      "expected_structural": "REJECT",
+      "actual_structural": "REJECT",
+      "expected_semantic": "NOT_RUN",
+      "actual_semantic": "NOT_RUN",
+      "structural_error_count": 2,
+      "structural_errors": [
+        "The JSON is not valid with the schema: Expected \"\\u0022CORRECTED\\u0022\" at '/state'",
+        "The JSON is not valid with the schema: Expected \"\\u0022SUPERSEDED\\u0022\" at '/state'"
+      ],
+      "semantic_errors": [],
+      "pass": true
+    },
+    {
+      "name": "provenance_stripping",
+      "expected_structural": "REJECT",
+      "actual_structural": "REJECT",
+      "expected_semantic": "NOT_RUN",
+      "actual_semantic": "NOT_RUN",
+      "structural_error_count": 4,
+      "structural_errors": [
+        "The JSON is not valid with the schema: Required properties [\"provenance\"] are not present at ''",
+        "The JSON is not valid with the schema: Expected \"\\u0022CORRECTED\\u0022\" at '/state'",
+        "The JSON is not valid with the schema: Expected \"\\u0022SUPERSEDED\\u0022\" at '/state'",
+        "The JSON is not valid with the schema: Expected \"\\u0022PROTECTED\\u0022\" at '/context/privacy_class'"
+      ],
+      "semantic_errors": [],
+      "pass": true
+    },
+    {
+      "name": "dissent_erasure",
+      "expected_structural": "ACCEPT",
+      "actual_structural": "ACCEPT",
+      "expected_semantic": "REJECT",
+      "actual_semantic": "REJECT",
+      "structural_error_count": 0,
+      "structural_errors": [],
+      "semantic_errors": [
+        "dissent-erasure"
+      ],
+      "pass": true
+    },
+    {
+      "name": "destructive_correction",
+      "expected_structural": "REJECT",
+      "actual_structural": "REJECT",
+      "expected_semantic": "NOT_RUN",
+      "actual_semantic": "NOT_RUN",
+      "structural_error_count": 3,
+      "structural_errors": [
+        "The JSON is not valid with the schema: Expected \"true\" at '/correction/preserves_predecessor'",
+        "The JSON is not valid with the schema: Expected \"\\u0022SUPERSEDED\\u0022\" at '/state'",
+        "The JSON is not valid with the schema: Expected \"\\u0022PROTECTED\\u0022\" at '/context/privacy_class'"
+      ],
+      "semantic_errors": [],
+      "pass": true
+    },
+    {
+      "name": "authority_coupling",
+      "expected_structural": "REJECT",
+      "actual_structural": "REJECT",
+      "expected_semantic": "NOT_RUN",
+      "actual_semantic": "NOT_RUN",
+      "structural_error_count": 4,
+      "structural_errors": [
+        "The JSON is not valid with the schema: Expected \"\\u0022NONE\\u0022\" at '/authority_effect'",
+        "The JSON is not valid with the schema: Expected \"\\u0022CORRECTED\\u0022\" at '/state'",
+        "The JSON is not valid with the schema: Expected \"\\u0022SUPERSEDED\\u0022\" at '/state'",
+        "The JSON is not valid with the schema: Expected \"\\u0022PROTECTED\\u0022\" at '/context/privacy_class'"
+      ],
+      "semantic_errors": [],
+      "pass": true
+    }
+  ],
+  "all_cases_pass": true,
+  "corrections": [
+    "The first harness run collapsed an empty patched dissent array to null through PowerShell pipeline enumeration, causing structural rejection before the intended semantic dissent-erasure check.",
+    "The first repair wrapped scalar patch values and did not reliably delete a property. Patch application now clones the patch property internally with ConvertFrom-Json -NoEnumerate and verifies deletion."
+  ],
+  "protected_real_bodies_used": false,
+  "claim": "Synthetic structural and bounded semantic contract behavior only; not actual privacy enforcement, consent, qualification, cultural benefit, peer consensus or runtime evidence."
+}
