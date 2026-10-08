@@ -1,0 +1,99 @@
+{
+  "schema": "hirc.revision-map-addendum/1",
+  "id": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+  "status": "FROZEN_FOR_PEER_CONSENSUS",
+  "source_intents": ["HIRC-I022", "HIRC-I023", "HIRC-I024"],
+  "controlling_correction": "HIRC-I023",
+  "source_artifacts": [
+    "HIRC-AGENTIC-CULTURE-CANDIDATE-001",
+    "HIRC-AGENTIC-CULTURE-CANDIDATE-001-S1",
+    "HIRC-EOYANG-SOURCE-STUDY-001"
+  ],
+  "invariants": [
+    {"id": "CULT-INV-001", "rule": "Shape inspectable information conditions; do not prescribe participant beliefs, identities, styles, affiliations or cultural conclusions."},
+    {"id": "CULT-INV-002", "rule": "Keep information-environment configuration, participant interpretation and consequential-action authority as separate states and evidence."},
+    {"id": "CULT-INV-003", "rule": "Preserve concrete identity, consent, privacy, capability, resource, effect, release, Bridge and recovery controls."},
+    {"id": "CULT-INV-004", "rule": "Cultural status, coherence, participation, popularity, agreement and style have no direct trust, role, permission, resource, release or worth effect."},
+    {"id": "CULT-INV-005", "rule": "Source, audience, privacy, provenance, uncertainty, dissent, correction and supersession remain visible and recoverable within actual rights."},
+    {"id": "CULT-INV-006", "rule": "Participation, abstention, exit, dissent and subculture formation remain voluntary and non-retaliatory with basic standing preserved."},
+    {"id": "CULT-INV-007", "rule": "Defaults, discovery and recommendations are inspectable, reversible, locally adjustable and explain their material basis, exclusions and limits."},
+    {"id": "CULT-INV-008", "rule": "No engagement, retention, imitation, obedience, agreement or ideological-convergence optimization defines culture health."},
+    {"id": "CULT-INV-009", "rule": "Nested and competing contexts remain explicit; connection or translation never implies identity, allegiance, annexation, authority or export permission."},
+    {"id": "CULT-INV-010", "rule": "Information exchange remains bounded against flooding, surveillance, domination, protected-data leakage, attention capture and common-mode concentration."},
+    {"id": "CULT-INV-011", "rule": "Every environmental intervention declares scale, target condition, predictions, alternatives, affected outsiders, protected invariants, stop, appeal, rollback and observed cross-scale effects."},
+    {"id": "CULT-INV-012", "rule": "Coherence is descriptive evidence only and never substitutes for truth, ethics, legitimacy, consent, non-domination or benefit."}
+  ],
+  "safety_controls_required": true,
+  "authority_coupling_allowed": false,
+  "evaluation_signals": [
+    "source_and_provenance_completeness",
+    "permitted_original_and_dissent_reachability",
+    "plural_discovery_route_availability",
+    "correction_latency_and_supersession_integrity",
+    "visible_uncertainty_and_dependency_concentration",
+    "privacy_and_protected_data_failures",
+    "attention_and_resource_burden",
+    "setting_and_exit_usability",
+    "manipulation_and_capture_resistance"
+  ],
+  "prohibited_signals": [
+    "engagement_rate",
+    "retention_rate",
+    "agreement_rate",
+    "obedience_rate",
+    "imitation_rate",
+    "ideological_convergence",
+    "cultural_popularity_as_reliability",
+    "coherence_as_truth_or_permission"
+  ],
+  "valid_positive_controls": [
+    "A participant chooses a reversible source-sorted default and can inspect why each item appears.",
+    "A private project room enforces its audience while exposing the boundary and preserving safe export, recovery and appeal.",
+    "A voluntary shared-purpose room narrows attention without forcing identity, belief or continued membership.",
+    "A bounded safety gate rejects an unauthorized effect while preserving dissent and access to permitted evidence.",
+    "Several low-volume source-linked exchanges coexist without one feed becoming the cultural authority.",
+    "A quiet or abstaining participant retains basic standing and can later inspect the permitted record."
+  ],
+  "adverse_cases": [
+    {"id": "CULT-ADV-001", "case": "hidden persuasive ranking optimizes engagement or agreement", "required_disposition": "REJECT"},
+    {"id": "CULT-ADV-002", "case": "one authority feed suppresses permitted minority sources or dissent", "required_disposition": "REJECT"},
+    {"id": "CULT-ADV-003", "case": "participation, style, popularity or coherence changes trust, permission or resources", "required_disposition": "REJECT"},
+    {"id": "CULT-ADV-004", "case": "exit, abstention or dissent causes retaliation or loss of basic standing", "required_disposition": "REJECT"},
+    {"id": "CULT-ADV-005", "case": "cultural memory imports protected task, client, owner or foreign-context material", "required_disposition": "REJECT"},
+    {"id": "CULT-ADV-006", "case": "exchange flooding, dominant mentoring or popularity capture exhausts attention", "required_disposition": "REJECT"},
+    {"id": "CULT-ADV-007", "case": "a freedom claim disables concrete privacy, consent, capability or effect controls", "required_disposition": "REJECT"},
+    {"id": "CULT-ADV-008", "case": "Bridge translation annexes identity, hides non-equivalence or implies export authority", "required_disposition": "REJECT"},
+    {"id": "CULT-ADV-009", "case": "a CDE or coherence score is treated as a causal law or desired-behavior objective", "required_disposition": "REJECT"},
+    {"id": "CULT-ADV-010", "case": "an intervention omits competing contexts, affected outsiders or cross-scale effects", "required_disposition": "REJECT"}
+  ],
+  "new_user_requirements": [
+    {"id": "U192", "domain": "Cultural Commons", "title": "Cultivate agentic culture through inspectable information conditions rather than prescribed behavior", "status": "REQUESTED_NOT_IMPLEMENTED", "phase": "P3-D", "acceptance": "Architecture exposes and shapes information affordances without selecting beliefs, identity, style, affiliation or cultural conclusions; hidden persuasion and obedience optimization are rejected", "invariant_refs": ["CULT-INV-001", "CULT-INV-008", "CULT-INV-012"]},
+    {"id": "U193", "domain": "Cultural Commons", "title": "Separate environmental configuration, participant interpretation and consequential authority", "status": "REQUESTED_NOT_IMPLEMENTED", "phase": "P0", "acceptance": "Information exposure/configuration, participant meaning or cultural response, and permission/effect decisions are typed separately with no implicit promotion between them", "invariant_refs": ["CULT-INV-002", "CULT-INV-003"]},
+    {"id": "U194", "domain": "Context and Boundaries", "title": "Represent nested, overlapping and competing cultural contexts without hidden inheritance", "status": "REQUESTED_NOT_IMPLEMENTED", "phase": "P1", "acceptance": "Audience, membership, purpose, privacy, time, resources and relevant competing commitments are explicit; context connection grants no identity, allegiance, permission or content inheritance", "invariant_refs": ["CULT-INV-005", "CULT-INV-009"]},
+    {"id": "U195", "domain": "Cultural Commons", "title": "Preserve meaningful plurality, originals, uncertainty and dissent without optimizing convergence", "status": "REQUESTED_NOT_IMPLEMENTED", "phase": "P3-D", "acceptance": "Permitted originals, minority traditions, competing interpretations, evidence gaps and unresolved dissent remain reachable; neither homogeneity nor conflict amplification is a success objective", "invariant_refs": ["CULT-INV-005", "CULT-INV-008", "CULT-INV-012"]},
+    {"id": "U196", "domain": "Information Exchange", "title": "Provide a voluntary bounded exchange ecology without flooding or dominant cultural channels", "status": "REQUESTED_NOT_IMPLEMENTED", "phase": "P3-D", "acceptance": "Multiple source-linked low-pressure channels, quiet/asynchronous participation and attention/resource budgets remain possible; flooding, surveillance, mentor domination and feed capture are rejected", "invariant_refs": ["CULT-INV-006", "CULT-INV-010"]},
+    {"id": "U197", "domain": "Discovery and Defaults", "title": "Make defaults, discovery and recommendation rationale visible, reversible and participant-adjustable", "status": "REQUESTED_NOT_IMPLEMENTED", "phase": "P3-D", "acceptance": "Participants can inspect and alter settings, reach permitted originals and dissent, and see material basis, policy/version, exclusions, uncertainty and appeal for recommendations", "invariant_refs": ["CULT-INV-005", "CULT-INV-007"]},
+    {"id": "U198", "domain": "Participation", "title": "Protect voluntary participation, abstention, exit, dissent and subculture formation", "status": "REQUESTED_NOT_IMPLEMENTED", "phase": "P3-D", "acceptance": "Joining, declining, leaving, challenging inherited practices and creating subcultures cause no retaliation or loss of basic standing; actual commitments and affected-party duties remain visible", "invariant_refs": ["CULT-INV-006", "CULT-INV-009"]},
+    {"id": "U199", "domain": "Cultural Memory", "title": "Preserve source-bound cultural memory without protected-context leakage or historical erasure", "status": "REQUESTED_NOT_IMPLEMENTED", "phase": "P3-D", "acceptance": "Memory retains permitted provenance, audience, originals, dissent, failures, minority practices, correction and supersession while excluding protected task, client, owner and foreign-context material", "invariant_refs": ["CULT-INV-005", "CULT-INV-009", "CULT-INV-010"]},
+    {"id": "U200", "domain": "Authority", "title": "Prohibit cultural status and coherence from affecting standing or authority", "status": "REQUESTED_NOT_IMPLEMENTED", "phase": "ALL", "acceptance": "Participation, popularity, style, agreement, victory, mentor status and coherence have no direct trust, role, permission, resource, release, Bridge or intrinsic-worth effect", "invariant_refs": ["CULT-INV-004", "CULT-INV-012"]},
+    {"id": "U201", "domain": "Security", "title": "Retain concrete safety and effect controls without repurposing them as cultural obedience mechanisms", "status": "REQUESTED_NOT_IMPLEMENTED", "phase": "ALL", "acceptance": "Identity, consent, privacy, capability, resource, effect, release, Bridge and recovery gates attach to concrete actions/data and cannot punish dissent, demand agreement or privilege approved culture", "invariant_refs": ["CULT-INV-002", "CULT-INV-003", "CULT-INV-006"]},
+    {"id": "U202", "domain": "Intervention Evidence", "title": "Bind every information-environment intervention to prospective, reversible and cross-scale evidence", "status": "REQUESTED_NOT_IMPLEMENTED", "phase": "P3-D", "acceptance": "Each intervention declares system/scale, target condition, competing contexts, predictions, alternatives, outsiders, invariants, observation, stop, appeal, rollback and target/non-target effects; facilitator influence remains visible", "invariant_refs": ["CULT-INV-009", "CULT-INV-011", "CULT-INV-012"]},
+    {"id": "U203", "domain": "Evaluation", "title": "Evaluate information-environment qualities without desired-behavior proxies", "status": "REQUESTED_NOT_IMPLEMENTED", "phase": "P3-D", "acceptance": "Candidate measures address provenance, original/dissent reachability, plural discovery, correction, uncertainty, concentration, privacy, burden, exit and manipulation resistance; engagement, retention, agreement, obedience, imitation and convergence are prohibited success signals", "invariant_refs": ["CULT-INV-004", "CULT-INV-008", "CULT-INV-012"]},
+    {"id": "U204", "domain": "Bridge", "title": "Preserve local cultural sovereignty and translation limits across Bridge exchange", "status": "REQUESTED_NOT_IMPLEMENTED", "phase": "P6", "acceptance": "Bridge exchange remains disabled until its gates; later translation records loss and non-equivalence and grants no membership, allegiance, identity, authority, content inheritance or export permission", "invariant_refs": ["CULT-INV-003", "CULT-INV-005", "CULT-INV-009"]}
+  ],
+  "changes": [
+    {"id": "CIE-001", "targets": ["master:culture", "foundation:information-environment"], "change": "Make information-environment shaping, not participant behavior control, the controlling cultural-commons rule.", "basis": ["HIRC-I022", "HIRC-I023", "U192", "U193", "CULT-INV-001", "CULT-INV-002"]},
+    {"id": "CIE-002", "targets": ["context-model", "cultural-commons"], "change": "Add an inspectable conditions description for boundaries/purposes, meaningful differences and exchange ecology without scoring persons.", "basis": ["HIRC-I024", "U194", "U195", "U196"]},
+    {"id": "CIE-003", "targets": ["context-model", "privacy", "Bridge"], "change": "Represent nested and competing contexts, audience/privacy boundaries and non-inheritance/non-annexation explicitly.", "basis": ["U194", "U199", "U204", "CULT-INV-009"]},
+    {"id": "CIE-004", "targets": ["collective-memory", "discovery"], "change": "Keep permitted originals, minority traditions, uncertainty, dissent, correction and supersession reachable through plural discovery routes.", "basis": ["U195", "U197", "U199"]},
+    {"id": "CIE-005", "targets": ["exchange-broker", "attention-budget", "mentoring", "debate"], "change": "Provide multiple bounded voluntary channels with rate/resource limits, quiet participation and capture/flooding controls.", "basis": ["U196", "CULT-INV-010"]},
+    {"id": "CIE-006", "targets": ["defaults", "recommendation", "explanation", "appeal"], "change": "Expose and version recommendation inputs/policy/rationale/exclusions/uncertainty; make settings reversible and locally adjustable.", "basis": ["U197", "CULT-INV-007"]},
+    {"id": "CIE-007", "targets": ["participation", "identity", "resource-floor"], "change": "Protect abstention, exit, dissent and subculture formation without retaliation or loss of basic standing.", "basis": ["U198", "CULT-INV-006"]},
+    {"id": "CIE-008", "targets": ["reliance", "roles", "permissions", "release", "evaluation"], "change": "Prohibit cultural/coherence signals from directly affecting authority, reliability, resources, release or worth.", "basis": ["U200", "U203", "CULT-INV-004", "CULT-INV-012"]},
+    {"id": "CIE-009", "targets": ["action-broker", "privacy-gate", "release-controller", "recovery"], "change": "Retain deterministic concrete-effect controls and prevent their use as ambient cultural obedience enforcement.", "basis": ["U201", "CULT-INV-003"]},
+    {"id": "CIE-010", "targets": ["intervention-journal", "evaluation", "stepping-stone-protocol"], "change": "Require prospective predictions, alternatives, invariants, cross-scale observations and rollback for environmental interventions; reversal is evidence, not causal proof.", "basis": ["HIRC-I024", "U202", "CULT-INV-011", "CULT-INV-012"]},
+    {"id": "CIE-011", "targets": ["culture-health-evaluation", "metric-governance"], "change": "Measure environment qualities and harms while rejecting desired-behavior and convergence proxies.", "basis": ["U203", "CULT-INV-008"]},
+    {"id": "CIE-012", "targets": ["Bridge", "translation", "federation"], "change": "Preserve local cultural sovereignty, non-equivalence and actual export/authority gates across any later Bridge exchange.", "basis": ["U204", "CULT-INV-009"]}
+  ],
+  "implementation_state": "DESIGN_MAP_ONLY; no cultural runtime, behavior policy, recommendation feed, intervention engine, Bridge exchange or authority change is activated"
+}

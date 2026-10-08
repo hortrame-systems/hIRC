@@ -2,7 +2,7 @@
   "schema": "hirc.stone-register/1",
   "milestone_id": "HIRC-M03",
   "title": "Determinism and cultural information-environment integration",
-  "status": "STONE_002_PASS_DECISION_AND_CULTURE_MAP_READY",
+  "status": "STONE_004_PASS_S003_REVIEW_OPEN_S005_S007_READY",
   "created_on": "2026-10-08",
   "control": {
     "goal_ref": "HIRC-GOAL-VERSION-002",
@@ -135,16 +135,16 @@
       "bounded_scope": ["joint consensus matrix generator", "review/joint-consensus-matrix-draft-v6.json"],
       "positive_controls": ["All five DTM decisions resolve to U186-U191 and HIRC-I021.", "Existing 127 decisions retain identity and disposition."],
       "adverse_cases": ["orphan decision", "changed accepted peer decision", "decision count without exact identity trace"],
-      "required_evidence": ["before/after decision identity diff", "source/target closure report"],
-      "independent_review": "Permanent peer challenges semantics at M03-S014.",
+      "required_evidence": ["before/after decision identity diff", "source/target closure report", "independent security/semantic review of the S002 requirements integration and S003 matrix mapping"],
+      "independent_review": "A qualified independent permanent security/semantic reviewer must assess S002 and the resulting S003 mapping before S003 can PASS. The later integrated product/security/privacy review at M03-S014 remains separately required.",
       "recovery": "Revert only new decision rows and generator changes; retain failed closure evidence.",
-      "stop_condition": "Hold if a decision target is absent, ambiguous or changes bounded prior consensus.",
+      "stop_condition": "Hold if a decision target is absent, ambiguous or changes bounded prior consensus, or if the early independent security/semantic review is missing.",
       "next_eligible": ["M03-S013"]
     },
     {
       "id": "M03-S004",
       "outcome": "Author one cultural-commons revision map that preserves HIRC-I022 and makes HIRC-I023 information-environment shaping its controlling design correction.",
-      "status": "READY",
+      "status": "PASS",
       "prerequisites": ["M03-S002"],
       "owner": "current_project_controller",
       "canonical_writer": "current_project_controller",
@@ -160,7 +160,7 @@
     {
       "id": "M03-S005",
       "outcome": "Integrate accepted cultural information-environment requirements into the canonical requirement generator and readable pair.",
-      "status": "CAPTURED",
+      "status": "READY",
       "prerequisites": ["M03-S004"],
       "owner": "current_project_controller",
       "canonical_writer": "current_project_controller",
@@ -192,7 +192,7 @@
     {
       "id": "M03-S007",
       "outcome": "Define a typed cultural artifact and provenance contract with audience, privacy, originals, dissent, correction and supersession semantics.",
-      "status": "CAPTURED",
+      "status": "READY",
       "prerequisites": ["M03-S004"],
       "owner": "current_project_controller",
       "canonical_writer": "current_project_controller",

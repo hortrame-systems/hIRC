@@ -1,0 +1,70 @@
+{
+  "schema": "hirc.cultural-commons-map-validation/1",
+  "stone": "M03-S004",
+  "map": {
+    "path": "review/revision-map-addendum-cultural-commons-v1.json",
+    "sha256": "cab10fb753c702b4011651b309086e5f15001412d0ba1c6ee686e8a1e77401ac"
+  },
+  "review": {
+    "path": "review/cultural-commons-revision-map-review-v1.md",
+    "sha256": "a5cf3fe55ae8b60abcf4ee643c3e26b4723803e6f51c3aa520b76bf7b86e81f7"
+  },
+  "positive": {
+    "accepted": true,
+    "errors": []
+  },
+  "adverse": [
+    {
+      "name": "duplicate_requirement",
+      "expected_error": "requirement-set",
+      "errors": [
+        "requirement-set"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "missing_controlling_intent",
+      "expected_error": "source-intent-control",
+      "errors": [
+        "source-intent-control"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "missing_environment_invariant",
+      "expected_error": "invariant-set",
+      "errors": [
+        "invariant-coverage",
+        "invariant-set",
+        "requirement-invariant:U192"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "behavior_outcome_metric",
+      "expected_error": "behavior-outcome-signal",
+      "errors": [
+        "behavior-outcome-signal"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "safety_controls_optional",
+      "expected_error": "safety-controls",
+      "errors": [
+        "safety-controls"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "culture_authority_coupling",
+      "expected_error": "authority-coupling",
+      "errors": [
+        "authority-coupling"
+      ],
+      "rejected": true
+    }
+  ],
+  "all_adverse_rejected": true,
+  "claim": "Structural/source/invariant/adverse-map validation only; not peer consensus, implementation, behavioral freedom, cultural benefit or runtime evidence."
+}

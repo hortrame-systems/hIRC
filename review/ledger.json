@@ -800,6 +800,35 @@
       "next_action": "Successor integrates U186-U191 and DTM-001–005 into requirements, matrix and stepping-stone roadmap"
     },
     {
+      "id": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "kind": "revision_map_addendum_with_adversarial_design_review",
+      "path": "review/revision-map-addendum-cultural-commons-v1.json",
+      "status": "PASS_AUTHOR_MAP_SCOPE_PEER_CONSENSUS_AND_RUNTIME_HELD",
+      "governed_scope": "cultural_commons_information_environment_participation_memory_authority_and_bridge",
+      "sha256": "cab10fb753c702b4011651b309086e5f15001412d0ba1c6ee686e8a1e77401ac",
+      "bytes": 15380,
+      "members": [
+        {
+          "path": "review/cultural-commons-revision-map-review-v1.md",
+          "sha256": "a5cf3fe55ae8b60abcf4ee643c3e26b4723803e6f51c3aa520b76bf7b86e81f7",
+          "bytes": 4882
+        },
+        {
+          "path": "review/fixtures/validate_cultural_commons_map.py",
+          "sha256": "4be0d90aaa559aad49a5ac11c4bf9fc072009d3e7cee795912bdd853023d5aa1",
+          "bytes": 6422
+        },
+        {
+          "path": "review/fixtures/cultural-commons-map-validation.json",
+          "sha256": "84456bcf9293734edce71bd92cc2104741ef113bd37b9e680f0d7bde5ed5ee6a",
+          "bytes": 1834
+        }
+      ],
+      "source_bindings": ["HIRC-I022", "HIRC-I023", "HIRC-I024", "HIRC-AGENTIC-CULTURE-CANDIDATE-001", "HIRC-AGENTIC-CULTURE-CANDIDATE-001-S1", "HIRC-EOYANG-SOURCE-STUDY-001"],
+      "limits": "Thirteen requirements, twelve decisions and twelve invariants are authored and structurally/adversarially checked; no independent product/security/privacy/statistical/accessibility review, requirements integration, runtime behavior or peer consensus is claimed",
+      "next_action": "Integrate the map through separately gated requirements and typed-contract stones; preserve independent peer review before consensus"
+    },
+    {
       "id": "HIRC-JOINT-CONSENSUS-DRAFT-001",
       "kind": "mechanically_collated_peer_consensus_matrix_draft",
       "path": "review/joint-consensus-matrix-draft-v1.json",
@@ -961,13 +990,13 @@
       "path": "review/intent-coverage-draft-v1.md",
       "status": "PASS_REFERENCE_AND_FILE_PRESENCE_SCOPE_FINAL_CLOSURE_PENDING",
       "governed_scope": "project_intent_continuity",
-      "sha256": "b6d1e7a20f58da8661e848b10175fe3fcd43778618d237f081406dc98b86e3b6",
-      "bytes": 3503,
+      "sha256": "b07d9017e72ea1e39d1cc5917ecf0a2a1f864bd69dfbfeac5fe36ede9476d8b6",
+      "bytes": 3578,
       "members": [
         {
           "path": "review/intent-coverage-draft-v1.json",
-          "sha256": "831cfc3e460db89266ec0e77372a214fb87a11809d18c3a77864222a0ad5d49f",
-          "bytes": 22963
+          "sha256": "d585469a38ecfd3398e2552d5f9f59b213fae459a451b6cc983720fb2773077b",
+          "bytes": 23333
         }
       ],
       "source_bindings": ["HIRC-INTENT-001", "HIRC-JOINT-CONSENSUS-DRAFT-005"],
@@ -1436,15 +1465,15 @@
       "id": "HIRC-M03-STONE-REGISTER-001",
       "kind": "tiny_stone_dependency_register_and_deterministic_gate_evidence",
       "path": "review/milestone-03-stone-register.json",
-      "status": "STONE_002_PASS_DECISION_AND_CULTURE_MAP_READY",
+      "status": "STONE_004_PASS_S003_REVIEW_OPEN_S005_S007_READY",
       "governed_scope": "milestone_03_determinism_and_cultural_information_environment_integration",
-      "sha256": "b4a613d44f0de0e0b024aef0aea8bd68a5e5c56d4346d0cf3b27cf2e27bffd2f",
-      "bytes": 24522,
+      "sha256": "8e5d5d3880c02b76ad20248b574dbb7fbc9460eb211e5318e57d3edf50224cc6",
+      "bytes": 24859,
       "members": [
         {
           "path": "review/milestone-03-stone-register.md",
-          "sha256": "1b7f147304a9bd18068011d93cbd40f78920a72a9972e2be2ffc8a9d3025c694",
-          "bytes": 3876
+          "sha256": "e85db318e90e6c9e499a5ecac6dffd4a7110dbc9ff87033e8e4ea5a7dc4de746",
+          "bytes": 3871
         },
         {
           "path": "review/fixtures/validate_milestone_03_stone_register.py",
@@ -1453,13 +1482,13 @@
         },
         {
           "path": "review/fixtures/milestone-03-stone-register-validation.json",
-          "sha256": "478fb51245447043d3397c5a7474f3c0b39dd42f5d4d125b0cbcdbab17f72676",
+          "sha256": "556803eb650bf98ba3d75f88c00319a678baae54efd434d7fb371d45f6d1e777",
           "bytes": 2047
         }
       ],
       "source_bindings": ["HIRC-I019", "HIRC-I020", "HIRC-I021", "HIRC-I022", "HIRC-I023", "HIRC-I024", "HIRC-STEPPING-STONE-PROTOCOL-001"],
       "limits": "Stone 001 mechanically validates graph/field/gate invariants and six adverse mutations; it does not prove semantic correctness, implementation, peer consensus or runtime behavior",
-      "next_action": "Choose one READY branch: M03-S003 joint-matrix integration or M03-S004 cultural-commons revision map; dependent stones remain gated"
+      "next_action": "Choose M03-S005 requirements integration or M03-S007 typed provenance contract; M03-S003 remains READY but cannot PASS without early independent review"
     },
     {
       "id": "HIRC-MILESTONE-02D",
@@ -1670,8 +1699,8 @@
       "path": "review/README.md",
       "status": "ACTIVE",
       "governed_scope": "internal_design_review",
-      "sha256": "88474affd721c09dfccc04252edc99cc12425ae18e1adb0bb206b02385e631f7",
-      "bytes": 8644,
+      "sha256": "5a58bdedb2685600fe8d57856ad1c1962b763ea0ff61ecdfea789dbb4f640c7c",
+      "bytes": 8930,
       "next_action": "Link the accepted consensus and final revisions when created"
     }
   ],

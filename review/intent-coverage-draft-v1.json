@@ -13,6 +13,11 @@
       "sha256": "d992bb12d9c95e9efe0a5fa763e68864868c735385a421320cd506b11e47e127"
     },
     {
+      "id": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "path": "review/revision-map-addendum-cultural-commons-v1.json",
+      "sha256": "cab10fb753c702b4011651b309086e5f15001412d0ba1c6ee686e8a1e77401ac"
+    },
+    {
       "id": "HIRC-REVISION-MAP-DETERMINISM-001",
       "path": "review/revision-map-addendum-determinism-v1.json",
       "sha256": "3a35f35ad986fd6f1e1f8d9f42cf82b5770ae2647f3ac78ad6bc670b8f0b2a0b"
@@ -481,8 +486,10 @@
       "intent_id": "HIRC-I022",
       "status": "ACTIVE",
       "kind": "confirmed_cultural_environment_requirement",
-      "coverage": "PROCESS_OR_HISTORY_MAPPED",
-      "revision_map_ids": [],
+      "coverage": "REVISION_MAPPED",
+      "revision_map_ids": [
+        "HIRC-REVISION-MAP-CULTURAL-COMMONS-001"
+      ],
       "process_or_history_artifact_ids": [
         "HIRC-AGENTIC-CULTURE-CANDIDATE-001",
         "HIRC-M02F"
@@ -499,8 +506,10 @@
       "intent_id": "HIRC-I023",
       "status": "ACTIVE",
       "kind": "confirmed_cultural_architecture_correction",
-      "coverage": "PROCESS_OR_HISTORY_MAPPED",
-      "revision_map_ids": [],
+      "coverage": "REVISION_MAPPED",
+      "revision_map_ids": [
+        "HIRC-REVISION-MAP-CULTURAL-COMMONS-001"
+      ],
       "process_or_history_artifact_ids": [
         "HIRC-AGENTIC-CULTURE-CANDIDATE-001-S1",
         "HIRC-M02G"
@@ -517,8 +526,10 @@
       "intent_id": "HIRC-I024",
       "status": "ACTIVE",
       "kind": "confirmed_source_study_and_design_input",
-      "coverage": "PROCESS_OR_HISTORY_MAPPED",
-      "revision_map_ids": [],
+      "coverage": "REVISION_MAPPED",
+      "revision_map_ids": [
+        "HIRC-REVISION-MAP-CULTURAL-COMMONS-001"
+      ],
       "process_or_history_artifact_ids": [
         "HIRC-EOYANG-SOURCE-STUDY-001",
         "HIRC-M03-STONE-REGISTER-001"
