@@ -9,7 +9,10 @@ Milestone 02D is the explicit catch-up Git checkpoint.
 
 - [Milestone 02D — cumulative plan checkpoint, local commit/push held](MILESTONE-02D.md)
 - [Milestone 02D push-hold receipt](MILESTONE-02D-PUSH-RECEIPT.md)
+- [Milestone 02D public-push success receipt](MILESTONE-02D-PUSH-SUCCESS-RECEIPT.md)
 - [Milestone 02F — cumulative determinism and agentic-culture checkpoint](MILESTONE-02F.md)
 - [Milestone 02F push-hold receipt](MILESTONE-02F-PUSH-RECEIPT.md)
+- [Milestone 02F public-push success receipt](MILESTONE-02F-PUSH-SUCCESS-RECEIPT.md)
 - [Milestone 02G — cumulative information-environment checkpoint](MILESTONE-02G.md)
 - [Milestone 02G push-hold receipt](MILESTONE-02G-PUSH-RECEIPT.md)
+- [Milestone 02G public-push success receipt](MILESTONE-02G-PUSH-SUCCESS-RECEIPT.md)

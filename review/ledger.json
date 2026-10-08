@@ -1396,32 +1396,39 @@
       "id": "HIRC-MILESTONE-02D",
       "kind": "cumulative_milestone_git_checkpoint",
       "path": "milestones/MILESTONE-02D.md",
-      "status": "LOCAL_COMPLETE_PUSH_HELD",
+      "status": "PUBLIC_PUSH_VERIFIED",
       "governed_scope": "cumulative_plan_work_through_milestone_02d",
       "sha256": "4fadcccb403f32c3bd2b1f792b96e5533705cd9a969a79daccc0fd8f6323ff0b",
       "bytes": 14940,
       "members": [
         {
           "path": "milestones/README.md",
-          "sha256": "03527b8772ebcd944473568f6f208da6ca68c3befb4c0975f4effc81e515caf9",
-          "bytes": 881
+          "sha256": "11aef9f8caadb0ebdda21ca7e30a9a9b3ec56bf43f9ef13a37dc4f52d6d73d0f",
+          "bytes": 1136
         },
         {
           "path": "milestones/MILESTONE-02D-PUSH-RECEIPT.md",
           "sha256": "68b39d349f878ddfc63ee6c35057f62c5d30069d7dd354779b8bd0efce599476",
           "bytes": 1457
+        },
+        {
+          "path": "milestones/MILESTONE-02D-PUSH-SUCCESS-RECEIPT.md",
+          "sha256": "ac9cea83b719c426ffd406ce3a46c4342ebc364743775b9736ac6d8006f9ea47",
+          "bytes": 952
         }
       ],
       "source_bindings": ["HIRC-I019", "HIRC-I020", "HIRC-M02D", "HIRC-PROJECT-CONTROLLER-G2-COMPLETION"],
       "content_commit": "709c4d8",
-      "push_state": "HELD_AFTER_SANDBOX_NETWORK_FAILURE_AND_TWO_INTERRUPTED_ESCALATIONS",
-      "next_action": "Owner approves exact git push or pushes manually; then verify remote ref and append immutable success receipt"
+      "push_state": "PUBLIC_REMOTE_REF_VERIFIED",
+      "published_remote_ref": "d5bc6291f0bfa4a6386f7c02d7b218d77a60ec69",
+      "published_at": "2026-10-08T17:28:20.651Z",
+      "next_action": "Qualified permanent successor continues the held master-plan and peer-consensus work from the verified branch"
     },
     {
       "id": "HIRC-MILESTONE-02F",
       "kind": "cumulative_milestone_git_checkpoint",
       "path": "milestones/MILESTONE-02F.md",
-      "status": "LOCAL_COMPLETE_PUSH_HELD",
+      "status": "PUBLIC_PUSH_VERIFIED",
       "governed_scope": "cumulative_plan_work_through_determinism_and_agentic_culture_intake",
       "sha256": "14f1ee35a50b7c3b17d6d7737da6b95012866fbd3385b74442bede7c37d32135",
       "bytes": 9062,
@@ -1430,18 +1437,25 @@
           "path": "milestones/MILESTONE-02F-PUSH-RECEIPT.md",
           "sha256": "0e86d3264e6e515d22ac6c10bb9cb13151ab0eee4d51d3bdd59bab384c875084",
           "bytes": 1476
+        },
+        {
+          "path": "milestones/MILESTONE-02F-PUSH-SUCCESS-RECEIPT.md",
+          "sha256": "c2d37c5c6bc59712a5298cdf30a6c21b519616d1916f0cce98147f746ecd8904",
+          "bytes": 952
         }
       ],
       "source_bindings": ["HIRC-I021", "HIRC-I022", "HIRC-DETERMINISM-CANDIDATE-001", "HIRC-AGENTIC-CULTURE-CANDIDATE-001", "HIRC-M02E", "HIRC-M02F"],
       "content_commit": "68c39cd115c9f98cf3cc0a9d6d41f98fd4385032",
-      "push_state": "HELD_AFTER_PRIOR_SANDBOX_NETWORK_FAILURE_AND_TWO_INTERRUPTED_ESCALATIONS",
-      "next_action": "Await authorized push, verify the remote ref, and append an immutable success receipt"
+      "push_state": "PUBLIC_REMOTE_REF_VERIFIED",
+      "published_remote_ref": "d5bc6291f0bfa4a6386f7c02d7b218d77a60ec69",
+      "published_at": "2026-10-08T17:28:20.651Z",
+      "next_action": "Qualified permanent successor integrates determinism and culture candidates through tested stones and permanent-peer challenge"
     },
     {
       "id": "HIRC-MILESTONE-02G",
       "kind": "cumulative_milestone_git_checkpoint",
       "path": "milestones/MILESTONE-02G.md",
-      "status": "LOCAL_COMPLETE_PUSH_HELD",
+      "status": "PUBLIC_PUSH_VERIFIED",
       "governed_scope": "cumulative_plan_work_through_cultural_information_environment_correction",
       "sha256": "825e480b0c0e993b83bf26bcea78b448c8b1731349c30d9ee9fc7e8156009b68",
       "bytes": 6654,
@@ -1450,12 +1464,19 @@
           "path": "milestones/MILESTONE-02G-PUSH-RECEIPT.md",
           "sha256": "5d27f1d29c16e9bfcf7d635f9c7579a902beda53c53ad418f7fba7cb1e45831d",
           "bytes": 1445
+        },
+        {
+          "path": "milestones/MILESTONE-02G-PUSH-SUCCESS-RECEIPT.md",
+          "sha256": "41f570a19a3e9454055d634e129815c842f189999160f66beb336d2108d5c61e",
+          "bytes": 937
         }
       ],
       "source_bindings": ["HIRC-I023", "HIRC-AGENTIC-CULTURE-CANDIDATE-001-S1", "HIRC-M02G", "HIRC-MILESTONE-02F"],
       "content_commit": "92ef47bfbf865d56cec29337187f854586d29e41",
-      "push_state": "HELD_AFTER_PRIOR_SANDBOX_NETWORK_FAILURE_AND_TWO_INTERRUPTED_ESCALATIONS",
-      "next_action": "Await authorized push, verify the remote ref, and append an immutable success receipt"
+      "push_state": "PUBLIC_REMOTE_REF_VERIFIED",
+      "published_remote_ref": "d5bc6291f0bfa4a6386f7c02d7b218d77a60ec69",
+      "published_at": "2026-10-08T17:28:20.651Z",
+      "next_action": "Qualified permanent successor maps and tests the information-environment correction before cultural runtime work"
     },
     {
       "id": "HIRC-MASTER-DRAFT-BUNDLE-001",
