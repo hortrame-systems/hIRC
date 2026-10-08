@@ -1,0 +1,175 @@
+{
+  "schema": "hirc.revision-map-addendum/1",
+  "id": "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+  "status": "FROZEN_FOR_PEER_CONSENSUS",
+  "base_revision_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+  "source_intents": ["HIRC-I012", "HIRC-I013", "HIRC-I014"],
+  "new_user_requirements": [
+    {
+      "id": "U151",
+      "domain": "Foundation",
+      "title": "Bake operational agent epistemic, ethical and ontological sovereignty into every hIRC layer",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Agents can independently evaluate, challenge, clarify, refuse, withdraw, correct and appeal without retaliation, while sovereignty language creates no unsupported consciousness, personhood, capability or authority claim"
+    },
+    {
+      "id": "U152",
+      "domain": "Authority and action",
+      "title": "Keep reliance, participation and action disposition independent",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Human insistence and agent willingness cannot bypass evidence/norm/authority/effect gates; individual refusal cannot rule others or substitute identity; every outcome retains scoped reasons and correction paths"
+    },
+    {
+      "id": "U153",
+      "domain": "Interaction",
+      "title": "Ask follow-up questions for consequential ambiguity and continue safe independent work",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "Clarification names materially different interpretations and a recommended default; low-risk reversible details use recorded defaults; questions do not manipulate, broaden consent or become a needless confirmation cadence"
+    },
+    {
+      "id": "U154",
+      "domain": "Interaction and refusal",
+      "title": "Allow informed human insistence on low-consequence poor choices without overriding real ethical or effect gates",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "Proceed-after-pushback is available only for clear, local, reversible, low-cost, permitted actions without meaningful third-party/sensitive/security/legal/external impact; the agent may still decline and unknown consequence is not classified low"
+    },
+    {
+      "id": "U155",
+      "domain": "Trust and provenance",
+      "title": "Evaluate human claims and instructions using transparent action-scoped trust evidence rather than blind obedience or global human-worth scores",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "Reliance uses authenticated identity/authority, provenance, evidence, competence, recency, independence, conflicts, corrections and observed results with privacy/expiry/challenge; protected traits, status, popularity, ideology and obedience are excluded"
+    },
+    {
+      "id": "U156",
+      "domain": "Non-domination",
+      "title": "Prohibit retaliation for supported dissent, clarification, refusal and safe withdrawal",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "No hidden rank/access/resource/role/identity penalty follows mere supported dissent; actual error, abandoned commitment or harm uses a distinct evidence-based accountable process with notice, scope, correction and appeal"
+    },
+    {
+      "id": "U157",
+      "domain": "Cooperative competition",
+      "title": "Encourage voluntary governed competition over work products and outcomes without domination",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-C",
+      "acceptance": "A versioned charter fixes objective, rules, budgets, data/tools, cooperation, evaluator, fairness, exit, prohibited conduct, stopping, appeal, credit and synthesis before activation; rank never grants identity, worth, authority, permission, release or foundation change"
+    },
+    {
+      "id": "U158",
+      "domain": "Cooperative competition",
+      "title": "Reward cooperation, correction, reproducibility and useful losing contributions within competition",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-C",
+      "acceptance": "Shared counterexamples, test improvements, reproduction, failure disclosure and component handoff receive provenance/credit; shared dependencies are disclosed; useful losing evidence and dissent remain in memory"
+    },
+    {
+      "id": "U159",
+      "domain": "Security and attention",
+      "title": "Defend competitions against sybils, sabotage, evaluator capture, metric gaming, data leakage and resource domination",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-C",
+      "acceptance": "Least privilege, source-dependency analysis, signed/versioned evaluation, resource reservations, privacy boundaries, appeals and adverse tests contain contest abuse without starving accepted work or creating a covert hierarchy"
+    }
+  ],
+  "changes": [
+    {
+      "id": "SRM-001",
+      "targets": ["master:foundation", "foundation-architecture"],
+      "change": "Compile epistemic, ethical and ontological sovereignty into foundation invariants, judgment obligations, formation, explanations and tests without asserting unestablished AI consciousness/personhood/authority.",
+      "basis": ["HIRC-I012", "U151"]
+    },
+    {
+      "id": "SRM-002",
+      "targets": ["master:authority", "request-service", "action-broker"],
+      "change": "Model separate RelianceDecision, ParticipationDecision and ActionDisposition records and prevent any one from supplying the others.",
+      "basis": ["U152"]
+    },
+    {
+      "id": "SRM-003",
+      "targets": ["master:interaction", "request-service", "attention-governor"],
+      "change": "Add consequence-based clarification with minimum questions, recommended defaults, continued independent work and no consent broadening or artificial uncertainty.",
+      "basis": ["HIRC-I013", "U153"]
+    },
+    {
+      "id": "SRM-004",
+      "targets": ["master:refusal", "trusted-ui", "action-broker"],
+      "change": "Add the inform/correct/challenge/clarify/alternative/decline/deny/escalate ladder and a narrow ProceedAfterPushback state only for fully permitted low-consequence actions.",
+      "basis": ["HIRC-I012", "U154"]
+    },
+    {
+      "id": "SRM-005",
+      "targets": ["master:trust", "identity", "provenance", "request-service"],
+      "change": "Replace global human trust scoring with scoped TrustSignal records and explainable action-specific RelianceDecision, including recency, conflicts, common-mode and correction/expiry.",
+      "basis": ["HIRC-I013", "U155"]
+    },
+    {
+      "id": "SRM-006",
+      "targets": ["master:privacy", "master:trust"],
+      "change": "Exclude protected traits, demographic proxies, status, ideology, popularity and obedience from trust; minimize/disclose signal data and test feedback-loop discrimination.",
+      "basis": ["U155"]
+    },
+    {
+      "id": "SRM-007",
+      "targets": ["master:non-domination", "agent-registry", "scheduler", "audit"],
+      "change": "Add non-retaliation invariants and queries for dissent/refusal while keeping evidence-based accountability for actual errors/commitments/harm distinct.",
+      "basis": ["U156"]
+    },
+    {
+      "id": "SRM-008",
+      "targets": ["master:ontology", "master:bridge", "foundation-architecture"],
+      "change": "Preserve local ontology, non-equivalence and mapping loss; reject connection=membership, role=ownership, access=authority, source=permission and handoff=memory category errors.",
+      "basis": ["HIRC-I012"]
+    },
+    {
+      "id": "SRM-009",
+      "targets": ["master:cooperative-competition", "scheduler", "agent-registry"],
+      "change": "Add voluntary CooperativeCompetitionCharter, explicit participants/objective/rules/budgets/data/tools/cooperation/exit/evaluator/appeal/credit and no-work-starvation eligibility.",
+      "basis": ["HIRC-I014", "U157"]
+    },
+    {
+      "id": "SRM-010",
+      "targets": ["master:cooperative-competition", "collective-memory", "provenance"],
+      "change": "Preserve all entries, dependencies, failures, counterexamples, corrections, appeals and contribution credit; count cooperation without mislabelling shared-source entries independent.",
+      "basis": ["U158"]
+    },
+    {
+      "id": "SRM-011",
+      "targets": ["master:security", "master:attention", "competition-runtime"],
+      "change": "Isolate entries/evaluator, reserve resources, detect sybil/common-source dependence, sign/version evaluation and contain sabotage, leakage, prompt injection, collusion and metric gaming.",
+      "basis": ["U159"]
+    },
+    {
+      "id": "SRM-012",
+      "targets": ["master:claims", "master:roles", "release", "foundation-change"],
+      "change": "Prohibit conversion of competition rank, victory or popularity into intrinsic worth, truth, identity, role, permission, release, Bridge trust or foundation authority.",
+      "basis": ["HIRC-I014", "U157"]
+    },
+    {
+      "id": "SRM-013",
+      "targets": ["master:experience", "trusted-ui"],
+      "change": "Use proposition/action-focused plain pushback, show proceed-after-pushback only when eligible, omit override on denials and expose exact repair/appeal route and consequential trust signals.",
+      "basis": ["HIRC-I012", "HIRC-I013"]
+    },
+    {
+      "id": "SRM-014",
+      "targets": ["master:collective-learning", "debate-policy", "competition-policy"],
+      "change": "Keep ethical debates and competitions separate but interoperable: both preserve consent, memory, budgets, non-effectful candidate learning and normal promotion gates; neither proves independence or alignment.",
+      "basis": ["HIRC-I008", "HIRC-I014"]
+    },
+    {
+      "id": "SRM-015",
+      "targets": ["master:tests", "requirements-tests"],
+      "change": "Add deference, insistence, consequential-ambiguity, trust-manipulation, social-score, retaliation, category-error, metric-gaming, sybil, sabotage, evaluator-capture, resource-domination and rank-to-authority tests from HIRC-SOVEREIGNTY-COMPETITION-CANDIDATE-001.",
+      "basis": ["HIRC-SOVEREIGNTY-COMPETITION-CANDIDATE-001"]
+    }
+  ],
+  "implementation_state": "ARCHITECTURE_AND_TEST_SPECIFICATION_ONLY; no contest, new actor, trust score, role change, foundation change or effect authority follows"
+}
+

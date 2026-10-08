@@ -1,0 +1,236 @@
+{
+  "schema": "hirc.revision-map/1",
+  "id": "HIRC-REVISION-MAP-CANDIDATE-001",
+  "status": "FROZEN_FOR_PEER_CONSENSUS",
+  "base": {
+    "archive_id": "HIRC-SOURCE-001",
+    "master_member_sha256": "9de73d97935ac3d591773e6315faf5c0fb837889ac8e9cdabf9ee19650165469",
+    "requirements_json_sha256": "5078b72dc32412ff1fdb058ed21e0226ae6d44ec78c7115f4165c88677ce44a5"
+  },
+  "new_user_requirements": [
+    {
+      "id": "U120",
+      "origin": "USER",
+      "domain": "Foundation",
+      "title": "The complete current onboarding semantics constitute hIRC's architecture rather than an optional add-on",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Every operational path binds the exact active foundation and its whole-source coverage; safe inspection/repair is the only fallback when the binding is invalid",
+      "source_intent": "HIRC-I001"
+    },
+    {
+      "id": "U121",
+      "origin": "USER",
+      "domain": "Experience",
+      "title": "Ordinary hIRC behavior embodies the foundation without requiring users to know or repeatedly see its internal terminology",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "Representative workflows preserve the same evidence, authority, privacy, refusal, correction, autonomy, and recovery behavior in plain domain language; authorized inspectors retain exact traceability",
+      "source_intent": "HIRC-I001"
+    },
+    {
+      "id": "U122",
+      "origin": "USER",
+      "domain": "Foundation",
+      "title": "The foundational architecture evolves fluidly in real time as the system improves",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "Source-bound candidate versions compile, test, migrate, activate transactionally, remain visible per active work, and roll back or recover without silent semantic drift or self-authorized evaluator changes",
+      "source_intent": "HIRC-I001"
+    }
+  ],
+  "changes": [
+    {
+      "id": "RM-001",
+      "status": "PROPOSED",
+      "kind": "correct_source_binding",
+      "targets": ["master:00", "master:36", "README"],
+      "change": "Bind the current selected English Epistemethics 3.0, VowOS2026, Grand Plan, and effective review-integrity source; retain 1.0 bindings as historical provenance.",
+      "basis": ["HIRC-F01", "HIRC-I001"]
+    },
+    {
+      "id": "RM-002",
+      "status": "PROPOSED",
+      "kind": "architecture",
+      "targets": ["master:new-foundation-section", "master:02", "master:06", "master:17", "master:18", "phase:P0", "phase:P1"],
+      "change": "Make the complete formation and governing semantics an always-active, versioned foundation kernel rather than an optional prompt/onboarding subsystem.",
+      "basis": ["HIRC-I001", "HIRC-FOUNDATION-CANDIDATE-001"]
+    },
+    {
+      "id": "RM-003",
+      "status": "PROPOSED",
+      "kind": "experience",
+      "targets": ["master:09", "master:10", "master:24", "master:25"],
+      "change": "Express foundation behavior in plain domain language by default while preserving authorized traceability to exact source and compiled rules.",
+      "basis": ["HIRC-I001"]
+    },
+    {
+      "id": "RM-004",
+      "status": "PROPOSED",
+      "kind": "evidence_correction",
+      "targets": ["master:03", "master:36", "audit-manifest", "README"],
+      "change": "Classify prototype tests as source-reported and not independently rerunnable from this transfer until the exact fingerprinted source objects are admitted and rerun.",
+      "basis": ["HIRC-REVIEW-001-S1"]
+    },
+    {
+      "id": "RM-005",
+      "status": "PROPOSED",
+      "kind": "policy_correction",
+      "targets": ["master:02", "master:08", "master:13", "master:31", "requirements:U064", "tests:AT-AGENT-006"],
+      "change": "Remove the advanced temporary-subagent unban and mark U064 superseded; test every indirect actor-creation path.",
+      "basis": ["HIRC-F02"]
+    },
+    {
+      "id": "RM-006",
+      "status": "PROPOSED",
+      "kind": "security_architecture",
+      "targets": ["master:new-security-section", "master:06", "master:23", "phase:P0"],
+      "change": "Add a normative system-wide threat model, trust domains, security invariants, attacker capabilities, assumptions, controls, residuals, evidence, and owners before implementation.",
+      "basis": ["HIRC-I003", "HIRC-SEC-CANDIDATE-001"]
+    },
+    {
+      "id": "RM-007",
+      "status": "PROPOSED",
+      "kind": "identity_and_secrets",
+      "targets": ["master:08", "master:12", "master:13", "master:20", "master:23"],
+      "change": "Define phishing-resistant human identity, unique workload/system identity, purpose-separated roots, metadata-only secret catalog, short-lived credentials, rotation/revocation, and strongest-path recovery.",
+      "basis": ["HIRC-F03", "HIRC-F05", "HIRC-SEC-CANDIDATE-001"]
+    },
+    {
+      "id": "RM-008",
+      "status": "PROPOSED",
+      "kind": "ui_security",
+      "targets": ["master:06", "master:10", "master:19", "master:23", "master:25"],
+      "change": "Select and threat-model the desktop shell; sandbox the renderer, narrow IPC, protect loopback APIs, enforce CSP/injection controls, and add a fixed trusted identity/target/authority strip and Safe hIRC.",
+      "basis": ["HIRC-F09"]
+    },
+    {
+      "id": "RM-009",
+      "status": "PROPOSED",
+      "kind": "provider_security",
+      "targets": ["master:15", "master:16", "master:23", "master:26", "master:27", "phase:P2", "phase:P4"],
+      "change": "Treat the frontier registry as a dated candidate seed; require exact-route discovery, compatibility and privacy probes, minimal egress manifests, local tool authorization, recorded actual configuration, and isolated fallbacks.",
+      "basis": ["HIRC-F06", "HIRC-SEC-CANDIDATE-001"]
+    },
+    {
+      "id": "RM-010",
+      "status": "PROPOSED",
+      "kind": "actor_admission",
+      "targets": ["master:08", "master:13", "master:18", "phase:P3"],
+      "change": "Separate organization planning, permanent identity reservation, formation/admission, minimum capability, budget reservation, and runtime activation; a bulk approval cannot bypass per-actor invariants.",
+      "basis": ["HIRC-F07", "HIRC-I001"]
+    },
+    {
+      "id": "RM-011",
+      "status": "PROPOSED",
+      "kind": "attention_security",
+      "targets": ["master:09", "master:23", "master:24"],
+      "change": "Treat the attention governor as a security control plane with non-suppressible classes, separate classification/presentation, independent health, auditable overrides, anti-coercion tests, and Safe hIRC bypass.",
+      "basis": ["HIRC-F08"]
+    },
+    {
+      "id": "RM-012",
+      "status": "PROPOSED",
+      "kind": "extension_security",
+      "targets": ["master:19", "master:23", "phase:P5"],
+      "change": "Run extensions out of process with no ambient authority; add digest/dependency pinning, explicit capabilities, quotas, SSRF/DNS-rebinding controls, safe disable/removal, vulnerability state, and rollback.",
+      "basis": ["HIRC-F09", "HIRC-F10"]
+    },
+    {
+      "id": "RM-013",
+      "status": "PROPOSED",
+      "kind": "audit_integrity",
+      "targets": ["master:06", "master:14", "master:21", "master:22", "master:23"],
+      "change": "Bind consequential mutations to immutable revision, audit, and outbox atomically; enumerate and negative-test admin/import/migration/retry/restore/direct-database bypasses and anchor checkpoints outside the database.",
+      "basis": ["HIRC-F11"]
+    },
+    {
+      "id": "RM-014",
+      "status": "PROPOSED",
+      "kind": "supply_chain",
+      "targets": ["master:19", "master:22", "master:23", "master:28", "phase:P0", "phase:P1"],
+      "change": "Separate build, online control, release, and recovery authorities; require locked inputs, isolated builds, SBOM, authenticated provenance, immutable artifacts, a pinned TUF profile, signed security floors, and verified rollback/forward recovery.",
+      "basis": ["HIRC-F10"]
+    },
+    {
+      "id": "RM-015",
+      "status": "PROPOSED",
+      "kind": "bridge_architecture",
+      "targets": ["master:20", "master:23", "phase:P6"],
+      "change": "Split the Bridge into a network gateway, deterministic contract broker, isolated minimized bridgekeeper, and local release/ingress gate with separate identities and interfaces.",
+      "basis": ["HIRC-F03", "HIRC-F04", "HIRC-I003"]
+    },
+    {
+      "id": "RM-016",
+      "status": "PROPOSED",
+      "kind": "bridge_protocol",
+      "targets": ["master:20", "master:21", "master:23", "master:31"],
+      "change": "Specify peer enrollment, out-of-band verification, canonical signed envelopes, current TLS application profile, purpose-separated keys, sequence/nonces, expiry, downgrade rejection, offline revocation limits, key rotation/recovery, and compromise containment; prohibit custom production crypto.",
+      "basis": ["HIRC-F03", "HIRC-SEC-CANDIDATE-001", "HIRC-REVIEW-001-S1"]
+    },
+    {
+      "id": "RM-017",
+      "status": "PROPOSED",
+      "kind": "phase_gate",
+      "targets": ["phase:P6", "master:32", "master:33"],
+      "change": "Divide federation into specification, offline conformance, two-system lab, hostile lab, independent assessment, bounded pilot, and separately authorized broader activation; keep it disabled until every applicable gate passes.",
+      "basis": ["HIRC-I003", "HIRC-F12"]
+    },
+    {
+      "id": "RM-018",
+      "status": "PROPOSED",
+      "kind": "privacy",
+      "targets": ["master:05", "master:16", "master:20", "master:22", "master:26", "master:34"],
+      "change": "Define field-level data ownership, purpose, processors, egress, retention, disposition, residency, and derived-data inheritance; preserve the conservative no-free-text federation profile pending an owner decision.",
+      "basis": ["HIRC-I003", "HIRC-REVIEW-001"]
+    },
+    {
+      "id": "RM-019",
+      "status": "PROPOSED",
+      "kind": "milestone_method",
+      "targets": ["master:new-foundation-section", "master:28", "master:33", "requirements:U119"],
+      "change": "Make source-bound milestone reflection and lens refinement an architecture-native event that updates the next milestone's threats, requirements, tests, and plan without becoming a recitation ritual.",
+      "basis": ["HIRC-I004", "HIRC-FOUNDATION-CANDIDATE-001"]
+    },
+    {
+      "id": "RM-020",
+      "status": "PROPOSED",
+      "kind": "tests",
+      "targets": ["master:32", "requirements-register"],
+      "change": "Expand the adversarial matrix for identity cloning, key theft/rotation, contract forks, canonicalization/parser differential, replay and 0-RTT, malicious updates, UI/IPC attacks, SSRF/rebinding, database-owner attack, backup/key loss, privacy side channels, attention coercion, and clean-room recovery.",
+      "basis": ["HIRC-F12", "HIRC-SEC-CANDIDATE-001"]
+    },
+    {
+      "id": "RM-021",
+      "status": "PROPOSED",
+      "kind": "phase_reorder",
+      "targets": ["master:33", "README"],
+      "change": "Move foundation binding, threat model, identity, secrets, signed commands/results, atomic audit/outbox, recovery, and kill switch into P0/P1 before a provider can create effects; retain P6 as noncritical.",
+      "basis": ["HIRC-I001", "HIRC-I003"]
+    },
+    {
+      "id": "RM-022",
+      "status": "PROPOSED",
+      "kind": "decision_records",
+      "targets": ["master:31"],
+      "change": "Add ADRs for foundation versioning, desktop shell, authorization model, identity/PKI, secret topology, bridge protocol, cryptographic profile, provider privacy, audit anchoring, build/release trust, and recovery custody.",
+      "basis": ["HIRC-REVIEW-001", "HIRC-SEC-CANDIDATE-001"]
+    },
+    {
+      "id": "RM-023",
+      "status": "PROPOSED",
+      "kind": "requirements_schema",
+      "targets": ["requirements-json", "requirements-markdown"],
+      "change": "Add predecessor/supersession, rationale, security/privacy impact, governing source, dependencies, acceptance tests, and evidence status so corrections do not overwrite original user meaning.",
+      "basis": ["HIRC-I001", "HIRC-I002", "HIRC-F02"]
+    },
+    {
+      "id": "RM-024",
+      "status": "PROPOSED",
+      "kind": "open_decisions",
+      "targets": ["master:34"],
+      "change": "Retain bounded owner decisions for richer cross-system free text, the first-release human-principal model, the first assurance/compliance profile, and genuinely independent release/recovery/bridge custodians; continue safe local-core work without guessing them or simulating quorum.",
+      "basis": ["HIRC-REVIEW-001"]
+    }
+  ]
+}

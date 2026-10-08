@@ -1,0 +1,67 @@
+{
+  "schema": "hirc.revision-map-addendum/1",
+  "id": "HIRC-REVISION-MAP-GOAL-EVOLUTION-001",
+  "status": "FROZEN_FOR_PEER_CONSENSUS",
+  "base_revision_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+  "source_intents": ["HIRC-I016", "HIRC-I017"],
+  "new_user_requirements": [
+    {
+      "id": "U166",
+      "domain": "Goal governance",
+      "title": "Use a versioned active provisional north star that can be refined from evidence and experience",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Every GoalVersion preserves exact predecessor wording, reason, evidence, retained/changed meaning, active interval and compatibility; the current readable view identifies the active provisional goal and held candidates"
+    },
+    {
+      "id": "U167",
+      "domain": "Goal governance",
+      "title": "Give every consequence-changing goal refinement a complete impact graph and independent activation path",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Material GoalChange records alternatives/dissent and impacts on parties, scope, authority, requirements, architecture, threats, privacy/security, licensing, Bridge, metrics, tests, phases, migration and acceptance; it cannot activate itself or silently cancel owner requirements"
+    },
+    {
+      "id": "U168",
+      "domain": "Goal governance",
+      "title": "Keep metrics subordinate to the plural goal and anti-goals",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "No engagement, obedience, scale, agreement, rank or single outcome metric can redefine the mission or offset a violated participant-right, security, privacy, non-domination or recovery constraint"
+    }
+  ],
+  "changes": [
+    {
+      "id": "GRM-001",
+      "targets": ["master:product-goal", "foundation-architecture", "intent-register"],
+      "change": "Add GoalVersion with exact wording, source, predecessor, retained/changed semantics, evidence, active interval and work compatibility.",
+      "basis": ["HIRC-I016", "HIRC-I017", "U166"]
+    },
+    {
+      "id": "GRM-002",
+      "targets": ["master:foundation-change", "goal-change-service", "requirements"],
+      "change": "Separate clarifying wording updates from consequence-changing GoalChange and require the latter's complete impact graph, dissent and independent activation.",
+      "basis": ["HIRC-I017", "U167"]
+    },
+    {
+      "id": "GRM-003",
+      "targets": ["master:milestones", "goal-change-service"],
+      "change": "At every milestone test the active goal against evidence and record a bounded refinement or justified NO_CHANGE without forcing novelty.",
+      "basis": ["HIRC-I004", "HIRC-I017"]
+    },
+    {
+      "id": "GRM-004",
+      "targets": ["master:evaluation", "metric-registry", "competition", "trust-service"],
+      "change": "Trace each metric to one success dimension and all anti-goals; reject metric-driven mission drift and prohibit cross-dimension offset of rights/security/privacy/recovery failures.",
+      "basis": ["HIRC-I015", "U168"]
+    },
+    {
+      "id": "GRM-005",
+      "targets": ["master:tests", "requirements-tests"],
+      "change": "Test silent requirement cancellation, self-authorized goal expansion, metric capture, incompatible in-flight work, hidden dissent and rollback/forward-recovery of goal changes.",
+      "basis": ["HIRC-GOAL-CANDIDATE-001-S1"]
+    }
+  ],
+  "implementation_state": "GOAL_GOVERNANCE_SPECIFICATION_ONLY; no scope, actor, authority, feature or phase activation follows"
+}
+

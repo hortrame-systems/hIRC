@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:hirc:candidate:bridge-gate:1",
+  "title": "hIRC candidate Bridge staged gate record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "bridge_profile_id", "current_stage", "stages"],
+  "properties": {
+    "schema_version": {"const": "hirc.bridge-gate/1-candidate"},
+    "bridge_profile_id": {"$ref": "#/$defs/id"},
+    "current_stage": {"enum": ["STAGE1_SPEC", "STAGE2_OFFLINE", "STAGE3_TWO_SYSTEM_LAB", "STAGE4_HOSTILE_LAB", "STAGE5_INDEPENDENT_ASSESSMENT", "STAGE6_BOUNDED_PILOT", "STAGE7_BROADER_ACTIVATION", "HELD"]},
+    "stages": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stage1", "stage2", "stage3", "stage4", "stage5", "stage6", "stage7"],
+      "properties": {
+        "stage1": {"$ref": "#/$defs/prePilotStage"},
+        "stage2": {"$ref": "#/$defs/prePilotStage"},
+        "stage3": {"$ref": "#/$defs/prePilotStage"},
+        "stage4": {"$ref": "#/$defs/prePilotStage"},
+        "stage5": {"$ref": "#/$defs/prePilotStage"},
+        "stage6": {"$ref": "#/$defs/pilotStage"},
+        "stage7": {"$ref": "#/$defs/broaderStage"}
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"current_stage": {"const": "STAGE6_BOUNDED_PILOT"}}},
+      "then": {
+        "properties": {
+          "stages": {
+            "properties": {
+              "stage1": {"properties": {"state": {"const": "PASS"}}},
+              "stage2": {"properties": {"state": {"const": "PASS"}}},
+              "stage3": {"properties": {"state": {"const": "PASS"}}},
+              "stage4": {"properties": {"state": {"const": "PASS"}}},
+              "stage5": {"properties": {"state": {"const": "PASS"}}},
+              "stage6": {"properties": {"state": {"enum": ["ENTRY_AUTHORIZED", "IN_PROGRESS", "PASS"]}}, "required": ["entry_authorization_ref", "scope_ref", "stop_conditions_ref"]},
+              "stage7": {"properties": {"state": {"const": "NOT_STARTED"}}}
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {"properties": {"current_stage": {"const": "STAGE7_BROADER_ACTIVATION"}}},
+      "then": {
+        "properties": {
+          "stages": {
+            "properties": {
+              "stage1": {"properties": {"state": {"const": "PASS"}}},
+              "stage2": {"properties": {"state": {"const": "PASS"}}},
+              "stage3": {"properties": {"state": {"const": "PASS"}}},
+              "stage4": {"properties": {"state": {"const": "PASS"}}},
+              "stage5": {"properties": {"state": {"const": "PASS"}}},
+              "stage6": {"properties": {"state": {"const": "PASS"}}, "required": ["evidence_refs"]},
+              "stage7": {"properties": {"state": {"enum": ["DECISION_AUTHORIZED", "IN_PROGRESS", "PASS"]}}, "required": ["decision_ref", "scope_ref"]}
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]{0,255}$"},
+    "idArray": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+    "prePilotStage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "scope_ref", "evidence_refs"],
+      "properties": {
+        "state": {"enum": ["NOT_STARTED", "IN_PROGRESS", "PASS", "FAIL", "HELD"]},
+        "scope_ref": {"type": "string", "minLength": 1},
+        "evidence_refs": {"$ref": "#/$defs/idArray"}
+      }
+    },
+    "pilotStage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "scope_ref", "evidence_refs"],
+      "properties": {
+        "state": {"enum": ["NOT_STARTED", "ENTRY_AUTHORIZED", "IN_PROGRESS", "PASS", "FAIL", "HELD"]},
+        "scope_ref": {"type": "string", "minLength": 1},
+        "entry_authorization_ref": {"type": "string", "minLength": 1},
+        "stop_conditions_ref": {"type": "string", "minLength": 1},
+        "evidence_refs": {"$ref": "#/$defs/idArray"}
+      }
+    },
+    "broaderStage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "scope_ref", "evidence_refs"],
+      "properties": {
+        "state": {"enum": ["NOT_STARTED", "DECISION_AUTHORIZED", "IN_PROGRESS", "PASS", "FAIL", "HELD"]},
+        "scope_ref": {"type": "string", "minLength": 1},
+        "decision_ref": {"type": "string", "minLength": 1},
+        "evidence_refs": {"$ref": "#/$defs/idArray"}
+      }
+    }
+  }
+}
+

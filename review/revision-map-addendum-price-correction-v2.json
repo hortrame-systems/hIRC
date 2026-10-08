@@ -1,0 +1,50 @@
+{
+  "schema": "hirc.revision-map-addendum/1",
+  "id": "HIRC-REVISION-MAP-LNC-PRICE-002",
+  "status": "FROZEN_FOR_PEER_CONSENSUS",
+  "base_revision_maps": [
+    "HIRC-REVISION-MAP-LNC-001",
+    "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001"
+  ],
+  "source_intent": "HIRC-I011",
+  "supersedes_interpretation": {
+    "artifacts": [
+      "HIRC-LNC-CORRECTION-001",
+      "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001:U150",
+      "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001:ORM-016",
+      "HIRC-MASTER-STRUCTURE-SUCCESSOR-ONBOARDING-001:licensing-correction",
+      "HIRC-M01C:licensing-correction"
+    ],
+    "scope": "Only the inference that omission of per year reopened the annual planning cadence; all source history remains preserved"
+  },
+  "corrected_requirement": {
+    "id": "U150-C1",
+    "domain": "Licensing",
+    "title": "Use USD 42,424,243 per named-human licence per year as the giant-multinational planning requirement",
+    "status": "BLOCKED_OPEN_DEFINITIONS_AND_LEGAL_REVIEW",
+    "phase": "P5-L",
+    "acceptance": "The active numeric amount is exactly USD 42,424,243; the annual one-named-human licence unit carries forward; the old number is superseded history; final legal duration, tiers and activation remain explicitly held"
+  },
+  "changes": [
+    {
+      "id": "PRM-001",
+      "targets": ["master:licensing", "requirements:U125", "requirements:U150", "price-schedule"],
+      "change": "Replace the giant-multinational number with USD 42,424,243 while preserving the annual named-human licence planning unit.",
+      "basis": ["HIRC-I011", "HIRC-LNC-CORRECTION-001-S1"]
+    },
+    {
+      "id": "PRM-002",
+      "targets": ["master:open-decisions", "legal-package"],
+      "change": "Keep final licence duration, renewal, effective date, transition and related legal terms held despite the preserved annual planning unit.",
+      "basis": ["HIRC-LNC-CORRECTION-001-S1", "U-05", "U-12"]
+    },
+    {
+      "id": "PRM-003",
+      "targets": ["master:tests", "requirements-tests"],
+      "change": "Reject the old numeric amount and any claim that final legal term is settled; accept the corrected annual named-human planning unit and explicit legal hold.",
+      "basis": ["HIRC-I011"]
+    }
+  ],
+  "implementation_state": "ACTIVE_REQUIREMENT_CORRECTION_ONLY; paid licensing and legal terms remain unimplemented and held"
+}
+

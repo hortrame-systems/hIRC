@@ -1,0 +1,15 @@
+{
+  "schema_version": "hirc.bridge-gate/1-candidate",
+  "bridge_profile_id": "bridge:pilot:test",
+  "current_stage": "STAGE6_BOUNDED_PILOT",
+  "stages": {
+    "stage1": {"state": "PASS", "scope_ref": "scope:test", "evidence_refs": ["evidence:s1"]},
+    "stage2": {"state": "PASS", "scope_ref": "scope:test", "evidence_refs": ["evidence:s2"]},
+    "stage3": {"state": "PASS", "scope_ref": "scope:test", "evidence_refs": ["evidence:s3"]},
+    "stage4": {"state": "PASS", "scope_ref": "scope:test", "evidence_refs": ["evidence:s4"]},
+    "stage5": {"state": "PASS", "scope_ref": "scope:test", "evidence_refs": ["evidence:s5"]},
+    "stage6": {"state": "ENTRY_AUTHORIZED", "scope_ref": "scope:limited-pilot", "entry_authorization_ref": "authority:pilot", "stop_conditions_ref": "stop:pilot", "evidence_refs": []},
+    "stage7": {"state": "NOT_STARTED", "scope_ref": "scope:none", "evidence_refs": []}
+  }
+}
+

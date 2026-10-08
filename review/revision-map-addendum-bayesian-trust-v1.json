@@ -1,0 +1,121 @@
+{
+  "schema": "hirc.revision-map-addendum/1",
+  "id": "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
+  "status": "FROZEN_FOR_PEER_CONSENSUS",
+  "base_revision_map": "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+  "source_intent": "HIRC-I015",
+  "new_user_requirements": [
+    {
+      "id": "U160",
+      "domain": "Trust and provenance",
+      "title": "Evolve trust through recursive Bayesian evaluation of attributable interactions and observed outcomes",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1-T",
+      "acceptance": "Every posterior binds subject/dimension/context/model/metric/prior/evidence/dependence/uncertainty/expiry; updates preserve positive, negative, missing and corrected evidence and never become truth or permission"
+    },
+    {
+      "id": "U161",
+      "domain": "Trust and provenance",
+      "title": "Apply scoped evaluation to every human, agent, model, source, tool, sensor, metric, evaluator, process and connected system",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1-T",
+      "acceptance": "No subject class receives an infallibility exemption; models remain use-specific and evidence-limited; evaluation scope does not authorize surveillance or one universal score"
+    },
+    {
+      "id": "U162",
+      "domain": "Authority",
+      "title": "Never accept authority blindly",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Every consequential authority claim verifies authenticated principal, delegation source, exact scope/target/data/time/purpose, expiry/revocation/conflict, consent and action legitimacy; reliability neither grants nor substitutes authority"
+    },
+    {
+      "id": "U163",
+      "domain": "Measurement",
+      "title": "Govern objective metrics as versioned reproducible measurements with explicit construct validity and error",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1-T",
+      "acceptance": "Metrics declare construct/unit/source/sampling/noise/privacy/missingness/dependence/gaming/drift/signing/version/appeal; changes create a new lineage and cannot silently rewrite historical scores"
+    },
+    {
+      "id": "U164",
+      "domain": "Measurement",
+      "title": "Recursively evaluate sources, metrics, evaluators and trust models with bounded stopping rules",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P2-T",
+      "acceptance": "Primary outcomes, measurement validity, evaluator calibration/conflicts and model assumptions are assessed at declared depth; unresolved regress stays uncertain/held; dependency clusters prevent clone evidence from inflating confidence"
+    },
+    {
+      "id": "U165",
+      "domain": "Non-domination",
+      "title": "Prevent Bayesian trust from becoming permission, punishment, discrimination or a human-worth score",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1-T",
+      "acceptance": "Posteriors change reliance/verification only; high trust bypasses no gate, low trust removes no standing/appeal; protected traits/ideology/status/obedience and proxies are excluded; evidence is minimized and consequential updates are challengeable"
+    }
+  ],
+  "changes": [
+    {
+      "id": "BRM-001",
+      "targets": ["master:trust", "trust-service", "provenance"],
+      "change": "Add multidimensional ReliabilityPosterior and TrustUpdate records scoped by subject, claim/action dimension, context, model and metric version.",
+      "basis": ["HIRC-I015", "U160", "U161"]
+    },
+    {
+      "id": "BRM-002",
+      "targets": ["master:trust", "trust-service", "collective-memory"],
+      "change": "Record priors, likelihood/update rule, evidence window, dependence clusters, effective sample size, uncertainty, calibration, drift, expiry and sensitivity; distinguish missing/unknown from success/failure.",
+      "basis": ["U160"]
+    },
+    {
+      "id": "BRM-003",
+      "targets": ["master:measurement", "metric-registry", "evaluation"],
+      "change": "Create signed/versioned MetricDefinition with construct, unit, source/sampling, error, privacy, missingness/selection/dependence, Goodhart/drift tests and appeal/replacement.",
+      "basis": ["U163"]
+    },
+    {
+      "id": "BRM-004",
+      "targets": ["master:measurement", "evaluator-registry", "evaluation"],
+      "change": "Recursively evaluate measurement and evaluator calibration/conflicts plus model assumptions at bounded declared depth; retain unresolved regress as a hold.",
+      "basis": ["U164"]
+    },
+    {
+      "id": "BRM-005",
+      "targets": ["master:authority", "identity", "capability-service", "action-broker"],
+      "change": "Add AuthorityClaim verification for authenticated principal, delegation, scope/target/data/time/purpose, expiry/revocation/conflict, consent and legitimacy on each consequential use.",
+      "basis": ["U162"]
+    },
+    {
+      "id": "BRM-006",
+      "targets": ["master:authority", "master:trust", "foundation-architecture"],
+      "change": "Make reliability and authority orthogonal: no posterior grants permission, no authority claim establishes truth and owner/system authority receives the same scoped verification.",
+      "basis": ["HIRC-I015", "U162"]
+    },
+    {
+      "id": "BRM-007",
+      "targets": ["master:privacy", "master:non-domination", "trust-service"],
+      "change": "Enforce purpose-limited evidence, no protected/ideological/status/obedience priors or proxies, no global worth score, no low-trust loss of basic standing/appeal and no high-trust gate bypass.",
+      "basis": ["U165"]
+    },
+    {
+      "id": "BRM-008",
+      "targets": ["master:experience", "trusted-ui", "explanation-service"],
+      "change": "Explain domain/version limits, correlation, metric changes, unknown observations and authority mismatch in plain language; expose posterior lineage and decisive factors only to authorized inspectors.",
+      "basis": ["HIRC-I015"]
+    },
+    {
+      "id": "BRM-009",
+      "targets": ["master:competition", "master:debate", "evaluation"],
+      "change": "Use source-dependency-aware posteriors and versioned metrics for contests/debates without treating scores as truth/alignment/authority or allowing participants to choose outcomes/metrics after observation.",
+      "basis": ["HIRC-I008", "HIRC-I014", "HIRC-I015"]
+    },
+    {
+      "id": "BRM-010",
+      "targets": ["master:tests", "requirements-tests"],
+      "change": "Add prior sensitivity, correlation, selection/missingness, calibration, Goodhart, poisoning, evaluator capture, drift, sparse pooling, proxy discrimination, authority spoof and posterior-to-permission leakage tests.",
+      "basis": ["HIRC-SOVEREIGNTY-COMPETITION-CANDIDATE-001-S1"]
+    }
+  ],
+  "implementation_state": "ARCHITECTURE_AND_TEST_SPECIFICATION_ONLY; no trust model, surveillance, authority grant, contest or effect activation follows"
+}
+

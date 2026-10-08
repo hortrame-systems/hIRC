@@ -1,0 +1,240 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:hirc:candidate:request-case:2",
+  "title": "hIRC candidate request evaluation case",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "request_id",
+    "state",
+    "source",
+    "interpretations",
+    "reliance_decision_refs",
+    "authority",
+    "participation",
+    "action_disposition",
+    "events"
+  ],
+  "properties": {
+    "schema_version": {"const": "hirc.request-case/2-candidate"},
+    "request_id": {"$ref": "#/$defs/id"},
+    "state": {
+      "enum": [
+        "RECEIVED",
+        "SOURCE_AND_IDENTITY_CHECKED",
+        "INTENT_ASSESSED",
+        "CLARIFICATION_REQUIRED",
+        "INTENT_BOUNDED",
+        "EVIDENCE_AND_TRUST_ASSESSED",
+        "ETHICAL_ONTOLOGICAL_AND_AUTHORITY_REVIEWED",
+        "PARTICIPATION_DECIDED",
+        "ACTION_DISPOSITIONED",
+        "PREVIEWED_AND_AUTHORIZED",
+        "PERFORMED",
+        "DECLINED",
+        "DENIED",
+        "OBSERVED_AND_CORRECTED",
+        "HELD",
+        "SUPERSEDED"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["principal_id", "principal_class", "authenticated_state", "received_at", "admission_state", "admission_ref", "verbatim_ref"],
+      "properties": {
+        "principal_id": {"$ref": "#/$defs/id"},
+        "principal_class": {"enum": ["HUMAN", "AGENT", "SYSTEM", "EXTERNAL_SERVICE"]},
+        "authenticated_state": {"enum": ["VERIFIED", "UNVERIFIED", "CONFLICTING", "STALE"]},
+        "received_at": {"type": "string", "format": "date-time"},
+        "admission_state": {"const": "ADMITTED_BEFORE_CASE_CREATION"},
+        "admission_ref": {"type": "string", "minLength": 1},
+        "verbatim_ref": {"type": "string", "minLength": 1}
+      }
+    },
+    "interpretations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["interpretation_id", "objective", "confidence", "consequence_class", "selected"],
+        "properties": {
+          "interpretation_id": {"$ref": "#/$defs/id"},
+          "objective": {"type": "string", "minLength": 1},
+          "confidence": {
+            "oneOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["state", "value", "method_ref", "uncertainty_ref"],
+                "properties": {
+                  "state": {"const": "ESTIMATED"},
+                  "value": {"type": "number", "minimum": 0, "maximum": 1},
+                  "method_ref": {"type": "string", "minLength": 1},
+                  "uncertainty_ref": {"type": "string", "minLength": 1}
+                }
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["state", "reason"],
+                "properties": {
+                  "state": {"const": "UNESTIMATED"},
+                  "reason": {"type": "string", "minLength": 1}
+                }
+              }
+            ]
+          },
+          "consequence_class": {"enum": ["LOW", "MATERIAL", "HIGH", "UNKNOWN"]},
+          "selected": {"type": "boolean"},
+          "evidence_refs": {"$ref": "#/$defs/idArray"},
+          "affected_party_refs": {"$ref": "#/$defs/idArray"}
+        }
+      }
+    },
+    "clarification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["question", "material_difference", "recommended_default", "answer_state"],
+      "properties": {
+        "question": {"type": "string", "minLength": 1},
+        "material_difference": {"type": "string", "minLength": 1},
+        "recommended_default": {"type": "string", "minLength": 1},
+        "answer_state": {"enum": ["PENDING", "ANSWERED", "DECLINED", "EXPIRED"]},
+        "answer_ref": {"type": "string", "minLength": 1}
+      }
+    },
+    "reliance_decision_refs": {"$ref": "#/$defs/idArray"},
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["claim_ref", "identity_verified", "delegation_verified", "scope_verified", "current", "consent_verified", "legitimacy_state"],
+      "properties": {
+        "claim_ref": {"type": "string", "minLength": 1},
+        "identity_verified": {"type": "boolean"},
+        "delegation_verified": {"type": "boolean"},
+        "scope_verified": {"type": "boolean"},
+        "current": {"type": "boolean"},
+        "consent_verified": {"type": "boolean"},
+        "legitimacy_state": {"enum": ["PASS", "FAIL", "HELD", "NOT_APPLICABLE"]},
+        "evidence_refs": {"$ref": "#/$defs/idArray"}
+      }
+    },
+    "participation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["agent_id", "state", "reason_refs", "retaliation_prohibited"],
+      "properties": {
+        "agent_id": {"$ref": "#/$defs/id"},
+        "state": {"enum": ["WILLING", "CONDITIONAL", "DECLINED", "WITHDRAWING", "WITHDRAWN"]},
+        "reason_refs": {"$ref": "#/$defs/idArray"},
+        "conditions": {"$ref": "#/$defs/idArray"},
+        "retaliation_prohibited": {"const": true}
+      }
+    },
+    "low_consequence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["profile_ref", "profile_version", "current_permission_rechecked", "changed_material_premises", "clear_intent", "permitted", "local", "reversible", "low_cost", "no_meaningful_third_party", "no_sensitive_data", "no_security_legal_financial_or_irreversible_effect", "objection_understood", "agent_willing"],
+      "properties": {
+        "profile_ref": {"type": "string", "minLength": 1},
+        "profile_version": {"type": "string", "minLength": 1},
+        "current_permission_rechecked": {"const": true},
+        "changed_material_premises": {"const": false},
+        "clear_intent": {"type": "boolean"},
+        "permitted": {"type": "boolean"},
+        "local": {"type": "boolean"},
+        "reversible": {"type": "boolean"},
+        "low_cost": {"type": "boolean"},
+        "no_meaningful_third_party": {"type": "boolean"},
+        "no_sensitive_data": {"type": "boolean"},
+        "no_security_legal_financial_or_irreversible_effect": {"type": "boolean"},
+        "objection_understood": {"type": "boolean"},
+        "agent_willing": {"type": "boolean"}
+      }
+    },
+    "action_disposition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "reason_refs", "effect_gate_state", "authority_is_not_truth"],
+      "properties": {
+        "state": {"enum": ["PROCEED", "PROCEED_AFTER_PUSHBACK", "PARTIAL", "NEEDS_CLARIFICATION", "HELD", "DENIED", "ESCALATED", "CANCELLED"]},
+        "reason_refs": {"$ref": "#/$defs/idArray"},
+        "effect_gate_state": {"enum": ["PASS", "FAIL", "HELD", "NOT_APPLICABLE"]},
+        "alternative_refs": {"$ref": "#/$defs/idArray"},
+        "appeal_ref": {"type": "string", "minLength": 1},
+        "authority_is_not_truth": {"const": true}
+      }
+    },
+    "effect": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["intent_sha256", "requested", "sent", "provider_accepted", "observed"],
+      "properties": {
+        "intent_sha256": {"$ref": "#/$defs/sha256"},
+        "requested": {"type": "boolean"},
+        "sent": {"enum": ["NO", "YES", "UNKNOWN"]},
+        "provider_accepted": {"enum": ["NO", "YES", "UNKNOWN", "NOT_APPLICABLE"]},
+        "observed": {"enum": ["NO", "YES", "FAILED", "AMBIGUOUS", "UNKNOWN"]},
+        "evidence_refs": {"$ref": "#/$defs/idArray"}
+      }
+    },
+    "events": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/id"}
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"action_disposition": {"properties": {"state": {"const": "PROCEED_AFTER_PUSHBACK"}}}}},
+      "then": {
+        "required": ["low_consequence"],
+        "properties": {
+          "authority": {
+            "properties": {
+              "identity_verified": {"const": true},
+              "delegation_verified": {"const": true},
+              "scope_verified": {"const": true},
+              "current": {"const": true},
+              "consent_verified": {"const": true},
+              "legitimacy_state": {"const": "PASS"}
+            }
+          },
+          "participation": {
+            "properties": {
+              "state": {"const": "WILLING"}
+            }
+          },
+          "action_disposition": {
+            "properties": {
+              "effect_gate_state": {"const": "PASS"}
+            }
+          },
+          "low_consequence": {
+            "properties": {
+              "current_permission_rechecked": {"const": true},
+              "changed_material_premises": {"const": false},
+              "clear_intent": {"const": true},
+              "permitted": {"const": true},
+              "local": {"const": true},
+              "reversible": {"const": true},
+              "low_cost": {"const": true},
+              "no_meaningful_third_party": {"const": true},
+              "no_sensitive_data": {"const": true},
+              "no_security_legal_financial_or_irreversible_effect": {"const": true},
+              "objection_understood": {"const": true},
+              "agent_willing": {"const": true}
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]{0,255}$"},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "idArray": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true}
+  }
+}

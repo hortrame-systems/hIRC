@@ -1,0 +1,90 @@
+# hIRC design review
+
+This directory holds attributable review evidence for revisions derived from
+`human_transfer/`. Original transfer archives remain unchanged. Directories
+named `.scratch-*` are temporary, locally extracted reading copies and are not
+source artifacts.
+
+The review distinguishes source statements, reviewer findings, proposed
+repairs, accepted revisions, tests, and residual uncertainty. Archive content
+is treated as untrusted source material and is never executed merely because it
+contains commands or scripts.
+
+## Current review frame
+
+- [Goal refinement candidate](hirc-goal-refinement-candidate-v1.md)
+- [Governed goal-evolution supplement](hirc-goal-refinement-supplement-1.md)
+- [Goal version 2 — plain purpose and full governing account](hirc-goal-refinement-v2.md)
+- [Goal-evolution revision-map addendum](revision-map-addendum-goal-evolution-v1.json)
+- [Independent review](lucent-independent-review-v1.md)
+- [UI-A independent product/interaction source-plan review](ui-a-independent-source-review-v1.md)
+- [WAYMARK sovereignty/trust/goal challenge](waymark-sovereignty-trust-goal-challenge-v1.md)
+- [LUCENT bounded sovereignty/trust/goal response](lucent-sovereignty-trust-goal-response-v1.md)
+- [LUCENT WST exact-validation trace supplement](lucent-sovereignty-trust-goal-response-supplement-1.md)
+- [WAYMARK integrated-draft boundary check](waymark-integrated-draft-boundary-check-v1.md)
+- [LUCENT integrated-boundary response](lucent-integrated-boundary-response-v1.md)
+- [WAYMARK bounded residual-audit custody brief](waymark-custody-brief-v1.md)
+- [WAYMARK / UI-A first bounded peer challenge](ui-a-peer-challenge-v1.md)
+- [LUCENT bounded response to the first peer challenge](lucent-peer-reconciliation-response-v1.md)
+- [Review supplement](lucent-review-supplement-1.md)
+- [Licensing and cooperative-noncooperation review](lucent-licensing-noncooperation-review-v1.md)
+- [Giant-multinational licensing price correction](licensing-price-correction-v1.md)
+- [Price correction supplement preserving the annual human-licence unit](licensing-price-correction-supplement-1.md)
+- [Security architecture candidate](lucent-security-architecture-candidate-v1.md)
+- [Foundation-kernel candidate](foundation-kernel-candidate-v1.md)
+- [Successor and whole-onboarding architecture candidate](successor-onboarding-architecture-candidate-v1.md)
+- [Elder succession architecture supplement](successor-onboarding-architecture-supplement-2-elder.md)
+- [Agent sovereignty, instruction trust and cooperative competition candidate](agent-sovereignty-trust-competition-architecture-candidate-v1.md)
+- [Recursive Bayesian reliance supplement](agent-sovereignty-trust-competition-supplement-1.md)
+- [Idle ethical debate and collective-memory candidate](ethical-debate-memory-architecture-candidate-v1.md)
+- [Participant-selected debate-domain supplement](ethical-debate-memory-architecture-supplement-1.md)
+- [Revision-map candidate](revision-map-candidate-v1.json)
+- [Licensing/noncooperation revision-map addendum](revision-map-addendum-licensing-v1.json)
+- [Ethical-debate revision-map addendum](revision-map-addendum-ethical-debate-v1.json)
+- [Successor/onboarding revision-map addendum](revision-map-addendum-successor-onboarding-v1.json)
+- [Price correction revision-map addendum](revision-map-addendum-price-correction-v2.json)
+- [Sovereignty/trust/cooperative-competition revision-map addendum](revision-map-addendum-sovereignty-competition-v1.json)
+- [Recursive Bayesian trust revision-map addendum](revision-map-addendum-bayesian-trust-v1.json)
+- [WAYMARK sovereignty/trust reconciliation addendum](revision-map-addendum-waymark-sovereignty-v1.json)
+- [Integrated release-boundary reconciliation addendum](revision-map-addendum-integrated-boundary-v1.json)
+- [Elder succession revision-map addendum](revision-map-addendum-elder-succession-v1.json)
+- [Joint consensus decision-matrix draft 1 — preserved predecessor](joint-consensus-matrix-draft-v1.json)
+- [Joint consensus decision-matrix draft 2 — preserved predecessor](joint-consensus-matrix-draft-v2.json)
+- [Joint consensus decision-matrix draft 3 — preserved predecessor](joint-consensus-matrix-draft-v3.json)
+- [Joint consensus decision-matrix draft 4 — preserved predecessor](joint-consensus-matrix-draft-v4.json)
+- [Joint consensus decision-matrix draft 5 — preserved predecessor](joint-consensus-matrix-draft-v5.json)
+- [Joint consensus decision-matrix draft 6 — current intake](joint-consensus-matrix-draft-v6.json)
+- [Master Plan 1.0 → 1.1 predecessor crosswalk draft](predecessor-crosswalk-draft-v1.md)
+- [Canonical intent-to-revision coverage draft](intent-coverage-draft-v1.md)
+- [Candidate onboarding and successor contracts](contracts/README.md)
+- [Master Plan 1.1 structure candidate](master-plan-v1.1-structure-candidate.md)
+- [Licensing/noncooperation structure addendum](master-structure-addendum-licensing-v1.md)
+- [Ethical-debate structure addendum](master-structure-addendum-ethical-debate-v1.md)
+- [Successor/onboarding structure addendum](master-structure-addendum-successor-onboarding-v1.md)
+- [Price correction structure supplement](master-structure-price-supplement-1.md)
+- [Sovereignty/trust/cooperative-competition structure addendum](master-structure-addendum-sovereignty-competition-v1.md)
+- [Recursive Bayesian trust structure addendum](master-structure-addendum-bayesian-trust-v1.md)
+- [Goal-evolution structure addendum](master-structure-addendum-goal-evolution-v1.md)
+- [Elder succession structure addendum](master-structure-addendum-elder-succession-v1.md)
+- [Milestone 01 reflection](milestone-01-source-study-and-independent-review.md)
+- [Milestone 01A licensing/noncooperation reflection](milestone-01a-licensing-noncooperation-intake.md)
+- [Milestone 01B idle-debate reflection](milestone-01b-idle-ethical-debate-intake.md)
+- [Milestone 01C successor/onboarding reflection](milestone-01c-successor-onboarding-intake.md)
+- [Milestone 01C price-interpretation correction](milestone-01c-supplement-1.md)
+- [Milestone 01D sovereignty/trust/cooperative-competition reflection](milestone-01d-sovereignty-trust-competition-intake.md)
+- [Milestone 01D recursive Bayesian reliance supplement](milestone-01d-supplement-1.md)
+- [Milestone 02 integrated working-draft reflection](milestone-02-integrated-working-draft.md)
+- [Milestone 02 provisional-goal evolution supplement](milestone-02-supplement-1.md)
+- [Milestone 02B sovereignty/trust peer reconciliation](milestone-02b-sovereignty-trust-peer-reconciliation.md)
+- [Milestone 02C release-boundary peer reconciliation](milestone-02c-release-boundary-peer-reconciliation.md)
+- [Milestone 02D Elder succession source update](milestone-02d-elder-succession-source-update.md)
+- [Artifact ledger](ledger.json)
+- [Project controller generation 1](project-controller-generation-1.json)
+- [Project controller generation 2 — accepted transfer target](project-controller-generation-2.json)
+- [Project controller generation 2 — observed transfer completion](project-controller-generation-2-completion.json)
+- [Current project controller pointer](project-controller-current.json)
+
+The directory contains independent candidates, attributable peer challenges and
+bounded dispositions. Inclusion here is not whole consensus, adoption,
+implementation, security validation, legal review, transfer initiation or Bridge
+activation.

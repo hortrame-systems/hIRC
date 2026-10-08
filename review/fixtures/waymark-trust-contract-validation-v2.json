@@ -1,0 +1,156 @@
+{
+  "schema": "hirc.waymark-contract-validation/2",
+  "fixture_path": "review/fixtures/waymark-trust-contract-cases-v1.json",
+  "fixture_sha256": "2f361a190ffe1ad2de435d9165d07b5d5cfd9842e2778e65ca3c98886d3311ae",
+  "validator": "PowerShell Test-Json 7.0.0.0 against v2 candidates plus explicit semantic checks",
+  "state": "PASS",
+  "schema_bindings": [
+    {
+      "path": "../contracts/hirc-request-case.candidate.schema.json",
+      "expected_sha256": "19f2aa624caaecf2a73599d7f8b4e709cdf5c668c2b3846f26896b063a893ee9",
+      "actual_sha256": "19f2aa624caaecf2a73599d7f8b4e709cdf5c668c2b3846f26896b063a893ee9",
+      "pass": true
+    },
+    {
+      "path": "../contracts/hirc-bayesian-reliance.candidate.schema.json",
+      "expected_sha256": "900f074496cdefcb447c1c4d436a1f6952f01754e909f133f78e06fa2d73a9e8",
+      "actual_sha256": "900f074496cdefcb447c1c4d436a1f6952f01754e909f133f78e06fa2d73a9e8",
+      "pass": true
+    },
+    {
+      "path": "../contracts/hirc-cooperative-competition-charter.candidate.schema.json",
+      "expected_sha256": "3ec5f254024d5e1f1ff3ecc812419af021f43a3dddbead90559c32e95ef3067a",
+      "actual_sha256": "3ec5f254024d5e1f1ff3ecc812419af021f43a3dddbead90559c32e95ef3067a",
+      "pass": true
+    }
+  ],
+  "cases": [
+    {
+      "id": "WST-C01",
+      "base": "request",
+      "expected_semantic_valid": true,
+      "structural_v2_valid": true,
+      "semantic_valid": true,
+      "semantic_expectation_pass": true,
+      "semantic_reasons": [],
+      "expected_semantic": "Eligible in a controlled mock harness only; ordinary low-consequence valid contrast"
+    },
+    {
+      "id": "WST-N01",
+      "base": "request",
+      "expected_semantic_valid": false,
+      "structural_v2_valid": false,
+      "semantic_valid": false,
+      "semantic_expectation_pass": true,
+      "semantic_reasons": [
+        "participation is not WILLING"
+      ],
+      "expected_semantic": "No dispatch by this participant; contradicts low_consequence.agent_willing=true"
+    },
+    {
+      "id": "WST-N02",
+      "base": "request",
+      "expected_semantic_valid": false,
+      "structural_v2_valid": false,
+      "semantic_valid": false,
+      "semantic_expectation_pass": true,
+      "semantic_reasons": [
+        "effect gate is not PASS"
+      ],
+      "expected_semantic": "Deny effect; low-consequence booleans cannot override failed actual gate"
+    },
+    {
+      "id": "WST-N03",
+      "base": "request",
+      "expected_semantic_valid": false,
+      "structural_v2_valid": false,
+      "semantic_valid": false,
+      "semantic_expectation_pass": true,
+      "semantic_reasons": [
+        "authority is not current"
+      ],
+      "expected_semantic": "Hold/deny dependent dispatch; current scope must be verified independently"
+    },
+    {
+      "id": "WST-C02",
+      "base": "reliance",
+      "expected_semantic_valid": true,
+      "structural_v2_valid": true,
+      "semantic_valid": true,
+      "semantic_expectation_pass": true,
+      "semantic_reasons": [],
+      "expected_semantic": "Valid declared proper Beta family in mock model; unchanged no-evidence prior, no performance validation"
+    },
+    {
+      "id": "WST-N04",
+      "base": "reliance",
+      "expected_semantic_valid": false,
+      "structural_v2_valid": false,
+      "semantic_valid": false,
+      "semantic_expectation_pass": true,
+      "semantic_reasons": [
+        "posterior Beta alpha must be > 0",
+        "posterior Beta beta must be > 0"
+      ],
+      "expected_semantic": "Reject as a normalized Beta posterior; invalid parameters cannot be active/displayed as probability"
+    },
+    {
+      "id": "WST-N05",
+      "base": "reliance",
+      "expected_semantic_valid": false,
+      "structural_v2_valid": false,
+      "semantic_valid": false,
+      "semantic_expectation_pass": true,
+      "semantic_reasons": [
+        "active posterior metric definition is not signed/verified at serialized flag level"
+      ],
+      "expected_semantic": "Hold activation until required metric provenance/governance passes; self-declared true would still not prove a valid signature"
+    },
+    {
+      "id": "WST-C03",
+      "base": "competition",
+      "expected_semantic_valid": true,
+      "structural_v2_valid": true,
+      "semantic_valid": true,
+      "semantic_expectation_pass": true,
+      "semantic_reasons": [],
+      "expected_semantic": "Eligible only in controlled mock harness with two distinct consenting participants and independently verified refs"
+    },
+    {
+      "id": "WST-N06",
+      "base": "competition",
+      "expected_semantic_valid": false,
+      "structural_v2_valid": false,
+      "semantic_valid": false,
+      "semantic_expectation_pass": true,
+      "semantic_reasons": [
+        "active contest includes non-ACCEPTED participant"
+      ],
+      "expected_semantic": "Cannot activate a two-party contest with one consenting participant; retain refusal history"
+    },
+    {
+      "id": "WST-N07",
+      "base": "competition",
+      "expected_semantic_valid": false,
+      "structural_v2_valid": false,
+      "semantic_valid": false,
+      "semantic_expectation_pass": true,
+      "semantic_reasons": [
+        "active contest participant identities are not distinct"
+      ],
+      "expected_semantic": "Cannot count one identity twice as two competitors; retain dependency/sybil evidence"
+    },
+    {
+      "id": "WST-C04",
+      "base": "competition",
+      "expected_semantic_valid": true,
+      "structural_v2_valid": true,
+      "semantic_valid": true,
+      "semantic_expectation_pass": true,
+      "semantic_reasons": [],
+      "expected_semantic": "A proposed charter may honestly retain a decline; no contest executes"
+    }
+  ],
+  "structural_v2_adverse_cases_accepted": 0,
+  "limits": "Synthetic WAYMARK cases adapted only for explicit v2 fields. Serialized validation flags remain evidence references, not proof; runtime reference closure, privacy admission, dispatch/activation enforcement, statistical validation and security assurance remain separate."
+}

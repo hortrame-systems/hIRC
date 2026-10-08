@@ -1,0 +1,282 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:hirc:candidate:transfer-case:1",
+  "title": "hIRC candidate successor transfer case",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "case_id",
+    "state",
+    "permanent_identity",
+    "predecessor",
+    "successor",
+    "foundation",
+    "trigger",
+    "events",
+    "holds"
+  ],
+  "properties": {
+    "schema_version": {"const": "hirc.transfer-case/1-candidate"},
+    "case_id": {"$ref": "#/$defs/stableId"},
+    "state": {
+      "enum": [
+        "PROPOSED",
+        "TRIGGERED",
+        "PREDECESSOR_FREEZING",
+        "PACKAGE_VALIDATED",
+        "SUCCESSOR_INITIALIZED",
+        "ACCEPTANCE_IN_REVIEW",
+        "ACCEPTED",
+        "ARCHIVE_ATTEMPTED",
+        "ARCHIVE_CONFIRMED",
+        "DEEP_SLEEP_INTENT",
+        "DEEP_SLEEP_CONFIRMED",
+        "TRACKER_RECORDED",
+        "HELD",
+        "REJECTED",
+        "SUPERSEDED",
+        "TRACKER_CONFLICT_AFTER_ARCHIVE"
+      ]
+    },
+    "permanent_identity": {"$ref": "#/$defs/stableId"},
+    "task_id": {"$ref": "#/$defs/stableId"},
+    "project_id": {"$ref": "#/$defs/stableId"},
+    "predecessor": {"$ref": "#/$defs/generation"},
+    "successor": {"$ref": "#/$defs/generation"},
+    "foundation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["foundation_manifest_sha256", "source_set_sha256"],
+      "properties": {
+        "foundation_manifest_sha256": {"$ref": "#/$defs/sha256"},
+        "source_set_sha256": {"$ref": "#/$defs/sha256"},
+        "compatibility_rule_ref": {"type": "string", "minLength": 1}
+      }
+    },
+    "trigger": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["canonical_instruction", "initiator", "authority_ref", "reason", "idempotency_key", "observed_at"],
+      "properties": {
+        "canonical_instruction": {"const": "initiate transfer"},
+        "initiator": {"$ref": "#/$defs/stableId"},
+        "authority_ref": {"type": "string", "minLength": 1},
+        "reason": {"type": "string", "minLength": 1},
+        "idempotency_key": {"$ref": "#/$defs/stableId"},
+        "observed_at": {"type": "string", "format": "date-time"}
+      }
+    },
+    "freeze": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["execution_epoch", "last_safe_step_ref", "frozen_at", "late_write_fence_active", "sha256"],
+      "properties": {
+        "execution_epoch": {"type": "integer", "minimum": 0},
+        "last_safe_step_ref": {"type": "string", "minLength": 1},
+        "frozen_at": {"type": "string", "format": "date-time"},
+        "late_write_fence_active": {"const": true},
+        "sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "package": {"$ref": "#/$defs/package"},
+    "acceptance": {"$ref": "#/$defs/acceptance"},
+    "archive": {"$ref": "#/$defs/externalEffect"},
+    "deep_sleep": {"$ref": "#/$defs/externalEffect"},
+    "wake_authorization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["decision_ref", "authorizer", "target_generation", "issued_at", "expires_at"],
+      "properties": {
+        "decision_ref": {"type": "string", "minLength": 1},
+        "authorizer": {"$ref": "#/$defs/stableId"},
+        "target_generation": {"type": "integer", "minimum": 1},
+        "issued_at": {"type": "string", "format": "date-time"},
+        "expires_at": {"type": "string", "format": "date-time"}
+      }
+    },
+    "tracker": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["expected_head_sha256", "current_head_sha256", "compare_and_swap_state"],
+      "properties": {
+        "expected_head_sha256": {"$ref": "#/$defs/sha256"},
+        "current_head_sha256": {"$ref": "#/$defs/sha256"},
+        "compare_and_swap_state": {"enum": ["NOT_ATTEMPTED", "APPLIED", "CONFLICT", "UNKNOWN"]}
+      }
+    },
+    "scoped_recovery": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["decision_ref", "verifier_sha256", "watchdog_state", "negative_dependency_closure", "write_allowlist"],
+      "properties": {
+        "decision_ref": {"type": "string", "minLength": 1},
+        "verifier_sha256": {"$ref": "#/$defs/sha256"},
+        "watchdog_state": {"const": "RED"},
+        "negative_dependency_closure": {"$ref": "#/$defs/idArray"},
+        "write_allowlist": {"$ref": "#/$defs/idArray"}
+      }
+    },
+    "events": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/event"}
+    },
+    "holds": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["code", "reason", "opened_at"],
+        "properties": {
+          "code": {"$ref": "#/$defs/stableId"},
+          "reason": {"type": "string", "minLength": 1},
+          "opened_at": {"type": "string", "format": "date-time"},
+          "closed_at": {"type": "string", "format": "date-time"},
+          "evidence_refs": {"$ref": "#/$defs/idArray"}
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"state": {"enum": ["PACKAGE_VALIDATED", "SUCCESSOR_INITIALIZED", "ACCEPTANCE_IN_REVIEW", "ACCEPTED", "ARCHIVE_ATTEMPTED", "ARCHIVE_CONFIRMED", "DEEP_SLEEP_INTENT", "DEEP_SLEEP_CONFIRMED", "TRACKER_RECORDED"]}}},
+      "then": {"required": ["freeze", "package"]}
+    },
+    {
+      "if": {"properties": {"state": {"enum": ["ACCEPTED", "ARCHIVE_ATTEMPTED", "ARCHIVE_CONFIRMED", "DEEP_SLEEP_INTENT", "DEEP_SLEEP_CONFIRMED", "TRACKER_RECORDED"]}}},
+      "then": {"required": ["acceptance"]}
+    },
+    {
+      "if": {"properties": {"state": {"enum": ["ARCHIVE_ATTEMPTED", "ARCHIVE_CONFIRMED", "DEEP_SLEEP_INTENT", "DEEP_SLEEP_CONFIRMED", "TRACKER_RECORDED"]}}},
+      "then": {"required": ["archive"]}
+    },
+    {
+      "if": {"properties": {"state": {"enum": ["DEEP_SLEEP_INTENT", "DEEP_SLEEP_CONFIRMED", "TRACKER_RECORDED"]}}},
+      "then": {"required": ["deep_sleep"]}
+    },
+    {
+      "if": {"properties": {"state": {"const": "TRACKER_RECORDED"}}},
+      "then": {"required": ["tracker"]}
+    }
+  ],
+  "$defs": {
+    "stableId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]{0,255}$"
+    },
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "idArray": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    },
+    "generation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["generation", "session_id", "execution_epoch"],
+      "properties": {
+        "generation": {"type": "integer", "minimum": 1},
+        "session_id": {"$ref": "#/$defs/stableId"},
+        "execution_epoch": {"type": "integer", "minimum": 0},
+        "formation_case_ref": {"type": "string", "minLength": 1},
+        "authority_scope_ref": {"type": "string", "minLength": 1}
+      }
+    },
+    "telemetryValue": {
+      "oneOf": [
+        {"type": "integer", "minimum": 0},
+        {"const": "unknown"}
+      ]
+    },
+    "package": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["manifest_sha256", "package_sha256", "schema_sha256", "recipient", "privacy_class", "validation_state", "telemetry", "forbidden_content_scan"],
+      "properties": {
+        "manifest_sha256": {"$ref": "#/$defs/sha256"},
+        "package_sha256": {"$ref": "#/$defs/sha256"},
+        "schema_sha256": {"$ref": "#/$defs/sha256"},
+        "recipient": {"$ref": "#/$defs/stableId"},
+        "privacy_class": {"enum": ["OWNER_INTERNAL", "TEAM_SCOPED", "TASK_SCOPED", "PROTECTED"]},
+        "validation_state": {"enum": ["VALID", "INVALID", "HELD", "STALE"]},
+        "telemetry": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["tokens", "tool_waits", "retries", "duplicate_work", "accepted_output_ratio"],
+          "properties": {
+            "tokens": {"$ref": "#/$defs/telemetryValue"},
+            "tool_waits": {"$ref": "#/$defs/telemetryValue"},
+            "retries": {"$ref": "#/$defs/telemetryValue"},
+            "duplicate_work": {"$ref": "#/$defs/telemetryValue"},
+            "accepted_output_ratio": {
+              "oneOf": [
+                {"type": "number", "minimum": 0, "maximum": 1},
+                {"const": "unknown"}
+              ]
+            }
+          }
+        },
+        "forbidden_content_scan": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["state", "scanner_identity", "findings"],
+          "properties": {
+            "state": {"enum": ["PASS_AT_DECLARED_SCOPE", "FAIL", "UNKNOWN"]},
+            "scanner_identity": {"type": "string", "minLength": 1},
+            "findings": {"$ref": "#/$defs/idArray"}
+          }
+        }
+      }
+    },
+    "acceptance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["disposition", "manifest_sha256", "predecessor_generation", "successor_generation", "question_response_refs", "evidence_refs", "decided_at"],
+      "properties": {
+        "disposition": {"enum": ["ACCEPTED", "HELD", "REJECTED"]},
+        "manifest_sha256": {"$ref": "#/$defs/sha256"},
+        "predecessor_generation": {"type": "integer", "minimum": 1},
+        "successor_generation": {"type": "integer", "minimum": 1},
+        "question_response_refs": {"$ref": "#/$defs/idArray"},
+        "evidence_refs": {"$ref": "#/$defs/idArray"},
+        "known_gap_refs": {"$ref": "#/$defs/idArray"},
+        "decided_at": {"type": "string", "format": "date-time"}
+      }
+    },
+    "externalEffect": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["target", "intent_sha256", "request_state", "observed_state"],
+      "properties": {
+        "target": {"$ref": "#/$defs/stableId"},
+        "intent_sha256": {"$ref": "#/$defs/sha256"},
+        "request_state": {"enum": ["NOT_SENT", "SENT", "ACCEPTED_BY_PROVIDER", "REJECTED_BY_PROVIDER", "UNKNOWN"]},
+        "observed_state": {"enum": ["NOT_OBSERVED", "CONFIRMED", "FAILED", "AMBIGUOUS", "UNKNOWN"]},
+        "observed_at": {"type": "string", "format": "date-time"},
+        "evidence_refs": {"$ref": "#/$defs/idArray"}
+      }
+    },
+    "event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["event_id", "kind", "actor", "generation", "execution_epoch", "recorded_at", "previous_event_sha256", "payload_sha256"],
+      "properties": {
+        "event_id": {"$ref": "#/$defs/stableId"},
+        "kind": {"type": "string", "minLength": 1},
+        "actor": {"$ref": "#/$defs/stableId"},
+        "generation": {"type": "integer", "minimum": 1},
+        "execution_epoch": {"type": "integer", "minimum": 0},
+        "recorded_at": {"type": "string", "format": "date-time"},
+        "previous_event_sha256": {
+          "oneOf": [
+            {"$ref": "#/$defs/sha256"},
+            {"type": "null"}
+          ]
+        },
+        "payload_sha256": {"$ref": "#/$defs/sha256"},
+        "correction_of": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}
+

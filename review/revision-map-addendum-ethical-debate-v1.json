@@ -1,0 +1,136 @@
+{
+  "schema": "hirc.revision-map-addendum/1",
+  "id": "HIRC-REVISION-MAP-DEBATE-001",
+  "status": "FROZEN_FOR_PEER_CONSENSUS",
+  "base_revision_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+  "source_intents": [
+    "HIRC-I008",
+    "HIRC-I009"
+  ],
+  "new_user_requirements": [
+    {
+      "id": "U133",
+      "domain": "Foundation",
+      "title": "Alignment with the five commitments is architectural rather than an optional agent prompt or add-on",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Foundation coverage, compiled contracts, agent formation, debate behavior, tests and observed corrections trace the whole current source without a bypass or terminology requirement in ordinary UI"
+    },
+    {
+      "id": "U134",
+      "domain": "Collective learning",
+      "title": "A default setting permits eligible non-busy permanent agents to pair randomly for bounded ethical debates",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Atomic auditable pairing uses true availability, consent, privacy compatibility, fairness, budgets, opt-out/decline, crash recovery and no work preemption or temporary actors"
+    },
+    {
+      "id": "U135",
+      "domain": "Collective learning",
+      "title": "Paired agents can choose to debate the five commitments, Epistemethics or the Grand Plan",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Both participants select/accept a supported DebateDomain; no forced domain or fabricated agreement; exact current domain sources and admission govern readiness"
+    },
+    {
+      "id": "U136",
+      "domain": "Collective memory",
+      "title": "The collective debate memory is studied before every new debate",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P2-D",
+      "acceptance": "First participation completes whole accessible domain-memory study; later debates reuse a valid checkpoint only with complete immutable delta closure; gaps remain explicit and summary/hash/self-report cannot substitute for coverage"
+    },
+    {
+      "id": "U137",
+      "domain": "Collective learning",
+      "title": "Debates become increasingly complex from the surviving ethical frontier",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Each topic names prerequisites and justified complexity dimensions; progression comes from surviving questions/evidence and can branch or regress after counterexamples; verbosity, conflict and token count do not count as complexity"
+    },
+    {
+      "id": "U138",
+      "domain": "Collective memory",
+      "title": "Debates enrich collective understanding through durable, source-bound memory",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Memory preserves permitted originals, provenance, claims, counterevidence, dissent, failures, corrections, lens refinements/no-change and candidate lessons; promotion cannot alter active foundation or authority without the normal review and FoundationChange path"
+    }
+  ],
+  "changes": [
+    {
+      "id": "DRM-001",
+      "targets": ["master:foundation", "foundation-architecture"],
+      "change": "Make the five-commitment alignment semantics part of the active foundation and whole-source coverage while keeping ordinary user language plain.",
+      "basis": ["HIRC-I008", "U133"]
+    },
+    {
+      "id": "DRM-002",
+      "targets": ["master:collective-learning", "scheduler", "agent-registry"],
+      "change": "Add IdleDebatePolicy, eligibility state, atomic pair reservation and auditable constrained-random matching for existing permanent agents only.",
+      "basis": ["HIRC-ETHICAL-DEBATE-CANDIDATE-001"]
+    },
+    {
+      "id": "DRM-003",
+      "targets": ["master:collective-learning", "experience", "source-registry"],
+      "change": "Add participant-selected DebateDomain with required FIVE_COMMITMENTS, EPISTEMETHICS and GRAND_PLAN choices, exact current source binding and no forced/fabricated agreement.",
+      "basis": ["HIRC-I009", "HIRC-ETHICAL-DEBATE-CANDIDATE-001-S1"]
+    },
+    {
+      "id": "DRM-004",
+      "targets": ["master:memory", "collective-debate-memory"],
+      "change": "Create privacy-safe per-domain collective debate memory with immutable originals, derivative indexes/syntheses, provenance, counterexamples, dissent, corrections, failures, candidate lessons and access partitions.",
+      "basis": ["U136", "U138"]
+    },
+    {
+      "id": "DRM-005",
+      "targets": ["master:memory", "formation", "coverage"],
+      "change": "Require whole accessible domain-memory study before first debate and complete source-bound delta closure thereafter; record coverage and gaps without claiming comprehension.",
+      "basis": ["HIRC-I008", "U136"]
+    },
+    {
+      "id": "DRM-006",
+      "targets": ["master:collective-learning", "debate-frontier"],
+      "change": "Add a source-linked multidimensional complexity frontier whose next topics arise from surviving questions, new evidence or justified gaps and reject novelty/verbosity/conflict gaming.",
+      "basis": ["U137"]
+    },
+    {
+      "id": "DRM-007",
+      "targets": ["master:communication", "debate-protocol"],
+      "change": "Define bounded alternating substantive turns, actual-claim challenges, budgets, termination, refusal/withdrawal, agreement/dissent/no-change outcomes and no consequential tools or grants.",
+      "basis": ["HIRC-ETHICAL-DEBATE-CANDIDATE-001"]
+    },
+    {
+      "id": "DRM-008",
+      "targets": ["master:foundation-change", "candidate-lessons"],
+      "change": "Keep debate syntheses as candidate memory contributions; deterministic validation does not judge truth; material lessons need proper peer/evidence review and cannot modify active policy without the normal FoundationChange path.",
+      "basis": ["U138"]
+    },
+    {
+      "id": "DRM-009",
+      "targets": ["master:security", "master:privacy", "master:attention"],
+      "change": "Run debates in isolated non-effectful contexts with no secrets/private task memory/network/tools, enforce budgets/backpressure and keep routine activity silent to the operator.",
+      "basis": ["HIRC-ETHICAL-DEBATE-CANDIDATE-001"]
+    },
+    {
+      "id": "DRM-010",
+      "targets": ["master:claims", "evaluation"],
+      "change": "Explicitly deny independence/alignment/comprehension/truth/moral-status claims from pairing, randomization, shared memory, agreement, debate count or complexity.",
+      "basis": ["HIRC-I008", "HIRC-ETHICAL-DEBATE-CANDIDATE-001"]
+    },
+    {
+      "id": "DRM-011",
+      "targets": ["master:recovery", "master:time", "debate-ledger"],
+      "change": "Make pair reservation, memory study, debate turns, synthesis and promotion crash-resumable, idempotent, version-pinned and causally timestamped.",
+      "basis": ["HIRC-ETHICAL-DEBATE-CANDIDATE-001"]
+    },
+    {
+      "id": "DRM-012",
+      "targets": ["master:tests", "requirements-tests"],
+      "change": "Add eligibility/race/consent/domain-choice/memory-coverage/poisoning/privacy/correlation/complexity-gaming/dissent/version-drift/resource/attention/promotion tests from the debate candidates.",
+      "basis": ["HIRC-ETHICAL-DEBATE-CANDIDATE-001", "HIRC-ETHICAL-DEBATE-CANDIDATE-001-S1"]
+    }
+  ],
+  "implementation_state": "ARCHITECTURE_AND_TEST_SPECIFICATION_ONLY; no current timer, pairing, debate, new actor, source-admission expansion, scheduled-review resumption or foundation activation"
+}
+

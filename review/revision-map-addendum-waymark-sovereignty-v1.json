@@ -1,0 +1,86 @@
+{
+  "schema": "hirc.revision-map-addendum/1",
+  "id": "HIRC-REVISION-MAP-WAYMARK-SOVEREIGNTY-001",
+  "status": "BOUNDED_AGREEMENT_PENDING_WHOLE_PLAN_CONSENSUS",
+  "base_revision_maps": [
+    "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+    "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
+    "HIRC-REVISION-MAP-GOAL-EVOLUTION-001"
+  ],
+  "source_bindings": [
+    "HIRC-WAYMARK-WST-CHALLENGE-001",
+    "HIRC-WAYMARK-WST-FIXTURES-001",
+    "HIRC-LUCENT-WST-RESPONSE-001"
+  ],
+  "new_user_requirements": [
+    {
+      "id": "U169",
+      "domain": "Request and activation integrity",
+      "title": "Require cross-record coherence and independent current-state validation at dispatch or activation",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "Proceed/active labels cannot coexist with declined participation, stale/invalid authority, failed effect gate, invalid posterior family, unsigned/unverified metric, duplicate competitor identity or nonconsent; inconsistent evidence remains storable as held/draft history"
+    },
+    {
+      "id": "U170",
+      "domain": "Uncertainty and measurement",
+      "title": "Represent unestimated intent honestly and require Bayesian model-fit/governance evidence",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1-T",
+      "acceptance": "Intent confidence is estimated with method/uncertainty or explicitly unestimated; active posterior lineage records prior sensitivity, predictive checks, dependence, missingness/selection, calibration, drift and limits without implying truth or permission"
+    },
+    {
+      "id": "U171",
+      "domain": "Privacy",
+      "title": "Apply privacy admission before RequestCase, TrustUpdate, metric, evaluator, appeal or collective-memory persistence",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "Admitted harmless originals can be referenced; rejected bodies/secrets/third-party fields never reach cases, posteriors, search, logs or providers and produce minimum non-content diagnostics only"
+    },
+    {
+      "id": "U172",
+      "domain": "Non-domination and trust",
+      "title": "Prevent scoped reliability vectors from becoming a dossier, roster rank or covert social score",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1-T",
+      "acceptance": "Consumers and prohibited inferences are explicit; no global display/sort/aggregate or unjustified cross-domain transfer; justified refusal, NO_CHANGE, abstention and specialization are not negative evidence; opportunity feedback loops are audited"
+    },
+    {
+      "id": "U173",
+      "domain": "Interaction",
+      "title": "Use verified low-consequence action profiles without universal-proof or confirmation fatigue",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "Known safe profiles establish stable predicates, current permission/material changes are rechecked, one recommendation suffices, no bypass appears for denials and unwilling participants are never forced"
+    },
+    {
+      "id": "U174",
+      "domain": "Cooperative competition",
+      "title": "Freeze objective/protected qualities and keep cooperative credit task-scoped without hierarchy",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-C",
+      "acceptance": "Correctness/privacy/refusal/traceability cannot be offset by helpfulness or score; current consent/distinct identity/eligibility/reference closure precede activation; credit records contributions without global rank or authority"
+    },
+    {
+      "id": "U175",
+      "domain": "Goal governance",
+      "title": "Use the plain GoalVersion 2 purpose with the full governing account and affected-party coverage",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Plain purpose leads ordinary product language; full local-first/security/sovereignty/non-domination account remains controlling; matched-baseline evaluation covers outsiders and finite attention; no new scope or authority follows"
+    }
+  ],
+  "changes": [
+    {"id": "WST-RM-001", "targets": ["request-schema-v2", "reliance-schema-v2", "competition-schema-v2", "dispatch", "activation"], "change": "Add state-specific cross-record coherence, independently verified reference closure and current dispatch/activation checks while preserving inconsistent draft/held evidence.", "basis": ["WST-01", "U169"]},
+    {"id": "WST-RM-002", "targets": ["request-schema-v2", "reliance-schema-v2", "trust-ui"], "change": "Add estimated/unestimated intent confidence and active Bayesian fit/sensitivity/dependence/missingness/calibration/drift evidence; avoid default precision badges.", "basis": ["WST-02", "U170"]},
+    {"id": "WST-RM-003", "targets": ["privacy-admission", "request-service", "trust-service", "metric-registry", "collective-memory"], "change": "Move privacy admission before persistent cases/evidence and use minimum non-content diagnostics for rejected bodies.", "basis": ["WST-03", "U171"]},
+    {"id": "WST-RM-004", "targets": ["trust-service", "agent-dossier", "scheduler", "explanation-service"], "change": "Specify consumers/prohibited inferences, ban global rank/sort/aggregate and cross-domain transfer, protect refusal/NO_CHANGE/abstention, and audit opportunity feedback loops.", "basis": ["WST-04", "U172"]},
+    {"id": "WST-RM-005", "targets": ["request-service", "trusted-ui", "action-broker", "participant-reassignment"], "change": "Use verified safe action profiles and delta/current-permission rechecks; suppress repeat confirmation; preserve unwilling participant and explicit lawful reassignment; no denial bypass.", "basis": ["WST-05", "U173"]},
+    {"id": "WST-RM-006", "targets": ["competition-charter-v2", "evaluation", "credit-memory"], "change": "Freeze protected qualities/non-compensation, revalidate consent/distinctness/eligibility/reference closure, keep credit task-scoped and prevent rank-to-authority.", "basis": ["WST-06", "U174"]},
+    {"id": "WST-RM-007", "targets": ["master:product-definition", "goal-version", "evaluation"], "change": "Activate GoalVersion 2 plain purpose while preserving the full governing account, affected-outsider coverage, finite attention, matched baseline and all anti-goals.", "basis": ["HIRC-I018", "U175"]},
+    {"id": "WST-RM-008", "targets": ["master:tests", "requirements-tests"], "change": "Retain WAYMARK's four controls/seven adverse cases and add runtime reference-closure, privacy-admission, model-fit, consumer/inference, safe-profile and credit-hierarchy fixtures.", "basis": ["HIRC-WAYMARK-WST-FIXTURES-001", "HIRC-LUCENT-WST-RESPONSE-001"]}
+  ],
+  "bounded_consensus": ["WST-01", "WST-02", "WST-03", "WST-04", "WST-05", "WST-06", "GOAL-V2"],
+  "implementation_state": "CONTRACT_AND_DESIGN_CORRECTION_ONLY; runtime/privacy/statistical/usability/security validation and whole-plan consensus remain open"
+}
+

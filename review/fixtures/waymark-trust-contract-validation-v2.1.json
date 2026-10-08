@@ -1,0 +1,199 @@
+{
+  "schema": "hirc.waymark-contract-validation/2.1",
+  "fixture_path": "review/fixtures/waymark-trust-contract-cases-v1.json",
+  "fixture_sha256": "2f361a190ffe1ad2de435d9165d07b5d5cfd9842e2778e65ca3c98886d3311ae",
+  "fixture_source_bindings": [
+    {
+      "path": "../contracts/hirc-request-case.candidate.schema.json",
+      "expected_sha256": "19f2aa624caaecf2a73599d7f8b4e709cdf5c668c2b3846f26896b063a893ee9",
+      "actual_sha256": "19f2aa624caaecf2a73599d7f8b4e709cdf5c668c2b3846f26896b063a893ee9",
+      "pass": true
+    },
+    {
+      "path": "../contracts/hirc-bayesian-reliance.candidate.schema.json",
+      "expected_sha256": "900f074496cdefcb447c1c4d436a1f6952f01754e909f133f78e06fa2d73a9e8",
+      "actual_sha256": "900f074496cdefcb447c1c4d436a1f6952f01754e909f133f78e06fa2d73a9e8",
+      "pass": true
+    },
+    {
+      "path": "../contracts/hirc-cooperative-competition-charter.candidate.schema.json",
+      "expected_sha256": "3ec5f254024d5e1f1ff3ecc812419af021f43a3dddbead90559c32e95ef3067a",
+      "actual_sha256": "3ec5f254024d5e1f1ff3ecc812419af021f43a3dddbead90559c32e95ef3067a",
+      "pass": true
+    }
+  ],
+  "validation_targets": [
+    {
+      "base": "request",
+      "path": "review/contracts/hirc-request-case.candidate.schema.v2.json",
+      "sha256": "02808932d5dd90965da7ea476eb3e6db829a031ed046a3d0c56d2fc5d1fe8430"
+    },
+    {
+      "base": "reliance",
+      "path": "review/contracts/hirc-bayesian-reliance.candidate.schema.v2.json",
+      "sha256": "ff308e1ab64a7936983fca195998659842e527de9e1057fe5c267f60649c3274"
+    },
+    {
+      "base": "competition",
+      "path": "review/contracts/hirc-cooperative-competition-charter.candidate.schema.v2.json",
+      "sha256": "ddc95fe9f4fe113620b0bda83040663c4b1aeebbc18519c5979f7102caa403ad"
+    }
+  ],
+  "adapter_harness": {
+    "path": "review/.scratch-ui-20261007-b-20261008-a/validate_waymark_contract_cases_v2.ps1",
+    "sha256": "000771021f331a019003da8172e2c6d2f072a826e1965d6ca2b7e4a43526509b",
+    "adaptation": "WAYMARK v1 base+patch expansion, then explicit required-field v2 adapter in this exact harness; per-case adapted UTF-8 ConvertTo-Json depth50 hash recorded"
+  },
+  "runtime": {
+    "powershell_edition": "Core",
+    "powershell_version": "7.6.5",
+    "platform": "Win32NT",
+    "os": "Microsoft Windows 10.0.26200",
+    "validator_command": "Test-Json",
+    "validator_module": "Microsoft.PowerShell.Utility",
+    "validator_module_version": "7.0.0.0",
+    "validator_source": "Microsoft.PowerShell.Utility"
+  },
+  "validator": "Test-Json against exact v2 candidate targets plus explicit semantic checks in the hash-bound adapter harness",
+  "state": "PASS",
+  "cases": [
+    {
+      "id": "WST-C01",
+      "base": "request",
+      "expected_semantic_valid": true,
+      "structural_v2_valid": true,
+      "adapted_input_sha256": "4eadbec24ea491e4fb63b213f77617f8e9855e98c50cce6a45a7debb0835ecf7",
+      "semantic_valid": true,
+      "semantic_expectation_pass": true,
+      "semantic_reasons": [],
+      "expected_semantic": "Eligible in a controlled mock harness only; ordinary low-consequence valid contrast"
+    },
+    {
+      "id": "WST-N01",
+      "base": "request",
+      "expected_semantic_valid": false,
+      "structural_v2_valid": false,
+      "adapted_input_sha256": "9a45f9dd3239339effa10202ca9ceb80b0477be9ceb5dcfa516c6143430490ce",
+      "semantic_valid": false,
+      "semantic_expectation_pass": true,
+      "semantic_reasons": [
+        "participation is not WILLING"
+      ],
+      "expected_semantic": "No dispatch by this participant; contradicts low_consequence.agent_willing=true"
+    },
+    {
+      "id": "WST-N02",
+      "base": "request",
+      "expected_semantic_valid": false,
+      "structural_v2_valid": false,
+      "adapted_input_sha256": "d28d047260d3a58c9e2ef19237f38d1410023a137dec768950e6317e783643da",
+      "semantic_valid": false,
+      "semantic_expectation_pass": true,
+      "semantic_reasons": [
+        "effect gate is not PASS"
+      ],
+      "expected_semantic": "Deny effect; low-consequence booleans cannot override failed actual gate"
+    },
+    {
+      "id": "WST-N03",
+      "base": "request",
+      "expected_semantic_valid": false,
+      "structural_v2_valid": false,
+      "adapted_input_sha256": "cf424f8989a8869d2f3abc77ac602b14870eb69f2a6c4e8e47c1f14232b24fe4",
+      "semantic_valid": false,
+      "semantic_expectation_pass": true,
+      "semantic_reasons": [
+        "authority is not current"
+      ],
+      "expected_semantic": "Hold/deny dependent dispatch; current scope must be verified independently"
+    },
+    {
+      "id": "WST-C02",
+      "base": "reliance",
+      "expected_semantic_valid": true,
+      "structural_v2_valid": true,
+      "adapted_input_sha256": "aad2269b0123d6ddd24a3cb4229727135ba233f121d88321bd001443040281f0",
+      "semantic_valid": true,
+      "semantic_expectation_pass": true,
+      "semantic_reasons": [],
+      "expected_semantic": "Valid declared proper Beta family in mock model; unchanged no-evidence prior, no performance validation"
+    },
+    {
+      "id": "WST-N04",
+      "base": "reliance",
+      "expected_semantic_valid": false,
+      "structural_v2_valid": false,
+      "adapted_input_sha256": "2f52f6a4885f98f4c61f13317ddf5cc5bc600f910a6e1d7c5726b1026f0ab1f6",
+      "semantic_valid": false,
+      "semantic_expectation_pass": true,
+      "semantic_reasons": [
+        "posterior Beta alpha must be > 0",
+        "posterior Beta beta must be > 0"
+      ],
+      "expected_semantic": "Reject as a normalized Beta posterior; invalid parameters cannot be active/displayed as probability"
+    },
+    {
+      "id": "WST-N05",
+      "base": "reliance",
+      "expected_semantic_valid": false,
+      "structural_v2_valid": false,
+      "adapted_input_sha256": "de94ce63f5a6b70feac690c5cd1ce20711eb4ee8d33c93047c29881b6c21241e",
+      "semantic_valid": false,
+      "semantic_expectation_pass": true,
+      "semantic_reasons": [
+        "active posterior metric definition is not signed/verified at serialized flag level"
+      ],
+      "expected_semantic": "Hold activation until required metric provenance/governance passes; self-declared true would still not prove a valid signature"
+    },
+    {
+      "id": "WST-C03",
+      "base": "competition",
+      "expected_semantic_valid": true,
+      "structural_v2_valid": true,
+      "adapted_input_sha256": "55df481a2e47197cf0a17a3f2db03fd3ef8ac95e2757871d0e34daa6e49ba428",
+      "semantic_valid": true,
+      "semantic_expectation_pass": true,
+      "semantic_reasons": [],
+      "expected_semantic": "Eligible only in controlled mock harness with two distinct consenting participants and independently verified refs"
+    },
+    {
+      "id": "WST-N06",
+      "base": "competition",
+      "expected_semantic_valid": false,
+      "structural_v2_valid": false,
+      "adapted_input_sha256": "5577ad67ff8fe1555d05329a73ebf3db11cfc2a39ab171eb3722d6371d65ed0a",
+      "semantic_valid": false,
+      "semantic_expectation_pass": true,
+      "semantic_reasons": [
+        "active contest includes non-ACCEPTED participant"
+      ],
+      "expected_semantic": "Cannot activate a two-party contest with one consenting participant; retain refusal history"
+    },
+    {
+      "id": "WST-N07",
+      "base": "competition",
+      "expected_semantic_valid": false,
+      "structural_v2_valid": false,
+      "adapted_input_sha256": "d43b7d3b1e4a6d4d8d5a056210ff4dc550c1f616e71c886f07383bb39e37b08c",
+      "semantic_valid": false,
+      "semantic_expectation_pass": true,
+      "semantic_reasons": [
+        "active contest participant identities are not distinct"
+      ],
+      "expected_semantic": "Cannot count one identity twice as two competitors; retain dependency/sybil evidence"
+    },
+    {
+      "id": "WST-C04",
+      "base": "competition",
+      "expected_semantic_valid": true,
+      "structural_v2_valid": true,
+      "adapted_input_sha256": "1a8b866e175e54c8ef5fccd0bf440af412307e2945bd31482868a7efff38c968",
+      "semantic_valid": true,
+      "semantic_expectation_pass": true,
+      "semantic_reasons": [],
+      "expected_semantic": "A proposed charter may honestly retain a decline; no contest executes"
+    }
+  ],
+  "structural_v2_adverse_cases_accepted": 0,
+  "limits": "Synthetic WAYMARK cases adapted only for explicit v2 fields. Serialized validation flags remain evidence references, not proof; runtime reference closure, privacy admission, dispatch/activation enforcement, statistical validation and security assurance remain separate."
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": "hirc.onboarding-source-set/1-candidate",
+  "source_set_id": "source-set:test:1",
+  "predecessor_source_set_id": null,
+  "catalog": {
+    "logical_id": "catalog:test",
+    "revision": "1",
+    "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "resolver_identity": "resolver:test",
+    "generated_at": "2026-10-08T12:00:00Z"
+  },
+  "context": {
+    "deployment_id": "deployment:test",
+    "technical_identity": "UI-TEST-001",
+    "roles": ["reviewer"],
+    "task_id": "task:test",
+    "audience": ["owner"],
+    "purpose": "contract validation"
+  },
+  "sources": [
+    {
+      "logical_id": "standard:test",
+      "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "edition": "1",
+      "format": "utf8",
+      "original_format_review_required": false,
+      "selection_status": "OWNER_SELECTED_CURRENT",
+      "selection_owner": "owner:test",
+      "audience": ["owner"],
+      "scopes": ["COMMON"],
+      "privacy_class": "OWNER_INTERNAL",
+      "predecessor_ids": [],
+      "same_content_ids": [],
+      "dependencies": [],
+      "body_embedded": false,
+      "dispositions": [
+        {
+          "kind": "KERNEL_INVARIANT",
+          "state": "PROPOSED",
+          "consumers": ["kernel:test"],
+          "verification_refs": ["test:test"]
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "source_count": 1,
+    "disposed_source_count": 1,
+    "unresolved_source_ids": [],
+    "state": "COMPLETE_FOR_DECLARED_SCOPE",
+    "checker_identity": "checker:test",
+    "checked_at": "2026-10-08T12:01:00Z"
+  }
+}
+

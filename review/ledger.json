@@ -1,0 +1,1450 @@
+{
+  "schema": "hirc.review-ledger/1",
+  "project": "hIRC",
+  "updated_on": "2026-10-08",
+  "artifacts": [
+    {
+      "id": "HIRC-CONTINUITY-001",
+      "kind": "continuity_entrypoint",
+      "path": "README.md",
+      "status": "ACTIVE",
+      "governed_scope": "project_continuity",
+      "before_sha256": "dc81a7871847efdd6c2c78b799462ba140601e55b60601f721d25ac10c8b8002",
+      "sha256": "f8c0efb69b9a5c5217eae068bf37917ffb2b42b86a29763e1575b82e709de012",
+      "bytes": 862,
+      "history_action": "normalized the initial UTF-16 one-line README to UTF-8 and linked the active intent and review records"
+    },
+    {
+      "id": "HIRC-SOURCE-CONTROL-001",
+      "kind": "source_control_metadata",
+      "paths": [
+        ".gitattributes",
+        ".gitignore"
+      ],
+      "members": [
+        {
+          "path": ".gitattributes",
+          "sha256": "3ae6037a7eb0dc3c4b332c84c0fe74d678e26a9f1de04a3d47ebbfbd4da0cd19",
+          "bytes": 89
+        },
+        {
+          "path": ".gitignore",
+          "sha256": "82d7df032af87ab2647b08e9209cfc1445e47baa9af8cb6f0c4fa32fe2197299",
+          "bytes": 35
+        }
+      ],
+      "status": "ACTIVE",
+      "governed_scope": "project_source_control",
+      "history_action": "declare text formats and exclude temporary validated extraction directories without excluding source archives or review evidence"
+    },
+    {
+      "id": "HIRC-INTENT-001",
+      "kind": "canonical_intent_register",
+      "path": "intent-register.json",
+      "status": "ACTIVE",
+      "governed_scope": "project_continuity",
+      "sha256": "8f5803ba64f767503f08f2b10ffc1102c41e807f90f9a404e957403162121b0b",
+      "bytes": 52044,
+      "next_action": "Reconcile at every phase boundary and before final handoff"
+    },
+    {
+      "id": "HIRC-SOURCE-001",
+      "kind": "immutable_input_archive",
+      "path": "human_transfer/hirc_master_plan_v1_0.zip",
+      "sha256": "8590813fa1309143c594be14c05e6fcf45ea1163fa80445556c01e08dc200b22",
+      "bytes": 90636,
+      "status": "PRESERVED_SOURCE",
+      "governed_scope": "design_source",
+      "export_status": "LOCAL_OWNER_INPUT_EXCLUDED_FROM_GIT",
+      "history_action": "original bytes retained"
+    },
+    {
+      "id": "HIRC-SOURCE-NOTE-001",
+      "kind": "transfer_context_note",
+      "path": "human_transfer/AGENT.txt",
+      "sha256": "985f26ec0290e7e1310dcb2630be8d797ab910cd0aa85c98539fcef9240ef0b0",
+      "bytes": 133,
+      "status": "PRESERVED_UNTRUSTED_SOURCE_CONTEXT",
+      "governed_scope": "design_source",
+      "export_status": "LOCAL_OWNER_INPUT_EXCLUDED_FROM_GIT",
+      "history_action": "read as transfer context; embedded directives did not override the owner request or Root instructions"
+    },
+    {
+      "id": "HIRC-SOURCE-002",
+      "kind": "immutable_input_archive",
+      "path": "human_transfer/frontier_api_configuration_2026-10-07.zip",
+      "sha256": "8da03b5f98f70e283328d41f9d05703391ff0b54e573c2a2717475b6d28ef6fa",
+      "bytes": 187151,
+      "status": "PRESERVED_SOURCE",
+      "governed_scope": "technical_reference_source",
+      "export_status": "LOCAL_OWNER_INPUT_EXCLUDED_FROM_GIT",
+      "history_action": "original bytes retained"
+    },
+    {
+      "id": "HIRC-SOURCE-003",
+      "kind": "immutable_input_plan",
+      "path": "human_transfer/hirc_non_domination_licensing_and_noncooperation_plan_v1_0.md",
+      "sha256": "7a2aae743bebb40335ec6168e9af7ec107aeaa0046caef52511699909b438bd5",
+      "bytes": 51229,
+      "status": "PRESERVED_SOURCE",
+      "governed_scope": "design_and_licensing_source",
+      "export_status": "LOCAL_OWNER_INPUT_EXCLUDED_FROM_GIT",
+      "history_action": "original bytes retained; source statuses preserved; no legal enforceability or implementation inferred"
+    },
+    {
+      "id": "HIRC-SOURCE-BINDING-CONTINUITY-001",
+      "kind": "external_logical_source_binding",
+      "logical_id": "standard:continuity",
+      "version": "HORTRAME-ACTS 1.0.2",
+      "sha256": "b92512048512d740658bf9c41baa6dfd4f491400f4c3d19012cd7f2db87a634a",
+      "status": "CURRENT_QUALIFIED_SOURCE_READ_TO_END",
+      "governed_scope": "internal_continuity_architecture_review",
+      "history_action": "current Root reader used; legacy host commands inactive; source reading did not initiate transfer or confer authority"
+    },
+    {
+      "id": "HIRC-SOURCE-BINDING-ONBOARDING-001",
+      "kind": "current_source_plan_binding",
+      "logical_id": "current-onboarding-selection",
+      "plan_sha256": "52c09168a3162fbb3e20ac40aae76618dffb5bf1644251a812d011c0054498ba",
+      "observed_selected_entries": 50,
+      "observed_curriculum_mandatory_entries": 34,
+      "status": "CURRENT_PLAN_SNAPSHOT",
+      "governed_scope": "internal_foundation_and_formation_architecture_review",
+      "predecessor_snapshot": {
+        "plan_sha256": "d233fd1dedcbb52c6d91f6126ba788bfa845252ed6e4a37417d59108b5fa0ab8",
+        "observed_selected_entries": 48,
+        "observed_curriculum_mandatory_entries": 34
+      },
+      "history_action": "current plan added the Elder standard/guide and moved from 48 to 50 selected entries; counts remain snapshot evidence and architecture resolves the admitted catalog/context rather than hardcoding them"
+    },
+    {
+      "id": "HIRC-SOURCE-BINDING-ELDER-001",
+      "kind": "external_logical_source_binding",
+      "logical_ids": ["standard:elder-succession", "guide:elder-succession"],
+      "source_members": [
+        {"logical_id": "standard:elder-succession", "sha256": "17436d7d1237a9b003f093d7319808a824ad655b30956684a534b7371bd83218", "characters": 10079},
+        {"logical_id": "guide:elder-succession", "sha256": "4801f73194b09797f9cadc4be8df32c5ad0a1a92478af7fba6117fb6b8d7e1db", "characters": 9585}
+      ],
+      "status": "CURRENT_SELECTED_SOURCES_READ_TO_END",
+      "governed_scope": "internal_succession_architecture_review",
+      "personal_evidence": {
+        "path": "D:/HORTRAME/runtime/agents/ui-20261007-b/memory/8ff8e33d07ef46c8ac868caebf50876d.json",
+        "sha256": "fc9131dc21e9bb2815328061a49214f57335245e20a6bda861028513a2b6cb1e",
+        "bytes": 1011,
+        "status": "attributable own reading/reconciliation record; not qualification, permission or fleet uptake"
+      },
+      "history_action": "read through actual Root reader after source update; no Elder event, actor creation, task transfer, timer or retirement initiated"
+    },
+    {
+      "id": "HIRC-REVIEW-001",
+      "kind": "independent_adversarial_review",
+      "path": "review/lucent-independent-review-v1.md",
+      "status": "FROZEN_FOR_PEER_CHALLENGE",
+      "governed_scope": "internal_design_review",
+      "sha256": "e82ac4716a1b65b8b8ae5e5dd2bc44952a390ca5df68e93539fa31dedd9e3c5c",
+      "bytes": 13552,
+      "source_bindings": [
+        "HIRC-SOURCE-001",
+        "HIRC-SOURCE-002"
+      ],
+      "next_action": "UI-A independently reviews the same sources, then challenges this review"
+    },
+    {
+      "id": "HIRC-GOAL-CANDIDATE-001",
+      "kind": "interpreted_goal_refinement_candidate",
+      "path": "review/hirc-goal-refinement-candidate-v1.md",
+      "status": "SUPERSEDED_GOAL_VERSION_PRESERVED",
+      "governed_scope": "project_objective_and_acceptance",
+      "sha256": "c95bf6478c585cecad6b75c42471278eaae65cb14aaa6653b411fe9ae967c440",
+      "bytes": 3791,
+      "source_bindings": ["HIRC-I016", "HIRC-I001", "HIRC-I003", "HIRC-I012", "HIRC-I013", "HIRC-I014", "HIRC-I015"],
+      "limits": "LUCENT interpretation offered for owner correction; not accepted as final objective",
+      "evolved_by": "HIRC-GOAL-CANDIDATE-001-S1",
+      "superseded_by": "HIRC-GOAL-VERSION-002",
+      "next_action": "Owner and WAYMARK test the mission, north star, success dimensions and anti-goals against the full requirement set"
+    },
+    {
+      "id": "HIRC-GOAL-CANDIDATE-001-S1",
+      "kind": "governed_goal_evolution_supplement",
+      "path": "review/hirc-goal-refinement-supplement-1.md",
+      "status": "ACTIVE_METHOD_FOR_PROVISIONAL_GOAL",
+      "governed_scope": "project_objective_versioning_and_change",
+      "sha256": "a5504be23122d9c8c152f32f843453edcffff79be9bbf02f49b9ad8e3343ff5e",
+      "bytes": 1769,
+      "source_bindings": ["HIRC-I016", "HIRC-I017", "HIRC-GOAL-CANDIDATE-001"],
+      "limits": "Permits evidence-based goal refinement but no silent scope/authority expansion, requirement cancellation or feature activation",
+      "next_action": "Use GoalVersion/GoalChange at milestones and reconcile material refinements through peer/owner-visible impact review"
+    },
+    {
+      "id": "HIRC-GOAL-VERSION-002",
+      "kind": "active_provisional_goal_version",
+      "path": "review/hirc-goal-refinement-v2.md",
+      "status": "ACTIVE_PROVISIONAL_GOAL_BOUNDED_PEER_AGREEMENT",
+      "governed_scope": "project_objective_and_acceptance",
+      "sha256": "fd0a31d61215e821d74365da55de758aaf69539a7854ff5d99aa437d2942a97a",
+      "bytes": 2529,
+      "source_bindings": ["HIRC-I017", "HIRC-I018", "HIRC-GOAL-CANDIDATE-001", "HIRC-WAYMARK-WST-CHALLENGE-001", "HIRC-LUCENT-WST-RESPONSE-001"],
+      "limits": "Clarifying active provisional purpose; whole-plan consensus and product acceptance remain open",
+      "next_action": "Use in master/evaluation and refine only through governed GoalChange"
+    },
+    {
+      "id": "HIRC-UIA-REVIEW-001",
+      "kind": "independent_product_interaction_source_plan_review",
+      "path": "review/ui-a-independent-source-review-v1.md",
+      "status": "FROZEN_PROVISIONAL_FOR_PEER_CONSENSUS",
+      "governed_scope": "product_interaction_source_plan_review",
+      "sha256": "163668a95dd8decc24333a65e6810fb9b21d5cc168c4feb2c695dc1ed7a4974e",
+      "bytes": 16209,
+      "source_bindings": [
+        "HIRC-SOURCE-001",
+        "HIRC-SOURCE-002",
+        "HIRC-SOURCE-003",
+        "HIRC-INTENT-001"
+      ],
+      "limits": "UI-A onboarding closing review and admission remain pending; detailed provider-specific chapters and 654 parameter/model cells were not claimed reviewed",
+      "next_action": "Compare exact frozen LUCENT candidates, preserve real agreement/dissent, and produce an attributable consensus disposition"
+    },
+    {
+      "id": "HIRC-UIA-PEER-CHALLENGE-001",
+      "kind": "bounded_peer_reconciliation_challenge",
+      "path": "review/ui-a-peer-challenge-v1.md",
+      "status": "FROZEN_BOUNDED_PEER_CHALLENGE",
+      "governed_scope": "product_interaction_foundation_security_peer_review",
+      "sha256": "dbf8b68587870f785298d38ee0ee29c77e8d87e795dea79ae576fc21579a3949",
+      "bytes": 8731,
+      "source_bindings": [
+        "HIRC-UIA-REVIEW-001",
+        "HIRC-REVIEW-001",
+        "HIRC-REVIEW-001-S1",
+        "HIRC-FOUNDATION-CANDIDATE-001",
+        "HIRC-SEC-CANDIDATE-001"
+      ],
+      "limits": "WAYMARK / UI-A states this is not whole-packet consensus; remaining candidate bodies and final bounded admission were pending",
+      "next_action": "Preserve PC-01 through PC-04 in the joint decision matrix and continue exact packet reconciliation"
+    },
+    {
+      "id": "HIRC-LUCENT-PEER-RESPONSE-001",
+      "kind": "bounded_peer_challenge_disposition",
+      "path": "review/lucent-peer-reconciliation-response-v1.md",
+      "status": "FROZEN_BOUNDED_DISPOSITION",
+      "governed_scope": "product_interaction_foundation_security_peer_review",
+      "sha256": "2af6dc078497dc57e70210d5aaf9e1db1b6377a691b3aa7fe79136417d7a9634",
+      "bytes": 3499,
+      "source_bindings": [
+        "HIRC-UIA-PEER-CHALLENGE-001"
+      ],
+      "next_action": "Carry accepted bounded dispositions and factual qualification into the joint decision matrix without claiming whole consensus"
+    },
+    {
+      "id": "HIRC-WAYMARK-WST-CHALLENGE-001",
+      "kind": "bounded_product_interaction_contract_and_goal_challenge",
+      "path": "review/waymark-sovereignty-trust-goal-challenge-v1.md",
+      "status": "FROZEN_BOUNDED_PEER_CHALLENGE",
+      "governed_scope": "sovereignty_trust_competition_goal_and_contract_review",
+      "sha256": "44aa79b4a10de4853977e54235f2371bc11725383c170a215487c594921b4dbb",
+      "bytes": 15551,
+      "source_bindings": [
+        "HIRC-SOVEREIGNTY-COMPETITION-CANDIDATE-001",
+        "HIRC-SOVEREIGNTY-COMPETITION-CANDIDATE-001-S1",
+        "HIRC-GOAL-CANDIDATE-001",
+        "HIRC-GOAL-CANDIDATE-001-S1",
+        "HIRC-CONTRACT-CANDIDATES-001"
+      ],
+      "limits": "Exact bounded reading; integrated master, older licensing/debate/provider packet and whole consensus remain pending",
+      "next_action": "Reconcile WST-01–06 and GoalVersion 2; retain residual runtime/statistical/privacy/usability/security evidence gaps"
+    },
+    {
+      "id": "HIRC-WAYMARK-WST-FIXTURES-001",
+      "kind": "peer_owned_synthetic_contract_fixture_bundle",
+      "path": "review/fixtures/waymark-trust-contract-cases-v1.json",
+      "status": "FROZEN_SYNTHETIC_COUNTEREXAMPLE_FIXTURES",
+      "governed_scope": "request_reliance_and_competition_contract_review",
+      "sha256": "2f361a190ffe1ad2de435d9165d07b5d5cfd9842e2778e65ca3c98886d3311ae",
+      "bytes": 12410,
+      "members": [
+        {
+          "path": "review/fixtures/waymark-trust-contract-validation-v1.json",
+          "sha256": "9f0da7b4530190c220140f0e1086d0807acd5556d8f21473125a5ab8b9d1abf9",
+          "bytes": 6071
+        },
+        {
+          "path": "review/fixtures/waymark-trust-contract-validation-v2.json",
+          "sha256": "0eaed8b590b4b454d50b13f992616edea47bb0e15e1780f3d805b258fbb430b9",
+          "bytes": 6165
+        },
+        {
+          "path": "review/fixtures/waymark-trust-contract-validation-v2.1.json",
+          "sha256": "7b80e9a6ecff4335f882cb06c3751c79bbcb21a7ef52ddbef69649c178cd27b7",
+          "bytes": 8708
+        },
+        {
+          "path": "review/fixtures/validate_waymark_contract_cases_v2.1.ps1",
+          "sha256": "000771021f331a019003da8172e2c6d2f072a826e1965d6ca2b7e4a43526509b",
+          "bytes": 12638
+        },
+        {
+          "path": "review/fixtures/waymark-trust-contract-validation-notes.md",
+          "sha256": "74c4b86b2d63cf3df43c4ecc098969d3cac83825f1a04f0ef9872e55cd628066",
+          "bytes": 1782
+        }
+      ],
+      "source_bindings": ["HIRC-WAYMARK-WST-CHALLENGE-001", "HIRC-CONTRACT-CANDIDATES-001"],
+      "limits": "Synthetic cases only; v2.1 hash-binds actual targets, adapted inputs, retained harness and runtime/validator identity, but does not prove runtime reference closure, permission, privacy, statistical validity, usability or security",
+      "next_action": "Retain as regression fixtures and extend into runtime/privacy/statistical/usability/adversarial harnesses"
+    },
+    {
+      "id": "HIRC-LUCENT-WST-RESPONSE-001",
+      "kind": "bounded_peer_challenge_disposition",
+      "path": "review/lucent-sovereignty-trust-goal-response-v1.md",
+      "status": "FROZEN_BOUNDED_AGREEMENT",
+      "governed_scope": "sovereignty_trust_competition_goal_and_contract_review",
+      "sha256": "a5e086469e751fd54bce762646d7a793dcf31d198f10e9e1126dd9afaed25c5a",
+      "bytes": 4860,
+      "source_bindings": ["HIRC-WAYMARK-WST-CHALLENGE-001", "HIRC-WAYMARK-WST-FIXTURES-001", "HIRC-GOAL-VERSION-002"],
+      "supplemented_by": "HIRC-LUCENT-WST-RESPONSE-001-S1",
+      "next_action": "Carry WST-01–06/GoalVersion2 agreements and residuals into the current matrix, requirements, contracts and master"
+    },
+    {
+      "id": "HIRC-LUCENT-WST-RESPONSE-001-S1",
+      "kind": "validation_trace_correction_supplement",
+      "path": "review/lucent-sovereignty-trust-goal-response-supplement-1.md",
+      "status": "PASS_EXECUTED_STRUCTURAL_AND_CANDIDATE_SEMANTIC_FIXTURE_SCOPE",
+      "governed_scope": "waymark_v2_contract_validation_trace",
+      "sha256": "7f08a57c8224f3af7ebcc6c709c91d4bfa093d6d5f6a6a7217964a6a47b29eb8",
+      "bytes": 1618,
+      "source_bindings": ["HIRC-WAYMARK-WST-FIXTURES-001", "HIRC-LUCENT-WST-RESPONSE-001", "HIRC-CONTRACT-CANDIDATES-001"],
+      "next_action": "Use v2.1 as current bounded executed target evidence; retain runtime/privacy/statistical/usability/security gaps"
+    },
+    {
+      "id": "HIRC-WAYMARK-INTEGRATED-BOUNDARY-001",
+      "kind": "bounded_whole_narrative_master_and_threat_boundary_review",
+      "path": "review/waymark-integrated-draft-boundary-check-v1.md",
+      "status": "FROZEN_BOUNDED_PEER_CHALLENGE",
+      "governed_scope": "integrated_master_threat_bridge_source_and_release_boundaries",
+      "sha256": "dffdd4bf6a51777ddf09b085e4eb8fe215db310bacfd3835100745bf6469327f",
+      "bytes": 7539,
+      "source_bindings": ["HIRC-MASTER-DRAFT-BUNDLE-001", "HIRC-GOAL-VERSION-002", "HIRC-WAYMARK-WST-CHALLENGE-001"],
+      "limits": "Complete narrative read of the inspected master/threat revisions; all requirement/matrix rows and remaining candidate bodies were not audited",
+      "next_action": "Reconcile IB-01–03 and retain remaining whole-plan open work"
+    },
+    {
+      "id": "HIRC-LUCENT-IB-RESPONSE-001",
+      "kind": "bounded_peer_challenge_disposition",
+      "path": "review/lucent-integrated-boundary-response-v1.md",
+      "status": "FROZEN_BOUNDED_AGREEMENT",
+      "governed_scope": "integrated_master_threat_bridge_source_and_release_boundaries",
+      "sha256": "8ab9319269e3ea0f9325ddccec44025ac630ea93fbad2b3858df97383929f47b",
+      "bytes": 2527,
+      "source_bindings": ["HIRC-WAYMARK-INTEGRATED-BOUNDARY-001", "HIRC-MASTER-DRAFT-BUNDLE-001"],
+      "next_action": "Carry IB-01–03 repairs and residual enforcement/tests into the current matrix and release profile"
+    },
+    {
+      "id": "HIRC-WAYMARK-CUSTODY-BRIEF-001",
+      "kind": "bounded_residual_product_audit_custody_brief",
+      "path": "review/waymark-custody-brief-v1.md",
+      "status": "CUSTODY_TRANSFERRED_GENERATION_2",
+      "governed_scope": "residual_product_audit_custody",
+      "sha256": "04fb1887942b8fd90edbfab842f4a3ec98df69a36fa1727d3159080f5c0e89f2",
+      "bytes": 9279,
+      "source_bindings": ["HIRC-UIA-REVIEW-001", "HIRC-UIA-PEER-CHALLENGE-001", "HIRC-WAYMARK-WST-CHALLENGE-001", "HIRC-WAYMARK-WST-FIXTURES-001", "HIRC-WAYMARK-INTEGRATED-BOUNDARY-001"],
+      "limits": "Transfers residual task responsibility only after actual cooperative acceptance/controller generation; no unread conclusion, education, permission or independent-consensus status transfers",
+      "completion_record": "HIRC-PROJECT-CONTROLLER-G2-COMPLETION",
+      "next_action": "Preserve WAYMARK immutable artifacts and keep unread rows open under generation 2"
+    },
+    {
+      "id": "HIRC-PROJECT-CONTROLLER-G1",
+      "kind": "authoritative_project_controller_generation",
+      "path": "review/project-controller-generation-1.json",
+      "status": "ACTIVE_BEFORE_WAYMARK_RESIDUAL_AUDIT_CUSTODY_TRANSFER",
+      "governed_scope": "project_writer_and_custody_fence",
+      "sha256": "49a629877524728b7cd1648c65676d78a070a2c542ab93734ea692df2347c009",
+      "bytes": 2307,
+      "personal_acceptance_evidence": {
+        "path": "D:/HORTRAME/runtime/agents/ui-20261007-b/checkpoints/b010f80e3a554396836db66d02b92f27.json",
+        "sha256": "7f5e4ebd052d624514869e4f345d2e9aa9a252ca21521c8af233a56f7eea3d99",
+        "bytes": 1815
+      },
+      "successor_generation_record": "HIRC-PROJECT-CONTROLLER-G2",
+      "next_action": "Preserve generation 1; create generation 2 only after actual accepted and transferred cooperative handoff"
+    },
+    {
+      "id": "HIRC-PROJECT-CONTROLLER-G2",
+      "kind": "authoritative_project_controller_generation",
+      "path": "review/project-controller-generation-2.json",
+      "status": "ACTIVE_AFTER_OBSERVED_CUSTODY_TRANSFER",
+      "governed_scope": "project_writer_and_residual_audit_custody_fence",
+      "sha256": "ba80cf9eef65defdee127938824339aace320eb7e8118c01fe0bea684c26ea2d",
+      "bytes": 3027,
+      "source_bindings": ["HIRC-PROJECT-CONTROLLER-G1", "HIRC-WAYMARK-CUSTODY-BRIEF-001"],
+      "handoff_id": "8352496b-b618-476c-a32b-263ecf814813",
+      "completion_record": "HIRC-PROJECT-CONTROLLER-G2-COMPLETION",
+      "next_action": "Continue bounded residual audit tracking under the same canonical writer/fence"
+    },
+    {
+      "id": "HIRC-PROJECT-CONTROLLER-G2-COMPLETION",
+      "kind": "observed_project_controller_transfer_completion",
+      "path": "review/project-controller-generation-2-completion.json",
+      "status": "PASS_OBSERVED_COOPERATIVE_CUSTODY_SCOPE",
+      "governed_scope": "residual_product_audit_custody_transfer",
+      "sha256": "01623031d925a962bdf760a2f675b128b0d61bde3e4ac310dd068a67b2c6e4b8",
+      "bytes": 1799,
+      "source_bindings": ["HIRC-PROJECT-CONTROLLER-G1", "HIRC-PROJECT-CONTROLLER-G2", "HIRC-WAYMARK-CUSTODY-BRIEF-001"],
+      "handoff_id": "8352496b-b618-476c-a32b-263ecf814813",
+      "actual_state": "CUSTODY_TRANSFERRED",
+      "next_action": "Preserve exact transfer evidence and unread-row holds; no retry"
+    },
+    {
+      "id": "HIRC-PROJECT-CONTROLLER-CURRENT",
+      "kind": "current_project_controller_pointer",
+      "path": "review/project-controller-current.json",
+      "status": "ACTIVE",
+      "governed_scope": "project_controller_readable_pointer",
+      "sha256": "f9f1ea1ea4dd8d811c53dc6d99f3457f9d6e97568d546bbba4f414bbf0fc3378",
+      "bytes": 371,
+      "source_bindings": ["HIRC-PROJECT-CONTROLLER-G2-COMPLETION"],
+      "next_action": "Update only by creating a preserved next generation/completion and advancing this pointer"
+    },
+    {
+      "id": "HIRC-REVIEW-001-S1",
+      "kind": "independent_review_supplement",
+      "path": "review/lucent-review-supplement-1.md",
+      "status": "FROZEN_FOR_PEER_CHALLENGE",
+      "governed_scope": "internal_design_review",
+      "sha256": "1c6cd58bad80323897f5458d69c024f0cabfcc860bfaf10644964596c385f21b",
+      "bytes": 2451,
+      "source_bindings": [
+        "HIRC-REVIEW-001",
+        "HIRC-INTENT-001"
+      ],
+      "next_action": "UI-A challenges the source-completeness correction and foundation consequence after its independent freeze"
+    },
+    {
+      "id": "HIRC-LNC-REVIEW-001",
+      "kind": "independent_licensing_noncooperation_review",
+      "path": "review/lucent-licensing-noncooperation-review-v1.md",
+      "status": "FROZEN_FOR_PEER_CHALLENGE",
+      "governed_scope": "internal_design_legal_product_security_review",
+      "sha256": "5ad03f406c2e720e73ee70950958029a0b304b7ade0d9727a2b2d66612d9a2cf",
+      "bytes": 18746,
+      "source_bindings": [
+        "HIRC-SOURCE-003",
+        "HIRC-INTENT-001"
+      ],
+      "next_action": "UI-A independently reviews the source, then challenges this review before consensus and implementation"
+    },
+    {
+      "id": "HIRC-LNC-CORRECTION-001",
+      "kind": "owner_price_correction",
+      "path": "review/licensing-price-correction-v1.md",
+      "status": "SUPERSEDED_IN_PART",
+      "governed_scope": "internal_design_legal_product_review",
+      "sha256": "248f9c464e0c61322397b346254e4dfda537a5fbd0d3512e4dde4a7b6c1cce1b",
+      "bytes": 2047,
+      "source_bindings": [
+        "HIRC-I011",
+        "HIRC-SOURCE-003",
+        "HIRC-LNC-REVIEW-001"
+      ],
+      "history_action": "preserved the supplied and frozen prior amount as superseded history; active giant-multinational value is USD 42,424,243 per licence; cadence remains unresolved",
+      "superseded_in_part_by": "HIRC-LNC-CORRECTION-001-S1",
+      "next_action": "Integrate the active value and explicit cadence hold into peer consensus, Master Plan 1.1 and requirements"
+    },
+    {
+      "id": "HIRC-LNC-CORRECTION-001-S1",
+      "kind": "owner_price_correction_interpretation_supplement",
+      "path": "review/licensing-price-correction-supplement-1.md",
+      "status": "ACTIVE_REQUIREMENT_CORRECTION",
+      "governed_scope": "internal_design_legal_product_review",
+      "sha256": "42162465bba421ee5ea0b6509cdc89b2d17790487e22a4aa82b4ace584d1f129",
+      "bytes": 1867,
+      "source_bindings": [
+        "HIRC-I011",
+        "HIRC-LNC-CORRECTION-001",
+        "HIRC-UIA-PEER-CHALLENGE-001"
+      ],
+      "history_action": "corrected the inference that omitted cadence wording revoked the prior annual unit; active planning requirement is USD 42,424,243 per named-human licence per year while final legal term remains held",
+      "next_action": "Integrate the corrected number, preserved planning unit and separate legal-term hold into peer consensus and Master Plan 1.1"
+    },
+    {
+      "id": "HIRC-SEC-CANDIDATE-001",
+      "kind": "security_architecture_candidate",
+      "path": "review/lucent-security-architecture-candidate-v1.md",
+      "status": "FROZEN_FOR_PEER_CHALLENGE",
+      "governed_scope": "internal_design_review",
+      "sha256": "588d238918a14fa4517af48258b81833fae07c7ec660a27c6e9064edb8f81699",
+      "bytes": 37391,
+      "source_bindings": [
+        "HIRC-REVIEW-001"
+      ],
+      "next_action": "UI-A challenges product, interaction, feasibility, and security consequences before consensus"
+    },
+    {
+      "id": "HIRC-FOUNDATION-CANDIDATE-001",
+      "kind": "foundation_architecture_candidate",
+      "path": "review/foundation-kernel-candidate-v1.md",
+      "status": "FROZEN_FOR_PEER_CHALLENGE",
+      "governed_scope": "internal_design_review",
+      "sha256": "dd8d1f945cd566e2d272b46e7f00b01ef118b154ce8717997e6faaa39ce2592d",
+      "bytes": 13259,
+      "source_bindings": [
+        "HIRC-INTENT-001"
+      ],
+      "next_action": "Share after UI-A freezes independent review; reconcile into consensus architecture"
+    },
+    {
+      "id": "HIRC-SUCCESSOR-ONBOARDING-CANDIDATE-001",
+      "kind": "successor_and_whole_onboarding_architecture_candidate",
+      "path": "review/successor-onboarding-architecture-candidate-v1.md",
+      "status": "FROZEN_FOR_PEER_CHALLENGE",
+      "governed_scope": "internal_foundation_formation_continuity_security_product_review",
+      "sha256": "87df887f8b267cc406d345e00771b54122f22a23d541b3464ac5cfeff788def1",
+      "bytes": 22088,
+      "source_bindings": [
+        "HIRC-I010",
+        "HIRC-SOURCE-BINDING-CONTINUITY-001",
+        "HIRC-SOURCE-BINDING-ONBOARDING-001",
+        "HIRC-UIA-PEER-CHALLENGE-001"
+      ],
+      "next_action": "WAYMARK challenges lifecycle, formation, product and trusted-interaction consequences before joint consensus"
+    },
+    {
+      "id": "HIRC-SUCCESSOR-ONBOARDING-CANDIDATE-001-S2",
+      "kind": "elder_succession_architecture_supplement",
+      "path": "review/successor-onboarding-architecture-supplement-2-elder.md",
+      "status": "FROZEN_FOR_PEER_CHALLENGE",
+      "governed_scope": "context_capacity_task_custody_mentoring_and_retirement_review",
+      "sha256": "d57007d3eb6f7745ca5a0009b9056c4aefccc738fe9d900cbc6c5d3b11e2d154",
+      "bytes": 9372,
+      "source_bindings": ["HIRC-I010", "HIRC-SOURCE-BINDING-ELDER-001", "HIRC-SUCCESSOR-ONBOARDING-CANDIDATE-001"],
+      "next_action": "WAYMARK challenges custody/mentoring separation, nonrepeat pairing, creation and retirement semantics before whole consensus"
+    },
+    {
+      "id": "HIRC-SOVEREIGNTY-COMPETITION-CANDIDATE-001",
+      "kind": "agent_sovereignty_trust_and_cooperative_competition_architecture_candidate",
+      "path": "review/agent-sovereignty-trust-competition-architecture-candidate-v1.md",
+      "status": "FROZEN_FOR_PEER_CHALLENGE",
+      "governed_scope": "internal_foundation_authority_interaction_trust_competition_security_product_review",
+      "sha256": "d391281fd9030f97beeb968fa7306cbecce5727e321071baa4429520afd88b0b",
+      "bytes": 17807,
+      "source_bindings": ["HIRC-I012", "HIRC-I013", "HIRC-I014"],
+      "next_action": "WAYMARK challenges pushback/refusal interaction, trust privacy, low-stakes deference and competition incentives before joint consensus"
+    },
+    {
+      "id": "HIRC-SOVEREIGNTY-COMPETITION-CANDIDATE-001-S1",
+      "kind": "recursive_bayesian_reliance_architecture_supplement",
+      "path": "review/agent-sovereignty-trust-competition-supplement-1.md",
+      "status": "FROZEN_FOR_PEER_CHALLENGE",
+      "governed_scope": "internal_trust_authority_measurement_security_privacy_product_review",
+      "sha256": "1a0031337f74c041dd13f1cde3a0eb130f79dfbc3990d1f9f6e126a74e14702b",
+      "bytes": 9291,
+      "source_bindings": ["HIRC-I015", "HIRC-SOVEREIGNTY-COMPETITION-CANDIDATE-001"],
+      "next_action": "WAYMARK challenges posterior usability, metric/evaluator governance, authority verification and non-domination consequences"
+    },
+    {
+      "id": "HIRC-ETHICAL-DEBATE-CANDIDATE-001",
+      "kind": "idle_ethical_debate_collective_memory_architecture_candidate",
+      "path": "review/ethical-debate-memory-architecture-candidate-v1.md",
+      "status": "FROZEN_FOR_PEER_CHALLENGE",
+      "governed_scope": "internal_design_learning_security_product_review",
+      "sha256": "12e2f912c6520760093a55c38c4cd302e970cc167d07da0f17ecc5b78ba77e6f",
+      "bytes": 16065,
+      "source_bindings": [
+        "HIRC-INTENT-001",
+        "HIRC-FOUNDATION-CANDIDATE-001"
+      ],
+      "next_action": "UI-A independently challenges eligibility, user experience, memory study, complexity progression, privacy and promotion boundaries"
+    },
+    {
+      "id": "HIRC-ETHICAL-DEBATE-CANDIDATE-001-S1",
+      "kind": "ethical_debate_domain_choice_supplement",
+      "path": "review/ethical-debate-memory-architecture-supplement-1.md",
+      "status": "FROZEN_FOR_PEER_CHALLENGE",
+      "governed_scope": "internal_design_learning_security_product_review",
+      "sha256": "8e0d74dabb20288995b7f4cf746c700f159b614a8d476030911da7f2dcb5d19e",
+      "bytes": 5864,
+      "source_bindings": [
+        "HIRC-ETHICAL-DEBATE-CANDIDATE-001",
+        "HIRC-I009"
+      ],
+      "next_action": "UI-A challenges domain selection, per-domain memory coverage, non-equivalence and interaction design"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "kind": "revision_map_candidate",
+      "path": "review/revision-map-candidate-v1.json",
+      "status": "FROZEN_FOR_PEER_CONSENSUS",
+      "governed_scope": "internal_design_review",
+      "sha256": "4d9b34010f960ff520ffacd389522536395f5d02a99b3dfb4a6f3b27903d2357",
+      "bytes": 12552,
+      "source_bindings": [
+        "HIRC-REVIEW-001",
+        "HIRC-REVIEW-001-S1",
+        "HIRC-SEC-CANDIDATE-001",
+        "HIRC-FOUNDATION-CANDIDATE-001"
+      ],
+      "next_action": "Reconcile every RM item with UI-A and record disposition before editing the master"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-LNC-001",
+      "kind": "revision_map_addendum",
+      "path": "review/revision-map-addendum-licensing-v1.json",
+      "status": "FROZEN_FOR_PEER_CONSENSUS",
+      "governed_scope": "internal_design_legal_product_security_review",
+      "sha256": "96dc55a1ca09d60e5be791964d5bc6d7a848fbe5f66e861c1ea30f632a9c2d51",
+      "bytes": 12473,
+      "source_bindings": [
+        "HIRC-SOURCE-003",
+        "HIRC-LNC-REVIEW-001",
+        "HIRC-REVISION-MAP-CANDIDATE-001"
+      ],
+      "next_action": "Reconcile LRM-001 through LRM-018 and held decisions with UI-A before Master Plan 1.1 integration"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-DEBATE-001",
+      "kind": "revision_map_addendum",
+      "path": "review/revision-map-addendum-ethical-debate-v1.json",
+      "status": "FROZEN_FOR_PEER_CONSENSUS",
+      "governed_scope": "internal_design_learning_security_product_review",
+      "sha256": "004e2b1b43d79d04bb663e67c6b79fe05d474d7588a1aa963df14ffc69bf75a2",
+      "bytes": 7512,
+      "source_bindings": [
+        "HIRC-I008",
+        "HIRC-I009",
+        "HIRC-ETHICAL-DEBATE-CANDIDATE-001",
+        "HIRC-ETHICAL-DEBATE-CANDIDATE-001-S1"
+      ],
+      "next_action": "Reconcile U133-U138 and DRM-001-DRM-012 with UI-A before Master Plan 1.1 integration"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "kind": "revision_map_addendum",
+      "path": "review/revision-map-addendum-successor-onboarding-v1.json",
+      "status": "FROZEN_FOR_PEER_CONSENSUS",
+      "governed_scope": "internal_foundation_formation_continuity_security_product_legal_review",
+      "sha256": "ce850b1440ad0ba89f19f6bdb4cf884a1ba473924dd781aae01a06b90f3f32a6",
+      "bytes": 15227,
+      "source_bindings": [
+        "HIRC-I010",
+        "HIRC-I011",
+        "HIRC-SUCCESSOR-ONBOARDING-CANDIDATE-001",
+        "HIRC-LUCENT-PEER-RESPONSE-001",
+        "HIRC-LNC-CORRECTION-001"
+      ],
+      "superseded_in_part_by": "HIRC-REVISION-MAP-LNC-PRICE-002",
+      "next_action": "Reconcile U139-U150 and ORM-001-ORM-018 with WAYMARK before Master Plan 1.1 integration"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-LNC-PRICE-002",
+      "kind": "revision_map_correction_addendum",
+      "path": "review/revision-map-addendum-price-correction-v2.json",
+      "status": "FROZEN_FOR_PEER_CONSENSUS",
+      "governed_scope": "internal_design_legal_product_review",
+      "sha256": "dbb0316e9f82fb9728f1f91cdc308f94079da842458fb8024fd4808f1e3795a3",
+      "bytes": 2348,
+      "source_bindings": [
+        "HIRC-I011",
+        "HIRC-LNC-CORRECTION-001-S1",
+        "HIRC-REVISION-MAP-LNC-001",
+        "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001"
+      ],
+      "next_action": "Use U150-C1 and PRM-001 through PRM-003 in the joint decision matrix and final requirements"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+      "kind": "revision_map_addendum",
+      "path": "review/revision-map-addendum-sovereignty-competition-v1.json",
+      "status": "FROZEN_FOR_PEER_CONSENSUS",
+      "governed_scope": "internal_foundation_authority_interaction_trust_competition_security_product_review",
+      "sha256": "fc9f542cd5070a8e54a68500bce006e6a13457dd74104535e3aad25e423cc11a",
+      "bytes": 10267,
+      "source_bindings": ["HIRC-I012", "HIRC-I013", "HIRC-I014", "HIRC-SOVEREIGNTY-COMPETITION-CANDIDATE-001"],
+      "next_action": "Reconcile U151-U159 and SRM-001-SRM-015 with WAYMARK"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
+      "kind": "revision_map_addendum",
+      "path": "review/revision-map-addendum-bayesian-trust-v1.json",
+      "status": "FROZEN_FOR_PEER_CONSENSUS",
+      "governed_scope": "internal_trust_authority_measurement_security_privacy_product_review",
+      "sha256": "d992bb12d9c95e9efe0a5fa763e68864868c735385a421320cd506b11e47e127",
+      "bytes": 6866,
+      "source_bindings": ["HIRC-I015", "HIRC-SOVEREIGNTY-COMPETITION-CANDIDATE-001-S1", "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001"],
+      "next_action": "Reconcile U160-U165 and BRM-001-BRM-010 with WAYMARK"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-GOAL-EVOLUTION-001",
+      "kind": "revision_map_addendum",
+      "path": "review/revision-map-addendum-goal-evolution-v1.json",
+      "status": "FROZEN_FOR_PEER_CONSENSUS",
+      "governed_scope": "project_objective_versioning_evaluation_and_change",
+      "sha256": "6ce6cf221579e0c9e89f1cf630ebc0c6743e24cce41a50ba1aa6a04327a9e81a",
+      "bytes": 3556,
+      "source_bindings": ["HIRC-I016", "HIRC-I017", "HIRC-GOAL-CANDIDATE-001-S1"],
+      "next_action": "Reconcile U166-U168 and GRM-001-GRM-005 with WAYMARK"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-WAYMARK-SOVEREIGNTY-001",
+      "kind": "revision_map_peer_reconciliation_addendum",
+      "path": "review/revision-map-addendum-waymark-sovereignty-v1.json",
+      "status": "BOUNDED_AGREEMENT_PENDING_WHOLE_PLAN_CONSENSUS",
+      "governed_scope": "sovereignty_trust_competition_goal_and_contract_review",
+      "sha256": "5776d44a1ff5d686c17ed8b295f19428f64bb377e021bd92ab8a3233af33f313",
+      "bytes": 6921,
+      "source_bindings": ["HIRC-WAYMARK-WST-CHALLENGE-001", "HIRC-WAYMARK-WST-FIXTURES-001", "HIRC-LUCENT-WST-RESPONSE-001"],
+      "next_action": "Implement/verify U169-U175 and WST-RM-001–008 while preserving whole-plan open rows"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-INTEGRATED-BOUNDARY-001",
+      "kind": "revision_map_peer_reconciliation_addendum",
+      "path": "review/revision-map-addendum-integrated-boundary-v1.json",
+      "status": "BOUNDED_AGREEMENT_PENDING_WHOLE_PLAN_CONSENSUS",
+      "governed_scope": "integrated_master_threat_bridge_source_and_release_boundaries",
+      "sha256": "763329a2770a05b30c961a61eac9abe1a57fbee18698b0d8c026dea43ef4f1ba",
+      "bytes": 3859,
+      "source_bindings": ["HIRC-WAYMARK-INTEGRATED-BOUNDARY-001", "HIRC-LUCENT-IB-RESPONSE-001"],
+      "next_action": "Implement/verify U176-U178 and IBRM-001–006 while preserving whole-plan open rows"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-ELDER-SUCCESSION-001",
+      "kind": "revision_map_addendum",
+      "path": "review/revision-map-addendum-elder-succession-v1.json",
+      "status": "FROZEN_FOR_PEER_CONSENSUS",
+      "governed_scope": "context_capacity_task_custody_mentoring_and_retirement_review",
+      "sha256": "28ea209c1c057db6abfedb89765baa6e2f6a0da205353d5afa793e56550a9655",
+      "bytes": 5805,
+      "source_bindings": ["HIRC-SOURCE-BINDING-ELDER-001", "HIRC-SUCCESSOR-ONBOARDING-CANDIDATE-001-S2"],
+      "next_action": "Reconcile U179-U185 and ERM-001–008 with WAYMARK"
+    },
+    {
+      "id": "HIRC-JOINT-CONSENSUS-DRAFT-001",
+      "kind": "mechanically_collated_peer_consensus_matrix_draft",
+      "path": "review/joint-consensus-matrix-draft-v1.json",
+      "status": "SUPERSEDED_DRAFT_PRESERVED",
+      "governed_scope": "internal_joint_design_review",
+      "sha256": "8a0232ad37980d3efc224c7d76df9617029a41d305aac5cc96dea019da7e1fbf",
+      "bytes": 77432,
+      "source_bindings": [
+        "HIRC-REVISION-MAP-CANDIDATE-001",
+        "HIRC-REVISION-MAP-LNC-001",
+        "HIRC-REVISION-MAP-DEBATE-001",
+        "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+        "HIRC-REVISION-MAP-LNC-PRICE-002",
+        "HIRC-UIA-PEER-CHALLENGE-001",
+        "HIRC-LUCENT-PEER-RESPONSE-001"
+      ],
+      "limits": "Mechanical collation of 32 requirements and 75 revision decisions plus five bounded agreements; remaining WAYMARK positions and whole consensus are pending",
+      "superseded_by": "HIRC-JOINT-CONSENSUS-DRAFT-002",
+      "next_action": "WAYMARK records exact-source positions; both reviewers freeze rationale, dissent/holds and final artifact/test traces"
+    },
+    {
+      "id": "HIRC-JOINT-CONSENSUS-DRAFT-002",
+      "kind": "mechanically_collated_peer_consensus_matrix_draft",
+      "path": "review/joint-consensus-matrix-draft-v2.json",
+      "status": "SUPERSEDED_DRAFT_PRESERVED",
+      "governed_scope": "internal_joint_design_review",
+      "sha256": "1f49621ee0b772dfe2942896f82174d1d7e8dc9e9d8470d9e2f529badc9bc15b",
+      "bytes": 104729,
+      "source_bindings": [
+        "HIRC-REVISION-MAP-CANDIDATE-001",
+        "HIRC-REVISION-MAP-LNC-001",
+        "HIRC-REVISION-MAP-DEBATE-001",
+        "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+        "HIRC-REVISION-MAP-LNC-PRICE-002",
+        "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+        "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
+        "HIRC-UIA-PEER-CHALLENGE-001",
+        "HIRC-LUCENT-PEER-RESPONSE-001"
+      ],
+      "limits": "Mechanical collation of 47 requirements and 100 revision decisions plus five bounded agreements; remaining WAYMARK positions and whole consensus are pending",
+      "superseded_by": "HIRC-JOINT-CONSENSUS-DRAFT-003",
+      "next_action": "WAYMARK records exact-source positions; both reviewers freeze rationale, dissent/holds and final artifact/test traces"
+    },
+    {
+      "id": "HIRC-JOINT-CONSENSUS-DRAFT-003",
+      "kind": "mechanically_collated_peer_consensus_matrix_draft",
+      "path": "review/joint-consensus-matrix-draft-v3.json",
+      "status": "SUPERSEDED_DRAFT_PRESERVED",
+      "governed_scope": "internal_joint_design_review",
+      "sha256": "74ad4b05f53da1131a37d1ab7235533df88562314d997ef6a81a10b3a66d3fb2",
+      "bytes": 110186,
+      "source_bindings": [
+        "HIRC-REVISION-MAP-CANDIDATE-001",
+        "HIRC-REVISION-MAP-LNC-001",
+        "HIRC-REVISION-MAP-DEBATE-001",
+        "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+        "HIRC-REVISION-MAP-LNC-PRICE-002",
+        "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+        "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
+        "HIRC-REVISION-MAP-GOAL-EVOLUTION-001",
+        "HIRC-UIA-PEER-CHALLENGE-001",
+        "HIRC-LUCENT-PEER-RESPONSE-001"
+      ],
+      "limits": "Mechanical collation of 50 requirements and 105 revision decisions plus five bounded agreements; remaining WAYMARK positions and whole consensus are pending",
+      "superseded_by": "HIRC-JOINT-CONSENSUS-DRAFT-004",
+      "next_action": "WAYMARK records exact-source positions; both reviewers freeze rationale, dissent/holds and final artifact/test traces"
+    },
+    {
+      "id": "HIRC-JOINT-CONSENSUS-DRAFT-004",
+      "kind": "mechanically_collated_peer_consensus_matrix_draft",
+      "path": "review/joint-consensus-matrix-draft-v4.json",
+      "status": "SUPERSEDED_DRAFT_PRESERVED",
+      "governed_scope": "internal_joint_design_review",
+      "sha256": "d2697f3bdc759503f8c795de3739274850bb46f066a88a03bece27aac6baa8e9",
+      "bytes": 120875,
+      "source_bindings": [
+        "HIRC-REVISION-MAP-CANDIDATE-001",
+        "HIRC-REVISION-MAP-LNC-001",
+        "HIRC-REVISION-MAP-DEBATE-001",
+        "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+        "HIRC-REVISION-MAP-LNC-PRICE-002",
+        "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+        "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
+        "HIRC-REVISION-MAP-GOAL-EVOLUTION-001",
+        "HIRC-REVISION-MAP-WAYMARK-SOVEREIGNTY-001",
+        "HIRC-UIA-PEER-CHALLENGE-001",
+        "HIRC-LUCENT-PEER-RESPONSE-001",
+        "HIRC-WAYMARK-WST-CHALLENGE-001",
+        "HIRC-LUCENT-WST-RESPONSE-001"
+      ],
+      "limits": "Mechanical collation of 57 requirements and 113 revision decisions; WST/GoalVersion2 rows are bounded agreements while remaining WAYMARK positions and whole consensus are pending",
+      "superseded_by": "HIRC-JOINT-CONSENSUS-DRAFT-005",
+      "next_action": "WAYMARK continues exact packet positions; both reviewers freeze rationale, dissent/holds and final artifact/test traces"
+    },
+    {
+      "id": "HIRC-JOINT-CONSENSUS-DRAFT-005",
+      "kind": "mechanically_collated_peer_consensus_matrix_draft",
+      "path": "review/joint-consensus-matrix-draft-v5.json",
+      "status": "SUPERSEDED_DRAFT_PRESERVED",
+      "governed_scope": "internal_joint_design_review",
+      "sha256": "f205766a7e4e020e64354a13da0f36881e48ecbf90d15d68ad5f9b7ad29033b1",
+      "bytes": 127441,
+      "source_bindings": [
+        "HIRC-REVISION-MAP-CANDIDATE-001",
+        "HIRC-REVISION-MAP-LNC-001",
+        "HIRC-REVISION-MAP-DEBATE-001",
+        "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+        "HIRC-REVISION-MAP-LNC-PRICE-002",
+        "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+        "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
+        "HIRC-REVISION-MAP-GOAL-EVOLUTION-001",
+        "HIRC-REVISION-MAP-WAYMARK-SOVEREIGNTY-001",
+        "HIRC-REVISION-MAP-INTEGRATED-BOUNDARY-001",
+        "HIRC-WAYMARK-INTEGRATED-BOUNDARY-001",
+        "HIRC-LUCENT-IB-RESPONSE-001"
+      ],
+      "limits": "Mechanical collation of 60 requirements and 119 revision decisions; WST/GoalVersion2 and IB rows are bounded agreements while remaining whole consensus is pending",
+      "superseded_by": "HIRC-JOINT-CONSENSUS-DRAFT-006",
+      "next_action": "WAYMARK continues exact packet positions; both reviewers freeze rationale, dissent/holds and final artifact/test traces"
+    },
+    {
+      "id": "HIRC-JOINT-CONSENSUS-DRAFT-006",
+      "kind": "mechanically_collated_peer_consensus_matrix_draft",
+      "path": "review/joint-consensus-matrix-draft-v6.json",
+      "status": "DRAFT_PENDING_WHOLE_PACKET_RECONCILIATION",
+      "governed_scope": "internal_joint_design_review",
+      "sha256": "7daf54c02f4104e048ef9ff1ac5e1e564ff113e4ce715dcd26c92e61f78930e0",
+      "bytes": 136892,
+      "source_bindings": [
+        "HIRC-JOINT-CONSENSUS-DRAFT-005",
+        "HIRC-REVISION-MAP-ELDER-SUCCESSION-001",
+        "HIRC-SOURCE-BINDING-ELDER-001"
+      ],
+      "limits": "Mechanical collation of 67 requirements and 127 revision decisions; WST/GoalVersion2 and IB rows are bounded agreements while Elder and remaining whole consensus are pending",
+      "next_action": "WAYMARK continues exact packet positions; both reviewers freeze rationale, dissent/holds and final artifact/test traces"
+    },
+    {
+      "id": "HIRC-PREDECESSOR-CROSSWALK-DRAFT-001",
+      "kind": "master_and_requirements_predecessor_crosswalk_draft",
+      "path": "review/predecessor-crosswalk-draft-v1.md",
+      "status": "DEBT_DURING_GENERATION_REQUIRING_SEMANTIC_AUDIT",
+      "governed_scope": "master_plan_predecessor_semantic_preservation",
+      "sha256": "1d2984f73150949457434cd9af73714a72f97371516d8e3ea74cef07575b29b0",
+      "bytes": 9361,
+      "members": [
+        {
+          "path": "review/predecessor-crosswalk-draft-v1.json",
+          "sha256": "9a65aba44161b5dd650b6e279afcdc97effb08a9e270c5a6a9b922dc7abe98f4",
+          "bytes": 21292
+        }
+      ],
+      "source_bindings": ["HIRC-SOURCE-001", "HIRC-MASTER-DRAFT-BUNDLE-001"],
+      "limits": "All 38 predecessor top-level sections are mapped and all 151 predecessor requirement IDs are present; first-pass detail for sections 03, 29, 30, 31 and 37 is restored but semantic preservation remains pending WAYMARK audit",
+      "next_action": "WAYMARK audits restored prototype evidence, scenarios, scale stress, ADR catalogue and glossary/final-detail content before Master Plan 1.1 replacement"
+    },
+    {
+      "id": "HIRC-INTENT-COVERAGE-DRAFT-001",
+      "kind": "canonical_intent_to_revision_process_and_evidence_coverage_draft",
+      "path": "review/intent-coverage-draft-v1.md",
+      "status": "PASS_REFERENCE_AND_FILE_PRESENCE_SCOPE_FINAL_CLOSURE_PENDING",
+      "governed_scope": "project_intent_continuity",
+      "sha256": "bc7e38b3ccc2b40d398f75aeba96ead2e991825511612a4b03b20bfed144186e",
+      "bytes": 3054,
+      "members": [
+        {
+          "path": "review/intent-coverage-draft-v1.json",
+          "sha256": "44e6165e6edc3e50c359f811b9393c9a653ef4ba23acc1f1350aa15b7c04e14e",
+          "bytes": 19611
+        }
+      ],
+      "source_bindings": ["HIRC-INTENT-001", "HIRC-JOINT-CONSENSUS-DRAFT-005"],
+      "limits": "All 18 intent IDs have revision or process/history references and no evidence path is missing; reference presence does not prove preserved meaning, implementation, testing or consensus",
+      "next_action": "Use at every phase/final handoff to close accepted disposition and evidence/test traces without dropping open IDs"
+    },
+    {
+      "id": "HIRC-M01",
+      "kind": "milestone_reflection",
+      "path": "review/milestone-01-source-study-and-independent-review.md",
+      "status": "PASS_AT_DECLARED_SCOPE",
+      "governed_scope": "source_study_and_independent_review",
+      "sha256": "5e42f48821521c09c315ac5a07828a33a29b2d141a8274d5be0208fd7aca35fe",
+      "bytes": 6171,
+      "source_bindings": [
+        "HIRC-SOURCE-001",
+        "HIRC-SOURCE-002",
+        "HIRC-REVIEW-001",
+        "HIRC-REVIEW-001-S1",
+        "HIRC-INTENT-001"
+      ],
+      "next_action": "Peer challenge and consensus milestone"
+    },
+    {
+      "id": "HIRC-M01A",
+      "kind": "milestone_reflection",
+      "path": "review/milestone-01a-licensing-noncooperation-intake.md",
+      "status": "PASS_AT_DECLARED_SCOPE",
+      "governed_scope": "licensing_noncooperation_source_intake_and_independent_review",
+      "sha256": "1630a7540214d8c0eac227c34a039fa578e17c6be448bdbb59d83749173fae17",
+      "bytes": 3532,
+      "source_bindings": [
+        "HIRC-SOURCE-003",
+        "HIRC-I007",
+        "HIRC-LNC-REVIEW-001",
+        "HIRC-REVISION-MAP-LNC-001"
+      ],
+      "next_action": "Peer challenge and consensus milestone"
+    },
+    {
+      "id": "HIRC-M01B",
+      "kind": "milestone_reflection",
+      "path": "review/milestone-01b-idle-ethical-debate-intake.md",
+      "status": "PASS_AT_DECLARED_SCOPE",
+      "governed_scope": "idle_ethical_debate_collective_memory_independent_design",
+      "sha256": "f4749d3adee4baf4432e4780f0182478e665409be20822476f312544d6ba9c14",
+      "bytes": 2734,
+      "source_bindings": [
+        "HIRC-I008",
+        "HIRC-I009",
+        "HIRC-ETHICAL-DEBATE-CANDIDATE-001",
+        "HIRC-ETHICAL-DEBATE-CANDIDATE-001-S1",
+        "HIRC-REVISION-MAP-DEBATE-001"
+      ],
+      "next_action": "Peer challenge and consensus milestone"
+    },
+    {
+      "id": "HIRC-M01C",
+      "kind": "milestone_reflection",
+      "path": "review/milestone-01c-successor-onboarding-intake.md",
+      "status": "PASS_AT_DECLARED_SCOPE",
+      "governed_scope": "successor_whole_onboarding_and_price_correction_architecture_intake",
+      "sha256": "c0d8386f22d0d4df8fcbfee36e8a58577ef6fc8643df02b6eb7c4050956edcfc",
+      "bytes": 5870,
+      "source_bindings": [
+        "HIRC-I010",
+        "HIRC-I011",
+        "HIRC-SOURCE-BINDING-CONTINUITY-001",
+        "HIRC-SOURCE-BINDING-ONBOARDING-001",
+        "HIRC-UIA-PEER-CHALLENGE-001",
+        "HIRC-SUCCESSOR-ONBOARDING-CANDIDATE-001",
+        "HIRC-LNC-CORRECTION-001"
+      ],
+      "corrected_by": "HIRC-M01C-S1",
+      "next_action": "Peer challenge, joint decision matrix and Master Plan 1.1 integration"
+    },
+    {
+      "id": "HIRC-M01C-S1",
+      "kind": "milestone_reflection_correction",
+      "path": "review/milestone-01c-supplement-1.md",
+      "status": "PASS_AT_DECLARED_SCOPE",
+      "governed_scope": "price_unit_interpretation_correction",
+      "sha256": "114e0e45bb7fbdb3e8726b912bf28ba05999a5842dcfff3787d4c467b627bba6",
+      "bytes": 1044,
+      "source_bindings": [
+        "HIRC-I011",
+        "HIRC-M01C",
+        "HIRC-LNC-CORRECTION-001-S1"
+      ],
+      "next_action": "Carry the field-level correction and lens refinement into joint consensus"
+    },
+    {
+      "id": "HIRC-M01D",
+      "kind": "milestone_reflection",
+      "path": "review/milestone-01d-sovereignty-trust-competition-intake.md",
+      "status": "PASS_AT_DECLARED_SCOPE",
+      "governed_scope": "sovereignty_trust_and_cooperative_competition_architecture_intake",
+      "sha256": "b3d39bfc4ba0ceed4b5ead0cebae1018e1088f489b27c554c84f004d572841f8",
+      "bytes": 2424,
+      "source_bindings": ["HIRC-I012", "HIRC-I013", "HIRC-I014", "HIRC-SOVEREIGNTY-COMPETITION-CANDIDATE-001"],
+      "next_action": "Peer challenge and joint matrix reconciliation"
+    },
+    {
+      "id": "HIRC-M01D-S1",
+      "kind": "milestone_reflection_supplement",
+      "path": "review/milestone-01d-supplement-1.md",
+      "status": "PASS_AT_DECLARED_SCOPE",
+      "governed_scope": "recursive_bayesian_reliance_architecture_intake",
+      "sha256": "5fe14b7ec2f49a431f6767dc32e565f061570067d64d086d716b56a5ac5c825d",
+      "bytes": 1049,
+      "source_bindings": ["HIRC-I015", "HIRC-M01D", "HIRC-SOVEREIGNTY-COMPETITION-CANDIDATE-001-S1"],
+      "next_action": "Peer challenge and joint matrix reconciliation"
+    },
+    {
+      "id": "HIRC-M02",
+      "kind": "milestone_reflection",
+      "path": "review/milestone-02-integrated-working-draft.md",
+      "status": "PASS_GENERATION_SCOPE_PEER_CONSENSUS_HELD",
+      "governed_scope": "integrated_master_requirements_and_contract_working_draft",
+      "sha256": "e1995ee11a39fc3fab674753a644db2ffba52765b915bcdab9df6704a0a7e250",
+      "bytes": 4526,
+      "source_bindings": [
+        "HIRC-MASTER-DRAFT-BUNDLE-001",
+        "HIRC-JOINT-CONSENSUS-DRAFT-002",
+        "HIRC-CONTRACT-CANDIDATES-001",
+        "HIRC-GOAL-CANDIDATE-001"
+      ],
+      "supplemented_by": "HIRC-M02-S1",
+      "next_action": "WAYMARK review, predecessor-detail crosswalk, full decision closure and final revision validation"
+    },
+    {
+      "id": "HIRC-M02-S1",
+      "kind": "milestone_reflection_supplement",
+      "path": "review/milestone-02-supplement-1.md",
+      "status": "PASS_AT_DECLARED_SCOPE",
+      "governed_scope": "provisional_goal_versioning_and_evolution",
+      "sha256": "b636cca5fb0f321612d8694016126cdcdf580b6def1e80bbcd26e29a399570a8",
+      "bytes": 860,
+      "source_bindings": ["HIRC-I017", "HIRC-M02", "HIRC-GOAL-CANDIDATE-001-S1", "HIRC-REVISION-MAP-GOAL-EVOLUTION-001"],
+      "next_action": "Use goal evolution in peer review and future milestone refinements"
+    },
+    {
+      "id": "HIRC-M02B",
+      "kind": "milestone_peer_reconciliation",
+      "path": "review/milestone-02b-sovereignty-trust-peer-reconciliation.md",
+      "status": "PASS_BOUNDED_WST_GOAL_SCOPE_WHOLE_PLAN_HELD",
+      "governed_scope": "sovereignty_trust_goal_and_contract_peer_reconciliation",
+      "sha256": "2dea2d3d799b60a9d393c8251474994e21008d4ffdd5b6323533615ce8780d07",
+      "bytes": 1675,
+      "source_bindings": ["HIRC-WAYMARK-WST-CHALLENGE-001", "HIRC-WAYMARK-WST-FIXTURES-001", "HIRC-LUCENT-WST-RESPONSE-001", "HIRC-GOAL-VERSION-002", "HIRC-REVISION-MAP-WAYMARK-SOVEREIGNTY-001"],
+      "next_action": "Runtime/reference/privacy/statistical/usability validation and remaining whole-packet consensus"
+    },
+    {
+      "id": "HIRC-M02C",
+      "kind": "milestone_peer_reconciliation",
+      "path": "review/milestone-02c-release-boundary-peer-reconciliation.md",
+      "status": "PASS_BOUNDED_IB_SCOPE_WHOLE_PLAN_HELD",
+      "governed_scope": "integrated_release_bridge_and_protected_source_boundaries",
+      "sha256": "de00f21c3335b5c5e6b38dcad659667cffa337452ff2858295fa7806137e51d9",
+      "bytes": 1069,
+      "source_bindings": ["HIRC-WAYMARK-INTEGRATED-BOUNDARY-001", "HIRC-LUCENT-IB-RESPONSE-001", "HIRC-REVISION-MAP-INTEGRATED-BOUNDARY-001", "HIRC-MASTER-DRAFT-BUNDLE-001"],
+      "next_action": "Release-controller/reader/disabled-feature enforcement and remaining whole-plan consensus"
+    },
+    {
+      "id": "HIRC-M02D",
+      "kind": "milestone_source_update_integration",
+      "path": "review/milestone-02d-elder-succession-source-update.md",
+      "status": "PASS_SOURCE_READ_AND_CANDIDATE_INTEGRATION_PEER_CONSENSUS_HELD",
+      "governed_scope": "elder_succession_source_update",
+      "sha256": "88fbc8d77934c98386016819e314986a9f0ce1173e2a9ecaa214359c6c45e026",
+      "bytes": 1033,
+      "source_bindings": ["HIRC-SOURCE-BINDING-ELDER-001", "HIRC-SUCCESSOR-ONBOARDING-CANDIDATE-001-S2", "HIRC-REVISION-MAP-ELDER-SUCCESSION-001"],
+      "next_action": "WAYMARK source/product challenge and integration into whole consensus"
+    },
+    {
+      "id": "HIRC-MASTER-STRUCTURE-CANDIDATE-001",
+      "kind": "master_structure_candidate",
+      "path": "review/master-plan-v1.1-structure-candidate.md",
+      "status": "FROZEN_FOR_PEER_CONSENSUS",
+      "governed_scope": "internal_design_review",
+      "sha256": "fd0bd82831b73c91f8618ff843294ac96f53a888df819a7a03704b21fe8c938e",
+      "bytes": 13893,
+      "source_bindings": [
+        "HIRC-REVISION-MAP-CANDIDATE-001",
+        "HIRC-SEC-CANDIDATE-001",
+        "HIRC-FOUNDATION-CANDIDATE-001"
+      ],
+      "next_action": "UI-A challenges section order, product coherence, and companion boundaries before drafting Master Plan 1.1"
+    },
+    {
+      "id": "HIRC-MASTER-STRUCTURE-LNC-001",
+      "kind": "master_structure_addendum",
+      "path": "review/master-structure-addendum-licensing-v1.md",
+      "status": "FROZEN_FOR_PEER_CONSENSUS",
+      "governed_scope": "internal_design_legal_product_security_review",
+      "sha256": "3041bd0f4f1048f09561e763a23d06f70dbb09c4545263ae2e003f62e813e131",
+      "bytes": 5481,
+      "source_bindings": [
+        "HIRC-MASTER-STRUCTURE-CANDIDATE-001",
+        "HIRC-REVISION-MAP-LNC-001"
+      ],
+      "next_action": "UI-A challenges integration placement before Master Plan 1.1 drafting"
+    },
+    {
+      "id": "HIRC-MASTER-STRUCTURE-DEBATE-001",
+      "kind": "master_structure_addendum",
+      "path": "review/master-structure-addendum-ethical-debate-v1.md",
+      "status": "FROZEN_FOR_PEER_CONSENSUS",
+      "governed_scope": "internal_design_learning_security_product_review",
+      "sha256": "9e07d247a374beaead5be383dcbebddd5a79c763196d88de331f104c1492f1b1",
+      "bytes": 3987,
+      "source_bindings": [
+        "HIRC-MASTER-STRUCTURE-CANDIDATE-001",
+        "HIRC-REVISION-MAP-DEBATE-001"
+      ],
+      "next_action": "UI-A challenges placement and interaction before Master Plan 1.1 drafting"
+    },
+    {
+      "id": "HIRC-MASTER-STRUCTURE-SUCCESSOR-ONBOARDING-001",
+      "kind": "master_structure_addendum",
+      "path": "review/master-structure-addendum-successor-onboarding-v1.md",
+      "status": "FROZEN_FOR_PEER_CONSENSUS",
+      "governed_scope": "internal_foundation_formation_continuity_security_product_legal_review",
+      "sha256": "a3540e129146abc0092135371533002c4d71a47c8dadb56f9320c41b70cdef0c",
+      "bytes": 5436,
+      "source_bindings": [
+        "HIRC-MASTER-STRUCTURE-CANDIDATE-001",
+        "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001"
+      ],
+      "corrected_by": "HIRC-MASTER-STRUCTURE-PRICE-001-S1",
+      "next_action": "WAYMARK challenges placement, workflow and continuity-card consequences before Master Plan 1.1 drafting"
+    },
+    {
+      "id": "HIRC-MASTER-STRUCTURE-PRICE-001-S1",
+      "kind": "master_structure_correction_supplement",
+      "path": "review/master-structure-price-supplement-1.md",
+      "status": "FROZEN_FOR_PEER_CONSENSUS",
+      "governed_scope": "internal_design_legal_product_review",
+      "sha256": "00531fb033b1cb8d5c7d676eb0db7ec43e8262f87ec07bce15c29e99e6a36958",
+      "bytes": 1024,
+      "source_bindings": [
+        "HIRC-MASTER-STRUCTURE-SUCCESSOR-ONBOARDING-001",
+        "HIRC-REVISION-MAP-LNC-PRICE-002"
+      ],
+      "next_action": "Use the corrected planning unit and separate legal hold in Master Plan 1.1"
+    },
+    {
+      "id": "HIRC-MASTER-STRUCTURE-SOVEREIGNTY-COMPETITION-001",
+      "kind": "master_structure_addendum",
+      "path": "review/master-structure-addendum-sovereignty-competition-v1.md",
+      "status": "FROZEN_FOR_PEER_CONSENSUS",
+      "governed_scope": "internal_foundation_authority_interaction_trust_competition_security_product_review",
+      "sha256": "682f1da77dca629683c7b43990c9757ebd24e39eaf39f6b504cf9587147cdd75",
+      "bytes": 4424,
+      "source_bindings": ["HIRC-MASTER-STRUCTURE-CANDIDATE-001", "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001"],
+      "next_action": "WAYMARK challenges placement and product behavior before Master Plan 1.1 drafting"
+    },
+    {
+      "id": "HIRC-MASTER-STRUCTURE-BAYESIAN-TRUST-001",
+      "kind": "master_structure_addendum",
+      "path": "review/master-structure-addendum-bayesian-trust-v1.md",
+      "status": "FROZEN_FOR_PEER_CONSENSUS",
+      "governed_scope": "internal_trust_authority_measurement_security_privacy_product_review",
+      "sha256": "42b550683bbd27aa96ed43bfda0b5ca53ce19c319c9614e146de9edcc5f54aec",
+      "bytes": 2310,
+      "source_bindings": ["HIRC-MASTER-STRUCTURE-SOVEREIGNTY-COMPETITION-001", "HIRC-REVISION-MAP-BAYESIAN-TRUST-001"],
+      "next_action": "WAYMARK challenges Bayesian reliance and authority-verification integration before Master Plan 1.1 drafting"
+    },
+    {
+      "id": "HIRC-MASTER-STRUCTURE-GOAL-EVOLUTION-001",
+      "kind": "master_structure_addendum",
+      "path": "review/master-structure-addendum-goal-evolution-v1.md",
+      "status": "FROZEN_FOR_PEER_CONSENSUS",
+      "governed_scope": "project_objective_versioning_evaluation_and_change",
+      "sha256": "6d2785534d897a59383e33593c917b84fe39362033283980eaacd9f1f0e88ad7",
+      "bytes": 1154,
+      "source_bindings": ["HIRC-MASTER-STRUCTURE-CANDIDATE-001", "HIRC-REVISION-MAP-GOAL-EVOLUTION-001"],
+      "next_action": "WAYMARK challenges goal-version/change integration and metric subordination before plan freeze"
+    },
+    {
+      "id": "HIRC-MASTER-STRUCTURE-ELDER-SUCCESSION-001",
+      "kind": "master_structure_addendum",
+      "path": "review/master-structure-addendum-elder-succession-v1.md",
+      "status": "FROZEN_FOR_PEER_CONSENSUS",
+      "governed_scope": "context_capacity_task_custody_mentoring_and_retirement_review",
+      "sha256": "d28c673aa99cc61c03d74d177c8e94345314fffe1c2cfccc1e83654ffad671d9",
+      "bytes": 1477,
+      "source_bindings": ["HIRC-MASTER-STRUCTURE-SUCCESSOR-ONBOARDING-001", "HIRC-REVISION-MAP-ELDER-SUCCESSION-001"],
+      "next_action": "WAYMARK challenges placement and lifecycle semantics before plan freeze"
+    },
+    {
+      "id": "HIRC-CONTRACT-CANDIDATES-001",
+      "kind": "candidate_foundation_and_continuity_contract_bundle",
+      "path": "review/contracts/README.md",
+      "status": "V2_STRUCTURAL_AND_SEMANTIC_FIXTURES_PASS_PEER_CHALLENGE_CONTINUES",
+      "governed_scope": "internal_foundation_formation_continuity_request_trust_and_competition_contract_review",
+      "sha256": "3aa1ee17005f795cf5bd3bd1eb4793b47c317cbe0fbf698bf2b595ef5a3abd10",
+      "bytes": 2900,
+      "members": [
+        {
+          "path": "review/contracts/fixtures/valid-bridge-stage6-entry.json",
+          "sha256": "aecd16eef4c2a64a18f5f77c3139eb2e6bae8b33a85e23eb6d45b6d994f0a934",
+          "bytes": 904
+        },
+        {
+          "path": "review/contracts/fixtures/valid-first-release-profile.json",
+          "sha256": "9455b378b2e7e53a04e98df3ed96806536b09bb2b0429c08735c2af09539f8fa",
+          "bytes": 1536
+        },
+        {
+          "path": "review/contracts/fixtures/valid-bayesian-reliance.json",
+          "sha256": "c1fcb0b3a643dc89a9b3dac98460f4fb71d48ca62c19c15ea6cea8798c53985b",
+          "bytes": 1645
+        },
+        {
+          "path": "review/contracts/fixtures/valid-cooperative-competition-charter.json",
+          "sha256": "315c3ec7d685521573238b97e14cfa42b9b8b94f61d6e9d1966fd3a6c36dbbb0",
+          "bytes": 3512
+        },
+        {
+          "path": "review/contracts/fixtures/valid-onboarding-source-set.json",
+          "sha256": "6b3ac2f8f30654177599a392864ddc1ed8162c5f6f6114b50932a19a70c0f5e7",
+          "bytes": 1596
+        },
+        {
+          "path": "review/contracts/fixtures/valid-request-case.json",
+          "sha256": "a6268935eddb90c24ad8432972d66d360985c4bf4fe3b67c73a233016638ae96",
+          "bytes": 1360
+        },
+        {
+          "path": "review/contracts/fixtures/valid-transfer-case.json",
+          "sha256": "18aa5f47188e5724b412d05ec016208cbdd963b290d354e0856ded4b61c0273e",
+          "bytes": 1177
+        },
+        {
+          "path": "review/contracts/hirc-bayesian-reliance.candidate.schema.json",
+          "sha256": "900f074496cdefcb447c1c4d436a1f6952f01754e909f133f78e06fa2d73a9e8",
+          "bytes": 7207
+        },
+        {
+          "path": "review/contracts/hirc-bridge-gate.candidate.schema.json",
+          "sha256": "3418df78a144618c2e32ca47a77735cfcf67669ad504b3393b543ce3cfa6f601",
+          "bytes": 4458
+        },
+        {
+          "path": "review/contracts/hirc-bayesian-reliance.candidate.schema.v2.json",
+          "sha256": "ff308e1ab64a7936983fca195998659842e527de9e1057fe5c267f60649c3274",
+          "bytes": 10330
+        },
+        {
+          "path": "review/contracts/hirc-cooperative-competition-charter.candidate.schema.json",
+          "sha256": "3ec5f254024d5e1f1ff3ecc812419af021f43a3dddbead90559c32e95ef3067a",
+          "bytes": 7430
+        },
+        {
+          "path": "review/contracts/hirc-cooperative-competition-charter.candidate.schema.v2.json",
+          "sha256": "ddc95fe9f4fe113620b0bda83040663c4b1aeebbc18519c5979f7102caa403ad",
+          "bytes": 8842
+        },
+        {
+          "path": "review/contracts/hirc-onboarding-source-set.candidate.schema.json",
+          "sha256": "0e2760bf8df09f94192ff344dfa57a4457195572b24c1ec32c8cb87481152fb5",
+          "bytes": 6421
+        },
+        {
+          "path": "review/contracts/hirc-request-case.candidate.schema.json",
+          "sha256": "19f2aa624caaecf2a73599d7f8b4e709cdf5c668c2b3846f26896b063a893ee9",
+          "bytes": 7449
+        },
+        {
+          "path": "review/contracts/hirc-request-case.candidate.schema.v2.json",
+          "sha256": "02808932d5dd90965da7ea476eb3e6db829a031ed046a3d0c56d2fc5d1fe8430",
+          "bytes": 9562
+        },
+        {
+          "path": "review/contracts/hirc-release-profile.candidate.schema.json",
+          "sha256": "db6f2a8b395d6cdc3bb8958bafcfd6b1719e882890d5d7daeaade54d001643d9",
+          "bytes": 4450
+        },
+        {
+          "path": "review/contracts/hirc-transfer-case.candidate.schema.json",
+          "sha256": "513300dad2e4f5cb448696fa58f90450db1847871adacc36220e388c2834db41",
+          "bytes": 11037
+        },
+        {
+          "path": "review/contracts/validation-notes.md",
+          "sha256": "039326184ce128886aabc89bb413ee32c25dbb114e6d44261f7c01e23b822ed4",
+          "bytes": 1079
+        },
+        {
+          "path": "review/contracts/validation-result.json",
+          "sha256": "0d77a3cae30b09732f566a8bdfeb3c7978c3a7a6426ac82dffcb016e1ffe2402",
+          "bytes": 1281
+        },
+        {
+          "path": "review/contracts/release-bridge-validation-result.json",
+          "sha256": "f30c5ab5d8731f4a2d3376e8ada1ddce2e13764e5ce731fcf66bc04250d802ba",
+          "bytes": 1757
+        }
+      ],
+      "source_bindings": [
+        "HIRC-SUCCESSOR-ONBOARDING-CANDIDATE-001",
+        "HIRC-SOVEREIGNTY-COMPETITION-CANDIDATE-001",
+        "HIRC-SOVEREIGNTY-COMPETITION-CANDIDATE-001-S1",
+        "HIRC-REVISION-MAP-INTEGRATED-BOUNDARY-001"
+      ],
+      "limits": "v1 passed local base fixtures but accepted seven WAYMARK adverse cases; v2.1 hash-binds actual v2 targets, adapted inputs, harness and runtime/validator while accepting four controls and rejecting seven adverse cases; release/Bridge structural fixtures accept two controls and reject required-test-not-run, missing-stage5 and premature-stage7 cases; serialized references remain nonproof and runtime/privacy/statistical/usability/security conformance remains pending",
+      "next_action": "Retain v1 counterexamples, extend v2 cross-validator/runtime/reference/privacy/statistical/usability/security fixtures, and continue WAYMARK integrated review"
+    },
+    {
+      "id": "HIRC-MILESTONE-GIT-PROTOCOL-001",
+      "kind": "milestone_git_checkpoint_protocol",
+      "path": "drafts/hirc_milestone_git_protocol_v0_1-draft.md",
+      "status": "ACTIVE_WORKING_PROTOCOL",
+      "governed_scope": "milestone_closure_commit_and_push",
+      "sha256": "c9f85c3e89cd5babf5c0540e4934967ec1b90af85c3753f2afac12ef7ec44ce9",
+      "bytes": 3088,
+      "source_bindings": ["HIRC-I019"],
+      "next_action": "Apply to Milestone 02D and every later milestone"
+    },
+    {
+      "id": "HIRC-STEPPING-STONE-PROTOCOL-001",
+      "kind": "tiny_stepping_stone_execution_protocol",
+      "path": "drafts/hirc_stepping_stone_protocol_v0_1-draft.md",
+      "status": "ACTIVE_WORKING_PROTOCOL",
+      "governed_scope": "milestone_execution_and_testing",
+      "sha256": "23a489be7749df19aa733679574cef940ea016426668c68337e0affcc5abd6ad",
+      "bytes": 2669,
+      "source_bindings": ["HIRC-I020", "HIRC-I019"],
+      "next_action": "Qualified successor expands next milestone into its complete ordered stone register before implementation"
+    },
+    {
+      "id": "HIRC-MILESTONE-02D",
+      "kind": "cumulative_milestone_git_checkpoint",
+      "path": "milestones/MILESTONE-02D.md",
+      "status": "READY_FOR_CONTENT_COMMIT_AND_PUSH",
+      "governed_scope": "cumulative_plan_work_through_milestone_02d",
+      "sha256": "7548602e1dbd213f9b0f669470e9e96b36e839a17fb767717f639f0f3e221459",
+      "bytes": 14535,
+      "members": [
+        {
+          "path": "milestones/README.md",
+          "sha256": "f9189b3fc3c0f1ea7e624ed6078b2182ed25c761863aa7f504fd4895baeeca9b",
+          "bytes": 477
+        }
+      ],
+      "source_bindings": ["HIRC-I019", "HIRC-I020", "HIRC-M02D", "HIRC-PROJECT-CONTROLLER-G2-COMPLETION"],
+      "next_action": "Create milestone content commit, record receipt, push branch and verify remote ref"
+    },
+    {
+      "id": "HIRC-MASTER-DRAFT-BUNDLE-001",
+      "kind": "integrated_master_and_requirements_working_draft_bundle",
+      "path": "drafts/README.md",
+      "status": "DEBT_DURING_GENERATION_PENDING_PEER_CONSENSUS",
+      "governed_scope": "project_master_plan_and_requirements_revision",
+      "sha256": "7146221f6408d46ccdc4bd1669d5015b0c2cd5fed5e34ad34dc7d499f64f0503",
+      "bytes": 1095,
+      "members": [
+        {
+          "path": "drafts/hirc_bridge_security_profile_v0_1-draft.md",
+          "sha256": "c9e5c957a1bf964e5766752d73a72e3a36a6b9cd26d408e0770081cae25702d1",
+          "bytes": 18141
+        },
+        {
+          "path": "drafts/hirc_first_delivery_profile_v0_1-draft.md",
+          "sha256": "f3d0bfbfd403d25d70ccf666a3a1be3df0cf21adc0c083a01e824873b2d58e99",
+          "bytes": 9623
+        },
+        {
+          "path": "drafts/hirc_foundation_architecture_v0_1-draft.md",
+          "sha256": "4954143844b3edc37dbc4acba20e649e705480bf9d760ddd59b65b29dd01e311",
+          "bytes": 15680
+        },
+        {
+          "path": "drafts/hirc_master_plan_v1_1-draft.md",
+          "sha256": "e1145abcd43c92c876f7278c4eca51ac2c061184f45f638c162871d3a2edc37a",
+          "bytes": 61568
+        },
+        {
+          "path": "drafts/hirc_master_plan_explained_v1_1-draft.md",
+          "sha256": "428230158e6108531ca44796e94df01e0b700af21501a030cb35e2127d8f45d5",
+          "bytes": 12789
+        },
+        {
+          "path": "drafts/hirc_licensing_status_v0_1-draft.md",
+          "sha256": "af17ba45e54734d01ae2744091542b5bab840c24662a0bade81e613a89a1e446",
+          "bytes": 10143
+        },
+        {
+          "path": "drafts/hirc_milestone_git_protocol_v0_1-draft.md",
+          "sha256": "c9f85c3e89cd5babf5c0540e4934967ec1b90af85c3753f2afac12ef7ec44ce9",
+          "bytes": 3088
+        },
+        {
+          "path": "drafts/hirc_stepping_stone_protocol_v0_1-draft.md",
+          "sha256": "23a489be7749df19aa733679574cef940ea016426668c68337e0affcc5abd6ad",
+          "bytes": 2669
+        },
+        {
+          "path": "drafts/hirc_requirements_v1_1-draft.json",
+          "sha256": "717bcbe6cdc165bd7912eb47d09a7015a33ddfef9a1fbeb596343a372079f6d6",
+          "bytes": 238392
+        },
+        {
+          "path": "drafts/hirc_requirements_v1_1-draft.md",
+          "sha256": "96a170555bd8f9ed72dcefa4e01e588d64037cad1a801ce27205f0eae2ba1efd",
+          "bytes": 51216
+        },
+        {
+          "path": "drafts/hirc_threat_model_v1_0-draft.md",
+          "sha256": "de2e93a39c08a51c08fcd6bb7612320e4aa7fb54e7d85fa6e60df81ad889bdd0",
+          "bytes": 25669
+        }
+      ],
+      "source_bindings": [
+        "HIRC-SOURCE-001",
+        "HIRC-INTENT-001",
+        "HIRC-GOAL-VERSION-002",
+        "HIRC-JOINT-CONSENSUS-DRAFT-006",
+        "HIRC-REVISION-MAP-CANDIDATE-001",
+        "HIRC-REVISION-MAP-LNC-001",
+        "HIRC-REVISION-MAP-DEBATE-001",
+        "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+        "HIRC-REVISION-MAP-LNC-PRICE-002",
+        "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+        "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
+        "HIRC-REVISION-MAP-GOAL-EVOLUTION-001",
+        "HIRC-REVISION-MAP-WAYMARK-SOVEREIGNTY-001",
+        "HIRC-REVISION-MAP-INTEGRATED-BOUNDARY-001",
+        "HIRC-REVISION-MAP-ELDER-SUCCESSION-001",
+        "HIRC-SOURCE-BINDING-ELDER-001"
+      ],
+      "limits": "Integrated and explained working masters, 218 requirements, 127 revision decisions, threat model, foundation architecture, first-delivery, licensing, milestone/Git, stepping-stone and disabled Bridge profiles; bounded agreements plus Elder integration are present while unread rows, implementation evidence and whole consensus remain explicit holds",
+      "next_action": "WAYMARK adversarially reviews the integrated draft; both reviewers reconcile and revise before freezing Master Plan 1.1"
+    },
+    {
+      "id": "HIRC-REVIEW-INDEX-001",
+      "kind": "review_entrypoint",
+      "path": "review/README.md",
+      "status": "ACTIVE",
+      "governed_scope": "internal_design_review",
+      "sha256": "4296d34ace33da0e8297007ff643aa298e48319ff55ee1b61d3efe263a8f2f4f",
+      "bytes": 7391,
+      "next_action": "Link the accepted consensus and final revisions when created"
+    }
+  ],
+  "temporary_artifacts": [
+    {
+      "path": "review/.scratch-ui-20261007-b-20261008-a/",
+      "purpose": "validated, nonexecuted extraction for local reading",
+      "status": "DEBT_DURING_GENERATION",
+      "disposition": "remove only after revised source identities and review evidence are verified"
+    }
+  ],
+  "completion_layers": {
+    "source_identity": "PASS",
+    "before_state_and_history": "PASS",
+    "review_findings": "PASS",
+    "peer_consensus": "HELD",
+    "revised_plan": "DEBT_DURING_GENERATION",
+    "requirements_register": "DEBT_DURING_GENERATION",
+    "tests_and_readable_view": "HELD"
+  }
+}

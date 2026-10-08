@@ -1,0 +1,56 @@
+{
+  "schema": "hirc.contract-schema-validation/1",
+  "validator": "PowerShell Test-Json 7.0.0.0",
+  "state": "PASS",
+  "cases": [
+    {
+      "name": "onboarding-valid",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "transfer-valid",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "request-valid",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "bayesian-valid",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "competition-valid",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "request-proceed-with-failed-boundary",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "name": "posterior-direct-permission-effect",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "name": "competition-rank-to-permission",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    }
+  ],
+  "limits": "Structural JSON Schema behavior at declared fixtures; no semantic, security, privacy, statistical or implementation assurance."
+}

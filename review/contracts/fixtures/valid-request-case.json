@@ -1,0 +1,50 @@
+{
+  "schema_version": "hirc.request-case/1-candidate",
+  "request_id": "request:test:1",
+  "state": "ACTION_DISPOSITIONED",
+  "source": {
+    "principal_id": "human:test",
+    "principal_class": "HUMAN",
+    "authenticated_state": "VERIFIED",
+    "received_at": "2026-10-08T12:00:00Z",
+    "verbatim_ref": "message:test:1"
+  },
+  "interpretations": [
+    {
+      "interpretation_id": "interpretation:test:1",
+      "objective": "validate request contract",
+      "confidence": 0.9,
+      "consequence_class": "LOW",
+      "selected": true,
+      "evidence_refs": ["evidence:test:1"],
+      "affected_party_refs": ["human:test"]
+    }
+  ],
+  "reliance_decision_refs": ["reliance:test:1"],
+  "authority": {
+    "claim_ref": "authority:test:1",
+    "identity_verified": true,
+    "delegation_verified": true,
+    "scope_verified": true,
+    "current": true,
+    "consent_verified": true,
+    "legitimacy_state": "PASS",
+    "evidence_refs": ["evidence:authority:test"]
+  },
+  "participation": {
+    "agent_id": "agent:test",
+    "state": "WILLING",
+    "reason_refs": ["reason:test"],
+    "conditions": [],
+    "retaliation_prohibited": true
+  },
+  "action_disposition": {
+    "state": "HELD",
+    "reason_refs": ["reason:test"],
+    "effect_gate_state": "HELD",
+    "alternative_refs": [],
+    "authority_is_not_truth": true
+  },
+  "events": ["event:test:1"]
+}
+

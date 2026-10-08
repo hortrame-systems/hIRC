@@ -1,0 +1,68 @@
+{
+  "schema": "hirc.project-controller/1",
+  "controller_id": "hirc-master-plan-security",
+  "generation": 2,
+  "predecessor": {
+    "path": "review/project-controller-generation-1.json",
+    "sha256": "49a629877524728b7cd1648c65676d78a070a2c542ab93734ea692df2347c009",
+    "generation": 1
+  },
+  "state": "PREPARED_ACCEPTED_AWAITING_PREDECESSOR_TRANSFER",
+  "activation_condition": "Cooperative handoff 8352496b-b618-476c-a32b-263ecf814813 reaches TRANSFERRED at generation 2",
+  "recorded_on": "2026-10-08",
+  "repository": {
+    "root": "D:/HORTRAME/hIRC",
+    "branch": "codex/hirc-master-plan-security",
+    "base_head": "36bd2ae6d06fd558ae2d6068c3ae5a964491c0ce",
+    "working_tree_state": "GOVERNED_UNCOMMITTED_CHANGES"
+  },
+  "canonical_writer": {
+    "name": "LUCENT",
+    "technical_id": "UI-20261007-B",
+    "native_thread_id": "01a11885-1579-7792-bb8e-63ffc96e704b",
+    "role": "Security Specialist / Integration Lead",
+    "changed_from_generation_1": false
+  },
+  "writer_fence": {
+    "mode": "COOPERATIVE_SINGLE_WRITER",
+    "os_enforced": false,
+    "before_ledger_sha256": "bd9adc0d4a603c34875bf29d26da8a5b4becda31511d147627152f1793dfa087",
+    "canonical_paths": [
+      "README.md",
+      "intent-register.json",
+      "drafts/",
+      "review/ledger.json",
+      "review/joint-consensus-matrix-*.json",
+      "review/contracts/"
+    ],
+    "immutable_peer_prefixes": [
+      "review/ui-a-*",
+      "review/waymark-*",
+      "review/fixtures/waymark-trust-contract-cases-v1.json"
+    ]
+  },
+  "handoff": {
+    "handoff_id": "8352496b-b618-476c-a32b-263ecf814813",
+    "task": "hirc-master-plan-security",
+    "predecessor": "UI-20261007-A",
+    "recipient": "UI-20261007-B",
+    "offer_generation": 1,
+    "queue_state_at_record": "ACCEPTED",
+    "source_continuity_sha256": "23c7d29cb659ef649a6d6760006e48c54596977eca66b751ff3cbfcdf6b0a1cb",
+    "shared_brief_path": "review/waymark-custody-brief-v1.md",
+    "shared_brief_sha256": "04fb1887942b8fd90edbfab842f4a3ec98df69a36fa1727d3159080f5c0e89f2",
+    "recipient_acceptance_path": "D:/HORTRAME/runtime/agents/ui-20261007-b/checkpoints/b010f80e3a554396836db66d02b92f27.json",
+    "recipient_acceptance_sha256": "7f5e4ebd052d624514869e4f345d2e9aa9a252ca21521c8af233a56f7eea3d99"
+  },
+  "accepted_custody": {
+    "scope": "residual product-audit tracking, integration and safe holds",
+    "preserved_peer_artifacts": true,
+    "unread_rows_remain_open": true,
+    "inherited_peer_conclusions": false,
+    "inherited_education_or_permissions": false,
+    "release_bridge_legal_or_product_authority_added": false
+  },
+  "next_action": "WAYMARK records its own exact transfer evidence and advances the cooperative handoff to generation 2. LUCENT then records observed transfer completion without rewriting this generation target.",
+  "limits": "Prepared authoritative next-generation controller/fence for a bounded task-custody transfer. It is not active until the cooperative transfer event is observed and does not enforce the writer fence at OS level."
+}
+

@@ -1,0 +1,260 @@
+{
+  "schema": "hirc.revision-map-addendum/1",
+  "id": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+  "status": "FROZEN_FOR_PEER_CONSENSUS",
+  "base_revision_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+  "source_intents": [
+    "HIRC-I001",
+    "HIRC-I003",
+    "HIRC-I004",
+    "HIRC-I010",
+    "HIRC-I011"
+  ],
+  "source_bindings": [
+    {
+      "id": "standard:continuity",
+      "version": "HORTRAME-ACTS 1.0.2",
+      "sha256": "b92512048512d740658bf9c41baa6dfd4f491400f4c3d19012cd7f2db87a634a",
+      "status": "current qualified source; legacy host commands inactive; no transfer initiated"
+    },
+    {
+      "id": "current-onboarding-selection",
+      "plan_sha256": "d233fd1dedcbb52c6d91f6126ba788bfa845252ed6e4a37417d59108b5fa0ab8",
+      "observed_selected_entries": 48,
+      "observed_curriculum_mandatory_entries": 34,
+      "status": "current source-plan evidence only; counts are not architecture constants or proof of personal completion"
+    },
+    {
+      "id": "HIRC-UIA-PEER-CHALLENGE-001",
+      "sha256": "dbf8b68587870f785298d38ee0ee29c77e8d87e795dea79ae576fc21579a3949",
+      "status": "bounded peer challenge; whole-packet consensus pending"
+    }
+  ],
+  "new_user_requirements": [
+    {
+      "id": "U139",
+      "domain": "Foundation",
+      "title": "Bake the complete current onboarding semantics into hIRC's active architecture",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Every selected common/role/task/source-format/experience/review/voice/admission/learning unit has an exact identity, status, attributable disposition, consumer and verification or explicit conflict/hold; no operational path bypasses the resulting foundation contracts"
+    },
+    {
+      "id": "U140",
+      "domain": "Foundation",
+      "title": "Resolve onboarding from the current admitted catalog and context rather than a static prompt or path list",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Build and formation use an immutable OnboardingSourceSet generated for exact common, roles, task, audience and deployment; source/status/scope changes produce a semantic/contract delta and never auto-assert comprehension or permission"
+    },
+    {
+      "id": "U141",
+      "domain": "Boot and recovery",
+      "title": "Initialize the first valid foundation and permanent technical identity without circular self-authorization",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "A minimized predecessor-controlled GenesisRoot verifies an owner-authorized digest-bound source/compiler/test/recovery manifest in a non-effectful environment, atomically activates or fails to safe inspection/repair, and cannot be reused for ordinary self-promotion"
+    },
+    {
+      "id": "U142",
+      "domain": "Formation",
+      "title": "Let an already authorized permanent participant establish only its own proposed formation storage and use admitted education readers while incomplete",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0-F",
+      "acceptance": "Same-actor proposed profile/notes and admitted read-only education/repair routes work without operational membership/effects/readiness; another namespace, stale/wrong reader tuple, proxy completion and silent missing-source bypass are denied"
+    },
+    {
+      "id": "U143",
+      "domain": "Formation",
+      "title": "Represent personal formation and admission as source-bound runtime state",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0-F",
+      "acceptance": "Source study, synthesis, role/task practice, adversarial challenge, voice and scoped admission have attributable evidence and stale/held/superseded states; byte receipts never become comprehension, identity, qualification or ACT"
+    },
+    {
+      "id": "U144",
+      "domain": "Continuity",
+      "title": "Implement the current successor protocol as an append-only fail-closed lifecycle",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P2-C",
+      "acceptance": "Only an authorized exact trigger creates one transfer case; predecessor freezes, package validates, a fresh successor personally forms and answers evidence-linked questions, exact acceptance precedes observed archive, and sleep/tracker events remain separate and recoverable"
+    },
+    {
+      "id": "U145",
+      "domain": "Privacy and continuity",
+      "title": "Minimize and protect successor handoff packages",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P2-C",
+      "acceptance": "Human/machine packages and manifests are source-linked, schema/digest checked, exact-recipient encrypted and purpose-signed; credentials, reusable sessions, protected bodies, hidden reasoning, unrelated private/client data and unbounded transcripts are rejected or explicitly held"
+    },
+    {
+      "id": "U146",
+      "domain": "Security and continuity",
+      "title": "Fence predecessor and successor effects by generation, session, foundation and execution epoch",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "Freeze rejects late predecessor writes; stale/replayed/wrong-generation acceptance, archive, wake and tracker operations fail closed; concurrent transfer cannot create two active effectful writers"
+    },
+    {
+      "id": "U147",
+      "domain": "Continuity",
+      "title": "Keep archive, deep sleep, wake, serial fleet order and red-watchdog recovery explicit",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P2-C",
+      "acceptance": "Transfers run one permanent identity at a time with host/result checks and leader last; deep sleep performs no queued work until authorized wake; tracker conflict/ambiguous effects preserve evidence; scoped red-watchdog recovery requires an exact decision, verifier and negative dependency closure and grants continuity only"
+    },
+    {
+      "id": "U148",
+      "domain": "Trusted interaction",
+      "title": "Show canonical consequential-action previews on a surface independent of the ordinary renderer",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "The broker produces the exact intent digest; an independent trusted surface renders it accessibly; approval and dispatch bind current target/revision/recipients/data/cost/warnings/authority; spoof, substitution, replay and staleness fail while valid routine operations remain usable"
+    },
+    {
+      "id": "U149",
+      "domain": "Migration and memory",
+      "title": "Preserve complete authorized migration study separately from bounded active runtime context",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P2-M",
+      "acceptance": "A complete in-scope manifest and resumable coverage/reconciliation jobs coexist with a minimized target context; partitions have separate rights; prohibited/unreadable content stays local or held with visible limits; late deltas cannot create dual active writers"
+    },
+    {
+      "id": "U150",
+      "domain": "Licensing",
+      "title": "Use USD 42,424,243 per licence as the giant-multinational price",
+      "status": "BLOCKED_OPEN_DEFINITIONS_AND_LEGAL_REVIEW",
+      "phase": "P5-L",
+      "acceptance": "Active requirements and later product/legal artifacts use exactly USD 42,424,243 per licence; the prior USD 42,424,242,423 per-licence-per-year value is labelled superseded history; cadence, tiers and legal activation remain explicitly unresolved"
+    }
+  ],
+  "changes": [
+    {
+      "id": "ORM-001",
+      "targets": ["master:foundation", "foundation-architecture", "source-registry"],
+      "change": "Replace static onboarding prompt assumptions with an exact catalog-derived OnboardingSourceSet and unit-level dispositions for kernel, judgment, formation, UI, evaluation, workflow, history, conflict and hold.",
+      "basis": ["HIRC-I010", "U139", "U140"]
+    },
+    {
+      "id": "ORM-002",
+      "targets": ["master:boot", "recovery-profile", "foundation-architecture"],
+      "change": "Add a minimized GenesisRoot and owner-authorized GenesisManifest that resolve first-foundation activation without candidate self-authorization.",
+      "basis": ["U141"]
+    },
+    {
+      "id": "ORM-003",
+      "targets": ["master:formation", "local-runtime-adapter", "education-readers"],
+      "change": "Add a distinct same-actor FormationRepairLane for proposed own storage, truthful incomplete notes and already admitted read-only study/repair routes, preserving every ordinary-work and reader gate.",
+      "basis": ["U142", "PC-01"]
+    },
+    {
+      "id": "ORM-004",
+      "targets": ["master:formation", "agent-registry", "admission"],
+      "change": "Add FormationCase states from proposed identity through source study, synthesis, practice, adversarial challenge, voice and scoped admission, with held/stale/superseded branches and no receipt-to-comprehension conversion.",
+      "basis": ["U143"]
+    },
+    {
+      "id": "ORM-005",
+      "targets": ["master:foundation-change", "compiler", "evaluation"],
+      "change": "Make onboarding compilation loss-aware and reproducible; changed source/status/scope creates a candidate semantic/contract delta whose evaluator and activation authority remain predecessor-controlled.",
+      "basis": ["HIRC-I001", "HIRC-I010"]
+    },
+    {
+      "id": "ORM-006",
+      "targets": ["master:continuity", "continuity-service", "agent-registry"],
+      "change": "Add typed ContinuityPolicy, TransferTrigger/Case, PredecessorFreeze, HandoffPackage/Manifest, SuccessorGeneration, Acceptance, Archive, Sleep/Wake, Tracker and ScopedRecovery records.",
+      "basis": ["U144", "standard:continuity"]
+    },
+    {
+      "id": "ORM-007",
+      "targets": ["master:continuity", "action-broker", "scheduler"],
+      "change": "Implement the append-only continuity state machine with an exact authorized trigger, smallest-safe-step freeze, one exact successor, bounded clarification, evidence-based acceptance and observed external-effect states.",
+      "basis": ["U144"]
+    },
+    {
+      "id": "ORM-008",
+      "targets": ["master:security", "identity", "capability-service", "journal"],
+      "change": "Bind all commands/effects/events to permanent identity, generation, fresh session, foundation version and execution epoch; atomically fence predecessor writes on freeze.",
+      "basis": ["U146"]
+    },
+    {
+      "id": "ORM-009",
+      "targets": ["master:privacy", "continuity-package", "secret-topology"],
+      "change": "Add schema/digest validation, exact-recipient encryption, continuity-purpose signatures, minimization and fallible credential/protected-source/privacy scanners with retention and recovery inherited from the most restrictive included data.",
+      "basis": ["U145"]
+    },
+    {
+      "id": "ORM-010",
+      "targets": ["master:experience", "trusted-ui", "action-broker"],
+      "change": "Have the deterministic broker create canonical effect previews and display them on an actually independent accessible trusted surface; approval and dispatch bind the same current digest.",
+      "basis": ["U148", "PC-02"]
+    },
+    {
+      "id": "ORM-011",
+      "targets": ["master:fleet", "master:time", "master:recovery"],
+      "change": "Enforce serial permanent-agent succession, responsiveness/result checks, leader-last order, no temporary-worker route, deep-sleep inactivity, explicit wake and non-blind tracker-conflict handling.",
+      "basis": ["U147"]
+    },
+    {
+      "id": "ORM-012",
+      "targets": ["master:recovery", "watchdog", "continuity-verifier"],
+      "change": "Keep fleet-red status visible; permit scoped transfer recovery only under exact decision/verifier, digest bindings, negative dependency closure and boundary/write allowlists, with no broader readiness or product authority.",
+      "basis": ["U147", "standard:continuity"]
+    },
+    {
+      "id": "ORM-013",
+      "targets": ["master:migration", "master:memory", "provider-adapters"],
+      "change": "Keep the complete authorized migration coverage object separate from the minimized active target context; type partition rights, opaque gaps and late-delta fencing.",
+      "basis": ["U149", "PC-04"]
+    },
+    {
+      "id": "ORM-014",
+      "targets": ["master:collective-learning", "master:continuity", "debate-policy"],
+      "change": "Make onboarding, transfer, acceptance, archive and sleep states ineligible for idle debate; handoffs reference only permitted accepted memory/checkpoints and never promote candidate lessons.",
+      "basis": ["HIRC-I008", "HIRC-I010"]
+    },
+    {
+      "id": "ORM-015",
+      "targets": ["master:bridge", "master:continuity", "bridge-contract"],
+      "change": "Keep continuity packages local by default; any cross-system transfer needs a separately admitted recipient/purpose/field/retention/revocation contract and never conveys local authority.",
+      "basis": ["HIRC-I003", "U145"]
+    },
+    {
+      "id": "ORM-016",
+      "targets": ["master:licensing", "requirements:U125", "price-schedule"],
+      "change": "Supersede only the giant-multinational value with USD 42,424,243 per licence, retain the previous statement as history and leave cadence/tiers/legal activation held.",
+      "basis": ["HIRC-I011", "U150", "HIRC-LNC-CORRECTION-001"]
+    },
+    {
+      "id": "ORM-017",
+      "targets": ["master:tests", "requirements-tests"],
+      "change": "Add source/disposition completeness, formation-repair, genesis, generation/epoch, package privacy, every-state crash, replay, archive/sleep/wake, fleet ordering, trusted-preview, migration-delta and clean-room recovery tests from HIRC-SUCCESSOR-ONBOARDING-CANDIDATE-001.",
+      "basis": ["HIRC-SUCCESSOR-ONBOARDING-CANDIDATE-001", "HIRC-LUCENT-PEER-RESPONSE-001"]
+    },
+    {
+      "id": "ORM-018",
+      "targets": ["review:HIRC-REVIEW-001:F01", "master:source-bindings"],
+      "change": "Narrow the unsupported older-VowOS-edition claim: require exact current source/status and Grand Plan bindings plus real semantic comparison, while preserving responsible-action successor and historical mythopoetic provenance.",
+      "basis": ["PC-03", "HIRC-UIA-PEER-CHALLENGE-001"]
+    }
+  ],
+  "qualified_source_dispositions": [
+    {
+      "source_clause": "temporary workers use SUB- names",
+      "disposition": "HISTORICAL_OR_FOREIGN_PROFILE_ONLY",
+      "current_effect": "No temporary agent/worker/subagent route; current permanent-teammate rule controls"
+    },
+    {
+      "source_clause": "mandatory priorities after intentional 2.0 wake",
+      "disposition": "CONTEXTUAL_POST_WAKE_OBLIGATIONS",
+      "current_effect": "Represent in source/formation/task obligations when the active selection and authorized wake make them applicable; do not hardcode as universal kernel authority or start work before wake"
+    },
+    {
+      "source_clause": "legacy host commands",
+      "disposition": "QUALIFIED_INACTIVE_INTERFACE",
+      "current_effect": "Preserve meaning/history and use portable local adapters"
+    }
+  ],
+  "implementation_state": "ARCHITECTURE_AND_TEST_SPECIFICATION_ONLY; no transfer, archive, sleep, wake, new actor, source admission, Bridge action, licence activation or scheduled task follows"
+}
+

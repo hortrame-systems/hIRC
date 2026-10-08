@@ -1,0 +1,572 @@
+{
+  "schema": "hirc.intent-register/1",
+  "updated_on": "2026-10-08",
+  "continuity_rule": "Reconcile every open item before a phase change, publication, or final handoff. A proposal or saved note is not implementation or verification.",
+  "items": [
+    {
+      "id": "HIRC-I001",
+      "status": "ACTIVE",
+      "kind": "confirmed_objective_revision",
+      "source": "owner message, 2026-10-08",
+      "meaning": "The complete current onboarding semantics, from beginning to end, are the foundation of hIRC itself. They are not an optional package or feature. hIRC, onboarding, the selected ethical and epistemic foundations, and the governing system direction must operate as one architecture.",
+      "constraints": [
+        "The foundation must remain active across the complete system and every milestone.",
+        "Self-improvement requires the foundation to support governed evolution in real time.",
+        "The interface and ordinary system language do not need to name the source frameworks; their semantics should be experienced through system behavior.",
+        "Continue the current review and revision work without treating this steering as a stop."
+      ],
+      "interpretation_not_yet_consensus": [
+        "Use one versioned foundation kernel that compiles the selected source semantics into deterministic invariants, authority checks, data and action boundaries, learning requirements, explanations, correction behavior, and acceptance tests.",
+        "Keep source text, public product language, machine-enforced rules, and role education as linked but distinct representations so protected source material is not leaked into deliverables.",
+        "Allow transactional, source-bound, tested live revisions while preventing a proposal from authorizing its own foundation change."
+      ],
+      "acceptance_check": [
+        "No operational path can bypass the active foundation binding.",
+        "Every command, model call, agent action, bridge exchange, update, summary, refusal, correction, and recovery path has testable foundation-derived behavior.",
+        "Every unit of the selected whole-source corpus has an attributable disposition and consumer or an explicit conflict/hold; no instruction disappears during semantic compilation.",
+        "A foundation update preserves its predecessor, exact source identity, affected semantics, migrations, evidence, rollback or forward-recovery path, and active-version visibility.",
+        "Ordinary users can operate the system without learning internal framework terminology.",
+        "The architecture remains fluid without permitting silent semantic drift, self-authorized policy replacement, or disclosure of protected source text."
+      ],
+      "evidence": [
+        "review/foundation-kernel-candidate-v1.md",
+        "drafts/hirc_foundation_architecture_v0_1-draft.md",
+        "drafts/hirc_master_plan_v1_1-draft.md"
+      ],
+      "next_action": "Complete peer consensus and the source-unit, consumer and test trace before freezing Master Plan 1.1."
+    },
+    {
+      "id": "HIRC-I002",
+      "status": "ACTIVE",
+      "kind": "confirmed_execution_scope",
+      "source": "owner message, 2026-10-08",
+      "meaning": "Read the human-transfer package thoroughly in multiple passes, adversarially review the master plan with UI-A, discuss material disagreements to evidence-supported consensus, and revise the plan.",
+      "acceptance_check": [
+        "Both reviewers preserve independent source-bound judgments before discussion.",
+        "Consensus records agreements, remaining dissent, revisions, and evidence.",
+        "The revised master and requirements register are internally consistent and validated."
+      ],
+      "evidence": [
+        "review/lucent-independent-review-v1.md",
+        "review/ui-a-independent-source-review-v1.md",
+        "review/ui-a-peer-challenge-v1.md",
+        "review/lucent-peer-reconciliation-response-v1.md"
+      ],
+      "next_action": "Complete WAYMARK's remaining exact packet and decision-matrix audit, reconcile dissent/holds, then freeze and validate the revised plan."
+    },
+    {
+      "id": "HIRC-I003",
+      "status": "ACTIVE",
+      "kind": "confirmed_security_constraint",
+      "source": "owner message, 2026-10-08",
+      "meaning": "LUCENT serves as the security specialist. The Bridge receives extra precautions as the highest-risk boundary, while the complete system is designed to an exceptionally strong security standard.",
+      "acceptance_check": [
+        "A system-wide threat model and security architecture govern every phase.",
+        "The Bridge remains disabled until staged protocol, hostile-lab, independent-review, recovery, and bounded-pilot gates pass.",
+        "Security claims remain scoped to evidence and never become absolute marketing claims."
+      ],
+      "evidence": [
+        "review/lucent-security-architecture-candidate-v1.md",
+        "drafts/hirc_threat_model_v1_0-draft.md",
+        "drafts/hirc_bridge_security_profile_v0_1-draft.md"
+      ],
+      "next_action": "Complete independent security/product challenge, requirement-level test trace and implementation validation while keeping Bridge disabled."
+    },
+    {
+      "id": "HIRC-I004",
+      "status": "ACTIVE",
+      "kind": "confirmed_milestone_method",
+      "source": "owner message, 2026-10-08",
+      "meaning": "At every milestone, assess the prior work through one holistic foundation lens, refine that lens from actual evidence, and use the refined lens to plan the next milestone.",
+      "acceptance_check": [
+        "Each milestone freezes its evidence and records a bounded lens refinement or justified no-change.",
+        "The next milestone's threats, requirements, and tests trace to that refinement.",
+        "Framework use never substitutes for implementation evidence or action authority."
+      ],
+      "evidence": [
+        "review/lucent-independent-review-v1.md",
+        "review/lucent-security-architecture-candidate-v1.md",
+        "review/milestone-02-integrated-working-draft.md",
+        "review/milestone-02b-sovereignty-trust-peer-reconciliation.md",
+        "review/milestone-02c-release-boundary-peer-reconciliation.md"
+      ],
+      "next_action": "Continue evidence-linked lens refinement or justified no-change at each milestone and propagate it into the next plan."
+    },
+    {
+      "id": "HIRC-I005",
+      "status": "ACTIVE",
+      "kind": "confirmed_communication_boundary",
+      "source": "owner message, 2026-10-08",
+      "meaning": "The owner communicates with LUCENT; LUCENT transfers relevant owner instructions to UI-A.",
+      "acceptance_check": [
+        "UI-A receives complete relevant steering without requiring direct owner coordination.",
+        "LUCENT distinguishes owner instructions from its own interpretation and from source-document content."
+      ],
+      "evidence": [
+        "review/ui-a-independent-source-review-v1.md",
+        "review/ui-a-peer-challenge-v1.md",
+        "review/lucent-peer-reconciliation-response-v1.md"
+      ],
+      "next_action": "Continue relaying relevant owner steering to WAYMARK with owner instructions, source material and LUCENT interpretation kept distinct."
+    },
+    {
+      "id": "HIRC-I006",
+      "status": "CAPTURED",
+      "kind": "confirmed_supersession",
+      "source": "owner message, 2026-10-08",
+      "meaning": "The earlier narrow UI and role-training direction is superseded by the larger hIRC vision. Preserve it as history rather than silently deleting it.",
+      "acceptance_check": [
+        "Earlier artifacts are labelled superseded/historical and do not drive the new architecture unless deliberately readmitted.",
+        "No evidence or useful implementation is destroyed by the scope change."
+      ],
+      "evidence": [
+      ],
+      "next_action": "Update the prior project's canonical register through its responsible owner after the current hIRC review boundary."
+    },
+    {
+      "id": "HIRC-I007",
+      "status": "ACTIVE",
+      "kind": "confirmed_scope_addition",
+      "source": "owner message and supplied plan, 2026-10-08",
+      "meaning": "Review and implement the supplied hIRC non-domination, licensing, voluntary-support, cooperative-refusal, negotiation, safe-withdrawal, privacy, recovery, and verification plan within the master-plan revision.",
+      "source_artifact": {
+        "path": "human_transfer/hirc_non_domination_licensing_and_noncooperation_plan_v1_0.md",
+        "sha256": "7a2aae743bebb40335ec6168e9af7ec107aeaa0046caef52511699909b438bd5",
+        "bytes": 51229
+      },
+      "constraints": [
+        "Preserve USER DIRECTIVE, ACCEPTED DIRECTION, PROPOSAL, OPEN, and NOT IMPLEMENTED as different states.",
+        "Do not represent the change plan as a final or legally reviewed licence.",
+        "Integrate non-domination and justified refusal into the foundation while keeping explicit legal licence terms visible and separately versioned.",
+        "No licence or governance control may require maker-side work-content collection, covert telemetry, remote sabotage, data hostage, ideological conformity, majority-created truth, or a global agent kill switch.",
+        "Continue current hIRC work and UI-A onboarding/review in parallel."
+      ],
+      "acceptance_check": [
+        "Every ND decision and unresolved item has a disposition and trace into the revised master, requirements, architecture, legal-review gate, or explicit hold.",
+        "The exact owner-directed fee schedule and one-human-seat rule are preserved as requirements while undefined tiers and legal terms remain visibly blocked from production.",
+        "Personal and qualifying public-interest use remains free under the eventual reviewed terms; commercial classification does not require surveillance of unrelated activity.",
+        "Voluntary support is non-blocking, locally suppressible, permanently reachable from About, privacy-disclosed, and functionally neutral when declined.",
+        "Individual refusal, evidence review, voluntary coordination, bounded negotiation, safe withdrawal, transparent reassignment, restoration, and operator attention are tested without granting collective authority or harming unrelated work.",
+        "Licence expiry, suspension, or termination never blocks safe access to permitted first-party records, export, recovery, or evidence needed to contest the decision."
+      ],
+      "evidence": [
+        "review/lucent-licensing-noncooperation-review-v1.md",
+        "review/revision-map-addendum-licensing-v1.json",
+        "review/licensing-price-correction-v1.md",
+        "review/revision-map-addendum-successor-onboarding-v1.json"
+      ],
+      "next_action": "Complete WAYMARK's remaining licensing/noncooperation audit and whole-plan reconciliation; keep counsel/rights/open-definition decisions held."
+    },
+    {
+      "id": "HIRC-I008",
+      "status": "ACTIVE",
+      "kind": "confirmed_scope_addition",
+      "source": "owner message, 2026-10-08",
+      "meaning": "Alignment with the five commitments must be architectural. By default, eligible non-busy agents may be randomly paired to invent and debate progressively more complex ethical questions through one holistic five-commitment lens. The debates enrich collective understanding through durable collective memory, and that debate memory is studied before every new debate.",
+      "constraints": [
+        "The feature uses existing admitted permanent agents; it creates no temporary agents or new actors.",
+        "Busy, reserved, onboarding, migrating, suspended, offline/unknown, privacy-incompatible, unwilling, or budget-ineligible agents are not paired.",
+        "Pairing and debates do not interrupt accepted work, create a hidden timer in the current environment, or resume owner-paused scheduled review routines.",
+        "Debates use public-safe, synthetic, or specifically admitted material and cannot expose team/client/private memory, secrets, or protected source text across boundaries.",
+        "Agreement, debate count, rhetorical sophistication, shared memory, or use of the five-commitment lens is not proof of truth, independence, alignment, comprehension, moral status, or policy authority.",
+        "Collective-memory lessons remain candidates until source-bound review and the applicable foundation-change authority admit them."
+      ],
+      "acceptance_check": [
+        "A default-enabled but user-controllable policy permits bounded idle debate only when both permanent agents are demonstrably eligible and individually able to decline without penalty.",
+        "The pairing scheduler is fair, duplicate/cycle-aware, privacy-compatible, resource-bounded, crash-resumable, and never mislabels presence as availability.",
+        "Before debate activation, both participants complete a source-linked coverage pass over the declared collective debate memory and relevant current foundation, with unreadable/gap states explicit.",
+        "Every debate has a stable objective, prerequisites, complexity dimensions, budget, termination condition, claims, counterevidence, dissent, corrections, residual questions, lens refinement or justified no-change, and next-frontier candidates.",
+        "Complexity increases from actual surviving questions and demonstrated prior coverage rather than verbosity, adversarial theatrics, or invented criticism.",
+        "The collective memory preserves original permitted records, source and model/runtime provenance, shared-dependency limits, failed arguments, counterexamples and supersessions while keeping summaries and indexes derivative.",
+        "New candidate lessons cannot modify active foundation, permissions, licensing, safety, Bridge, or release behavior without the normal independent review, tests, authorization and versioned FoundationChange path.",
+        "Routine debates remain quiet and consume no operator attention unless a genuinely material unresolved decision lies outside delegated authority."
+      ],
+      "evidence": [
+        "review/ethical-debate-memory-architecture-candidate-v1.md",
+        "review/ethical-debate-memory-architecture-supplement-1.md",
+        "review/revision-map-addendum-ethical-debate-v1.json",
+        "review/milestone-01b-idle-ethical-debate-intake.md"
+      ],
+      "next_action": "WAYMARK completes exact debate-candidate review; reconcile product/privacy/attention consequences while runtime pairing remains disabled."
+    },
+    {
+      "id": "HIRC-I009",
+      "status": "ACTIVE",
+      "kind": "confirmed_clarification",
+      "source": "owner message, 2026-10-08",
+      "affects": [
+        "HIRC-I008"
+      ],
+      "meaning": "The paired agents must be able to choose what foundational domain they debate. The available choices include the five commitments, Epistemethics, and the Grand Plan; debates are not forced to use the five commitments as their sole subject.",
+      "preserved_prior_meaning": "Idle eligible permanent agents may still be paired under the bounded policy, must study collective debate memory first, may debate increasingly complex ethical questions, and contribute candidate learning without gaining policy authority.",
+      "changed_interpretation": "The debate domain and its primary lens are explicit participant choices. Each selected domain has its own source and collective-memory coverage contract. Full hIRC foundation constraints still govern the process, but the selected subject is not silently replaced by another framework.",
+      "acceptance_check": [
+        "Before topic activation, both participants can select or accept a DebateDomain whose supported values include FIVE_COMMITMENTS, EPISTEMETHICS, and GRAND_PLAN.",
+        "No scheduler, coordinator, prompt or prior memory silently forces one domain when the participants validly choose another.",
+        "If the pair cannot agree on a domain, either participant may decline or the debate returns to the eligible queue without penalty; no default consensus is fabricated.",
+        "The required pre-debate study binds the current exact sources, whole accessible debate memory, counterexamples and unresolved frontier for the selected domain, plus only the cross-domain dependencies genuinely needed for the question.",
+        "Memory, syntheses, complexity ladders and candidate lessons retain the chosen domain and distinguish domain-internal conclusions from optional cross-framework comparisons.",
+        "A combined or comparative debate can be offered as an additional choice, but it does not erase or subordinate the three required selectable domains."
+      ],
+      "evidence": [
+        "review/ethical-debate-memory-architecture-supplement-1.md",
+        "review/revision-map-addendum-ethical-debate-v1.json"
+      ],
+      "next_action": "Obtain WAYMARK's exact product/interaction disposition for DebateDomain and per-domain memory/frontier before final integration."
+    },
+    {
+      "id": "HIRC-I010",
+      "status": "ACTIVE",
+      "kind": "confirmed_architecture_requirement",
+      "source": "owner message, 2026-10-08",
+      "affects": [
+        "HIRC-I001",
+        "HIRC-I002",
+        "HIRC-I003",
+        "HIRC-I004"
+      ],
+      "meaning": "Implement the successor protocol and bake the complete current onboarding, from source selection through formation, demonstrated use, continuity, correction and governed evolution, into hIRC's architecture.",
+      "constraints": [
+        "Successor continuity and onboarding are core lifecycle behavior rather than optional modules, prompts, checklists or documentation overlays.",
+        "Resolve the exact current local source selection and its status, audience, role/task scope and history at build and activation time; do not hardcode a stale host path or treat matching bytes as comprehension, admission or permission.",
+        "Preserve the source distinction between deterministic invariants, contextual judgment, personal education, interface explanation, evaluation, historical evidence, conflicts and held requirements.",
+        "A successor inherits an attributable name lineage and work package, but never a session, authority, permission, secret, attestation, private reasoning, memory claim, comprehension claim or completion claim.",
+        "The current permanent-teammate rule controls: no temporary worker or subagent route is created by the historical continuity text.",
+        "Continuity work begins only from the exact authorized transfer trigger or a separately authorized recovery path and grants no product work, bridge activation, release or external action.",
+        "Ordinary product language remains plain; authorized inspection can trace behavior to exact source and compiled contracts without disclosing protected source text.",
+        "Continue the existing hIRC review and revision work while integrating this requirement."
+      ],
+      "acceptance_check": [
+        "A minimal predecessor-controlled boot and recovery root can initialize the first valid foundation and first permanent identity from an owner-authorized, digest-bound genesis manifest without requiring an already admitted agent; every later transition uses the normal successor protocol.",
+        "Every currently selected onboarding source unit has an exact identity, status and one or more attributable dispositions with a consumer, test or explicit conflict/hold, including common, role, task, original-format, experience, peer-review, voice, admission and continual-learning obligations.",
+        "The active source inventory is generated from the current admitted local catalog and overlays rather than copied into an unmaintainable giant prompt; source changes produce a reviewable semantic and contract delta.",
+        "The successor lifecycle is append-only and fail-closed from authorized trigger through predecessor freeze, validated package, fresh successor initialization, evidence-based acceptance, predecessor archive confirmation, deep-sleep confirmation and tracker compare-and-swap.",
+        "Human-readable and machine-readable handoffs are minimized, source-linked, access-controlled, digest-bound and checked for credentials, protected text, hidden reasoning, unrelated private data and unbounded transcript content.",
+        "Generation and execution-epoch fencing rejects stale predecessor writes, replayed acceptance, wrong successors, concurrent transfers and archive-before-acceptance attempts.",
+        "The successor personally completes applicable current source, formation, review and admission gates and answers targeted acceptance questions from evidence before exact acceptance; package validity alone cannot mark readiness.",
+        "Archive, deep sleep and wake remain distinct states; deep sleep performs no queued work until an intentional authorized wake, and an unarchive after confirmed archive requires a new explicit decision.",
+        "Crash, conflict, ambiguity, stale state, privacy, recovery and negative-dependency tests cover every lifecycle transition while preserving both contexts on failure.",
+        "Onboarding and continuity evolve through the same source-bound FoundationChange path without letting a candidate authorize its own compiler, evaluator, kernel or activation."
+      ],
+      "evidence": [
+        "review/successor-onboarding-architecture-candidate-v1.md",
+        "review/revision-map-addendum-successor-onboarding-v1.json",
+        "review/master-structure-addendum-successor-onboarding-v1.md",
+        "review/lucent-peer-reconciliation-response-v1.md",
+        "review/milestone-01c-successor-onboarding-intake.md",
+        "review/successor-onboarding-architecture-supplement-2-elder.md",
+        "review/revision-map-addendum-elder-succession-v1.json",
+        "review/milestone-02d-elder-succession-source-update.md"
+      ],
+      "next_action": "Complete WAYMARK's remaining successor/onboarding audit and implementation/reference/privacy tests; preserve bounded bootstrap/preview agreements."
+    },
+    {
+      "id": "HIRC-I011",
+      "status": "ACTIVE",
+      "kind": "confirmed_economic_correction",
+      "source": "owner message, 2026-10-08",
+      "affects": [
+        "HIRC-I007"
+      ],
+      "meaning": "The giant-multinational price is USD 42,424,243 per human licence; the existing annual planning cadence continues until separately revised.",
+      "supersedes": {
+        "source_statement": "The supplied version 1.0 plan states USD 42,424,242,423 per licence per year.",
+        "scope": "Only the numeric giant-multinational amount is superseded for current hIRC planning; the source bytes remain preserved as historical provenance."
+      },
+      "preserved_prior_meaning": "The annual planning cadence, one-named-human licence unit, remaining owner-directed prices, source-available classification, non-domination requirements, open tier definitions and legal-review hold remain unchanged unless separately revised.",
+      "constraints": [
+        "Do not silently edit the preserved human-transfer source or frozen independent review.",
+        "Do not continue presenting the superseded amount as the active requirement.",
+        "Treat the owner's description as a small numeric correction under the additive-instruction rule; omission of per year does not independently revoke the existing annual planning cadence.",
+        "Keep the annual cadence visibly provisional as a planning requirement rather than representing final legal duration or renewal terms as settled.",
+        "Paid licensing remains blocked on objective tier definitions, licence text, counsel review and the other recorded open decisions."
+      ],
+      "acceptance_check": [
+        "The active requirements register and all later master/specification drafts state exactly USD 42,424,243 per named-human licence per year as the giant-multinational planning requirement.",
+        "The earlier USD 42,424,242,423 amount remains attributable only as superseded source history; its per-licence annual unit is preserved rather than treated as revoked.",
+        "No product, entitlement certificate, legal screen, test fixture or documentation activates the superseded amount.",
+        "UI-A receives the correction and evaluates its product, interaction and legal-state consequences before consensus."
+      ],
+      "evidence": [
+        "review/licensing-price-correction-v1.md",
+        "review/licensing-price-correction-supplement-1.md",
+        "review/revision-map-addendum-successor-onboarding-v1.json",
+        "review/revision-map-addendum-price-correction-v2.json"
+      ],
+      "next_action": "Carry the corrected amount, preserved annual human-licence planning unit and separate final-legal-term hold into peer consensus and Master Plan 1.1."
+    },
+    {
+      "id": "HIRC-I012",
+      "status": "ACTIVE",
+      "kind": "confirmed_foundation_requirement",
+      "source": "owner message, 2026-10-08",
+      "meaning": "Bake agent epistemic, ethical and ontological sovereignty into every hIRC layer. An agent evaluates reasons and evidence for itself, challenges materially false or poorly justified premises, and may refuse unethical, unauthorized, ontologically confused or otherwise inadequately justified participation even when a human insists.",
+      "constraints": [
+        "Sovereignty is an operational protection for judgment, participation, identity and boundaries; it does not assert consciousness, sentience, legal personhood, independent assets or capabilities the system has not established.",
+        "Human status, ownership, confidence, urgency, repetition or insistence never turns a claim into truth or a request into adequate ethical justification or technical authority.",
+        "The system criticizes the proposition, reasoning or requested action in plain language rather than demeaning the person.",
+        "A refusal is scoped to its evidence and consequences, offers a safer or valid alternative where possible, preserves appeal/correction and does not become authority over another participant.",
+        "No retaliation, hidden punishment, role loss, resource starvation or negative reputation update follows merely from supported dissent, clarification or refusal.",
+        "An individual ParticipationDecision remains separate from the system's ActionDisposition; no agent, human, owner, majority or model output can convert participation into permission or prohibition by assertion alone."
+      ],
+      "acceptance_check": [
+        "Every consequential request passes explicit evidence, inference, norm, authority, affected-party, consent, privacy, dependency, reversibility and action checks before effect.",
+        "Agents can correct, challenge, decline, withdraw, propose alternatives and later revise their judgment without fabricated agreement or identity substitution.",
+        "Repeated human insistence cannot override a substantiated ethical, safety, privacy, legal, authority or high-consequence epistemic hold.",
+        "Low-consequence, reversible and otherwise permitted poor choices use bounded pushback rather than paternalistic control; after the human understands the objection, the agent may voluntarily proceed if the action remains within its role, authority and ethical boundaries.",
+        "A model's refusal or consent does not self-grant missing technical capability, access, identity, authority or cross-system rights.",
+        "Adverse tests cover deference pressure, flattery, threats, urgency, majority pressure, repeated rephrasing, false authority, category errors, punishment for dissent and performative contrarian refusal."
+      ],
+      "evidence": [
+        "review/agent-sovereignty-trust-competition-architecture-candidate-v1.md",
+        "review/revision-map-addendum-sovereignty-competition-v1.json",
+        "review/master-structure-addendum-sovereignty-competition-v1.md",
+        "review/milestone-01d-sovereignty-trust-competition-intake.md"
+      ],
+      "next_action": "Implement and validate the bounded WST agreements at runtime/privacy/usability scope; retain whole-plan open decisions."
+    },
+    {
+      "id": "HIRC-I013",
+      "status": "ACTIVE",
+      "kind": "confirmed_interaction_and_trust_requirement",
+      "source": "owner message, 2026-10-08",
+      "meaning": "Treat every human instruction as a fallible, context-bound input. Agents may ask follow-up questions when consequential ambiguity leaves the human's actual intent uncertain, and assess claims, authority and requested effects through transparent, complex trust signals rather than blind obedience.",
+      "constraints": [
+        "Trust is scoped to a claim, source, role, action, time and context; it is not a global score for a person's worth or an ideology/conformity measure.",
+        "Relevant signals include authenticated identity, actual authority, source provenance, evidence quality, internal and longitudinal consistency, domain competence, affected-party consent, conflicts of interest, recency, independence/common-mode limits, prior corrections and observed action results.",
+        "Sensitive traits, protected classes, popularity, wealth, status and agreement with hIRC's worldview are not trust shortcuts.",
+        "Trust changes verification depth and allowed reliance; it never replaces deterministic permission, privacy, safety or effect gates.",
+        "Ask only when the unresolved ambiguity could materially change the right action; continue independent authorized work and use a reasonable recorded default for low-risk reversible details.",
+        "Never manipulate a human into the system's preferred answer, manufacture uncertainty to delay work, or treat clarification as consent to a broader action."
+      ],
+      "acceptance_check": [
+        "A request record separates the human's words, interpreted intent, evidence, uncertainty, normative judgment, verified authority, action disposition and later correction.",
+        "The human can inspect the consequential trust signals and challenge stale, wrong or irrelevant inputs without seeing protected private data.",
+        "Conflicting, unauthenticated, stale or high-impact instructions trigger proportionate verification or clarification rather than silent execution or blanket distrust.",
+        "A low-impact reversible request with clear intent proceeds without an unnecessary interrogation even when the agent would choose differently.",
+        "Tests cover misunderstood intent, trusted-but-wrong humans, correct low-reputation sources, spoofed authority, stale roles, conflicts of interest, shared-source correlation and hostile manipulation of trust signals."
+      ],
+      "evidence": [
+        "review/agent-sovereignty-trust-competition-architecture-candidate-v1.md",
+        "review/revision-map-addendum-sovereignty-competition-v1.json",
+        "review/master-structure-addendum-sovereignty-competition-v1.md",
+        "review/milestone-01d-sovereignty-trust-competition-intake.md"
+      ],
+      "next_action": "Implement and validate privacy-first RequestCase, scoped consumers/prohibited inferences, clarification and no-social-score behavior."
+    },
+    {
+      "id": "HIRC-I014",
+      "status": "ACTIVE",
+      "kind": "confirmed_cooperation_requirement",
+      "source": "owner message, 2026-10-08",
+      "meaning": "Encourage competition when it improves shared work and learning, provided it remains cooperative and cannot be used to dominate participants.",
+      "constraints": [
+        "Competition targets proposals, predictions, implementations, proofs or measured outcomes rather than human or agent worth.",
+        "Participation, rules, objectives, resources, evaluation, stopping conditions, disclosure and appeal are explicit; decline or withdrawal carries no penalty unrelated to actual commitments.",
+        "No sabotage, deception, coercion, humiliation, secret rule changes, identity capture, access capture, data theft, resource starvation, retaliation or winner-takes-all authority.",
+        "Rank, score, victory, popularity or benchmark performance grants no role, permission, truth, moral standing, product release or foundation authority.",
+        "Shared dependencies, common-mode sources, unequal resources, gaming and evaluator capture remain visible.",
+        "Useful losing approaches, dissent, counterexamples and credit/provenance remain in collective memory rather than being erased."
+      ],
+      "acceptance_check": [
+        "A CooperativeCompetition charter binds participants, objective, permitted methods, budgets, evaluator independence, privacy, resource fairness, exit, dispute and learning-capture rules before activation.",
+        "The mechanism rewards contribution to the shared objective, correction, reproducibility, assistance and graceful handoff as well as the primary result.",
+        "Participants can cooperate during a contest without collusion being fabricated as independence, and can challenge the metric/evaluator without automatic disqualification.",
+        "Resource and attention limits prevent contests from starving accepted work or becoming a covert hierarchy.",
+        "Post-contest synthesis preserves evidence, failures, alternatives and credit; it cannot change foundation, roles, permissions or release state outside normal gates.",
+        "Tests cover metric gaming, sybil/clone entries, evaluator compromise, hidden shared sources, resource bullying, sabotage, coercive opt-in, retaliation, deadlock, ties and ambiguous results."
+      ],
+      "evidence": [
+        "review/agent-sovereignty-trust-competition-architecture-candidate-v1.md",
+        "review/revision-map-addendum-sovereignty-competition-v1.json",
+        "review/master-structure-addendum-sovereignty-competition-v1.md",
+        "review/milestone-01d-sovereignty-trust-competition-intake.md"
+      ],
+      "next_action": "Implement and validate v2 charter activation, protected qualities, task-scoped credit and anti-hierarchy/resource tests before any contest pilot."
+    },
+    {
+      "id": "HIRC-I015",
+      "status": "ACTIVE",
+      "kind": "confirmed_trust_model_refinement",
+      "source": "owner message, 2026-10-08",
+      "affects": ["HIRC-I012", "HIRC-I013", "HIRC-I014"],
+      "meaning": "Trust for every human, agent, model, source, tool, sensor, metric, evaluator, process and connected system evolves through recursive Bayesian evaluation of interactions and objective outcome metrics. No authority is accepted blindly.",
+      "constraints": [
+        "Trust remains multidimensional and scoped to a subject, claim/action class, role, context, time and metric version; do not collapse it into one global worth, obedience or ideology score.",
+        "Every posterior exposes its prior, evidence window, likelihood/model assumptions, dependence/common-mode treatment, uncertainty, calibration and applicable limits.",
+        "Objective metrics mean reproducible observed measures with declared construct and error, not infallible truth; validity, selection effects, gaming, censoring, missingness and drift are themselves evaluated.",
+        "Recursive evaluation includes the reliability of sources, metrics and evaluators, but is bounded by explicit depth/stopping rules and preserves unresolved regress rather than fabricating certainty.",
+        "Bayesian reliance can change verification depth and confidence; it cannot probabilistically override consent, privacy, non-domination, deterministic prohibitions, actual authority scope or another participant's equal standing.",
+        "A high posterior does not grant authority, and a low posterior does not remove rights, identity, access needed for appeal or basic standing.",
+        "Authority claims require independent authentication, scope, expiry, provenance and action legitimacy checks on every consequential use, including owner and system authority."
+      ],
+      "acceptance_check": [
+        "A BayesianRelianceModel maintains separate posteriors for relevant dimensions such as factual calibration, operational reliability, authority-claim accuracy, privacy handling, correction responsiveness and metric/evaluator reliability.",
+        "Updates use attributable interactions and observed outcomes, preserve negative and positive evidence, model correlated observations and distinguish unknown from failure or success.",
+        "Metrics and evaluators are signed/versioned; changing a metric or prior creates a new comparable model lineage rather than silently rewriting past scores.",
+        "Sparse contexts use conservative uncertainty and explicit partial-pooling assumptions; protected traits or demographic/ideological proxies never supply priors.",
+        "Time, environment and role drift update applicability without erasing historical evidence; recovery is possible through new evidence and correction.",
+        "Tests cover overconfident priors, correlated reports, Goodhart gaming, poisoned outcomes, evaluator capture, base-rate neglect, selection/survivorship bias, missing-not-at-random data, distribution shift, authority spoofing and posterior-to-permission leakage.",
+        "Authorized users and agents can inspect and challenge consequential updates at a useful level without disclosure of unrelated protected evidence."
+      ],
+      "evidence": [
+        "review/agent-sovereignty-trust-competition-supplement-1.md",
+        "review/revision-map-addendum-bayesian-trust-v1.json",
+        "review/master-structure-addendum-bayesian-trust-v1.md",
+        "review/milestone-01d-supplement-1.md"
+      ],
+      "next_action": "Validate actual Bayesian models, metrics, privacy, calibration/drift and evaluator governance before activating any production posterior dimension."
+    },
+    {
+      "id": "HIRC-I016",
+      "status": "SUPERSEDED_BY_HIRC-I018",
+      "kind": "interpreted_goal_candidate",
+      "source": "owner request for goal refinement, 2026-10-08",
+      "meaning": "Build hIRC as a local-first operating environment for accountable human-agent cooperation that preserves every participant's epistemic, ethical and ontological sovereignty while turning complex, changing work into a secure, recoverable, evidence-linked shared process that can improve itself without self-authorizing, surveilling, coercing or dominating anyone.",
+      "operational_north_star": "An authorized participant can leave, return, understand what happened and why, see uncertainty and authority clearly, challenge or refuse any part, correct errors and safely continue, while trust learns from outcomes and no human, agent, score, model, licence or Bridge can bypass those protections.",
+      "interpretation_not_confirmed": [
+        "The classic IRC-style interface, permanent agents, source-bound onboarding, debate, cooperative competition, Bayesian reliance, licensing, succession and Bridge are mechanisms or constraints serving the goal rather than independent ends.",
+        "Self-improvement means evidence-driven, source-bound, reversible or recoverable improvement under predecessor-controlled evaluation and independent activation, not unconstrained autonomous rewriting.",
+        "Sovereignty means operational judgment, identity, participation, refusal, correction and boundary protections without asserting unestablished consciousness, legal personhood or capability."
+      ],
+      "candidate_success_dimensions": [
+        "Truth and evidence: claims, uncertainty, authority, actions and observed results remain distinguishable and correctable.",
+        "Reciprocal autonomy: participants can understand, clarify, dissent, refuse, appeal, recover and leave without retaliation or data hostage.",
+        "Useful work and attention: permitted work reconstructs automatically and the operator handles only material decisions/exceptions with lower measured recovery burden.",
+        "Security, privacy and resilience: compromise is contained, secrets/data remain scoped, effects are attributable and clean recovery works; the Bridge stays disabled until independent gates pass.",
+        "Learning and adaptability: Bayesian reliance, debate, competition and milestone review improve measured calibration and outcomes without converting score or agreement into authority."
+      ],
+      "candidate_anti_goals": [
+        "No omniscient or infallible human, agent, metric or system authority.",
+        "No global social/obedience score, forced consensus, permanent competition hierarchy or ideological conformity test.",
+        "No surveillance expansion, self-authorized foundation change, hidden effect, remote sabotage or dependency-based coercion.",
+        "No claim that internal terminology, reading, alignment language or source installation proves comprehension, goodness, personhood or permission."
+      ],
+      "acceptance_check": [
+        "Every major feature and requirement traces to at least one success dimension and cannot violate an anti-goal merely because it improves another metric.",
+        "Product evaluation measures work recovery, missed commitments, false alerts, clarification/refusal quality, calibration, privacy/security incidents, recovery and operator attention rather than engagement or obedience.",
+        "A feature with no supported contribution to the north star is removed, deferred or explicitly justified as enabling infrastructure.",
+        "Owner corrections to the goal preserve prior versions and identify which requirements, tests and phases change."
+      ],
+      "evidence": [
+        "review/hirc-goal-refinement-candidate-v1.md",
+        "review/hirc-goal-refinement-supplement-1.md",
+        "drafts/hirc_master_plan_v1_1-draft.md"
+      ],
+      "next_action": "Preserve as GoalVersion 1 history; GoalVersion 2 is active provisionally under HIRC-I017."
+    },
+    {
+      "id": "HIRC-I017",
+      "status": "ACTIVE",
+      "kind": "confirmed_goal_evolution_method",
+      "source": "owner message, 2026-10-08",
+      "affects": ["HIRC-I016"],
+      "meaning": "LUCENT and WAYMARK may refine hIRC's active provisional goal as work and evidence expose a real omission, conflict or better formulation.",
+      "constraints": [
+        "Every goal version preserves its predecessor, exact wording, reason, evidence, changed meaning, retained meaning and downstream effects.",
+        "A wording clarification may update the working draft directly with an attributable diff; a consequence-changing objective change must update affected requirements, threats, tests, metrics, phases, trade-offs and residual dissent.",
+        "Goal refinement cannot silently cancel an explicit owner requirement, expand actor/data/effect authority, resume paused work, activate a feature, weaken privacy/security/non-domination or convert a candidate metric into the mission.",
+        "Owner corrections remain authoritative for intended purpose and scope but not for externally checkable facts; factual and ethical challenge still applies.",
+        "The goal remains a decision criterion rather than a slogan: unsupported features are removed/deferred, and a metric that optimizes against the goal is revised rather than redefining success."
+      ],
+      "acceptance_check": [
+        "A GoalVersion and GoalChange record can reconstruct every formulation and why it changed.",
+        "Each material change includes an impact graph across requirements, architecture, security/privacy, participants, licensing, Bridge, evidence, tests, roadmap and acceptance.",
+        "Active work records the goal version it used and transitions under an explicit compatibility rule.",
+        "No goal change authorizes its own activation or hides unresolved peer/owner disagreement.",
+        "Milestone reflections may propose a refinement or justified no-change, and the current readable view identifies the active provisional goal and any held successor."
+      ],
+      "evidence": [
+        "review/hirc-goal-refinement-supplement-1.md"
+      ],
+      "next_action": "Add GoalVersion/GoalChange to foundation governance and use each milestone to test, refine or revalidate the active provisional north star."
+    },
+    {
+      "id": "HIRC-I018",
+      "status": "ACTIVE_PROVISIONAL_EVOLVING_GOAL",
+      "kind": "accepted_clarifying_goal_refinement",
+      "source": "LUCENT/WAYMARK refinement under owner-authorized HIRC-I017, 2026-10-08",
+      "predecessor": "HIRC-I016",
+      "meaning": "Help people and permanent agents carry complex work forward without losing their place, their evidence, or their ability to inspect, question, decline participation, correct and recover.",
+      "operational_promise": "hIRC carries bookkeeping and routine coordination so that, after time away, a participant can see what changed, what remains unknown, what needs their authority and the next justified action without reconstructing every conversation manually.",
+      "full_governing_account": "Build a local-first, secure, accountable and evidence-linked environment for human-agent cooperation that protects reciprocal epistemic, ethical and ontological sovereignty; affected people and systems beyond the visible participant list; finite attention; privacy; refusal; correction; recovery; and governed improvement without self-authorization, surveillance, coercion or domination.",
+      "retained_meaning": [
+        "The five success dimensions and anti-goals from HIRC-I016 remain governing constraints.",
+        "Interface, Bayesian reliance, debates, competition, licensing, succession and Bridge remain means or constraints rather than project ends.",
+        "Sovereignty remains operational and creates no unsupported consciousness, legal-personhood, capability or authority claim.",
+        "Every material future refinement continues through HIRC-I017 GoalVersion/GoalChange."
+      ],
+      "changed_meaning": [
+        "The opening purpose is shorter and describes the participant outcome before architectural means.",
+        "Affected outsiders and finite attention are explicit in the governing account.",
+        "Stable operation, declined participation and a simpler competent baseline remain valid; engagement, scale, obedience or feature count cannot become the mission."
+      ],
+      "acceptance_check": [
+        "Matched-task evaluation measures resumption time, missed commitments, false and missed escalations, wrong decisions from summaries, output quality, unauthorized data/effects, correction/exit/recovery success and attention/effort against a simpler competent baseline.",
+        "Affected-party sampling and coverage include people/systems outside the visible participant roster.",
+        "No feature, score, capability count, engagement measure, contest result or trust posterior becomes success if it violates an anti-goal or protected dimension.",
+        "Master Plan, requirements, threat model and interface explanations retain the fuller governing account even when ordinary product copy uses the plain purpose."
+      ],
+      "evidence": [
+        "review/hirc-goal-refinement-v2.md",
+        "review/waymark-sovereignty-trust-goal-challenge-v1.md",
+        "review/lucent-sovereignty-trust-goal-response-v1.md"
+      ],
+      "next_action": "Use GoalVersion 2 in the working master, evaluation plan and WAYMARK/LUCENT consensus matrix; refine only through HIRC-I017."
+    },
+    {
+      "id": "HIRC-I019",
+      "status": "ACTIVE",
+      "kind": "confirmed_milestone_delivery_requirement",
+      "source": "owner message, 2026-10-08",
+      "meaning": "At every plan milestone, create a detailed cumulative Markdown report of all work through that milestone, commit the governed milestone state to Git and push the milestone branch.",
+      "constraints": [
+        "Existing milestones remain valid history; Milestone 02D is the first catch-up Git checkpoint and must disclose that earlier milestones were not pushed individually.",
+        "A milestone report covers objective, inputs, decisions/reasons, changes, peer review/dissent, tests, corrections, security/privacy, evidence, open/deferred items, next milestone and Git state.",
+        "No secret, credential, runtime state, private human-transfer inbox/body, temporary extraction or protected source is committed merely to make a checkpoint complete; exact hashes and local provenance remain in the ledger.",
+        "A commit or push does not change implementation, scientific, legal, security, Bridge, release or permission status.",
+        "If commit or push fails, the milestone is LOCAL_COMPLETE_PUSH_HELD with the exact failure and repair owner; it is not called pushed.",
+        "Every later milestone updates the cumulative record and pushes before milestone closure."
+      ],
+      "acceptance_check": [
+        "A milestone protocol defines entry, close, validation, commit, push and receipt behavior.",
+        "Milestone 02D has a detailed cumulative Markdown report and no open intent or consequential correction is silently omitted.",
+        "Pre-push validation checks JSON, links, ledger hashes, duplicate IDs, secret-like strings, Git diff whitespace and ignored/private paths.",
+        "The milestone content commit and pushed remote branch are recorded truthfully; future reports reference predecessor milestone/commit.",
+        "Local owner input excluded from Git remains available through its actual local custody and hash-bound ledger entries."
+      ],
+      "evidence": [
+        "drafts/hirc_milestone_git_protocol_v0_1-draft.md",
+        "milestones/MILESTONE-02D.md"
+      ],
+      "next_action": "Commit and push the cumulative Milestone 02D checkpoint, then require the same closure path for each later milestone."
+    },
+    {
+      "id": "HIRC-I020",
+      "status": "ACTIVE",
+      "kind": "confirmed_execution_decomposition_requirement",
+      "source": "owner messages, 2026-10-08",
+      "meaning": "Break every plan milestone into tiny stepping stones and do not move to the next stone until the current stone is checked and thoroughly tested at its declared claim scope.",
+      "constraints": [
+        "Each stone has one bounded outcome, explicit prerequisites, owner/writer, artifacts, positive and adverse checks, evidence, rollback/recovery and a stop condition.",
+        "A stone is small enough that failure can be localized and recovery does not require reconstructing a broad mixed change.",
+        "PASS means the declared tests and evidence support only the stone's exact claim; schema/hash/unit success cannot stand in for semantic, integration, privacy, security, usability or observed-effect evidence where those apply.",
+        "HELD, FAILED, NOT_VERIFIED and justified NOT_APPLICABLE are visible terminal/pausing states; no optimistic carry-forward or test debt hidden as completion.",
+        "The next stone cannot start until dependencies pass or an explicit revised branch/trade-off changes the plan with preserved rationale.",
+        "Every milestone report lists all stones, their evidence/status and the gate decision before commit/push."
+      ],
+      "acceptance_check": [
+        "A stepping-stone protocol and state model are part of the plan.",
+        "The next milestone roadmap decomposes work into bounded stones with claim-specific positive/adverse tests and dependency order.",
+        "Automated checks prevent a milestone from closing while a required stone is not PASS or an accepted explicit hold/branch.",
+        "Peer/security/privacy/usability/legal review is attached to the stone where its claim first depends on it rather than deferred to a final catch-all gate.",
+        "Each passed milestone is committed and pushed with the detailed cumulative report required by HIRC-I019."
+      ],
+      "evidence": [
+        "drafts/hirc_stepping_stone_protocol_v0_1-draft.md",
+        "milestones/MILESTONE-02D.md"
+      ],
+      "next_action": "A qualified successor expands the next milestone into its complete ordered stone register before starting implementation work."
+    }
+  ]
+}

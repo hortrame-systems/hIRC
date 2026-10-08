@@ -1,0 +1,46 @@
+{
+  "schema": "hirc.revision-map-addendum/1",
+  "id": "HIRC-REVISION-MAP-INTEGRATED-BOUNDARY-001",
+  "status": "BOUNDED_AGREEMENT_PENDING_WHOLE_PLAN_CONSENSUS",
+  "source_bindings": [
+    "HIRC-WAYMARK-INTEGRATED-BOUNDARY-001",
+    "HIRC-LUCENT-IB-RESPONSE-001"
+  ],
+  "new_user_requirements": [
+    {
+      "id": "U176",
+      "domain": "Bridge release",
+      "title": "Use noncircular staged Bridge pilot and broader-activation prerequisites",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P6",
+      "acceptance": "Exact applicable stages 1–5 plus explicit limited stage-6 entry authorization permit pilot start; missing stage 5 blocks it; pilot evidence cannot authorize stage 7 without a separate broader decision"
+    },
+    {
+      "id": "U177",
+      "domain": "Protected sources and secrets",
+      "title": "Exclude every secret from model context while permitting only exact admitted owner-private protected-source formation/review",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0-F",
+      "acceptance": "Credential/private-key/recovery-secret values are always rejected; current exact participant/purpose/reader/processor/output-retention tuple can access protected education; wrong/revoked tuple and ordinary/client/export/Bridge contexts cannot; successor gets fresh readership"
+    },
+    {
+      "id": "U178",
+      "domain": "Release governance",
+      "title": "Separate plan-edition, enabled-profile and full-target acceptance",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Plan coherence never claims software exists; each release declares enabled/disabled scope and passes mandatory core plus applicable domain tests; genuinely disabled later modules neither appear passed nor block unrelated useful work; full target remains long-term"
+    }
+  ],
+  "changes": [
+    {"id": "IBRM-001", "targets": ["threat-model:bridge-gates", "bridge-profile:activation", "release-controller"], "change": "Replace all-seven-before-pilot circularity with stages 1–5 plus explicit stage-6 entry, then stage-6 evidence and separate stage-7 decision.", "basis": ["IB-01", "U176"]},
+    {"id": "IBRM-002", "targets": ["bridge-tests", "requirements-tests"], "change": "Test stage-5 missing denial, valid stage-6 start without completion and denial of pilot self-authorization for stage 7.", "basis": ["IB-01"]},
+    {"id": "IBRM-003", "targets": ["threat-model:secrets", "formation-readers", "privacy-admission", "release-tests"], "change": "Separate universally prohibited secret values from narrowly admitted protected education and enforce exact participant/purpose/reader/processor/output-retention tuples.", "basis": ["IB-02", "U177"]},
+    {"id": "IBRM-004", "targets": ["successor-protocol", "protected-source-custody"], "change": "Handoffs reference protected originals; successors establish fresh readership and never inherit bodies or old grants.", "basis": ["IB-02"]},
+    {"id": "IBRM-005", "targets": ["master:acceptance", "release-profile", "requirements"], "change": "Define plan-edition, enabled-profile and full-target acceptance objects; bind every profile to enabled/disabled scope, core invariants, applicable evidence, residuals and recovery.", "basis": ["IB-03", "U178"]},
+    {"id": "IBRM-006", "targets": ["first-delivery-profile", "scheduler", "feature-flags", "release-tests"], "change": "Enable the useful local work/restart/restore loop while debates, competitions, production Bayesian models, extensions, commercial operations and Bridge are genuinely disabled until their own gates.", "basis": ["IB-03", "HIRC-MASTER-DRAFT-BUNDLE-001"]}
+  ],
+  "bounded_consensus": ["IB-01", "IB-02", "IB-03"],
+  "implementation_state": "WRITTEN_BOUNDARY_REPAIR_ONLY; release controllers, reader routing, disabled-state tests and whole-plan consensus remain open"
+}
+

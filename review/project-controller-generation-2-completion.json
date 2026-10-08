@@ -1,0 +1,31 @@
+{
+  "schema": "hirc.project-controller-completion/1",
+  "controller_id": "hirc-master-plan-security",
+  "generation": 2,
+  "controller_record": {
+    "path": "review/project-controller-generation-2.json",
+    "sha256": "ba80cf9eef65defdee127938824339aace320eb7e8118c01fe0bea684c26ea2d"
+  },
+  "handoff_id": "8352496b-b618-476c-a32b-263ecf814813",
+  "observed_at": "2026-10-08T12:54:08.983705-04:00",
+  "cooperative_handoff_state": "CUSTODY_TRANSFERRED",
+  "predecessor_reporting_correction": "A preliminary assertion expected literal TRANSFERRED and failed; read-only source/database inspection established actual enum CUSTODY_TRANSFERRED. The single transition succeeded and was not retried.",
+  "generation_before": 1,
+  "generation_after": 2,
+  "controller_ref": "hIRC/review/project-controller-generation-1.json",
+  "recipient_acceptance_ref": "runtime/agents/ui-20261007-b/checkpoints/b010f80e3a554396836db66d02b92f27.json#7f5e4ebd052d624514869e4f345d2e9aa9a252ca21521c8af233a56f7eea3d99",
+  "predecessor_transfer_ref": "runtime/agents/ui-20261007-a/checkpoints/0182c41109074b66affe69f5a61cf71f.json#0092ffb201cfbf260e8655b634356ae38e6b1af9d70057e2bdb6ad0d3e861e58",
+  "canonical_writer": {
+    "name": "LUCENT",
+    "technical_id": "UI-20261007-B",
+    "native_thread_id": "01a11885-1579-7792-bb8e-63ffc96e704b",
+    "changed_from_generation_1": false
+  },
+  "accepted_scope": "residual product-audit tracking, integration and safe holds",
+  "unread_rows_remain_open": true,
+  "inherited_peer_conclusions": false,
+  "inherited_education_or_permissions": false,
+  "immutable_peer_artifacts_preserved": true,
+  "state": "ACTIVE",
+  "limits": "Observed cooperative metadata and project-controller fence; not OS enforcement, whole consensus, implementation, release, Bridge or legal authority."
+}

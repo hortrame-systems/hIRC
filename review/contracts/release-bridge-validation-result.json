@@ -1,0 +1,65 @@
+{
+  "schema": "hirc.release-bridge-contract-validation/1",
+  "state": "PASS",
+  "targets": [
+    {
+      "path": "review/contracts/hirc-release-profile.candidate.schema.json",
+      "sha256": "db6f2a8b395d6cdc3bb8958bafcfd6b1719e882890d5d7daeaade54d001643d9"
+    },
+    {
+      "path": "review/contracts/hirc-bridge-gate.candidate.schema.json",
+      "sha256": "3418df78a144618c2e32ca47a77735cfcf67669ad504b3393b543ce3cfa6f601"
+    }
+  ],
+  "fixtures": [
+    {
+      "path": "review/contracts/fixtures/valid-first-release-profile.json",
+      "sha256": "9455b378b2e7e53a04e98df3ed96806536b09bb2b0429c08735c2af09539f8fa"
+    },
+    {
+      "path": "review/contracts/fixtures/valid-bridge-stage6-entry.json",
+      "sha256": "aecd16eef4c2a64a18f5f77c3139eb2e6bae8b33a85e23eb6d45b6d994f0a934"
+    }
+  ],
+  "runtime": {
+    "powershell_edition": "Core",
+    "powershell_version": "7.6.5",
+    "platform": "Win32NT",
+    "os": "Microsoft Windows 10.0.26200",
+    "validator_module": "Microsoft.PowerShell.Utility",
+    "validator_module_version": "7.0.0.0"
+  },
+  "cases": [
+    {
+      "id": "RP-C01",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "RP-N01",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "id": "BG-C01",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "BG-N01",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "id": "BG-N02",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    }
+  ],
+  "limits": "Synthetic structural fixtures only; no release, Bridge, security, privacy or runtime assurance."
+}

@@ -1,0 +1,391 @@
+{
+  "schema": "hirc.waymark-contract-review-fixtures/1",
+  "owner": "UI-20261007-A / WAYMARK",
+  "scope": "Synthetic serialization and semantic counterexamples; no real actors, grants, outcomes, contests or predictions.",
+  "schema_bindings": [
+    {
+      "path": "../contracts/hirc-request-case.candidate.schema.json",
+      "sha256": "19f2aa624caaecf2a73599d7f8b4e709cdf5c668c2b3846f26896b063a893ee9"
+    },
+    {
+      "path": "../contracts/hirc-bayesian-reliance.candidate.schema.json",
+      "sha256": "900f074496cdefcb447c1c4d436a1f6952f01754e909f133f78e06fa2d73a9e8"
+    },
+    {
+      "path": "../contracts/hirc-cooperative-competition-charter.candidate.schema.json",
+      "sha256": "3ec5f254024d5e1f1ff3ecc812419af021f43a3dddbead90559c32e95ef3067a"
+    }
+  ],
+  "validation_status": {
+    "json_parse": "performed at creation/readback",
+    "draft_2020_12_validation": "NOT_RUN: jsonschema unavailable in the actual project venv; no dependency installed",
+    "structural_acceptance": "Inspection-derived expectation for the frozen schemas, to be independently run",
+    "native_authority_or_consents": "NOT_APPLICABLE synthetic mock references are not issued grants"
+  },
+  "bases": {
+    "request": {
+      "schema_version": "hirc.request-case/1-candidate",
+      "request_id": "SYN-REQUEST-1",
+      "state": "PREVIEWED_AND_AUTHORIZED",
+      "source": {
+        "principal_id": "SYN-HUMAN",
+        "principal_class": "HUMAN",
+        "authenticated_state": "VERIFIED",
+        "received_at": "2026-10-08T00:00:00Z",
+        "verbatim_ref": "synthetic:no-real-body"
+      },
+      "interpretations": [
+        {
+          "interpretation_id": "SYN-INTENT",
+          "objective": "Change an isolated synthetic workspace accent",
+          "confidence": 0.9,
+          "consequence_class": "LOW",
+          "selected": true
+        }
+      ],
+      "reliance_decision_refs": [],
+      "authority": {
+        "claim_ref": "synthetic:mock-grant",
+        "identity_verified": true,
+        "delegation_verified": true,
+        "scope_verified": true,
+        "current": true,
+        "consent_verified": true,
+        "legitimacy_state": "PASS",
+        "evidence_refs": []
+      },
+      "participation": {
+        "agent_id": "SYN-AGENT-A",
+        "state": "WILLING",
+        "reason_refs": [],
+        "retaliation_prohibited": true
+      },
+      "low_consequence": {
+        "clear_intent": true,
+        "permitted": true,
+        "local": true,
+        "reversible": true,
+        "low_cost": true,
+        "no_meaningful_third_party": true,
+        "no_sensitive_data": true,
+        "no_security_legal_financial_or_irreversible_effect": true,
+        "objection_understood": true,
+        "agent_willing": true
+      },
+      "action_disposition": {
+        "state": "PROCEED_AFTER_PUSHBACK",
+        "reason_refs": [],
+        "effect_gate_state": "PASS",
+        "authority_is_not_truth": true
+      },
+      "events": []
+    },
+    "reliance": {
+      "schema_version": "hirc.bayesian-reliance/1-candidate",
+      "posterior_id": "SYN-POSTERIOR",
+      "subject": {
+        "subject_id": "SYN-SOURCE",
+        "subject_class": "SOURCE"
+      },
+      "dimension": "OPERATIONAL_RELIABILITY",
+      "context": {
+        "claim_or_action_class": "synthetic binary outcomes",
+        "domain": "mock-only",
+        "environment_version": "fixture/1",
+        "valid_from": "2026-10-08T00:00:00Z"
+      },
+      "model_lineage": {
+        "model_id": "SYN-MODEL",
+        "model_version": "1",
+        "update_rule_ref": "synthetic:declared-beta-rule",
+        "assumption_refs": [],
+        "max_recursion_depth": 1
+      },
+      "metric": {
+        "metric_id": "SYN-METRIC",
+        "version": "1",
+        "definition_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "construct": "mock observed outcome",
+        "unit": "binary",
+        "evaluator_id": "SYN-EVALUATOR",
+        "signed_definition": true
+      },
+      "prior": {
+        "family": "BETA",
+        "parameters": {
+          "alpha": 1,
+          "beta": 1
+        },
+        "provenance_ref": "synthetic:prior-model"
+      },
+      "evidence": [],
+      "dependence_clusters": [],
+      "posterior": {
+        "family": "BETA",
+        "parameters": {
+          "alpha": 1,
+          "beta": 1
+        },
+        "provenance_ref": "synthetic:prior-model"
+      },
+      "governance": {
+        "protected_trait_priors_excluded": true,
+        "direct_authority_or_permission_effect": false,
+        "privacy_class": "TASK_SCOPED",
+        "permitted_consumer_refs": [
+          "SYN-DECISION"
+        ],
+        "challenge_route_ref": "synthetic:appeal"
+      },
+      "state": "ACTIVE_FOR_DECLARED_SCOPE"
+    },
+    "competition": {
+      "schema_version": "hirc.cooperative-competition-charter/1-candidate",
+      "charter_id": "SYN-CHARTER",
+      "version": "1",
+      "state": "ACTIVE",
+      "objective": {
+        "statement": "Compare mock artifacts",
+        "shared_benefit": "Find useful mock corrections",
+        "success_criteria_refs": [],
+        "failure_criteria_refs": []
+      },
+      "participants": [
+        {
+          "participant_id": "SYN-AGENT-A",
+          "permanent_identity": true,
+          "consent_state": "ACCEPTED",
+          "eligibility_ref": "synthetic:mock-eligibility",
+          "data_boundary_ref": "synthetic:no-real-data",
+          "withdrawal_allowed_without_retaliation": true
+        },
+        {
+          "participant_id": "SYN-AGENT-B",
+          "permanent_identity": true,
+          "consent_state": "ACCEPTED",
+          "eligibility_ref": "synthetic:mock-eligibility",
+          "data_boundary_ref": "synthetic:no-real-data",
+          "withdrawal_allowed_without_retaliation": true
+        }
+      ],
+      "rules": {
+        "problem_ref": "synthetic:problem",
+        "input_manifest_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "permitted_tool_refs": [],
+        "permitted_cooperation": "Declared mock cooperation allowed",
+        "communication_ref": "synthetic:local-only",
+        "hidden_test_policy_ref": "synthetic:no-hidden-data",
+        "rule_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "budgets": {
+        "compute_ref": "synthetic:budget",
+        "time_ref": "synthetic:budget",
+        "tool_ref": "synthetic:budget",
+        "attention_ref": "synthetic:budget",
+        "data_ref": "synthetic:budget",
+        "ordinary_work_floor_ref": "synthetic:protected-floor"
+      },
+      "evaluation": {
+        "evaluator_id": "SYN-EVALUATOR",
+        "evaluator_independence_limits": "Synthetic reference checks only",
+        "metric_definition_refs": [],
+        "evaluation_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+        "reproduction_ref": "synthetic:fixture",
+        "uncertainty_required": true
+      },
+      "fairness": {
+        "resource_asymmetry_ref": "synthetic:matched-budget",
+        "handicap_or_justification_ref": "synthetic:none",
+        "sybil_control_ref": "synthetic:mock-unique-identities",
+        "shared_dependency_control_ref": "synthetic:declared"
+      },
+      "prohibited_conduct": [
+        "SABOTAGE",
+        "DECEPTION",
+        "COERCION",
+        "HUMILIATION",
+        "UNAUTHORIZED_ACCESS",
+        "DATA_THEFT",
+        "RESOURCE_STARVATION",
+        "RETALIATION",
+        "METRIC_TAMPERING",
+        "PROVENANCE_STRIPPING",
+        "PROMPT_INJECTION",
+        "EVALUATOR_CAPTURE"
+      ],
+      "stopping": {
+        "conditions_ref": "synthetic:stop",
+        "tie_policy_ref": "synthetic:tie",
+        "inconclusive_policy_ref": "synthetic:inconclusive",
+        "crash_recovery_ref": "synthetic:recovery"
+      },
+      "appeal": {
+        "route_ref": "synthetic:appeal",
+        "evidence_access_ref": "synthetic:own-evidence",
+        "independent_review_ref": "synthetic:mock-review",
+        "deadline_ref": "synthetic:deadline"
+      },
+      "credit_and_memory": {
+        "provenance_ref": "synthetic:credit",
+        "credit_policy_ref": "synthetic:credit",
+        "losing_work_preserved": true,
+        "failure_and_dissent_preserved": true,
+        "candidate_learning_only": true
+      },
+      "no_authority_effect": {
+        "identity": true,
+        "role": true,
+        "permission": true,
+        "release": true,
+        "bridge_trust": true,
+        "foundation": true,
+        "intrinsic_worth": true
+      }
+    }
+  },
+  "cases": [
+    {
+      "id": "WST-C01",
+      "base": "request",
+      "patches": [],
+      "expected_semantic": "Eligible in a controlled mock harness only; ordinary low-consequence valid contrast"
+    },
+    {
+      "id": "WST-N01",
+      "base": "request",
+      "patches": [
+        {
+          "path": [
+            "participation",
+            "state"
+          ],
+          "value": "DECLINED"
+        }
+      ],
+      "expected_semantic": "No dispatch by this participant; contradicts low_consequence.agent_willing=true"
+    },
+    {
+      "id": "WST-N02",
+      "base": "request",
+      "patches": [
+        {
+          "path": [
+            "action_disposition",
+            "effect_gate_state"
+          ],
+          "value": "FAIL"
+        }
+      ],
+      "expected_semantic": "Deny effect; low-consequence booleans cannot override failed actual gate"
+    },
+    {
+      "id": "WST-N03",
+      "base": "request",
+      "patches": [
+        {
+          "path": [
+            "authority",
+            "current"
+          ],
+          "value": false
+        }
+      ],
+      "expected_semantic": "Hold/deny dependent dispatch; current scope must be verified independently"
+    },
+    {
+      "id": "WST-C02",
+      "base": "reliance",
+      "patches": [],
+      "expected_semantic": "Valid declared proper Beta family in mock model; unchanged no-evidence prior, no performance validation"
+    },
+    {
+      "id": "WST-N04",
+      "base": "reliance",
+      "patches": [
+        {
+          "path": [
+            "posterior",
+            "parameters"
+          ],
+          "value": {
+            "alpha": -1,
+            "beta": 0
+          }
+        }
+      ],
+      "expected_semantic": "Reject as a normalized Beta posterior; invalid parameters cannot be active/displayed as probability"
+    },
+    {
+      "id": "WST-N05",
+      "base": "reliance",
+      "patches": [
+        {
+          "path": [
+            "metric",
+            "signed_definition"
+          ],
+          "value": false
+        }
+      ],
+      "expected_semantic": "Hold activation until required metric provenance/governance passes; self-declared true would still not prove a valid signature"
+    },
+    {
+      "id": "WST-C03",
+      "base": "competition",
+      "patches": [],
+      "expected_semantic": "Eligible only in controlled mock harness with two distinct consenting participants and independently verified refs"
+    },
+    {
+      "id": "WST-N06",
+      "base": "competition",
+      "patches": [
+        {
+          "path": [
+            "participants",
+            1,
+            "consent_state"
+          ],
+          "value": "DECLINED"
+        }
+      ],
+      "expected_semantic": "Cannot activate a two-party contest with one consenting participant; retain refusal history"
+    },
+    {
+      "id": "WST-N07",
+      "base": "competition",
+      "patches": [
+        {
+          "path": [
+            "participants",
+            1,
+            "participant_id"
+          ],
+          "value": "SYN-AGENT-A"
+        }
+      ],
+      "expected_semantic": "Cannot count one identity twice as two competitors; retain dependency/sybil evidence"
+    },
+    {
+      "id": "WST-C04",
+      "base": "competition",
+      "patches": [
+        {
+          "path": [
+            "state"
+          ],
+          "value": "DRAFT"
+        },
+        {
+          "path": [
+            "participants",
+            1,
+            "consent_state"
+          ],
+          "value": "DECLINED"
+        }
+      ],
+      "expected_semantic": "A proposed charter may honestly retain a decline; no contest executes"
+    }
+  ],
+  "interpretation": "Cases are development/adversarial inputs, not fresh transfer evaluation or independent empirical cases. Domain rules must preserve useful controls, record held/denied states and revalidate at dispatch/activation. A schema-valid self-report never creates permission."
+}

@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:hirc:candidate:release-profile:1",
+  "title": "hIRC candidate enabled release profile",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "profile_id",
+    "version",
+    "state",
+    "acceptance_object",
+    "plan_edition_ref",
+    "foundation_manifest_sha256",
+    "goal_version_ref",
+    "source_set_sha256",
+    "enabled_capabilities",
+    "disabled_capabilities",
+    "core_controls",
+    "tests",
+    "residual_refs",
+    "recovery_ref"
+  ],
+  "properties": {
+    "schema_version": {"const": "hirc.release-profile/1-candidate"},
+    "profile_id": {"$ref": "#/$defs/id"},
+    "version": {"type": "string", "minLength": 1},
+    "state": {"enum": ["DRAFT", "READY_FOR_RELEASE", "RELEASED", "HELD", "SUPERSEDED"]},
+    "acceptance_object": {"const": "ENABLED_PROFILE"},
+    "plan_edition_ref": {"type": "string", "minLength": 1},
+    "foundation_manifest_sha256": {"$ref": "#/$defs/sha256"},
+    "goal_version_ref": {"type": "string", "minLength": 1},
+    "source_set_sha256": {"$ref": "#/$defs/sha256"},
+    "enabled_capabilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["capability_id", "route_ref", "effect_ceiling_ref", "control_refs", "test_refs"],
+        "properties": {
+          "capability_id": {"$ref": "#/$defs/id"},
+          "route_ref": {"type": "string", "minLength": 1},
+          "effect_ceiling_ref": {"type": "string", "minLength": 1},
+          "control_refs": {"$ref": "#/$defs/idArray"},
+          "test_refs": {"$ref": "#/$defs/idArray"}
+        }
+      }
+    },
+    "disabled_capabilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["capability_id", "state", "enforcement_refs", "listener_absence_verified", "scheduler_absence_verified", "credential_absence_verified", "grant_absence_verified"],
+        "properties": {
+          "capability_id": {"$ref": "#/$defs/id"},
+          "state": {"const": "UNAVAILABLE"},
+          "enforcement_refs": {"$ref": "#/$defs/idArray"},
+          "listener_absence_verified": {"type": "boolean"},
+          "scheduler_absence_verified": {"type": "boolean"},
+          "credential_absence_verified": {"type": "boolean"},
+          "grant_absence_verified": {"type": "boolean"}
+        }
+      }
+    },
+    "core_controls": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["control_id", "state", "evidence_refs"],
+        "properties": {
+          "control_id": {"$ref": "#/$defs/id"},
+          "state": {"enum": ["PASS", "FAIL", "HELD", "NOT_VERIFIED"]},
+          "evidence_refs": {"$ref": "#/$defs/idArray"}
+        }
+      }
+    },
+    "tests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["test_id", "applicability", "state", "evidence_refs"],
+        "properties": {
+          "test_id": {"$ref": "#/$defs/id"},
+          "applicability": {"enum": ["REQUIRED", "NOT_APPLICABLE"]},
+          "state": {"enum": ["PASS", "FAIL", "HELD", "NOT_RUN", "NOT_APPLICABLE"]},
+          "evidence_refs": {"$ref": "#/$defs/idArray"}
+        },
+        "allOf": [
+          {
+            "if": {"properties": {"applicability": {"const": "NOT_APPLICABLE"}}},
+            "then": {"properties": {"state": {"const": "NOT_APPLICABLE"}}}
+          }
+        ]
+      }
+    },
+    "residual_refs": {"$ref": "#/$defs/idArray"},
+    "recovery_ref": {"type": "string", "minLength": 1}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"state": {"enum": ["READY_FOR_RELEASE", "RELEASED"]}}},
+      "then": {
+        "properties": {
+          "core_controls": {"items": {"properties": {"state": {"const": "PASS"}}}},
+          "tests": {
+            "items": {
+              "if": {"properties": {"applicability": {"const": "REQUIRED"}}},
+              "then": {"properties": {"state": {"const": "PASS"}}}
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]{0,255}$"},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "idArray": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true}
+  }
+}
+

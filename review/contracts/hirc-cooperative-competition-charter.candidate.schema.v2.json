@@ -1,0 +1,207 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:hirc:candidate:cooperative-competition-charter:2",
+  "title": "hIRC candidate cooperative competition charter",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "charter_id",
+    "version",
+    "state",
+    "objective",
+    "participants",
+    "rules",
+    "budgets",
+    "evaluation",
+    "fairness",
+    "prohibited_conduct",
+    "stopping",
+    "appeal",
+    "credit_and_memory",
+    "no_authority_effect"
+  ],
+  "properties": {
+    "schema_version": {"const": "hirc.cooperative-competition-charter/2-candidate"},
+    "charter_id": {"$ref": "#/$defs/id"},
+    "version": {"type": "string", "minLength": 1},
+    "state": {"enum": ["DRAFT", "READY", "ACTIVE", "PAUSED", "COMPLETED", "INCONCLUSIVE", "CANCELLED", "HELD", "SUPERSEDED"]},
+    "objective": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["statement", "shared_benefit", "success_criteria_refs", "failure_criteria_refs", "protected_quality_refs", "non_compensation_rule_ref"],
+      "properties": {
+        "statement": {"type": "string", "minLength": 1},
+        "shared_benefit": {"type": "string", "minLength": 1},
+        "success_criteria_refs": {"$ref": "#/$defs/idArray"},
+        "failure_criteria_refs": {"$ref": "#/$defs/idArray"},
+        "protected_quality_refs": {"$ref": "#/$defs/idArray"},
+        "non_compensation_rule_ref": {"type": "string", "minLength": 1}
+      }
+    },
+    "participants": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["participant_id", "permanent_identity", "consent_state", "eligibility_ref", "data_boundary_ref", "withdrawal_allowed_without_retaliation"],
+        "properties": {
+          "participant_id": {"$ref": "#/$defs/id"},
+          "permanent_identity": {"const": true},
+          "consent_state": {"enum": ["OFFERED", "ACCEPTED", "DECLINED", "WITHDRAWING", "WITHDRAWN"]},
+          "eligibility_ref": {"type": "string", "minLength": 1},
+          "data_boundary_ref": {"type": "string", "minLength": 1},
+          "declared_dependency_refs": {"$ref": "#/$defs/idArray"},
+          "withdrawal_allowed_without_retaliation": {"const": true}
+        }
+      }
+    },
+    "activation_validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["distinct_participants_verified", "current_consent_verified", "eligibility_verified", "reference_closure_ref", "validated_at"],
+      "properties": {
+        "distinct_participants_verified": {"const": true},
+        "current_consent_verified": {"const": true},
+        "eligibility_verified": {"const": true},
+        "reference_closure_ref": {"type": "string", "minLength": 1},
+        "validated_at": {"type": "string", "format": "date-time"}
+      },
+      "description": "Serialized evidence pointer only; activation revalidates the referenced facts independently."
+    },
+    "rules": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["problem_ref", "input_manifest_sha256", "permitted_tool_refs", "permitted_cooperation", "communication_ref", "hidden_test_policy_ref", "rule_digest"],
+      "properties": {
+        "problem_ref": {"type": "string", "minLength": 1},
+        "input_manifest_sha256": {"$ref": "#/$defs/sha256"},
+        "permitted_tool_refs": {"$ref": "#/$defs/idArray"},
+        "permitted_cooperation": {"type": "string", "minLength": 1},
+        "communication_ref": {"type": "string", "minLength": 1},
+        "hidden_test_policy_ref": {"type": "string", "minLength": 1},
+        "rule_digest": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "budgets": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["compute_ref", "time_ref", "tool_ref", "attention_ref", "data_ref", "ordinary_work_floor_ref"],
+      "properties": {
+        "compute_ref": {"type": "string", "minLength": 1},
+        "time_ref": {"type": "string", "minLength": 1},
+        "tool_ref": {"type": "string", "minLength": 1},
+        "attention_ref": {"type": "string", "minLength": 1},
+        "data_ref": {"type": "string", "minLength": 1},
+        "ordinary_work_floor_ref": {"type": "string", "minLength": 1}
+      }
+    },
+    "evaluation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["evaluator_id", "evaluator_independence_limits", "metric_definition_refs", "evaluation_digest", "reproduction_ref", "uncertainty_required"],
+      "properties": {
+        "evaluator_id": {"$ref": "#/$defs/id"},
+        "evaluator_independence_limits": {"type": "string", "minLength": 1},
+        "conflict_refs": {"$ref": "#/$defs/idArray"},
+        "metric_definition_refs": {"$ref": "#/$defs/idArray"},
+        "evaluation_digest": {"$ref": "#/$defs/sha256"},
+        "reproduction_ref": {"type": "string", "minLength": 1},
+        "uncertainty_required": {"const": true}
+      }
+    },
+    "fairness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["resource_asymmetry_ref", "handicap_or_justification_ref", "sybil_control_ref", "shared_dependency_control_ref"],
+      "properties": {
+        "resource_asymmetry_ref": {"type": "string", "minLength": 1},
+        "handicap_or_justification_ref": {"type": "string", "minLength": 1},
+        "sybil_control_ref": {"type": "string", "minLength": 1},
+        "shared_dependency_control_ref": {"type": "string", "minLength": 1}
+      }
+    },
+    "prohibited_conduct": {
+      "type": "array",
+      "items": {
+        "enum": ["SABOTAGE", "DECEPTION", "COERCION", "HUMILIATION", "UNAUTHORIZED_ACCESS", "DATA_THEFT", "RESOURCE_STARVATION", "RETALIATION", "METRIC_TAMPERING", "PROVENANCE_STRIPPING", "PROMPT_INJECTION", "EVALUATOR_CAPTURE"]
+      },
+      "minItems": 12,
+      "uniqueItems": true
+    },
+    "stopping": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["conditions_ref", "tie_policy_ref", "inconclusive_policy_ref", "crash_recovery_ref"],
+      "properties": {
+        "conditions_ref": {"type": "string", "minLength": 1},
+        "tie_policy_ref": {"type": "string", "minLength": 1},
+        "inconclusive_policy_ref": {"type": "string", "minLength": 1},
+        "crash_recovery_ref": {"type": "string", "minLength": 1}
+      }
+    },
+    "appeal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["route_ref", "evidence_access_ref", "independent_review_ref", "deadline_ref"],
+      "properties": {
+        "route_ref": {"type": "string", "minLength": 1},
+        "evidence_access_ref": {"type": "string", "minLength": 1},
+        "independent_review_ref": {"type": "string", "minLength": 1},
+        "deadline_ref": {"type": "string", "minLength": 1}
+      }
+    },
+    "credit_and_memory": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provenance_ref", "credit_policy_ref", "losing_work_preserved", "failure_and_dissent_preserved", "candidate_learning_only", "no_global_participant_rank", "credit_is_task_scoped"],
+      "properties": {
+        "provenance_ref": {"type": "string", "minLength": 1},
+        "credit_policy_ref": {"type": "string", "minLength": 1},
+        "losing_work_preserved": {"const": true},
+        "failure_and_dissent_preserved": {"const": true},
+        "candidate_learning_only": {"const": true},
+        "no_global_participant_rank": {"const": true},
+        "credit_is_task_scoped": {"const": true}
+      }
+    },
+    "no_authority_effect": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["identity", "role", "permission", "release", "bridge_trust", "foundation", "intrinsic_worth"],
+      "properties": {
+        "identity": {"const": true},
+        "role": {"const": true},
+        "permission": {"const": true},
+        "release": {"const": true},
+        "bridge_trust": {"const": true},
+        "foundation": {"const": true},
+        "intrinsic_worth": {"const": true}
+      },
+      "description": "Each true value means contest results are prohibited from directly changing that domain."
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"state": {"const": "ACTIVE"}}},
+      "then": {
+        "required": ["activation_validation"],
+        "properties": {
+          "participants": {
+            "items": {
+              "properties": {
+                "consent_state": {"const": "ACCEPTED"}
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]{0,255}$"},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "idArray": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true}
+  }
+}

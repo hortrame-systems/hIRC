@@ -1,0 +1,673 @@
+{
+  "schema": "hirc.predecessor-crosswalk/1-draft",
+  "id": "HIRC-PREDECESSOR-CROSSWALK-DRAFT-001",
+  "status": "DRAFT_REQUIRING_HUMAN_SEMANTIC_AUDIT",
+  "source": {
+    "master_path": "human_transfer/hirc_master_plan_v1_0.zip::hirc_master_plan_v1_0.md",
+    "master_sha256": "9de73d97935ac3d591773e6315faf5c0fb837889ac8e9cdabf9ee19650165469",
+    "requirements_path": "human_transfer/hirc_master_plan_v1_0.zip::hirc_requirements_v1_0.json",
+    "requirements_sha256": "5078b72dc32412ff1fdb058ed21e0226ae6d44ec78c7115f4165c88677ce44a5"
+  },
+  "draft": {
+    "master_path": "drafts/hirc_master_plan_v1_1-draft.md",
+    "master_sha256": "e1145abcd43c92c876f7278c4eca51ac2c061184f45f638c162871d3a2edc37a",
+    "requirements_path": "drafts/hirc_requirements_v1_1-draft.json",
+    "requirements_sha256": "717bcbe6cdc165bd7912eb47d09a7015a33ddfef9a1fbeb596343a372079f6d6"
+  },
+  "section_rows": [
+    {
+      "source_section": "00",
+      "source_title": "Document contract and reading map",
+      "draft_sections": [
+        {
+          "section": "00",
+          "title": "Document contract"
+        }
+      ],
+      "status": "PRESERVED_AND_REVISED",
+      "note": "Claim grades, source bindings and correction discipline are explicit.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "01",
+      "source_title": "Product definition",
+      "draft_sections": [
+        {
+          "section": "01",
+          "title": "Product definition"
+        }
+      ],
+      "status": "PRESERVED_AND_REVISED",
+      "note": "Local-first operational-memory purpose and acceptance objective retained.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "02",
+      "source_title": "Non-negotiable invariants",
+      "draft_sections": [
+        {
+          "section": "02",
+          "title": "Non-negotiable invariants"
+        }
+      ],
+      "status": "PRESERVED_AND_EXTENDED",
+      "note": "Original invariants retained through requirements; foundation/security/sovereignty invariants added.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "03",
+      "source_title": "What the current application actually has",
+      "draft_sections": [
+        {
+          "section": "00",
+          "title": "Document contract"
+        }
+      ],
+      "status": "DETAIL_RESTORED_PENDING_PEER_AUDIT",
+      "note": "Draft 00.1 restores corrected prototype/transfer evidence and the source-reported functionality/boundary table.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "04",
+      "source_title": "Requirement traceability and change discipline",
+      "draft_sections": [
+        {
+          "section": "00",
+          "title": "Document contract"
+        }
+      ],
+      "status": "PRESERVED_AND_EXTENDED",
+      "note": "Canonical intent/requirements and supersession/evidence discipline retained.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "05",
+      "source_title": "Privacy before ingestion",
+      "draft_sections": [
+        {
+          "section": "07",
+          "title": "Privacy and data lifecycle"
+        }
+      ],
+      "status": "PRESERVED_AND_EXTENDED",
+      "note": "Pre-ingress and egress privacy plus field lifecycle and derived-data inheritance.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "06",
+      "source_title": "Architecture: a small trusted core with replaceable components",
+      "draft_sections": [
+        {
+          "section": "08",
+          "title": "Small trusted core and effect path"
+        }
+      ],
+      "status": "PRESERVED_AND_EXTENDED",
+      "note": "Small trusted core now includes foundation/security/effect path.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "07",
+      "source_title": "Domain model and recursive composition",
+      "draft_sections": [
+        {
+          "section": "10",
+          "title": "Work, evidence and automatic reconstruction"
+        },
+        {
+          "section": "12",
+          "title": "Permanent agents, teams, scheduling and resources"
+        }
+      ],
+      "status": "PRESERVED_AND_REVISED",
+      "note": "Recursive domain/work/organization concepts split across work and permanent-team sections.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "08",
+      "source_title": "Identity, roles, permanence, and refusal",
+      "draft_sections": [
+        {
+          "section": "05",
+          "title": "Sovereignty, fallibility and principled refusal"
+        },
+        {
+          "section": "09",
+          "title": "Identity, authentication, secrets and recovery roots"
+        },
+        {
+          "section": "12",
+          "title": "Permanent agents, teams, scheduling and resources"
+        }
+      ],
+      "status": "PRESERVED_AND_EXTENDED",
+      "note": "Identity/permanence/refusal now include sovereignty, secrets and permanent-only policy.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "09",
+      "source_title": "Operator attention and context continuity",
+      "draft_sections": [
+        {
+          "section": "10",
+          "title": "Work, evidence and automatic reconstruction"
+        },
+        {
+          "section": "11",
+          "title": "Attention, navigation and trusted experience"
+        }
+      ],
+      "status": "PRESERVED_AND_EXTENDED",
+      "note": "Context recovery and operator attention retained with trusted/security visibility.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "10",
+      "source_title": "Visual identity, windows, and accessibility",
+      "draft_sections": [
+        {
+          "section": "11",
+          "title": "Attention, navigation and trusted experience"
+        }
+      ],
+      "status": "PRESERVED_AND_REVISED",
+      "note": "Classic visual/accessibility direction retained; asset-level detail remains in predecessor requirements.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "11",
+      "source_title": "Conversations and communication routing",
+      "draft_sections": [
+        {
+          "section": "06",
+          "title": "Requests, clarification, trust and authority"
+        },
+        {
+          "section": "10",
+          "title": "Work, evidence and automatic reconstruction"
+        },
+        {
+          "section": "11",
+          "title": "Attention, navigation and trusted experience"
+        }
+      ],
+      "status": "PRESERVED_AND_EXTENDED",
+      "note": "Routing and message truth states are represented across request, work and UI contracts.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "12",
+      "source_title": "Shared-agent scheduling and reservations",
+      "draft_sections": [
+        {
+          "section": "12",
+          "title": "Permanent agents, teams, scheduling and resources"
+        }
+      ],
+      "status": "PRESERVED_AND_EXTENDED",
+      "note": "Reservations/queues gain execution epochs, budgets and debate/competition eligibility.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "13",
+      "source_title": "Recursive team planning and permanent spawning",
+      "draft_sections": [
+        {
+          "section": "12",
+          "title": "Permanent agents, teams, scheduling and resources"
+        }
+      ],
+      "status": "PRESERVED_WITH_SUPERSESSION",
+      "note": "Permanent recursive organization retained; temporary-agent unban is superseded.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "14",
+      "source_title": "Automatic operational memory and project management",
+      "draft_sections": [
+        {
+          "section": "10",
+          "title": "Work, evidence and automatic reconstruction"
+        }
+      ],
+      "status": "PRESERVED_AND_EXTENDED",
+      "note": "Operational memory, dependencies, evidence and correction are core.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "15",
+      "source_title": "Provider-independent model configuration",
+      "draft_sections": [
+        {
+          "section": "15",
+          "title": "Provider-independent model and tool adapters"
+        }
+      ],
+      "status": "PRESERVED_AND_EXTENDED",
+      "note": "Provider configuration becomes exact route/version/privacy/probe contract.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "16",
+      "source_title": "Durable memory and model migration",
+      "draft_sections": [
+        {
+          "section": "16",
+          "title": "Durable memory and secure migration"
+        }
+      ],
+      "status": "PRESERVED_AND_REVISED",
+      "note": "Whole authorized migration and minimum active target context are separated.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "17",
+      "source_title": "Custom preprompts and effective instruction stacks",
+      "draft_sections": [
+        {
+          "section": "03",
+          "title": "Foundation source graph and compilation"
+        },
+        {
+          "section": "04",
+          "title": "Genesis, formation and admission"
+        },
+        {
+          "section": "23",
+          "title": "Safe recursive improvement"
+        }
+      ],
+      "status": "PRESERVED_AND_REVISED",
+      "note": "Prompts are compiled model inputs under foundation/formation/change rather than authority.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "18",
+      "source_title": "Onboarding and specialist-update rollouts",
+      "draft_sections": [
+        {
+          "section": "03",
+          "title": "Foundation source graph and compilation"
+        },
+        {
+          "section": "04",
+          "title": "Genesis, formation and admission"
+        },
+        {
+          "section": "23",
+          "title": "Safe recursive improvement"
+        }
+      ],
+      "status": "PRESERVED_AND_EXTENDED",
+      "note": "Onboarding becomes source graph, personal formation and governed rollout.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "19",
+      "source_title": "hScript, commands, plugins, and self-extension",
+      "draft_sections": [
+        {
+          "section": "19",
+          "title": "hScript, commands and extensions"
+        }
+      ],
+      "status": "PRESERVED_AND_EXTENDED",
+      "note": "hScript/extensions gain no-ambient-authority sandbox/supply-chain controls.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "20",
+      "source_title": "Federated systems, bridges, bridles, and bridgekeepers",
+      "draft_sections": [
+        {
+          "section": "20",
+          "title": "Bridge architecture and protocol"
+        }
+      ],
+      "status": "PRESERVED_AND_REVISED",
+      "note": "Federation becomes four-part Bridge with staged disabled gates.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "21",
+      "source_title": "Universal timestamps, causal order, and temporal reconstruction",
+      "draft_sections": [
+        {
+          "section": "21",
+          "title": "Time, journal, archives and recovery"
+        }
+      ],
+      "status": "PRESERVED_AND_EXTENDED",
+      "note": "Time/causality gain trusted-time, nonce, epoch and replay constraints.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "22",
+      "source_title": "Data preservation, search, archives, and recovery",
+      "draft_sections": [
+        {
+          "section": "21",
+          "title": "Time, journal, archives and recovery"
+        }
+      ],
+      "status": "PRESERVED_AND_EXTENDED",
+      "note": "Archives/restore gain audit anchors, key separation, disposition and clean-room recovery.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "23",
+      "source_title": "Security architecture and threat boundaries",
+      "draft_sections": [
+        {
+          "section": "24",
+          "title": "Threat model and security ownership"
+        }
+      ],
+      "status": "PRESERVED_AND_EXTENDED",
+      "note": "Security becomes whole-system threat model, not only a section outline.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "24",
+      "source_title": "The attention governor: preventing cognitive overload as complexity grows",
+      "draft_sections": [
+        {
+          "section": "11",
+          "title": "Attention, navigation and trusted experience"
+        }
+      ],
+      "status": "PRESERVED_AND_EXTENDED",
+      "note": "Attention governor now protects security classes and avoids coercive suppression.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "25",
+      "source_title": "Visual system, window mechanics, and adaptation",
+      "draft_sections": [
+        {
+          "section": "11",
+          "title": "Attention, navigation and trusted experience"
+        }
+      ],
+      "status": "PRESERVED_AND_REVISED",
+      "note": "Visual/window adaptation retained in compact integrated section and predecessor requirements.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "26",
+      "source_title": "Source connectors, automation, and coverage contracts",
+      "draft_sections": [
+        {
+          "section": "07",
+          "title": "Privacy and data lifecycle"
+        },
+        {
+          "section": "10",
+          "title": "Work, evidence and automatic reconstruction"
+        },
+        {
+          "section": "15",
+          "title": "Provider-independent model and tool adapters"
+        }
+      ],
+      "status": "PRESERVED_AND_EXTENDED",
+      "note": "Source connectors, reconstruction and dependency triggers split across data/work/provider contracts.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "27",
+      "source_title": "Capability discovery and computation economics",
+      "draft_sections": [
+        {
+          "section": "12",
+          "title": "Permanent agents, teams, scheduling and resources"
+        },
+        {
+          "section": "15",
+          "title": "Provider-independent model and tool adapters"
+        }
+      ],
+      "status": "PRESERVED_AND_EXTENDED",
+      "note": "Capability discovery and economics covered by provider probes and resource envelopes.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "28",
+      "source_title": "Safe recursive improvement and self-modification",
+      "draft_sections": [
+        {
+          "section": "23",
+          "title": "Safe recursive improvement"
+        }
+      ],
+      "status": "PRESERVED_AND_EXTENDED",
+      "note": "Recursive improvement becomes source-bound FoundationChange with predecessor evaluation.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "29",
+      "source_title": "Scenario traces: concrete behavior to design against",
+      "draft_sections": [
+        {
+          "section": "25",
+          "title": "Executable acceptance and adversarial verification"
+        }
+      ],
+      "status": "DETAIL_RESTORED_PENDING_PEER_AUDIT",
+      "note": "Draft 25.1 restores the nine predecessor scenarios and adds succession, refusal, Bayesian-reliance and competition cases.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "30",
+      "source_title": "Singularity-oriented stress scenarios and adaptation constraints",
+      "draft_sections": [
+        {
+          "section": "24",
+          "title": "Threat model and security ownership"
+        },
+        {
+          "section": "25",
+          "title": "Executable acceptance and adversarial verification"
+        },
+        {
+          "section": "26",
+          "title": "Delivery sequence and gates"
+        },
+        {
+          "section": "28",
+          "title": "Explicit nonclaims"
+        }
+      ],
+      "status": "DETAIL_RESTORED_PENDING_PEER_AUDIT",
+      "note": "Draft 25.2 restores scale/modality/coalition stress classes and adds foundation/evaluator compromise.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "31",
+      "source_title": "Architecture decisions and defaults to freeze",
+      "draft_sections": [
+        {
+          "section": "27",
+          "title": "Open decisions"
+        }
+      ],
+      "status": "DETAIL_RESTORED_PENDING_PEER_AUDIT",
+      "note": "Draft 27.1 restores ADR-001–020 and adds ADR-021–035 for the revised architecture.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "32",
+      "source_title": "Executable acceptance and adversarial test specification",
+      "draft_sections": [
+        {
+          "section": "25",
+          "title": "Executable acceptance and adversarial verification"
+        }
+      ],
+      "status": "PRESERVED_AND_EXTENDED",
+      "note": "Acceptance/adversarial families expanded across new architecture.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "33",
+      "source_title": "Implementation sequence and go/no-go release gates",
+      "draft_sections": [
+        {
+          "section": "26",
+          "title": "Delivery sequence and gates"
+        }
+      ],
+      "status": "PRESERVED_AND_EXTENDED",
+      "note": "Implementation sequence gains foundation, legal, trust, continuity, debate and competition subphases.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "34",
+      "source_title": "Scope boundaries and unanswered design decisions",
+      "draft_sections": [
+        {
+          "section": "27",
+          "title": "Open decisions"
+        }
+      ],
+      "status": "PRESERVED_AND_EXTENDED",
+      "note": "Scope boundaries and consequential decisions remain explicit.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "35",
+      "source_title": "What hIRC deliberately will not claim",
+      "draft_sections": [
+        {
+          "section": "28",
+          "title": "Explicit nonclaims"
+        }
+      ],
+      "status": "PRESERVED_AND_EXTENDED",
+      "note": "Nonclaims expanded for trust, metrics, sovereignty, licensing and Bridge.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "36",
+      "source_title": "Traceability, source register, and framework crosswalk",
+      "draft_sections": [
+        {
+          "section": "00",
+          "title": "Document contract"
+        },
+        {
+          "section": "03",
+          "title": "Foundation source graph and compilation"
+        },
+        {
+          "section": "29",
+          "title": "Traceability and product language"
+        }
+      ],
+      "status": "PRESERVED_AND_REVISED",
+      "note": "Traceability is internal/source-bound and ordinary product language stays plain.",
+      "missing_targets": []
+    },
+    {
+      "source_section": "37",
+      "source_title": "Glossary and final product acceptance condition",
+      "draft_sections": [
+        {
+          "section": "30",
+          "title": "Acceptance objects"
+        }
+      ],
+      "status": "DETAIL_RESTORED_PENDING_PEER_AUDIT",
+      "note": "Draft 30.1/30.2 restore and extend the glossary and final acceptance statement.",
+      "missing_targets": []
+    }
+  ],
+  "requirements_check": {
+    "source_count": 151,
+    "draft_count": 218,
+    "missing_source_ids": [],
+    "changed_status_ids": [
+      "U064",
+      "U119"
+    ],
+    "new_ids": [
+      "U120",
+      "U121",
+      "U122",
+      "U123",
+      "U124",
+      "U125",
+      "U126",
+      "U127",
+      "U128",
+      "U129",
+      "U130",
+      "U131",
+      "U132",
+      "U133",
+      "U134",
+      "U135",
+      "U136",
+      "U137",
+      "U138",
+      "U139",
+      "U140",
+      "U141",
+      "U142",
+      "U143",
+      "U144",
+      "U145",
+      "U146",
+      "U147",
+      "U148",
+      "U149",
+      "U150",
+      "U150-C1",
+      "U151",
+      "U152",
+      "U153",
+      "U154",
+      "U155",
+      "U156",
+      "U157",
+      "U158",
+      "U159",
+      "U160",
+      "U161",
+      "U162",
+      "U163",
+      "U164",
+      "U165",
+      "U166",
+      "U167",
+      "U168",
+      "U169",
+      "U170",
+      "U171",
+      "U172",
+      "U173",
+      "U174",
+      "U175",
+      "U176",
+      "U177",
+      "U178",
+      "U179",
+      "U180",
+      "U181",
+      "U182",
+      "U183",
+      "U184",
+      "U185"
+    ]
+  },
+  "priority_detail_debt": [],
+  "restored_detail_pending_peer_audit": [
+    "03",
+    "29",
+    "30",
+    "31",
+    "37"
+  ],
+  "completion_rule": "Each NEEDS_DETAIL_AUDIT row requires direct source/draft semantic comparison and either restored detail, an exact companion trace, or an accepted supersession rationale. Requirement ID presence alone is insufficient.",
+  "nonclaim": "Deterministic heading/ID coverage plus authored candidate mappings; not proof of semantic preservation or peer consensus."
+}

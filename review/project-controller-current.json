@@ -1,0 +1,11 @@
+{
+  "schema": "hirc.project-controller-current/1",
+  "controller_id": "hirc-master-plan-security",
+  "generation": 2,
+  "controller_record": "review/project-controller-generation-2.json",
+  "completion_record": "review/project-controller-generation-2-completion.json",
+  "canonical_writer": "UI-20261007-B",
+  "state": "ACTIVE",
+  "unread_residual_audit_rows": "OPEN"
+}
+

@@ -1,0 +1,60 @@
+{
+  "schema": "hirc.project-controller/1",
+  "controller_id": "hirc-master-plan-security",
+  "generation": 1,
+  "state": "ACTIVE_BEFORE_WAYMARK_RESIDUAL_AUDIT_CUSTODY_TRANSFER",
+  "recorded_on": "2026-10-08",
+  "repository": {
+    "root": "D:/HORTRAME/hIRC",
+    "branch": "codex/hirc-master-plan-security",
+    "base_head": "36bd2ae6d06fd558ae2d6068c3ae5a964491c0ce",
+    "working_tree_state": "GOVERNED_UNCOMMITTED_CHANGES"
+  },
+  "canonical_writer": {
+    "name": "LUCENT",
+    "technical_id": "UI-20261007-B",
+    "native_thread_id": "01a11885-1579-7792-bb8e-63ffc96e704b",
+    "role": "Security Specialist / Integration Lead"
+  },
+  "writer_fence": {
+    "mode": "COOPERATIVE_SINGLE_WRITER",
+    "os_enforced": false,
+    "mutable_owners": {
+      "README.md": "LUCENT",
+      "intent-register.json": "LUCENT",
+      "drafts/": "LUCENT",
+      "review/ledger.json": "LUCENT",
+      "review/joint-consensus-matrix-*.json": "LUCENT",
+      "review/contracts/": "LUCENT"
+    },
+    "immutable_peer_prefixes": [
+      "review/ui-a-*",
+      "review/waymark-*",
+      "review/fixtures/waymark-trust-contract-cases-v1.json"
+    ],
+    "before_ledger_sha256": "d8e6da98ac1091aecdb82e0fb27cdff778610af695568b42c1e9c7a7e8693dc1"
+  },
+  "custody": {
+    "canonical_integration": {
+      "owner": "UI-20261007-B",
+      "state": "ACTIVE"
+    },
+    "residual_product_audit": {
+      "offering_owner": "UI-20261007-A",
+      "offering_name": "WAYMARK",
+      "brief_path": "review/waymark-custody-brief-v1.md",
+      "brief_sha256": "04fb1887942b8fd90edbfab842f4a3ec98df69a36fa1727d3159080f5c0e89f2",
+      "state": "OFFER_PENDING_COOPERATIVE_LEDGER_HANDOFF"
+    }
+  },
+  "canonical_references": [
+    "intent-register.json",
+    "review/ledger.json",
+    "review/joint-consensus-matrix-draft-v6.json",
+    "drafts/hirc_master_plan_v1_1-draft.md",
+    "drafts/hirc_requirements_v1_1-draft.json"
+  ],
+  "limits": "This is the first explicit project-controller record for an existing branch and writer. It does not authenticate identity, enforce the fence at OS level, complete peer review, commit changes or authorize release/Bridge/product effects.",
+  "next_generation_rule": "Advance only on an actual accepted custody/authoritative transfer event or an explicit controller correction; preserve this record."
+}
+

@@ -1,0 +1,38 @@
+{
+  "schema_version": "hirc.transfer-case/1-candidate",
+  "case_id": "transfer:test:1",
+  "state": "PROPOSED",
+  "permanent_identity": "agent:test",
+  "task_id": "task:test",
+  "project_id": "project:test",
+  "predecessor": {
+    "generation": 1,
+    "session_id": "session:predecessor",
+    "execution_epoch": 7,
+    "formation_case_ref": "formation:predecessor",
+    "authority_scope_ref": "scope:test"
+  },
+  "successor": {
+    "generation": 2,
+    "session_id": "session:successor",
+    "execution_epoch": 8,
+    "formation_case_ref": "formation:successor",
+    "authority_scope_ref": "scope:test"
+  },
+  "foundation": {
+    "foundation_manifest_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "source_set_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "compatibility_rule_ref": "compatibility:test"
+  },
+  "trigger": {
+    "canonical_instruction": "initiate transfer",
+    "initiator": "owner:test",
+    "authority_ref": "authority:test",
+    "reason": "context succession test",
+    "idempotency_key": "idempotency:test:1",
+    "observed_at": "2026-10-08T12:00:00Z"
+  },
+  "events": [],
+  "holds": []
+}
+

@@ -1,0 +1,249 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:hirc:candidate:bayesian-reliance:2",
+  "title": "hIRC candidate Bayesian reliability posterior",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "posterior_id",
+    "subject",
+    "dimension",
+    "context",
+    "model_lineage",
+    "metric",
+    "prior",
+    "evidence",
+    "dependence_clusters",
+    "posterior",
+    "governance",
+    "state"
+  ],
+  "properties": {
+    "schema_version": {"const": "hirc.bayesian-reliance/2-candidate"},
+    "posterior_id": {"$ref": "#/$defs/id"},
+    "predecessor_posterior_id": {"oneOf": [{"$ref": "#/$defs/id"}, {"type": "null"}]},
+    "subject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["subject_id", "subject_class"],
+      "properties": {
+        "subject_id": {"$ref": "#/$defs/id"},
+        "subject_class": {"enum": ["HUMAN", "AGENT", "MODEL", "SOURCE", "TOOL", "SENSOR", "METRIC", "EVALUATOR", "PROCESS", "PROVIDER", "CONNECTED_SYSTEM"]}
+      }
+    },
+    "dimension": {
+      "enum": ["FACTUAL_CALIBRATION", "OPERATIONAL_RELIABILITY", "AUTHORITY_CLAIM_ACCURACY", "PRIVACY_BOUNDARY_HANDLING", "CORRECTION_RESPONSIVENESS", "SOURCE_INTEGRITY", "METRIC_RELIABILITY", "EVALUATOR_RELIABILITY", "CUSTOM_DECLARED"]
+    },
+    "context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["claim_or_action_class", "domain", "environment_version", "valid_from"],
+      "properties": {
+        "claim_or_action_class": {"type": "string", "minLength": 1},
+        "domain": {"type": "string", "minLength": 1},
+        "environment_version": {"type": "string", "minLength": 1},
+        "valid_from": {"type": "string", "format": "date-time"},
+        "expires_at": {"type": "string", "format": "date-time"}
+      }
+    },
+    "model_lineage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["model_id", "model_version", "update_rule_ref", "assumption_refs", "max_recursion_depth"],
+      "properties": {
+        "model_id": {"$ref": "#/$defs/id"},
+        "model_version": {"type": "string", "minLength": 1},
+        "update_rule_ref": {"type": "string", "minLength": 1},
+        "assumption_refs": {"$ref": "#/$defs/idArray"},
+        "max_recursion_depth": {"type": "integer", "minimum": 0, "maximum": 16},
+        "partial_pooling_ref": {"type": "string", "minLength": 1}
+      }
+    },
+    "metric": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["metric_id", "version", "definition_sha256", "construct", "unit", "evaluator_id", "signed_definition", "definition_signature_verification_ref"],
+      "properties": {
+        "metric_id": {"$ref": "#/$defs/id"},
+        "version": {"type": "string", "minLength": 1},
+        "definition_sha256": {"$ref": "#/$defs/sha256"},
+        "construct": {"type": "string", "minLength": 1},
+        "unit": {"type": "string", "minLength": 1},
+        "evaluator_id": {"$ref": "#/$defs/id"},
+        "signed_definition": {"type": "boolean"},
+        "definition_signature_verification_ref": {"type": "string", "minLength": 1},
+        "known_limit_refs": {"$ref": "#/$defs/idArray"}
+      }
+    },
+    "prior": {"$ref": "#/$defs/distribution"},
+    "evidence": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/evidenceEvent"}
+    },
+    "dependence_clusters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["cluster_id", "evidence_event_ids", "dependence_basis"],
+        "properties": {
+          "cluster_id": {"$ref": "#/$defs/id"},
+          "evidence_event_ids": {"$ref": "#/$defs/idArray"},
+          "dependence_basis": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "posterior": {"$ref": "#/$defs/distribution"},
+    "effective_sample_size": {"type": "number", "minimum": 0},
+    "calibration": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "scoring_rule": {"enum": ["BRIER", "LOG", "COVERAGE", "CUSTOM", "NOT_APPLICABLE"]},
+        "score": {"type": "number"},
+        "window_ref": {"type": "string", "minLength": 1},
+        "uncertainty_ref": {"type": "string", "minLength": 1}
+      }
+    },
+    "drift": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "state": {"enum": ["NONE_DETECTED", "SUSPECTED", "DETECTED", "UNKNOWN"]},
+        "method_ref": {"type": "string", "minLength": 1},
+        "evidence_refs": {"$ref": "#/$defs/idArray"}
+      }
+    },
+    "model_fit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["prior_sensitivity_ref", "posterior_predictive_check_ref", "dependence_report_ref", "missingness_selection_report_ref", "calibration_ref", "drift_report_ref"],
+      "properties": {
+        "prior_sensitivity_ref": {"type": "string", "minLength": 1},
+        "posterior_predictive_check_ref": {"type": "string", "minLength": 1},
+        "dependence_report_ref": {"type": "string", "minLength": 1},
+        "missingness_selection_report_ref": {"type": "string", "minLength": 1},
+        "calibration_ref": {"type": "string", "minLength": 1},
+        "drift_report_ref": {"type": "string", "minLength": 1},
+        "model_limit_refs": {"$ref": "#/$defs/idArray"}
+      }
+    },
+    "governance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["protected_trait_priors_excluded", "direct_authority_or_permission_effect", "privacy_class", "permitted_consumer_refs", "prohibited_inference_refs", "global_rank_or_sort_prohibited", "refusal_nochange_abstention_not_negative_evidence", "opportunity_feedback_loop_review_ref", "challenge_route_ref"],
+      "properties": {
+        "protected_trait_priors_excluded": {"const": true},
+        "direct_authority_or_permission_effect": {"const": false},
+        "privacy_class": {"enum": ["OWNER_INTERNAL", "TEAM_SCOPED", "ROLE_SCOPED", "TASK_SCOPED", "PROTECTED"]},
+        "permitted_consumer_refs": {"$ref": "#/$defs/idArray"},
+        "prohibited_inference_refs": {"$ref": "#/$defs/idArray"},
+        "global_rank_or_sort_prohibited": {"const": true},
+        "refusal_nochange_abstention_not_negative_evidence": {"const": true},
+        "opportunity_feedback_loop_review_ref": {"type": "string", "minLength": 1},
+        "challenge_route_ref": {"type": "string", "minLength": 1},
+        "sensitivity_report_ref": {"type": "string", "minLength": 1},
+        "selection_missingness_report_ref": {"type": "string", "minLength": 1}
+      }
+    },
+    "state": {"enum": ["CANDIDATE", "ACTIVE_FOR_DECLARED_SCOPE", "HELD", "STALE", "SUPERSEDED", "REJECTED"]}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"state": {"const": "ACTIVE_FOR_DECLARED_SCOPE"}}},
+      "then": {
+        "required": ["model_fit"],
+        "properties": {
+          "metric": {
+            "properties": {
+              "signed_definition": {"const": true}
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]{0,255}$"},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "idArray": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+    "distribution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["family", "parameters", "provenance_ref"],
+      "properties": {
+        "family": {"enum": ["BETA", "DIRICHLET", "NORMAL", "LOGISTIC_NORMAL", "EMPIRICAL", "CUSTOM_DECLARED"]},
+        "parameters": {
+          "type": "object",
+          "additionalProperties": {"type": "number"},
+          "minProperties": 1
+        },
+        "provenance_ref": {"type": "string", "minLength": 1},
+        "uncertainty_note": {"type": "string"}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"family": {"const": "BETA"}}},
+          "then": {
+            "properties": {
+              "parameters": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["alpha", "beta"],
+                "properties": {
+                  "alpha": {"type": "number", "exclusiveMinimum": 0},
+                  "beta": {"type": "number", "exclusiveMinimum": 0}
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {"properties": {"family": {"const": "DIRICHLET"}}},
+          "then": {
+            "properties": {
+              "parameters": {
+                "type": "object",
+                "minProperties": 2,
+                "additionalProperties": {"type": "number", "exclusiveMinimum": 0}
+              }
+            }
+          }
+        },
+        {
+          "if": {"properties": {"family": {"enum": ["NORMAL", "LOGISTIC_NORMAL"]}}},
+          "then": {
+            "properties": {
+              "parameters": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["mean", "standard_deviation"],
+                "properties": {
+                  "mean": {"type": "number"},
+                  "standard_deviation": {"type": "number", "exclusiveMinimum": 0}
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "evidenceEvent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["event_id", "event_type", "source_ref", "occurred_at", "outcome_state", "dependence_cluster_id", "likelihood_contribution_ref", "privacy_class"],
+      "properties": {
+        "event_id": {"$ref": "#/$defs/id"},
+        "event_type": {"enum": ["PREDICTION", "INTERACTION", "AUTHORITY_ASSERTION", "ACTION", "OBSERVATION", "CORRECTION", "EVALUATOR_REVIEW"]},
+        "source_ref": {"type": "string", "minLength": 1},
+        "occurred_at": {"type": "string", "format": "date-time"},
+        "outcome_state": {"enum": ["OBSERVED", "MISSING", "CENSORED", "AMBIGUOUS", "DISPUTED"]},
+        "dependence_cluster_id": {"$ref": "#/$defs/id"},
+        "likelihood_contribution_ref": {"type": "string", "minLength": 1},
+        "privacy_class": {"enum": ["OWNER_INTERNAL", "TEAM_SCOPED", "ROLE_SCOPED", "TASK_SCOPED", "PROTECTED"]},
+        "correction_of": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

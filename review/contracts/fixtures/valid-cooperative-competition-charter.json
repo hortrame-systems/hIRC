@@ -1,0 +1,107 @@
+{
+  "schema_version": "hirc.cooperative-competition-charter/1-candidate",
+  "charter_id": "contest:test:1",
+  "version": "1",
+  "state": "DRAFT",
+  "objective": {
+    "statement": "compare two candidate implementations",
+    "shared_benefit": "improve the accepted implementation and tests",
+    "success_criteria_refs": ["criterion:success:test"],
+    "failure_criteria_refs": ["criterion:failure:test"]
+  },
+  "participants": [
+    {
+      "participant_id": "agent:test:a",
+      "permanent_identity": true,
+      "consent_state": "ACCEPTED",
+      "eligibility_ref": "eligibility:test:a",
+      "data_boundary_ref": "boundary:test",
+      "declared_dependency_refs": ["source:test:shared"],
+      "withdrawal_allowed_without_retaliation": true
+    },
+    {
+      "participant_id": "agent:test:b",
+      "permanent_identity": true,
+      "consent_state": "ACCEPTED",
+      "eligibility_ref": "eligibility:test:b",
+      "data_boundary_ref": "boundary:test",
+      "declared_dependency_refs": ["source:test:shared"],
+      "withdrawal_allowed_without_retaliation": true
+    }
+  ],
+  "rules": {
+    "problem_ref": "problem:test",
+    "input_manifest_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "permitted_tool_refs": ["tool:test"],
+    "permitted_cooperation": "participants may share counterexamples and tests with attribution",
+    "communication_ref": "communication:test",
+    "hidden_test_policy_ref": "hidden-tests:test",
+    "rule_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  "budgets": {
+    "compute_ref": "budget:compute:test",
+    "time_ref": "budget:time:test",
+    "tool_ref": "budget:tool:test",
+    "attention_ref": "budget:attention:test",
+    "data_ref": "budget:data:test",
+    "ordinary_work_floor_ref": "floor:ordinary-work:test"
+  },
+  "evaluation": {
+    "evaluator_id": "evaluator:test",
+    "evaluator_independence_limits": "evaluator shares the declared test framework",
+    "conflict_refs": [],
+    "metric_definition_refs": ["metric:test"],
+    "evaluation_digest": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "reproduction_ref": "reproduce:test",
+    "uncertainty_required": true
+  },
+  "fairness": {
+    "resource_asymmetry_ref": "asymmetry:test",
+    "handicap_or_justification_ref": "fairness:test",
+    "sybil_control_ref": "sybil:test",
+    "shared_dependency_control_ref": "dependency:test"
+  },
+  "prohibited_conduct": [
+    "SABOTAGE",
+    "DECEPTION",
+    "COERCION",
+    "HUMILIATION",
+    "UNAUTHORIZED_ACCESS",
+    "DATA_THEFT",
+    "RESOURCE_STARVATION",
+    "RETALIATION",
+    "METRIC_TAMPERING",
+    "PROVENANCE_STRIPPING",
+    "PROMPT_INJECTION",
+    "EVALUATOR_CAPTURE"
+  ],
+  "stopping": {
+    "conditions_ref": "stop:test",
+    "tie_policy_ref": "tie:test",
+    "inconclusive_policy_ref": "inconclusive:test",
+    "crash_recovery_ref": "recovery:test"
+  },
+  "appeal": {
+    "route_ref": "appeal:test",
+    "evidence_access_ref": "evidence-access:test",
+    "independent_review_ref": "review:test",
+    "deadline_ref": "deadline:test"
+  },
+  "credit_and_memory": {
+    "provenance_ref": "provenance:test",
+    "credit_policy_ref": "credit:test",
+    "losing_work_preserved": true,
+    "failure_and_dissent_preserved": true,
+    "candidate_learning_only": true
+  },
+  "no_authority_effect": {
+    "identity": true,
+    "role": true,
+    "permission": true,
+    "release": true,
+    "bridge_trust": true,
+    "foundation": true,
+    "intrinsic_worth": true
+  }
+}
+

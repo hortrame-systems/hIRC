@@ -1,0 +1,56 @@
+{
+  "schema_version": "hirc.bayesian-reliance/1-candidate",
+  "posterior_id": "posterior:test:1",
+  "predecessor_posterior_id": null,
+  "subject": {
+    "subject_id": "source:test",
+    "subject_class": "SOURCE"
+  },
+  "dimension": "FACTUAL_CALIBRATION",
+  "context": {
+    "claim_or_action_class": "provider specification claim",
+    "domain": "provider:test",
+    "environment_version": "1",
+    "valid_from": "2026-10-08T12:00:00Z",
+    "expires_at": "2026-11-08T12:00:00Z"
+  },
+  "model_lineage": {
+    "model_id": "bayes:test",
+    "model_version": "1",
+    "update_rule_ref": "update:beta-bernoulli:test",
+    "assumption_refs": ["assumption:test"],
+    "max_recursion_depth": 3
+  },
+  "metric": {
+    "metric_id": "metric:test",
+    "version": "1",
+    "definition_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "construct": "factual calibration",
+    "unit": "probability",
+    "evaluator_id": "evaluator:test",
+    "signed_definition": true,
+    "known_limit_refs": ["limit:test"]
+  },
+  "prior": {
+    "family": "BETA",
+    "parameters": {"alpha": 1, "beta": 1},
+    "provenance_ref": "prior:test"
+  },
+  "evidence": [],
+  "dependence_clusters": [],
+  "posterior": {
+    "family": "BETA",
+    "parameters": {"alpha": 1, "beta": 1},
+    "provenance_ref": "posterior-computation:test"
+  },
+  "effective_sample_size": 0,
+  "governance": {
+    "protected_trait_priors_excluded": true,
+    "direct_authority_or_permission_effect": false,
+    "privacy_class": "OWNER_INTERNAL",
+    "permitted_consumer_refs": ["request-service:test"],
+    "challenge_route_ref": "appeal:test"
+  },
+  "state": "CANDIDATE"
+}
+

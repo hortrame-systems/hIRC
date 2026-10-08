@@ -1,0 +1,203 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:hirc:candidate:onboarding-source-set:1",
+  "title": "hIRC candidate onboarding source set",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "source_set_id",
+    "catalog",
+    "context",
+    "sources",
+    "coverage"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "hirc.onboarding-source-set/1-candidate"
+    },
+    "source_set_id": {
+      "$ref": "#/$defs/stableId"
+    },
+    "predecessor_source_set_id": {
+      "oneOf": [
+        {"$ref": "#/$defs/stableId"},
+        {"type": "null"}
+      ]
+    },
+    "catalog": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["logical_id", "revision", "sha256", "resolver_identity"],
+      "properties": {
+        "logical_id": {"type": "string", "minLength": 1},
+        "revision": {"type": "string", "minLength": 1},
+        "sha256": {"$ref": "#/$defs/sha256"},
+        "resolver_identity": {"type": "string", "minLength": 1},
+        "generated_at": {"type": "string", "format": "date-time"}
+      }
+    },
+    "context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["deployment_id", "technical_identity", "roles", "task_id", "audience"],
+      "properties": {
+        "deployment_id": {"$ref": "#/$defs/stableId"},
+        "technical_identity": {"$ref": "#/$defs/stableId"},
+        "roles": {
+          "type": "array",
+          "items": {"type": "string", "minLength": 1},
+          "uniqueItems": true
+        },
+        "task_id": {"$ref": "#/$defs/stableId"},
+        "audience": {
+          "type": "array",
+          "items": {"type": "string", "minLength": 1},
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "purpose": {"type": "string", "minLength": 1}
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/sourceUnit"}
+    },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_count", "disposed_source_count", "unresolved_source_ids", "state"],
+      "properties": {
+        "source_count": {"type": "integer", "minimum": 1},
+        "disposed_source_count": {"type": "integer", "minimum": 0},
+        "unresolved_source_ids": {
+          "type": "array",
+          "items": {"type": "string", "minLength": 1},
+          "uniqueItems": true
+        },
+        "state": {
+          "enum": ["COMPLETE_FOR_DECLARED_SCOPE", "HELD", "STALE", "SUPERSEDED"]
+        },
+        "checker_identity": {"type": "string", "minLength": 1},
+        "checked_at": {"type": "string", "format": "date-time"}
+      }
+    },
+    "semantic_delta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["added", "removed", "changed_binding", "changed_semantics", "unresolved"],
+      "properties": {
+        "added": {"$ref": "#/$defs/idArray"},
+        "removed": {"$ref": "#/$defs/idArray"},
+        "changed_binding": {"$ref": "#/$defs/idArray"},
+        "changed_semantics": {"$ref": "#/$defs/idArray"},
+        "unresolved": {"$ref": "#/$defs/idArray"}
+      }
+    }
+  },
+  "$defs": {
+    "stableId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]{0,255}$"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "idArray": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    },
+    "sourceUnit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "logical_id",
+        "sha256",
+        "edition",
+        "format",
+        "selection_status",
+        "selection_owner",
+        "audience",
+        "scopes",
+        "privacy_class",
+        "dispositions"
+      ],
+      "properties": {
+        "logical_id": {"type": "string", "minLength": 1},
+        "sha256": {"$ref": "#/$defs/sha256"},
+        "edition": {"type": "string", "minLength": 1},
+        "format": {"type": "string", "minLength": 1},
+        "original_format_review_required": {"type": "boolean"},
+        "selection_status": {
+          "enum": [
+            "OWNER_SELECTED_CURRENT",
+            "QUALIFIED_CURRENT",
+            "CONTEXTUAL_CURRENT",
+            "HISTORICAL",
+            "OPTIONAL_REFERENCE",
+            "CANDIDATE",
+            "HELD_MISSING",
+            "SUPERSEDED"
+          ]
+        },
+        "selection_owner": {"type": "string", "minLength": 1},
+        "audience": {
+          "type": "array",
+          "items": {"type": "string", "minLength": 1},
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "scopes": {
+          "type": "array",
+          "items": {
+            "enum": ["COMMON", "ROLE", "TASK", "EXPERIENCE", "PEER_REVIEW", "VOICE", "ADMISSION", "CONTINUAL_LEARNING", "HISTORY"]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "privacy_class": {
+          "enum": ["PUBLIC", "OWNER_INTERNAL", "TEAM_SCOPED", "ROLE_SCOPED", "TASK_SCOPED", "PROTECTED_SOURCE"]
+        },
+        "predecessor_ids": {"$ref": "#/$defs/idArray"},
+        "same_content_ids": {"$ref": "#/$defs/idArray"},
+        "dependencies": {"$ref": "#/$defs/idArray"},
+        "applicability_condition": {"type": "string"},
+        "body_embedded": {"const": false},
+        "dispositions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/disposition"}
+        }
+      }
+    },
+    "disposition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "state", "consumers", "verification_refs"],
+      "properties": {
+        "kind": {
+          "enum": [
+            "KERNEL_INVARIANT",
+            "JUDGMENT_OBLIGATION",
+            "FORMATION_REQUIREMENT",
+            "INTERFACE_EXPLANATION",
+            "EVALUATION_REQUIREMENT",
+            "GOVERNANCE_WORKFLOW",
+            "HISTORICAL_EVIDENCE",
+            "CONFLICT",
+            "HELD_UNIMPLEMENTED"
+          ]
+        },
+        "state": {"enum": ["PROPOSED", "COMPILED", "VERIFIED", "HELD", "SUPERSEDED"]},
+        "consumers": {"$ref": "#/$defs/idArray"},
+        "verification_refs": {"$ref": "#/$defs/idArray"},
+        "rationale_ref": {"type": "string", "minLength": 1},
+        "conflict_or_hold_ref": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}
+

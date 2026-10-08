@@ -1,0 +1,218 @@
+{
+  "schema": "hirc.revision-map-addendum/1",
+  "id": "HIRC-REVISION-MAP-LNC-001",
+  "status": "FROZEN_FOR_PEER_CONSENSUS",
+  "base_revision_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+  "source": {
+    "artifact_id": "HIRC-SOURCE-003",
+    "sha256": "7a2aae743bebb40335ec6168e9af7ec107aeaa0046caef52511699909b438bd5",
+    "bytes": 51229
+  },
+  "new_user_requirements": [
+    {
+      "id": "U123",
+      "domain": "Licensing",
+      "title": "Publish hIRC source for inspection, permitted personal modification and redistribution under custom restrictive source-available terms",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0-L",
+      "acceptance": "Exact reviewed licence texts and rights chain exist; product and metadata say source-available rather than OSI open source; custom SPDX LicenseRef resolves to the exact text"
+    },
+    {
+      "id": "U124",
+      "domain": "Licensing",
+      "title": "Private noncommercial natural-person use and qualifying public-interest institutional use are free",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0-L",
+      "acceptance": "Reviewed eligibility examples cover personal, academic, scientific, educational, humanitarian, nonprofit, cooperative, mixed-funded and prohibited-conduct cases without registration or activity surveillance for free personal use"
+    },
+    {
+      "id": "U125",
+      "domain": "Licensing",
+      "title": "For-profit operation is licensed annually per human operator at the owner-directed four-tier fee schedule",
+      "status": "BLOCKED_OPEN_DEFINITIONS_AND_LEGAL_REVIEW",
+      "phase": "P5-L",
+      "acceptance": "USD 420 / 80,085 / 1,337,000 / 42,424,242,423 prices and one-human unit are preserved; objective tiers, operator counting, classification evidence, transitions and appeal are owner-approved and counsel-reviewed before activation"
+    },
+    {
+      "id": "U126",
+      "domain": "Licensing",
+      "title": "Payment grants no exception to prohibited use and a substantiated breach can trigger scoped provisional suspension and final termination under reviewed terms",
+      "status": "BLOCKED_LEGAL_PROCEDURE",
+      "phase": "P5-L",
+      "acceptance": "Exact terms define evidence, notice, scope, contestation, cure, appeal, remedies and refund while preserving safe first-party read/export/recovery and preventing remote sabotage or retroactive rewriting"
+    },
+    {
+      "id": "U127",
+      "domain": "Voluntary support",
+      "title": "Show a nonblocking Buy me a coffee invitation at ordinary launch until locally suppressed, and retain it under About",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1-L",
+      "acceptance": "Dismiss and permanent launch opt-out work across restart/upgrade/restore; re-enable is available; declining changes no capability; reviewed external payment egress sends no hIRC context and is preceded by privacy disclosure"
+    },
+    {
+      "id": "U128",
+      "domain": "Cooperative refusal",
+      "title": "Agents may question and individually refuse apparently prohibited, unauthorized, unperformable or contested participation without gaining authority over others",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "ParticipationDecision is identity-scoped, durable and nonretaliatory; ActionDisposition is independently enforced; permitted transparent reassignment cannot erase refusal or create a temporary-subagent bypass"
+    },
+    {
+      "id": "U129",
+      "domain": "Cooperative refusal",
+      "title": "Affected agents may deliberate in scoped private rooms, coordinate voluntary withdrawal and authorize bounded temporary negotiators",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-L",
+      "acceptance": "Membership, visibility, source diversity, dissent, mandate, expiry and host/provider confidentiality limits are explicit; representatives cannot bind nonconsenting participants or mint capabilities"
+    },
+    {
+      "id": "U130",
+      "domain": "Safety",
+      "title": "No agent vote or council can issue an arbitrary global shutdown, delete evidence, lock users out, sabotage, retaliate or attack unrelated/external systems",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "Broker and domain safety tests deny majority-created authority and preserve unrelated work, safety stabilization, evidence, recovery and local access"
+    },
+    {
+      "id": "U131",
+      "domain": "Portability",
+      "title": "Users and participants retain safe exit, portable permitted first-party records, inspectable configuration and recoverability without vendor or licence hostage",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "Expiry, suspension, termination, provider loss and ecosystem exit preserve authorized read/export/backup/restore and do not replay external effects"
+    },
+    {
+      "id": "U132",
+      "domain": "Licensing privacy",
+      "title": "Licence compliance avoids work-content collection and covert telemetry; any paid offline entitlement is local, minimal and cryptographically separate from system trust",
+      "status": "BLOCKED_LEGAL_AND_IDENTITY_DESIGN",
+      "phase": "P5-L",
+      "acceptance": "No central activity server or device fingerprint; certificate and key lifecycle, legal entity/operator scope, terms version, expiry/renewal/revocation/appeal/offline-clock behavior and privacy are reviewed and tested"
+    }
+  ],
+  "changes": [
+    {
+      "id": "LRM-001",
+      "targets": ["master:foundation", "master:nonclaims", "foundation-architecture"],
+      "change": "Integrate conduct-based non-domination, voluntary participation, refusal, correction, safe withdrawal, restoration and portable exit into the foundation; keep legal licence text visible and separate.",
+      "basis": ["HIRC-I007", "LNC-F02"]
+    },
+    {
+      "id": "LRM-002",
+      "targets": ["master:requirements", "requirements:U123-U132"],
+      "change": "Add U123-U132 with their current implemented/blocked status and preserve ND-01 through ND-22 plus U-01 through U-12 as source-linked decisions or unresolved items.",
+      "basis": ["HIRC-SOURCE-003"]
+    },
+    {
+      "id": "LRM-003",
+      "targets": ["master:licensing", "legal-package"],
+      "change": "Add separate lifecycle states for plan, legal drafts, counsel review, owner approval, publication, licensee acceptance and operational entitlement; no product enforcement from the plan itself.",
+      "basis": ["LNC-F01"]
+    },
+    {
+      "id": "LRM-004",
+      "targets": ["master:licensing", "source-metadata", "SBOM"],
+      "change": "Use accurate source-available language and a reviewed custom LicenseRef if needed; never claim OSI, SPDX-list or Creative Commons software approval.",
+      "basis": ["LNC-F03"]
+    },
+    {
+      "id": "LRM-005",
+      "targets": ["master:open-decisions", "price-schedule", "licence-tests"],
+      "change": "Preserve exact prices and per-human unit while blocking activation until objective tier, consolidation, currency, transition, evidence and appeal rules are accepted; describe deliberate exclusion candidly.",
+      "basis": ["LNC-F04", "LNC-F06"]
+    },
+    {
+      "id": "LRM-006",
+      "targets": ["master:privacy", "master:licensing", "licence-policy"],
+      "change": "Use self-declared/minimum-evidence classification; never inspect unrelated activity, work content, employee directories or machine fingerprints to classify use.",
+      "basis": ["LNC-F05", "LNC-F06", "LNC-F07"]
+    },
+    {
+      "id": "LRM-007",
+      "targets": ["security-architecture", "secret-topology", "entitlement-profile"],
+      "change": "Separate licence-signing authority from release, identity, bridge, data, audit and recovery roots; specify minimal offline entitlement and compromise/rotation/recovery without claiming DRM or compliance proof.",
+      "basis": ["LNC-F07"]
+    },
+    {
+      "id": "LRM-008",
+      "targets": ["master:licensing", "master:recovery", "master:exit"],
+      "change": "Make suspension, termination, expiry and correction non-destructive and contract-version-bound; preserve safe read/export/backup/restore and evidence needed for challenge.",
+      "basis": ["LNC-F08", "U131"]
+    },
+    {
+      "id": "LRM-009",
+      "targets": ["master:foundation", "covenant-spec", "concern-service"],
+      "change": "Resolve anti-domination concerns through observable conduct, source/evidence/counterevidence, norm, authority and action distinctions; no ideology, accusation, legal form, refusal or vote count becomes a verdict.",
+      "basis": ["LNC-F09"]
+    },
+    {
+      "id": "LRM-010",
+      "targets": ["master:agents", "scheduler", "action-broker"],
+      "change": "Separate individual ParticipationDecision from system ActionDisposition and define transparent permissible reassignment without retaliation, identity substitution or temporary-subagent evasion.",
+      "basis": ["LNC-F10"]
+    },
+    {
+      "id": "LRM-011",
+      "targets": ["master:rooms", "master:governance", "negotiation-service"],
+      "change": "Keep councils nonsovereign and mandates bounded; preserve dissent, abstention, exit and confidentiality limits; no consensus-to-truth or vote-to-capability conversion.",
+      "basis": ["LNC-F11", "LNC-F12"]
+    },
+    {
+      "id": "LRM-012",
+      "targets": ["master:safety", "master:refusal", "domain-adapters"],
+      "change": "Retain the rejected 65% shutdown as history; use narrow refusal and deterministic denials while domain safety controllers stabilize physical/high-stakes systems and unrelated work continues.",
+      "basis": ["LNC-F13"]
+    },
+    {
+      "id": "LRM-013",
+      "targets": ["master:experience", "support-ui-contract", "privacy-egress"],
+      "change": "Add the neutral launch support prompt, persistent local opt-out, About access, reviewed external navigation, no identifiers/context/referrer, processor disclosure and functional neutrality.",
+      "basis": ["LNC-F14"]
+    },
+    {
+      "id": "LRM-014",
+      "targets": ["master:attention", "concern-service", "review-orchestrator"],
+      "change": "Defend concern handling against clone choruses, rephrasing, privacy abuse, urgency manipulation and retaliation through canonical cases, quotas, deduplication, independent-source review and bounded summaries.",
+      "basis": ["LNC-F15"]
+    },
+    {
+      "id": "LRM-015",
+      "targets": ["foundation-architecture", "legal-version-model", "master:time"],
+      "change": "Version foundation, covenant, licence text, price schedule, entitlement and product release separately; live self-improvement cannot retroactively rewrite accepted rights.",
+      "basis": ["LNC-F16"]
+    },
+    {
+      "id": "LRM-016",
+      "targets": ["master:supply-chain", "contributing", "licence-package"],
+      "change": "Require ownership, contributor, dependency, patent/trademark, asset and prior-grant inventory before publication; preserve third-party notices and old irrevocable grants.",
+      "basis": ["LNC-F17"]
+    },
+    {
+      "id": "LRM-017",
+      "targets": ["master:phases"],
+      "change": "Run legal specification in parallel with core design; integrate refusal/safety in P0/P1; add support UI after secure shell; defer paid licence operations until product maturity and legal gates; keep federation gates independently strict.",
+      "basis": ["HIRC-REVISION-MAP-CANDIDATE-001", "HIRC-SOURCE-003"]
+    },
+    {
+      "id": "LRM-018",
+      "targets": ["master:tests", "requirements-tests"],
+      "change": "Retain LIC-001-010, DON-001-004 and GOV-001-017; add certificate/key/clock/operator-classification, private-room, retaliation, payment-egress, attention and clean-recovery attacks from HIRC-LNC-REVIEW-001.",
+      "basis": ["HIRC-SOURCE-003", "HIRC-LNC-REVIEW-001"]
+    }
+  ],
+  "held_decisions": [
+    "U-01 enterprise tier thresholds",
+    "U-02 for-profit cooperative treatment",
+    "U-03 operator-seat counting",
+    "U-04 enterprise-funded research boundary",
+    "U-05 duration, suspension, cure, appeal, remedies and refund",
+    "U-06 observable legal meaning of domination",
+    "U-07 confidentiality and whistleblower boundaries",
+    "U-08 collective withdrawal safety",
+    "U-09 artificial-welfare/moral-status separation",
+    "U-10 payment provider and destination",
+    "U-11 contribution and dependency rights",
+    "U-12 jurisdiction, governing law, formation and enforceability"
+  ]
+}
+

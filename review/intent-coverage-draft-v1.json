@@ -1,0 +1,462 @@
+{
+  "schema": "hirc.intent-coverage/1-draft",
+  "id": "HIRC-INTENT-COVERAGE-DRAFT-001",
+  "status": "DRAFT_CURRENT_INTAKE_COVERAGE",
+  "intent_register": {
+    "path": "intent-register.json",
+    "sha256": "8f5803ba64f767503f08f2b10ffc1102c41e807f90f9a404e957403162121b0b"
+  },
+  "revision_maps": [
+    {
+      "id": "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
+      "path": "review/revision-map-addendum-bayesian-trust-v1.json",
+      "sha256": "d992bb12d9c95e9efe0a5fa763e68864868c735385a421320cd506b11e47e127"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-ELDER-SUCCESSION-001",
+      "path": "review/revision-map-addendum-elder-succession-v1.json",
+      "sha256": "28ea209c1c057db6abfedb89765baa6e2f6a0da205353d5afa793e56550a9655"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-DEBATE-001",
+      "path": "review/revision-map-addendum-ethical-debate-v1.json",
+      "sha256": "004e2b1b43d79d04bb663e67c6b79fe05d474d7588a1aa963df14ffc69bf75a2"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-GOAL-EVOLUTION-001",
+      "path": "review/revision-map-addendum-goal-evolution-v1.json",
+      "sha256": "6ce6cf221579e0c9e89f1cf630ebc0c6743e24cce41a50ba1aa6a04327a9e81a"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-INTEGRATED-BOUNDARY-001",
+      "path": "review/revision-map-addendum-integrated-boundary-v1.json",
+      "sha256": "763329a2770a05b30c961a61eac9abe1a57fbee18698b0d8c026dea43ef4f1ba"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-LNC-001",
+      "path": "review/revision-map-addendum-licensing-v1.json",
+      "sha256": "96dc55a1ca09d60e5be791964d5bc6d7a848fbe5f66e861c1ea30f632a9c2d51"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-LNC-PRICE-002",
+      "path": "review/revision-map-addendum-price-correction-v2.json",
+      "sha256": "dbb0316e9f82fb9728f1f91cdc308f94079da842458fb8024fd4808f1e3795a3"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+      "path": "review/revision-map-addendum-sovereignty-competition-v1.json",
+      "sha256": "fc9f542cd5070a8e54a68500bce006e6a13457dd74104535e3aad25e423cc11a"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "path": "review/revision-map-addendum-successor-onboarding-v1.json",
+      "sha256": "ce850b1440ad0ba89f19f6bdb4cf884a1ba473924dd781aae01a06b90f3f32a6"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-WAYMARK-SOVEREIGNTY-001",
+      "path": "review/revision-map-addendum-waymark-sovereignty-v1.json",
+      "sha256": "5776d44a1ff5d686c17ed8b295f19428f64bb377e021bd92ab8a3233af33f313"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "path": "review/revision-map-candidate-v1.json",
+      "sha256": "4d9b34010f960ff520ffacd389522536395f5d02a99b3dfb4a6f3b27903d2357"
+    }
+  ],
+  "rows": [
+    {
+      "intent_id": "HIRC-I001",
+      "status": "ACTIVE",
+      "kind": "confirmed_objective_revision",
+      "coverage": "REVISION_MAPPED",
+      "revision_map_ids": [
+        "HIRC-REVISION-MAP-CANDIDATE-001",
+        "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001"
+      ],
+      "process_or_history_artifact_ids": [],
+      "evidence_paths": [
+        "review/foundation-kernel-candidate-v1.md",
+        "drafts/hirc_foundation_architecture_v0_1-draft.md",
+        "drafts/hirc_master_plan_v1_1-draft.md"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 6,
+      "next_action": "Complete peer consensus and the source-unit, consumer and test trace before freezing Master Plan 1.1."
+    },
+    {
+      "intent_id": "HIRC-I002",
+      "status": "ACTIVE",
+      "kind": "confirmed_execution_scope",
+      "coverage": "REVISION_MAPPED",
+      "revision_map_ids": [
+        "HIRC-REVISION-MAP-CANDIDATE-001"
+      ],
+      "process_or_history_artifact_ids": [
+        "HIRC-JOINT-CONSENSUS-DRAFT-005",
+        "HIRC-PREDECESSOR-CROSSWALK-DRAFT-001",
+        "HIRC-M02",
+        "HIRC-M02B",
+        "HIRC-M02C"
+      ],
+      "evidence_paths": [
+        "review/lucent-independent-review-v1.md",
+        "review/ui-a-independent-source-review-v1.md",
+        "review/ui-a-peer-challenge-v1.md",
+        "review/lucent-peer-reconciliation-response-v1.md"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 3,
+      "next_action": "Complete WAYMARK's remaining exact packet and decision-matrix audit, reconcile dissent/holds, then freeze and validate the revised plan."
+    },
+    {
+      "intent_id": "HIRC-I003",
+      "status": "ACTIVE",
+      "kind": "confirmed_security_constraint",
+      "coverage": "REVISION_MAPPED",
+      "revision_map_ids": [
+        "HIRC-REVISION-MAP-CANDIDATE-001",
+        "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001"
+      ],
+      "process_or_history_artifact_ids": [],
+      "evidence_paths": [
+        "review/lucent-security-architecture-candidate-v1.md",
+        "drafts/hirc_threat_model_v1_0-draft.md",
+        "drafts/hirc_bridge_security_profile_v0_1-draft.md"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 3,
+      "next_action": "Complete independent security/product challenge, requirement-level test trace and implementation validation while keeping Bridge disabled."
+    },
+    {
+      "intent_id": "HIRC-I004",
+      "status": "ACTIVE",
+      "kind": "confirmed_milestone_method",
+      "coverage": "REVISION_MAPPED",
+      "revision_map_ids": [
+        "HIRC-REVISION-MAP-CANDIDATE-001",
+        "HIRC-REVISION-MAP-GOAL-EVOLUTION-001",
+        "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001"
+      ],
+      "process_or_history_artifact_ids": [],
+      "evidence_paths": [
+        "review/lucent-independent-review-v1.md",
+        "review/lucent-security-architecture-candidate-v1.md",
+        "review/milestone-02-integrated-working-draft.md",
+        "review/milestone-02b-sovereignty-trust-peer-reconciliation.md",
+        "review/milestone-02c-release-boundary-peer-reconciliation.md"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 3,
+      "next_action": "Continue evidence-linked lens refinement or justified no-change at each milestone and propagate it into the next plan."
+    },
+    {
+      "intent_id": "HIRC-I005",
+      "status": "ACTIVE",
+      "kind": "confirmed_communication_boundary",
+      "coverage": "PROCESS_OR_HISTORY_MAPPED",
+      "revision_map_ids": [],
+      "process_or_history_artifact_ids": [
+        "HIRC-UIA-REVIEW-001",
+        "HIRC-UIA-PEER-CHALLENGE-001",
+        "HIRC-WAYMARK-WST-CHALLENGE-001",
+        "HIRC-WAYMARK-INTEGRATED-BOUNDARY-001"
+      ],
+      "evidence_paths": [
+        "review/ui-a-independent-source-review-v1.md",
+        "review/ui-a-peer-challenge-v1.md",
+        "review/lucent-peer-reconciliation-response-v1.md"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 2,
+      "next_action": "Continue relaying relevant owner steering to WAYMARK with owner instructions, source material and LUCENT interpretation kept distinct."
+    },
+    {
+      "intent_id": "HIRC-I006",
+      "status": "CAPTURED",
+      "kind": "confirmed_supersession",
+      "coverage": "PROCESS_OR_HISTORY_MAPPED",
+      "revision_map_ids": [],
+      "process_or_history_artifact_ids": [
+        "HIRC-MASTER-DRAFT-BUNDLE-001"
+      ],
+      "evidence_paths": [],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 2,
+      "next_action": "Update the prior project's canonical register through its responsible owner after the current hIRC review boundary."
+    },
+    {
+      "intent_id": "HIRC-I007",
+      "status": "ACTIVE",
+      "kind": "confirmed_scope_addition",
+      "coverage": "REVISION_MAPPED",
+      "revision_map_ids": [
+        "HIRC-REVISION-MAP-LNC-001"
+      ],
+      "process_or_history_artifact_ids": [],
+      "evidence_paths": [
+        "review/lucent-licensing-noncooperation-review-v1.md",
+        "review/revision-map-addendum-licensing-v1.json",
+        "review/licensing-price-correction-v1.md",
+        "review/revision-map-addendum-successor-onboarding-v1.json"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 6,
+      "next_action": "Complete WAYMARK's remaining licensing/noncooperation audit and whole-plan reconciliation; keep counsel/rights/open-definition decisions held."
+    },
+    {
+      "intent_id": "HIRC-I008",
+      "status": "ACTIVE",
+      "kind": "confirmed_scope_addition",
+      "coverage": "REVISION_MAPPED",
+      "revision_map_ids": [
+        "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
+        "HIRC-REVISION-MAP-DEBATE-001",
+        "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+        "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001"
+      ],
+      "process_or_history_artifact_ids": [],
+      "evidence_paths": [
+        "review/ethical-debate-memory-architecture-candidate-v1.md",
+        "review/ethical-debate-memory-architecture-supplement-1.md",
+        "review/revision-map-addendum-ethical-debate-v1.json",
+        "review/milestone-01b-idle-ethical-debate-intake.md"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 8,
+      "next_action": "WAYMARK completes exact debate-candidate review; reconcile product/privacy/attention consequences while runtime pairing remains disabled."
+    },
+    {
+      "intent_id": "HIRC-I009",
+      "status": "ACTIVE",
+      "kind": "confirmed_clarification",
+      "coverage": "REVISION_MAPPED",
+      "revision_map_ids": [
+        "HIRC-REVISION-MAP-DEBATE-001"
+      ],
+      "process_or_history_artifact_ids": [],
+      "evidence_paths": [
+        "review/ethical-debate-memory-architecture-supplement-1.md",
+        "review/revision-map-addendum-ethical-debate-v1.json"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 6,
+      "next_action": "Obtain WAYMARK's exact product/interaction disposition for DebateDomain and per-domain memory/frontier before final integration."
+    },
+    {
+      "intent_id": "HIRC-I010",
+      "status": "ACTIVE",
+      "kind": "confirmed_architecture_requirement",
+      "coverage": "REVISION_MAPPED",
+      "revision_map_ids": [
+        "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001"
+      ],
+      "process_or_history_artifact_ids": [],
+      "evidence_paths": [
+        "review/successor-onboarding-architecture-candidate-v1.md",
+        "review/revision-map-addendum-successor-onboarding-v1.json",
+        "review/master-structure-addendum-successor-onboarding-v1.md",
+        "review/lucent-peer-reconciliation-response-v1.md",
+        "review/milestone-01c-successor-onboarding-intake.md",
+        "review/successor-onboarding-architecture-supplement-2-elder.md",
+        "review/revision-map-addendum-elder-succession-v1.json",
+        "review/milestone-02d-elder-succession-source-update.md"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 10,
+      "next_action": "Complete WAYMARK's remaining successor/onboarding audit and implementation/reference/privacy tests; preserve bounded bootstrap/preview agreements."
+    },
+    {
+      "intent_id": "HIRC-I011",
+      "status": "ACTIVE",
+      "kind": "confirmed_economic_correction",
+      "coverage": "REVISION_MAPPED",
+      "revision_map_ids": [
+        "HIRC-REVISION-MAP-LNC-PRICE-002",
+        "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001"
+      ],
+      "process_or_history_artifact_ids": [],
+      "evidence_paths": [
+        "review/licensing-price-correction-v1.md",
+        "review/licensing-price-correction-supplement-1.md",
+        "review/revision-map-addendum-successor-onboarding-v1.json",
+        "review/revision-map-addendum-price-correction-v2.json"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 4,
+      "next_action": "Carry the corrected amount, preserved annual human-licence planning unit and separate final-legal-term hold into peer consensus and Master Plan 1.1."
+    },
+    {
+      "intent_id": "HIRC-I012",
+      "status": "ACTIVE",
+      "kind": "confirmed_foundation_requirement",
+      "coverage": "REVISION_MAPPED",
+      "revision_map_ids": [
+        "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001"
+      ],
+      "process_or_history_artifact_ids": [],
+      "evidence_paths": [
+        "review/agent-sovereignty-trust-competition-architecture-candidate-v1.md",
+        "review/revision-map-addendum-sovereignty-competition-v1.json",
+        "review/master-structure-addendum-sovereignty-competition-v1.md",
+        "review/milestone-01d-sovereignty-trust-competition-intake.md"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 6,
+      "next_action": "Implement and validate the bounded WST agreements at runtime/privacy/usability scope; retain whole-plan open decisions."
+    },
+    {
+      "intent_id": "HIRC-I013",
+      "status": "ACTIVE",
+      "kind": "confirmed_interaction_and_trust_requirement",
+      "coverage": "REVISION_MAPPED",
+      "revision_map_ids": [
+        "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001"
+      ],
+      "process_or_history_artifact_ids": [],
+      "evidence_paths": [
+        "review/agent-sovereignty-trust-competition-architecture-candidate-v1.md",
+        "review/revision-map-addendum-sovereignty-competition-v1.json",
+        "review/master-structure-addendum-sovereignty-competition-v1.md",
+        "review/milestone-01d-sovereignty-trust-competition-intake.md"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 5,
+      "next_action": "Implement and validate privacy-first RequestCase, scoped consumers/prohibited inferences, clarification and no-social-score behavior."
+    },
+    {
+      "intent_id": "HIRC-I014",
+      "status": "ACTIVE",
+      "kind": "confirmed_cooperation_requirement",
+      "coverage": "REVISION_MAPPED",
+      "revision_map_ids": [
+        "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
+        "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001"
+      ],
+      "process_or_history_artifact_ids": [],
+      "evidence_paths": [
+        "review/agent-sovereignty-trust-competition-architecture-candidate-v1.md",
+        "review/revision-map-addendum-sovereignty-competition-v1.json",
+        "review/master-structure-addendum-sovereignty-competition-v1.md",
+        "review/milestone-01d-sovereignty-trust-competition-intake.md"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 6,
+      "next_action": "Implement and validate v2 charter activation, protected qualities, task-scoped credit and anti-hierarchy/resource tests before any contest pilot."
+    },
+    {
+      "intent_id": "HIRC-I015",
+      "status": "ACTIVE",
+      "kind": "confirmed_trust_model_refinement",
+      "coverage": "REVISION_MAPPED",
+      "revision_map_ids": [
+        "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
+        "HIRC-REVISION-MAP-GOAL-EVOLUTION-001"
+      ],
+      "process_or_history_artifact_ids": [],
+      "evidence_paths": [
+        "review/agent-sovereignty-trust-competition-supplement-1.md",
+        "review/revision-map-addendum-bayesian-trust-v1.json",
+        "review/master-structure-addendum-bayesian-trust-v1.md",
+        "review/milestone-01d-supplement-1.md"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 7,
+      "next_action": "Validate actual Bayesian models, metrics, privacy, calibration/drift and evaluator governance before activating any production posterior dimension."
+    },
+    {
+      "intent_id": "HIRC-I016",
+      "status": "SUPERSEDED_BY_HIRC-I018",
+      "kind": "interpreted_goal_candidate",
+      "coverage": "SUPERSEDED_PRESERVED",
+      "revision_map_ids": [
+        "HIRC-REVISION-MAP-GOAL-EVOLUTION-001"
+      ],
+      "process_or_history_artifact_ids": [
+        "HIRC-GOAL-CANDIDATE-001",
+        "HIRC-GOAL-VERSION-002"
+      ],
+      "evidence_paths": [
+        "review/hirc-goal-refinement-candidate-v1.md",
+        "review/hirc-goal-refinement-supplement-1.md",
+        "drafts/hirc_master_plan_v1_1-draft.md"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 4,
+      "next_action": "Preserve as GoalVersion 1 history; GoalVersion 2 is active provisionally under HIRC-I017."
+    },
+    {
+      "intent_id": "HIRC-I017",
+      "status": "ACTIVE",
+      "kind": "confirmed_goal_evolution_method",
+      "coverage": "REVISION_MAPPED",
+      "revision_map_ids": [
+        "HIRC-REVISION-MAP-GOAL-EVOLUTION-001"
+      ],
+      "process_or_history_artifact_ids": [],
+      "evidence_paths": [
+        "review/hirc-goal-refinement-supplement-1.md"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 5,
+      "next_action": "Add GoalVersion/GoalChange to foundation governance and use each milestone to test, refine or revalidate the active provisional north star."
+    },
+    {
+      "intent_id": "HIRC-I018",
+      "status": "ACTIVE_PROVISIONAL_EVOLVING_GOAL",
+      "kind": "accepted_clarifying_goal_refinement",
+      "coverage": "REVISION_MAPPED",
+      "revision_map_ids": [
+        "HIRC-REVISION-MAP-WAYMARK-SOVEREIGNTY-001"
+      ],
+      "process_or_history_artifact_ids": [],
+      "evidence_paths": [
+        "review/hirc-goal-refinement-v2.md",
+        "review/waymark-sovereignty-trust-goal-challenge-v1.md",
+        "review/lucent-sovereignty-trust-goal-response-v1.md"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 4,
+      "next_action": "Use GoalVersion 2 in the working master, evaluation plan and WAYMARK/LUCENT consensus matrix; refine only through HIRC-I017."
+    },
+    {
+      "intent_id": "HIRC-I019",
+      "status": "ACTIVE",
+      "kind": "confirmed_milestone_delivery_requirement",
+      "coverage": "PROCESS_OR_HISTORY_MAPPED",
+      "revision_map_ids": [],
+      "process_or_history_artifact_ids": [
+        "HIRC-MILESTONE-02D",
+        "HIRC-MILESTONE-GIT-PROTOCOL-001"
+      ],
+      "evidence_paths": [
+        "drafts/hirc_milestone_git_protocol_v0_1-draft.md",
+        "milestones/MILESTONE-02D.md"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 5,
+      "next_action": "Commit and push the cumulative Milestone 02D checkpoint, then require the same closure path for each later milestone."
+    },
+    {
+      "intent_id": "HIRC-I020",
+      "status": "ACTIVE",
+      "kind": "confirmed_execution_decomposition_requirement",
+      "coverage": "PROCESS_OR_HISTORY_MAPPED",
+      "revision_map_ids": [],
+      "process_or_history_artifact_ids": [
+        "HIRC-STEPPING-STONE-PROTOCOL-001",
+        "HIRC-MILESTONE-02D"
+      ],
+      "evidence_paths": [
+        "drafts/hirc_stepping_stone_protocol_v0_1-draft.md",
+        "milestones/MILESTONE-02D.md"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 5,
+      "next_action": "A qualified successor expands the next milestone into its complete ordered stone register before starting implementation work."
+    }
+  ],
+  "unmapped_intent_ids": [],
+  "missing_evidence_paths": [],
+  "completion_rule": "No open intent may be silently omitted at phase change/final handoff; each needs an accepted revision/product/process/history disposition and final evidence/test trace appropriate to its kind.",
+  "nonclaim": "Reference and file-presence coverage, not proof of preserved meaning, implementation, verification or consensus."
+}

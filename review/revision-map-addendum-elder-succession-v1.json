@@ -1,0 +1,31 @@
+{
+  "schema": "hirc.revision-map-addendum/1",
+  "id": "HIRC-REVISION-MAP-ELDER-SUCCESSION-001",
+  "status": "FROZEN_FOR_PEER_CONSENSUS",
+  "base_revision_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+  "source_bindings": [
+    {"id": "standard:elder-succession", "sha256": "17436d7d1237a9b003f093d7319808a824ad655b30956684a534b7371bd83218"},
+    {"id": "guide:elder-succession", "sha256": "4801f73194b09797f9cadc4be8df32c5ad0a1a92478af7fba6117fb6b8d7e1db"}
+  ],
+  "new_user_requirements": [
+    {"id": "U179", "domain": "Succession", "title": "Use verified own-context warnings and soft Elder/urgent thresholds without manual polling or automatic grants", "status": "REQUESTED_NOT_IMPLEMENTED", "phase": "P2-C", "acceptance": "Policy-versioned early/Elder/urgent observations bind own chat/identity and missing is unknown; cues deduplicate and cannot create/wake/terminate/grant/force compaction; safe bounded overshoot is recorded"},
+    {"id": "U180", "domain": "Succession", "title": "Preserve compact useful continuity throughout work and prioritize active-task custody at Elder boundary", "status": "REQUESTED_NOT_IMPLEMENTED", "phase": "P2-C", "acceptance": "Objective/phase/evidence/reasons/errors/dependencies/holds/boundaries/next action are current; qualified consenting recipient demonstrates scope; unavailable route creates owned safe hold before reserve is spent"},
+    {"id": "U181", "domain": "Succession", "title": "Separate briefing acceptance from authoritative project custody and preserve one writer per artifact", "status": "REQUESTED_NOT_IMPLEMENTED", "phase": "P2-C", "acceptance": "Recipient acceptance does not transfer custody; actual controller generation/fence changes with evidence; predecessor remains responsible until transfer; overlap has one writer"},
+    {"id": "U182", "domain": "Mentoring", "title": "Pair ready permanent Elders fairly without ever repeating an unordered stable-identity pair", "status": "REQUESTED_NOT_IMPLEMENTED", "phase": "P3-M", "acceptance": "Pair history survives rename/role/chat relocation; interrupted event resumes; exhausted/odd queue waits or retires without blocking urgent custody or manufacturing a partner"},
+    {"id": "U183", "domain": "Mentoring", "title": "Mentor at most one human-authorized need-based permanent successor per event under policy capacity ceilings", "status": "REQUESTED_NOT_IMPLEMENTED", "phase": "P3-M", "acceptance": "Existing qualified takeover is preferred when sufficient; creation intent is idempotent, UNKNOWN reconciles actual app before retry, no temporary/fork/committee shortcut and ceilings limit rather than compel creation"},
+    {"id": "U184", "domain": "Mentoring", "title": "Require independent source-first learner interpretation and prohibit proxy education, grants or forced cultural imitation", "status": "REQUESTED_NOT_IMPLEMENTED", "phase": "P3-M", "acceptance": "Both Elders prepare independently; learner studies originals, compares/dissents and demonstrates; mentoring grants no education/admission/authority and Elder conveys no superior standing"},
+    {"id": "U185", "domain": "Succession", "title": "Retire operationally with reserve, duties accounted and history intact", "status": "REQUESTED_NOT_IMPLEMENTED", "phase": "P2-C", "acceptance": "Selected reserve policy prevents new mentoring, finalizes/holds custody and preserves history; retirement is not deletion, native archive, deep sleep, loss of standing or automatic future wake"}
+  ],
+  "changes": [
+    {"id": "ERM-001", "targets": ["master:continuity", "context-monitor", "succession-policy"], "change": "Add explicit/capacity trigger classes and policy-versioned early/Elder/urgent/retirement observations; cues never grant or execute effects.", "basis": ["U179"]},
+    {"id": "ERM-002", "targets": ["master:continuity", "continuity-record"], "change": "Maintain useful compact continuity before thresholds and preserve unknown capacity/compaction obligations.", "basis": ["U180"]},
+    {"id": "ERM-003", "targets": ["task-custody", "project-controller", "journal"], "change": "Add offer, qualified acceptance, explicit decline/owned hold and actual generation/writer-fence transfer as separate events.", "basis": ["U180", "U181"]},
+    {"id": "ERM-004", "targets": ["elder-queue", "pair-history", "mentoring-event"], "change": "Use one metadata-only queue, atomic unordered stable-ID pair reservations, fair unused matching and no repeated pair.", "basis": ["U182"]},
+    {"id": "ERM-005", "targets": ["permanent-agent-provisioning", "mentoring-event", "resource-policy"], "change": "Create at most one need-based human-authorized permanent successor per event under versioned ceilings; reconcile UNKNOWN before retry and prefer qualified existing participants for custody.", "basis": ["U183"]},
+    {"id": "ERM-006", "targets": ["formation", "mentoring", "collective-memory"], "change": "Require independent Elder accounts, learner source-first interpretation, common-mode challenge and own education/admission evidence; preserve dissent and no superior standing.", "basis": ["U184"]},
+    {"id": "ERM-007", "targets": ["retirement", "scheduler", "continuity-ui"], "change": "Add reserve-aware retirement distinct from deletion/archive/deep sleep and block new mentoring below reserve while preserving duties/history.", "basis": ["U185"]},
+    {"id": "ERM-008", "targets": ["master:tests", "requirements-tests"], "change": "Add callback identity/unknown/threshold-skip, custody/fence/one-writer, pair-history/exhaustion, creation-UNKNOWN/capacity, independent-learning and retirement tests.", "basis": ["HIRC-SUCCESSOR-ONBOARDING-CANDIDATE-001-S2"]}
+  ],
+  "implementation_state": "SOURCE_INTEGRATION_AND_CONTRACT_SPECIFICATION_ONLY; no Elder event, successor, timer, retirement or custody transfer follows"
+}
+

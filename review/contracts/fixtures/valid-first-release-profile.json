@@ -1,0 +1,41 @@
+{
+  "schema_version": "hirc.release-profile/1-candidate",
+  "profile_id": "release:first-local",
+  "version": "0.1",
+  "state": "READY_FOR_RELEASE",
+  "acceptance_object": "ENABLED_PROFILE",
+  "plan_edition_ref": "plan:1.1",
+  "foundation_manifest_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "goal_version_ref": "HIRC-GOAL-VERSION-002",
+  "source_set_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "enabled_capabilities": [
+    {
+      "capability_id": "capability:local-work-loop",
+      "route_ref": "route:local",
+      "effect_ceiling_ref": "ceiling:synthetic-local",
+      "control_refs": ["control:core"],
+      "test_refs": ["test:local-loop"]
+    }
+  ],
+  "disabled_capabilities": [
+    {
+      "capability_id": "capability:bridge",
+      "state": "UNAVAILABLE",
+      "enforcement_refs": ["enforcement:no-bridge-listener"],
+      "listener_absence_verified": true,
+      "scheduler_absence_verified": true,
+      "credential_absence_verified": true,
+      "grant_absence_verified": true
+    }
+  ],
+  "core_controls": [
+    {"control_id": "control:core", "state": "PASS", "evidence_refs": ["evidence:core"]}
+  ],
+  "tests": [
+    {"test_id": "test:local-loop", "applicability": "REQUIRED", "state": "PASS", "evidence_refs": ["evidence:test"]},
+    {"test_id": "test:bridge-live", "applicability": "NOT_APPLICABLE", "state": "NOT_APPLICABLE", "evidence_refs": []}
+  ],
+  "residual_refs": ["residual:first-profile"],
+  "recovery_ref": "recovery:first-profile"
+}
+
