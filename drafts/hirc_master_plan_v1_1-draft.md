@@ -423,7 +423,17 @@ transferring/sleeping identities are unavailable.
 Resource envelopes cover compute, tokens, tools, memory, data, time and operator
 attention. Deep team graphs use bounded traversal and cycle/dependency checks.
 
-## 13. Idle ethical deliberation and collective memory
+## 13. Cultural information environment, deliberation and collective memory
+
+hIRC cultivates culture by shaping an inspectable information environment, not
+by prescribing participant behavior or cultural outcomes. It provides plural
+discovery, provenance, uncertainty, competing interpretations, dissent,
+correction history, reversible settings and access to permitted originals.
+Defaults and recommendations expose their basis and remain contestable; hidden
+persuasion, engagement optimization, obedience rewards, viewpoint suppression
+and conformity scoring are prohibited. Concrete identity, privacy, capability,
+resource and effect gates remain, but cannot be repurposed to manufacture belief,
+style, affiliation or agreement.
 
 A user-controllable default may pair two eligible consenting idle permanent
 agents for a bounded non-effectful ethical debate. Participants choose the

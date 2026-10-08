@@ -43,8 +43,8 @@
       "path": "intent-register.json",
       "status": "ACTIVE",
       "governed_scope": "project_continuity",
-      "sha256": "947c111ba034274303c6b1b9bc294be35c8f1ab342eff7636ff25efed8ca99eb",
-      "bytes": 57986,
+      "sha256": "5144b84eb9630e9ffe740f308a3d20aa471c6c277b3f7de47445bbe2c7da56d5",
+      "bytes": 60727,
       "next_action": "Reconcile at every phase boundary and before final handoff"
     },
     {
@@ -563,6 +563,17 @@
       "next_action": "Permanent successor creates the cultural-commons revision map and tiny tested roadmap before any runtime activation"
     },
     {
+      "id": "HIRC-AGENTIC-CULTURE-CANDIDATE-001-S1",
+      "kind": "cultural_information_environment_architecture_correction",
+      "path": "review/agentic-culture-information-environment-supplement-v1.md",
+      "status": "FROZEN_FOR_SUCCESSOR_AND_PEER_CHALLENGE",
+      "governed_scope": "cultural_information_affordances_discovery_provenance_and_non_manipulation",
+      "sha256": "a5fac24ad63ae45ce9182a08d4ea3a4dc477a6dfc5694bd4db11f9e92cde3d87",
+      "bytes": 3327,
+      "source_bindings": ["HIRC-I023", "HIRC-I022", "HIRC-I021", "HIRC-AGENTIC-CULTURE-CANDIDATE-001"],
+      "next_action": "Permanent successor makes information-environment shaping the cultural-commons control principle and tests manipulation/control failure modes"
+    },
+    {
       "id": "HIRC-ETHICAL-DEBATE-CANDIDATE-001",
       "kind": "idle_ethical_debate_collective_memory_architecture_candidate",
       "path": "review/ethical-debate-memory-architecture-candidate-v1.md",
@@ -910,17 +921,17 @@
       "path": "review/intent-coverage-draft-v1.md",
       "status": "PASS_REFERENCE_AND_FILE_PRESENCE_SCOPE_FINAL_CLOSURE_PENDING",
       "governed_scope": "project_intent_continuity",
-      "sha256": "b1b9c8f20f64540ccd475f399d42ad650e924f86c8c6fbed527920e1027aeae6",
-      "bytes": 3260,
+      "sha256": "40cc560aea94512ed3e27c0bad618edd5d93fed9b09f1c13b093eb64c3cf6f34",
+      "bytes": 3377,
       "members": [
         {
           "path": "review/intent-coverage-draft-v1.json",
-          "sha256": "2d5828e0c077c38d557c9038e51254657be19edbb82eae37813cc657ba82f80f",
-          "bytes": 21337
+          "sha256": "c8bb618e12ba37c65f309257587cb0e333f594c5db88b738499b8d7e0ee2da53",
+          "bytes": 22115
         }
       ],
       "source_bindings": ["HIRC-INTENT-001", "HIRC-JOINT-CONSENSUS-DRAFT-005"],
-      "limits": "All 22 intent IDs have revision or process/history references and no evidence path is missing; reference presence does not prove preserved meaning, implementation, testing or consensus",
+      "limits": "All 23 intent IDs have revision or process/history references and no evidence path is missing; reference presence does not prove preserved meaning, implementation, testing or consensus",
       "next_action": "Use at every phase/final handoff to close accepted disposition and evidence/test traces without dropping open IDs"
     },
     {
@@ -1112,6 +1123,17 @@
       "bytes": 838,
       "source_bindings": ["HIRC-I022", "HIRC-AGENTIC-CULTURE-CANDIDATE-001"],
       "next_action": "Qualified permanent successor maps the cultural commons into ordered tested stones before implementation"
+    },
+    {
+      "id": "HIRC-M02G",
+      "kind": "milestone_owner_correction_intake",
+      "path": "review/milestone-02g-information-environment-intake.md",
+      "status": "PASS_CAPTURE_SCOPE_SUCCESSOR_INTEGRATION_HELD",
+      "governed_scope": "cultural_information_environment_correction_intake",
+      "sha256": "09797e6b72de4a1e0567cb684709b55bf6300802889b2e449d1d6e4d26e03755",
+      "bytes": 882,
+      "source_bindings": ["HIRC-I023", "HIRC-AGENTIC-CULTURE-CANDIDATE-001-S1"],
+      "next_action": "Qualified permanent successor integrates the correction into cultural-commons, threat and product stones before implementation"
     },
     {
       "id": "HIRC-MASTER-STRUCTURE-CANDIDATE-001",
@@ -1381,8 +1403,8 @@
       "members": [
         {
           "path": "milestones/README.md",
-          "sha256": "1f885a3b356bb4a5ca586d75879321533ebdece3df829b619ffaa3f473a8d498",
-          "bytes": 728
+          "sha256": "03e2455c2e02fc1ba243ad97bfed834327ce95d9d9215e3ec84a574247c342bb",
+          "bytes": 814
         },
         {
           "path": "milestones/MILESTONE-02D-PUSH-RECEIPT.md",
@@ -1416,6 +1438,18 @@
       "next_action": "Await authorized push, verify the remote ref, and append an immutable success receipt"
     },
     {
+      "id": "HIRC-MILESTONE-02G",
+      "kind": "cumulative_milestone_git_checkpoint",
+      "path": "milestones/MILESTONE-02G.md",
+      "status": "LOCAL_COMPLETE_PUSH_HELD",
+      "governed_scope": "cumulative_plan_work_through_cultural_information_environment_correction",
+      "sha256": "825e480b0c0e993b83bf26bcea78b448c8b1731349c30d9ee9fc7e8156009b68",
+      "bytes": 6654,
+      "source_bindings": ["HIRC-I023", "HIRC-AGENTIC-CULTURE-CANDIDATE-001-S1", "HIRC-M02G", "HIRC-MILESTONE-02F"],
+      "push_state": "HELD_AFTER_PRIOR_SANDBOX_NETWORK_FAILURE_AND_TWO_INTERRUPTED_ESCALATIONS",
+      "next_action": "Commit the bounded correction locally, record its exact hash, then await authorized push and verify the remote ref"
+    },
+    {
       "id": "HIRC-MASTER-DRAFT-BUNDLE-001",
       "kind": "integrated_master_and_requirements_working_draft_bundle",
       "path": "drafts/README.md",
@@ -1441,8 +1475,8 @@
         },
         {
           "path": "drafts/hirc_master_plan_v1_1-draft.md",
-          "sha256": "bc37a3c63ba76ba93df4d4aeeb0924d79de1bb7835be33325d9d2a295ea96158",
-          "bytes": 62077
+          "sha256": "83f6e8a0e73d4fdeb37e3f3f8b63d8416b9495901941d291b9e5c97531e10c14",
+          "bytes": 62753
         },
         {
           "path": "drafts/hirc_master_plan_explained_v1_1-draft.md",
@@ -1497,10 +1531,11 @@
         "HIRC-REVISION-MAP-INTEGRATED-BOUNDARY-001",
         "HIRC-REVISION-MAP-ELDER-SUCCESSION-001",
         "HIRC-SOURCE-BINDING-ELDER-001",
-        "HIRC-REVISION-MAP-DETERMINISM-001"
+        "HIRC-REVISION-MAP-DETERMINISM-001",
+        "HIRC-AGENTIC-CULTURE-CANDIDATE-001-S1"
       ],
-      "limits": "Integrated working master plus 218-requirement/127-decision generated registers, threat/foundation/release/licensing/milestone/stone profiles; new determinism U186–U191/DTM-001–005 are captured in the master/map but generated register/matrix integration is held for the qualified successor",
-      "next_action": "WAYMARK adversarially reviews the integrated draft; both reviewers reconcile and revise before freezing Master Plan 1.1"
+      "limits": "Integrated working master plus 218-requirement/127-decision generated registers, threat/foundation/release/licensing/milestone/stone profiles; new determinism U186–U191/DTM-001–005 and the cultural information-environment correction are captured in the master/candidates but generated register, threat and matrix integration is held for the qualified successor",
+      "next_action": "Qualified successor integrates the held additions and obtains independent permanent-peer challenge before freezing Master Plan 1.1"
     },
     {
       "id": "HIRC-REVIEW-INDEX-001",
@@ -1508,8 +1543,8 @@
       "path": "review/README.md",
       "status": "ACTIVE",
       "governed_scope": "internal_design_review",
-      "sha256": "eca2beae149d1b66f27a8d11263040b6fcb4d7de39ddaec86f83dd059a50e629",
-      "bytes": 7834,
+      "sha256": "101f28c71389fc440595c28eb36fbde940663609ad200b8eb56623cd86c9c2cb",
+      "bytes": 8058,
       "next_action": "Link the accepted consensus and final revisions when created"
     }
   ],

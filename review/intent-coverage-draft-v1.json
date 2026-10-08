@@ -4,7 +4,7 @@
   "status": "DRAFT_CURRENT_INTAKE_COVERAGE",
   "intent_register": {
     "path": "intent-register.json",
-    "sha256": "947c111ba034274303c6b1b9bc294be35c8f1ab342eff7636ff25efed8ca99eb"
+    "sha256": "5144b84eb9630e9ffe740f308a3d20aa471c6c277b3f7de47445bbe2c7da56d5"
   },
   "revision_maps": [
     {
@@ -15,7 +15,7 @@
     {
       "id": "HIRC-REVISION-MAP-DETERMINISM-001",
       "path": "review/revision-map-addendum-determinism-v1.json",
-      "sha256": "f49917141645fcda6dead42991be53d343d23bf156ff9acadfc78ca9a167e4fd"
+      "sha256": "3a35f35ad986fd6f1e1f8d9f42cf82b5770ae2647f3ac78ad6bc670b8f0b2a0b"
     },
     {
       "id": "HIRC-REVISION-MAP-ELDER-SUCCESSION-001",
@@ -494,6 +494,24 @@
       "missing_evidence_paths": [],
       "acceptance_check_count": 6,
       "next_action": "Permanent successor creates the cultural-commons revision map and tiny tested roadmap while preserving the current Elder hold and disabled runtime."
+    },
+    {
+      "intent_id": "HIRC-I023",
+      "status": "ACTIVE",
+      "kind": "confirmed_cultural_architecture_correction",
+      "coverage": "PROCESS_OR_HISTORY_MAPPED",
+      "revision_map_ids": [],
+      "process_or_history_artifact_ids": [
+        "HIRC-AGENTIC-CULTURE-CANDIDATE-001-S1",
+        "HIRC-M02G"
+      ],
+      "evidence_paths": [
+        "review/agentic-culture-information-environment-supplement-v1.md",
+        "review/milestone-02g-information-environment-intake.md"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 5,
+      "next_action": "Permanent successor makes information-environment shaping the controlling cultural-commons principle and tests it against manipulation and control failure modes."
     }
   ],
   "unmapped_intent_ids": [],
