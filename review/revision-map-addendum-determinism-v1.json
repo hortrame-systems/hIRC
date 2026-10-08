@@ -1,0 +1,22 @@
+{
+  "schema": "hirc.revision-map-addendum/1",
+  "id": "HIRC-REVISION-MAP-DETERMINISM-001",
+  "status": "FROZEN_FOR_SUCCESSOR_AND_PEER_CONSENSUS",
+  "source_intent": "HIRC-I021",
+  "new_user_requirements": [
+    {"id": "U186", "domain": "Determinism", "title": "Make every quality-preserving hIRC contract deterministic by default", "status": "REQUESTED_NOT_IMPLEMENTED", "phase": "P0", "acceptance": "Each component has a determinism disposition; exact local inputs/state/version reproduce the same contract result; quality/security/privacy/sovereignty/recovery regressions block adoption"},
+    {"id": "U187", "domain": "Determinism", "title": "Keep genuine judgment and external uncertainty explicit instead of faking deterministic certainty", "status": "REQUESTED_NOT_IMPLEMENTED", "phase": "P0", "acceptance": "Ambiguous/open-world cases record judgment/evidence/uncertainty and remain proposals; external outcomes remain requested/sent/accepted/observed; unknown never becomes zero/success/failure"},
+    {"id": "U188", "domain": "Determinism", "title": "Use deterministic typed gates around every stochastic model/provider proposal", "status": "REQUESTED_NOT_IMPLEMENTED", "phase": "P1", "acceptance": "No stochastic output supplies identity, privacy, consent, capability, effect, journal, release or recovery authority; exact route/input/output evidence is retained"},
+    {"id": "U189", "domain": "Determinism", "title": "Make randomized pairing, sampling and allocation auditable and replay-verifiable without enabling advance gaming", "status": "REQUESTED_NOT_IMPLEMENTED", "phase": "P3", "acceptance": "Versioned algorithm binds eligible set/state and committed unpredictable entropy/seed derivation; outcome replays after the fact; qualification/consent/independence remain separate"},
+    {"id": "U190", "domain": "Determinism", "title": "Bind deterministic build, migration, release, recovery and milestone gates to exact versions and evidence", "status": "REQUESTED_NOT_IMPLEMENTED", "phase": "P0", "acceptance": "Inputs/toolchain/schema/configuration/test vectors/output and recovery are reproducible; deterministic wrong semantics and rollback limitations remain visible"},
+    {"id": "U191", "domain": "Quality", "title": "Reject deterministic simplifications that reduce required quality", "status": "REQUESTED_NOT_IMPLEMENTED", "phase": "ALL", "acceptance": "False precision, bias/common mode, brittle/liveness, predictable-security, Goodhart, accessibility/usability and operator-burden tests pass before a judgment process is replaced by a deterministic rule"}
+  ],
+  "changes": [
+    {"id": "DTM-001", "targets": ["master:invariants", "foundation-kernel", "component-contracts"], "change": "Add DeterminismDisposition and quality-first deterministic-default rule to every component.", "basis": ["HIRC-I021", "U186", "U187"]},
+    {"id": "DTM-002", "targets": ["action-broker", "provider-adapters", "model-runtime"], "change": "Treat stochastic/model output as proposal while deterministic current-state gates own consequential effects and exact observations.", "basis": ["U188"]},
+    {"id": "DTM-003", "targets": ["debate-pairing", "competition-scheduler", "sampling"], "change": "Use committed-entropy/replay-verifiable selection over a frozen eligible set without converting randomness into independence/consent/authority.", "basis": ["U189"]},
+    {"id": "DTM-004", "targets": ["build", "migration", "release", "recovery", "milestone-gates"], "change": "Bind deterministic artifacts to exact input/tool/schema/config/test/output identities and preserve recovery/semantic limits.", "basis": ["U190"]},
+    {"id": "DTM-005", "targets": ["evaluation", "requirements-tests", "stepping-stone-protocol"], "change": "Add quality-regression and deterministic-error amplification cases before replacing contextual judgment.", "basis": ["U191", "HIRC-STEPPING-STONE-PROTOCOL-001"]}
+  ],
+  "implementation_state": "DESIGN_INTAKE_ONLY; successor must integrate into the next stepping-stone roadmap before implementation"
+}

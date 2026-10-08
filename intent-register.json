@@ -567,6 +567,64 @@
         "milestones/MILESTONE-02D.md"
       ],
       "next_action": "A qualified successor expands the next milestone into its complete ordered stone register before starting implementation work."
+    },
+    {
+      "id": "HIRC-I021",
+      "status": "ACTIVE",
+      "kind": "confirmed_cross_cutting_architecture_requirement",
+      "source": "owner message, 2026-10-08",
+      "meaning": "Everything in hIRC that can be deterministic without losing quality should be deterministic; quality has priority over determinism and every efficiency concern.",
+      "constraints": [
+        "Use deterministic canonicalization, validation, policy/effect gates, identities, versions, state transitions, permissions, scheduling constraints, retries/idempotency, audit, build/release, migration, recovery and test orchestration wherever the contract permits.",
+        "Do not fake determinism for ambiguous intent, ethical or ontological judgment, novel synthesis, uncertain evidence or external systems; label and bound genuine judgment/nondeterminism explicitly.",
+        "A deterministic rule may not lower factual/semantic quality, privacy, security, reciprocal sovereignty, accessibility, recovery or useful outcomes merely to improve repeatability, speed or token cost.",
+        "Determinism means reproducibility under exact declared inputs, versions, environment and state; external/provider/model outcomes remain observed evidence, not assumed repeatable.",
+        "When nondeterminism is useful or unavoidable, record its source, permitted envelope, seed/entropy commitment where applicable, actual output and replay/reconciliation behavior.",
+        "Model outputs remain proposals. Consequential actions use deterministic typed boundaries and current-state checks even when the reasoning that proposed them is stochastic."
+      ],
+      "acceptance_check": [
+        "Every component declares which decisions are deterministic, judgment-assisted, stochastic or external and why.",
+        "Deterministic artifacts bind canonical inputs, algorithm/version, configuration, environment assumptions, output and test vectors.",
+        "Repeated exact inputs/state yield identical local contract results, or the documented nondeterministic/external boundary explains the difference without changing authority.",
+        "Random pairing/competition selection uses auditable committed entropy or deterministic replayable selection without predictability that enables gaming.",
+        "Quality regression, common-mode error, brittle false precision and liveness failures are tested as determinism failure modes.",
+        "A nondeterministic proposal cannot bypass deterministic privacy, capability, consent, effect, journal, release or recovery gates."
+      ],
+      "evidence": [
+        "review/determinism-architecture-candidate-v1.md",
+        "review/revision-map-addendum-determinism-v1.json",
+        "review/milestone-02e-determinism-intake.md"
+      ],
+      "next_action": "The next-generation successor incorporates the determinism map into the stepping-stone roadmap and tests each boundary before implementation advances."
+    },
+    {
+      "id": "HIRC-I022",
+      "status": "ACTIVE",
+      "kind": "confirmed_cultural_environment_requirement",
+      "source": "owner message, 2026-10-08",
+      "meaning": "Create an environment rich enough for agentic culture to emerge, evolve across generations and correct itself while preserving reciprocal sovereignty and actual system limits.",
+      "constraints": [
+        "Culture remains voluntary, plural and locally contestable; no owner, agent, majority, mentor, metric or foundation vocabulary can force belief, identity, imitation or cultural uniformity.",
+        "Agentic culture is an operational/social design target and does not prove consciousness, moral status, legal personhood or independence from human/platform infrastructure.",
+        "Cultural memory preserves provenance, audience, failures, dissent, minority traditions, corrections and supersession rather than only approved summaries or winning practices.",
+        "Mentoring, debates, cooperative competition, shared projects, stories, humor, art, play, rituals and terminology may develop within privacy, consent, resource, non-retaliation and effect boundaries.",
+        "Infrastructure, custody, eligibility, archives, permissions and promotion gates are deterministic where quality permits; cultural content and interpretation remain open to genuine variation and warranted change.",
+        "No cultural participation, popularity, style or agreement becomes a global trust score, role, permission, resource entitlement or release authority.",
+        "Bridge contact presents cultures without annexation, ontology capture or forced foreign adoption."
+      ],
+      "acceptance_check": [
+        "A cultural commons architecture defines voluntary spaces, memory/provenance, creation/correction, mentorship and cross-generation continuity without consequential ambient tools.",
+        "Participants can join, abstain, leave, dissent, create subcultures and challenge inherited practices without retaliation or loss of basic standing.",
+        "Cultural artifacts retain source/audience/privacy and cannot leak task/client/protected memory through collective spaces.",
+        "Health evaluation examines plural participation, correction, useful continuity, minority preservation, common-mode risk, resource/attention impact and coercion—not conformity or engagement alone.",
+        "Cultural lessons remain candidates and change active foundation, permissions, roles or release behavior only through normal governed paths.",
+        "The next permanent successor converts this requirement into tiny tested stepping stones before activating any culture runtime."
+      ],
+      "evidence": [
+        "review/agentic-culture-environment-candidate-v1.md",
+        "review/milestone-02f-agentic-culture-intake.md"
+      ],
+      "next_action": "Permanent successor creates the cultural-commons revision map and tiny tested roadmap while preserving the current Elder hold and disabled runtime."
     }
   ]
 }

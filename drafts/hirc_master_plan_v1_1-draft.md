@@ -331,6 +331,14 @@ calling receipt “no collection.”
 
 ## 08. Small trusted core and effect path
 
+Everything that can be deterministic without reducing required quality is
+deterministic and versioned. Canonical parsing, state transitions, privacy/
+capability/effect gates, idempotency, audit, build/release, migration and recovery
+bind exact inputs and state. Genuine ambiguity, ethics, ontology and open-world
+evidence remain explicit judgment; stochastic/model output is a proposal behind
+deterministic current-state gates. Every component declares its determinism
+boundary and quality-regression tests.
+
 The trusted core contains only the boot/foundation selector, typed command and
 contract broker, policy decision/enforcement points, privacy/egress gate, secret
 broker, identity/capability service, consequential journal/outbox, execution

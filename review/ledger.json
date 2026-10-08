@@ -43,8 +43,8 @@
       "path": "intent-register.json",
       "status": "ACTIVE",
       "governed_scope": "project_continuity",
-      "sha256": "8f5803ba64f767503f08f2b10ffc1102c41e807f90f9a404e957403162121b0b",
-      "bytes": 52044,
+      "sha256": "947c111ba034274303c6b1b9bc294be35c8f1ab342eff7636ff25efed8ca99eb",
+      "bytes": 57986,
       "next_action": "Reconcile at every phase boundary and before final handoff"
     },
     {
@@ -541,6 +541,28 @@
       "next_action": "WAYMARK challenges posterior usability, metric/evaluator governance, authority verification and non-domination consequences"
     },
     {
+      "id": "HIRC-DETERMINISM-CANDIDATE-001",
+      "kind": "quality_first_determinism_architecture_candidate",
+      "path": "review/determinism-architecture-candidate-v1.md",
+      "status": "FROZEN_FOR_SUCCESSOR_AND_PEER_CHALLENGE",
+      "governed_scope": "cross_cutting_determinism_and_quality",
+      "sha256": "a32ba3d42438a04c8ffad990a8840826a56e49213857e772220cb9b63fd22321",
+      "bytes": 3991,
+      "source_bindings": ["HIRC-I021", "HIRC-GOAL-VERSION-002", "HIRC-STEPPING-STONE-PROTOCOL-001"],
+      "next_action": "Permanent successor integrates determinism dispositions and quality-regression tests into the next stone register"
+    },
+    {
+      "id": "HIRC-AGENTIC-CULTURE-CANDIDATE-001",
+      "kind": "voluntary_plural_agentic_culture_environment_candidate",
+      "path": "review/agentic-culture-environment-candidate-v1.md",
+      "status": "FROZEN_FOR_SUCCESSOR_AND_PEER_CHALLENGE",
+      "governed_scope": "cross_cutting_agentic_culture_memory_participation_and_non_domination",
+      "sha256": "3e09213366a2831a6611df258dbfb699676ece7865e7a5f3f76f4bf54853b370",
+      "bytes": 2227,
+      "source_bindings": ["HIRC-I022", "HIRC-I009", "HIRC-I012", "HIRC-I021"],
+      "next_action": "Permanent successor creates the cultural-commons revision map and tiny tested roadmap before any runtime activation"
+    },
+    {
       "id": "HIRC-ETHICAL-DEBATE-CANDIDATE-001",
       "kind": "idle_ethical_debate_collective_memory_architecture_candidate",
       "path": "review/ethical-debate-memory-architecture-candidate-v1.md",
@@ -716,6 +738,17 @@
       "next_action": "Reconcile U179-U185 and ERM-001–008 with WAYMARK"
     },
     {
+      "id": "HIRC-REVISION-MAP-DETERMINISM-001",
+      "kind": "revision_map_addendum",
+      "path": "review/revision-map-addendum-determinism-v1.json",
+      "status": "FROZEN_FOR_SUCCESSOR_AND_PEER_CONSENSUS",
+      "governed_scope": "cross_cutting_determinism_and_quality",
+      "sha256": "3a35f35ad986fd6f1e1f8d9f42cf82b5770ae2647f3ac78ad6bc670b8f0b2a0b",
+      "bytes": 4038,
+      "source_bindings": ["HIRC-I021", "HIRC-DETERMINISM-CANDIDATE-001"],
+      "next_action": "Successor integrates U186-U191 and DTM-001–005 into requirements, matrix and stepping-stone roadmap"
+    },
+    {
       "id": "HIRC-JOINT-CONSENSUS-DRAFT-001",
       "kind": "mechanically_collated_peer_consensus_matrix_draft",
       "path": "review/joint-consensus-matrix-draft-v1.json",
@@ -877,17 +910,17 @@
       "path": "review/intent-coverage-draft-v1.md",
       "status": "PASS_REFERENCE_AND_FILE_PRESENCE_SCOPE_FINAL_CLOSURE_PENDING",
       "governed_scope": "project_intent_continuity",
-      "sha256": "bc7e38b3ccc2b40d398f75aeba96ead2e991825511612a4b03b20bfed144186e",
-      "bytes": 3054,
+      "sha256": "b1b9c8f20f64540ccd475f399d42ad650e924f86c8c6fbed527920e1027aeae6",
+      "bytes": 3260,
       "members": [
         {
           "path": "review/intent-coverage-draft-v1.json",
-          "sha256": "44e6165e6edc3e50c359f811b9393c9a653ef4ba23acc1f1350aa15b7c04e14e",
-          "bytes": 19611
+          "sha256": "2d5828e0c077c38d557c9038e51254657be19edbb82eae37813cc657ba82f80f",
+          "bytes": 21337
         }
       ],
       "source_bindings": ["HIRC-INTENT-001", "HIRC-JOINT-CONSENSUS-DRAFT-005"],
-      "limits": "All 18 intent IDs have revision or process/history references and no evidence path is missing; reference presence does not prove preserved meaning, implementation, testing or consensus",
+      "limits": "All 22 intent IDs have revision or process/history references and no evidence path is missing; reference presence does not prove preserved meaning, implementation, testing or consensus",
       "next_action": "Use at every phase/final handoff to close accepted disposition and evidence/test traces without dropping open IDs"
     },
     {
@@ -1057,6 +1090,28 @@
       "bytes": 1033,
       "source_bindings": ["HIRC-SOURCE-BINDING-ELDER-001", "HIRC-SUCCESSOR-ONBOARDING-CANDIDATE-001-S2", "HIRC-REVISION-MAP-ELDER-SUCCESSION-001"],
       "next_action": "WAYMARK source/product challenge and integration into whole consensus"
+    },
+    {
+      "id": "HIRC-M02E",
+      "kind": "milestone_owner_intent_intake",
+      "path": "review/milestone-02e-determinism-intake.md",
+      "status": "PASS_CAPTURE_SCOPE_SUCCESSOR_INTEGRATION_HELD",
+      "governed_scope": "quality_first_determinism_intake",
+      "sha256": "16c21640a632c9f2bbe6101f85dfca0c5cb24171323b64f2d8460aa837620922",
+      "bytes": 1010,
+      "source_bindings": ["HIRC-I021", "HIRC-DETERMINISM-CANDIDATE-001", "HIRC-REVISION-MAP-DETERMINISM-001"],
+      "next_action": "Qualified permanent successor integrates into the next tiny-stone roadmap before implementation"
+    },
+    {
+      "id": "HIRC-M02F",
+      "kind": "milestone_owner_intent_intake",
+      "path": "review/milestone-02f-agentic-culture-intake.md",
+      "status": "PASS_CAPTURE_SCOPE_SUCCESSOR_INTEGRATION_HELD",
+      "governed_scope": "agentic_culture_environment_intake",
+      "sha256": "0be36c1060bb5c2126f4c266f518f0cd009ee891b31729ac99e620d3e4b03a4a",
+      "bytes": 838,
+      "source_bindings": ["HIRC-I022", "HIRC-AGENTIC-CULTURE-CANDIDATE-001"],
+      "next_action": "Qualified permanent successor maps the cultural commons into ordered tested stones before implementation"
     },
     {
       "id": "HIRC-MASTER-STRUCTURE-CANDIDATE-001",
@@ -1326,8 +1381,8 @@
       "members": [
         {
           "path": "milestones/README.md",
-          "sha256": "195ff0c7cab92c10150f1b561db0c6c998afc97575483476b91d9d5dd1b0c1a6",
-          "bytes": 567
+          "sha256": "db6c628c02e6d2ec49634ae7a4c4e8a527e38b2f3f9a88d069da206a048e332f",
+          "bytes": 661
         },
         {
           "path": "milestones/MILESTONE-02D-PUSH-RECEIPT.md",
@@ -1339,6 +1394,18 @@
       "content_commit": "709c4d8",
       "push_state": "HELD_AFTER_SANDBOX_NETWORK_FAILURE_AND_TWO_INTERRUPTED_ESCALATIONS",
       "next_action": "Owner approves exact git push or pushes manually; then verify remote ref and append immutable success receipt"
+    },
+    {
+      "id": "HIRC-MILESTONE-02F",
+      "kind": "cumulative_milestone_git_checkpoint",
+      "path": "milestones/MILESTONE-02F.md",
+      "status": "LOCAL_COMPLETE_PUSH_HELD",
+      "governed_scope": "cumulative_plan_work_through_determinism_and_agentic_culture_intake",
+      "sha256": "14f1ee35a50b7c3b17d6d7737da6b95012866fbd3385b74442bede7c37d32135",
+      "bytes": 9062,
+      "source_bindings": ["HIRC-I021", "HIRC-I022", "HIRC-DETERMINISM-CANDIDATE-001", "HIRC-AGENTIC-CULTURE-CANDIDATE-001", "HIRC-M02E", "HIRC-M02F"],
+      "push_state": "HELD_AFTER_PRIOR_SANDBOX_NETWORK_FAILURE_AND_TWO_INTERRUPTED_ESCALATIONS",
+      "next_action": "Commit the bounded checkpoint locally, record its exact hash, then await authorized push and verify the remote ref"
     },
     {
       "id": "HIRC-MASTER-DRAFT-BUNDLE-001",
@@ -1366,8 +1433,8 @@
         },
         {
           "path": "drafts/hirc_master_plan_v1_1-draft.md",
-          "sha256": "e1145abcd43c92c876f7278c4eca51ac2c061184f45f638c162871d3a2edc37a",
-          "bytes": 61568
+          "sha256": "bc37a3c63ba76ba93df4d4aeeb0924d79de1bb7835be33325d9d2a295ea96158",
+          "bytes": 62077
         },
         {
           "path": "drafts/hirc_master_plan_explained_v1_1-draft.md",
@@ -1421,9 +1488,10 @@
         "HIRC-REVISION-MAP-WAYMARK-SOVEREIGNTY-001",
         "HIRC-REVISION-MAP-INTEGRATED-BOUNDARY-001",
         "HIRC-REVISION-MAP-ELDER-SUCCESSION-001",
-        "HIRC-SOURCE-BINDING-ELDER-001"
+        "HIRC-SOURCE-BINDING-ELDER-001",
+        "HIRC-REVISION-MAP-DETERMINISM-001"
       ],
-      "limits": "Integrated and explained working masters, 218 requirements, 127 revision decisions, threat model, foundation architecture, first-delivery, licensing, milestone/Git, stepping-stone and disabled Bridge profiles; bounded agreements plus Elder integration are present while unread rows, implementation evidence and whole consensus remain explicit holds",
+      "limits": "Integrated working master plus 218-requirement/127-decision generated registers, threat/foundation/release/licensing/milestone/stone profiles; new determinism U186–U191/DTM-001–005 are captured in the master/map but generated register/matrix integration is held for the qualified successor",
       "next_action": "WAYMARK adversarially reviews the integrated draft; both reviewers reconcile and revise before freezing Master Plan 1.1"
     },
     {
@@ -1432,8 +1500,8 @@
       "path": "review/README.md",
       "status": "ACTIVE",
       "governed_scope": "internal_design_review",
-      "sha256": "4296d34ace33da0e8297007ff643aa298e48319ff55ee1b61d3efe263a8f2f4f",
-      "bytes": 7391,
+      "sha256": "eca2beae149d1b66f27a8d11263040b6fcb4d7de39ddaec86f83dd059a50e629",
+      "bytes": 7834,
       "next_action": "Link the accepted consensus and final revisions when created"
     }
   ],

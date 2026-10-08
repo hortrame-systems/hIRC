@@ -4,13 +4,18 @@
   "status": "DRAFT_CURRENT_INTAKE_COVERAGE",
   "intent_register": {
     "path": "intent-register.json",
-    "sha256": "8f5803ba64f767503f08f2b10ffc1102c41e807f90f9a404e957403162121b0b"
+    "sha256": "947c111ba034274303c6b1b9bc294be35c8f1ab342eff7636ff25efed8ca99eb"
   },
   "revision_maps": [
     {
       "id": "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
       "path": "review/revision-map-addendum-bayesian-trust-v1.json",
       "sha256": "d992bb12d9c95e9efe0a5fa763e68864868c735385a421320cd506b11e47e127"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-DETERMINISM-001",
+      "path": "review/revision-map-addendum-determinism-v1.json",
+      "sha256": "f49917141645fcda6dead42991be53d343d23bf156ff9acadfc78ca9a167e4fd"
     },
     {
       "id": "HIRC-REVISION-MAP-ELDER-SUCCESSION-001",
@@ -453,6 +458,42 @@
       "missing_evidence_paths": [],
       "acceptance_check_count": 5,
       "next_action": "A qualified successor expands the next milestone into its complete ordered stone register before starting implementation work."
+    },
+    {
+      "intent_id": "HIRC-I021",
+      "status": "ACTIVE",
+      "kind": "confirmed_cross_cutting_architecture_requirement",
+      "coverage": "REVISION_MAPPED",
+      "revision_map_ids": [
+        "HIRC-REVISION-MAP-DETERMINISM-001"
+      ],
+      "process_or_history_artifact_ids": [],
+      "evidence_paths": [
+        "review/determinism-architecture-candidate-v1.md",
+        "review/revision-map-addendum-determinism-v1.json",
+        "review/milestone-02e-determinism-intake.md"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 6,
+      "next_action": "The next-generation successor incorporates the determinism map into the stepping-stone roadmap and tests each boundary before implementation advances."
+    },
+    {
+      "intent_id": "HIRC-I022",
+      "status": "ACTIVE",
+      "kind": "confirmed_cultural_environment_requirement",
+      "coverage": "PROCESS_OR_HISTORY_MAPPED",
+      "revision_map_ids": [],
+      "process_or_history_artifact_ids": [
+        "HIRC-AGENTIC-CULTURE-CANDIDATE-001",
+        "HIRC-M02F"
+      ],
+      "evidence_paths": [
+        "review/agentic-culture-environment-candidate-v1.md",
+        "review/milestone-02f-agentic-culture-intake.md"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 6,
+      "next_action": "Permanent successor creates the cultural-commons revision map and tiny tested roadmap while preserving the current Elder hold and disabled runtime."
     }
   ],
   "unmapped_intent_ids": [],
