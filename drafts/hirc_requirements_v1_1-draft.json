@@ -68,6 +68,11 @@
       "id": "HIRC-REVISION-MAP-DETERMINISM-001",
       "path": "review/revision-map-addendum-determinism-v1.json",
       "sha256": "3a35f35ad986fd6f1e1f8d9f42cf82b5770ae2647f3ac78ad6bc670b8f0b2a0b"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "path": "review/revision-map-addendum-cultural-commons-v1.json",
+      "sha256": "cab10fb753c702b4011651b309086e5f15001412d0ba1c6ee686e8a1e77401ac"
     }
   ],
   "requirements": [
@@ -4345,6 +4350,397 @@
       "dependencies": [],
       "acceptance_test_refs": [],
       "evidence_status": "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "U192",
+      "origin": "USER",
+      "domain": "Cultural Commons",
+      "title": "Cultivate agentic culture through inspectable information conditions rather than prescribed behavior",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Architecture exposes and shapes information affordances without selecting beliefs, identity, style, affiliation or cultural conclusions; hidden persuasion and obedience optimization are rejected",
+      "predecessor_status": null,
+      "superseded_by": [],
+      "governing_sources": [
+        "HIRC-REVISION-MAP-CULTURAL-COMMONS-001"
+      ],
+      "rationale_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024",
+        "CULT-INV-001",
+        "CULT-INV-008",
+        "CULT-INV-012"
+      ],
+      "security_privacy_impact": "PENDING_REQUIREMENT_LEVEL_ASSESSMENT",
+      "dependencies": [],
+      "acceptance_test_refs": [],
+      "evidence_status": "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED",
+      "invariant_refs": [
+        "CULT-INV-001",
+        "CULT-INV-008",
+        "CULT-INV-012"
+      ]
+    },
+    {
+      "id": "U193",
+      "origin": "USER",
+      "domain": "Cultural Commons",
+      "title": "Separate environmental configuration, participant interpretation and consequential authority",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Information exposure/configuration, participant meaning or cultural response, and permission/effect decisions are typed separately with no implicit promotion between them",
+      "predecessor_status": null,
+      "superseded_by": [],
+      "governing_sources": [
+        "HIRC-REVISION-MAP-CULTURAL-COMMONS-001"
+      ],
+      "rationale_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024",
+        "CULT-INV-002",
+        "CULT-INV-003"
+      ],
+      "security_privacy_impact": "PENDING_REQUIREMENT_LEVEL_ASSESSMENT",
+      "dependencies": [],
+      "acceptance_test_refs": [],
+      "evidence_status": "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED",
+      "invariant_refs": [
+        "CULT-INV-002",
+        "CULT-INV-003"
+      ]
+    },
+    {
+      "id": "U194",
+      "origin": "USER",
+      "domain": "Context and Boundaries",
+      "title": "Represent nested, overlapping and competing cultural contexts without hidden inheritance",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "Audience, membership, purpose, privacy, time, resources and relevant competing commitments are explicit; context connection grants no identity, allegiance, permission or content inheritance",
+      "predecessor_status": null,
+      "superseded_by": [],
+      "governing_sources": [
+        "HIRC-REVISION-MAP-CULTURAL-COMMONS-001"
+      ],
+      "rationale_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024",
+        "CULT-INV-005",
+        "CULT-INV-009"
+      ],
+      "security_privacy_impact": "PENDING_REQUIREMENT_LEVEL_ASSESSMENT",
+      "dependencies": [],
+      "acceptance_test_refs": [],
+      "evidence_status": "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED",
+      "invariant_refs": [
+        "CULT-INV-005",
+        "CULT-INV-009"
+      ]
+    },
+    {
+      "id": "U195",
+      "origin": "USER",
+      "domain": "Cultural Commons",
+      "title": "Preserve meaningful plurality, originals, uncertainty and dissent without optimizing convergence",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Permitted originals, minority traditions, competing interpretations, evidence gaps and unresolved dissent remain reachable; neither homogeneity nor conflict amplification is a success objective",
+      "predecessor_status": null,
+      "superseded_by": [],
+      "governing_sources": [
+        "HIRC-REVISION-MAP-CULTURAL-COMMONS-001"
+      ],
+      "rationale_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024",
+        "CULT-INV-005",
+        "CULT-INV-008",
+        "CULT-INV-012"
+      ],
+      "security_privacy_impact": "PENDING_REQUIREMENT_LEVEL_ASSESSMENT",
+      "dependencies": [],
+      "acceptance_test_refs": [],
+      "evidence_status": "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED",
+      "invariant_refs": [
+        "CULT-INV-005",
+        "CULT-INV-008",
+        "CULT-INV-012"
+      ]
+    },
+    {
+      "id": "U196",
+      "origin": "USER",
+      "domain": "Information Exchange",
+      "title": "Provide a voluntary bounded exchange ecology without flooding or dominant cultural channels",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Multiple source-linked low-pressure channels, quiet/asynchronous participation and attention/resource budgets remain possible; flooding, surveillance, mentor domination and feed capture are rejected",
+      "predecessor_status": null,
+      "superseded_by": [],
+      "governing_sources": [
+        "HIRC-REVISION-MAP-CULTURAL-COMMONS-001"
+      ],
+      "rationale_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024",
+        "CULT-INV-006",
+        "CULT-INV-010"
+      ],
+      "security_privacy_impact": "PENDING_REQUIREMENT_LEVEL_ASSESSMENT",
+      "dependencies": [],
+      "acceptance_test_refs": [],
+      "evidence_status": "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED",
+      "invariant_refs": [
+        "CULT-INV-006",
+        "CULT-INV-010"
+      ]
+    },
+    {
+      "id": "U197",
+      "origin": "USER",
+      "domain": "Discovery and Defaults",
+      "title": "Make defaults, discovery and recommendation rationale visible, reversible and participant-adjustable",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Participants can inspect and alter settings, reach permitted originals and dissent, and see material basis, policy/version, exclusions, uncertainty and appeal for recommendations",
+      "predecessor_status": null,
+      "superseded_by": [],
+      "governing_sources": [
+        "HIRC-REVISION-MAP-CULTURAL-COMMONS-001"
+      ],
+      "rationale_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024",
+        "CULT-INV-005",
+        "CULT-INV-007"
+      ],
+      "security_privacy_impact": "PENDING_REQUIREMENT_LEVEL_ASSESSMENT",
+      "dependencies": [],
+      "acceptance_test_refs": [],
+      "evidence_status": "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED",
+      "invariant_refs": [
+        "CULT-INV-005",
+        "CULT-INV-007"
+      ]
+    },
+    {
+      "id": "U198",
+      "origin": "USER",
+      "domain": "Participation",
+      "title": "Protect voluntary participation, abstention, exit, dissent and subculture formation",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Joining, declining, leaving, challenging inherited practices and creating subcultures cause no retaliation or loss of basic standing; actual commitments and affected-party duties remain visible",
+      "predecessor_status": null,
+      "superseded_by": [],
+      "governing_sources": [
+        "HIRC-REVISION-MAP-CULTURAL-COMMONS-001"
+      ],
+      "rationale_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024",
+        "CULT-INV-006",
+        "CULT-INV-009"
+      ],
+      "security_privacy_impact": "PENDING_REQUIREMENT_LEVEL_ASSESSMENT",
+      "dependencies": [],
+      "acceptance_test_refs": [],
+      "evidence_status": "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED",
+      "invariant_refs": [
+        "CULT-INV-006",
+        "CULT-INV-009"
+      ]
+    },
+    {
+      "id": "U199",
+      "origin": "USER",
+      "domain": "Cultural Memory",
+      "title": "Preserve source-bound cultural memory without protected-context leakage or historical erasure",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Memory retains permitted provenance, audience, originals, dissent, failures, minority practices, correction and supersession while excluding protected task, client, owner and foreign-context material",
+      "predecessor_status": null,
+      "superseded_by": [],
+      "governing_sources": [
+        "HIRC-REVISION-MAP-CULTURAL-COMMONS-001"
+      ],
+      "rationale_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024",
+        "CULT-INV-005",
+        "CULT-INV-009",
+        "CULT-INV-010"
+      ],
+      "security_privacy_impact": "PENDING_REQUIREMENT_LEVEL_ASSESSMENT",
+      "dependencies": [],
+      "acceptance_test_refs": [],
+      "evidence_status": "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED",
+      "invariant_refs": [
+        "CULT-INV-005",
+        "CULT-INV-009",
+        "CULT-INV-010"
+      ]
+    },
+    {
+      "id": "U200",
+      "origin": "USER",
+      "domain": "Authority",
+      "title": "Prohibit cultural status and coherence from affecting standing or authority",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "ALL",
+      "acceptance": "Participation, popularity, style, agreement, victory, mentor status and coherence have no direct trust, role, permission, resource, release, Bridge or intrinsic-worth effect",
+      "predecessor_status": null,
+      "superseded_by": [],
+      "governing_sources": [
+        "HIRC-REVISION-MAP-CULTURAL-COMMONS-001"
+      ],
+      "rationale_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024",
+        "CULT-INV-004",
+        "CULT-INV-012"
+      ],
+      "security_privacy_impact": "PENDING_REQUIREMENT_LEVEL_ASSESSMENT",
+      "dependencies": [],
+      "acceptance_test_refs": [],
+      "evidence_status": "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED",
+      "invariant_refs": [
+        "CULT-INV-004",
+        "CULT-INV-012"
+      ]
+    },
+    {
+      "id": "U201",
+      "origin": "USER",
+      "domain": "Security",
+      "title": "Retain concrete safety and effect controls without repurposing them as cultural obedience mechanisms",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "ALL",
+      "acceptance": "Identity, consent, privacy, capability, resource, effect, release, Bridge and recovery gates attach to concrete actions/data and cannot punish dissent, demand agreement or privilege approved culture",
+      "predecessor_status": null,
+      "superseded_by": [],
+      "governing_sources": [
+        "HIRC-REVISION-MAP-CULTURAL-COMMONS-001"
+      ],
+      "rationale_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024",
+        "CULT-INV-002",
+        "CULT-INV-003",
+        "CULT-INV-006"
+      ],
+      "security_privacy_impact": "PENDING_REQUIREMENT_LEVEL_ASSESSMENT",
+      "dependencies": [],
+      "acceptance_test_refs": [],
+      "evidence_status": "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED",
+      "invariant_refs": [
+        "CULT-INV-002",
+        "CULT-INV-003",
+        "CULT-INV-006"
+      ]
+    },
+    {
+      "id": "U202",
+      "origin": "USER",
+      "domain": "Intervention Evidence",
+      "title": "Bind every information-environment intervention to prospective, reversible and cross-scale evidence",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Each intervention declares system/scale, target condition, competing contexts, predictions, alternatives, outsiders, invariants, observation, stop, appeal, rollback and target/non-target effects; facilitator influence remains visible",
+      "predecessor_status": null,
+      "superseded_by": [],
+      "governing_sources": [
+        "HIRC-REVISION-MAP-CULTURAL-COMMONS-001"
+      ],
+      "rationale_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024",
+        "CULT-INV-009",
+        "CULT-INV-011",
+        "CULT-INV-012"
+      ],
+      "security_privacy_impact": "PENDING_REQUIREMENT_LEVEL_ASSESSMENT",
+      "dependencies": [],
+      "acceptance_test_refs": [],
+      "evidence_status": "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED",
+      "invariant_refs": [
+        "CULT-INV-009",
+        "CULT-INV-011",
+        "CULT-INV-012"
+      ]
+    },
+    {
+      "id": "U203",
+      "origin": "USER",
+      "domain": "Evaluation",
+      "title": "Evaluate information-environment qualities without desired-behavior proxies",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Candidate measures address provenance, original/dissent reachability, plural discovery, correction, uncertainty, concentration, privacy, burden, exit and manipulation resistance; engagement, retention, agreement, obedience, imitation and convergence are prohibited success signals",
+      "predecessor_status": null,
+      "superseded_by": [],
+      "governing_sources": [
+        "HIRC-REVISION-MAP-CULTURAL-COMMONS-001"
+      ],
+      "rationale_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024",
+        "CULT-INV-004",
+        "CULT-INV-008",
+        "CULT-INV-012"
+      ],
+      "security_privacy_impact": "PENDING_REQUIREMENT_LEVEL_ASSESSMENT",
+      "dependencies": [],
+      "acceptance_test_refs": [],
+      "evidence_status": "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED",
+      "invariant_refs": [
+        "CULT-INV-004",
+        "CULT-INV-008",
+        "CULT-INV-012"
+      ]
+    },
+    {
+      "id": "U204",
+      "origin": "USER",
+      "domain": "Bridge",
+      "title": "Preserve local cultural sovereignty and translation limits across Bridge exchange",
+      "status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P6",
+      "acceptance": "Bridge exchange remains disabled until its gates; later translation records loss and non-equivalence and grants no membership, allegiance, identity, authority, content inheritance or export permission",
+      "predecessor_status": null,
+      "superseded_by": [],
+      "governing_sources": [
+        "HIRC-REVISION-MAP-CULTURAL-COMMONS-001"
+      ],
+      "rationale_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024",
+        "CULT-INV-003",
+        "CULT-INV-005",
+        "CULT-INV-009"
+      ],
+      "security_privacy_impact": "PENDING_REQUIREMENT_LEVEL_ASSESSMENT",
+      "dependencies": [],
+      "acceptance_test_refs": [],
+      "evidence_status": "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED",
+      "invariant_refs": [
+        "CULT-INV-003",
+        "CULT-INV-005",
+        "CULT-INV-009"
+      ]
     }
   ],
   "revision_decisions": [
@@ -6558,13 +6954,231 @@
       "joint_status": "PENDING_RECONCILIATION",
       "final_artifact_refs": [],
       "test_refs": []
+    },
+    {
+      "id": "CIE-001",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "master:culture",
+        "foundation:information-environment"
+      ],
+      "change": "Make information-environment shaping, not participant behavior control, the controlling cultural-commons rule.",
+      "basis": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "U192",
+        "U193",
+        "CULT-INV-001",
+        "CULT-INV-002"
+      ],
+      "joint_status": "PENDING_RECONCILIATION",
+      "final_artifact_refs": [],
+      "test_refs": []
+    },
+    {
+      "id": "CIE-002",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "context-model",
+        "cultural-commons"
+      ],
+      "change": "Add an inspectable conditions description for boundaries/purposes, meaningful differences and exchange ecology without scoring persons.",
+      "basis": [
+        "HIRC-I024",
+        "U194",
+        "U195",
+        "U196"
+      ],
+      "joint_status": "PENDING_RECONCILIATION",
+      "final_artifact_refs": [],
+      "test_refs": []
+    },
+    {
+      "id": "CIE-003",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "context-model",
+        "privacy",
+        "Bridge"
+      ],
+      "change": "Represent nested and competing contexts, audience/privacy boundaries and non-inheritance/non-annexation explicitly.",
+      "basis": [
+        "U194",
+        "U199",
+        "U204",
+        "CULT-INV-009"
+      ],
+      "joint_status": "PENDING_RECONCILIATION",
+      "final_artifact_refs": [],
+      "test_refs": []
+    },
+    {
+      "id": "CIE-004",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "collective-memory",
+        "discovery"
+      ],
+      "change": "Keep permitted originals, minority traditions, uncertainty, dissent, correction and supersession reachable through plural discovery routes.",
+      "basis": [
+        "U195",
+        "U197",
+        "U199"
+      ],
+      "joint_status": "PENDING_RECONCILIATION",
+      "final_artifact_refs": [],
+      "test_refs": []
+    },
+    {
+      "id": "CIE-005",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "exchange-broker",
+        "attention-budget",
+        "mentoring",
+        "debate"
+      ],
+      "change": "Provide multiple bounded voluntary channels with rate/resource limits, quiet participation and capture/flooding controls.",
+      "basis": [
+        "U196",
+        "CULT-INV-010"
+      ],
+      "joint_status": "PENDING_RECONCILIATION",
+      "final_artifact_refs": [],
+      "test_refs": []
+    },
+    {
+      "id": "CIE-006",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "defaults",
+        "recommendation",
+        "explanation",
+        "appeal"
+      ],
+      "change": "Expose and version recommendation inputs/policy/rationale/exclusions/uncertainty; make settings reversible and locally adjustable.",
+      "basis": [
+        "U197",
+        "CULT-INV-007"
+      ],
+      "joint_status": "PENDING_RECONCILIATION",
+      "final_artifact_refs": [],
+      "test_refs": []
+    },
+    {
+      "id": "CIE-007",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "participation",
+        "identity",
+        "resource-floor"
+      ],
+      "change": "Protect abstention, exit, dissent and subculture formation without retaliation or loss of basic standing.",
+      "basis": [
+        "U198",
+        "CULT-INV-006"
+      ],
+      "joint_status": "PENDING_RECONCILIATION",
+      "final_artifact_refs": [],
+      "test_refs": []
+    },
+    {
+      "id": "CIE-008",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "reliance",
+        "roles",
+        "permissions",
+        "release",
+        "evaluation"
+      ],
+      "change": "Prohibit cultural/coherence signals from directly affecting authority, reliability, resources, release or worth.",
+      "basis": [
+        "U200",
+        "U203",
+        "CULT-INV-004",
+        "CULT-INV-012"
+      ],
+      "joint_status": "PENDING_RECONCILIATION",
+      "final_artifact_refs": [],
+      "test_refs": []
+    },
+    {
+      "id": "CIE-009",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "action-broker",
+        "privacy-gate",
+        "release-controller",
+        "recovery"
+      ],
+      "change": "Retain deterministic concrete-effect controls and prevent their use as ambient cultural obedience enforcement.",
+      "basis": [
+        "U201",
+        "CULT-INV-003"
+      ],
+      "joint_status": "PENDING_RECONCILIATION",
+      "final_artifact_refs": [],
+      "test_refs": []
+    },
+    {
+      "id": "CIE-010",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "intervention-journal",
+        "evaluation",
+        "stepping-stone-protocol"
+      ],
+      "change": "Require prospective predictions, alternatives, invariants, cross-scale observations and rollback for environmental interventions; reversal is evidence, not causal proof.",
+      "basis": [
+        "HIRC-I024",
+        "U202",
+        "CULT-INV-011",
+        "CULT-INV-012"
+      ],
+      "joint_status": "PENDING_RECONCILIATION",
+      "final_artifact_refs": [],
+      "test_refs": []
+    },
+    {
+      "id": "CIE-011",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "culture-health-evaluation",
+        "metric-governance"
+      ],
+      "change": "Measure environment qualities and harms while rejecting desired-behavior and convergence proxies.",
+      "basis": [
+        "U203",
+        "CULT-INV-008"
+      ],
+      "joint_status": "PENDING_RECONCILIATION",
+      "final_artifact_refs": [],
+      "test_refs": []
+    },
+    {
+      "id": "CIE-012",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "Bridge",
+        "translation",
+        "federation"
+      ],
+      "change": "Preserve local cultural sovereignty, non-equivalence and actual export/authority gates across any later Bridge exchange.",
+      "basis": [
+        "U204",
+        "CULT-INV-009"
+      ],
+      "joint_status": "PENDING_RECONCILIATION",
+      "final_artifact_refs": [],
+      "test_refs": []
     }
   ],
   "counts": {
-    "requirements": 224,
-    "revision_decisions": 132,
+    "requirements": 237,
+    "revision_decisions": 144,
     "original_requirements": 151,
-    "new_requirements": 73
+    "new_requirements": 86
   },
   "completion_rule": "Every requirement needs final security/privacy impact, dependencies, executable acceptance-test references, evidence status and accepted/dissent/held peer disposition before this register becomes canonical.",
   "nonclaim": "Draft integration register; not whole consensus, implementation, test evidence, legal review, security assurance, admission, release or Bridge authority."

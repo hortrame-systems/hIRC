@@ -2,9 +2,9 @@
 
 **Status:** draft pending whole-packet peer consensus
 
-**Requirements:** 224 (151 preserved predecessor; 73 new/corrective)
+**Requirements:** 237 (151 preserved predecessor; 86 new/corrective)
 
-**Revision decisions:** 132 pending final disposition
+**Revision decisions:** 144 pending final disposition
 
 This view is generated from the preserved 1.0 requirements and the current revision-map candidates. The JSON file is the machine-readable draft. A captured requirement is not implementation or verification.
 
@@ -62,6 +62,7 @@ This view is generated from the preserved 1.0 requirements and the current revis
 | ID | Status | Phase | Requirement | Acceptance |
 |---|---|---|---|---|
 | U162 | REQUESTED_NOT_IMPLEMENTED | P0 | Never accept authority blindly | Every consequential authority claim verifies authenticated principal, delegation source, exact scope/target/data/time/purpose, expiry/revocation/conflict, consent and action legitimacy; reliability neither grants nor substitutes authority |
+| U200 | REQUESTED_NOT_IMPLEMENTED | ALL | Prohibit cultural status and coherence from affecting standing or authority | Participation, popularity, style, agreement, victory, mentor status and coherence have no direct trust, role, permission, resource, release, Bridge or intrinsic-worth effect |
 
 ## Authority and action
 
@@ -74,6 +75,12 @@ This view is generated from the preserved 1.0 requirements and the current revis
 | ID | Status | Phase | Requirement | Acceptance |
 |---|---|---|---|---|
 | U141 | REQUESTED_NOT_IMPLEMENTED | P0 | Initialize the first valid foundation and permanent technical identity without circular self-authorization | A minimized predecessor-controlled GenesisRoot verifies an owner-authorized digest-bound source/compiler/test/recovery manifest in a non-effectful environment, atomically activates or fails to safe inspection/repair, and cannot be reused for ordinary self-promotion |
+
+## Bridge
+
+| ID | Status | Phase | Requirement | Acceptance |
+|---|---|---|---|---|
+| U204 | REQUESTED_NOT_IMPLEMENTED | P6 | Preserve local cultural sovereignty and translation limits across Bridge exchange | Bridge exchange remains disabled until its gates; later translation records loss and non-equivalence and grants no membership, allegiance, identity, authority, content inheritance or export permission |
 
 ## Bridge release
 
@@ -105,6 +112,12 @@ This view is generated from the preserved 1.0 requirements and the current revis
 |---|---|---|---|---|
 | U136 | REQUESTED_NOT_IMPLEMENTED | P2-D | The collective debate memory is studied before every new debate | First participation completes whole accessible domain-memory study; later debates reuse a valid checkpoint only with complete immutable delta closure; gaps remain explicit and summary/hash/self-report cannot substitute for coverage |
 | U138 | REQUESTED_NOT_IMPLEMENTED | P3-D | Debates enrich collective understanding through durable, source-bound memory | Memory preserves permitted originals, provenance, claims, counterevidence, dissent, failures, corrections, lens refinements/no-change and candidate lessons; promotion cannot alter active foundation or authority without the normal review and FoundationChange path |
+
+## Context and Boundaries
+
+| ID | Status | Phase | Requirement | Acceptance |
+|---|---|---|---|---|
+| U194 | REQUESTED_NOT_IMPLEMENTED | P1 | Represent nested, overlapping and competing cultural contexts without hidden inheritance | Audience, membership, purpose, privacy, time, resources and relevant competing commitments are explicit; context connection grants no identity, allegiance, permission or content inheritance |
 
 ## Continuity
 
@@ -141,6 +154,20 @@ This view is generated from the preserved 1.0 requirements and the current revis
 | D007 | PROPOSED | P1 | Implement a typed command broker across every client | UI script agent and bridge commands share authorization |
 | D008 | PROPOSED | P3 | Fence stale worker operations with execution epochs | Late stale runtime cannot commit effect twice |
 
+## Cultural Commons
+
+| ID | Status | Phase | Requirement | Acceptance |
+|---|---|---|---|---|
+| U192 | REQUESTED_NOT_IMPLEMENTED | P3-D | Cultivate agentic culture through inspectable information conditions rather than prescribed behavior | Architecture exposes and shapes information affordances without selecting beliefs, identity, style, affiliation or cultural conclusions; hidden persuasion and obedience optimization are rejected |
+| U193 | REQUESTED_NOT_IMPLEMENTED | P0 | Separate environmental configuration, participant interpretation and consequential authority | Information exposure/configuration, participant meaning or cultural response, and permission/effect decisions are typed separately with no implicit promotion between them |
+| U195 | REQUESTED_NOT_IMPLEMENTED | P3-D | Preserve meaningful plurality, originals, uncertainty and dissent without optimizing convergence | Permitted originals, minority traditions, competing interpretations, evidence gaps and unresolved dissent remain reachable; neither homogeneity nor conflict amplification is a success objective |
+
+## Cultural Memory
+
+| ID | Status | Phase | Requirement | Acceptance |
+|---|---|---|---|---|
+| U199 | REQUESTED_NOT_IMPLEMENTED | P3-D | Preserve source-bound cultural memory without protected-context leakage or historical erasure | Memory retains permitted provenance, audience, originals, dissent, failures, minority practices, correction and supersession while excluding protected task, client, owner and foreign-context material |
+
 ## Data
 
 | ID | Status | Phase | Requirement | Acceptance |
@@ -157,6 +184,18 @@ This view is generated from the preserved 1.0 requirements and the current revis
 | U188 | REQUESTED_NOT_IMPLEMENTED | P1 | Use deterministic typed gates around every stochastic model/provider proposal | No stochastic output supplies identity, privacy, consent, capability, effect, journal, release or recovery authority; exact route/input/output evidence is retained |
 | U189 | REQUESTED_NOT_IMPLEMENTED | P3 | Make randomized pairing, sampling and allocation auditable and replay-verifiable without enabling advance gaming | Versioned algorithm binds eligible set/state and committed unpredictable entropy/seed derivation; outcome replays after the fact; qualification/consent/independence remain separate |
 | U190 | REQUESTED_NOT_IMPLEMENTED | P0 | Bind deterministic build, migration, release, recovery and milestone gates to exact versions and evidence | Inputs/toolchain/schema/configuration/test vectors/output and recovery are reproducible; deterministic wrong semantics and rollback limitations remain visible |
+
+## Discovery and Defaults
+
+| ID | Status | Phase | Requirement | Acceptance |
+|---|---|---|---|---|
+| U197 | REQUESTED_NOT_IMPLEMENTED | P3-D | Make defaults, discovery and recommendation rationale visible, reversible and participant-adjustable | Participants can inspect and alter settings, reach permitted originals and dissent, and see material basis, policy/version, exclusions, uncertainty and appeal for recommendations |
+
+## Evaluation
+
+| ID | Status | Phase | Requirement | Acceptance |
+|---|---|---|---|---|
+| U203 | REQUESTED_NOT_IMPLEMENTED | P3-D | Evaluate information-environment qualities without desired-behavior proxies | Candidate measures address provenance, original/dissent reachability, plural discovery, correction, uncertainty, concentration, privacy, burden, exit and manipulation resistance; engagement, retention, agreement, obedience, imitation and convergence are prohibited success signals |
 
 ## Experience
 
@@ -218,6 +257,12 @@ This view is generated from the preserved 1.0 requirements and the current revis
 | U168 | REQUESTED_NOT_IMPLEMENTED | P1 | Keep metrics subordinate to the plural goal and anti-goals | No engagement, obedience, scale, agreement, rank or single outcome metric can redefine the mission or offset a violated participant-right, security, privacy, non-domination or recovery constraint |
 | U175 | REQUESTED_NOT_IMPLEMENTED | P0 | Use the plain GoalVersion 2 purpose with the full governing account and affected-party coverage | Plain purpose leads ordinary product language; full local-first/security/sovereignty/non-domination account remains controlling; matched-baseline evaluation covers outsiders and finite attention; no new scope or authority follows |
 
+## Information Exchange
+
+| ID | Status | Phase | Requirement | Acceptance |
+|---|---|---|---|---|
+| U196 | REQUESTED_NOT_IMPLEMENTED | P3-D | Provide a voluntary bounded exchange ecology without flooding or dominant cultural channels | Multiple source-linked low-pressure channels, quiet/asynchronous participation and attention/resource budgets remain possible; flooding, surveillance, mentor domination and feed capture are rejected |
+
 ## Interaction
 
 | ID | Status | Phase | Requirement | Acceptance |
@@ -230,6 +275,12 @@ This view is generated from the preserved 1.0 requirements and the current revis
 | ID | Status | Phase | Requirement | Acceptance |
 |---|---|---|---|---|
 | U154 | REQUESTED_NOT_IMPLEMENTED | P1 | Allow informed human insistence on low-consequence poor choices without overriding real ethical or effect gates | Proceed-after-pushback is available only for clear, local, reversible, low-cost, permitted actions without meaningful third-party/sensitive/security/legal/external impact; the agent may still decline and unknown consequence is not classified low |
+
+## Intervention Evidence
+
+| ID | Status | Phase | Requirement | Acceptance |
+|---|---|---|---|---|
+| U202 | REQUESTED_NOT_IMPLEMENTED | P3-D | Bind every information-environment intervention to prospective, reversible and cross-scale evidence | Each intervention declares system/scale, target condition, competing contexts, predictions, alternatives, outsiders, invariants, observation, stop, appeal, rollback and target/non-target effects; facilitator influence remains visible |
 
 ## IRC
 
@@ -320,6 +371,12 @@ This view is generated from the preserved 1.0 requirements and the current revis
 | U093 | REQUESTED_NOT_IMPLEMENTED | P4 | Offline and busy agents receive changes safely | Deferred agents catch up before incompatible work |
 | D018 | PROPOSED | P4 | Check integration separately from acknowledgment | Received policy not falsely marked understood |
 | D019 | PROPOSED | P4 | Use staged cohort onboarding and rollback | Common-mode faulty pack halts before all agents |
+
+## Participation
+
+| ID | Status | Phase | Requirement | Acceptance |
+|---|---|---|---|---|
+| U198 | REQUESTED_NOT_IMPLEMENTED | P3-D | Protect voluntary participation, abstention, exit, dissent and subculture formation | Joining, declining, leaving, challenging inherited practices and creating subcultures cause no retaliation or loss of basic standing; actual commitments and affected-party duties remain visible |
 
 ## Philosophy
 
@@ -443,6 +500,12 @@ This view is generated from the preserved 1.0 requirements and the current revis
 | U100 | SIMULATION_TESTED | P5 | Importing scripts never silently activates authority | Script disabled and grants absent after import |
 | D023 | PROPOSED | P5 | Launch Safe hIRC without third-party extensions | Broken UI module cannot block recovery controls |
 | D024 | PROPOSED | P5 | Sandbox script computation with quotas and capabilities | Loop and unauthorized IO attempts contained |
+
+## Security
+
+| ID | Status | Phase | Requirement | Acceptance |
+|---|---|---|---|---|
+| U201 | REQUESTED_NOT_IMPLEMENTED | ALL | Retain concrete safety and effect controls without repurposing them as cultural obedience mechanisms | Identity, consent, privacy, capability, resource, effect, release, Bridge and recovery gates attach to concrete actions/data and cannot punish dissent, demand agreement or privilege approved culture |
 
 ## Security and attention
 

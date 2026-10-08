@@ -2,7 +2,7 @@
   "schema": "hirc.stone-register-validation/1",
   "register": {
     "path": "review/milestone-03-stone-register.json",
-    "sha256": "8e5d5d3880c02b76ad20248b574dbb7fbc9460eb211e5318e57d3edf50224cc6"
+    "sha256": "21ab25e30faaab4215729d94b0a33e1899b1bd9b34d8fb77e43447ce2004b2f5"
   },
   "validator": {
     "path": "review/fixtures/validate_milestone_03_stone_register.py",
@@ -45,7 +45,7 @@
       "name": "premature_active",
       "expected_error": "premature",
       "errors": [
-        "M03-S006:premature:M03-S005"
+        "M03-S008:premature:M03-S007"
       ],
       "rejected": true
     },

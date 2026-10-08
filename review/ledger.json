@@ -1465,15 +1465,15 @@
       "id": "HIRC-M03-STONE-REGISTER-001",
       "kind": "tiny_stone_dependency_register_and_deterministic_gate_evidence",
       "path": "review/milestone-03-stone-register.json",
-      "status": "STONE_004_PASS_S003_REVIEW_OPEN_S005_S007_READY",
+      "status": "STONE_005_PASS_S003_REVIEW_OPEN_S006_S007_READY",
       "governed_scope": "milestone_03_determinism_and_cultural_information_environment_integration",
-      "sha256": "8e5d5d3880c02b76ad20248b574dbb7fbc9460eb211e5318e57d3edf50224cc6",
-      "bytes": 24859,
+      "sha256": "21ab25e30faaab4215729d94b0a33e1899b1bd9b34d8fb77e43447ce2004b2f5",
+      "bytes": 24855,
       "members": [
         {
           "path": "review/milestone-03-stone-register.md",
-          "sha256": "e85db318e90e6c9e499a5ecac6dffd4a7110dbc9ff87033e8e4ea5a7dc4de746",
-          "bytes": 3871
+          "sha256": "628630df7036b0196690c039443f3b8900223fc7df98e111a8e9f8d21ce82626",
+          "bytes": 3867
         },
         {
           "path": "review/fixtures/validate_milestone_03_stone_register.py",
@@ -1482,13 +1482,13 @@
         },
         {
           "path": "review/fixtures/milestone-03-stone-register-validation.json",
-          "sha256": "556803eb650bf98ba3d75f88c00319a678baae54efd434d7fb371d45f6d1e777",
+          "sha256": "144f31e14717d571583f5b02dead7a9ece98955a282b62be669769c54b5043bd",
           "bytes": 2047
         }
       ],
       "source_bindings": ["HIRC-I019", "HIRC-I020", "HIRC-I021", "HIRC-I022", "HIRC-I023", "HIRC-I024", "HIRC-STEPPING-STONE-PROTOCOL-001"],
       "limits": "Stone 001 mechanically validates graph/field/gate invariants and six adverse mutations; it does not prove semantic correctness, implementation, peer consensus or runtime behavior",
-      "next_action": "Choose M03-S005 requirements integration or M03-S007 typed provenance contract; M03-S003 remains READY but cannot PASS without early independent review"
+      "next_action": "Choose M03-S006 cultural-decision matrix integration or M03-S007 typed provenance contract; M03-S003 remains READY but cannot PASS without early independent review"
     },
     {
       "id": "HIRC-MILESTONE-02D",
@@ -1580,10 +1580,10 @@
       "id": "HIRC-REQUIREMENTS-GENERATOR-001",
       "kind": "deterministic_requirements_generator_and_integration_validation",
       "path": "review/build_requirements_v1_1.py",
-      "status": "PASS_M03_S002_REQUIREMENTS_SCOPE_PEER_SEMANTIC_REVIEW_ATTACHED_TO_S003",
+      "status": "PASS_M03_S002_AND_S005_REQUIREMENTS_SCOPE_PEER_SEMANTIC_REVIEW_ATTACHED_TO_S003",
       "governed_scope": "deterministic_generation_of_requirements_machine_and_readable_pair",
-      "sha256": "ecb8c5a4030bb08bca831990e2fd5761f9d9a7123136473e173395b4b41c5728",
-      "bytes": 11396,
+      "sha256": "69cefaf12499f8e408ad0af9967bce0d07603f4924fddef2541aa6fd2dcec302",
+      "bytes": 11777,
       "members": [
         {
           "path": "review/fixtures/validate_determinism_requirements.py",
@@ -1594,16 +1594,26 @@
           "path": "review/fixtures/determinism-requirements-validation.json",
           "sha256": "ef450bc4987a5dc1b744edb95ca8387ee8d7966b4f89c86be42f21cb0b52975b",
           "bytes": 3061
+        },
+        {
+          "path": "review/fixtures/validate_cultural_requirements.py",
+          "sha256": "6118fd298d7aec363638d7ad91ef657374c07e6271546c268c34039a39952929",
+          "bytes": 9944
+        },
+        {
+          "path": "review/fixtures/cultural-requirements-validation.json",
+          "sha256": "f6cb6581b51857538b2a6b1f7640440ec5c3c7e9c4ed14a443257cef5a2b889f",
+          "bytes": 2663
         }
       ],
-      "source_bindings": ["HIRC-I021", "HIRC-REVISION-MAP-DETERMINISM-001", "HIRC-M03-STONE-REGISTER-001", "HIRC-SOURCE-001"],
+      "source_bindings": ["HIRC-I021", "HIRC-I022", "HIRC-I023", "HIRC-I024", "HIRC-REVISION-MAP-DETERMINISM-001", "HIRC-REVISION-MAP-CULTURAL-COMMONS-001", "HIRC-M03-STONE-REGISTER-001", "HIRC-SOURCE-001"],
       "before_ref": "73f7174e975ad881509f3e3035f7974b8ac98a3e",
       "before_requirements": 218,
-      "after_requirements": 224,
+      "after_requirements": 237,
       "before_revision_decisions": 127,
-      "after_revision_decisions": 132,
-      "limits": "Exact generator, unchanged predecessor semantics and machine/readable parity at planning scope; not implementation, whole peer consensus, runtime behavior or security validation",
-      "next_action": "M03-S003 integrates DTM-001–005 into the separate joint decision matrix and attaches independent security/semantic review before PASS"
+      "after_revision_decisions": 144,
+      "limits": "Exact determinism and cultural-map generation, unchanged predecessor semantics, separate I022/I023/I024 traces and machine/readable parity at planning scope; not implementation, whole peer consensus, runtime behavior or security validation",
+      "next_action": "M03-S003 and S006 integrate the pending decisions into the separate joint matrix; S003 still requires early independent security/semantic review before PASS"
     },
     {
       "id": "HIRC-MASTER-DRAFT-BUNDLE-001",
@@ -1656,13 +1666,13 @@
         },
         {
           "path": "drafts/hirc_requirements_v1_1-draft.json",
-          "sha256": "5740b33db4647199a9c5ac4a5303d209e145a22fc0d90400fa0d52e6f87af007",
-          "bytes": 239848
+          "sha256": "985f0b77a91a83cb5da3b895f44218368a4d28e957c5b716466ea18402e26f69",
+          "bytes": 260630
         },
         {
           "path": "drafts/hirc_requirements_v1_1-draft.md",
-          "sha256": "892a3a61534e0f109adbcc0476b0bbe947c414d374c28e9cafae11c7deec5fdb",
-          "bytes": 52889
+          "sha256": "79c6c558a1e87f92c681b978d7a26e4e471c4ae12b0a8041c5b39e1e09e34806",
+          "bytes": 58245
         },
         {
           "path": "drafts/hirc_threat_model_v1_0-draft.md",
@@ -1688,10 +1698,11 @@
         "HIRC-REVISION-MAP-ELDER-SUCCESSION-001",
         "HIRC-SOURCE-BINDING-ELDER-001",
         "HIRC-REVISION-MAP-DETERMINISM-001",
+        "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
         "HIRC-AGENTIC-CULTURE-CANDIDATE-001-S1"
       ],
-      "limits": "Integrated working master plus a 224-requirement/132-revision-decision generated requirements pair, while the separate joint decision matrix remains at 127 decisions pending M03-S003; threat/foundation/release/licensing/milestone/stone profiles remain drafts and cultural information-environment integration is still held by later stones",
-      "next_action": "Complete the separately gated matrix and cultural-information stones, then obtain independent permanent-peer challenge before freezing Master Plan 1.1"
+      "limits": "Integrated working master plus a 237-requirement/144-revision-decision generated requirements pair, while the separate joint decision matrix remains at 127 decisions pending M03-S003/S006; threat/foundation/release/licensing/milestone/stone profiles remain drafts and typed cultural contracts are held by later stones",
+      "next_action": "Complete the separately gated matrix and typed-contract stones, then obtain independent permanent-peer challenge before freezing Master Plan 1.1"
     },
     {
       "id": "HIRC-REVIEW-INDEX-001",
@@ -1699,8 +1710,8 @@
       "path": "review/README.md",
       "status": "ACTIVE",
       "governed_scope": "internal_design_review",
-      "sha256": "5a58bdedb2685600fe8d57856ad1c1962b763ea0ff61ecdfea789dbb4f640c7c",
-      "bytes": 8930,
+      "sha256": "be31a9db259eefd72f164ef5c2fcbbcf1f5cf643833be8522ad8061d7362d065",
+      "bytes": 9027,
       "next_action": "Link the accepted consensus and final revisions when created"
     }
   ],

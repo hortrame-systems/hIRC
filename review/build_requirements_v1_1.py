@@ -24,6 +24,7 @@ MAP_RELATIVE_PATHS = [
     "review/revision-map-addendum-integrated-boundary-v1.json",
     "review/revision-map-addendum-elder-succession-v1.json",
     "review/revision-map-addendum-determinism-v1.json",
+    "review/revision-map-addendum-cultural-commons-v1.json",
 ]
 
 
@@ -96,7 +97,8 @@ def build() -> dict:
             if item["id"] in seen_ids:
                 raise ValueError(f"duplicate requirement id: {item['id']}")
             seen_ids.add(item["id"])
-            requirements.append({
+            cultural = map_id == "HIRC-REVISION-MAP-CULTURAL-COMMONS-001"
+            requirement = {
                 "id": item["id"],
                 "origin": "USER",
                 "domain": item["domain"],
@@ -107,12 +109,15 @@ def build() -> dict:
                 "predecessor_status": None,
                 "superseded_by": [],
                 "governing_sources": [map_id],
-                "rationale_refs": [],
+                "rationale_refs": (list(payload.get("source_intents", [])) + list(item.get("invariant_refs", []))) if cultural else [],
                 "security_privacy_impact": "PENDING_REQUIREMENT_LEVEL_ASSESSMENT",
                 "dependencies": [],
                 "acceptance_test_refs": [],
                 "evidence_status": "BOUNDED_PEER_AGREEMENT_NOT_IMPLEMENTED" if bounded else "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED",
-            })
+            }
+            if cultural:
+                requirement["invariant_refs"] = list(item.get("invariant_refs", []))
+            requirements.append(requirement)
         for change in payload.get("changes", []):
             bounded = map_id in {
                 "HIRC-REVISION-MAP-WAYMARK-SOVEREIGNTY-001",

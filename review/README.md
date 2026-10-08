@@ -59,6 +59,7 @@ contains commands or scripts.
 - [Cultural-commons map validation](fixtures/cultural-commons-map-validation.json)
 - [Deterministic requirements generator](build_requirements_v1_1.py)
 - [Determinism requirements integration validation](fixtures/determinism-requirements-validation.json)
+- [Cultural requirements integration validation](fixtures/cultural-requirements-validation.json)
 - [Joint consensus decision-matrix draft 1 — preserved predecessor](joint-consensus-matrix-draft-v1.json)
 - [Joint consensus decision-matrix draft 2 — preserved predecessor](joint-consensus-matrix-draft-v2.json)
 - [Joint consensus decision-matrix draft 3 — preserved predecessor](joint-consensus-matrix-draft-v3.json)

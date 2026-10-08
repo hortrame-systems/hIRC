@@ -1,0 +1,89 @@
+{
+  "schema": "hirc.cultural-requirements-validation/1",
+  "stone": "M03-S005",
+  "before": {
+    "git_ref": "cb755a61d20ef6b4e5d5c0d24ec7abb4b919f113",
+    "json_sha256": "5740b33db4647199a9c5ac4a5303d209e145a22fc0d90400fa0d52e6f87af007",
+    "markdown_sha256": "892a3a61534e0f109adbcc0476b0bbe947c414d374c28e9cafae11c7deec5fdb",
+    "requirements": 224,
+    "revision_decisions": 132
+  },
+  "after": {
+    "json_sha256": "985f0b77a91a83cb5da3b895f44218368a4d28e957c5b716466ea18402e26f69",
+    "markdown_sha256": "79c6c558a1e87f92c681b978d7a26e4e471c4ae12b0a8041c5b39e1e09e34806",
+    "requirements": 237,
+    "revision_decisions": 144
+  },
+  "generator": {
+    "path": "review/build_requirements_v1_1.py",
+    "sha256": "69cefaf12499f8e408ad0af9967bce0d07603f4924fddef2541aa6fd2dcec302"
+  },
+  "cultural_map": {
+    "path": "review/revision-map-addendum-cultural-commons-v1.json",
+    "sha256": "cab10fb753c702b4011651b309086e5f15001412d0ba1c6ee686e8a1e77401ac"
+  },
+  "positive": {
+    "accepted": true,
+    "errors": []
+  },
+  "adverse": [
+    {
+      "name": "duplicate_requirement",
+      "expected_error": "duplicate-requirement-id",
+      "errors": [
+        "duplicate-requirement-id",
+        "new-requirement-set",
+        "readable-parity",
+        "requirement-count"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "behavior_control_outcome",
+      "expected_error": "behavior-control:U192",
+      "errors": [
+        "behavior-control:U192",
+        "readable-parity:U192"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "missing_privacy_audience",
+      "expected_error": "privacy-audience:U194",
+      "errors": [
+        "privacy-audience:U194",
+        "readable-parity:U194",
+        "source-closure:U194"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "conformity_metric",
+      "expected_error": "behavior-control:U203",
+      "errors": [
+        "behavior-control:U203",
+        "readable-parity:U203"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "unrelated_predecessor_drift",
+      "expected_error": "unrelated-predecessor-drift",
+      "errors": [
+        "readable-parity:U001",
+        "unrelated-predecessor-drift"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "generated_readable_mismatch",
+      "expected_error": "readable-parity",
+      "errors": [
+        "readable-parity"
+      ],
+      "rejected": true
+    }
+  ],
+  "all_adverse_rejected": true,
+  "claim": "Exact U192-U204/CIE-001-CIE-012 generator integration, separate I022/I023/I024 traces, unchanged predecessor semantics and machine/readable parity only; not consensus, implementation or runtime evidence."
+}
