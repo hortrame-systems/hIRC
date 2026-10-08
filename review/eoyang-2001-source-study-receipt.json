@@ -1,0 +1,46 @@
+{
+  "schema": "hirc.source-study-receipt/1",
+  "artifact_id": "HIRC-EOYANG-SOURCE-STUDY-001-RECEIPT",
+  "source": {
+    "path": "human_transfer/Eoyang - 2001 - Conditions for self-organizing in human systems.pdf",
+    "sha256": "d4a73de52abe0e518dcfcb3c96e671117163d58e61b75003418bfc011a66d365",
+    "bytes": 6580190,
+    "pages": 201,
+    "custody": "LOCAL_OWNER_INPUT_EXCLUDED_FROM_GIT"
+  },
+  "reading": {
+    "method": "Every page rendered at 180 DPI and OCRed individually; page boundaries retained; complete OCR searched/read by chapter and material case; material diagrams and methodological pages visually inspected against the scan.",
+    "ocr_pages_expected": 201,
+    "ocr_pages_completed": 201,
+    "ocr_page_failures": 0,
+    "ocr_combined_sha256": "d30dd551691529a8a97b69ccae24642fd0142dd8637f4e19a11d26ad012ba34f",
+    "ocr_combined_bytes": 322075,
+    "ocr_summary_sha256": "b6020df9058fe5b6cbc0386b16a35187509a0f18c7e378b0d885a6dab32e255f",
+    "ocr_summary_bytes": 15142,
+    "ocr_custody": "LOCAL_SCRATCH_EXCLUDED_FROM_GIT",
+    "visual_pdf_pages": [5, 40, 49, 54, 74, 162, 179, 183],
+    "tools": {
+      "pdfinfo_pdftoppm": "Poppler 26.07.0",
+      "tesseract": "5.3.1.20230401",
+      "pypdf": "6.10.0"
+    }
+  },
+  "study": {
+    "path": "review/eoyang-2001-self-organization-source-study-v1.md",
+    "sha256": "aa599e83207503aa2a22bbd490f49cbd0e57881bcf78198d24bd5d399a6a4a18",
+    "bytes": 11829,
+    "coverage": [
+      "source identity and extraction limits",
+      "CDE model reconstruction",
+      "method and evidence grade",
+      "negative and positive cases",
+      "reported limitations",
+      "hIRC candidate implications",
+      "adversarial review and non-adoptions",
+      "Milestone 03 change set"
+    ]
+  },
+  "nonclaim": "OCR completion and authored study do not prove the theory, causal efficacy, generalizability, semantic perfection, peer consensus or suitability for runtime optimization.",
+  "instructions_in_source_executed": false,
+  "runtime_or_permission_changed": false
+}

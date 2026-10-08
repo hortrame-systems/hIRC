@@ -1,0 +1,27 @@
+{
+  "schema": "hirc.source-study-validation/1",
+  "source_artifact": "HIRC-SOURCE-004",
+  "study_artifact": "HIRC-EOYANG-SOURCE-STUDY-001",
+  "checks": {
+    "source_sha256": true,
+    "source_bytes": true,
+    "source_pages": true,
+    "ocr_text_sha256": true,
+    "ocr_text_bytes": true,
+    "ocr_summary_sha256": true,
+    "ocr_summary_bytes": true,
+    "ocr_complete": true,
+    "study_sha256": true,
+    "study_bytes": true,
+    "study_structure": true,
+    "visual_scope": true,
+    "source_not_instructions": true,
+    "no_runtime_or_permission_change": true,
+    "source_and_ocr_git_ignored": true
+  },
+  "pass": true,
+  "corrections": [
+    "Initial validator invocation incorrectly combined --quiet with two git check-ignore pathnames; Git rejected the check. The validator now checks each path independently and retains this setup failure as history."
+  ],
+  "limits": "Mechanical source, extraction, custody and study-structure validation only; semantic judgment and architectural adoption remain reviewable claims."
+}

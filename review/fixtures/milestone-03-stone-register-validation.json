@@ -1,0 +1,74 @@
+{
+  "schema": "hirc.stone-register-validation/1",
+  "register": {
+    "path": "review/milestone-03-stone-register.json",
+    "sha256": "dabe3349e2ee821de793e1080da6ea908a24144f0977314f4888228512692042"
+  },
+  "validator": {
+    "path": "review/fixtures/validate_milestone_03_stone_register.py",
+    "sha256": "8bbe80a303999b93d58e03eb788d471a14c26acfe5cfd138384346efb8cc4a45"
+  },
+  "positive": {
+    "accepted": true,
+    "errors": []
+  },
+  "adverse": [
+    {
+      "name": "duplicate_id",
+      "expected_error": "duplicate-id",
+      "errors": [
+        "M03-S001:missing-next:M03-S001A",
+        "M03-S002:missing-prerequisite:M03-S001A",
+        "cycle:M03-S001",
+        "duplicate-id"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "missing_prerequisite",
+      "expected_error": "missing-prerequisite",
+      "errors": [
+        "M03-S001A:missing-prerequisite:M03-NOT-THERE"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "cycle",
+      "expected_error": "cycle",
+      "errors": [
+        "M03-S001:premature:M03-S015",
+        "cycle:M03-S001"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "premature_active",
+      "expected_error": "premature",
+      "errors": [
+        "M03-S003:premature:M03-S002"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "missing_adverse_cases",
+      "expected_error": "adverse_cases",
+      "errors": [
+        "M03-S003:adverse_cases"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "missing_recovery",
+      "expected_error": "recovery",
+      "errors": [
+        "M03-S004:recovery"
+      ],
+      "rejected": true
+    }
+  ],
+  "all_adverse_rejected": true,
+  "corrections": [
+    "After M03-S002 legitimately became READY, the premature-active adverse mutation no longer represented a violation. It was retargeted from M03-S002 to dependent M03-S003, whose M03-S002 prerequisite is not PASS."
+  ],
+  "claim": "Deterministic graph/field/gate validation only; not semantic correctness, implementation, peer consensus or runtime evidence."
+}

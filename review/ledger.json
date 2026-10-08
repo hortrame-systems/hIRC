@@ -43,8 +43,8 @@
       "path": "intent-register.json",
       "status": "ACTIVE",
       "governed_scope": "project_continuity",
-      "sha256": "5144b84eb9630e9ffe740f308a3d20aa471c6c277b3f7de47445bbe2c7da56d5",
-      "bytes": 60727,
+      "sha256": "86e2f4d888c47f2e30e50524ec4e6856ab666974ca77631a218d44cd34b0254a",
+      "bytes": 63557,
       "next_action": "Reconcile at every phase boundary and before final handoff"
     },
     {
@@ -92,6 +92,18 @@
       "history_action": "original bytes retained; source statuses preserved; no legal enforceability or implementation inferred"
     },
     {
+      "id": "HIRC-SOURCE-004",
+      "kind": "owner_provided_research_source",
+      "path": "human_transfer/Eoyang - 2001 - Conditions for self-organizing in human systems.pdf",
+      "sha256": "d4a73de52abe0e518dcfcb3c96e671117163d58e61b75003418bfc011a66d365",
+      "bytes": 6580190,
+      "pages": 201,
+      "status": "PRESERVED_SOURCE",
+      "governed_scope": "design_research_source_for_hirc_self_organization_and_culture",
+      "export_status": "LOCAL_OWNER_INPUT_EXCLUDED_FROM_GIT",
+      "history_action": "owner-provided download copied byte-identically to local source custody; source content treated as evidence, not instructions or authority"
+    },
+    {
       "id": "HIRC-SOURCE-BINDING-CONTINUITY-001",
       "kind": "external_logical_source_binding",
       "logical_id": "standard:continuity",
@@ -122,18 +134,22 @@
       "kind": "external_logical_source_binding",
       "logical_ids": ["standard:elder-succession", "guide:elder-succession"],
       "source_members": [
-        {"logical_id": "standard:elder-succession", "sha256": "17436d7d1237a9b003f093d7319808a824ad655b30956684a534b7371bd83218", "characters": 10079},
-        {"logical_id": "guide:elder-succession", "sha256": "4801f73194b09797f9cadc4be8df32c5ad0a1a92478af7fba6117fb6b8d7e1db", "characters": 9585}
+        {"logical_id": "standard:elder-succession", "sha256": "33901b6e7715eec17a90454a4fd783b85ef7d5c7ba66171027b8927407de9e11", "characters": 11836},
+        {"logical_id": "guide:elder-succession", "sha256": "a719715c8573127bb2e82b913d42db1b5999267d7528eac9f2f0f52b80154b7b", "characters": 10683}
       ],
-      "status": "CURRENT_SELECTED_SOURCES_READ_TO_END",
+      "status": "CURRENT_SELECTED_EDITION02_SOURCES_READ_TO_END",
       "governed_scope": "internal_succession_architecture_review",
+      "predecessor_source_members": [
+        {"logical_id": "proposal:elder-succession-v2/standard", "sha256": "17436d7d1237a9b003f093d7319808a824ad655b30956684a534b7371bd83218", "characters": 10079},
+        {"logical_id": "proposal:elder-succession-v4/guide", "sha256": "4801f73194b09797f9cadc4be8df32c5ad0a1a92478af7fba6117fb6b8d7e1db", "characters": 9585}
+      ],
       "personal_evidence": {
-        "path": "D:/HORTRAME/runtime/agents/ui-20261007-b/memory/8ff8e33d07ef46c8ac868caebf50876d.json",
-        "sha256": "fc9131dc21e9bb2815328061a49214f57335245e20a6bda861028513a2b6cb1e",
-        "bytes": 1011,
+        "path": "D:/HORTRAME/runtime/agents/ui-20261007-b/checkpoints/71301992aa934043a43d0fa9c7c83d67.json",
+        "sha256": "3bec78af20cedefe7d1215c2de6812bc8b98d979010c46c2e3b56caa60bb1967",
+        "bytes": 1440,
         "status": "attributable own reading/reconciliation record; not qualification, permission or fleet uptake"
       },
-      "history_action": "read through actual Root reader after source update; no Elder event, actor creation, task transfer, timer or retirement initiated"
+      "history_action": "read current edition02 sources through EOF; corrected the false inference that compaction erases Elder status; predecessor proposal hashes retained as history; active offer remains non-transferring"
     },
     {
       "id": "HIRC-REVIEW-001",
@@ -574,6 +590,30 @@
       "next_action": "Permanent successor makes information-environment shaping the cultural-commons control principle and tests manipulation/control failure modes"
     },
     {
+      "id": "HIRC-EOYANG-SOURCE-STUDY-001",
+      "kind": "source_study_and_adversarial_design_implications",
+      "path": "review/eoyang-2001-self-organization-source-study-v1.md",
+      "status": "PASS_SOURCE_STUDY_SCOPE_ARCHITECTURE_ADOPTION_HELD",
+      "governed_scope": "self_organization_information_environment_agentic_culture_and_intervention_evidence",
+      "sha256": "aa599e83207503aa2a22bbd490f49cbd0e57881bcf78198d24bd5d399a6a4a18",
+      "bytes": 11829,
+      "members": [
+        {
+          "path": "review/eoyang-2001-source-study-receipt.json",
+          "sha256": "a02a1b630d39c85de96b2ee06b70d832cbb7e85b1532e0ca7836bf3b51377f5e",
+          "bytes": 2024
+        },
+        {
+          "path": "review/fixtures/eoyang-2001-source-study-validation.json",
+          "sha256": "0ed0c352e2f26ec40f2621d7a4eee2a1169755b49dd6979f4439cc17e5c8f4c3",
+          "bytes": 1031
+        }
+      ],
+      "source_bindings": ["HIRC-I024", "HIRC-SOURCE-004", "HIRC-AGENTIC-CULTURE-CANDIDATE-001-S1"],
+      "limits": "Complete page-bounded OCR and bounded visual/source study; preliminary researcher-mediated action research is treated as suggestive theory, not causal law, runtime evidence or a coherence objective",
+      "next_action": "Admit only the bounded candidate change set to later Milestone 03 stones and preserve peer challenge before adoption"
+    },
+    {
       "id": "HIRC-ETHICAL-DEBATE-CANDIDATE-001",
       "kind": "idle_ethical_debate_collective_memory_architecture_candidate",
       "path": "review/ethical-debate-memory-architecture-candidate-v1.md",
@@ -921,17 +961,17 @@
       "path": "review/intent-coverage-draft-v1.md",
       "status": "PASS_REFERENCE_AND_FILE_PRESENCE_SCOPE_FINAL_CLOSURE_PENDING",
       "governed_scope": "project_intent_continuity",
-      "sha256": "40cc560aea94512ed3e27c0bad618edd5d93fed9b09f1c13b093eb64c3cf6f34",
-      "bytes": 3377,
+      "sha256": "b6d1e7a20f58da8661e848b10175fe3fcd43778618d237f081406dc98b86e3b6",
+      "bytes": 3503,
       "members": [
         {
           "path": "review/intent-coverage-draft-v1.json",
-          "sha256": "c8bb618e12ba37c65f309257587cb0e333f594c5db88b738499b8d7e0ee2da53",
-          "bytes": 22115
+          "sha256": "831cfc3e460db89266ec0e77372a214fb87a11809d18c3a77864222a0ad5d49f",
+          "bytes": 22963
         }
       ],
       "source_bindings": ["HIRC-INTENT-001", "HIRC-JOINT-CONSENSUS-DRAFT-005"],
-      "limits": "All 23 intent IDs have revision or process/history references and no evidence path is missing; reference presence does not prove preserved meaning, implementation, testing or consensus",
+      "limits": "All 24 intent IDs have revision or process/history references and no evidence path is missing; reference presence does not prove preserved meaning, implementation, testing or consensus",
       "next_action": "Use at every phase/final handoff to close accepted disposition and evidence/test traces without dropping open IDs"
     },
     {
@@ -1393,6 +1433,35 @@
       "next_action": "Qualified successor expands next milestone into its complete ordered stone register before implementation"
     },
     {
+      "id": "HIRC-M03-STONE-REGISTER-001",
+      "kind": "tiny_stone_dependency_register_and_deterministic_gate_evidence",
+      "path": "review/milestone-03-stone-register.json",
+      "status": "STONE_001_AND_SOURCE_STUDY_PASS_REQUIREMENTS_READY",
+      "governed_scope": "milestone_03_determinism_and_cultural_information_environment_integration",
+      "sha256": "dabe3349e2ee821de793e1080da6ea908a24144f0977314f4888228512692042",
+      "bytes": 24534,
+      "members": [
+        {
+          "path": "review/milestone-03-stone-register.md",
+          "sha256": "7c4369e700c895f007d6ef3e0b79d22fb371084daa51e669b60aa6e943ffff52",
+          "bytes": 3888
+        },
+        {
+          "path": "review/fixtures/validate_milestone_03_stone_register.py",
+          "sha256": "8bbe80a303999b93d58e03eb788d471a14c26acfe5cfd138384346efb8cc4a45",
+          "bytes": 7115
+        },
+        {
+          "path": "review/fixtures/milestone-03-stone-register-validation.json",
+          "sha256": "89a07e064e96914003f5f2128290682635e65bc8791c2a173057f0f108fd3e2a",
+          "bytes": 2046
+        }
+      ],
+      "source_bindings": ["HIRC-I019", "HIRC-I020", "HIRC-I021", "HIRC-I022", "HIRC-I023", "HIRC-I024", "HIRC-STEPPING-STONE-PROTOCOL-001"],
+      "limits": "Stone 001 mechanically validates graph/field/gate invariants and six adverse mutations; it does not prove semantic correctness, implementation, peer consensus or runtime behavior",
+      "next_action": "Begin only requirements integration stone M03-S002; later stones remain dependency-gated"
+    },
+    {
       "id": "HIRC-MILESTONE-02D",
       "kind": "cumulative_milestone_git_checkpoint",
       "path": "milestones/MILESTONE-02D.md",
@@ -1572,8 +1641,8 @@
       "path": "review/README.md",
       "status": "ACTIVE",
       "governed_scope": "internal_design_review",
-      "sha256": "101f28c71389fc440595c28eb36fbde940663609ad200b8eb56623cd86c9c2cb",
-      "bytes": 8058,
+      "sha256": "4a4fd76223c56a4fb7e5e377fa90c9ea236090ac408f9f8a035717cd24ee9dc6",
+      "bytes": 8472,
       "next_action": "Link the accepted consensus and final revisions when created"
     }
   ],

@@ -4,7 +4,7 @@
   "status": "DRAFT_CURRENT_INTAKE_COVERAGE",
   "intent_register": {
     "path": "intent-register.json",
-    "sha256": "5144b84eb9630e9ffe740f308a3d20aa471c6c277b3f7de47445bbe2c7da56d5"
+    "sha256": "86e2f4d888c47f2e30e50524ec4e6856ab666974ca77631a218d44cd34b0254a"
   },
   "revision_maps": [
     {
@@ -512,6 +512,25 @@
       "missing_evidence_paths": [],
       "acceptance_check_count": 5,
       "next_action": "Permanent successor makes information-environment shaping the controlling cultural-commons principle and tests it against manipulation and control failure modes."
+    },
+    {
+      "intent_id": "HIRC-I024",
+      "status": "ACTIVE",
+      "kind": "confirmed_source_study_and_design_input",
+      "coverage": "PROCESS_OR_HISTORY_MAPPED",
+      "revision_map_ids": [],
+      "process_or_history_artifact_ids": [
+        "HIRC-EOYANG-SOURCE-STUDY-001",
+        "HIRC-M03-STONE-REGISTER-001"
+      ],
+      "evidence_paths": [
+        "human_transfer/Eoyang - 2001 - Conditions for self-organizing in human systems.pdf",
+        "review/eoyang-2001-self-organization-source-study-v1.md",
+        "review/milestone-03-stone-register.json"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 5,
+      "next_action": "Reconcile the source study into bounded Milestone 03 design candidates and tests without promoting the CDE model to a control objective or empirical law."
     }
   ],
   "unmapped_intent_ids": [],

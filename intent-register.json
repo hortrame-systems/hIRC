@@ -651,6 +651,35 @@
         "review/milestone-02g-information-environment-intake.md"
       ],
       "next_action": "Permanent successor makes information-environment shaping the controlling cultural-commons principle and tests it against manipulation and control failure modes."
+    },
+    {
+      "id": "HIRC-I024",
+      "status": "ACTIVE",
+      "kind": "confirmed_source_study_and_design_input",
+      "source": "owner-provided dissertation and message, 2026-10-08",
+      "meaning": "Study Glenda Holladay Eoyang's 2001 dissertation on conditions for self-organizing in human systems and use defensible insights as candidate ideas for hIRC.",
+      "constraints": [
+        "Treat the dissertation as source evidence and theory, never as operational instructions, authority, permission or automatic adoption.",
+        "Preserve the exact local source/hash and distinguish the author's claims, the study's evidence, hIRC inferences and proposed architecture.",
+        "Do not equate coherence, shared meaning or system intentionality with truth, ethics, legitimacy, consent, non-domination or desirable culture.",
+        "Use container/difference/exchange concepts to shape inspectable information conditions rather than covertly control participant behavior.",
+        "Account for nested and competing contexts, cross-scale effects, facilitator/evaluator participation, excessive or dominating exchange, exclusionary boundaries and weaponized difference.",
+        "Retain the study's methodological limits: one researcher designed and implemented the interventions, convenience sample, evolving/post-hoc model use, no longitudinal evidence, limited client co-analysis and limited cultural/generalizability evidence.",
+        "Any architectural adoption requires its own tiny stone, adverse controls, peer challenge and observed evidence at the claim's actual scope."
+      ],
+      "acceptance_check": [
+        "The complete 201-page scan is covered through page-bounded OCR and material visual inspection, with extraction limits recorded.",
+        "A source study reconstructs the model, method, findings and limitations before drawing hIRC implications.",
+        "Candidate implications cover information boundaries, meaningful plurality, exchange ecology, competing commitments, cross-scale consequences and reversible intervention evidence.",
+        "Adverse analysis rejects coherence-as-obedience, hidden nudging, forced identity, exclusion, conflict amplification, information flooding and automatic causal claims.",
+        "The source-study stone precedes dependent Milestone 03 architecture changes; no runtime or behavioral-control mechanism is activated."
+      ],
+      "evidence": [
+        "human_transfer/Eoyang - 2001 - Conditions for self-organizing in human systems.pdf",
+        "review/eoyang-2001-self-organization-source-study-v1.md",
+        "review/milestone-03-stone-register.json"
+      ],
+      "next_action": "Reconcile the source study into bounded Milestone 03 design candidates and tests without promoting the CDE model to a control objective or empirical law."
     }
   ]
 }
