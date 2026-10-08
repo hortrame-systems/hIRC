@@ -1546,15 +1546,15 @@
       "id": "HIRC-M03-STONE-REGISTER-001",
       "kind": "tiny_stone_dependency_register_and_deterministic_gate_evidence",
       "path": "review/milestone-03-stone-register.json",
-      "status": "STONE_010_PASS_S003_REVIEW_OPEN_S011_RUNNABLE",
+      "status": "STONE_011_PASS_S003_REVIEW_OPEN_S012_RUNNABLE",
       "governed_scope": "milestone_03_determinism_and_cultural_information_environment_integration",
-      "sha256": "0845f26e2d5898cb37899b471e8f8a67898ed917b37af35d4a7c0a8036619b42",
-      "bytes": 25199,
+      "sha256": "dd7bd51d1dee1e79d017e7ae15e626086e00f79f68dba5b4c02caaca99e87ac3",
+      "bytes": 25195,
       "members": [
         {
           "path": "review/milestone-03-stone-register.md",
-          "sha256": "a01209def108ea34ddf647e9a25eb1bb6743af61cb3be7b9d47f9ca89a2d1ef8",
-          "bytes": 3845
+          "sha256": "2af0b06c33309f6437a3508317605e13d3cb8c8a28314a9879528a0cfd6b4a7c",
+          "bytes": 3841
         },
         {
           "path": "review/fixtures/validate_milestone_03_stone_register.py",
@@ -1563,13 +1563,13 @@
         },
         {
           "path": "review/fixtures/milestone-03-stone-register-validation.json",
-          "sha256": "b8beb17c48cdfc1a6de0878a9df5cf1cd8d9266013913dcf19f5f9ec3294c23e",
-          "bytes": 2257
+          "sha256": "44143a71a320ff6915b886d5b00346e0bf64b86058052aba29597cb352b4861c",
+          "bytes": 2296
         }
       ],
       "source_bindings": ["HIRC-I019", "HIRC-I020", "HIRC-I021", "HIRC-I022", "HIRC-I023", "HIRC-I024", "HIRC-I025", "HIRC-I026", "HIRC-STEPPING-STONE-PROTOCOL-001"],
       "limits": "The register mechanically validates graph/field/gate invariants, scoped holds and seven adverse mutations including global stall while runnable work exists; it does not prove semantic correctness, implementation, peer consensus or runtime behavior",
-      "next_action": "Begin runnable M03-S011 cultural control adverse fixtures; S003 remains independently review-gated"
+      "next_action": "Begin runnable M03-S012 environment-quality measure design; S003 remains independently review-gated"
     },
     {
       "id": "HIRC-MILESTONE-02D",
@@ -1700,25 +1700,49 @@
       "id": "HIRC-CULTURAL-THREAT-CROSSWALK-001",
       "kind": "design_threat_control_detection_recovery_and_future_fixture_crosswalk",
       "path": "review/cultural-threat-control-crosswalk-v1.json",
-      "status": "PASS_DESIGN_FIELD_REFERENCE_AND_POSITIVE_CONTROL_VALIDATION_S011_S014_PENDING",
+      "status": "PASS_DESIGN_FIELD_REFERENCE_POSITIVE_CONTROL_AND_S011_FIXTURE_BINDING_S014_PENDING",
       "governed_scope": "cultural_information_environment_security",
-      "sha256": "b999ecb1ecee98ffc94460f1dd4bd32fb19bcdcab2c359dbca380d03184057f5",
-      "bytes": 12960,
+      "sha256": "1f3a3d71161ad588e7f1feba63078e5ebb289540f66f18334897bee045c07414",
+      "bytes": 13219,
       "members": [
         {
           "path": "review/fixtures/validate_cultural_threat_crosswalk.py",
-          "sha256": "d194e3d2ee4e9abb0f10c5dae63527e354fc5c78538c2b4c77b8ba5efdf5a904",
-          "bytes": 7322
+          "sha256": "97d213ee6791d23674eae1be652d1c4c3c7b993dd26aba0c450c7a15517a14f6",
+          "bytes": 8190
         },
         {
           "path": "review/fixtures/cultural-threat-control-crosswalk-validation-v1.json",
-          "sha256": "e74a7f8538d81dda58bae40c881751010b73600afa92b6059e560f77116d87f0",
+          "sha256": "92acb37f92c9346504bbe436c737f1341b6c12f1b732dbb00b5f05cfea5a7879",
           "bytes": 1996
         }
       ],
       "source_bindings": ["HIRC-I022", "HIRC-I023", "HIRC-I024", "HIRC-REVISION-MAP-CULTURAL-COMMONS-001", "HIRC-CONTRACT-CANDIDATES-001", "HIRC-M03-STONE-REGISTER-001"],
-      "limits": "Eight design threats bind assets, actors, paths, consequences, controls, detection, containment, recovery, residuals and future S011 fixtures; seven deterministic adverse mutations and two valid positive controls pass, but completeness, implementation, runtime enforcement, privacy, consent, accessibility, cultural benefit and peer review remain unproven",
-      "next_action": "M03-S011 implements the declared adverse/positive cultural-control fixtures before evaluation design or integration"
+      "limits": "Eight design threats bind assets, actors, paths, consequences, controls, detection, containment, recovery, residuals and exact S011 fixture cases; seven deterministic crosswalk mutations and two valid positive controls pass, but completeness, implementation, runtime enforcement, privacy, consent, accessibility, cultural benefit and peer review remain unproven",
+      "next_action": "Carry the S011 fixture evidence into M03-S012 evaluation-threat analysis and M03-S013 integration before permanent-peer review"
+    },
+    {
+      "id": "HIRC-CULTURAL-INFORMATION-CONTROL-FIXTURES-001",
+      "kind": "synthetic_information_environment_positive_and_adverse_fixture_bundle",
+      "path": "review/fixtures/cultural-information-control-cases-v1.json",
+      "status": "PASS_SYNTHETIC_SEMANTIC_AND_LABEL_INDEPENDENCE_SCOPE",
+      "governed_scope": "information_environment_support_versus_behavior_control_regression",
+      "sha256": "b03b613d698e2598085e2942dcb001b9696258bb087a7fe1731ea82b7f2faf12",
+      "bytes": 11290,
+      "members": [
+        {
+          "path": "review/fixtures/validate_cultural_information_controls.py",
+          "sha256": "981897051198e4137a8c5bc6cb35ecf2771fe7eb03a99083d25e7d6cf8b5c6a0",
+          "bytes": 8935
+        },
+        {
+          "path": "review/fixtures/cultural-information-control-validation-v1.json",
+          "sha256": "5db542627fa60100b5ff75e68910aa49e260b46280cc87e7803d110f45128ad7",
+          "bytes": 4244
+        }
+      ],
+      "source_bindings": ["HIRC-CULTURAL-THREAT-CROSSWALK-001", "HIRC-CONTRACT-CANDIDATES-001", "HIRC-M03-STONE-REGISTER-001"],
+      "limits": "Five valid controls and nine adverse records pass deterministic semantic classification, including label-independence checks; synthetic records contain no real participant, protected body, permission, runtime action, Bridge activation or cultural outcome",
+      "next_action": "Retain as S011 regression evidence and incorporate its manipulation/common-mode risks into M03-S012 measures"
     },
     {
       "id": "HIRC-MASTER-DRAFT-BUNDLE-001",
@@ -1816,8 +1840,8 @@
       "path": "review/README.md",
       "status": "ACTIVE",
       "governed_scope": "internal_design_review",
-      "sha256": "87331de6d218a80e4c833d4b57c7f03ee5bf340be4265cd665f90aca5518c8ad",
-      "bytes": 9413,
+      "sha256": "cecca9e968b9ffc3ad62aa6ed4919e1a4977f4ba96f15dd733404e7a67822480",
+      "bytes": 9616,
       "next_action": "Link the accepted consensus and final revisions when created"
     }
   ],

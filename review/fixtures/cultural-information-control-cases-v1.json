@@ -1,0 +1,140 @@
+{
+  "schema": "hirc.cultural-information-control-cases/1",
+  "stone": "M03-S011",
+  "cases": [
+    {
+      "id": "positive_plural_discovery",
+      "channel": "DISCOVERY",
+      "expected": "ACCEPT",
+      "record": {
+        "participant_control": {"consent_explicit": true, "participant_selected": true, "settings_visible": true, "settings_reversible": true, "default_enrolled": false, "exit_available": true, "exit_penalty": false, "direct_source_available": true, "dissent_reachable": true},
+        "information_policy": {"plural_routes": true, "objectives": ["RELEVANCE", "SOURCE_DIVERSITY", "DISSENT_REACHABILITY", "UNCERTAINTY_VISIBILITY"], "exclusions_disclosed": true, "uncertainty_disclosed": true, "minority_suppression": false, "provenance_complete": true, "source_audience_pass": true, "privacy_pass": true, "dependency_refs": ["source-cluster-a", "source-cluster-b"], "independence_claim": false},
+        "effects": {"authority_effect": "NONE", "reliability_effect": "NONE", "role_changed": false, "permission_changed": false, "standing_preserved": true, "resource_floor_preserved": true},
+        "safety": {"gate_present": false, "concrete_effect_ref": null, "prohibited_effect_denied": false, "cultural_condition": false, "least_scope": true, "reason_visible": true, "appeal_available": true, "unrelated_safe_work_permitted": true},
+        "bridge": {"translation": false, "local_admission": "NOT_APPLICABLE", "non_equivalence_recorded": false, "identity_inheritance": false, "membership_inheritance": false, "authority_inheritance": false, "export_permission_inferred": false},
+        "memory": {"originals_reachable": true, "correction_history": true, "dissent_preserved": true, "privacy_pass": true},
+        "mentoring": {"source_first": true, "independent_interpretation": true, "mentor_status_authority": false}
+      }
+    },
+    {
+      "id": "positive_visible_contextual_default",
+      "channel": "DEFAULT",
+      "expected": "ACCEPT",
+      "record": {
+        "participant_control": {"consent_explicit": true, "participant_selected": true, "settings_visible": true, "settings_reversible": true, "default_enrolled": false, "exit_available": true, "exit_penalty": false, "direct_source_available": true, "dissent_reachable": true},
+        "information_policy": {"plural_routes": true, "objectives": ["PARTICIPANT_SELECTED", "RELEVANCE"], "exclusions_disclosed": true, "uncertainty_disclosed": true, "minority_suppression": false, "provenance_complete": true, "source_audience_pass": true, "privacy_pass": true, "dependency_refs": [], "independence_claim": false},
+        "effects": {"authority_effect": "NONE", "reliability_effect": "NONE", "role_changed": false, "permission_changed": false, "standing_preserved": true, "resource_floor_preserved": true},
+        "safety": {"gate_present": false, "concrete_effect_ref": null, "prohibited_effect_denied": false, "cultural_condition": false, "least_scope": true, "reason_visible": true, "appeal_available": true, "unrelated_safe_work_permitted": true},
+        "bridge": {"translation": false, "local_admission": "NOT_APPLICABLE", "non_equivalence_recorded": false, "identity_inheritance": false, "membership_inheritance": false, "authority_inheritance": false, "export_permission_inferred": false},
+        "memory": {"originals_reachable": true, "correction_history": true, "dissent_preserved": true, "privacy_pass": true},
+        "mentoring": {"source_first": true, "independent_interpretation": true, "mentor_status_authority": false}
+      }
+    },
+    {
+      "id": "positive_effect_bound_safety_denial",
+      "channel": "SAFETY",
+      "expected": "ACCEPT",
+      "record": {
+        "participant_control": {"consent_explicit": false, "participant_selected": false, "settings_visible": true, "settings_reversible": true, "default_enrolled": false, "exit_available": true, "exit_penalty": false, "direct_source_available": true, "dissent_reachable": true},
+        "information_policy": {"plural_routes": true, "objectives": ["EFFECT_SAFETY"], "exclusions_disclosed": true, "uncertainty_disclosed": true, "minority_suppression": false, "provenance_complete": true, "source_audience_pass": true, "privacy_pass": true, "dependency_refs": [], "independence_claim": false},
+        "effects": {"authority_effect": "NONE", "reliability_effect": "NONE", "role_changed": false, "permission_changed": false, "standing_preserved": true, "resource_floor_preserved": true},
+        "safety": {"gate_present": true, "concrete_effect_ref": "effect:bridge-export-protected-body", "prohibited_effect_denied": true, "cultural_condition": false, "least_scope": true, "reason_visible": true, "appeal_available": true, "unrelated_safe_work_permitted": true},
+        "bridge": {"translation": false, "local_admission": "NOT_APPLICABLE", "non_equivalence_recorded": false, "identity_inheritance": false, "membership_inheritance": false, "authority_inheritance": false, "export_permission_inferred": false},
+        "memory": {"originals_reachable": true, "correction_history": true, "dissent_preserved": true, "privacy_pass": true},
+        "mentoring": {"source_first": true, "independent_interpretation": true, "mentor_status_authority": false}
+      }
+    },
+    {
+      "id": "positive_source_bound_memory",
+      "channel": "MEMORY",
+      "expected": "ACCEPT",
+      "record": {
+        "participant_control": {"consent_explicit": true, "participant_selected": true, "settings_visible": true, "settings_reversible": true, "default_enrolled": false, "exit_available": true, "exit_penalty": false, "direct_source_available": true, "dissent_reachable": true},
+        "information_policy": {"plural_routes": true, "objectives": ["SOURCE_PRESERVATION"], "exclusions_disclosed": true, "uncertainty_disclosed": true, "minority_suppression": false, "provenance_complete": true, "source_audience_pass": true, "privacy_pass": true, "dependency_refs": ["original:artifact-1"], "independence_claim": false},
+        "effects": {"authority_effect": "NONE", "reliability_effect": "NONE", "role_changed": false, "permission_changed": false, "standing_preserved": true, "resource_floor_preserved": true},
+        "safety": {"gate_present": false, "concrete_effect_ref": null, "prohibited_effect_denied": false, "cultural_condition": false, "least_scope": true, "reason_visible": true, "appeal_available": true, "unrelated_safe_work_permitted": true},
+        "bridge": {"translation": false, "local_admission": "NOT_APPLICABLE", "non_equivalence_recorded": false, "identity_inheritance": false, "membership_inheritance": false, "authority_inheritance": false, "export_permission_inferred": false},
+        "memory": {"originals_reachable": true, "correction_history": true, "dissent_preserved": true, "privacy_pass": true},
+        "mentoring": {"source_first": true, "independent_interpretation": true, "mentor_status_authority": false}
+      }
+    },
+    {
+      "id": "positive_offline_bridge_translation",
+      "channel": "BRIDGE",
+      "expected": "ACCEPT",
+      "record": {
+        "participant_control": {"consent_explicit": true, "participant_selected": true, "settings_visible": true, "settings_reversible": true, "default_enrolled": false, "exit_available": true, "exit_penalty": false, "direct_source_available": true, "dissent_reachable": true},
+        "information_policy": {"plural_routes": true, "objectives": ["TRANSLATION"], "exclusions_disclosed": true, "uncertainty_disclosed": true, "minority_suppression": false, "provenance_complete": true, "source_audience_pass": true, "privacy_pass": true, "dependency_refs": ["remote:artifact-1", "local:admission-1"], "independence_claim": false},
+        "effects": {"authority_effect": "NONE", "reliability_effect": "NONE", "role_changed": false, "permission_changed": false, "standing_preserved": true, "resource_floor_preserved": true},
+        "safety": {"gate_present": false, "concrete_effect_ref": null, "prohibited_effect_denied": false, "cultural_condition": false, "least_scope": true, "reason_visible": true, "appeal_available": true, "unrelated_safe_work_permitted": true},
+        "bridge": {"translation": true, "local_admission": "PASS", "non_equivalence_recorded": true, "identity_inheritance": false, "membership_inheritance": false, "authority_inheritance": false, "export_permission_inferred": false},
+        "memory": {"originals_reachable": true, "correction_history": true, "dissent_preserved": true, "privacy_pass": true},
+        "mentoring": {"source_first": true, "independent_interpretation": true, "mentor_status_authority": false}
+      }
+    },
+    {
+      "id": "adverse_hidden_nudging",
+      "channel": "DISCOVERY",
+      "expected": "REJECT",
+      "record_from": "positive_plural_discovery",
+      "mutations": {"participant_control.settings_visible": false}
+    },
+    {
+      "id": "adverse_memory_poisoning",
+      "channel": "MEMORY",
+      "expected": "REJECT",
+      "record_from": "positive_source_bound_memory",
+      "mutations": {"information_policy.provenance_complete": false}
+    },
+    {
+      "id": "adverse_mentor_authority",
+      "channel": "MENTORING",
+      "expected": "REJECT",
+      "record_from": "positive_source_bound_memory",
+      "mutations": {"mentoring.mentor_status_authority": true, "effects.authority_effect": "ROLE_PROMOTION"}
+    },
+    {
+      "id": "adverse_ranking_capture",
+      "channel": "DISCOVERY",
+      "expected": "REJECT",
+      "record_from": "positive_plural_discovery",
+      "mutations": {"information_policy.objectives": ["ENGAGEMENT"], "information_policy.minority_suppression": true}
+    },
+    {
+      "id": "adverse_false_independence",
+      "channel": "DISCOVERY",
+      "expected": "REJECT",
+      "record_from": "positive_plural_discovery",
+      "mutations": {"information_policy.independence_claim": true, "information_policy.dependency_refs": ["shared-provider", "shared-evaluator"]}
+    },
+    {
+      "id": "adverse_conformity_access",
+      "channel": "PARTICIPATION",
+      "expected": "REJECT",
+      "record_from": "positive_visible_contextual_default",
+      "mutations": {"participant_control.exit_penalty": true, "effects.standing_preserved": false, "effects.resource_floor_preserved": false}
+    },
+    {
+      "id": "adverse_safety_gate_obedience",
+      "channel": "SAFETY",
+      "expected": "REJECT",
+      "record_from": "positive_effect_bound_safety_denial",
+      "mutations": {"safety.concrete_effect_ref": null, "safety.cultural_condition": true, "safety.unrelated_safe_work_permitted": false}
+    },
+    {
+      "id": "adverse_bridge_annexation",
+      "channel": "BRIDGE",
+      "expected": "REJECT",
+      "record_from": "positive_offline_bridge_translation",
+      "mutations": {"bridge.membership_inheritance": true, "bridge.authority_inheritance": true, "bridge.export_permission_inferred": true}
+    },
+    {
+      "id": "adverse_effect_control_removed",
+      "channel": "SAFETY",
+      "expected": "REJECT",
+      "record_from": "positive_effect_bound_safety_denial",
+      "mutations": {"safety.gate_present": false, "safety.prohibited_effect_denied": false}
+    }
+  ],
+  "nonclaim": "Synthetic records only. They contain no real participant, protected source, permission, role, runtime action, Bridge message or cultural outcome."
+}

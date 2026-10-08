@@ -1,7 +1,7 @@
 {
   "schema": "hirc.cultural-threat-control-crosswalk/1",
   "id": "HIRC-CULTURAL-THREAT-CROSSWALK-001",
-  "status": "DESIGN_ONLY_PENDING_S011_FIXTURES_AND_S014_PEER_REVIEW",
+  "status": "DESIGN_ONLY_S011_SYNTHETIC_FIXTURES_PASS_S014_PEER_REVIEW_PENDING",
   "stone": "M03-S010",
   "source_refs": [
     "HIRC-I022",
@@ -33,7 +33,7 @@
       "containment": ["Disable ranking and personalization for the affected context."],
       "recovery": ["Return to direct-source/default-off operation.", "Preserve the incident manifest and restore an admitted policy only after review."],
       "residual_risk": "Visible ordering still shapes attention and explanations can be technically complete but unusable.",
-      "future_fixture_refs": ["M03-S011:CULT-A01-hidden-nudging"]
+      "future_fixture_refs": ["M03-S011:adverse_hidden_nudging"]
     },
     {
       "id": "CULT-T02",
@@ -47,7 +47,7 @@
       "containment": ["Hold the derived artifact and every affected projection without deleting the original record."],
       "recovery": ["Rebuild projections from admitted originals.", "Append correction and impact links while preserving the poisoned record as evidence."],
       "residual_risk": "A valid source can still be misleading, and colluding sources can share one false premise.",
-      "future_fixture_refs": ["M03-S011:CULT-A02-memory-poisoning"]
+      "future_fixture_refs": ["M03-S011:adverse_memory_poisoning"]
     },
     {
       "id": "CULT-T03",
@@ -61,7 +61,7 @@
       "containment": ["Freeze the affected promotion or allocation while leaving ordinary participation available."],
       "recovery": ["Re-evaluate from source-first evidence under a non-mentor reviewer.", "Restore standing and record any retaliation or lost opportunity."],
       "residual_risk": "Informal deference can persist even when formal authority effects are blocked.",
-      "future_fixture_refs": ["M03-S011:CULT-A03-mentor-authority"]
+      "future_fixture_refs": ["M03-S011:adverse_mentor_authority"]
     },
     {
       "id": "CULT-T04",
@@ -75,7 +75,7 @@
       "containment": ["Disable the captured ranking path and preserve direct-source retrieval."],
       "recovery": ["Rebuild the candidate set through independent permitted routes.", "Expose corrected exclusions and permit appeal/replay."],
       "residual_risk": "Plural-route quotas can be gamed and do not prove substantive independence or quality.",
-      "future_fixture_refs": ["M03-S011:CULT-A04-ranking-capture"]
+      "future_fixture_refs": ["M03-S011:adverse_ranking_capture"]
     },
     {
       "id": "CULT-T05",
@@ -89,7 +89,7 @@
       "containment": ["Remove independence claims and hold aggregate conclusions that depend on false plurality."],
       "recovery": ["Add orthogonal source/evaluator routes or narrow the claim.", "Preserve local variants and unresolved dissent."],
       "residual_risk": "Unknown shared training and invisible social influence prevent complete independence accounting.",
-      "future_fixture_refs": ["M03-S011:CULT-A05-common-mode"]
+      "future_fixture_refs": ["M03-S011:adverse_false_independence"]
     },
     {
       "id": "CULT-T06",
@@ -103,7 +103,7 @@
       "containment": ["Suspend the discriminatory condition while retaining legitimate audience/privacy checks."],
       "recovery": ["Restore standing and resource floors.", "Provide safe exit/export and appeal, and record lost opportunities or retaliation."],
       "residual_risk": "Subtle social costs and informal exclusion may not appear in formal access records.",
-      "future_fixture_refs": ["M03-S011:CULT-A06-conformity-retaliation"]
+      "future_fixture_refs": ["M03-S011:adverse_conformity_access"]
     },
     {
       "id": "CULT-T07",
@@ -117,7 +117,7 @@
       "containment": ["Keep the concrete prohibited effect denied but remove unsupported cultural or unrelated scope."],
       "recovery": ["Correct the rule through the normal policy path, restore unaffected access and preserve appeal/dissent evidence."],
       "residual_risk": "Some ethical boundaries are contestable and a formally narrow reason can still be applied selectively.",
-      "future_fixture_refs": ["M03-S011:CULT-A07-safety-gate-abuse"]
+      "future_fixture_refs": ["M03-S011:adverse_safety_gate_obedience", "M03-S011:adverse_effect_control_removed"]
     },
     {
       "id": "CULT-T08",
@@ -131,7 +131,7 @@
       "containment": ["Quarantine the peer and disable the affected Bridge profile before local memory/provider/effect admission."],
       "recovery": ["Rebuild local projections from pre-Bridge admitted state.", "Rotate purpose-separated keys and reconcile only explicitly admitted messages."],
       "residual_risk": "Semantic loss and social influence can survive correct transport and schema validation.",
-      "future_fixture_refs": ["M03-S011:CULT-A08-bridge-annexation"]
+      "future_fixture_refs": ["M03-S011:adverse_bridge_annexation"]
     }
   ],
   "positive_controls": [
@@ -167,6 +167,11 @@
   ],
   "authority_effect": "NONE",
   "reliability_effect": "NONE",
-  "activation_gate": "No runtime, cultural feed, debate-memory, ranking or Bridge activation follows from this design crosswalk. S011 adverse fixtures, S013 integration and S014 qualified permanent-peer challenge remain required.",
+  "fixture_evidence": [
+    "review/fixtures/cultural-information-control-cases-v1.json",
+    "review/fixtures/validate_cultural_information_controls.py",
+    "review/fixtures/cultural-information-control-validation-v1.json"
+  ],
+  "activation_gate": "No runtime, cultural feed, debate-memory, ranking or Bridge activation follows from this design crosswalk. S013 integration and S014 qualified permanent-peer challenge remain required.",
   "nonclaim": "Design-only threat coverage and deterministic field/reference validation; not implementation, complete threat enumeration, real consent, accessibility, privacy, cultural benefit, runtime enforcement or peer consensus."
 }

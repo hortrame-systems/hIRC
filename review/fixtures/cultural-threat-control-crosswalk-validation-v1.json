@@ -3,11 +3,11 @@
   "stone": "M03-S010",
   "source": {
     "path": "review/cultural-threat-control-crosswalk-v1.json",
-    "sha256": "b999ecb1ecee98ffc94460f1dd4bd32fb19bcdcab2c359dbca380d03184057f5"
+    "sha256": "1f3a3d71161ad588e7f1feba63078e5ebb289540f66f18334897bee045c07414"
   },
   "validator": {
     "path": "review/fixtures/validate_cultural_threat_crosswalk.py",
-    "sha256": "d194e3d2ee4e9abb0f10c5dae63527e354fc5c78538c2b4c77b8ba5efdf5a904"
+    "sha256": "97d213ee6791d23674eae1be652d1c4c3c7b993dd26aba0c450c7a15517a14f6"
   },
   "positive": {
     "accepted": true,

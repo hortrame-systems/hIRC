@@ -56,6 +56,20 @@ def validate(data: dict) -> list[str]:
             if not (ROOT / contract).is_file():
                 errors.append(f"missing-contract:{contract}")
 
+    fixture_evidence = data.get("fixture_evidence")
+    fixture_case_ids: set[str] = set()
+    if not nonempty_list(fixture_evidence):
+        errors.append("fixture-evidence")
+    else:
+        for relative in fixture_evidence:
+            path = ROOT / relative
+            if not path.is_file():
+                errors.append(f"missing-fixture-evidence:{relative}")
+        case_path = ROOT / "review/fixtures/cultural-information-control-cases-v1.json"
+        if case_path.is_file():
+            case_payload = json.loads(case_path.read_text(encoding="utf-8"))
+            fixture_case_ids = {item.get("id") for item in case_payload.get("cases", []) if isinstance(item, dict)}
+
     threats = data.get("threats")
     if not isinstance(threats, list):
         return [*errors, "threats"]
@@ -82,8 +96,10 @@ def validate(data: dict) -> list[str]:
             errors.append(f"{threat_id}:requirement-control")
         if not any(item in EXPECTED_DECISIONS for item in controls):
             errors.append(f"{threat_id}:decision-control")
-        if any(not item.startswith("M03-S011:CULT-A") for item in threat.get("future_fixture_refs", [])):
+        if any(not item.startswith("M03-S011:") for item in threat.get("future_fixture_refs", [])):
             errors.append(f"{threat_id}:future-fixture")
+        if any(item.split(":", 1)[1] not in fixture_case_ids for item in threat.get("future_fixture_refs", []) if ":" in item):
+            errors.append(f"{threat_id}:missing-fixture-case")
 
     positives = {item.get("id"): item for item in data.get("positive_controls", []) if isinstance(item, dict)}
     if set(positives) != {"CULT-PC01", "CULT-PC02"}:

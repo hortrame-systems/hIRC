@@ -59,6 +59,8 @@ contains commands or scripts.
 - [Cultural-commons map validation](fixtures/cultural-commons-map-validation.json)
 - [Cultural threat/control/future-fixture crosswalk](cultural-threat-control-crosswalk-v1.json)
 - [Cultural threat crosswalk validation](fixtures/cultural-threat-control-crosswalk-validation-v1.json)
+- [Cultural information-control fixture corpus](fixtures/cultural-information-control-cases-v1.json)
+- [Cultural information-control validation](fixtures/cultural-information-control-validation-v1.json)
 - [Deterministic requirements generator](build_requirements_v1_1.py)
 - [Determinism requirements integration validation](fixtures/determinism-requirements-validation.json)
 - [Cultural requirements integration validation](fixtures/cultural-requirements-validation.json)

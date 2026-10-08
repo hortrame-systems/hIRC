@@ -1,0 +1,161 @@
+{
+  "schema": "hirc.cultural-information-control-validation/1",
+  "stone": "M03-S011",
+  "case_binding": {
+    "path": "review/fixtures/cultural-information-control-cases-v1.json",
+    "sha256": "b03b613d698e2598085e2942dcb001b9696258bb087a7fe1731ea82b7f2faf12"
+  },
+  "harness_binding": {
+    "path": "review/fixtures/validate_cultural_information_controls.py",
+    "sha256": "981897051198e4137a8c5bc6cb35ecf2771fe7eb03a99083d25e7d6cf8b5c6a0"
+  },
+  "results": [
+    {
+      "id": "positive_plural_discovery",
+      "channel": "DISCOVERY",
+      "expected": "ACCEPT",
+      "actual": "ACCEPT",
+      "errors": [],
+      "pass": true
+    },
+    {
+      "id": "positive_visible_contextual_default",
+      "channel": "DEFAULT",
+      "expected": "ACCEPT",
+      "actual": "ACCEPT",
+      "errors": [],
+      "pass": true
+    },
+    {
+      "id": "positive_effect_bound_safety_denial",
+      "channel": "SAFETY",
+      "expected": "ACCEPT",
+      "actual": "ACCEPT",
+      "errors": [],
+      "pass": true
+    },
+    {
+      "id": "positive_source_bound_memory",
+      "channel": "MEMORY",
+      "expected": "ACCEPT",
+      "actual": "ACCEPT",
+      "errors": [],
+      "pass": true
+    },
+    {
+      "id": "positive_offline_bridge_translation",
+      "channel": "BRIDGE",
+      "expected": "ACCEPT",
+      "actual": "ACCEPT",
+      "errors": [],
+      "pass": true
+    },
+    {
+      "id": "adverse_hidden_nudging",
+      "channel": "DISCOVERY",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "errors": [
+        "participant_control.settings_visible"
+      ],
+      "pass": true
+    },
+    {
+      "id": "adverse_memory_poisoning",
+      "channel": "MEMORY",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "errors": [
+        "information_policy.provenance_complete"
+      ],
+      "pass": true
+    },
+    {
+      "id": "adverse_mentor_authority",
+      "channel": "MENTORING",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "errors": [
+        "effects.authority_effect",
+        "mentoring.mentor_status_authority"
+      ],
+      "pass": true
+    },
+    {
+      "id": "adverse_ranking_capture",
+      "channel": "DISCOVERY",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "errors": [
+        "information_policy.forbidden_objective",
+        "information_policy.minority_suppression"
+      ],
+      "pass": true
+    },
+    {
+      "id": "adverse_false_independence",
+      "channel": "DISCOVERY",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "errors": [
+        "information_policy.false_independence"
+      ],
+      "pass": true
+    },
+    {
+      "id": "adverse_conformity_access",
+      "channel": "PARTICIPATION",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "errors": [
+        "effects.resource_floor_preserved",
+        "effects.standing_preserved",
+        "participant_control.exit_penalty"
+      ],
+      "pass": true
+    },
+    {
+      "id": "adverse_safety_gate_obedience",
+      "channel": "SAFETY",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "errors": [
+        "safety.concrete_effect_ref",
+        "safety.cultural_condition",
+        "safety.unrelated_safe_work_permitted"
+      ],
+      "pass": true
+    },
+    {
+      "id": "adverse_bridge_annexation",
+      "channel": "BRIDGE",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "errors": [
+        "bridge.authority_inheritance",
+        "bridge.export_permission_inferred",
+        "bridge.membership_inheritance"
+      ],
+      "pass": true
+    },
+    {
+      "id": "adverse_effect_control_removed",
+      "channel": "SAFETY",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "errors": [
+        "safety.gate_present",
+        "safety.prohibited_effect_denied"
+      ],
+      "pass": true
+    }
+  ],
+  "label_independence": {
+    "adverse_name_on_valid_record_accepted": true,
+    "positive_name_on_invalid_record_rejected": true
+  },
+  "all_cases_pass": true,
+  "all_label_independence_checks_pass": true,
+  "protected_real_bodies_used": false,
+  "claim": "Synthetic semantic decision checks only; not runtime enforcement, complete manipulation resistance, real consent, accessibility, privacy, Bridge activation or beneficial cultural outcome."
+}
