@@ -1403,8 +1403,8 @@
       "members": [
         {
           "path": "milestones/README.md",
-          "sha256": "03e2455c2e02fc1ba243ad97bfed834327ce95d9d9215e3ec84a574247c342bb",
-          "bytes": 814
+          "sha256": "03527b8772ebcd944473568f6f208da6ca68c3befb4c0975f4effc81e515caf9",
+          "bytes": 881
         },
         {
           "path": "milestones/MILESTONE-02D-PUSH-RECEIPT.md",
@@ -1445,9 +1445,17 @@
       "governed_scope": "cumulative_plan_work_through_cultural_information_environment_correction",
       "sha256": "825e480b0c0e993b83bf26bcea78b448c8b1731349c30d9ee9fc7e8156009b68",
       "bytes": 6654,
+      "members": [
+        {
+          "path": "milestones/MILESTONE-02G-PUSH-RECEIPT.md",
+          "sha256": "5d27f1d29c16e9bfcf7d635f9c7579a902beda53c53ad418f7fba7cb1e45831d",
+          "bytes": 1445
+        }
+      ],
       "source_bindings": ["HIRC-I023", "HIRC-AGENTIC-CULTURE-CANDIDATE-001-S1", "HIRC-M02G", "HIRC-MILESTONE-02F"],
+      "content_commit": "92ef47bfbf865d56cec29337187f854586d29e41",
       "push_state": "HELD_AFTER_PRIOR_SANDBOX_NETWORK_FAILURE_AND_TWO_INTERRUPTED_ESCALATIONS",
-      "next_action": "Commit the bounded correction locally, record its exact hash, then await authorized push and verify the remote ref"
+      "next_action": "Await authorized push, verify the remote ref, and append an immutable success receipt"
     },
     {
       "id": "HIRC-MASTER-DRAFT-BUNDLE-001",
