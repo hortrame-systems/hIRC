@@ -2,7 +2,7 @@
   "schema": "hirc.stone-register/1",
   "milestone_id": "HIRC-M03",
   "title": "Determinism and cultural information-environment integration",
-  "status": "STONE_007_PASS_S003_REVIEW_OPEN_S008_READY",
+  "status": "STONE_008_PASS_S003_REVIEW_OPEN_S009_READY",
   "created_on": "2026-10-08",
   "control": {
     "goal_ref": "HIRC-GOAL-VERSION-002",
@@ -208,7 +208,7 @@
     {
       "id": "M03-S008",
       "outcome": "Define typed discovery and recommendation-rationale contracts with plural routes, disclosed basis, bounded variation and original access.",
-      "status": "READY",
+      "status": "PASS",
       "prerequisites": ["M03-S007"],
       "owner": "current_project_controller",
       "canonical_writer": "current_project_controller",
@@ -224,7 +224,7 @@
     {
       "id": "M03-S009",
       "outcome": "Define participant-controlled settings, subscriptions, exit, correction and dissent-reachability contracts without retaliation.",
-      "status": "CAPTURED",
+      "status": "READY",
       "prerequisites": ["M03-S008"],
       "owner": "current_project_controller",
       "canonical_writer": "current_project_controller",

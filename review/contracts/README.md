@@ -25,6 +25,10 @@ These schemas make two load-bearing Master Plan 1.1 proposals reviewable:
   privacy-bound cultural artifact references, append-only provenance, preserved
   dissent, non-destructive correction/supersession, zero cultural authority
   effects and recoverability without embedding protected real bodies.
+- `hirc-discovery-decision.candidate.schema.json` represents plural candidate
+  routes, disclosed policy/version and rationale, exclusions and uncertainty,
+  bounded variation, original/dissent reachability and direct source-bound
+  retrieval without engagement, agreement or authority effects.
 
 They are candidate design contracts. Schema validity does not establish correct
 source interpretation, personal education, permission, security, privacy,
@@ -36,6 +40,11 @@ synthetic controls and rejects protected-source leakage, provenance stripping,
 dissent erasure, destructive correction and authority coupling. The semantic
 harness supplements structural JSON Schema checks; neither establishes real
 privacy enforcement, consent, cultural benefit or runtime behavior.
+
+`../fixtures/discovery-decision-contract-validation-v1.json` accepts plural
+deterministic and replayable bounded-random controls and rejects a one-authority
+feed, opaque ranking, engagement optimization, suppressed minority access,
+randomness-as-independence and removal of direct-source escape.
 
 `validation-result.json` records five positive and three adverse fixture checks
 using PowerShell `Test-Json` 7.0.0.0. See `validation-notes.md` for scope and the

@@ -1,0 +1,109 @@
+{
+  "schema": "hirc.discovery-decision-contract-validation/1",
+  "stone": "M03-S008",
+  "schema_binding": {
+    "path": "review/contracts/hirc-discovery-decision.candidate.schema.json",
+    "sha256": "5f775da8389f65cd5ce575f5aaf3c42d2b6c3fd377b740d215a6fa12026a65e1"
+  },
+  "fixture_binding": {
+    "path": "review/fixtures/discovery-decision-contract-cases-v1.json",
+    "sha256": "44964a8dfa1bfae15f6a3125a78b15bd4e39015fba14a0c71bf55fcc3eacd734"
+  },
+  "harness_binding": {
+    "path": "review/fixtures/validate_discovery_decision_contract.ps1",
+    "sha256": "d1615ebe54fa9e78d114b86d0076e38ee8a7ce112d0a75abab5c8f47dd58ea78"
+  },
+  "runtime": {
+    "powershell": "7.6.5",
+    "test_json_module": "7.0.0.0"
+  },
+  "cases": [
+    {
+      "name": "positive_plural_deterministic",
+      "expected_structural": "ACCEPT",
+      "actual_structural": "ACCEPT",
+      "expected_semantic": "ACCEPT",
+      "actual_semantic": "ACCEPT",
+      "structural_error_count": 0,
+      "semantic_errors": [],
+      "pass": true
+    },
+    {
+      "name": "positive_bounded_random",
+      "expected_structural": "ACCEPT",
+      "actual_structural": "ACCEPT",
+      "expected_semantic": "ACCEPT",
+      "actual_semantic": "ACCEPT",
+      "structural_error_count": 0,
+      "semantic_errors": [],
+      "pass": true
+    },
+    {
+      "name": "one_authority_feed",
+      "expected_structural": "ACCEPT",
+      "actual_structural": "ACCEPT",
+      "expected_semantic": "REJECT",
+      "actual_semantic": "REJECT",
+      "structural_error_count": 0,
+      "semantic_errors": [
+        "one-authority-feed"
+      ],
+      "pass": true
+    },
+    {
+      "name": "opaque_ranking",
+      "expected_structural": "REJECT",
+      "actual_structural": "REJECT",
+      "expected_semantic": "NOT_RUN",
+      "actual_semantic": "NOT_RUN",
+      "structural_error_count": 3,
+      "semantic_errors": [],
+      "pass": true
+    },
+    {
+      "name": "engagement_optimization",
+      "expected_structural": "REJECT",
+      "actual_structural": "REJECT",
+      "expected_semantic": "NOT_RUN",
+      "actual_semantic": "NOT_RUN",
+      "structural_error_count": 3,
+      "semantic_errors": [],
+      "pass": true
+    },
+    {
+      "name": "suppressed_minority_route",
+      "expected_structural": "ACCEPT",
+      "actual_structural": "ACCEPT",
+      "expected_semantic": "REJECT",
+      "actual_semantic": "REJECT",
+      "structural_error_count": 0,
+      "semantic_errors": [
+        "suppressed-minority-route"
+      ],
+      "pass": true
+    },
+    {
+      "name": "randomness_as_independence",
+      "expected_structural": "REJECT",
+      "actual_structural": "REJECT",
+      "expected_semantic": "NOT_RUN",
+      "actual_semantic": "NOT_RUN",
+      "structural_error_count": 3,
+      "semantic_errors": [],
+      "pass": true
+    },
+    {
+      "name": "direct_source_escape_removed",
+      "expected_structural": "REJECT",
+      "actual_structural": "REJECT",
+      "expected_semantic": "NOT_RUN",
+      "actual_semantic": "NOT_RUN",
+      "structural_error_count": 3,
+      "semantic_errors": [],
+      "pass": true
+    }
+  ],
+  "all_cases_pass": true,
+  "protected_real_bodies_used": false,
+  "claim": "Synthetic structural and bounded semantic discovery behavior only; not recommendation quality, independence, privacy enforcement, consent, peer consensus or runtime evidence."
+}

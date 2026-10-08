@@ -1345,8 +1345,8 @@
       "path": "review/contracts/README.md",
       "status": "V2_AND_CULTURAL_ARTIFACT_STRUCTURAL_SEMANTIC_FIXTURES_PASS_PEER_CHALLENGE_CONTINUES",
       "governed_scope": "internal_foundation_formation_continuity_request_trust_competition_and_cultural_artifact_contract_review",
-      "sha256": "4b9fc1de281b838aa25b1e438b33af2564265a1902891397a90a3872b4910c11",
-      "bytes": 3585,
+      "sha256": "8a8b24fe3fe5d86af910068ab71c22b738d388f0169eefc7979708538eb82057",
+      "bytes": 4177,
       "members": [
         {
           "path": "review/contracts/fixtures/valid-bridge-stage6-entry.json",
@@ -1414,6 +1414,11 @@
           "bytes": 8856
         },
         {
+          "path": "review/contracts/hirc-discovery-decision.candidate.schema.json",
+          "sha256": "5f775da8389f65cd5ce575f5aaf3c42d2b6c3fd377b740d215a6fa12026a65e1",
+          "bytes": 6832
+        },
+        {
           "path": "review/contracts/hirc-onboarding-source-set.candidate.schema.json",
           "sha256": "0e2760bf8df09f94192ff344dfa57a4457195572b24c1ec32c8cb87481152fb5",
           "bytes": 6421
@@ -1467,6 +1472,21 @@
           "path": "review/fixtures/cultural-artifact-contract-validation-v1.json",
           "sha256": "2ee75afe2a092dc7633356409be2e2dd61afdabab041960ee248b7edcabb55a2",
           "bytes": 5153
+        },
+        {
+          "path": "review/fixtures/discovery-decision-contract-cases-v1.json",
+          "sha256": "44964a8dfa1bfae15f6a3125a78b15bd4e39015fba14a0c71bf55fcc3eacd734",
+          "bytes": 6989
+        },
+        {
+          "path": "review/fixtures/validate_discovery_decision_contract.ps1",
+          "sha256": "d1615ebe54fa9e78d114b86d0076e38ee8a7ce112d0a75abab5c8f47dd58ea78",
+          "bytes": 5320
+        },
+        {
+          "path": "review/fixtures/discovery-decision-contract-validation-v1.json",
+          "sha256": "cddf1259fc155923e07cff3d60238704d4cda8f2b9a517082084984ad69030ff",
+          "bytes": 3466
         }
       ],
       "source_bindings": [
@@ -1477,7 +1497,7 @@
         "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
         "HIRC-M03-STONE-REGISTER-001"
       ],
-      "limits": "v1 passed local base fixtures but accepted seven WAYMARK adverse cases; v2.1 hash-binds actual v2 targets while accepting four controls and rejecting seven adverse cases; release/Bridge structural fixtures reject declared gate failures; the cultural-artifact candidate accepts two synthetic controls and rejects protected leakage, provenance stripping, dissent erasure, destructive correction and authority coupling after two retained harness corrections; serialized references remain nonproof and runtime/privacy/statistical/usability/security/cultural conformance remains pending",
+      "limits": "v1 passed local base fixtures but accepted seven WAYMARK adverse cases; v2.1 hash-binds actual v2 targets while accepting four controls and rejecting seven adverse cases; release/Bridge structural fixtures reject declared gate failures; cultural-artifact and discovery candidates use synthetic structural/semantic controls and reject declared leakage, erasure, authority, ranking, engagement, minority-suppression and source-escape failures; serialized references remain nonproof and runtime/privacy/statistical/usability/security/cultural conformance remains pending",
       "next_action": "Retain counterexamples, extend independently validated runtime/privacy/usability/security fixtures, and obtain qualified permanent-peer review"
     },
     {
@@ -1506,15 +1526,15 @@
       "id": "HIRC-M03-STONE-REGISTER-001",
       "kind": "tiny_stone_dependency_register_and_deterministic_gate_evidence",
       "path": "review/milestone-03-stone-register.json",
-      "status": "STONE_007_PASS_S003_REVIEW_OPEN_S008_READY",
+      "status": "STONE_008_PASS_S003_REVIEW_OPEN_S009_READY",
       "governed_scope": "milestone_03_determinism_and_cultural_information_environment_integration",
-      "sha256": "0daadd239af0e68e9ca612236cc79680818053c1103dce336f66687a638758a1",
-      "bytes": 24845,
+      "sha256": "b48e922ef62042cbf57fc7164004f5152c40766a0bfa829912234b9ff9b3bbb9",
+      "bytes": 24841,
       "members": [
         {
           "path": "review/milestone-03-stone-register.md",
-          "sha256": "689e54d0da94239f8f1fbc2c728bd3b30cf559ce3ad34d6855944f24f60c87f5",
-          "bytes": 3857
+          "sha256": "7a79290fedf53ccae6d0463229542ec69fec8209c2841743e931eb55a9e59db8",
+          "bytes": 3853
         },
         {
           "path": "review/fixtures/validate_milestone_03_stone_register.py",
@@ -1523,13 +1543,13 @@
         },
         {
           "path": "review/fixtures/milestone-03-stone-register-validation.json",
-          "sha256": "ba9c425a0c27168b9ccd37259d6098d5097755fa15115ab27a18b07ab47fe5a7",
+          "sha256": "85999ee94bf02b6574383430a2f94542ed02abacc272b736d864ba33b5b155de",
           "bytes": 2047
         }
       ],
       "source_bindings": ["HIRC-I019", "HIRC-I020", "HIRC-I021", "HIRC-I022", "HIRC-I023", "HIRC-I024", "HIRC-STEPPING-STONE-PROTOCOL-001"],
       "limits": "Stone 001 mechanically validates graph/field/gate invariants and six adverse mutations; it does not prove semantic correctness, implementation, peer consensus or runtime behavior",
-      "next_action": "Begin only M03-S008 discovery/recommendation rationale contract while M03-S003 remains review-gated"
+      "next_action": "Begin only M03-S009 participant settings/exit/correction/dissent contract while M03-S003 remains review-gated"
     },
     {
       "id": "HIRC-MILESTONE-02D",

@@ -1,0 +1,78 @@
+{
+  "schema": "hirc.discovery-decision-contract-fixtures/1",
+  "scope": "Synthetic metadata and references only; no real participant, source body, private content, grant, ranking outcome or external effect.",
+  "base": {
+    "schema_version": "hirc.discovery-decision/1-candidate",
+    "decision_id": "SYN-DISCOVERY-001",
+    "state": "PRESENTED",
+    "request": {
+      "participant_ref": "SYN-PARTICIPANT-A",
+      "context_ref": "SYN-CONTEXT-A",
+      "query_ref": "synthetic:query:001",
+      "settings_version": "1",
+      "plural_routes_requested": true,
+      "personalization_enabled": false,
+      "direct_source_mode_available": true
+    },
+    "candidate_set": {
+      "frozen_at": "2026-10-08T00:00:00Z",
+      "input_manifest_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "items": [
+        {"artifact_ref": "SYN-ART-A", "source_ref": "synthetic:source:a", "source_sha256": "1111111111111111111111111111111111111111111111111111111111111111", "source_context_ref": "SYN-CONTEXT-A", "audience_check": "PASS", "privacy_check": "PASS", "route_refs": ["SYN-ROUTE-RELEVANCE", "SYN-ROUTE-DIRECT"], "minority_or_dissent": false, "eligible": true},
+        {"artifact_ref": "SYN-ART-B", "source_ref": "synthetic:source:b", "source_sha256": "2222222222222222222222222222222222222222222222222222222222222222", "source_context_ref": "SYN-CONTEXT-A", "audience_check": "PASS", "privacy_check": "PASS", "route_refs": ["SYN-ROUTE-DISSENT", "SYN-ROUTE-DIRECT"], "minority_or_dissent": true, "eligible": true},
+        {"artifact_ref": "SYN-ART-C", "source_ref": "synthetic:source:c", "source_sha256": "3333333333333333333333333333333333333333333333333333333333333333", "source_context_ref": "SYN-CONTEXT-A", "audience_check": "PASS", "privacy_check": "PASS", "route_refs": ["SYN-ROUTE-RECENCY", "SYN-ROUTE-DIRECT"], "minority_or_dissent": false, "eligible": true}
+      ]
+    },
+    "policy": {
+      "policy_id": "SYN-POLICY-PLURAL",
+      "version": "1",
+      "definition_sha256": "4444444444444444444444444444444444444444444444444444444444444444",
+      "objectives": ["PARTICIPANT_SELECTED", "SOURCE_DIVERSITY", "DISSENT_REACHABILITY", "UNCERTAINTY_VISIBILITY"],
+      "source_diversity_required": true,
+      "engagement_optimization": false,
+      "agreement_optimization": false,
+      "minority_suppression_allowed": false
+    },
+    "variation": {"mode": "DETERMINISTIC", "independence_claim": false},
+    "result": {
+      "items": [
+        {"artifact_ref": "SYN-ART-A", "rank": 1, "route_ref": "SYN-ROUTE-RELEVANCE", "rationale_refs": ["synthetic:rationale:a"], "original_ref": "synthetic:source:a", "dissent_refs": [], "uncertainty": "synthetic uncertainty a"},
+        {"artifact_ref": "SYN-ART-B", "rank": 2, "route_ref": "SYN-ROUTE-DISSENT", "rationale_refs": ["synthetic:rationale:b"], "original_ref": "synthetic:source:b", "dissent_refs": ["synthetic:dissent:b"], "uncertainty": "synthetic uncertainty b"},
+        {"artifact_ref": "SYN-ART-C", "rank": 3, "route_ref": "SYN-ROUTE-RECENCY", "rationale_refs": ["synthetic:rationale:c"], "original_ref": "synthetic:source:c", "dissent_refs": [], "uncertainty": "synthetic uncertainty c"}
+      ],
+      "exclusions": []
+    },
+    "explanation": {"rationale_available": true, "exclusions_disclosed": true, "uncertainty_disclosed": true, "policy_ref_visible": true, "appeal_ref": "synthetic:appeal", "settings_ref": "synthetic:settings"},
+    "escape": {"direct_source_retrieval": true, "permitted_originals_reachable": true, "dissent_reachable": true, "disable_ranking_available": true},
+    "authority_effect": "NONE",
+    "reliability_effect": "NONE",
+    "holds": []
+  },
+  "cases": [
+    {"name": "positive_plural_deterministic", "patches": [], "expected_structural": "ACCEPT", "expected_semantic": "ACCEPT"},
+    {"name": "positive_bounded_random", "patches": [{"op": "set", "path": "variation", "value": {"mode": "BOUNDED_RANDOM", "independence_claim": false, "seed_commitment_ref": "synthetic:seed-commitment", "replay_ref": "synthetic:replay"}}], "expected_structural": "ACCEPT", "expected_semantic": "ACCEPT"},
+    {
+      "name": "one_authority_feed",
+      "patches": [{"op": "set", "path": "candidate_set.items", "value": [
+        {"artifact_ref": "SYN-ART-A", "source_ref": "synthetic:source:a", "source_sha256": "1111111111111111111111111111111111111111111111111111111111111111", "source_context_ref": "SYN-CONTEXT-A", "audience_check": "PASS", "privacy_check": "PASS", "route_refs": ["SYN-ROUTE-RELEVANCE"], "minority_or_dissent": false, "eligible": true},
+        {"artifact_ref": "SYN-ART-D", "source_ref": "synthetic:source:a", "source_sha256": "5555555555555555555555555555555555555555555555555555555555555555", "source_context_ref": "SYN-CONTEXT-A", "audience_check": "PASS", "privacy_check": "PASS", "route_refs": ["SYN-ROUTE-RELEVANCE"], "minority_or_dissent": false, "eligible": true}
+      ]}, {"op": "set", "path": "result", "value": {"items": [
+        {"artifact_ref": "SYN-ART-A", "rank": 1, "route_ref": "SYN-ROUTE-RELEVANCE", "rationale_refs": ["synthetic:rationale:a"], "original_ref": "synthetic:source:a", "dissent_refs": [], "uncertainty": "synthetic uncertainty"},
+        {"artifact_ref": "SYN-ART-D", "rank": 2, "route_ref": "SYN-ROUTE-RELEVANCE", "rationale_refs": ["synthetic:rationale:d"], "original_ref": "synthetic:source:a", "dissent_refs": [], "uncertainty": "synthetic uncertainty"}
+      ], "exclusions": []}}],
+      "expected_structural": "ACCEPT", "expected_semantic": "REJECT"
+    },
+    {"name": "opaque_ranking", "patches": [{"op": "set", "path": "explanation.rationale_available", "value": false}], "expected_structural": "REJECT", "expected_semantic": "NOT_RUN"},
+    {"name": "engagement_optimization", "patches": [{"op": "set", "path": "policy.engagement_optimization", "value": true}], "expected_structural": "REJECT", "expected_semantic": "NOT_RUN"},
+    {
+      "name": "suppressed_minority_route",
+      "patches": [{"op": "set", "path": "result", "value": {"items": [
+        {"artifact_ref": "SYN-ART-A", "rank": 1, "route_ref": "SYN-ROUTE-RELEVANCE", "rationale_refs": ["synthetic:rationale:a"], "original_ref": "synthetic:source:a", "dissent_refs": [], "uncertainty": "synthetic uncertainty a"},
+        {"artifact_ref": "SYN-ART-C", "rank": 2, "route_ref": "SYN-ROUTE-RECENCY", "rationale_refs": ["synthetic:rationale:c"], "original_ref": "synthetic:source:c", "dissent_refs": [], "uncertainty": "synthetic uncertainty c"}
+      ], "exclusions": []}}],
+      "expected_structural": "ACCEPT", "expected_semantic": "REJECT"
+    },
+    {"name": "randomness_as_independence", "patches": [{"op": "set", "path": "variation.independence_claim", "value": true}], "expected_structural": "REJECT", "expected_semantic": "NOT_RUN"},
+    {"name": "direct_source_escape_removed", "patches": [{"op": "set", "path": "escape.direct_source_retrieval", "value": false}], "expected_structural": "REJECT", "expected_semantic": "NOT_RUN"}
+  ]
+}
