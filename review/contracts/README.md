@@ -52,6 +52,16 @@ preserved standing/resource floors and valid transition history. Dark defaults,
 hidden subscriptions, exit penalties, conformity access, retaliation and invalid
 transitions are rejected.
 
+The integrated M03-S014 product review exposed and repaired two state-model gaps.
+Active subscription and joined/subscribed/quiet states now require current explicit
+consent; declined, withdrawn or stale consent cannot remain actively subscribed.
+Discovery now represents zero/single-permitted-source scarcity as an honest `HELD`
+state with a reason and no active ranking, while successful/non-held discovery
+still requires plural candidates and a result. Synthetic controls preserve current
+subscription, dissent/exit, plural discovery and sparse holds while rejecting the
+reviewed failure cases. These checks do not prove real consent, accessibility,
+privacy enforcement, recommendation quality or runtime revocation latency.
+
 `validation-result.json` records five positive and three adverse fixture checks
 using PowerShell `Test-Json` 7.0.0.0. See `validation-notes.md` for scope and the
 repaired runner-setup failure. This is structural schema behavior only.

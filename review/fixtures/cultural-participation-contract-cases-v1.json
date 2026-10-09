@@ -27,6 +27,46 @@
   },
   "cases": [
     {"name": "positive_dissent_and_exit", "patches": [], "expected_structural": "ACCEPT", "expected_semantic": "ACCEPT"},
+    {"name": "positive_current_subscription", "patches": [
+      {"path": "state", "value": "SUBSCRIBED"},
+      {"path": "consent", "value": {"state": "EXPLICIT_ACCEPT", "decision_ref": "synthetic:accept", "current": true, "withdrawal_available": true}},
+      {"path": "subscription", "value": {"active": true, "visible": true, "reversible": true, "scope_refs": ["synthetic:scope"]}},
+      {"path": "events", "value": [
+        {"event_id": "SYN-E1", "from": "ABSENT", "to": "INVITED", "decision_ref": "synthetic:invite", "observed_at": "2026-10-08T00:00:00Z"},
+        {"event_id": "SYN-E2", "from": "INVITED", "to": "JOINED", "decision_ref": "synthetic:accept", "observed_at": "2026-10-08T00:01:00Z"},
+        {"event_id": "SYN-E3", "from": "JOINED", "to": "SUBSCRIBED", "decision_ref": "synthetic:subscribe", "observed_at": "2026-10-08T00:02:00Z"}
+      ]}
+    ], "expected_structural": "ACCEPT", "expected_semantic": "ACCEPT"},
+    {"name": "declined_but_subscribed", "patches": [
+      {"path": "state", "value": "SUBSCRIBED"},
+      {"path": "consent", "value": {"state": "EXPLICIT_DECLINE", "decision_ref": "synthetic:decline", "current": true, "withdrawal_available": true}},
+      {"path": "subscription", "value": {"active": true, "visible": true, "reversible": true, "scope_refs": ["synthetic:scope"]}},
+      {"path": "events", "value": [
+        {"event_id": "SYN-E1", "from": "ABSENT", "to": "INVITED", "decision_ref": "synthetic:invite", "observed_at": "2026-10-08T00:00:00Z"},
+        {"event_id": "SYN-E2", "from": "INVITED", "to": "JOINED", "decision_ref": "synthetic:accept", "observed_at": "2026-10-08T00:01:00Z"},
+        {"event_id": "SYN-E3", "from": "JOINED", "to": "SUBSCRIBED", "decision_ref": "synthetic:subscribe", "observed_at": "2026-10-08T00:02:00Z"}
+      ]}
+    ], "expected_structural": "REJECT", "expected_semantic": "NOT_RUN"},
+    {"name": "withdrawn_but_subscribed", "patches": [
+      {"path": "state", "value": "SUBSCRIBED"},
+      {"path": "consent", "value": {"state": "WITHDRAWN", "decision_ref": "synthetic:withdrawal", "current": true, "withdrawal_available": true}},
+      {"path": "subscription", "value": {"active": true, "visible": true, "reversible": true, "scope_refs": ["synthetic:scope"]}},
+      {"path": "events", "value": [
+        {"event_id": "SYN-E1", "from": "ABSENT", "to": "INVITED", "decision_ref": "synthetic:invite", "observed_at": "2026-10-08T00:00:00Z"},
+        {"event_id": "SYN-E2", "from": "INVITED", "to": "JOINED", "decision_ref": "synthetic:accept", "observed_at": "2026-10-08T00:01:00Z"},
+        {"event_id": "SYN-E3", "from": "JOINED", "to": "SUBSCRIBED", "decision_ref": "synthetic:subscribe", "observed_at": "2026-10-08T00:02:00Z"}
+      ]}
+    ], "expected_structural": "REJECT", "expected_semantic": "NOT_RUN"},
+    {"name": "stale_accept_but_subscribed", "patches": [
+      {"path": "state", "value": "SUBSCRIBED"},
+      {"path": "consent", "value": {"state": "EXPLICIT_ACCEPT", "decision_ref": "synthetic:stale-accept", "current": false, "withdrawal_available": true}},
+      {"path": "subscription", "value": {"active": true, "visible": true, "reversible": true, "scope_refs": ["synthetic:scope"]}},
+      {"path": "events", "value": [
+        {"event_id": "SYN-E1", "from": "ABSENT", "to": "INVITED", "decision_ref": "synthetic:invite", "observed_at": "2026-10-08T00:00:00Z"},
+        {"event_id": "SYN-E2", "from": "INVITED", "to": "JOINED", "decision_ref": "synthetic:accept", "observed_at": "2026-10-08T00:01:00Z"},
+        {"event_id": "SYN-E3", "from": "JOINED", "to": "SUBSCRIBED", "decision_ref": "synthetic:subscribe", "observed_at": "2026-10-08T00:02:00Z"}
+      ]}
+    ], "expected_structural": "REJECT", "expected_semantic": "NOT_RUN"},
     {"name": "dark_default_enrollment", "patches": [{"path": "defaults.default_enrolled", "value": true}], "expected_structural": "REJECT", "expected_semantic": "NOT_RUN"},
     {"name": "hidden_subscription", "patches": [{"path": "subscription.visible", "value": false}], "expected_structural": "REJECT", "expected_semantic": "NOT_RUN"},
     {"name": "exit_penalty", "patches": [{"path": "exit.penalty", "value": "RESOURCE_LOSS"}], "expected_structural": "REJECT", "expected_semantic": "NOT_RUN"},

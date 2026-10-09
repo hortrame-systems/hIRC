@@ -28,7 +28,7 @@
       "properties": {
         "frozen_at": {"type": "string", "format": "date-time"},
         "input_manifest_sha256": {"$ref": "#/$defs/sha256"},
-        "items": {"type": "array", "minItems": 2, "items": {"$ref": "#/$defs/candidate"}}
+        "items": {"type": "array", "items": {"$ref": "#/$defs/candidate"}}
       }
     },
     "policy": {
@@ -64,7 +64,7 @@
       "type": "object", "additionalProperties": false,
       "required": ["items", "exclusions"],
       "properties": {
-        "items": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/resultItem"}},
+        "items": {"type": "array", "items": {"$ref": "#/$defs/resultItem"}},
         "exclusions": {"type": "array", "items": {"$ref": "#/$defs/exclusion"}}
       }
     },
@@ -94,6 +94,22 @@
     "reliability_effect": {"const": "NONE"},
     "holds": {"type": "array", "items": {"type": "string", "minLength": 1}}
   },
+  "allOf": [
+    {
+      "if": {"properties": {"state": {"const": "HELD"}}},
+      "then": {
+        "properties": {
+          "holds": {"minItems": 1}
+        }
+      },
+      "else": {
+        "properties": {
+          "candidate_set": {"properties": {"items": {"minItems": 2}}},
+          "result": {"properties": {"items": {"minItems": 1}}}
+        }
+      }
+    }
+  ],
   "$defs": {
     "stableId": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]{0,255}$"},
     "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},

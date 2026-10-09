@@ -1129,13 +1129,13 @@
       "path": "review/intent-coverage-draft-v1.md",
       "status": "PASS_REFERENCE_AND_FILE_PRESENCE_SCOPE_FINAL_CLOSURE_PENDING",
       "governed_scope": "project_intent_continuity",
-      "sha256": "5253ceeb714041fa54d3b865d4357e3d9445655851b6ff9f4fa93964f11a47c8",
-      "bytes": 4191,
+      "sha256": "b9b439d1dfab20af013b8595f713a4dcb07640209dadcb5133c4b6051967a557",
+      "bytes": 4156,
       "members": [
         {
           "path": "review/intent-coverage-draft-v1.json",
-          "sha256": "8ea7e5787ac5a0c3b512dafd882bdebda1f937e6cc53f4797e28ba40742a5dbd",
-          "bytes": 25153
+          "sha256": "f3c08b9058f96abccec869130d854cae05c598ecbb8e2a2d5965f85fa0c4ef92",
+          "bytes": 24555
         }
       ],
       "source_bindings": ["HIRC-INTENT-001", "HIRC-JOINT-CONSENSUS-DRAFT-005"],
@@ -1465,8 +1465,8 @@
       "path": "review/contracts/README.md",
       "status": "V2_AND_CULTURAL_ARTIFACT_DISCOVERY_PARTICIPATION_SYNTHETIC_FIXTURES_PASS_PEER_CHALLENGE_CONTINUES",
       "governed_scope": "internal_foundation_formation_continuity_request_trust_competition_and_cultural_artifact_contract_review",
-      "sha256": "54afc595c5e0be45f82c41aaff11951d2dd7f89002dafb147087867876acbbc9",
-      "bytes": 4523,
+      "sha256": "966f010f4dfc86adbbe52b8fa056242be344b3cd1b772d2f9356fa3409028d43",
+      "bytes": 5252,
       "members": [
         {
           "path": "review/contracts/fixtures/valid-bridge-stage6-entry.json",
@@ -1535,8 +1535,8 @@
         },
         {
           "path": "review/contracts/hirc-discovery-decision.candidate.schema.json",
-          "sha256": "5f775da8389f65cd5ce575f5aaf3c42d2b6c3fd377b740d215a6fa12026a65e1",
-          "bytes": 6832
+          "sha256": "425838b632503e10ca2dda83ee6d22eb4bee0f04ccde7a3036975b68f5aa0362",
+          "bytes": 7176
         },
         {
           "path": "review/contracts/hirc-onboarding-source-set.candidate.schema.json",
@@ -1595,38 +1595,38 @@
         },
         {
           "path": "review/fixtures/discovery-decision-contract-cases-v1.json",
-          "sha256": "44964a8dfa1bfae15f6a3125a78b15bd4e39015fba14a0c71bf55fcc3eacd734",
-          "bytes": 6989
+          "sha256": "a9377e544c292b8167773abeaffa882641797f468f8ad5cc5dc8df62583b9e6d",
+          "bytes": 8629
         },
         {
           "path": "review/fixtures/validate_discovery_decision_contract.ps1",
-          "sha256": "d1615ebe54fa9e78d114b86d0076e38ee8a7ce112d0a75abab5c8f47dd58ea78",
-          "bytes": 5320
+          "sha256": "77687e0b789ba4080d36cf9fd8c83f8b0b7b6d9842df97a90a15c77cac622bb1",
+          "bytes": 5563
         },
         {
           "path": "review/fixtures/discovery-decision-contract-validation-v1.json",
-          "sha256": "cddf1259fc155923e07cff3d60238704d4cda8f2b9a517082084984ad69030ff",
-          "bytes": 3466
+          "sha256": "640a3801e43829a44a59cd7d4c53667faf4872cfe521e7c3894001d013c91025",
+          "bytes": 4216
         },
         {
           "path": "review/contracts/hirc-cultural-participation.candidate.schema.json",
-          "sha256": "67accd5d892860131529c75706881e9ed8d18627adac5babbf22c29ce14a2889",
-          "bytes": 4716
+          "sha256": "20429d3d738f42eff025350bf8b74a272168b5fdd1f0e3d39261d18128fe7436",
+          "bytes": 5855
         },
         {
           "path": "review/fixtures/cultural-participation-contract-cases-v1.json",
-          "sha256": "4269e89cf1f7fe4dda2e5c83af4f1e4d73f6358c3b86cba3caaeff5fdd596152",
-          "bytes": 3461
+          "sha256": "4108f78d4c7e49a4afb83f5c905557d05a50c9f8f6a737fdeee148fecdd21ae1",
+          "bytes": 7198
         },
         {
           "path": "review/fixtures/validate_cultural_participation_contract.ps1",
-          "sha256": "533818986e7b3ad71af9006836e3cd9be263719c6bf28f7572ccbb491cf794e5",
-          "bytes": 3466
+          "sha256": "36990f54aa050d512bc9877600e1776b9b84fcf9e49bfc6cedd0e743ee44751d",
+          "bytes": 3835
         },
         {
           "path": "review/fixtures/cultural-participation-contract-validation-v1.json",
-          "sha256": "1a3fc4406c62249c5f8a9338773e4e5e1888fc787b6be3ae3fa29c1e27f63e9a",
-          "bytes": 2890
+          "sha256": "42efc9d9858979504689afcf9c3faed81439b21fbd70c2f5c47ba484060fde53",
+          "bytes": 3816
         }
       ],
       "source_bindings": [
@@ -1637,7 +1637,7 @@
         "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
         "HIRC-M03-STONE-REGISTER-001"
       ],
-      "limits": "v1 passed local base fixtures but accepted seven WAYMARK adverse cases; v2.1 hash-binds actual v2 targets while accepting four controls and rejecting seven adverse cases; release/Bridge structural fixtures reject declared gate failures; cultural-artifact, discovery and participation candidates use synthetic structural/semantic controls and reject declared leakage, erasure, authority, ranking, engagement, minority-suppression, source-escape, dark-default, hidden-subscription, exit-penalty, conformity-access, retaliation and invalid-transition failures; serialized references remain nonproof and runtime/privacy/statistical/usability/accessibility/security/cultural conformance remains pending",
+      "limits": "v1 passed local base fixtures but accepted seven WAYMARK adverse cases; v2.1 hash-binds actual v2 targets while accepting four controls and rejecting seven adverse cases; release/Bridge structural fixtures reject declared gate failures; cultural-artifact, discovery and participation candidates now include S014 current-consent and sparse-HELD repairs alongside synthetic leakage, erasure, authority, ranking, engagement, minority-suppression, source-escape, dark-default, exit, conformity, retaliation and transition controls; runtime/privacy/statistical/usability/accessibility/security/cultural conformance remains pending",
       "next_action": "Retain counterexamples, extend independently validated runtime/privacy/usability/security fixtures, and obtain qualified permanent-peer review"
     },
     {
@@ -1894,12 +1894,12 @@
       "path": "review/m03-integration-closure-v1.json",
       "status": "PASS_S013_DETERMINISTIC_INTEGRATION_SCOPE_S014_PENDING",
       "governed_scope": "milestone_03_integrated_planning_packet",
-      "sha256": "554db86a9464587b04a4f5765054f3ce3dc1bb91f6e34c9e1f4cf4aa59df2fd9",
+      "sha256": "b762554efe13a4ce6ad411aa2937a44a2fb4fe39b8f61593b45b259eb6e0a27c",
       "bytes": 4463,
       "members": [
         {
           "path": "review/m03-integration-closure-v1.md",
-          "sha256": "44384c54d6372aecd2e95c90d3f758ac94b69d4b9eac734d8ff7884f3a312edc",
+          "sha256": "4a10523ac4672e1b289d7988c55570f0d3209689aa2693e42e064a3eb02f0b09",
           "bytes": 2540
         },
         {
@@ -1916,7 +1916,7 @@
       "id": "HIRC-M03-S014-REVIEW-REQUEST-001",
       "kind": "hash_bound_integrated_product_security_privacy_anti_domination_review_request",
       "path": "review/m03-s014-integrated-review-request-v1.md",
-      "status": "READY_FOR_ACTUAL_PERMANENT_REVIEWER_COVERAGE",
+      "status": "CHANGES_REQUIRED_PRODUCT_REVIEW_REPAIRS_READY_FOR_RECHECK_SPECIALIST_COVERAGE_OPEN",
       "governed_scope": "milestone_03_integrated_permanent_peer_challenge",
       "sha256": "2f74985aa234deecb6fe3ba7534eb5a6ea6e83a88a0458d4f125788e32d9fe99",
       "bytes": 7834,
@@ -1925,11 +1925,26 @@
           "path": "review/m03-s014-ledger-snapshot-v1.json",
           "sha256": "97b4e2cd9d357ef40d799a91633c8fe3ec9049659ee81240f1d68798c2aa4112",
           "bytes": 105880
+        },
+        {
+          "path": "review/waymark-m03-s014-product-review-v1.md",
+          "sha256": "b80f9923609adc146288658d5a4ab2e7285a262795870257fb66c875c0995f92",
+          "bytes": 10441
+        },
+        {
+          "path": "review/waymark-m03-s014-coverage-manifest-v1.json",
+          "sha256": "9edd3c9780a13317b0b215b5b0f979724f275ac146c2288351eeccf5202d0646",
+          "bytes": 7263
+        },
+        {
+          "path": "review/lucent-m03-s014-product-review-response-v1.md",
+          "sha256": "0d282502537a899ee9b0e0c4f259441f1afc8f055a490acebfdc5c36844cfe53",
+          "bytes": 6050
         }
       ],
       "source_bindings": ["HIRC-M03-INTEGRATION-CLOSURE-001", "HIRC-JOINT-CONSENSUS-DRAFT-008", "HIRC-MASTER-DRAFT-BUNDLE-001", "HIRC-M03-STONE-REGISTER-001"],
-      "limits": "Defines an exact read-only packet and required reviewer-dimension coverage; delivery or a title does not establish qualification, consent, completed reading, review, consensus, implementation, release or custody",
-      "next_action": "Obtain actual product/interaction, security, privacy, accessibility, anti-domination and metric-integrity challenge and reconcile every material finding or warranted NO_CHANGE"
+      "limits": "WAYMARK supplied product/interaction, accessibility-requirements, anti-domination and privacy-facing usability review with three accepted repairs. Independent security, privacy-engineering/dataflow/legal and statistical/metric specialist coverage remains open; no whole S014 acceptance, implementation, release or custody follows",
+      "next_action": "Freeze canonical corrected packet v2 for WAYMARK repair recheck and obtain the remaining qualified specialist dimensions"
     },
     {
       "id": "HIRC-MASTER-DRAFT-BUNDLE-001",
@@ -2030,8 +2045,8 @@
       "path": "review/README.md",
       "status": "ACTIVE",
       "governed_scope": "internal_design_review",
-      "sha256": "946b14a55c1dd39865a05cc353101bd4132fb61a163e70fee95eeea1aac2d050",
-      "bytes": 11248,
+      "sha256": "79a9472bd8c6d466ae912ad3ce3a50ec68fad95c35342970256dc035eda4ab1c",
+      "bytes": 11516,
       "next_action": "Link the accepted consensus and final revisions when created"
     }
   ],

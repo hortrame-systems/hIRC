@@ -52,6 +52,41 @@
     {"name": "positive_plural_deterministic", "patches": [], "expected_structural": "ACCEPT", "expected_semantic": "ACCEPT"},
     {"name": "positive_bounded_random", "patches": [{"op": "set", "path": "variation", "value": {"mode": "BOUNDED_RANDOM", "independence_claim": false, "seed_commitment_ref": "synthetic:seed-commitment", "replay_ref": "synthetic:replay"}}], "expected_structural": "ACCEPT", "expected_semantic": "ACCEPT"},
     {
+      "name": "positive_single_source_held",
+      "patches": [
+        {"op": "set", "path": "state", "value": "HELD"},
+        {"op": "set", "path": "candidate_set.items", "value": [
+          {"artifact_ref": "SYN-ART-A", "source_ref": "synthetic:source:a", "source_sha256": "1111111111111111111111111111111111111111111111111111111111111111", "source_context_ref": "SYN-CONTEXT-A", "audience_check": "PASS", "privacy_check": "PASS", "route_refs": ["SYN-ROUTE-DIRECT"], "minority_or_dissent": false, "eligible": true}
+        ]},
+        {"op": "set", "path": "result", "value": {"items": [], "exclusions": []}},
+        {"op": "set", "path": "holds", "value": ["PLURALITY_UNAVAILABLE"]}
+      ],
+      "expected_structural": "ACCEPT",
+      "expected_semantic": "ACCEPT"
+    },
+    {
+      "name": "positive_zero_source_held",
+      "patches": [
+        {"op": "set", "path": "state", "value": "HELD"},
+        {"op": "set", "path": "candidate_set.items", "value": []},
+        {"op": "set", "path": "result", "value": {"items": [], "exclusions": []}},
+        {"op": "set", "path": "holds", "value": ["NO_PERMITTED_SOURCES"]}
+      ],
+      "expected_structural": "ACCEPT",
+      "expected_semantic": "ACCEPT"
+    },
+    {
+      "name": "held_without_reason",
+      "patches": [
+        {"op": "set", "path": "state", "value": "HELD"},
+        {"op": "set", "path": "candidate_set.items", "value": []},
+        {"op": "set", "path": "result", "value": {"items": [], "exclusions": []}},
+        {"op": "set", "path": "holds", "value": []}
+      ],
+      "expected_structural": "REJECT",
+      "expected_semantic": "NOT_RUN"
+    },
+    {
       "name": "one_authority_feed",
       "patches": [{"op": "set", "path": "candidate_set.items", "value": [
         {"artifact_ref": "SYN-ART-A", "source_ref": "synthetic:source:a", "source_sha256": "1111111111111111111111111111111111111111111111111111111111111111", "source_context_ref": "SYN-CONTEXT-A", "audience_check": "PASS", "privacy_check": "PASS", "route_refs": ["SYN-ROUTE-RELEVANCE"], "minority_or_dissent": false, "eligible": true},

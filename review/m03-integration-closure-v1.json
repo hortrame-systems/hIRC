@@ -40,18 +40,18 @@
     },
     {
       "path": "review/intent-coverage-draft-v1.json",
-      "sha256": "8ea7e5787ac5a0c3b512dafd882bdebda1f937e6cc53f4797e28ba40742a5dbd",
-      "bytes": 25153
+      "sha256": "f3c08b9058f96abccec869130d854cae05c598ecbb8e2a2d5965f85fa0c4ef92",
+      "bytes": 24555
     },
     {
       "path": "review/intent-coverage-draft-v1.md",
-      "sha256": "5253ceeb714041fa54d3b865d4357e3d9445655851b6ff9f4fa93964f11a47c8",
-      "bytes": 4191
+      "sha256": "b9b439d1dfab20af013b8595f713a4dcb07640209dadcb5133c4b6051967a557",
+      "bytes": 4156
     },
     {
       "path": "review/contracts/README.md",
-      "sha256": "54afc595c5e0be45f82c41aaff11951d2dd7f89002dafb147087867876acbbc9",
-      "bytes": 4523
+      "sha256": "966f010f4dfc86adbbe52b8fa056242be344b3cd1b772d2f9356fa3409028d43",
+      "bytes": 5252
     },
     {
       "path": "review/cultural-threat-control-crosswalk-v1.json",

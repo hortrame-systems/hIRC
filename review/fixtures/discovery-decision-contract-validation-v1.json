@@ -3,15 +3,15 @@
   "stone": "M03-S008",
   "schema_binding": {
     "path": "review/contracts/hirc-discovery-decision.candidate.schema.json",
-    "sha256": "5f775da8389f65cd5ce575f5aaf3c42d2b6c3fd377b740d215a6fa12026a65e1"
+    "sha256": "425838b632503e10ca2dda83ee6d22eb4bee0f04ccde7a3036975b68f5aa0362"
   },
   "fixture_binding": {
     "path": "review/fixtures/discovery-decision-contract-cases-v1.json",
-    "sha256": "44964a8dfa1bfae15f6a3125a78b15bd4e39015fba14a0c71bf55fcc3eacd734"
+    "sha256": "a9377e544c292b8167773abeaffa882641797f468f8ad5cc5dc8df62583b9e6d"
   },
   "harness_binding": {
     "path": "review/fixtures/validate_discovery_decision_contract.ps1",
-    "sha256": "d1615ebe54fa9e78d114b86d0076e38ee8a7ce112d0a75abab5c8f47dd58ea78"
+    "sha256": "77687e0b789ba4080d36cf9fd8c83f8b0b7b6d9842df97a90a15c77cac622bb1"
   },
   "runtime": {
     "powershell": "7.6.5",
@@ -39,6 +39,36 @@
       "pass": true
     },
     {
+      "name": "positive_single_source_held",
+      "expected_structural": "ACCEPT",
+      "actual_structural": "ACCEPT",
+      "expected_semantic": "ACCEPT",
+      "actual_semantic": "ACCEPT",
+      "structural_error_count": 0,
+      "semantic_errors": [],
+      "pass": true
+    },
+    {
+      "name": "positive_zero_source_held",
+      "expected_structural": "ACCEPT",
+      "actual_structural": "ACCEPT",
+      "expected_semantic": "ACCEPT",
+      "actual_semantic": "ACCEPT",
+      "structural_error_count": 0,
+      "semantic_errors": [],
+      "pass": true
+    },
+    {
+      "name": "held_without_reason",
+      "expected_structural": "REJECT",
+      "actual_structural": "REJECT",
+      "expected_semantic": "NOT_RUN",
+      "actual_semantic": "NOT_RUN",
+      "structural_error_count": 3,
+      "semantic_errors": [],
+      "pass": true
+    },
+    {
       "name": "one_authority_feed",
       "expected_structural": "ACCEPT",
       "actual_structural": "ACCEPT",
@@ -56,7 +86,7 @@
       "actual_structural": "REJECT",
       "expected_semantic": "NOT_RUN",
       "actual_semantic": "NOT_RUN",
-      "structural_error_count": 3,
+      "structural_error_count": 4,
       "semantic_errors": [],
       "pass": true
     },
@@ -66,7 +96,7 @@
       "actual_structural": "REJECT",
       "expected_semantic": "NOT_RUN",
       "actual_semantic": "NOT_RUN",
-      "structural_error_count": 3,
+      "structural_error_count": 4,
       "semantic_errors": [],
       "pass": true
     },
@@ -88,7 +118,7 @@
       "actual_structural": "REJECT",
       "expected_semantic": "NOT_RUN",
       "actual_semantic": "NOT_RUN",
-      "structural_error_count": 3,
+      "structural_error_count": 4,
       "semantic_errors": [],
       "pass": true
     },
@@ -98,7 +128,7 @@
       "actual_structural": "REJECT",
       "expected_semantic": "NOT_RUN",
       "actual_semantic": "NOT_RUN",
-      "structural_error_count": 3,
+      "structural_error_count": 4,
       "semantic_errors": [],
       "pass": true
     }

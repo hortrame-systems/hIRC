@@ -87,6 +87,48 @@
     "events": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/event"}},
     "holds": {"type": "array", "items": {"type": "string", "minLength": 1}}
   },
+  "allOf": [
+    {
+      "if": {"properties": {"state": {"enum": ["JOINED", "SUBSCRIBED", "QUIET"]}}},
+      "then": {
+        "properties": {
+          "consent": {
+            "properties": {
+              "state": {"const": "EXPLICIT_ACCEPT"},
+              "current": {"const": true}
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {"properties": {"subscription": {"properties": {"active": {"const": true}}}}},
+      "then": {
+        "properties": {
+          "consent": {
+            "properties": {
+              "state": {"const": "EXPLICIT_ACCEPT"},
+              "current": {"const": true}
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "anyOf": [
+          {"properties": {"consent": {"properties": {"state": {"enum": ["EXPLICIT_DECLINE", "WITHDRAWN"]}}}}},
+          {"properties": {"consent": {"properties": {"current": {"const": false}}}}}
+        ]
+      },
+      "then": {
+        "properties": {
+          "subscription": {"properties": {"active": {"const": false}}},
+          "state": {"not": {"enum": ["JOINED", "SUBSCRIBED", "QUIET"]}}
+        }
+      }
+    }
+  ],
   "$defs": {
     "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]{0,255}$"},
     "idArray": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},

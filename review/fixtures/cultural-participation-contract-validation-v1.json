@@ -3,15 +3,15 @@
   "stone": "M03-S009",
   "schema_binding": {
     "path": "review/contracts/hirc-cultural-participation.candidate.schema.json",
-    "sha256": "67accd5d892860131529c75706881e9ed8d18627adac5babbf22c29ce14a2889"
+    "sha256": "20429d3d738f42eff025350bf8b74a272168b5fdd1f0e3d39261d18128fe7436"
   },
   "fixture_binding": {
     "path": "review/fixtures/cultural-participation-contract-cases-v1.json",
-    "sha256": "4269e89cf1f7fe4dda2e5c83af4f1e4d73f6358c3b86cba3caaeff5fdd596152"
+    "sha256": "4108f78d4c7e49a4afb83f5c905557d05a50c9f8f6a737fdeee148fecdd21ae1"
   },
   "harness_binding": {
     "path": "review/fixtures/validate_cultural_participation_contract.ps1",
-    "sha256": "533818986e7b3ad71af9006836e3cd9be263719c6bf28f7572ccbb491cf794e5"
+    "sha256": "36990f54aa050d512bc9877600e1776b9b84fcf9e49bfc6cedd0e743ee44751d"
   },
   "runtime": {
     "powershell": "7.6.5",
@@ -24,6 +24,42 @@
       "actual_structural": "ACCEPT",
       "expected_semantic": "ACCEPT",
       "actual_semantic": "ACCEPT",
+      "semantic_errors": [],
+      "pass": true
+    },
+    {
+      "name": "positive_current_subscription",
+      "expected_structural": "ACCEPT",
+      "actual_structural": "ACCEPT",
+      "expected_semantic": "ACCEPT",
+      "actual_semantic": "ACCEPT",
+      "semantic_errors": [],
+      "pass": true
+    },
+    {
+      "name": "declined_but_subscribed",
+      "expected_structural": "REJECT",
+      "actual_structural": "REJECT",
+      "expected_semantic": "NOT_RUN",
+      "actual_semantic": "NOT_RUN",
+      "semantic_errors": [],
+      "pass": true
+    },
+    {
+      "name": "withdrawn_but_subscribed",
+      "expected_structural": "REJECT",
+      "actual_structural": "REJECT",
+      "expected_semantic": "NOT_RUN",
+      "actual_semantic": "NOT_RUN",
+      "semantic_errors": [],
+      "pass": true
+    },
+    {
+      "name": "stale_accept_but_subscribed",
+      "expected_structural": "REJECT",
+      "actual_structural": "REJECT",
+      "expected_semantic": "NOT_RUN",
+      "actual_semantic": "NOT_RUN",
       "semantic_errors": [],
       "pass": true
     },

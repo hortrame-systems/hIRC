@@ -1,0 +1,202 @@
+{
+  "schema": "hirc.review-coverage/1",
+  "id": "HIRC-M03-S014-WAYMARK-COVERAGE-R01",
+  "reviewer": "UI-20261007-A / WAYMARK",
+  "report": {
+    "path": "review/waymark-m03-s014-product-review-v1.md",
+    "sha256": "b80f9923609adc146288658d5a4ab2e7285a262795870257fb66c875c0995f92",
+    "bytes": 10441
+  },
+  "source_commit": "9c8279329edaa04b8ffcf3b6ede5062192fa813e",
+  "request_sha256": "2f74985aa234deecb6fe3ba7534eb5a6ea6e83a88a0458d4f125788e32d9fe99",
+  "disposition": "CHANGES_REQUIRED_THREE_SUBSTANTIATED_FINDINGS",
+  "dimensions": {
+    "product_interaction": "REVIEWED_DESIGN_CHANGES_REQUIRED",
+    "accessibility": "REVIEWED_REQUIREMENTS_ONLY; no implemented interface or empirical evidence",
+    "anti_domination": "REVIEWED_NORMATIVE_DESIGN_CHANGES_REQUIRED",
+    "privacy": "PARTIAL_PRIVACY_FACING_USABILITY; independent engineering/legal/dataflow specialist required",
+    "security": "NOT_COVERED; qualified independent architecture/cryptography/security reviewer required",
+    "evidence_metric_integrity": "PARTIAL_STATE_SOURCE_BINDING_AND_PROHIBITED_UI_PROXY_SCOPE; statistical construct/calculation/sampling/small-group/distribution-shift specialist required"
+  },
+  "packet_bindings": [
+    {
+      "path": "intent-register.json",
+      "sha256": "3da344b6a834fe26acdcbbb2f86ca4104ff0e4f0769cfaac6aa0ce24297d2477",
+      "bytes": 66060
+    },
+    {
+      "path": "review/m03-integration-closure-v1.json",
+      "sha256": "554db86a9464587b04a4f5765054f3ce3dc1bb91f6e34c9e1f4cf4aa59df2fd9",
+      "bytes": 4463
+    },
+    {
+      "path": "review/m03-integration-closure-v1.md",
+      "sha256": "44384c54d6372aecd2e95c90d3f758ac94b69d4b9eac734d8ff7884f3a312edc",
+      "bytes": 2540
+    },
+    {
+      "path": "drafts/hirc_master_plan_v1_1-draft.md",
+      "sha256": "21491c677e2c9af996262382c203e2201e161ac06c7e2f7d3f620c31d54dbf81",
+      "bytes": 65964
+    },
+    {
+      "path": "drafts/hirc_master_plan_explained_v1_1-draft.md",
+      "sha256": "fb149dd939f4c6e5a124b95058ff902b9af901e28ba58ed44687dabd6fab9f90",
+      "bytes": 14264
+    },
+    {
+      "path": "drafts/hirc_requirements_v1_1-draft.json",
+      "sha256": "985f0b77a91a83cb5da3b895f44218368a4d28e957c5b716466ea18402e26f69",
+      "bytes": 260630
+    },
+    {
+      "path": "review/joint-consensus-matrix-draft-v8.json",
+      "sha256": "45ccdb26641c8e04445d3fd4fea5ef6ca6c2992858a83cd898fa916c694967c2",
+      "bytes": 171010
+    },
+    {
+      "path": "drafts/hirc_threat_model_v1_0-draft.md",
+      "sha256": "11e50d9746257c28e6791e0ee85b53e873fae1ea6a8d6631361e948277455441",
+      "bytes": 29925
+    },
+    {
+      "path": "drafts/hirc_first_delivery_profile_v0_1-draft.md",
+      "sha256": "c6369f208bd4bbb3d627d6313bd3bc422106d0c24b17592ca9d458b49c0fb9a1",
+      "bytes": 10294
+    },
+    {
+      "path": "review/contracts/hirc-cultural-artifact.candidate.schema.json",
+      "sha256": "0f8eb54d369ce184fe2b635a7481d95cd30e6f78ebb63b77ad2bd0c6dcdd4ed3",
+      "bytes": 8856
+    },
+    {
+      "path": "review/contracts/hirc-discovery-decision.candidate.schema.json",
+      "sha256": "5f775da8389f65cd5ce575f5aaf3c42d2b6c3fd377b740d215a6fa12026a65e1",
+      "bytes": 6832
+    },
+    {
+      "path": "review/contracts/hirc-cultural-participation.candidate.schema.json",
+      "sha256": "67accd5d892860131529c75706881e9ed8d18627adac5babbf22c29ce14a2889",
+      "bytes": 4716
+    },
+    {
+      "path": "review/cultural-threat-control-crosswalk-v1.json",
+      "sha256": "1f3a3d71161ad588e7f1feba63078e5ebb289540f66f18334897bee045c07414",
+      "bytes": 13219
+    },
+    {
+      "path": "review/fixtures/cultural-information-control-validation-v1.json",
+      "sha256": "5db542627fa60100b5ff75e68910aa49e260b46280cc87e7803d110f45128ad7",
+      "bytes": 4244
+    },
+    {
+      "path": "review/cultural-environment-quality-measures-v1.json",
+      "sha256": "3a7ebcaca6a91d0cd0e9138a43eca97ecf7c78a79746a2c604d846fe8aa1af5c",
+      "bytes": 16581
+    },
+    {
+      "path": "review/fixtures/cultural-environment-quality-measures-validation-v1.json",
+      "sha256": "65fa2626b9dc00c979e8e7ba49bdff7139b1a09b79cd102e6ac534e479547658",
+      "bytes": 2262
+    },
+    {
+      "path": "review/intent-coverage-draft-v1.json",
+      "sha256": "8ea7e5787ac5a0c3b512dafd882bdebda1f937e6cc53f4797e28ba40742a5dbd",
+      "bytes": 25153
+    },
+    {
+      "path": "review/m03-s014-ledger-snapshot-v1.json",
+      "sha256": "97b4e2cd9d357ef40d799a91633c8fe3ec9049659ee81240f1d68798c2aa4112",
+      "bytes": 105880
+    },
+    {
+      "path": "review/milestone-03-stone-register.json",
+      "sha256": "f7550974665c9ba79c68ca402ca9c1b76486de4fbd72aa383d684851a190f741",
+      "bytes": 25147
+    }
+  ],
+  "explicit_source_view_differences": [
+    {
+      "path": "review/intent-coverage-draft-v1.json",
+      "working_frame_sha256": "8ea7e5787ac5a0c3b512dafd882bdebda1f937e6cc53f4797e28ba40742a5dbd",
+      "working_frame_bytes": 25153,
+      "git_blob_sha256": "f3c08b9058f96abccec869130d854cae05c598ecbb8e2a2d5965f85fa0c4ef92",
+      "git_blob_bytes": 24555,
+      "exact_view_projection": "LF_TO_CRLF; all598line endings; JSON objects equal, no semantic change"
+    }
+  ],
+  "additional_reading_and_probe_sources": [
+    {
+      "path": "review/fixtures/validate_cultural_participation_contract.ps1",
+      "sha256": "533818986e7b3ad71af9006836e3cd9be263719c6bf28f7572ccbb491cf794e5",
+      "bytes": 3466
+    },
+    {
+      "path": "review/fixtures/validate_discovery_decision_contract.ps1",
+      "sha256": "d1615ebe54fa9e78d114b86d0076e38ee8a7ce112d0a75abab5c8f47dd58ea78",
+      "bytes": 5320
+    },
+    {
+      "path": "review/fixtures/cultural-participation-contract-cases-v1.json",
+      "sha256": "4269e89cf1f7fe4dda2e5c83af4f1e4d73f6358c3b86cba3caaeff5fdd596152",
+      "bytes": 3461
+    },
+    {
+      "path": "review/fixtures/discovery-decision-contract-cases-v1.json",
+      "sha256": "44964a8dfa1bfae15f6a3125a78b15bd4e39015fba14a0c71bf55fcc3eacd734",
+      "bytes": 6989
+    }
+  ],
+  "findings": [
+    "HIRC-S014-WM-F01",
+    "HIRC-S014-WM-F02",
+    "HIRC-S014-WM-F03"
+  ],
+  "probes": [
+    {
+      "case": "unique_explicit_consent",
+      "structural": true,
+      "semantic": true
+    },
+    {
+      "case": "declined_but_subscribed",
+      "structural": true,
+      "semantic": true
+    },
+    {
+      "case": "withdrawn_but_subscribed",
+      "structural": true,
+      "semantic": true
+    },
+    {
+      "case": "stale_accept_but_subscribed",
+      "structural": true,
+      "semantic": true
+    },
+    {
+      "case": "plural_positive",
+      "structural": true,
+      "semantic": true
+    },
+    {
+      "case": "single_permitted_held",
+      "structural": false,
+      "semantic_errors": [
+        "one-authority-feed"
+      ]
+    },
+    {
+      "case": "zero_permitted_held",
+      "structural": false,
+      "semantic_errors": [
+        "one-authority-feed"
+      ]
+    }
+  ],
+  "independence_limits": [
+    "Prior generic framing/observer/S003 exposure",
+    "Shared sources/model may create common modes",
+    "Not blinded/statistically independent"
+  ],
+  "nonclaim": "No runtime, empirical accessibility, consent, privacy/legal, statistical, cryptographic, whole S014 consensus or release authority. Native/runtime qualification evidence remains private."
+}

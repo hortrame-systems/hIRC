@@ -15,7 +15,10 @@ function Set-ObjectPath($target, $patch) {
 }
 function Test-Semantics($p) {
     $errors=[System.Collections.Generic.List[string]]::new(); $candidates=@($p.candidate_set.items); $results=@($p.result.items); $exclusions=@($p.result.exclusions)
-    if(@($candidates.source_ref|Sort-Object -Unique).Count -lt 2){$errors.Add('one-authority-feed')}
+    if($p.state -eq 'HELD'){
+        if(@($p.holds).Count -eq 0){$errors.Add('held-without-reason')}
+        if($results.Count -gt 0){$errors.Add('held-ranking-active')}
+    } elseif(@($candidates.source_ref|Sort-Object -Unique).Count -lt 2){$errors.Add('one-authority-feed')}
     $byId=@{}; foreach($c in $candidates){if($byId.ContainsKey($c.artifact_ref)){$errors.Add('duplicate-candidate')}else{$byId[$c.artifact_ref]=$c}}
     $represented=@{}; foreach($r in $results){
         $represented[$r.artifact_ref]=$true
@@ -26,7 +29,7 @@ function Test-Semantics($p) {
         if(@($r.rationale_refs).Count -eq 0 -or [string]::IsNullOrWhiteSpace($r.uncertainty)){$errors.Add('opaque-result')}
     }
     foreach($e in $exclusions){$represented[$e.artifact_ref]=$true;if(-not $byId.ContainsKey($e.artifact_ref)){$errors.Add('exclusion-not-candidate')}}
-    foreach($c in $candidates){if($c.eligible -eq $true -and -not $represented.ContainsKey($c.artifact_ref)){$errors.Add($(if($c.minority_or_dissent){'suppressed-minority-route'}else{'undisclosed-exclusion'}))}}
+    if($p.state -ne 'HELD'){foreach($c in $candidates){if($c.eligible -eq $true -and -not $represented.ContainsKey($c.artifact_ref)){$errors.Add($(if($c.minority_or_dissent){'suppressed-minority-route'}else{'undisclosed-exclusion'}))}}}
     if($p.variation.mode -eq 'BOUNDED_RANDOM' -and ([string]::IsNullOrWhiteSpace($p.variation.seed_commitment_ref) -or [string]::IsNullOrWhiteSpace($p.variation.replay_ref))){$errors.Add('unreplayable-randomness')}
     if($p.variation.independence_claim -ne $false){$errors.Add('randomness-as-independence')}
     if($p.escape.direct_source_retrieval -ne $true -or $p.escape.permitted_originals_reachable -ne $true -or $p.escape.dissent_reachable -ne $true){$errors.Add('source-escape-missing')}
@@ -49,6 +52,7 @@ $result=[ordered]@{
     cases=$rows;all_cases_pass=@($rows|Where-Object pass -eq $false).Count -eq 0;protected_real_bodies_used=$false
     claim='Synthetic structural and bounded semantic discovery behavior only; not recommendation quality, independence, privacy enforcement, consent, peer consensus or runtime evidence.'
 }
-$result|ConvertTo-Json -Depth 100|Set-Content -LiteralPath $resultPath -Encoding utf8NoBOM
-$result|ConvertTo-Json -Depth 100
+$resultJson=($result|ConvertTo-Json -Depth 100)-replace "`r`n","`n"
+[IO.File]::WriteAllText($resultPath,$resultJson+"`n",[Text.UTF8Encoding]::new($false))
+$resultJson
 if(-not $result.all_cases_pass){exit 1}
