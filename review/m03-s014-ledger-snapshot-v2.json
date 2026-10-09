@@ -1947,25 +1947,6 @@
       "next_action": "Freeze canonical corrected packet v2 for WAYMARK repair recheck and obtain the remaining qualified specialist dimensions"
     },
     {
-      "id": "HIRC-M03-S014-REVIEW-REQUEST-002",
-      "kind": "canonical_lf_corrected_integrated_review_and_product_recheck_request",
-      "path": "review/m03-s014-integrated-review-request-v2.md",
-      "status": "READY_FOR_PRODUCT_RECHECK_AND_QUALIFIED_SPECIALIST_COVERAGE",
-      "governed_scope": "milestone_03_corrected_integrated_permanent_peer_challenge",
-      "sha256": "b298168e18d77424c9d02c4ed6a7b04eecaa9ccde37750ab85c406d476edb04b",
-      "bytes": 7519,
-      "members": [
-        {
-          "path": "review/m03-s014-ledger-snapshot-v2.json",
-          "sha256": "961c6c7a01655750e959a32281795b8f4e468ed19e908e8e0f889f8dd72a3be2",
-          "bytes": 108901
-        }
-      ],
-      "source_bindings": ["HIRC-M03-S014-REVIEW-REQUEST-001", "HIRC-M03-INTEGRATION-CLOSURE-001", "HIRC-CONTRACT-CANDIDATES-001", "HIRC-INTENT-COVERAGE-DRAFT-001", "HIRC-JOINT-CONSENSUS-DRAFT-008"],
-      "limits": "Supplies canonical LF corrected pins and exact product repair evidence while preserving revision 1. Product repair recheck plus qualified security, privacy-engineering/dataflow and metric/evaluator coverage remain required; no implementation/release/custody follows",
-      "next_action": "WAYMARK rechecks F01-F03 repairs; coordinator routes remaining specialist dimensions only to actually qualified consenting permanent participants"
-    },
-    {
       "id": "HIRC-MASTER-DRAFT-BUNDLE-001",
       "kind": "integrated_master_and_requirements_working_draft_bundle",
       "path": "drafts/README.md",
@@ -2064,8 +2045,8 @@
       "path": "review/README.md",
       "status": "ACTIVE",
       "governed_scope": "internal_design_review",
-      "sha256": "27abaa9bccf096b3f260841e8026033131b885e8c2493c7a7fec3417f103d4a3",
-      "bytes": 11687,
+      "sha256": "79a9472bd8c6d466ae912ad3ce3a50ec68fad95c35342970256dc035eda4ab1c",
+      "bytes": 11516,
       "next_action": "Link the accepted consensus and final revisions when created"
     }
   ],
