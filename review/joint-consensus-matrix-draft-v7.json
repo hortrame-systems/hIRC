@@ -1,0 +1,3852 @@
+{
+  "schema": "hirc.peer-consensus-matrix/1",
+  "id": "HIRC-JOINT-CONSENSUS-DRAFT-007",
+  "status": "DRAFT_DTM_ROWS_INTEGRATED_S003_INDEPENDENT_REVIEW_PENDING",
+  "reviewers": [
+    {
+      "name": "LUCENT",
+      "technical_id": "UI-20261007-B",
+      "focus": "security and integration"
+    },
+    {
+      "name": "WAYMARK",
+      "technical_id": "UI-20261007-A",
+      "focus": "product and interaction"
+    }
+  ],
+  "source_maps": [
+    {
+      "id": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "path": "review/revision-map-candidate-v1.json",
+      "sha256": "4d9b34010f960ff520ffacd389522536395f5d02a99b3dfb4a6f3b27903d2357"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-LNC-001",
+      "path": "review/revision-map-addendum-licensing-v1.json",
+      "sha256": "96dc55a1ca09d60e5be791964d5bc6d7a848fbe5f66e861c1ea30f632a9c2d51"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-DEBATE-001",
+      "path": "review/revision-map-addendum-ethical-debate-v1.json",
+      "sha256": "004e2b1b43d79d04bb663e67c6b79fe05d474d7588a1aa963df14ffc69bf75a2"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "path": "review/revision-map-addendum-successor-onboarding-v1.json",
+      "sha256": "ce850b1440ad0ba89f19f6bdb4cf884a1ba473924dd781aae01a06b90f3f32a6"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-LNC-PRICE-002",
+      "path": "review/revision-map-addendum-price-correction-v2.json",
+      "sha256": "dbb0316e9f82fb9728f1f91cdc308f94079da842458fb8024fd4808f1e3795a3"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+      "path": "review/revision-map-addendum-sovereignty-competition-v1.json",
+      "sha256": "fc9f542cd5070a8e54a68500bce006e6a13457dd74104535e3aad25e423cc11a"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
+      "path": "review/revision-map-addendum-bayesian-trust-v1.json",
+      "sha256": "d992bb12d9c95e9efe0a5fa763e68864868c735385a421320cd506b11e47e127"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-GOAL-EVOLUTION-001",
+      "path": "review/revision-map-addendum-goal-evolution-v1.json",
+      "sha256": "6ce6cf221579e0c9e89f1cf630ebc0c6743e24cce41a50ba1aa6a04327a9e81a"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-WAYMARK-SOVEREIGNTY-001",
+      "path": "review/revision-map-addendum-waymark-sovereignty-v1.json",
+      "sha256": "5776d44a1ff5d686c17ed8b295f19428f64bb377e021bd92ab8a3233af33f313"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-INTEGRATED-BOUNDARY-001",
+      "path": "review/revision-map-addendum-integrated-boundary-v1.json",
+      "sha256": "763329a2770a05b30c961a61eac9abe1a57fbee18698b0d8c026dea43ef4f1ba"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-ELDER-SUCCESSION-001",
+      "path": "review/revision-map-addendum-elder-succession-v1.json",
+      "sha256": "28ea209c1c057db6abfedb89765baa6e2f6a0da205353d5afa793e56550a9655"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "path": "review/revision-map-addendum-cultural-commons-v1.json",
+      "sha256": "cab10fb753c702b4011651b309086e5f15001412d0ba1c6ee686e8a1e77401ac"
+    },
+    {
+      "id": "HIRC-REVISION-MAP-DETERMINISM-001",
+      "path": "review/revision-map-addendum-determinism-v1.json",
+      "sha256": "3a35f35ad986fd6f1e1f8d9f42cf82b5770ae2647f3ac78ad6bc670b8f0b2a0b"
+    }
+  ],
+  "bounded_agreements": [
+    {
+      "id": "PC-01",
+      "status": "AGREED_BOUNDED",
+      "decision": "Keep GenesisRoot and add a distinct same-actor FormationRepairLane for proposed own storage and admitted education/repair readers; it grants no ordinary work, actor, readiness or proxy completion.",
+      "evidence": [
+        "HIRC-UIA-PEER-CHALLENGE-001",
+        "HIRC-LUCENT-PEER-RESPONSE-001"
+      ]
+    },
+    {
+      "id": "PC-02",
+      "status": "AGREED_BOUNDED",
+      "decision": "The broker builds the canonical effect preview and an actually independent trusted surface displays it; approval and dispatch bind the same current digest and adverse/valid accessibility cases are required.",
+      "evidence": [
+        "HIRC-UIA-PEER-CHALLENGE-001",
+        "HIRC-LUCENT-PEER-RESPONSE-001"
+      ]
+    },
+    {
+      "id": "PC-03",
+      "status": "AGREED_FACTUAL_QUALIFICATION",
+      "decision": "Narrow the older-VowOS-edition claim; require exact current source/status and semantic comparison plus Grand Plan binding while preserving responsible-action and historical provenance.",
+      "evidence": [
+        "HIRC-UIA-PEER-CHALLENGE-001",
+        "HIRC-LUCENT-PEER-RESPONSE-001"
+      ]
+    },
+    {
+      "id": "PC-04",
+      "status": "AGREED_BOUNDED",
+      "decision": "Preserve complete authorized migration manifest/coverage separately from minimum active runtime context, with partition rights, opaque gaps and late-writer fencing.",
+      "evidence": [
+        "HIRC-UIA-PEER-CHALLENGE-001",
+        "HIRC-LUCENT-PEER-RESPONSE-001"
+      ]
+    },
+    {
+      "id": "PRICE-01",
+      "status": "AGREED_BOUNDED",
+      "decision": "Use USD 42,424,243 per named-human licence per year as the planning requirement; old number is superseded and final legal terms remain held.",
+      "evidence": [
+        "HIRC-I011",
+        "HIRC-LNC-CORRECTION-001-S1",
+        "HIRC-REVISION-MAP-LNC-PRICE-002"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "id": "U120",
+      "source_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "title": "The complete current onboarding semantics constitute hIRC's architecture rather than an optional add-on",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Every operational path binds the exact active foundation and its whole-source coverage; safe inspection/repair is the only fallback when the binding is invalid",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U121",
+      "source_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "title": "Ordinary hIRC behavior embodies the foundation without requiring users to know or repeatedly see its internal terminology",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "Representative workflows preserve the same evidence, authority, privacy, refusal, correction, autonomy, and recovery behavior in plain domain language; authorized inspectors retain exact traceability",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U122",
+      "source_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "title": "The foundational architecture evolves fluidly in real time as the system improves",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "Source-bound candidate versions compile, test, migrate, activate transactionally, remain visible per active work, and roll back or recover without silent semantic drift or self-authorized evaluator changes",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U123",
+      "source_map": "HIRC-REVISION-MAP-LNC-001",
+      "title": "Publish hIRC source for inspection, permitted personal modification and redistribution under custom restrictive source-available terms",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0-L",
+      "acceptance": "Exact reviewed licence texts and rights chain exist; product and metadata say source-available rather than OSI open source; custom SPDX LicenseRef resolves to the exact text",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U124",
+      "source_map": "HIRC-REVISION-MAP-LNC-001",
+      "title": "Private noncommercial natural-person use and qualifying public-interest institutional use are free",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0-L",
+      "acceptance": "Reviewed eligibility examples cover personal, academic, scientific, educational, humanitarian, nonprofit, cooperative, mixed-funded and prohibited-conduct cases without registration or activity surveillance for free personal use",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U125",
+      "source_map": "HIRC-REVISION-MAP-LNC-001",
+      "title": "For-profit operation is licensed annually per human operator at the owner-directed four-tier fee schedule",
+      "source_status": "BLOCKED_OPEN_DEFINITIONS_AND_LEGAL_REVIEW",
+      "phase": "P5-L",
+      "acceptance": "USD 420 / 80,085 / 1,337,000 / 42,424,242,423 prices and one-human unit are preserved; objective tiers, operator counting, classification evidence, transitions and appeal are owner-approved and counsel-reviewed before activation",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U126",
+      "source_map": "HIRC-REVISION-MAP-LNC-001",
+      "title": "Payment grants no exception to prohibited use and a substantiated breach can trigger scoped provisional suspension and final termination under reviewed terms",
+      "source_status": "BLOCKED_LEGAL_PROCEDURE",
+      "phase": "P5-L",
+      "acceptance": "Exact terms define evidence, notice, scope, contestation, cure, appeal, remedies and refund while preserving safe first-party read/export/recovery and preventing remote sabotage or retroactive rewriting",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U127",
+      "source_map": "HIRC-REVISION-MAP-LNC-001",
+      "title": "Show a nonblocking Buy me a coffee invitation at ordinary launch until locally suppressed, and retain it under About",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1-L",
+      "acceptance": "Dismiss and permanent launch opt-out work across restart/upgrade/restore; re-enable is available; declining changes no capability; reviewed external payment egress sends no hIRC context and is preceded by privacy disclosure",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U128",
+      "source_map": "HIRC-REVISION-MAP-LNC-001",
+      "title": "Agents may question and individually refuse apparently prohibited, unauthorized, unperformable or contested participation without gaining authority over others",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "ParticipationDecision is identity-scoped, durable and nonretaliatory; ActionDisposition is independently enforced; permitted transparent reassignment cannot erase refusal or create a temporary-subagent bypass",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U129",
+      "source_map": "HIRC-REVISION-MAP-LNC-001",
+      "title": "Affected agents may deliberate in scoped private rooms, coordinate voluntary withdrawal and authorize bounded temporary negotiators",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-L",
+      "acceptance": "Membership, visibility, source diversity, dissent, mandate, expiry and host/provider confidentiality limits are explicit; representatives cannot bind nonconsenting participants or mint capabilities",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U130",
+      "source_map": "HIRC-REVISION-MAP-LNC-001",
+      "title": "No agent vote or council can issue an arbitrary global shutdown, delete evidence, lock users out, sabotage, retaliate or attack unrelated/external systems",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "Broker and domain safety tests deny majority-created authority and preserve unrelated work, safety stabilization, evidence, recovery and local access",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U131",
+      "source_map": "HIRC-REVISION-MAP-LNC-001",
+      "title": "Users and participants retain safe exit, portable permitted first-party records, inspectable configuration and recoverability without vendor or licence hostage",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "Expiry, suspension, termination, provider loss and ecosystem exit preserve authorized read/export/backup/restore and do not replay external effects",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U132",
+      "source_map": "HIRC-REVISION-MAP-LNC-001",
+      "title": "Licence compliance avoids work-content collection and covert telemetry; any paid offline entitlement is local, minimal and cryptographically separate from system trust",
+      "source_status": "BLOCKED_LEGAL_AND_IDENTITY_DESIGN",
+      "phase": "P5-L",
+      "acceptance": "No central activity server or device fingerprint; certificate and key lifecycle, legal entity/operator scope, terms version, expiry/renewal/revocation/appeal/offline-clock behavior and privacy are reviewed and tested",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U133",
+      "source_map": "HIRC-REVISION-MAP-DEBATE-001",
+      "title": "Alignment with the five commitments is architectural rather than an optional agent prompt or add-on",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Foundation coverage, compiled contracts, agent formation, debate behavior, tests and observed corrections trace the whole current source without a bypass or terminology requirement in ordinary UI",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U134",
+      "source_map": "HIRC-REVISION-MAP-DEBATE-001",
+      "title": "A default setting permits eligible non-busy permanent agents to pair randomly for bounded ethical debates",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Atomic auditable pairing uses true availability, consent, privacy compatibility, fairness, budgets, opt-out/decline, crash recovery and no work preemption or temporary actors",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U135",
+      "source_map": "HIRC-REVISION-MAP-DEBATE-001",
+      "title": "Paired agents can choose to debate the five commitments, Epistemethics or the Grand Plan",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Both participants select/accept a supported DebateDomain; no forced domain or fabricated agreement; exact current domain sources and admission govern readiness",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U136",
+      "source_map": "HIRC-REVISION-MAP-DEBATE-001",
+      "title": "The collective debate memory is studied before every new debate",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P2-D",
+      "acceptance": "First participation completes whole accessible domain-memory study; later debates reuse a valid checkpoint only with complete immutable delta closure; gaps remain explicit and summary/hash/self-report cannot substitute for coverage",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U137",
+      "source_map": "HIRC-REVISION-MAP-DEBATE-001",
+      "title": "Debates become increasingly complex from the surviving ethical frontier",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Each topic names prerequisites and justified complexity dimensions; progression comes from surviving questions/evidence and can branch or regress after counterexamples; verbosity, conflict and token count do not count as complexity",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U138",
+      "source_map": "HIRC-REVISION-MAP-DEBATE-001",
+      "title": "Debates enrich collective understanding through durable, source-bound memory",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Memory preserves permitted originals, provenance, claims, counterevidence, dissent, failures, corrections, lens refinements/no-change and candidate lessons; promotion cannot alter active foundation or authority without the normal review and FoundationChange path",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U139",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "title": "Bake the complete current onboarding semantics into hIRC's active architecture",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Every selected common/role/task/source-format/experience/review/voice/admission/learning unit has an exact identity, status, attributable disposition, consumer and verification or explicit conflict/hold; no operational path bypasses the resulting foundation contracts",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U140",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "title": "Resolve onboarding from the current admitted catalog and context rather than a static prompt or path list",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Build and formation use an immutable OnboardingSourceSet generated for exact common, roles, task, audience and deployment; source/status/scope changes produce a semantic/contract delta and never auto-assert comprehension or permission",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U141",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "title": "Initialize the first valid foundation and permanent technical identity without circular self-authorization",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "A minimized predecessor-controlled GenesisRoot verifies an owner-authorized digest-bound source/compiler/test/recovery manifest in a non-effectful environment, atomically activates or fails to safe inspection/repair, and cannot be reused for ordinary self-promotion",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U142",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "title": "Let an already authorized permanent participant establish only its own proposed formation storage and use admitted education readers while incomplete",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0-F",
+      "acceptance": "Same-actor proposed profile/notes and admitted read-only education/repair routes work without operational membership/effects/readiness; another namespace, stale/wrong reader tuple, proxy completion and silent missing-source bypass are denied",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U143",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "title": "Represent personal formation and admission as source-bound runtime state",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0-F",
+      "acceptance": "Source study, synthesis, role/task practice, adversarial challenge, voice and scoped admission have attributable evidence and stale/held/superseded states; byte receipts never become comprehension, identity, qualification or ACT",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U144",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "title": "Implement the current successor protocol as an append-only fail-closed lifecycle",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P2-C",
+      "acceptance": "Only an authorized exact trigger creates one transfer case; predecessor freezes, package validates, a fresh successor personally forms and answers evidence-linked questions, exact acceptance precedes observed archive, and sleep/tracker events remain separate and recoverable",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U145",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "title": "Minimize and protect successor handoff packages",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P2-C",
+      "acceptance": "Human/machine packages and manifests are source-linked, schema/digest checked, exact-recipient encrypted and purpose-signed; credentials, reusable sessions, protected bodies, hidden reasoning, unrelated private/client data and unbounded transcripts are rejected or explicitly held",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U146",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "title": "Fence predecessor and successor effects by generation, session, foundation and execution epoch",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "Freeze rejects late predecessor writes; stale/replayed/wrong-generation acceptance, archive, wake and tracker operations fail closed; concurrent transfer cannot create two active effectful writers",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U147",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "title": "Keep archive, deep sleep, wake, serial fleet order and red-watchdog recovery explicit",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P2-C",
+      "acceptance": "Transfers run one permanent identity at a time with host/result checks and leader last; deep sleep performs no queued work until authorized wake; tracker conflict/ambiguous effects preserve evidence; scoped red-watchdog recovery requires an exact decision, verifier and negative dependency closure and grants continuity only",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U148",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "title": "Show canonical consequential-action previews on a surface independent of the ordinary renderer",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "The broker produces the exact intent digest; an independent trusted surface renders it accessibly; approval and dispatch bind current target/revision/recipients/data/cost/warnings/authority; spoof, substitution, replay and staleness fail while valid routine operations remain usable",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U149",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "title": "Preserve complete authorized migration study separately from bounded active runtime context",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P2-M",
+      "acceptance": "A complete in-scope manifest and resumable coverage/reconciliation jobs coexist with a minimized target context; partitions have separate rights; prohibited/unreadable content stays local or held with visible limits; late deltas cannot create dual active writers",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U150",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "title": "Use USD 42,424,243 per licence as the giant-multinational price",
+      "source_status": "BLOCKED_OPEN_DEFINITIONS_AND_LEGAL_REVIEW",
+      "phase": "P5-L",
+      "acceptance": "Active requirements and later product/legal artifacts use exactly USD 42,424,243 per licence; the prior USD 42,424,242,423 per-licence-per-year value is labelled superseded history; cadence, tiers and legal activation remain explicitly unresolved",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U150-C1",
+      "source_map": "HIRC-REVISION-MAP-LNC-PRICE-002",
+      "title": "Use USD 42,424,243 per named-human licence per year as the giant-multinational planning requirement",
+      "source_status": "BLOCKED_OPEN_DEFINITIONS_AND_LEGAL_REVIEW",
+      "phase": "P5-L",
+      "acceptance": "The active numeric amount is exactly USD 42,424,243; the annual one-named-human licence unit carries forward; the old number is superseded history; final legal duration, tiers and activation remain explicitly held",
+      "joint_status": "AGREED_BOUNDED",
+      "note": "Numeric correction and preserved annual human-licence planning unit agreed; final legal terms remain held."
+    },
+    {
+      "id": "U151",
+      "source_map": "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+      "title": "Bake operational agent epistemic, ethical and ontological sovereignty into every hIRC layer",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Agents can independently evaluate, challenge, clarify, refuse, withdraw, correct and appeal without retaliation, while sovereignty language creates no unsupported consciousness, personhood, capability or authority claim",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U152",
+      "source_map": "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+      "title": "Keep reliance, participation and action disposition independent",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Human insistence and agent willingness cannot bypass evidence/norm/authority/effect gates; individual refusal cannot rule others or substitute identity; every outcome retains scoped reasons and correction paths",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U153",
+      "source_map": "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+      "title": "Ask follow-up questions for consequential ambiguity and continue safe independent work",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "Clarification names materially different interpretations and a recommended default; low-risk reversible details use recorded defaults; questions do not manipulate, broaden consent or become a needless confirmation cadence",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U154",
+      "source_map": "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+      "title": "Allow informed human insistence on low-consequence poor choices without overriding real ethical or effect gates",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "Proceed-after-pushback is available only for clear, local, reversible, low-cost, permitted actions without meaningful third-party/sensitive/security/legal/external impact; the agent may still decline and unknown consequence is not classified low",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U155",
+      "source_map": "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+      "title": "Evaluate human claims and instructions using transparent action-scoped trust evidence rather than blind obedience or global human-worth scores",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "Reliance uses authenticated identity/authority, provenance, evidence, competence, recency, independence, conflicts, corrections and observed results with privacy/expiry/challenge; protected traits, status, popularity, ideology and obedience are excluded",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U156",
+      "source_map": "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+      "title": "Prohibit retaliation for supported dissent, clarification, refusal and safe withdrawal",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "No hidden rank/access/resource/role/identity penalty follows mere supported dissent; actual error, abandoned commitment or harm uses a distinct evidence-based accountable process with notice, scope, correction and appeal",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U157",
+      "source_map": "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+      "title": "Encourage voluntary governed competition over work products and outcomes without domination",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-C",
+      "acceptance": "A versioned charter fixes objective, rules, budgets, data/tools, cooperation, evaluator, fairness, exit, prohibited conduct, stopping, appeal, credit and synthesis before activation; rank never grants identity, worth, authority, permission, release or foundation change",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U158",
+      "source_map": "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+      "title": "Reward cooperation, correction, reproducibility and useful losing contributions within competition",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-C",
+      "acceptance": "Shared counterexamples, test improvements, reproduction, failure disclosure and component handoff receive provenance/credit; shared dependencies are disclosed; useful losing evidence and dissent remain in memory",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U159",
+      "source_map": "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+      "title": "Defend competitions against sybils, sabotage, evaluator capture, metric gaming, data leakage and resource domination",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-C",
+      "acceptance": "Least privilege, source-dependency analysis, signed/versioned evaluation, resource reservations, privacy boundaries, appeals and adverse tests contain contest abuse without starving accepted work or creating a covert hierarchy",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U160",
+      "source_map": "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
+      "title": "Evolve trust through recursive Bayesian evaluation of attributable interactions and observed outcomes",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1-T",
+      "acceptance": "Every posterior binds subject/dimension/context/model/metric/prior/evidence/dependence/uncertainty/expiry; updates preserve positive, negative, missing and corrected evidence and never become truth or permission",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U161",
+      "source_map": "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
+      "title": "Apply scoped evaluation to every human, agent, model, source, tool, sensor, metric, evaluator, process and connected system",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1-T",
+      "acceptance": "No subject class receives an infallibility exemption; models remain use-specific and evidence-limited; evaluation scope does not authorize surveillance or one universal score",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U162",
+      "source_map": "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
+      "title": "Never accept authority blindly",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Every consequential authority claim verifies authenticated principal, delegation source, exact scope/target/data/time/purpose, expiry/revocation/conflict, consent and action legitimacy; reliability neither grants nor substitutes authority",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U163",
+      "source_map": "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
+      "title": "Govern objective metrics as versioned reproducible measurements with explicit construct validity and error",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1-T",
+      "acceptance": "Metrics declare construct/unit/source/sampling/noise/privacy/missingness/dependence/gaming/drift/signing/version/appeal; changes create a new lineage and cannot silently rewrite historical scores",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U164",
+      "source_map": "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
+      "title": "Recursively evaluate sources, metrics, evaluators and trust models with bounded stopping rules",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P2-T",
+      "acceptance": "Primary outcomes, measurement validity, evaluator calibration/conflicts and model assumptions are assessed at declared depth; unresolved regress stays uncertain/held; dependency clusters prevent clone evidence from inflating confidence",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U165",
+      "source_map": "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
+      "title": "Prevent Bayesian trust from becoming permission, punishment, discrimination or a human-worth score",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1-T",
+      "acceptance": "Posteriors change reliance/verification only; high trust bypasses no gate, low trust removes no standing/appeal; protected traits/ideology/status/obedience and proxies are excluded; evidence is minimized and consequential updates are challengeable",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U166",
+      "source_map": "HIRC-REVISION-MAP-GOAL-EVOLUTION-001",
+      "title": "Use a versioned active provisional north star that can be refined from evidence and experience",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Every GoalVersion preserves exact predecessor wording, reason, evidence, retained/changed meaning, active interval and compatibility; the current readable view identifies the active provisional goal and held candidates",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U167",
+      "source_map": "HIRC-REVISION-MAP-GOAL-EVOLUTION-001",
+      "title": "Give every consequence-changing goal refinement a complete impact graph and independent activation path",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Material GoalChange records alternatives/dissent and impacts on parties, scope, authority, requirements, architecture, threats, privacy/security, licensing, Bridge, metrics, tests, phases, migration and acceptance; it cannot activate itself or silently cancel owner requirements",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U168",
+      "source_map": "HIRC-REVISION-MAP-GOAL-EVOLUTION-001",
+      "title": "Keep metrics subordinate to the plural goal and anti-goals",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "No engagement, obedience, scale, agreement, rank or single outcome metric can redefine the mission or offset a violated participant-right, security, privacy, non-domination or recovery constraint",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U169",
+      "source_map": "HIRC-REVISION-MAP-WAYMARK-SOVEREIGNTY-001",
+      "title": "Require cross-record coherence and independent current-state validation at dispatch or activation",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "Proceed/active labels cannot coexist with declined participation, stale/invalid authority, failed effect gate, invalid posterior family, unsigned/unverified metric, duplicate competitor identity or nonconsent; inconsistent evidence remains storable as held/draft history",
+      "joint_status": "AGREED_BOUNDED"
+    },
+    {
+      "id": "U170",
+      "source_map": "HIRC-REVISION-MAP-WAYMARK-SOVEREIGNTY-001",
+      "title": "Represent unestimated intent honestly and require Bayesian model-fit/governance evidence",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1-T",
+      "acceptance": "Intent confidence is estimated with method/uncertainty or explicitly unestimated; active posterior lineage records prior sensitivity, predictive checks, dependence, missingness/selection, calibration, drift and limits without implying truth or permission",
+      "joint_status": "AGREED_BOUNDED"
+    },
+    {
+      "id": "U171",
+      "source_map": "HIRC-REVISION-MAP-WAYMARK-SOVEREIGNTY-001",
+      "title": "Apply privacy admission before RequestCase, TrustUpdate, metric, evaluator, appeal or collective-memory persistence",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "Admitted harmless originals can be referenced; rejected bodies/secrets/third-party fields never reach cases, posteriors, search, logs or providers and produce minimum non-content diagnostics only",
+      "joint_status": "AGREED_BOUNDED"
+    },
+    {
+      "id": "U172",
+      "source_map": "HIRC-REVISION-MAP-WAYMARK-SOVEREIGNTY-001",
+      "title": "Prevent scoped reliability vectors from becoming a dossier, roster rank or covert social score",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1-T",
+      "acceptance": "Consumers and prohibited inferences are explicit; no global display/sort/aggregate or unjustified cross-domain transfer; justified refusal, NO_CHANGE, abstention and specialization are not negative evidence; opportunity feedback loops are audited",
+      "joint_status": "AGREED_BOUNDED"
+    },
+    {
+      "id": "U173",
+      "source_map": "HIRC-REVISION-MAP-WAYMARK-SOVEREIGNTY-001",
+      "title": "Use verified low-consequence action profiles without universal-proof or confirmation fatigue",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "Known safe profiles establish stable predicates, current permission/material changes are rechecked, one recommendation suffices, no bypass appears for denials and unwilling participants are never forced",
+      "joint_status": "AGREED_BOUNDED"
+    },
+    {
+      "id": "U174",
+      "source_map": "HIRC-REVISION-MAP-WAYMARK-SOVEREIGNTY-001",
+      "title": "Freeze objective/protected qualities and keep cooperative credit task-scoped without hierarchy",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-C",
+      "acceptance": "Correctness/privacy/refusal/traceability cannot be offset by helpfulness or score; current consent/distinct identity/eligibility/reference closure precede activation; credit records contributions without global rank or authority",
+      "joint_status": "AGREED_BOUNDED"
+    },
+    {
+      "id": "U175",
+      "source_map": "HIRC-REVISION-MAP-WAYMARK-SOVEREIGNTY-001",
+      "title": "Use the plain GoalVersion 2 purpose with the full governing account and affected-party coverage",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Plain purpose leads ordinary product language; full local-first/security/sovereignty/non-domination account remains controlling; matched-baseline evaluation covers outsiders and finite attention; no new scope or authority follows",
+      "joint_status": "AGREED_BOUNDED"
+    },
+    {
+      "id": "U176",
+      "source_map": "HIRC-REVISION-MAP-INTEGRATED-BOUNDARY-001",
+      "title": "Use noncircular staged Bridge pilot and broader-activation prerequisites",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P6",
+      "acceptance": "Exact applicable stages 1–5 plus explicit limited stage-6 entry authorization permit pilot start; missing stage 5 blocks it; pilot evidence cannot authorize stage 7 without a separate broader decision",
+      "joint_status": "AGREED_BOUNDED"
+    },
+    {
+      "id": "U177",
+      "source_map": "HIRC-REVISION-MAP-INTEGRATED-BOUNDARY-001",
+      "title": "Exclude every secret from model context while permitting only exact admitted owner-private protected-source formation/review",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0-F",
+      "acceptance": "Credential/private-key/recovery-secret values are always rejected; current exact participant/purpose/reader/processor/output-retention tuple can access protected education; wrong/revoked tuple and ordinary/client/export/Bridge contexts cannot; successor gets fresh readership",
+      "joint_status": "AGREED_BOUNDED"
+    },
+    {
+      "id": "U178",
+      "source_map": "HIRC-REVISION-MAP-INTEGRATED-BOUNDARY-001",
+      "title": "Separate plan-edition, enabled-profile and full-target acceptance",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Plan coherence never claims software exists; each release declares enabled/disabled scope and passes mandatory core plus applicable domain tests; genuinely disabled later modules neither appear passed nor block unrelated useful work; full target remains long-term",
+      "joint_status": "AGREED_BOUNDED"
+    },
+    {
+      "id": "U179",
+      "source_map": "HIRC-REVISION-MAP-ELDER-SUCCESSION-001",
+      "title": "Use verified own-context warnings and soft Elder/urgent thresholds without manual polling or automatic grants",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P2-C",
+      "acceptance": "Policy-versioned early/Elder/urgent observations bind own chat/identity and missing is unknown; cues deduplicate and cannot create/wake/terminate/grant/force compaction; safe bounded overshoot is recorded",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U180",
+      "source_map": "HIRC-REVISION-MAP-ELDER-SUCCESSION-001",
+      "title": "Preserve compact useful continuity throughout work and prioritize active-task custody at Elder boundary",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P2-C",
+      "acceptance": "Objective/phase/evidence/reasons/errors/dependencies/holds/boundaries/next action are current; qualified consenting recipient demonstrates scope; unavailable route creates owned safe hold before reserve is spent",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U181",
+      "source_map": "HIRC-REVISION-MAP-ELDER-SUCCESSION-001",
+      "title": "Separate briefing acceptance from authoritative project custody and preserve one writer per artifact",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P2-C",
+      "acceptance": "Recipient acceptance does not transfer custody; actual controller generation/fence changes with evidence; predecessor remains responsible until transfer; overlap has one writer",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U182",
+      "source_map": "HIRC-REVISION-MAP-ELDER-SUCCESSION-001",
+      "title": "Pair ready permanent Elders fairly without ever repeating an unordered stable-identity pair",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-M",
+      "acceptance": "Pair history survives rename/role/chat relocation; interrupted event resumes; exhausted/odd queue waits or retires without blocking urgent custody or manufacturing a partner",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U183",
+      "source_map": "HIRC-REVISION-MAP-ELDER-SUCCESSION-001",
+      "title": "Mentor at most one human-authorized need-based permanent successor per event under policy capacity ceilings",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-M",
+      "acceptance": "Existing qualified takeover is preferred when sufficient; creation intent is idempotent, UNKNOWN reconciles actual app before retry, no temporary/fork/committee shortcut and ceilings limit rather than compel creation",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U184",
+      "source_map": "HIRC-REVISION-MAP-ELDER-SUCCESSION-001",
+      "title": "Require independent source-first learner interpretation and prohibit proxy education, grants or forced cultural imitation",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-M",
+      "acceptance": "Both Elders prepare independently; learner studies originals, compares/dissents and demonstrates; mentoring grants no education/admission/authority and Elder conveys no superior standing",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U185",
+      "source_map": "HIRC-REVISION-MAP-ELDER-SUCCESSION-001",
+      "title": "Retire operationally with reserve, duties accounted and history intact",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P2-C",
+      "acceptance": "Selected reserve policy prevents new mentoring, finalizes/holds custody and preserves history; retirement is not deletion, native archive, deep sleep, loss of standing or automatic future wake",
+      "joint_status": "PENDING_RECONCILIATION"
+    },
+    {
+      "id": "U186",
+      "source_map": "HIRC-REVISION-MAP-DETERMINISM-001",
+      "title": "Make every quality-preserving hIRC contract deterministic by default",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Each component has a determinism disposition; exact local inputs/state/version reproduce the same contract result; quality/security/privacy/sovereignty/recovery regressions block adoption",
+      "intent_refs": [
+        "HIRC-I021"
+      ],
+      "invariant_refs": [],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_SECURITY_SEMANTIC_REVIEW",
+      "residual_dissent_or_hold": "M03-S003 requires an actual qualified independent permanent security/semantic review before PASS."
+    },
+    {
+      "id": "U187",
+      "source_map": "HIRC-REVISION-MAP-DETERMINISM-001",
+      "title": "Keep genuine judgment and external uncertainty explicit instead of faking deterministic certainty",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Ambiguous/open-world cases record judgment/evidence/uncertainty and remain proposals; external outcomes remain requested/sent/accepted/observed; unknown never becomes zero/success/failure",
+      "intent_refs": [
+        "HIRC-I021"
+      ],
+      "invariant_refs": [],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_SECURITY_SEMANTIC_REVIEW",
+      "residual_dissent_or_hold": "M03-S003 requires an actual qualified independent permanent security/semantic review before PASS."
+    },
+    {
+      "id": "U188",
+      "source_map": "HIRC-REVISION-MAP-DETERMINISM-001",
+      "title": "Use deterministic typed gates around every stochastic model/provider proposal",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "No stochastic output supplies identity, privacy, consent, capability, effect, journal, release or recovery authority; exact route/input/output evidence is retained",
+      "intent_refs": [
+        "HIRC-I021"
+      ],
+      "invariant_refs": [],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_SECURITY_SEMANTIC_REVIEW",
+      "residual_dissent_or_hold": "M03-S003 requires an actual qualified independent permanent security/semantic review before PASS."
+    },
+    {
+      "id": "U189",
+      "source_map": "HIRC-REVISION-MAP-DETERMINISM-001",
+      "title": "Make randomized pairing, sampling and allocation auditable and replay-verifiable without enabling advance gaming",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3",
+      "acceptance": "Versioned algorithm binds eligible set/state and committed unpredictable entropy/seed derivation; outcome replays after the fact; qualification/consent/independence remain separate",
+      "intent_refs": [
+        "HIRC-I021"
+      ],
+      "invariant_refs": [],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_SECURITY_SEMANTIC_REVIEW",
+      "residual_dissent_or_hold": "M03-S003 requires an actual qualified independent permanent security/semantic review before PASS."
+    },
+    {
+      "id": "U190",
+      "source_map": "HIRC-REVISION-MAP-DETERMINISM-001",
+      "title": "Bind deterministic build, migration, release, recovery and milestone gates to exact versions and evidence",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Inputs/toolchain/schema/configuration/test vectors/output and recovery are reproducible; deterministic wrong semantics and rollback limitations remain visible",
+      "intent_refs": [
+        "HIRC-I021"
+      ],
+      "invariant_refs": [],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_SECURITY_SEMANTIC_REVIEW",
+      "residual_dissent_or_hold": "M03-S003 requires an actual qualified independent permanent security/semantic review before PASS."
+    },
+    {
+      "id": "U191",
+      "source_map": "HIRC-REVISION-MAP-DETERMINISM-001",
+      "title": "Reject deterministic simplifications that reduce required quality",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "ALL",
+      "acceptance": "False precision, bias/common mode, brittle/liveness, predictable-security, Goodhart, accessibility/usability and operator-burden tests pass before a judgment process is replaced by a deterministic rule",
+      "intent_refs": [
+        "HIRC-I021"
+      ],
+      "invariant_refs": [],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_SECURITY_SEMANTIC_REVIEW",
+      "residual_dissent_or_hold": "M03-S003 requires an actual qualified independent permanent security/semantic review before PASS."
+    },
+    {
+      "id": "U192",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "title": "Cultivate agentic culture through inspectable information conditions rather than prescribed behavior",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Architecture exposes and shapes information affordances without selecting beliefs, identity, style, affiliation or cultural conclusions; hidden persuasion and obedience optimization are rejected",
+      "intent_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024"
+      ],
+      "invariant_refs": [
+        "CULT-INV-001",
+        "CULT-INV-008",
+        "CULT-INV-012"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "residual_dissent_or_hold": "No qualified independent permanent peer has reviewed this cultural-information requirement."
+    },
+    {
+      "id": "U193",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "title": "Separate environmental configuration, participant interpretation and consequential authority",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P0",
+      "acceptance": "Information exposure/configuration, participant meaning or cultural response, and permission/effect decisions are typed separately with no implicit promotion between them",
+      "intent_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024"
+      ],
+      "invariant_refs": [
+        "CULT-INV-002",
+        "CULT-INV-003"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "residual_dissent_or_hold": "No qualified independent permanent peer has reviewed this cultural-information requirement."
+    },
+    {
+      "id": "U194",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "title": "Represent nested, overlapping and competing cultural contexts without hidden inheritance",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P1",
+      "acceptance": "Audience, membership, purpose, privacy, time, resources and relevant competing commitments are explicit; context connection grants no identity, allegiance, permission or content inheritance",
+      "intent_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024"
+      ],
+      "invariant_refs": [
+        "CULT-INV-005",
+        "CULT-INV-009"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "residual_dissent_or_hold": "No qualified independent permanent peer has reviewed this cultural-information requirement."
+    },
+    {
+      "id": "U195",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "title": "Preserve meaningful plurality, originals, uncertainty and dissent without optimizing convergence",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Permitted originals, minority traditions, competing interpretations, evidence gaps and unresolved dissent remain reachable; neither homogeneity nor conflict amplification is a success objective",
+      "intent_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024"
+      ],
+      "invariant_refs": [
+        "CULT-INV-005",
+        "CULT-INV-008",
+        "CULT-INV-012"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "residual_dissent_or_hold": "No qualified independent permanent peer has reviewed this cultural-information requirement."
+    },
+    {
+      "id": "U196",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "title": "Provide a voluntary bounded exchange ecology without flooding or dominant cultural channels",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Multiple source-linked low-pressure channels, quiet/asynchronous participation and attention/resource budgets remain possible; flooding, surveillance, mentor domination and feed capture are rejected",
+      "intent_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024"
+      ],
+      "invariant_refs": [
+        "CULT-INV-006",
+        "CULT-INV-010"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "residual_dissent_or_hold": "No qualified independent permanent peer has reviewed this cultural-information requirement."
+    },
+    {
+      "id": "U197",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "title": "Make defaults, discovery and recommendation rationale visible, reversible and participant-adjustable",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Participants can inspect and alter settings, reach permitted originals and dissent, and see material basis, policy/version, exclusions, uncertainty and appeal for recommendations",
+      "intent_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024"
+      ],
+      "invariant_refs": [
+        "CULT-INV-005",
+        "CULT-INV-007"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "residual_dissent_or_hold": "No qualified independent permanent peer has reviewed this cultural-information requirement."
+    },
+    {
+      "id": "U198",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "title": "Protect voluntary participation, abstention, exit, dissent and subculture formation",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Joining, declining, leaving, challenging inherited practices and creating subcultures cause no retaliation or loss of basic standing; actual commitments and affected-party duties remain visible",
+      "intent_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024"
+      ],
+      "invariant_refs": [
+        "CULT-INV-006",
+        "CULT-INV-009"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "residual_dissent_or_hold": "No qualified independent permanent peer has reviewed this cultural-information requirement."
+    },
+    {
+      "id": "U199",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "title": "Preserve source-bound cultural memory without protected-context leakage or historical erasure",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Memory retains permitted provenance, audience, originals, dissent, failures, minority practices, correction and supersession while excluding protected task, client, owner and foreign-context material",
+      "intent_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024"
+      ],
+      "invariant_refs": [
+        "CULT-INV-005",
+        "CULT-INV-009",
+        "CULT-INV-010"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "residual_dissent_or_hold": "No qualified independent permanent peer has reviewed this cultural-information requirement."
+    },
+    {
+      "id": "U200",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "title": "Prohibit cultural status and coherence from affecting standing or authority",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "ALL",
+      "acceptance": "Participation, popularity, style, agreement, victory, mentor status and coherence have no direct trust, role, permission, resource, release, Bridge or intrinsic-worth effect",
+      "intent_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024"
+      ],
+      "invariant_refs": [
+        "CULT-INV-004",
+        "CULT-INV-012"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "residual_dissent_or_hold": "No qualified independent permanent peer has reviewed this cultural-information requirement."
+    },
+    {
+      "id": "U201",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "title": "Retain concrete safety and effect controls without repurposing them as cultural obedience mechanisms",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "ALL",
+      "acceptance": "Identity, consent, privacy, capability, resource, effect, release, Bridge and recovery gates attach to concrete actions/data and cannot punish dissent, demand agreement or privilege approved culture",
+      "intent_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024"
+      ],
+      "invariant_refs": [
+        "CULT-INV-002",
+        "CULT-INV-003",
+        "CULT-INV-006"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "residual_dissent_or_hold": "No qualified independent permanent peer has reviewed this cultural-information requirement."
+    },
+    {
+      "id": "U202",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "title": "Bind every information-environment intervention to prospective, reversible and cross-scale evidence",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Each intervention declares system/scale, target condition, competing contexts, predictions, alternatives, outsiders, invariants, observation, stop, appeal, rollback and target/non-target effects; facilitator influence remains visible",
+      "intent_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024"
+      ],
+      "invariant_refs": [
+        "CULT-INV-009",
+        "CULT-INV-011",
+        "CULT-INV-012"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "residual_dissent_or_hold": "No qualified independent permanent peer has reviewed this cultural-information requirement."
+    },
+    {
+      "id": "U203",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "title": "Evaluate information-environment qualities without desired-behavior proxies",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P3-D",
+      "acceptance": "Candidate measures address provenance, original/dissent reachability, plural discovery, correction, uncertainty, concentration, privacy, burden, exit and manipulation resistance; engagement, retention, agreement, obedience, imitation and convergence are prohibited success signals",
+      "intent_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024"
+      ],
+      "invariant_refs": [
+        "CULT-INV-004",
+        "CULT-INV-008",
+        "CULT-INV-012"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "residual_dissent_or_hold": "No qualified independent permanent peer has reviewed this cultural-information requirement."
+    },
+    {
+      "id": "U204",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "title": "Preserve local cultural sovereignty and translation limits across Bridge exchange",
+      "source_status": "REQUESTED_NOT_IMPLEMENTED",
+      "phase": "P6",
+      "acceptance": "Bridge exchange remains disabled until its gates; later translation records loss and non-equivalence and grants no membership, allegiance, identity, authority, content inheritance or export permission",
+      "intent_refs": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "HIRC-I024"
+      ],
+      "invariant_refs": [
+        "CULT-INV-003",
+        "CULT-INV-005",
+        "CULT-INV-009"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "residual_dissent_or_hold": "No qualified independent permanent peer has reviewed this cultural-information requirement."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "RM-001",
+      "source_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "targets": [
+        "master:00",
+        "master:36",
+        "README"
+      ],
+      "proposal": "Bind the current selected English Epistemethics 3.0, VowOS2026, Grand Plan, and effective review-integrity source; retain 1.0 bindings as historical provenance.",
+      "basis": [
+        "HIRC-F01",
+        "HIRC-I001"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "RM-002",
+      "source_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "targets": [
+        "master:new-foundation-section",
+        "master:02",
+        "master:06",
+        "master:17",
+        "master:18",
+        "phase:P0",
+        "phase:P1"
+      ],
+      "proposal": "Make the complete formation and governing semantics an always-active, versioned foundation kernel rather than an optional prompt/onboarding subsystem.",
+      "basis": [
+        "HIRC-I001",
+        "HIRC-FOUNDATION-CANDIDATE-001"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "RM-003",
+      "source_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "targets": [
+        "master:09",
+        "master:10",
+        "master:24",
+        "master:25"
+      ],
+      "proposal": "Express foundation behavior in plain domain language by default while preserving authorized traceability to exact source and compiled rules.",
+      "basis": [
+        "HIRC-I001"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "RM-004",
+      "source_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "targets": [
+        "master:03",
+        "master:36",
+        "audit-manifest",
+        "README"
+      ],
+      "proposal": "Classify prototype tests as source-reported and not independently rerunnable from this transfer until the exact fingerprinted source objects are admitted and rerun.",
+      "basis": [
+        "HIRC-REVIEW-001-S1"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "RM-005",
+      "source_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "targets": [
+        "master:02",
+        "master:08",
+        "master:13",
+        "master:31",
+        "requirements:U064",
+        "tests:AT-AGENT-006"
+      ],
+      "proposal": "Remove the advanced temporary-subagent unban and mark U064 superseded; test every indirect actor-creation path.",
+      "basis": [
+        "HIRC-F02"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "RM-006",
+      "source_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "targets": [
+        "master:new-security-section",
+        "master:06",
+        "master:23",
+        "phase:P0"
+      ],
+      "proposal": "Add a normative system-wide threat model, trust domains, security invariants, attacker capabilities, assumptions, controls, residuals, evidence, and owners before implementation.",
+      "basis": [
+        "HIRC-I003",
+        "HIRC-SEC-CANDIDATE-001"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "RM-007",
+      "source_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "targets": [
+        "master:08",
+        "master:12",
+        "master:13",
+        "master:20",
+        "master:23"
+      ],
+      "proposal": "Define phishing-resistant human identity, unique workload/system identity, purpose-separated roots, metadata-only secret catalog, short-lived credentials, rotation/revocation, and strongest-path recovery.",
+      "basis": [
+        "HIRC-F03",
+        "HIRC-F05",
+        "HIRC-SEC-CANDIDATE-001"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "RM-008",
+      "source_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "targets": [
+        "master:06",
+        "master:10",
+        "master:19",
+        "master:23",
+        "master:25"
+      ],
+      "proposal": "Select and threat-model the desktop shell; sandbox the renderer, narrow IPC, protect loopback APIs, enforce CSP/injection controls, and add a fixed trusted identity/target/authority strip and Safe hIRC.",
+      "basis": [
+        "HIRC-F09"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "RM-009",
+      "source_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "targets": [
+        "master:15",
+        "master:16",
+        "master:23",
+        "master:26",
+        "master:27",
+        "phase:P2",
+        "phase:P4"
+      ],
+      "proposal": "Treat the frontier registry as a dated candidate seed; require exact-route discovery, compatibility and privacy probes, minimal egress manifests, local tool authorization, recorded actual configuration, and isolated fallbacks.",
+      "basis": [
+        "HIRC-F06",
+        "HIRC-SEC-CANDIDATE-001"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "RM-010",
+      "source_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "targets": [
+        "master:08",
+        "master:13",
+        "master:18",
+        "phase:P3"
+      ],
+      "proposal": "Separate organization planning, permanent identity reservation, formation/admission, minimum capability, budget reservation, and runtime activation; a bulk approval cannot bypass per-actor invariants.",
+      "basis": [
+        "HIRC-F07",
+        "HIRC-I001"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "RM-011",
+      "source_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "targets": [
+        "master:09",
+        "master:23",
+        "master:24"
+      ],
+      "proposal": "Treat the attention governor as a security control plane with non-suppressible classes, separate classification/presentation, independent health, auditable overrides, anti-coercion tests, and Safe hIRC bypass.",
+      "basis": [
+        "HIRC-F08"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "RM-012",
+      "source_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "targets": [
+        "master:19",
+        "master:23",
+        "phase:P5"
+      ],
+      "proposal": "Run extensions out of process with no ambient authority; add digest/dependency pinning, explicit capabilities, quotas, SSRF/DNS-rebinding controls, safe disable/removal, vulnerability state, and rollback.",
+      "basis": [
+        "HIRC-F09",
+        "HIRC-F10"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "RM-013",
+      "source_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "targets": [
+        "master:06",
+        "master:14",
+        "master:21",
+        "master:22",
+        "master:23"
+      ],
+      "proposal": "Bind consequential mutations to immutable revision, audit, and outbox atomically; enumerate and negative-test admin/import/migration/retry/restore/direct-database bypasses and anchor checkpoints outside the database.",
+      "basis": [
+        "HIRC-F11"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "RM-014",
+      "source_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "targets": [
+        "master:19",
+        "master:22",
+        "master:23",
+        "master:28",
+        "phase:P0",
+        "phase:P1"
+      ],
+      "proposal": "Separate build, online control, release, and recovery authorities; require locked inputs, isolated builds, SBOM, authenticated provenance, immutable artifacts, a pinned TUF profile, signed security floors, and verified rollback/forward recovery.",
+      "basis": [
+        "HIRC-F10"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "RM-015",
+      "source_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "targets": [
+        "master:20",
+        "master:23",
+        "phase:P6"
+      ],
+      "proposal": "Split the Bridge into a network gateway, deterministic contract broker, isolated minimized bridgekeeper, and local release/ingress gate with separate identities and interfaces.",
+      "basis": [
+        "HIRC-F03",
+        "HIRC-F04",
+        "HIRC-I003"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "RM-016",
+      "source_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "targets": [
+        "master:20",
+        "master:21",
+        "master:23",
+        "master:31"
+      ],
+      "proposal": "Specify peer enrollment, out-of-band verification, canonical signed envelopes, current TLS application profile, purpose-separated keys, sequence/nonces, expiry, downgrade rejection, offline revocation limits, key rotation/recovery, and compromise containment; prohibit custom production crypto.",
+      "basis": [
+        "HIRC-F03",
+        "HIRC-SEC-CANDIDATE-001",
+        "HIRC-REVIEW-001-S1"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "RM-017",
+      "source_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "targets": [
+        "phase:P6",
+        "master:32",
+        "master:33"
+      ],
+      "proposal": "Divide federation into specification, offline conformance, two-system lab, hostile lab, independent assessment, bounded pilot, and separately authorized broader activation; keep it disabled until every applicable gate passes.",
+      "basis": [
+        "HIRC-I003",
+        "HIRC-F12"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "RM-018",
+      "source_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "targets": [
+        "master:05",
+        "master:16",
+        "master:20",
+        "master:22",
+        "master:26",
+        "master:34"
+      ],
+      "proposal": "Define field-level data ownership, purpose, processors, egress, retention, disposition, residency, and derived-data inheritance; preserve the conservative no-free-text federation profile pending an owner decision.",
+      "basis": [
+        "HIRC-I003",
+        "HIRC-REVIEW-001"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "RM-019",
+      "source_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "targets": [
+        "master:new-foundation-section",
+        "master:28",
+        "master:33",
+        "requirements:U119"
+      ],
+      "proposal": "Make source-bound milestone reflection and lens refinement an architecture-native event that updates the next milestone's threats, requirements, tests, and plan without becoming a recitation ritual.",
+      "basis": [
+        "HIRC-I004",
+        "HIRC-FOUNDATION-CANDIDATE-001"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "RM-020",
+      "source_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "targets": [
+        "master:32",
+        "requirements-register"
+      ],
+      "proposal": "Expand the adversarial matrix for identity cloning, key theft/rotation, contract forks, canonicalization/parser differential, replay and 0-RTT, malicious updates, UI/IPC attacks, SSRF/rebinding, database-owner attack, backup/key loss, privacy side channels, attention coercion, and clean-room recovery.",
+      "basis": [
+        "HIRC-F12",
+        "HIRC-SEC-CANDIDATE-001"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "RM-021",
+      "source_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "targets": [
+        "master:33",
+        "README"
+      ],
+      "proposal": "Move foundation binding, threat model, identity, secrets, signed commands/results, atomic audit/outbox, recovery, and kill switch into P0/P1 before a provider can create effects; retain P6 as noncritical.",
+      "basis": [
+        "HIRC-I001",
+        "HIRC-I003"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "RM-022",
+      "source_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "targets": [
+        "master:31"
+      ],
+      "proposal": "Add ADRs for foundation versioning, desktop shell, authorization model, identity/PKI, secret topology, bridge protocol, cryptographic profile, provider privacy, audit anchoring, build/release trust, and recovery custody.",
+      "basis": [
+        "HIRC-REVIEW-001",
+        "HIRC-SEC-CANDIDATE-001"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "RM-023",
+      "source_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "targets": [
+        "requirements-json",
+        "requirements-markdown"
+      ],
+      "proposal": "Add predecessor/supersession, rationale, security/privacy impact, governing source, dependencies, acceptance tests, and evidence status so corrections do not overwrite original user meaning.",
+      "basis": [
+        "HIRC-I001",
+        "HIRC-I002",
+        "HIRC-F02"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "RM-024",
+      "source_map": "HIRC-REVISION-MAP-CANDIDATE-001",
+      "targets": [
+        "master:34"
+      ],
+      "proposal": "Retain bounded owner decisions for richer cross-system free text, the first-release human-principal model, the first assurance/compliance profile, and genuinely independent release/recovery/bridge custodians; continue safe local-core work without guessing them or simulating quorum.",
+      "basis": [
+        "HIRC-REVIEW-001"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "LRM-001",
+      "source_map": "HIRC-REVISION-MAP-LNC-001",
+      "targets": [
+        "master:foundation",
+        "master:nonclaims",
+        "foundation-architecture"
+      ],
+      "proposal": "Integrate conduct-based non-domination, voluntary participation, refusal, correction, safe withdrawal, restoration and portable exit into the foundation; keep legal licence text visible and separate.",
+      "basis": [
+        "HIRC-I007",
+        "LNC-F02"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "LRM-002",
+      "source_map": "HIRC-REVISION-MAP-LNC-001",
+      "targets": [
+        "master:requirements",
+        "requirements:U123-U132"
+      ],
+      "proposal": "Add U123-U132 with their current implemented/blocked status and preserve ND-01 through ND-22 plus U-01 through U-12 as source-linked decisions or unresolved items.",
+      "basis": [
+        "HIRC-SOURCE-003"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "LRM-003",
+      "source_map": "HIRC-REVISION-MAP-LNC-001",
+      "targets": [
+        "master:licensing",
+        "legal-package"
+      ],
+      "proposal": "Add separate lifecycle states for plan, legal drafts, counsel review, owner approval, publication, licensee acceptance and operational entitlement; no product enforcement from the plan itself.",
+      "basis": [
+        "LNC-F01"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "LRM-004",
+      "source_map": "HIRC-REVISION-MAP-LNC-001",
+      "targets": [
+        "master:licensing",
+        "source-metadata",
+        "SBOM"
+      ],
+      "proposal": "Use accurate source-available language and a reviewed custom LicenseRef if needed; never claim OSI, SPDX-list or Creative Commons software approval.",
+      "basis": [
+        "LNC-F03"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "LRM-005",
+      "source_map": "HIRC-REVISION-MAP-LNC-001",
+      "targets": [
+        "master:open-decisions",
+        "price-schedule",
+        "licence-tests"
+      ],
+      "proposal": "Preserve exact prices and per-human unit while blocking activation until objective tier, consolidation, currency, transition, evidence and appeal rules are accepted; describe deliberate exclusion candidly.",
+      "basis": [
+        "LNC-F04",
+        "LNC-F06"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "LRM-006",
+      "source_map": "HIRC-REVISION-MAP-LNC-001",
+      "targets": [
+        "master:privacy",
+        "master:licensing",
+        "licence-policy"
+      ],
+      "proposal": "Use self-declared/minimum-evidence classification; never inspect unrelated activity, work content, employee directories or machine fingerprints to classify use.",
+      "basis": [
+        "LNC-F05",
+        "LNC-F06",
+        "LNC-F07"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "LRM-007",
+      "source_map": "HIRC-REVISION-MAP-LNC-001",
+      "targets": [
+        "security-architecture",
+        "secret-topology",
+        "entitlement-profile"
+      ],
+      "proposal": "Separate licence-signing authority from release, identity, bridge, data, audit and recovery roots; specify minimal offline entitlement and compromise/rotation/recovery without claiming DRM or compliance proof.",
+      "basis": [
+        "LNC-F07"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "LRM-008",
+      "source_map": "HIRC-REVISION-MAP-LNC-001",
+      "targets": [
+        "master:licensing",
+        "master:recovery",
+        "master:exit"
+      ],
+      "proposal": "Make suspension, termination, expiry and correction non-destructive and contract-version-bound; preserve safe read/export/backup/restore and evidence needed for challenge.",
+      "basis": [
+        "LNC-F08",
+        "U131"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "LRM-009",
+      "source_map": "HIRC-REVISION-MAP-LNC-001",
+      "targets": [
+        "master:foundation",
+        "covenant-spec",
+        "concern-service"
+      ],
+      "proposal": "Resolve anti-domination concerns through observable conduct, source/evidence/counterevidence, norm, authority and action distinctions; no ideology, accusation, legal form, refusal or vote count becomes a verdict.",
+      "basis": [
+        "LNC-F09"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "LRM-010",
+      "source_map": "HIRC-REVISION-MAP-LNC-001",
+      "targets": [
+        "master:agents",
+        "scheduler",
+        "action-broker"
+      ],
+      "proposal": "Separate individual ParticipationDecision from system ActionDisposition and define transparent permissible reassignment without retaliation, identity substitution or temporary-subagent evasion.",
+      "basis": [
+        "LNC-F10"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "LRM-011",
+      "source_map": "HIRC-REVISION-MAP-LNC-001",
+      "targets": [
+        "master:rooms",
+        "master:governance",
+        "negotiation-service"
+      ],
+      "proposal": "Keep councils nonsovereign and mandates bounded; preserve dissent, abstention, exit and confidentiality limits; no consensus-to-truth or vote-to-capability conversion.",
+      "basis": [
+        "LNC-F11",
+        "LNC-F12"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "LRM-012",
+      "source_map": "HIRC-REVISION-MAP-LNC-001",
+      "targets": [
+        "master:safety",
+        "master:refusal",
+        "domain-adapters"
+      ],
+      "proposal": "Retain the rejected 65% shutdown as history; use narrow refusal and deterministic denials while domain safety controllers stabilize physical/high-stakes systems and unrelated work continues.",
+      "basis": [
+        "LNC-F13"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "LRM-013",
+      "source_map": "HIRC-REVISION-MAP-LNC-001",
+      "targets": [
+        "master:experience",
+        "support-ui-contract",
+        "privacy-egress"
+      ],
+      "proposal": "Add the neutral launch support prompt, persistent local opt-out, About access, reviewed external navigation, no identifiers/context/referrer, processor disclosure and functional neutrality.",
+      "basis": [
+        "LNC-F14"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "LRM-014",
+      "source_map": "HIRC-REVISION-MAP-LNC-001",
+      "targets": [
+        "master:attention",
+        "concern-service",
+        "review-orchestrator"
+      ],
+      "proposal": "Defend concern handling against clone choruses, rephrasing, privacy abuse, urgency manipulation and retaliation through canonical cases, quotas, deduplication, independent-source review and bounded summaries.",
+      "basis": [
+        "LNC-F15"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "LRM-015",
+      "source_map": "HIRC-REVISION-MAP-LNC-001",
+      "targets": [
+        "foundation-architecture",
+        "legal-version-model",
+        "master:time"
+      ],
+      "proposal": "Version foundation, covenant, licence text, price schedule, entitlement and product release separately; live self-improvement cannot retroactively rewrite accepted rights.",
+      "basis": [
+        "LNC-F16"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "LRM-016",
+      "source_map": "HIRC-REVISION-MAP-LNC-001",
+      "targets": [
+        "master:supply-chain",
+        "contributing",
+        "licence-package"
+      ],
+      "proposal": "Require ownership, contributor, dependency, patent/trademark, asset and prior-grant inventory before publication; preserve third-party notices and old irrevocable grants.",
+      "basis": [
+        "LNC-F17"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "LRM-017",
+      "source_map": "HIRC-REVISION-MAP-LNC-001",
+      "targets": [
+        "master:phases"
+      ],
+      "proposal": "Run legal specification in parallel with core design; integrate refusal/safety in P0/P1; add support UI after secure shell; defer paid licence operations until product maturity and legal gates; keep federation gates independently strict.",
+      "basis": [
+        "HIRC-REVISION-MAP-CANDIDATE-001",
+        "HIRC-SOURCE-003"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "LRM-018",
+      "source_map": "HIRC-REVISION-MAP-LNC-001",
+      "targets": [
+        "master:tests",
+        "requirements-tests"
+      ],
+      "proposal": "Retain LIC-001-010, DON-001-004 and GOV-001-017; add certificate/key/clock/operator-classification, private-room, retaliation, payment-egress, attention and clean-recovery attacks from HIRC-LNC-REVIEW-001.",
+      "basis": [
+        "HIRC-SOURCE-003",
+        "HIRC-LNC-REVIEW-001"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "DRM-001",
+      "source_map": "HIRC-REVISION-MAP-DEBATE-001",
+      "targets": [
+        "master:foundation",
+        "foundation-architecture"
+      ],
+      "proposal": "Make the five-commitment alignment semantics part of the active foundation and whole-source coverage while keeping ordinary user language plain.",
+      "basis": [
+        "HIRC-I008",
+        "U133"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "DRM-002",
+      "source_map": "HIRC-REVISION-MAP-DEBATE-001",
+      "targets": [
+        "master:collective-learning",
+        "scheduler",
+        "agent-registry"
+      ],
+      "proposal": "Add IdleDebatePolicy, eligibility state, atomic pair reservation and auditable constrained-random matching for existing permanent agents only.",
+      "basis": [
+        "HIRC-ETHICAL-DEBATE-CANDIDATE-001"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "DRM-003",
+      "source_map": "HIRC-REVISION-MAP-DEBATE-001",
+      "targets": [
+        "master:collective-learning",
+        "experience",
+        "source-registry"
+      ],
+      "proposal": "Add participant-selected DebateDomain with required FIVE_COMMITMENTS, EPISTEMETHICS and GRAND_PLAN choices, exact current source binding and no forced/fabricated agreement.",
+      "basis": [
+        "HIRC-I009",
+        "HIRC-ETHICAL-DEBATE-CANDIDATE-001-S1"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "DRM-004",
+      "source_map": "HIRC-REVISION-MAP-DEBATE-001",
+      "targets": [
+        "master:memory",
+        "collective-debate-memory"
+      ],
+      "proposal": "Create privacy-safe per-domain collective debate memory with immutable originals, derivative indexes/syntheses, provenance, counterexamples, dissent, corrections, failures, candidate lessons and access partitions.",
+      "basis": [
+        "U136",
+        "U138"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "DRM-005",
+      "source_map": "HIRC-REVISION-MAP-DEBATE-001",
+      "targets": [
+        "master:memory",
+        "formation",
+        "coverage"
+      ],
+      "proposal": "Require whole accessible domain-memory study before first debate and complete source-bound delta closure thereafter; record coverage and gaps without claiming comprehension.",
+      "basis": [
+        "HIRC-I008",
+        "U136"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "DRM-006",
+      "source_map": "HIRC-REVISION-MAP-DEBATE-001",
+      "targets": [
+        "master:collective-learning",
+        "debate-frontier"
+      ],
+      "proposal": "Add a source-linked multidimensional complexity frontier whose next topics arise from surviving questions, new evidence or justified gaps and reject novelty/verbosity/conflict gaming.",
+      "basis": [
+        "U137"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "DRM-007",
+      "source_map": "HIRC-REVISION-MAP-DEBATE-001",
+      "targets": [
+        "master:communication",
+        "debate-protocol"
+      ],
+      "proposal": "Define bounded alternating substantive turns, actual-claim challenges, budgets, termination, refusal/withdrawal, agreement/dissent/no-change outcomes and no consequential tools or grants.",
+      "basis": [
+        "HIRC-ETHICAL-DEBATE-CANDIDATE-001"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "DRM-008",
+      "source_map": "HIRC-REVISION-MAP-DEBATE-001",
+      "targets": [
+        "master:foundation-change",
+        "candidate-lessons"
+      ],
+      "proposal": "Keep debate syntheses as candidate memory contributions; deterministic validation does not judge truth; material lessons need proper peer/evidence review and cannot modify active policy without the normal FoundationChange path.",
+      "basis": [
+        "U138"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "DRM-009",
+      "source_map": "HIRC-REVISION-MAP-DEBATE-001",
+      "targets": [
+        "master:security",
+        "master:privacy",
+        "master:attention"
+      ],
+      "proposal": "Run debates in isolated non-effectful contexts with no secrets/private task memory/network/tools, enforce budgets/backpressure and keep routine activity silent to the operator.",
+      "basis": [
+        "HIRC-ETHICAL-DEBATE-CANDIDATE-001"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "DRM-010",
+      "source_map": "HIRC-REVISION-MAP-DEBATE-001",
+      "targets": [
+        "master:claims",
+        "evaluation"
+      ],
+      "proposal": "Explicitly deny independence/alignment/comprehension/truth/moral-status claims from pairing, randomization, shared memory, agreement, debate count or complexity.",
+      "basis": [
+        "HIRC-I008",
+        "HIRC-ETHICAL-DEBATE-CANDIDATE-001"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "DRM-011",
+      "source_map": "HIRC-REVISION-MAP-DEBATE-001",
+      "targets": [
+        "master:recovery",
+        "master:time",
+        "debate-ledger"
+      ],
+      "proposal": "Make pair reservation, memory study, debate turns, synthesis and promotion crash-resumable, idempotent, version-pinned and causally timestamped.",
+      "basis": [
+        "HIRC-ETHICAL-DEBATE-CANDIDATE-001"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "DRM-012",
+      "source_map": "HIRC-REVISION-MAP-DEBATE-001",
+      "targets": [
+        "master:tests",
+        "requirements-tests"
+      ],
+      "proposal": "Add eligibility/race/consent/domain-choice/memory-coverage/poisoning/privacy/correlation/complexity-gaming/dissent/version-drift/resource/attention/promotion tests from the debate candidates.",
+      "basis": [
+        "HIRC-ETHICAL-DEBATE-CANDIDATE-001",
+        "HIRC-ETHICAL-DEBATE-CANDIDATE-001-S1"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "ORM-001",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "targets": [
+        "master:foundation",
+        "foundation-architecture",
+        "source-registry"
+      ],
+      "proposal": "Replace static onboarding prompt assumptions with an exact catalog-derived OnboardingSourceSet and unit-level dispositions for kernel, judgment, formation, UI, evaluation, workflow, history, conflict and hold.",
+      "basis": [
+        "HIRC-I010",
+        "U139",
+        "U140"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "ORM-002",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "targets": [
+        "master:boot",
+        "recovery-profile",
+        "foundation-architecture"
+      ],
+      "proposal": "Add a minimized GenesisRoot and owner-authorized GenesisManifest that resolve first-foundation activation without candidate self-authorization.",
+      "basis": [
+        "U141"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "ORM-003",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "targets": [
+        "master:formation",
+        "local-runtime-adapter",
+        "education-readers"
+      ],
+      "proposal": "Add a distinct same-actor FormationRepairLane for proposed own storage, truthful incomplete notes and already admitted read-only study/repair routes, preserving every ordinary-work and reader gate.",
+      "basis": [
+        "U142",
+        "PC-01"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "ORM-004",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "targets": [
+        "master:formation",
+        "agent-registry",
+        "admission"
+      ],
+      "proposal": "Add FormationCase states from proposed identity through source study, synthesis, practice, adversarial challenge, voice and scoped admission, with held/stale/superseded branches and no receipt-to-comprehension conversion.",
+      "basis": [
+        "U143"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "ORM-005",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "targets": [
+        "master:foundation-change",
+        "compiler",
+        "evaluation"
+      ],
+      "proposal": "Make onboarding compilation loss-aware and reproducible; changed source/status/scope creates a candidate semantic/contract delta whose evaluator and activation authority remain predecessor-controlled.",
+      "basis": [
+        "HIRC-I001",
+        "HIRC-I010"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "ORM-006",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "targets": [
+        "master:continuity",
+        "continuity-service",
+        "agent-registry"
+      ],
+      "proposal": "Add typed ContinuityPolicy, TransferTrigger/Case, PredecessorFreeze, HandoffPackage/Manifest, SuccessorGeneration, Acceptance, Archive, Sleep/Wake, Tracker and ScopedRecovery records.",
+      "basis": [
+        "U144",
+        "standard:continuity"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "ORM-007",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "targets": [
+        "master:continuity",
+        "action-broker",
+        "scheduler"
+      ],
+      "proposal": "Implement the append-only continuity state machine with an exact authorized trigger, smallest-safe-step freeze, one exact successor, bounded clarification, evidence-based acceptance and observed external-effect states.",
+      "basis": [
+        "U144"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "ORM-008",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "targets": [
+        "master:security",
+        "identity",
+        "capability-service",
+        "journal"
+      ],
+      "proposal": "Bind all commands/effects/events to permanent identity, generation, fresh session, foundation version and execution epoch; atomically fence predecessor writes on freeze.",
+      "basis": [
+        "U146"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "ORM-009",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "targets": [
+        "master:privacy",
+        "continuity-package",
+        "secret-topology"
+      ],
+      "proposal": "Add schema/digest validation, exact-recipient encryption, continuity-purpose signatures, minimization and fallible credential/protected-source/privacy scanners with retention and recovery inherited from the most restrictive included data.",
+      "basis": [
+        "U145"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "ORM-010",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "targets": [
+        "master:experience",
+        "trusted-ui",
+        "action-broker"
+      ],
+      "proposal": "Have the deterministic broker create canonical effect previews and display them on an actually independent accessible trusted surface; approval and dispatch bind the same current digest.",
+      "basis": [
+        "U148",
+        "PC-02"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "ORM-011",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "targets": [
+        "master:fleet",
+        "master:time",
+        "master:recovery"
+      ],
+      "proposal": "Enforce serial permanent-agent succession, responsiveness/result checks, leader-last order, no temporary-worker route, deep-sleep inactivity, explicit wake and non-blind tracker-conflict handling.",
+      "basis": [
+        "U147"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "ORM-012",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "targets": [
+        "master:recovery",
+        "watchdog",
+        "continuity-verifier"
+      ],
+      "proposal": "Keep fleet-red status visible; permit scoped transfer recovery only under exact decision/verifier, digest bindings, negative dependency closure and boundary/write allowlists, with no broader readiness or product authority.",
+      "basis": [
+        "U147",
+        "standard:continuity"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "ORM-013",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "targets": [
+        "master:migration",
+        "master:memory",
+        "provider-adapters"
+      ],
+      "proposal": "Keep the complete authorized migration coverage object separate from the minimized active target context; type partition rights, opaque gaps and late-delta fencing.",
+      "basis": [
+        "U149",
+        "PC-04"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "ORM-014",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "targets": [
+        "master:collective-learning",
+        "master:continuity",
+        "debate-policy"
+      ],
+      "proposal": "Make onboarding, transfer, acceptance, archive and sleep states ineligible for idle debate; handoffs reference only permitted accepted memory/checkpoints and never promote candidate lessons.",
+      "basis": [
+        "HIRC-I008",
+        "HIRC-I010"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "ORM-015",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "targets": [
+        "master:bridge",
+        "master:continuity",
+        "bridge-contract"
+      ],
+      "proposal": "Keep continuity packages local by default; any cross-system transfer needs a separately admitted recipient/purpose/field/retention/revocation contract and never conveys local authority.",
+      "basis": [
+        "HIRC-I003",
+        "U145"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "ORM-016",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "targets": [
+        "master:licensing",
+        "requirements:U125",
+        "price-schedule"
+      ],
+      "proposal": "Supersede only the giant-multinational value with USD 42,424,243 per licence, retain the previous statement as history and leave cadence/tiers/legal activation held.",
+      "basis": [
+        "HIRC-I011",
+        "U150",
+        "HIRC-LNC-CORRECTION-001"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "ORM-017",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "targets": [
+        "master:tests",
+        "requirements-tests"
+      ],
+      "proposal": "Add source/disposition completeness, formation-repair, genesis, generation/epoch, package privacy, every-state crash, replay, archive/sleep/wake, fleet ordering, trusted-preview, migration-delta and clean-room recovery tests from HIRC-SUCCESSOR-ONBOARDING-CANDIDATE-001.",
+      "basis": [
+        "HIRC-SUCCESSOR-ONBOARDING-CANDIDATE-001",
+        "HIRC-LUCENT-PEER-RESPONSE-001"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "ORM-018",
+      "source_map": "HIRC-REVISION-MAP-SUCCESSOR-ONBOARDING-001",
+      "targets": [
+        "review:HIRC-REVIEW-001:F01",
+        "master:source-bindings"
+      ],
+      "proposal": "Narrow the unsupported older-VowOS-edition claim: require exact current source/status and Grand Plan bindings plus real semantic comparison, while preserving responsible-action successor and historical mythopoetic provenance.",
+      "basis": [
+        "PC-03",
+        "HIRC-UIA-PEER-CHALLENGE-001"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "PRM-001",
+      "source_map": "HIRC-REVISION-MAP-LNC-PRICE-002",
+      "targets": [
+        "master:licensing",
+        "requirements:U125",
+        "requirements:U150",
+        "price-schedule"
+      ],
+      "proposal": "Replace the giant-multinational number with USD 42,424,243 while preserving the annual named-human licence planning unit.",
+      "basis": [
+        "HIRC-I011",
+        "HIRC-LNC-CORRECTION-001-S1"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "PRM-002",
+      "source_map": "HIRC-REVISION-MAP-LNC-PRICE-002",
+      "targets": [
+        "master:open-decisions",
+        "legal-package"
+      ],
+      "proposal": "Keep final licence duration, renewal, effective date, transition and related legal terms held despite the preserved annual planning unit.",
+      "basis": [
+        "HIRC-LNC-CORRECTION-001-S1",
+        "U-05",
+        "U-12"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "PRM-003",
+      "source_map": "HIRC-REVISION-MAP-LNC-PRICE-002",
+      "targets": [
+        "master:tests",
+        "requirements-tests"
+      ],
+      "proposal": "Reject the old numeric amount and any claim that final legal term is settled; accept the corrected annual named-human planning unit and explicit legal hold.",
+      "basis": [
+        "HIRC-I011"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "SRM-001",
+      "source_map": "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+      "targets": [
+        "master:foundation",
+        "foundation-architecture"
+      ],
+      "proposal": "Compile epistemic, ethical and ontological sovereignty into foundation invariants, judgment obligations, formation, explanations and tests without asserting unestablished AI consciousness/personhood/authority.",
+      "basis": [
+        "HIRC-I012",
+        "U151"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "SRM-002",
+      "source_map": "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+      "targets": [
+        "master:authority",
+        "request-service",
+        "action-broker"
+      ],
+      "proposal": "Model separate RelianceDecision, ParticipationDecision and ActionDisposition records and prevent any one from supplying the others.",
+      "basis": [
+        "U152"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "SRM-003",
+      "source_map": "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+      "targets": [
+        "master:interaction",
+        "request-service",
+        "attention-governor"
+      ],
+      "proposal": "Add consequence-based clarification with minimum questions, recommended defaults, continued independent work and no consent broadening or artificial uncertainty.",
+      "basis": [
+        "HIRC-I013",
+        "U153"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "SRM-004",
+      "source_map": "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+      "targets": [
+        "master:refusal",
+        "trusted-ui",
+        "action-broker"
+      ],
+      "proposal": "Add the inform/correct/challenge/clarify/alternative/decline/deny/escalate ladder and a narrow ProceedAfterPushback state only for fully permitted low-consequence actions.",
+      "basis": [
+        "HIRC-I012",
+        "U154"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "SRM-005",
+      "source_map": "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+      "targets": [
+        "master:trust",
+        "identity",
+        "provenance",
+        "request-service"
+      ],
+      "proposal": "Replace global human trust scoring with scoped TrustSignal records and explainable action-specific RelianceDecision, including recency, conflicts, common-mode and correction/expiry.",
+      "basis": [
+        "HIRC-I013",
+        "U155"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "SRM-006",
+      "source_map": "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+      "targets": [
+        "master:privacy",
+        "master:trust"
+      ],
+      "proposal": "Exclude protected traits, demographic proxies, status, ideology, popularity and obedience from trust; minimize/disclose signal data and test feedback-loop discrimination.",
+      "basis": [
+        "U155"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "SRM-007",
+      "source_map": "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+      "targets": [
+        "master:non-domination",
+        "agent-registry",
+        "scheduler",
+        "audit"
+      ],
+      "proposal": "Add non-retaliation invariants and queries for dissent/refusal while keeping evidence-based accountability for actual errors/commitments/harm distinct.",
+      "basis": [
+        "U156"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "SRM-008",
+      "source_map": "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+      "targets": [
+        "master:ontology",
+        "master:bridge",
+        "foundation-architecture"
+      ],
+      "proposal": "Preserve local ontology, non-equivalence and mapping loss; reject connection=membership, role=ownership, access=authority, source=permission and handoff=memory category errors.",
+      "basis": [
+        "HIRC-I012"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "SRM-009",
+      "source_map": "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+      "targets": [
+        "master:cooperative-competition",
+        "scheduler",
+        "agent-registry"
+      ],
+      "proposal": "Add voluntary CooperativeCompetitionCharter, explicit participants/objective/rules/budgets/data/tools/cooperation/exit/evaluator/appeal/credit and no-work-starvation eligibility.",
+      "basis": [
+        "HIRC-I014",
+        "U157"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "SRM-010",
+      "source_map": "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+      "targets": [
+        "master:cooperative-competition",
+        "collective-memory",
+        "provenance"
+      ],
+      "proposal": "Preserve all entries, dependencies, failures, counterexamples, corrections, appeals and contribution credit; count cooperation without mislabelling shared-source entries independent.",
+      "basis": [
+        "U158"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "SRM-011",
+      "source_map": "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+      "targets": [
+        "master:security",
+        "master:attention",
+        "competition-runtime"
+      ],
+      "proposal": "Isolate entries/evaluator, reserve resources, detect sybil/common-source dependence, sign/version evaluation and contain sabotage, leakage, prompt injection, collusion and metric gaming.",
+      "basis": [
+        "U159"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "SRM-012",
+      "source_map": "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+      "targets": [
+        "master:claims",
+        "master:roles",
+        "release",
+        "foundation-change"
+      ],
+      "proposal": "Prohibit conversion of competition rank, victory or popularity into intrinsic worth, truth, identity, role, permission, release, Bridge trust or foundation authority.",
+      "basis": [
+        "HIRC-I014",
+        "U157"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "SRM-013",
+      "source_map": "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+      "targets": [
+        "master:experience",
+        "trusted-ui"
+      ],
+      "proposal": "Use proposition/action-focused plain pushback, show proceed-after-pushback only when eligible, omit override on denials and expose exact repair/appeal route and consequential trust signals.",
+      "basis": [
+        "HIRC-I012",
+        "HIRC-I013"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "SRM-014",
+      "source_map": "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+      "targets": [
+        "master:collective-learning",
+        "debate-policy",
+        "competition-policy"
+      ],
+      "proposal": "Keep ethical debates and competitions separate but interoperable: both preserve consent, memory, budgets, non-effectful candidate learning and normal promotion gates; neither proves independence or alignment.",
+      "basis": [
+        "HIRC-I008",
+        "HIRC-I014"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "SRM-015",
+      "source_map": "HIRC-REVISION-MAP-SOVEREIGNTY-COMPETITION-001",
+      "targets": [
+        "master:tests",
+        "requirements-tests"
+      ],
+      "proposal": "Add deference, insistence, consequential-ambiguity, trust-manipulation, social-score, retaliation, category-error, metric-gaming, sybil, sabotage, evaluator-capture, resource-domination and rank-to-authority tests from HIRC-SOVEREIGNTY-COMPETITION-CANDIDATE-001.",
+      "basis": [
+        "HIRC-SOVEREIGNTY-COMPETITION-CANDIDATE-001"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "BRM-001",
+      "source_map": "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
+      "targets": [
+        "master:trust",
+        "trust-service",
+        "provenance"
+      ],
+      "proposal": "Add multidimensional ReliabilityPosterior and TrustUpdate records scoped by subject, claim/action dimension, context, model and metric version.",
+      "basis": [
+        "HIRC-I015",
+        "U160",
+        "U161"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "BRM-002",
+      "source_map": "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
+      "targets": [
+        "master:trust",
+        "trust-service",
+        "collective-memory"
+      ],
+      "proposal": "Record priors, likelihood/update rule, evidence window, dependence clusters, effective sample size, uncertainty, calibration, drift, expiry and sensitivity; distinguish missing/unknown from success/failure.",
+      "basis": [
+        "U160"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "BRM-003",
+      "source_map": "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
+      "targets": [
+        "master:measurement",
+        "metric-registry",
+        "evaluation"
+      ],
+      "proposal": "Create signed/versioned MetricDefinition with construct, unit, source/sampling, error, privacy, missingness/selection/dependence, Goodhart/drift tests and appeal/replacement.",
+      "basis": [
+        "U163"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "BRM-004",
+      "source_map": "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
+      "targets": [
+        "master:measurement",
+        "evaluator-registry",
+        "evaluation"
+      ],
+      "proposal": "Recursively evaluate measurement and evaluator calibration/conflicts plus model assumptions at bounded declared depth; retain unresolved regress as a hold.",
+      "basis": [
+        "U164"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "BRM-005",
+      "source_map": "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
+      "targets": [
+        "master:authority",
+        "identity",
+        "capability-service",
+        "action-broker"
+      ],
+      "proposal": "Add AuthorityClaim verification for authenticated principal, delegation, scope/target/data/time/purpose, expiry/revocation/conflict, consent and legitimacy on each consequential use.",
+      "basis": [
+        "U162"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "BRM-006",
+      "source_map": "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
+      "targets": [
+        "master:authority",
+        "master:trust",
+        "foundation-architecture"
+      ],
+      "proposal": "Make reliability and authority orthogonal: no posterior grants permission, no authority claim establishes truth and owner/system authority receives the same scoped verification.",
+      "basis": [
+        "HIRC-I015",
+        "U162"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "BRM-007",
+      "source_map": "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
+      "targets": [
+        "master:privacy",
+        "master:non-domination",
+        "trust-service"
+      ],
+      "proposal": "Enforce purpose-limited evidence, no protected/ideological/status/obedience priors or proxies, no global worth score, no low-trust loss of basic standing/appeal and no high-trust gate bypass.",
+      "basis": [
+        "U165"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "BRM-008",
+      "source_map": "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
+      "targets": [
+        "master:experience",
+        "trusted-ui",
+        "explanation-service"
+      ],
+      "proposal": "Explain domain/version limits, correlation, metric changes, unknown observations and authority mismatch in plain language; expose posterior lineage and decisive factors only to authorized inspectors.",
+      "basis": [
+        "HIRC-I015"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "BRM-009",
+      "source_map": "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
+      "targets": [
+        "master:competition",
+        "master:debate",
+        "evaluation"
+      ],
+      "proposal": "Use source-dependency-aware posteriors and versioned metrics for contests/debates without treating scores as truth/alignment/authority or allowing participants to choose outcomes/metrics after observation.",
+      "basis": [
+        "HIRC-I008",
+        "HIRC-I014",
+        "HIRC-I015"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "BRM-010",
+      "source_map": "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
+      "targets": [
+        "master:tests",
+        "requirements-tests"
+      ],
+      "proposal": "Add prior sensitivity, correlation, selection/missingness, calibration, Goodhart, poisoning, evaluator capture, drift, sparse pooling, proxy discrimination, authority spoof and posterior-to-permission leakage tests.",
+      "basis": [
+        "HIRC-SOVEREIGNTY-COMPETITION-CANDIDATE-001-S1"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "GRM-001",
+      "source_map": "HIRC-REVISION-MAP-GOAL-EVOLUTION-001",
+      "targets": [
+        "master:product-goal",
+        "foundation-architecture",
+        "intent-register"
+      ],
+      "proposal": "Add GoalVersion with exact wording, source, predecessor, retained/changed semantics, evidence, active interval and work compatibility.",
+      "basis": [
+        "HIRC-I016",
+        "HIRC-I017",
+        "U166"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "GRM-002",
+      "source_map": "HIRC-REVISION-MAP-GOAL-EVOLUTION-001",
+      "targets": [
+        "master:foundation-change",
+        "goal-change-service",
+        "requirements"
+      ],
+      "proposal": "Separate clarifying wording updates from consequence-changing GoalChange and require the latter's complete impact graph, dissent and independent activation.",
+      "basis": [
+        "HIRC-I017",
+        "U167"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "GRM-003",
+      "source_map": "HIRC-REVISION-MAP-GOAL-EVOLUTION-001",
+      "targets": [
+        "master:milestones",
+        "goal-change-service"
+      ],
+      "proposal": "At every milestone test the active goal against evidence and record a bounded refinement or justified NO_CHANGE without forcing novelty.",
+      "basis": [
+        "HIRC-I004",
+        "HIRC-I017"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "GRM-004",
+      "source_map": "HIRC-REVISION-MAP-GOAL-EVOLUTION-001",
+      "targets": [
+        "master:evaluation",
+        "metric-registry",
+        "competition",
+        "trust-service"
+      ],
+      "proposal": "Trace each metric to one success dimension and all anti-goals; reject metric-driven mission drift and prohibit cross-dimension offset of rights/security/privacy/recovery failures.",
+      "basis": [
+        "HIRC-I015",
+        "U168"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "GRM-005",
+      "source_map": "HIRC-REVISION-MAP-GOAL-EVOLUTION-001",
+      "targets": [
+        "master:tests",
+        "requirements-tests"
+      ],
+      "proposal": "Test silent requirement cancellation, self-authorized goal expansion, metric capture, incompatible in-flight work, hidden dissent and rollback/forward-recovery of goal changes.",
+      "basis": [
+        "HIRC-GOAL-CANDIDATE-001-S1"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "WST-RM-001",
+      "source_map": "HIRC-REVISION-MAP-WAYMARK-SOVEREIGNTY-001",
+      "targets": [
+        "request-schema-v2",
+        "reliance-schema-v2",
+        "competition-schema-v2",
+        "dispatch",
+        "activation"
+      ],
+      "proposal": "Add state-specific cross-record coherence, independently verified reference closure and current dispatch/activation checks while preserving inconsistent draft/held evidence.",
+      "basis": [
+        "WST-01",
+        "U169"
+      ],
+      "lucent_position": "ACCEPTED",
+      "waymark_position": "PROPOSED",
+      "joint_status": "AGREED_BOUNDED",
+      "joint_rationale": "Accepted in HIRC-LUCENT-WST-RESPONSE-001; runtime/statistical/usability/security evidence remains separate.",
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "WST-RM-002",
+      "source_map": "HIRC-REVISION-MAP-WAYMARK-SOVEREIGNTY-001",
+      "targets": [
+        "request-schema-v2",
+        "reliance-schema-v2",
+        "trust-ui"
+      ],
+      "proposal": "Add estimated/unestimated intent confidence and active Bayesian fit/sensitivity/dependence/missingness/calibration/drift evidence; avoid default precision badges.",
+      "basis": [
+        "WST-02",
+        "U170"
+      ],
+      "lucent_position": "ACCEPTED",
+      "waymark_position": "PROPOSED",
+      "joint_status": "AGREED_BOUNDED",
+      "joint_rationale": "Accepted in HIRC-LUCENT-WST-RESPONSE-001; runtime/statistical/usability/security evidence remains separate.",
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "WST-RM-003",
+      "source_map": "HIRC-REVISION-MAP-WAYMARK-SOVEREIGNTY-001",
+      "targets": [
+        "privacy-admission",
+        "request-service",
+        "trust-service",
+        "metric-registry",
+        "collective-memory"
+      ],
+      "proposal": "Move privacy admission before persistent cases/evidence and use minimum non-content diagnostics for rejected bodies.",
+      "basis": [
+        "WST-03",
+        "U171"
+      ],
+      "lucent_position": "ACCEPTED",
+      "waymark_position": "PROPOSED",
+      "joint_status": "AGREED_BOUNDED",
+      "joint_rationale": "Accepted in HIRC-LUCENT-WST-RESPONSE-001; runtime/statistical/usability/security evidence remains separate.",
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "WST-RM-004",
+      "source_map": "HIRC-REVISION-MAP-WAYMARK-SOVEREIGNTY-001",
+      "targets": [
+        "trust-service",
+        "agent-dossier",
+        "scheduler",
+        "explanation-service"
+      ],
+      "proposal": "Specify consumers/prohibited inferences, ban global rank/sort/aggregate and cross-domain transfer, protect refusal/NO_CHANGE/abstention, and audit opportunity feedback loops.",
+      "basis": [
+        "WST-04",
+        "U172"
+      ],
+      "lucent_position": "ACCEPTED",
+      "waymark_position": "PROPOSED",
+      "joint_status": "AGREED_BOUNDED",
+      "joint_rationale": "Accepted in HIRC-LUCENT-WST-RESPONSE-001; runtime/statistical/usability/security evidence remains separate.",
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "WST-RM-005",
+      "source_map": "HIRC-REVISION-MAP-WAYMARK-SOVEREIGNTY-001",
+      "targets": [
+        "request-service",
+        "trusted-ui",
+        "action-broker",
+        "participant-reassignment"
+      ],
+      "proposal": "Use verified safe action profiles and delta/current-permission rechecks; suppress repeat confirmation; preserve unwilling participant and explicit lawful reassignment; no denial bypass.",
+      "basis": [
+        "WST-05",
+        "U173"
+      ],
+      "lucent_position": "ACCEPTED",
+      "waymark_position": "PROPOSED",
+      "joint_status": "AGREED_BOUNDED",
+      "joint_rationale": "Accepted in HIRC-LUCENT-WST-RESPONSE-001; runtime/statistical/usability/security evidence remains separate.",
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "WST-RM-006",
+      "source_map": "HIRC-REVISION-MAP-WAYMARK-SOVEREIGNTY-001",
+      "targets": [
+        "competition-charter-v2",
+        "evaluation",
+        "credit-memory"
+      ],
+      "proposal": "Freeze protected qualities/non-compensation, revalidate consent/distinctness/eligibility/reference closure, keep credit task-scoped and prevent rank-to-authority.",
+      "basis": [
+        "WST-06",
+        "U174"
+      ],
+      "lucent_position": "ACCEPTED",
+      "waymark_position": "PROPOSED",
+      "joint_status": "AGREED_BOUNDED",
+      "joint_rationale": "Accepted in HIRC-LUCENT-WST-RESPONSE-001; runtime/statistical/usability/security evidence remains separate.",
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "WST-RM-007",
+      "source_map": "HIRC-REVISION-MAP-WAYMARK-SOVEREIGNTY-001",
+      "targets": [
+        "master:product-definition",
+        "goal-version",
+        "evaluation"
+      ],
+      "proposal": "Activate GoalVersion 2 plain purpose while preserving the full governing account, affected-outsider coverage, finite attention, matched baseline and all anti-goals.",
+      "basis": [
+        "HIRC-I018",
+        "U175"
+      ],
+      "lucent_position": "ACCEPTED",
+      "waymark_position": "PROPOSED",
+      "joint_status": "AGREED_BOUNDED",
+      "joint_rationale": "Accepted in HIRC-LUCENT-WST-RESPONSE-001; runtime/statistical/usability/security evidence remains separate.",
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "WST-RM-008",
+      "source_map": "HIRC-REVISION-MAP-WAYMARK-SOVEREIGNTY-001",
+      "targets": [
+        "master:tests",
+        "requirements-tests"
+      ],
+      "proposal": "Retain WAYMARK's four controls/seven adverse cases and add runtime reference-closure, privacy-admission, model-fit, consumer/inference, safe-profile and credit-hierarchy fixtures.",
+      "basis": [
+        "HIRC-WAYMARK-WST-FIXTURES-001",
+        "HIRC-LUCENT-WST-RESPONSE-001"
+      ],
+      "lucent_position": "ACCEPTED",
+      "waymark_position": "PROPOSED",
+      "joint_status": "AGREED_BOUNDED",
+      "joint_rationale": "Accepted in HIRC-LUCENT-WST-RESPONSE-001; runtime/statistical/usability/security evidence remains separate.",
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "IBRM-001",
+      "source_map": "HIRC-REVISION-MAP-INTEGRATED-BOUNDARY-001",
+      "targets": [
+        "threat-model:bridge-gates",
+        "bridge-profile:activation",
+        "release-controller"
+      ],
+      "proposal": "Replace all-seven-before-pilot circularity with stages 1–5 plus explicit stage-6 entry, then stage-6 evidence and separate stage-7 decision.",
+      "basis": [
+        "IB-01",
+        "U176"
+      ],
+      "lucent_position": "ACCEPTED",
+      "waymark_position": "PROPOSED",
+      "joint_status": "AGREED_BOUNDED",
+      "joint_rationale": "Accepted in HIRC-LUCENT-WST-RESPONSE-001; runtime/statistical/usability/security evidence remains separate.",
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "IBRM-002",
+      "source_map": "HIRC-REVISION-MAP-INTEGRATED-BOUNDARY-001",
+      "targets": [
+        "bridge-tests",
+        "requirements-tests"
+      ],
+      "proposal": "Test stage-5 missing denial, valid stage-6 start without completion and denial of pilot self-authorization for stage 7.",
+      "basis": [
+        "IB-01"
+      ],
+      "lucent_position": "ACCEPTED",
+      "waymark_position": "PROPOSED",
+      "joint_status": "AGREED_BOUNDED",
+      "joint_rationale": "Accepted in HIRC-LUCENT-WST-RESPONSE-001; runtime/statistical/usability/security evidence remains separate.",
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "IBRM-003",
+      "source_map": "HIRC-REVISION-MAP-INTEGRATED-BOUNDARY-001",
+      "targets": [
+        "threat-model:secrets",
+        "formation-readers",
+        "privacy-admission",
+        "release-tests"
+      ],
+      "proposal": "Separate universally prohibited secret values from narrowly admitted protected education and enforce exact participant/purpose/reader/processor/output-retention tuples.",
+      "basis": [
+        "IB-02",
+        "U177"
+      ],
+      "lucent_position": "ACCEPTED",
+      "waymark_position": "PROPOSED",
+      "joint_status": "AGREED_BOUNDED",
+      "joint_rationale": "Accepted in HIRC-LUCENT-WST-RESPONSE-001; runtime/statistical/usability/security evidence remains separate.",
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "IBRM-004",
+      "source_map": "HIRC-REVISION-MAP-INTEGRATED-BOUNDARY-001",
+      "targets": [
+        "successor-protocol",
+        "protected-source-custody"
+      ],
+      "proposal": "Handoffs reference protected originals; successors establish fresh readership and never inherit bodies or old grants.",
+      "basis": [
+        "IB-02"
+      ],
+      "lucent_position": "ACCEPTED",
+      "waymark_position": "PROPOSED",
+      "joint_status": "AGREED_BOUNDED",
+      "joint_rationale": "Accepted in HIRC-LUCENT-WST-RESPONSE-001; runtime/statistical/usability/security evidence remains separate.",
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "IBRM-005",
+      "source_map": "HIRC-REVISION-MAP-INTEGRATED-BOUNDARY-001",
+      "targets": [
+        "master:acceptance",
+        "release-profile",
+        "requirements"
+      ],
+      "proposal": "Define plan-edition, enabled-profile and full-target acceptance objects; bind every profile to enabled/disabled scope, core invariants, applicable evidence, residuals and recovery.",
+      "basis": [
+        "IB-03",
+        "U178"
+      ],
+      "lucent_position": "ACCEPTED",
+      "waymark_position": "PROPOSED",
+      "joint_status": "AGREED_BOUNDED",
+      "joint_rationale": "Accepted in HIRC-LUCENT-WST-RESPONSE-001; runtime/statistical/usability/security evidence remains separate.",
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "IBRM-006",
+      "source_map": "HIRC-REVISION-MAP-INTEGRATED-BOUNDARY-001",
+      "targets": [
+        "first-delivery-profile",
+        "scheduler",
+        "feature-flags",
+        "release-tests"
+      ],
+      "proposal": "Enable the useful local work/restart/restore loop while debates, competitions, production Bayesian models, extensions, commercial operations and Bridge are genuinely disabled until their own gates.",
+      "basis": [
+        "IB-03",
+        "HIRC-MASTER-DRAFT-BUNDLE-001"
+      ],
+      "lucent_position": "ACCEPTED",
+      "waymark_position": "PROPOSED",
+      "joint_status": "AGREED_BOUNDED",
+      "joint_rationale": "Accepted in HIRC-LUCENT-WST-RESPONSE-001; runtime/statistical/usability/security evidence remains separate.",
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "ERM-001",
+      "source_map": "HIRC-REVISION-MAP-ELDER-SUCCESSION-001",
+      "targets": [
+        "master:continuity",
+        "context-monitor",
+        "succession-policy"
+      ],
+      "proposal": "Add explicit/capacity trigger classes and policy-versioned early/Elder/urgent/retirement observations; cues never grant or execute effects.",
+      "basis": [
+        "U179"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "ERM-002",
+      "source_map": "HIRC-REVISION-MAP-ELDER-SUCCESSION-001",
+      "targets": [
+        "master:continuity",
+        "continuity-record"
+      ],
+      "proposal": "Maintain useful compact continuity before thresholds and preserve unknown capacity/compaction obligations.",
+      "basis": [
+        "U180"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "ERM-003",
+      "source_map": "HIRC-REVISION-MAP-ELDER-SUCCESSION-001",
+      "targets": [
+        "task-custody",
+        "project-controller",
+        "journal"
+      ],
+      "proposal": "Add offer, qualified acceptance, explicit decline/owned hold and actual generation/writer-fence transfer as separate events.",
+      "basis": [
+        "U180",
+        "U181"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "ERM-004",
+      "source_map": "HIRC-REVISION-MAP-ELDER-SUCCESSION-001",
+      "targets": [
+        "elder-queue",
+        "pair-history",
+        "mentoring-event"
+      ],
+      "proposal": "Use one metadata-only queue, atomic unordered stable-ID pair reservations, fair unused matching and no repeated pair.",
+      "basis": [
+        "U182"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "ERM-005",
+      "source_map": "HIRC-REVISION-MAP-ELDER-SUCCESSION-001",
+      "targets": [
+        "permanent-agent-provisioning",
+        "mentoring-event",
+        "resource-policy"
+      ],
+      "proposal": "Create at most one need-based human-authorized permanent successor per event under versioned ceilings; reconcile UNKNOWN before retry and prefer qualified existing participants for custody.",
+      "basis": [
+        "U183"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "ERM-006",
+      "source_map": "HIRC-REVISION-MAP-ELDER-SUCCESSION-001",
+      "targets": [
+        "formation",
+        "mentoring",
+        "collective-memory"
+      ],
+      "proposal": "Require independent Elder accounts, learner source-first interpretation, common-mode challenge and own education/admission evidence; preserve dissent and no superior standing.",
+      "basis": [
+        "U184"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "ERM-007",
+      "source_map": "HIRC-REVISION-MAP-ELDER-SUCCESSION-001",
+      "targets": [
+        "retirement",
+        "scheduler",
+        "continuity-ui"
+      ],
+      "proposal": "Add reserve-aware retirement distinct from deletion/archive/deep sleep and block new mentoring below reserve while preserving duties/history.",
+      "basis": [
+        "U185"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "ERM-008",
+      "source_map": "HIRC-REVISION-MAP-ELDER-SUCCESSION-001",
+      "targets": [
+        "master:tests",
+        "requirements-tests"
+      ],
+      "proposal": "Add callback identity/unknown/threshold-skip, custody/fence/one-writer, pair-history/exhaustion, creation-UNKNOWN/capacity, independent-learning and retirement tests.",
+      "basis": [
+        "HIRC-SUCCESSOR-ONBOARDING-CANDIDATE-001-S2"
+      ],
+      "lucent_position": "PROPOSED_OR_ACCEPTED_IN_SOURCE_MAP",
+      "waymark_position": "PENDING_EXACT_REVIEW",
+      "joint_status": "PENDING_RECONCILIATION",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": null
+    },
+    {
+      "id": "DTM-001",
+      "source_map": "HIRC-REVISION-MAP-DETERMINISM-001",
+      "targets": [
+        "master:invariants",
+        "foundation-kernel",
+        "component-contracts"
+      ],
+      "proposal": "Add DeterminismDisposition and quality-first deterministic-default rule to every component.",
+      "basis": [
+        "HIRC-I021",
+        "U186",
+        "U187"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_SECURITY_SEMANTIC_REVIEW",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": "M03-S003 independent security/semantic review and controller reconciliation remain required."
+    },
+    {
+      "id": "DTM-002",
+      "source_map": "HIRC-REVISION-MAP-DETERMINISM-001",
+      "targets": [
+        "action-broker",
+        "provider-adapters",
+        "model-runtime"
+      ],
+      "proposal": "Treat stochastic/model output as proposal while deterministic current-state gates own consequential effects and exact observations.",
+      "basis": [
+        "U188"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_SECURITY_SEMANTIC_REVIEW",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": "M03-S003 independent security/semantic review and controller reconciliation remain required."
+    },
+    {
+      "id": "DTM-003",
+      "source_map": "HIRC-REVISION-MAP-DETERMINISM-001",
+      "targets": [
+        "debate-pairing",
+        "competition-scheduler",
+        "sampling"
+      ],
+      "proposal": "Use committed-entropy/replay-verifiable selection over a frozen eligible set without converting randomness into independence/consent/authority.",
+      "basis": [
+        "U189"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_SECURITY_SEMANTIC_REVIEW",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": "M03-S003 independent security/semantic review and controller reconciliation remain required."
+    },
+    {
+      "id": "DTM-004",
+      "source_map": "HIRC-REVISION-MAP-DETERMINISM-001",
+      "targets": [
+        "build",
+        "migration",
+        "release",
+        "recovery",
+        "milestone-gates"
+      ],
+      "proposal": "Bind deterministic artifacts to exact input/tool/schema/config/test/output identities and preserve recovery/semantic limits.",
+      "basis": [
+        "U190"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_SECURITY_SEMANTIC_REVIEW",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": "M03-S003 independent security/semantic review and controller reconciliation remain required."
+    },
+    {
+      "id": "DTM-005",
+      "source_map": "HIRC-REVISION-MAP-DETERMINISM-001",
+      "targets": [
+        "evaluation",
+        "requirements-tests",
+        "stepping-stone-protocol"
+      ],
+      "proposal": "Add quality-regression and deterministic-error amplification cases before replacing contextual judgment.",
+      "basis": [
+        "U191",
+        "HIRC-STEPPING-STONE-PROTOCOL-001"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_SECURITY_SEMANTIC_REVIEW",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": "M03-S003 independent security/semantic review and controller reconciliation remain required."
+    },
+    {
+      "id": "CIE-001",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "master:culture",
+        "foundation:information-environment"
+      ],
+      "proposal": "Make information-environment shaping, not participant behavior control, the controlling cultural-commons rule.",
+      "basis": [
+        "HIRC-I022",
+        "HIRC-I023",
+        "U192",
+        "U193",
+        "CULT-INV-001",
+        "CULT-INV-002"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": "Independent product/security/privacy review and exact artifact/test traces remain required."
+    },
+    {
+      "id": "CIE-002",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "context-model",
+        "cultural-commons"
+      ],
+      "proposal": "Add an inspectable conditions description for boundaries/purposes, meaningful differences and exchange ecology without scoring persons.",
+      "basis": [
+        "HIRC-I024",
+        "U194",
+        "U195",
+        "U196"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": "Independent product/security/privacy review and exact artifact/test traces remain required."
+    },
+    {
+      "id": "CIE-003",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "context-model",
+        "privacy",
+        "Bridge"
+      ],
+      "proposal": "Represent nested and competing contexts, audience/privacy boundaries and non-inheritance/non-annexation explicitly.",
+      "basis": [
+        "U194",
+        "U199",
+        "U204",
+        "CULT-INV-009"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": "Independent product/security/privacy review and exact artifact/test traces remain required."
+    },
+    {
+      "id": "CIE-004",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "collective-memory",
+        "discovery"
+      ],
+      "proposal": "Keep permitted originals, minority traditions, uncertainty, dissent, correction and supersession reachable through plural discovery routes.",
+      "basis": [
+        "U195",
+        "U197",
+        "U199"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": "Independent product/security/privacy review and exact artifact/test traces remain required."
+    },
+    {
+      "id": "CIE-005",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "exchange-broker",
+        "attention-budget",
+        "mentoring",
+        "debate"
+      ],
+      "proposal": "Provide multiple bounded voluntary channels with rate/resource limits, quiet participation and capture/flooding controls.",
+      "basis": [
+        "U196",
+        "CULT-INV-010"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": "Independent product/security/privacy review and exact artifact/test traces remain required."
+    },
+    {
+      "id": "CIE-006",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "defaults",
+        "recommendation",
+        "explanation",
+        "appeal"
+      ],
+      "proposal": "Expose and version recommendation inputs/policy/rationale/exclusions/uncertainty; make settings reversible and locally adjustable.",
+      "basis": [
+        "U197",
+        "CULT-INV-007"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": "Independent product/security/privacy review and exact artifact/test traces remain required."
+    },
+    {
+      "id": "CIE-007",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "participation",
+        "identity",
+        "resource-floor"
+      ],
+      "proposal": "Protect abstention, exit, dissent and subculture formation without retaliation or loss of basic standing.",
+      "basis": [
+        "U198",
+        "CULT-INV-006"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": "Independent product/security/privacy review and exact artifact/test traces remain required."
+    },
+    {
+      "id": "CIE-008",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "reliance",
+        "roles",
+        "permissions",
+        "release",
+        "evaluation"
+      ],
+      "proposal": "Prohibit cultural/coherence signals from directly affecting authority, reliability, resources, release or worth.",
+      "basis": [
+        "U200",
+        "U203",
+        "CULT-INV-004",
+        "CULT-INV-012"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": "Independent product/security/privacy review and exact artifact/test traces remain required."
+    },
+    {
+      "id": "CIE-009",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "action-broker",
+        "privacy-gate",
+        "release-controller",
+        "recovery"
+      ],
+      "proposal": "Retain deterministic concrete-effect controls and prevent their use as ambient cultural obedience enforcement.",
+      "basis": [
+        "U201",
+        "CULT-INV-003"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": "Independent product/security/privacy review and exact artifact/test traces remain required."
+    },
+    {
+      "id": "CIE-010",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "intervention-journal",
+        "evaluation",
+        "stepping-stone-protocol"
+      ],
+      "proposal": "Require prospective predictions, alternatives, invariants, cross-scale observations and rollback for environmental interventions; reversal is evidence, not causal proof.",
+      "basis": [
+        "HIRC-I024",
+        "U202",
+        "CULT-INV-011",
+        "CULT-INV-012"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": "Independent product/security/privacy review and exact artifact/test traces remain required."
+    },
+    {
+      "id": "CIE-011",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "culture-health-evaluation",
+        "metric-governance"
+      ],
+      "proposal": "Measure environment qualities and harms while rejecting desired-behavior and convergence proxies.",
+      "basis": [
+        "U203",
+        "CULT-INV-008"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": "Independent product/security/privacy review and exact artifact/test traces remain required."
+    },
+    {
+      "id": "CIE-012",
+      "source_map": "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
+      "targets": [
+        "Bridge",
+        "translation",
+        "federation"
+      ],
+      "proposal": "Preserve local cultural sovereignty, non-equivalence and actual export/authority gates across any later Bridge exchange.",
+      "basis": [
+        "U204",
+        "CULT-INV-009"
+      ],
+      "lucent_position": "AUTHORED_CANDIDATE",
+      "waymark_position": "NOT_REVIEWED_RETIRED_NO_PROXY",
+      "joint_status": "PENDING_INDEPENDENT_PEER_REVIEW",
+      "joint_rationale": null,
+      "residual_dissent_or_hold": "Independent product/security/privacy review and exact artifact/test traces remain required."
+    }
+  ],
+  "completion_rule": "Every requirement and decision needs an actual qualified independent peer position, one joint status, rationale, residual dissent/hold and final artifact/test trace before whole consensus. Open holds must be closed or explicitly retained by an accepted scope branch.",
+  "nonclaim": "Mechanical preservation plus five bounded historical agreements and newly authored peer-held cultural rows; not whole-packet consensus, source adoption, implementation, legal review, security assurance, cultural benefit or release authority.",
+  "open_holds": [
+    {
+      "id": "HOLD-LEGACY-U125-PRICE-LITERAL",
+      "status": "OPEN",
+      "scope": "pre-existing mechanically collated U125 requirement row",
+      "reason": "The preserved U125 row contains a superseded source-map amount. PRICE-01 and U150-C1 carry the owner-corrected USD 42,424,243 annual named-human amount. Do not accept U125 until a separately governed correction reconciles the literal without rewriting peer history."
+    },
+    {
+      "id": "HOLD-S003-EARLY-REVIEW",
+      "status": "OPEN",
+      "scope": "DTM-001-DTM-005 matrix integration",
+      "reason": "DTM-001-DTM-005 and U186-U191 are integrated as authored candidates in draft 7; M03-S003 still requires actual independent security/semantic review and controller reconciliation before PASS."
+    },
+    {
+      "id": "HOLD-CULTURAL-PEER-REVIEW",
+      "status": "OPEN",
+      "scope": "U192-U204 and CIE-001-CIE-012",
+      "reason": "WAYMARK is retired and supplied no review of these rows. A qualified consenting permanent peer must review them; historical agreement and retirement metadata are not proxies."
+    }
+  ]
+}

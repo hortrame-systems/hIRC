@@ -1,0 +1,46 @@
+{
+  "schema": "hirc.determinism-matrix-integration-validation/1",
+  "stone": "M03-S003",
+  "predecessor": {
+    "path": "review/joint-consensus-matrix-draft-v6.json",
+    "sha256": "dc788b19c113d295b18227a8cb801a48d8b377d245cf41e8b3a8eeebbec9e3f7",
+    "requirements": 80,
+    "decisions": 139
+  },
+  "sources": [
+    {
+      "path": "review/revision-map-addendum-determinism-v1.json",
+      "sha256": "3a35f35ad986fd6f1e1f8d9f42cf82b5770ae2647f3ac78ad6bc670b8f0b2a0b"
+    },
+    {
+      "path": "drafts/hirc_requirements_v1_1-draft.json",
+      "sha256": "985f0b77a91a83cb5da3b895f44218368a4d28e957c5b716466ea18402e26f69"
+    }
+  ],
+  "output": {
+    "path": "review/joint-consensus-matrix-draft-v7.json",
+    "requirements": 86,
+    "decisions": 144,
+    "sha256": "fa74cd1c6250568664e810b24edf7d2c68fec260974e71cb8dbfc705019a40f1"
+  },
+  "added_requirements": [
+    "U186",
+    "U187",
+    "U188",
+    "U189",
+    "U190",
+    "U191"
+  ],
+  "added_decisions": [
+    "DTM-001",
+    "DTM-002",
+    "DTM-003",
+    "DTM-004",
+    "DTM-005"
+  ],
+  "predecessor_requirements_preserved": true,
+  "predecessor_decisions_preserved": true,
+  "errors": [],
+  "pass": true,
+  "claim": "Deterministic authored-candidate row integration and predecessor semantic identity only; not independent review, peer consensus, implementation or runtime evidence."
+}

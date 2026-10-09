@@ -982,7 +982,44 @@
         "HIRC-M03-STONE-REGISTER-001"
       ],
       "limits": "Mechanical preservation of 67 requirements/127 decisions plus 13 cultural requirements/12 cultural decisions held for independent review; five historical bounded agreements remain, three explicit holds remain open, DTM rows are not integrated, and no whole consensus or inherited correction is claimed",
+      "superseded_by": "HIRC-JOINT-CONSENSUS-DRAFT-007",
       "next_action": "A qualified independent peer reviews the cultural rows; separately resolve the early S003 review and legacy U125 price-literal hold without rewriting peer history"
+    },
+    {
+      "id": "HIRC-JOINT-CONSENSUS-DRAFT-007",
+      "kind": "mechanically_collated_matrix_with_determinism_candidates_and_explicit_review_hold",
+      "path": "review/joint-consensus-matrix-draft-v7.json",
+      "status": "DRAFT_DTM_ROWS_INTEGRATED_M03_S003_INDEPENDENT_REVIEW_PENDING",
+      "governed_scope": "internal_joint_design_review",
+      "sha256": "fa74cd1c6250568664e810b24edf7d2c68fec260974e71cb8dbfc705019a40f1",
+      "bytes": 166186,
+      "members": [
+        {
+          "path": "review/integrate_determinism_decisions_matrix.py",
+          "sha256": "8131faf2a7145ddd8496285d7514665df8651310dcdd6df568b170bfa9cd44a0",
+          "bytes": 7745
+        },
+        {
+          "path": "review/fixtures/determinism-matrix-integration-validation-v1.json",
+          "sha256": "b7009c3680ab724ca0844adb96a0fc19b6070cf6f6a9df36a71ce91619439345",
+          "bytes": 1344
+        }
+      ],
+      "source_bindings": ["HIRC-JOINT-CONSENSUS-DRAFT-006", "HIRC-REVISION-MAP-DETERMINISM-001", "HIRC-REQUIREMENTS-GENERATOR-001", "HIRC-M03-STONE-REGISTER-001"],
+      "limits": "Mechanically preserves all 80 predecessor requirements and 139 predecessor decisions, then adds U186-U191 and DTM-001-DTM-005 as authored candidates; review hold remains open and no independent approval, peer consensus, implementation or runtime evidence is claimed",
+      "next_action": "A qualified consenting permanent security/semantic reviewer completes the exact M03-S003 packet and the controller reconciles every material finding or justified NO_CHANGE"
+    },
+    {
+      "id": "HIRC-M03-S003-REVIEW-REQUEST-001",
+      "kind": "hash_bound_independent_security_semantic_review_request",
+      "path": "review/m03-s003-independent-review-request-v1.md",
+      "status": "READY_FOR_QUALIFIED_PERMANENT_REVIEWER_ASSIGNMENT",
+      "governed_scope": "u186_u191_and_dtm001_dtm005_independent_review",
+      "sha256": "e4203a763a544b32b5b4b66ed704d8e86e417f7aba3ab8c9825c348818dac70c",
+      "bytes": 4825,
+      "source_bindings": ["HIRC-I021", "HIRC-REQUIREMENTS-GENERATOR-001", "HIRC-JOINT-CONSENSUS-DRAFT-007", "HIRC-M03-STONE-REGISTER-001"],
+      "limits": "The packet defines exact sources, questions and output requirements; preparation or delivery is not reviewer assignment, qualification, consent, reading, independence, review completion, consensus or implementation",
+      "next_action": "Route through LANTERN to one qualified consenting permanent independent reviewer and preserve the immutable returned review"
     },
     {
       "id": "HIRC-PREDECESSOR-CROSSWALK-DRAFT-001",
@@ -1864,8 +1901,8 @@
       "path": "review/README.md",
       "status": "ACTIVE",
       "governed_scope": "internal_design_review",
-      "sha256": "f30c593eda5249c8ebd76005d02aaa81d133d7aeaf5434ca50bd0fec29705e1e",
-      "bytes": 9833,
+      "sha256": "cc696d89acc36785e2fdfee64f89e40ec1e58ae5aaad8e155c2b328142e8188a",
+      "bytes": 10236,
       "next_action": "Link the accepted consensus and final revisions when created"
     }
   ],
