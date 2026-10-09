@@ -1036,7 +1036,32 @@
       ],
       "source_bindings": ["HIRC-JOINT-CONSENSUS-DRAFT-006", "HIRC-REVISION-MAP-DETERMINISM-001", "HIRC-REQUIREMENTS-GENERATOR-001", "HIRC-M03-STONE-REGISTER-001"],
       "limits": "Mechanically preserves all 80 predecessor requirements and 139 predecessor decisions, adds U186-U191/DTM-001-DTM-005 as authored candidates, and rejects duplicate authoritative IDs before indexing; bounded independent semantics/review and repair recheck pass, while S013 matrix disposition, whole consensus, implementation and runtime evidence remain pending",
-      "next_action": "M03-S013 creates the post-review integrated matrix/readable bundle while retaining implementation residuals and unrelated open holds"
+      "superseded_by": "HIRC-JOINT-CONSENSUS-DRAFT-008",
+      "next_action": "Retain as the reviewed pre-disposition predecessor for matrix draft 8"
+    },
+    {
+      "id": "HIRC-JOINT-CONSENSUS-DRAFT-008",
+      "kind": "post_review_integrated_matrix_with_determinism_disposition_and_cultural_review_hold",
+      "path": "review/joint-consensus-matrix-draft-v8.json",
+      "status": "DRAFT_M03_S003_ACCEPTED_CULTURAL_ROWS_S014_PENDING",
+      "governed_scope": "internal_joint_design_review",
+      "sha256": "45ccdb26641c8e04445d3fd4fea5ef6ca6c2992858a83cd898fa916c694967c2",
+      "bytes": 171010,
+      "members": [
+        {
+          "path": "review/reconcile_m03_matrix.py",
+          "sha256": "09753a54c80c31904961b715a08f619c13ebeee0746bb5f868e72611b4faf38e",
+          "bytes": 8826
+        },
+        {
+          "path": "review/fixtures/m03-integrated-matrix-validation-v1.json",
+          "sha256": "df2d2599a2f9a00ab2bf1e9be224f3ee4eda88d13ce25240ff9fc9f60deefe6b",
+          "bytes": 2484
+        }
+      ],
+      "source_bindings": ["HIRC-JOINT-CONSENSUS-DRAFT-007", "HIRC-M03-S003-REVIEW-REQUEST-001", "HIRC-M03-STONE-REGISTER-001"],
+      "limits": "Records bounded S003 acceptance and preserves all unrelated v7 rows; U192-U204/CIE-001-CIE-012 remain pending S014, the legacy U125 literal hold remains, and no implementation/runtime/whole-consensus claim follows",
+      "next_action": "Use as the current matrix in M03-S014 integrated permanent-peer challenge"
     },
     {
       "id": "HIRC-M03-S003-REVIEW-REQUEST-001",
@@ -1092,13 +1117,13 @@
       "path": "review/intent-coverage-draft-v1.md",
       "status": "PASS_REFERENCE_AND_FILE_PRESENCE_SCOPE_FINAL_CLOSURE_PENDING",
       "governed_scope": "project_intent_continuity",
-      "sha256": "ac0cf71d9a12d08c313629079e0a335804fcde77dbadd294a3e13ad20c1579a6",
-      "bytes": 3837,
+      "sha256": "5253ceeb714041fa54d3b865d4357e3d9445655851b6ff9f4fa93964f11a47c8",
+      "bytes": 4191,
       "members": [
         {
           "path": "review/intent-coverage-draft-v1.json",
-          "sha256": "3e5c056c4977e573d74f802dc7831f8179d8efc3f54da7248f9d14a8a624afee",
-          "bytes": 24677
+          "sha256": "8ea7e5787ac5a0c3b512dafd882bdebda1f937e6cc53f4797e28ba40742a5dbd",
+          "bytes": 25153
         }
       ],
       "source_bindings": ["HIRC-INTENT-001", "HIRC-JOINT-CONSENSUS-DRAFT-005"],
@@ -1629,15 +1654,15 @@
       "id": "HIRC-M03-STONE-REGISTER-001",
       "kind": "tiny_stone_dependency_register_and_deterministic_gate_evidence",
       "path": "review/milestone-03-stone-register.json",
-      "status": "STONE_012_AND_S003_PASS_S013_READY",
+      "status": "STONE_013_PASS_S014_READY",
       "governed_scope": "milestone_03_determinism_and_cultural_information_environment_integration",
-      "sha256": "51e596a662b910280e07cc7de2c15484892466b7c27c8a97ea34d9ee1f521779",
-      "bytes": 25160,
+      "sha256": "f7550974665c9ba79c68ca402ca9c1b76486de4fbd72aa383d684851a190f741",
+      "bytes": 25147,
       "members": [
         {
           "path": "review/milestone-03-stone-register.md",
-          "sha256": "47a87b437a2bb98ff934524c6718b79d0b87df866669a1a0a379ab707b6fbd95",
-          "bytes": 3828
+          "sha256": "ef2a954cb1c23ffe16e7d24100f0c13c6ed477064da64edd33d988ea7587b699",
+          "bytes": 3815
         },
         {
           "path": "review/fixtures/validate_milestone_03_stone_register.py",
@@ -1646,13 +1671,13 @@
         },
         {
           "path": "review/fixtures/milestone-03-stone-register-validation.json",
-          "sha256": "b369de24cadf16a28b7866e4f1759325c521911088b2b0f2c5e101233a5f1112",
+          "sha256": "2afe84bcd52a8379a93abfaa290bf1c3335d4062727f84bf8d82b30fc5851357",
           "bytes": 2257
         }
       ],
       "source_bindings": ["HIRC-I019", "HIRC-I020", "HIRC-I021", "HIRC-I022", "HIRC-I023", "HIRC-I024", "HIRC-I025", "HIRC-I026", "HIRC-STEPPING-STONE-PROTOCOL-001"],
       "limits": "The register mechanically validates graph/field/gate invariants, scoped holds and seven adverse mutations including global stall while runnable work exists; it does not prove semantic correctness, implementation, peer consensus or runtime behavior",
-      "next_action": "Run M03-S013 integrated artifact/reference/consumer/readable-view reconciliation"
+      "next_action": "Route the exact integrated packet through M03-S014 product/security/privacy/anti-domination challenge"
     },
     {
       "id": "HIRC-MILESTONE-02D",
@@ -1852,13 +1877,37 @@
       "next_action": "Carry the measure vector, prohibited uses, Goodhart/common-mode analysis and proposed validation plan into M03-S013 integration and M03-S014 peer challenge"
     },
     {
+      "id": "HIRC-M03-INTEGRATION-CLOSURE-001",
+      "kind": "cross_artifact_reference_content_and_readable_view_integration_closure",
+      "path": "review/m03-integration-closure-v1.json",
+      "status": "PASS_S013_DETERMINISTIC_INTEGRATION_SCOPE_S014_PENDING",
+      "governed_scope": "milestone_03_integrated_planning_packet",
+      "sha256": "554db86a9464587b04a4f5765054f3ce3dc1bb91f6e34c9e1f4cf4aa59df2fd9",
+      "bytes": 4463,
+      "members": [
+        {
+          "path": "review/m03-integration-closure-v1.md",
+          "sha256": "44384c54d6372aecd2e95c90d3f758ac94b69d4b9eac734d8ff7884f3a312edc",
+          "bytes": 2540
+        },
+        {
+          "path": "review/validate_m03_integration.py",
+          "sha256": "5394916ccf9f9028c26665e6ecc1db443ebcd3ec6274f1bf9994761d9f702efb",
+          "bytes": 12836
+        }
+      ],
+      "source_bindings": ["HIRC-JOINT-CONSENSUS-DRAFT-008", "HIRC-REQUIREMENTS-GENERATOR-001", "HIRC-CULTURAL-THREAT-CROSSWALK-001", "HIRC-CULTURAL-INFORMATION-CONTROL-FIXTURES-001", "HIRC-CULTURAL-ENVIRONMENT-MEASURES-001", "HIRC-INTENT-COVERAGE-DRAFT-001", "HIRC-M03-STONE-REGISTER-001"],
+      "limits": "Fourteen governed artifacts pass reference/content/readable checks and six adverse mutations; review/ledger.json is verified separately to avoid a circular self-hash. This is planning integration, not implementation, empirical validation, S014 review or milestone completion",
+      "next_action": "Freeze this exact packet for M03-S014 independent integrated challenge"
+    },
+    {
       "id": "HIRC-MASTER-DRAFT-BUNDLE-001",
       "kind": "integrated_master_and_requirements_working_draft_bundle",
       "path": "drafts/README.md",
       "status": "DEBT_DURING_GENERATION_PENDING_PEER_CONSENSUS",
       "governed_scope": "project_master_plan_and_requirements_revision",
-      "sha256": "0f458857efc0b6e2e7fc45e5e382d4db9955ad7d6d74e7f15f03e1b55af5638f",
-      "bytes": 1191,
+      "sha256": "e6e7dffe2aa6d54dfefbc193fdf344786fb8266905309a44b0057098cfab95d3",
+      "bytes": 1305,
       "members": [
         {
           "path": "drafts/hirc_bridge_security_profile_v0_1-draft.md",
@@ -1867,8 +1916,8 @@
         },
         {
           "path": "drafts/hirc_first_delivery_profile_v0_1-draft.md",
-          "sha256": "f3d0bfbfd403d25d70ccf666a3a1be3df0cf21adc0c083a01e824873b2d58e99",
-          "bytes": 9623
+          "sha256": "c6369f208bd4bbb3d627d6313bd3bc422106d0c24b17592ca9d458b49c0fb9a1",
+          "bytes": 10294
         },
         {
           "path": "drafts/hirc_foundation_architecture_v0_1-draft.md",
@@ -1877,13 +1926,13 @@
         },
         {
           "path": "drafts/hirc_master_plan_v1_1-draft.md",
-          "sha256": "83f6e8a0e73d4fdeb37e3f3f8b63d8416b9495901941d291b9e5c97531e10c14",
-          "bytes": 62753
+          "sha256": "21491c677e2c9af996262382c203e2201e161ac06c7e2f7d3f620c31d54dbf81",
+          "bytes": 65964
         },
         {
           "path": "drafts/hirc_master_plan_explained_v1_1-draft.md",
-          "sha256": "428230158e6108531ca44796e94df01e0b700af21501a030cb35e2127d8f45d5",
-          "bytes": 12789
+          "sha256": "fb149dd939f4c6e5a124b95058ff902b9af901e28ba58ed44687dabd6fab9f90",
+          "bytes": 14264
         },
         {
           "path": "drafts/hirc_licensing_status_v0_1-draft.md",
@@ -1912,15 +1961,15 @@
         },
         {
           "path": "drafts/hirc_threat_model_v1_0-draft.md",
-          "sha256": "c51ab48edc39e72345421ab3ef64a739117b89ecbbdaa4d6b08da145d7a5b6a4",
-          "bytes": 29910
+          "sha256": "11e50d9746257c28e6791e0ee85b53e873fae1ea6a8d6631361e948277455441",
+          "bytes": 29925
         }
       ],
       "source_bindings": [
         "HIRC-SOURCE-001",
         "HIRC-INTENT-001",
         "HIRC-GOAL-VERSION-002",
-        "HIRC-JOINT-CONSENSUS-DRAFT-006",
+        "HIRC-JOINT-CONSENSUS-DRAFT-008",
         "HIRC-REVISION-MAP-CANDIDATE-001",
         "HIRC-REVISION-MAP-LNC-001",
         "HIRC-REVISION-MAP-DEBATE-001",
@@ -1936,10 +1985,13 @@
         "HIRC-REVISION-MAP-DETERMINISM-001",
         "HIRC-REVISION-MAP-CULTURAL-COMMONS-001",
         "HIRC-AGENTIC-CULTURE-CANDIDATE-001-S1",
-        "HIRC-CULTURAL-THREAT-CROSSWALK-001"
+        "HIRC-CULTURAL-THREAT-CROSSWALK-001",
+        "HIRC-CULTURAL-INFORMATION-CONTROL-FIXTURES-001",
+        "HIRC-CULTURAL-ENVIRONMENT-MEASURES-001",
+        "HIRC-M03-INTEGRATION-CLOSURE-001"
       ],
-      "limits": "Integrated working master plus a 237-requirement/144-revision-decision generated requirements pair, while the separate joint decision matrix remains at 139 decisions and M03-S003 is early-review gated; the threat model now carries design-only cultural manipulation/capture controls while foundation/release/licensing/milestone/stone profiles remain drafts",
-      "next_action": "Complete M03-S011/S012 fixtures and evaluation, reconcile the integrated packet, then obtain independent permanent-peer challenge before freezing Master Plan 1.1"
+      "limits": "Integrated working master, explained view, first-delivery boundary, threat model, 237-requirement/144-revision-decision generated pair and current 86-requirement/144-decision matrix now carry the tested determinism/cultural-information design. Measures remain unvalidated, cultural rows await S014, and foundation/release/licensing/milestone profiles remain drafts",
+      "next_action": "Obtain M03-S014 integrated permanent-peer challenge before freezing Master Plan 1.1"
     },
     {
       "id": "HIRC-REVIEW-INDEX-001",
@@ -1947,8 +1999,8 @@
       "path": "review/README.md",
       "status": "ACTIVE",
       "governed_scope": "internal_design_review",
-      "sha256": "c47d8adb9ac2a20d04bc0180cb7ba49b781e5f649cd167c41d538aeb90f2ae87",
-      "bytes": 10598,
+      "sha256": "7b067d28853e26706fb9cd11100d71d4051d534f0299e59e48e89a5cb4452688",
+      "bytes": 10995,
       "next_action": "Link the accepted consensus and final revisions when created"
     }
   ],

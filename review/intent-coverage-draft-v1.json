@@ -102,7 +102,8 @@
         "HIRC-REVISION-MAP-CANDIDATE-001"
       ],
       "process_or_history_artifact_ids": [
-        "HIRC-JOINT-CONSENSUS-DRAFT-005",
+        "HIRC-JOINT-CONSENSUS-DRAFT-008",
+        "HIRC-JOINT-CONSENSUS-DRAFT-007",
         "HIRC-PREDECESSOR-CROSSWALK-DRAFT-001",
         "HIRC-M02",
         "HIRC-M02B",
@@ -472,7 +473,12 @@
       "revision_map_ids": [
         "HIRC-REVISION-MAP-DETERMINISM-001"
       ],
-      "process_or_history_artifact_ids": [],
+      "process_or_history_artifact_ids": [
+        "HIRC-DETERMINISM-CANDIDATE-001",
+        "HIRC-REQUIREMENTS-GENERATOR-001",
+        "HIRC-JOINT-CONSENSUS-DRAFT-008",
+        "HIRC-M03-S003-REVIEW-REQUEST-001"
+      ],
       "evidence_paths": [
         "review/determinism-architecture-candidate-v1.md",
         "review/revision-map-addendum-determinism-v1.json",
@@ -492,6 +498,8 @@
       ],
       "process_or_history_artifact_ids": [
         "HIRC-AGENTIC-CULTURE-CANDIDATE-001",
+        "HIRC-CULTURAL-THREAT-CROSSWALK-001",
+        "HIRC-CULTURAL-ENVIRONMENT-MEASURES-001",
         "HIRC-M02F"
       ],
       "evidence_paths": [
@@ -512,6 +520,8 @@
       ],
       "process_or_history_artifact_ids": [
         "HIRC-AGENTIC-CULTURE-CANDIDATE-001-S1",
+        "HIRC-CULTURAL-THREAT-CROSSWALK-001",
+        "HIRC-CULTURAL-INFORMATION-CONTROL-FIXTURES-001",
         "HIRC-M02G"
       ],
       "evidence_paths": [
@@ -532,6 +542,7 @@
       ],
       "process_or_history_artifact_ids": [
         "HIRC-EOYANG-SOURCE-STUDY-001",
+        "HIRC-CULTURAL-THREAT-CROSSWALK-001",
         "HIRC-M03-STONE-REGISTER-001"
       ],
       "evidence_paths": [

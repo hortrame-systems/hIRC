@@ -13,6 +13,8 @@
 - [Stepping-stone execution protocol 0.1](hirc_stepping_stone_protocol_v0_1-draft.md)
 
 These drafts integrate the preserved 1.0 requirements with current owner
-instructions and LUCENT candidates. They remain pending the required independent
-permanent-peer review and joint consensus. They are not implementation, legal
-terms, security assurance, release authority or Bridge activation.
+instructions, bounded permanent-peer review and the tested Milestone 03 cultural
+information-environment candidates. They remain pending the integrated M03-S014
+permanent-peer challenge and final disposition. They are not implementation,
+legal terms, empirical cultural evidence, security assurance, release authority
+or Bridge activation.

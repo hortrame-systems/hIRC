@@ -1,0 +1,84 @@
+{
+  "schema": "hirc.m03-integrated-matrix-validation/1",
+  "stone": "M03-S013",
+  "predecessor": {
+    "path": "review/joint-consensus-matrix-draft-v7.json",
+    "sha256": "fa74cd1c6250568664e810b24edf7d2c68fec260974e71cb8dbfc705019a40f1"
+  },
+  "output": {
+    "path": "review/joint-consensus-matrix-draft-v8.json",
+    "sha256": "45ccdb26641c8e04445d3fd4fea5ef6ca6c2992858a83cd898fa916c694967c2",
+    "requirements": 86,
+    "decisions": 144
+  },
+  "review_evidence": [
+    {
+      "id": "HIRC-M03-S003-WAYMARK-R01",
+      "path": "review/waymark-m03-s003-independent-review-v1.md",
+      "sha256": "e0b8b46891c60688120ba5119580a48b2125cb8db4499b49eaf2453a3d639d5f",
+      "bytes": 10281
+    },
+    {
+      "id": "HIRC-M03-S003-LUCENT-R01",
+      "path": "review/lucent-m03-s003-review-response-v1.md",
+      "sha256": "2149af8a518f2fd049f4f430bc6d4e1e14ea469f073051aa4f197e59aaac920f",
+      "bytes": 6244
+    },
+    {
+      "id": "HIRC-M03-S003-WAYMARK-R01-RECHECK01",
+      "path": "review/waymark-m03-s003-repair-recheck-v1.md",
+      "sha256": "38fa8727b9c0e0f4973dfabfd954a7010b2676cb82c2b4362aff3aa9155bf2a0",
+      "bytes": 3404
+    }
+  ],
+  "positive": {
+    "accepted": true,
+    "errors": []
+  },
+  "adverse": [
+    {
+      "name": "missing_recheck_evidence",
+      "expected_error": "review-evidence",
+      "errors": [
+        "review-evidence"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "premature_cultural_consensus",
+      "expected_error": "premature-cultural-consensus:CIE-001",
+      "errors": [
+        "premature-cultural-consensus:CIE-001",
+        "unreviewed-row-drift:CIE-001"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "unreviewed_predecessor_drift",
+      "expected_error": "unreviewed-row-drift:U120",
+      "errors": [
+        "unreviewed-row-drift:U120"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "s003_hold_reopened",
+      "expected_error": "s003-hold-not-resolved",
+      "errors": [
+        "s003-hold-not-resolved"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "review_hash_mismatch",
+      "expected_error": "review-evidence-hash",
+      "errors": [
+        "review-evidence",
+        "review-evidence-hash:HIRC-M03-S003-WAYMARK-R01"
+      ],
+      "rejected": true
+    }
+  ],
+  "all_adverse_rejected": true,
+  "claim": "Deterministic post-review matrix disposition and unrelated-row preservation only; not cultural peer review, implementation, runtime evidence or whole consensus."
+}

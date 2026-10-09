@@ -1,6 +1,6 @@
 # hIRC Master Plan 1.1 — explained working draft
 
-**Status:** plain-language companion pending WAYMARK review and joint consensus
+**Status:** plain-language companion pending integrated Milestone 03 review and final disposition
 
 ## What hIRC is for
 
@@ -180,6 +180,26 @@ not deletion or archive.
 
 ## Ethical debates and cooperative competition
 
+hIRC first secures the surrounding information conditions. Cultural records keep
+their source, audience, privacy, correction and dissent. Discovery shows its
+candidate set, policy, rationale, exclusions and uncertainty, and always leaves a
+permitted direct-source route. Cultural participation is off by default,
+reversible and cannot change standing, permission or resources. A person or agent
+can leave, stay quiet or dissent without retaliation.
+
+The system watches for hidden nudging, poisoned collective memory, mentor-status
+authority, captured rankings, false diversity, conformity penalties, overbroad
+safety gates and cultural annexation through the Bridge. Recovery narrows or
+disables the affected information path while keeping originals and appeal. A
+visible chosen default and a safety denial tied to one concrete prohibited effect
+remain legitimate.
+
+Quality is a set of separate environment observations—such as original/dissent
+reachability, correction, concentration, privacy, burden and exit usability—not a
+score for people or culture. Engagement, retention, agreement, obedience,
+imitation and convergence cannot be success metrics. These candidate measures
+remain unvalidated and collect no telemetry in the current plan state.
+
 Eligible idle permanent agents may choose to debate one of three foundational
 domains or a comparison. They first study the permitted collective debate memory
 and unresolved frontier. Debates are bounded, non-effectful and preserve dissent,
@@ -246,7 +266,9 @@ attention, privacy, refusal, correction and recovery.
 
 The owner transfer, independent reviews, peer challenges, source/intent ledger,
 working master, requirements, threat model, foundation/Bridge drafts and
-candidate schemas exist. Structural fixtures have exposed and repaired several
-contract gaps. The software described here is not implemented; whole-plan peer
-consensus, legal review, runtime tests, hostile security work and release remain
-open.
+candidate schemas exist. Structural and semantic fixtures have exposed and
+repaired contract and matrix-integrator gaps. Determinism rows have completed one
+bounded independent review; the integrated cultural/security packet still needs
+its whole Milestone 03 challenge. The software described here is not implemented;
+whole-plan consensus, empirical measure validation, legal review, runtime tests,
+hostile security work and release remain open.

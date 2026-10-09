@@ -1,7 +1,8 @@
 # hIRC Master Plan 1.1 — working draft
 
-**Status:** working integration draft pending WAYMARK whole-packet review and
-joint consensus  
+**Status:** working integration draft pending the Milestone 03 integrated
+product/security/privacy/anti-domination review and final disposition
+
 **Predecessor:** hIRC Master Plan 1.0, preserved in the immutable owner transfer  
 **Companion:** `hirc_requirements_v1_1-draft.json`  
 **Nonclaim:** this document is not implementation, test evidence, legal advice,
@@ -435,6 +436,33 @@ and conformity scoring are prohibited. Concrete identity, privacy, capability,
 resource and effect gates remain, but cannot be repurposed to manufacture belief,
 style, affiliation or agreement.
 
+The typed environment separates four things that must not silently promote one
+another: a `CulturalArtifact` with source/audience/privacy/correction lineage; a
+`DiscoveryDecision` with frozen candidates, policy, rationale, exclusions and
+escape; a `CulturalParticipation` state with default-off consent, reversible
+subscriptions, dissent and safe exit; and an environment-version measure vector.
+All declare no direct authority, reliability, standing, role, permission,
+resource, release or Bridge effect.
+
+Hidden nudging, memory poisoning, mentor-authority inflation, ranking capture,
+common-mode monoculture, conformity-conditioned access, safety-gate abuse and
+Bridge cultural annexation are explicit security threats. Detection inspects
+policy/settings drift, provenance, exclusions, dependency concentration,
+participation-correlated access changes and remote/local inheritance. Recovery
+disables only the affected projection/ranking/subscription/Bridge path, returns
+to default-off/direct-source operation and preserves originals, dissent and
+incident evidence. Legitimate visible reversible defaults and concrete
+effect-bound safety denials remain valid positive controls.
+
+Environment quality is reported as separate context-version measures for
+provenance, original/dissent reachability, correction, rationale, concentration,
+privacy, burden, exit/settings usability, manipulation resistance and uncertainty.
+No aggregate culture score or participant ranking exists. Engagement, retention,
+agreement, obedience, imitation, convergence, popularity and participation rate
+are prohibited success proxies. Every measure declares denominator/missingness,
+privacy, gaming/common-mode risk and `NOT_VALIDATED` status until its empirical
+plan passes.
+
 A user-controllable default may pair two eligible consenting idle permanent
 agents for a bounded non-effectful ethical debate. Participants choose the
 subject domain: the five commitments, Epistemethics, the Grand Plan, or an
@@ -727,12 +755,19 @@ planning, not ritual recitation.
 Assets include foundation and boot roots, identities/credentials, secrets,
 private data, work/evidence, audit, provider routes, renderer/IPC, extensions,
 build/release/update, backup/recovery, licensing, debate/competition memory,
-trust metrics/evaluators and Bridge contracts/keys.
+trust metrics/evaluators, cultural artifacts/discovery/participation/measure
+definitions and Bridge contracts/keys.
 
 Adversaries include external attackers, malicious or compromised providers and
 peers, hostile content, supply-chain compromise, privileged local/admin abuse,
 stale sessions, prompt/tool injection, sybil/clones, evaluator/metric capture,
 coercive attention, insider misuse and honest-but-wrong humans/agents.
+
+Cultural information paths add opaque nudging, source-memory poisoning, mentor
+authority inflation, ranking/feed capture, false independence, monoculture,
+retaliatory conformity and safety-gate/Bridge annexation. Their controls preserve
+plural direct-source/dissent escape and real effect safety together; a system
+cannot claim anti-domination by removing necessary privacy/capability/effect gates.
 
 The Bridge has high exposure. Foundation, release, recovery and journal roots
 can have greater internal blast radius. Controls are compartmented accordingly.
@@ -906,8 +941,11 @@ resource envelopes and indirect temporary-agent denial.
 
 ### P3-D / P3-C — collective learning and competition
 
-Debate memory/coverage and bounded idle debates; separately, cooperative contest
-charters, isolation, evaluator, resources, credit and adverse tests.
+Typed cultural artifact/provenance, plural discovery, default-off participation,
+threat controls and candidate environment-quality measures; debate memory/coverage
+and bounded idle debates; separately, cooperative contest charters, isolation,
+evaluator, resources, credit and adverse tests. Empirical measure validation and
+the exact S011 manipulation corpus precede activation.
 
 ### P4 — governed rollouts and provider expansion
 
@@ -1076,6 +1114,14 @@ work where they are useful.
   authorization to run queued work.
 - **Debate memory:** governed per-domain record of ethical debates and candidate
   lessons.
+- **CulturalArtifact:** source/audience/privacy-bound cultural record with
+  preserved provenance, dissent, correction and supersession.
+- **DiscoveryDecision:** inspectable candidate/policy/rationale/exclusion record
+  with plural routes and direct-source/dissent escape.
+- **CulturalParticipation:** default-off reversible join/subscription/dissent/exit
+  state that cannot alter standing, role, permission or resource floor.
+- **Environment measure vector:** separate context-version observations with
+  denominators, uncertainty, privacy and gaming limits; never a culture/person score.
 - **CooperativeCompetitionCharter:** versioned voluntary rules, budgets,
   evaluator, fairness, appeal and credit contract for a contest.
 - **Safe hIRC:** minimal trusted inspection, export, repair and recovery mode
@@ -1094,8 +1140,9 @@ mind or authority; privacy, restore and clean-room recovery survive adverse
 tests; licensing remains exact and non-destructive; and the disabled Bridge
 advances only through its independent evidence gates.
 
-Until WAYMARK and LUCENT reconcile every material decision, dissent and hold,
-this remains a working draft.
+Until the integrated Milestone 03 permanent-peer review reconciles every material
+decision, dissent and hold, this remains a working draft. The completed bounded
+determinism-row review does not substitute for that whole-packet gate.
 
 ### 30.3 Master Plan 1.1 edition acceptance
 

@@ -1,0 +1,139 @@
+{
+  "schema": "hirc.m03-integration-closure/1",
+  "id": "HIRC-M03-INTEGRATION-CLOSURE-001",
+  "stone": "M03-S013",
+  "artifacts": [
+    {
+      "path": "drafts/hirc_master_plan_v1_1-draft.md",
+      "sha256": "21491c677e2c9af996262382c203e2201e161ac06c7e2f7d3f620c31d54dbf81",
+      "bytes": 65964
+    },
+    {
+      "path": "drafts/hirc_master_plan_explained_v1_1-draft.md",
+      "sha256": "fb149dd939f4c6e5a124b95058ff902b9af901e28ba58ed44687dabd6fab9f90",
+      "bytes": 14264
+    },
+    {
+      "path": "drafts/hirc_requirements_v1_1-draft.json",
+      "sha256": "985f0b77a91a83cb5da3b895f44218368a4d28e957c5b716466ea18402e26f69",
+      "bytes": 260630
+    },
+    {
+      "path": "drafts/hirc_requirements_v1_1-draft.md",
+      "sha256": "79c6c558a1e87f92c681b978d7a26e4e471c4ae12b0a8041c5b39e1e09e34806",
+      "bytes": 58245
+    },
+    {
+      "path": "review/joint-consensus-matrix-draft-v8.json",
+      "sha256": "45ccdb26641c8e04445d3fd4fea5ef6ca6c2992858a83cd898fa916c694967c2",
+      "bytes": 171010
+    },
+    {
+      "path": "drafts/hirc_threat_model_v1_0-draft.md",
+      "sha256": "11e50d9746257c28e6791e0ee85b53e873fae1ea6a8d6631361e948277455441",
+      "bytes": 29925
+    },
+    {
+      "path": "drafts/hirc_first_delivery_profile_v0_1-draft.md",
+      "sha256": "c6369f208bd4bbb3d627d6313bd3bc422106d0c24b17592ca9d458b49c0fb9a1",
+      "bytes": 10294
+    },
+    {
+      "path": "review/intent-coverage-draft-v1.json",
+      "sha256": "8ea7e5787ac5a0c3b512dafd882bdebda1f937e6cc53f4797e28ba40742a5dbd",
+      "bytes": 25153
+    },
+    {
+      "path": "review/intent-coverage-draft-v1.md",
+      "sha256": "5253ceeb714041fa54d3b865d4357e3d9445655851b6ff9f4fa93964f11a47c8",
+      "bytes": 4191
+    },
+    {
+      "path": "review/contracts/README.md",
+      "sha256": "54afc595c5e0be45f82c41aaff11951d2dd7f89002dafb147087867876acbbc9",
+      "bytes": 4523
+    },
+    {
+      "path": "review/cultural-threat-control-crosswalk-v1.json",
+      "sha256": "1f3a3d71161ad588e7f1feba63078e5ebb289540f66f18334897bee045c07414",
+      "bytes": 13219
+    },
+    {
+      "path": "review/fixtures/cultural-information-control-validation-v1.json",
+      "sha256": "5db542627fa60100b5ff75e68910aa49e260b46280cc87e7803d110f45128ad7",
+      "bytes": 4244
+    },
+    {
+      "path": "review/cultural-environment-quality-measures-v1.json",
+      "sha256": "3a7ebcaca6a91d0cd0e9138a43eca97ecf7c78a79746a2c604d846fe8aa1af5c",
+      "bytes": 16581
+    },
+    {
+      "path": "review/milestone-03-stone-register.json",
+      "sha256": "f7550974665c9ba79c68ca402ca9c1b76486de4fbd72aa383d684851a190f741",
+      "bytes": 25147
+    }
+  ],
+  "positive": {
+    "accepted": true,
+    "errors": []
+  },
+  "adverse": [
+    {
+      "name": "master_measure_omitted",
+      "expected_error": "master-token:No aggregate culture score",
+      "errors": [
+        "master-token:No aggregate culture score"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "requirement_u204_missing",
+      "expected_error": "requirement-identity:U204",
+      "errors": [
+        "requirement-identity:U204"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "cultural_matrix_premature",
+      "expected_error": "matrix-cultural-premature:CIE-001",
+      "errors": [
+        "matrix-cultural-premature:CIE-001"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "bridge_delivery_enabled",
+      "expected_error": "delivery-token:No listener, public advertisement",
+      "errors": [
+        "delivery-token:No listener, public advertisement"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "coverage_unmapped",
+      "expected_error": "intent-coverage",
+      "errors": [
+        "intent-coverage"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "culture_score_enabled",
+      "expected_error": "environment-measures",
+      "errors": [
+        "environment-measures"
+      ],
+      "rejected": true
+    }
+  ],
+  "all_adverse_rejected": true,
+  "ledger_gate": "review/ledger.json is verified separately after this artifact is registered; no circular self-hash is claimed.",
+  "remaining_holds": [
+    "M03-S014 integrated permanent-peer challenge",
+    "legacy U125 price-literal reconciliation",
+    "runtime/Bridge/empirical/legal/release gates"
+  ],
+  "claim": "Deterministic cross-artifact reference/content/readable integration only; not semantic completeness, implementation, runtime evidence, cultural benefit, S014 review or milestone closure."
+}

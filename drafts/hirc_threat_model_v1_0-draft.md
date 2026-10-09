@@ -1,7 +1,8 @@
 # hIRC threat model 1.0 — working draft
 
-**Status:** working security draft pending WAYMARK challenge, implementation
-evidence and independent security review  
+**Status:** working security draft pending integrated Milestone 03 challenge,
+implementation evidence and independent security review
+
 **Applies to:** hIRC Master Plan 1.1 working draft  
 **Nonclaim:** no control is implemented or validated merely because it appears
 here; “ultra secure” is an objective, not an absolute assurance

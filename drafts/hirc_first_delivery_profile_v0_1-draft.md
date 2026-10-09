@@ -1,7 +1,8 @@
 # hIRC first delivery profile 0.1 — working draft
 
-**Status:** candidate delivery boundary pending WAYMARK challenge and joint
-consensus  
+**Status:** candidate delivery boundary pending integrated Milestone 03 challenge
+and final disposition
+
 **Purpose:** prove useful local work recovery under the foundation/security core
 without activating optional high-risk or unvalidated subsystems
 
@@ -37,6 +38,8 @@ already include:
 - refusal, clarification, appeal and non-retaliation events;
 - atomic revision/audit/outbox and idempotency;
 - compatible succession/formation state references;
+- cultural artifact, discovery, participation and environment-version identities
+  with explicit disabled/default-off states and no authority effect;
 - resource and operator-attention budgets; and
 - append-only correction/supersession.
 
@@ -92,6 +95,12 @@ Policies, eligibility fields, memory/charter namespaces and no-authority
 invariants may exist. No scheduler pairs agents, no debate/contest executes and
 no background timer runs. These start only after ordinary work, privacy,
 attention and resource floors have measured evidence.
+
+Plural discovery, cultural subscriptions and environment measures also remain
+disabled. Their schemas preserve provenance, dissent, direct-source escape,
+default-off consent, safe exit, metric missingness and prohibited behavioral
+proxies so later activation does not require an unconstrained migration. No
+culture/person score or cultural telemetry is collected.
 
 ### Bayesian trust
 
@@ -156,6 +165,8 @@ only in authorized inspection.
 - contradictory report and observed result remain separate;
 - correction preserves predecessor and updates projections;
 - duplicate source event is idempotent; and
+- disabled cultural/discovery state cannot enroll, rank, suppress dissent, change
+  standing/authority or remove direct-source access; and
 - manual tracker upkeep is unnecessary for the tested workflow.
 
 ### Privacy and secrets
