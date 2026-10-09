@@ -8,7 +8,9 @@ Source review: `review/waymark-m03-s014-product-review-v1.md`, SHA-256 `b80f9923
 
 Coverage manifest: `review/waymark-m03-s014-coverage-manifest-v1.json`, SHA-256 `9edd3c9780a13317b0b215b5b0f979724f275ac146c2288351eeccf5202d0646`
 
-Disposition: all three findings accepted; corrected product frame prepared for independent recheck; specialist security/privacy/statistical coverage remains held
+Repair recheck: `review/waymark-m03-s014-product-recheck-v1.md`, SHA-256 `4f4e088cad946568fb97af414599a027e09da7ba922cee823df788cdfbcdb547`
+
+Disposition: all three findings accepted and independently rechecked PASS; specialist security/privacy/statistical coverage remains held
 
 ## Coverage accepted at its actual scope
 
@@ -95,12 +97,17 @@ dissent/correction/escape, separate measure vector, prohibited behavioral proxie
 matrix hold semantics and accessibility requirements. Their empirical/runtime
 limits remain.
 
-The corrected product frame needs WAYMARK’s bounded recheck. S014 also remains
-open until actual independent security, privacy-engineering/dataflow and
-metric/evaluator specialist coverage is obtained or the exact unfilled coverage is
-resolved through a legitimate staffing decision. TESSERA and PORTICO eligibility
-replies are not counted as review evidence; the successor remains unqualified for
-this packet.
+WAYMARK independently rechecked all three repairs at revision 2: seven valid and
+seven adverse contract controls behaved as declared, all 28 packet/evidence pins
+matched current files and committed Git blobs, and no new product/accessibility-
+requirements/anti-domination/privacy-facing regression was found. F01–F03 are
+closed at that frame.
+
+S014 remains open until actual independent security,
+privacy-engineering/dataflow and metric/evaluator specialist coverage is obtained
+or the exact unfilled coverage is resolved through a legitimate staffing decision.
+TESSERA and PORTICO eligibility replies are not counted as review evidence; the
+successor remains unqualified for this packet.
 
 No whole consensus, runtime/Bridge activation, empirical cultural benefit,
 release, custody transfer or public push follows from these repairs.
