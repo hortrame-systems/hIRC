@@ -1546,30 +1546,30 @@
       "id": "HIRC-M03-STONE-REGISTER-001",
       "kind": "tiny_stone_dependency_register_and_deterministic_gate_evidence",
       "path": "review/milestone-03-stone-register.json",
-      "status": "STONE_011_PASS_S003_REVIEW_OPEN_S012_RUNNABLE",
+      "status": "STONE_012_PASS_S003_REVIEW_REQUIRED_S013_HELD",
       "governed_scope": "milestone_03_determinism_and_cultural_information_environment_integration",
-      "sha256": "dd7bd51d1dee1e79d017e7ae15e626086e00f79f68dba5b4c02caaca99e87ac3",
+      "sha256": "df52573d92a4e7f811f8ec6eb26fbb0e4cddd212ffda99e5d6b09fce2c3e7d14",
       "bytes": 25195,
       "members": [
         {
           "path": "review/milestone-03-stone-register.md",
-          "sha256": "2af0b06c33309f6437a3508317605e13d3cb8c8a28314a9879528a0cfd6b4a7c",
-          "bytes": 3841
+          "sha256": "5a72e0c18a56f8cf16ffed3b651511800b09e4f59a0ca571285853bf6fe3df46",
+          "bytes": 3843
         },
         {
           "path": "review/fixtures/validate_milestone_03_stone_register.py",
-          "sha256": "4789903e759a6c691876feeb6086910b8779903cd5e426c0f89ea40738fa8199",
-          "bytes": 8772
+          "sha256": "3f5aa7a2adc7cf69595fcc78b62f5a1f12f20d6b04bd716bf90891ad5d8f4cc9",
+          "bytes": 9057
         },
         {
           "path": "review/fixtures/milestone-03-stone-register-validation.json",
-          "sha256": "44143a71a320ff6915b886d5b00346e0bf64b86058052aba29597cb352b4861c",
-          "bytes": 2296
+          "sha256": "54b6dcf6df5a2ca87ba2946faf091065d1eaf25e7bbda74b2003862c2f11e6e5",
+          "bytes": 2257
         }
       ],
       "source_bindings": ["HIRC-I019", "HIRC-I020", "HIRC-I021", "HIRC-I022", "HIRC-I023", "HIRC-I024", "HIRC-I025", "HIRC-I026", "HIRC-STEPPING-STONE-PROTOCOL-001"],
       "limits": "The register mechanically validates graph/field/gate invariants, scoped holds and seven adverse mutations including global stall while runnable work exists; it does not prove semantic correctness, implementation, peer consensus or runtime behavior",
-      "next_action": "Begin runnable M03-S012 environment-quality measure design; S003 remains independently review-gated"
+      "next_action": "Obtain the scoped M03-S003 independent security/semantic review, then run M03-S013 integration"
     },
     {
       "id": "HIRC-MILESTONE-02D",
@@ -1745,6 +1745,30 @@
       "next_action": "Retain as S011 regression evidence and incorporate its manipulation/common-mode risks into M03-S012 measures"
     },
     {
+      "id": "HIRC-CULTURAL-ENVIRONMENT-MEASURES-001",
+      "kind": "candidate_environment_quality_measure_vector_and_metric_threat_analysis",
+      "path": "review/cultural-environment-quality-measures-v1.json",
+      "status": "PASS_CANDIDATE_DEFINITION_AND_ADVERSE_MUTATION_SCOPE_EMPIRICAL_VALIDATION_PENDING",
+      "governed_scope": "cultural_information_environment_evaluation",
+      "sha256": "3a7ebcaca6a91d0cd0e9138a43eca97ecf7c78a79746a2c604d846fe8aa1af5c",
+      "bytes": 16581,
+      "members": [
+        {
+          "path": "review/fixtures/validate_cultural_environment_measures.py",
+          "sha256": "70aad1a205d245408b8af871e67e464ca1d38a75de87789d008dee37e0d3887f",
+          "bytes": 6892
+        },
+        {
+          "path": "review/fixtures/cultural-environment-quality-measures-validation-v1.json",
+          "sha256": "65fa2626b9dc00c979e8e7ba49bdff7139b1a09b79cd102e6ac534e479547658",
+          "bytes": 2262
+        }
+      ],
+      "source_bindings": ["HIRC-CULTURAL-THREAT-CROSSWALK-001", "HIRC-CULTURAL-INFORMATION-CONTROL-FIXTURES-001", "HIRC-M03-STONE-REGISTER-001", "HIRC-I022", "HIRC-I023", "HIRC-I024"],
+      "limits": "Eleven environment/context-version measures reject participant scope, aggregate culture scoring, engagement/retention/agreement/obedience/imitation/convergence/popularity/participation proxies and direct authority/reliability/standing effects; eight deterministic adverse mutations pass, but construct validity, calculation reliability, privacy, usability, causal interpretation and empirical validation remain pending and no telemetry is authorized",
+      "next_action": "Carry the measure vector, prohibited uses, Goodhart/common-mode analysis and proposed validation plan into M03-S013 integration and M03-S014 peer challenge"
+    },
+    {
       "id": "HIRC-MASTER-DRAFT-BUNDLE-001",
       "kind": "integrated_master_and_requirements_working_draft_bundle",
       "path": "drafts/README.md",
@@ -1840,8 +1864,8 @@
       "path": "review/README.md",
       "status": "ACTIVE",
       "governed_scope": "internal_design_review",
-      "sha256": "cecca9e968b9ffc3ad62aa6ed4919e1a4977f4ba96f15dd733404e7a67822480",
-      "bytes": 9616,
+      "sha256": "f30c593eda5249c8ebd76005d02aaa81d133d7aeaf5434ca50bd0fec29705e1e",
+      "bytes": 9833,
       "next_action": "Link the accepted consensus and final revisions when created"
     }
   ],

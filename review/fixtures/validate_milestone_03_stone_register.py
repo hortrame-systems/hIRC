@@ -172,7 +172,16 @@ def adverse_tests(data: dict) -> list[dict]:
     run("premature_active", make_dependent_stone_premature, "premature")
     run("missing_adverse_cases", lambda d: d["stones"][3].update(adverse_cases=[]), "adverse_cases")
     run("missing_recovery", lambda d: d["stones"][4].update(recovery=""), "recovery")
-    run("global_stall_with_ready_work", lambda d: d["execution_state"].update(state="HELD"), "global-stall-with-runnable-work")
+    def make_global_stall(d: dict) -> None:
+        by_id = {stone["id"]: stone for stone in d["stones"]}
+        by_id["M03-S012"]["status"] = "READY"
+        d["execution_state"].update(
+            state="HELD",
+            ready_stones=["M03-S003", "M03-S012"],
+            runnable_stones=["M03-S012"],
+        )
+
+    run("global_stall_with_ready_work", make_global_stall, "global-stall-with-runnable-work")
     return cases
 
 

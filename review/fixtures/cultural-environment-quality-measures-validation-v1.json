@@ -1,0 +1,84 @@
+{
+  "schema": "hirc.cultural-environment-quality-measures-validation/1",
+  "stone": "M03-S012",
+  "source": {
+    "path": "review/cultural-environment-quality-measures-v1.json",
+    "sha256": "3a7ebcaca6a91d0cd0e9138a43eca97ecf7c78a79746a2c604d846fe8aa1af5c"
+  },
+  "validator": {
+    "path": "review/fixtures/validate_cultural_environment_measures.py",
+    "sha256": "70aad1a205d245408b8af871e67e464ca1d38a75de87789d008dee37e0d3887f"
+  },
+  "positive": {
+    "accepted": true,
+    "errors": []
+  },
+  "adverse": [
+    {
+      "name": "engagement_as_success",
+      "expected_error": "forbidden-success-proxy",
+      "errors": [
+        "CULT-M01:forbidden-success-proxy"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "participant_ranking_scope",
+      "expected_error": "person-scope",
+      "errors": [
+        "CULT-M02:person-scope"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "authority_effect",
+      "expected_error": "authority_effect",
+      "errors": [
+        "CULT-M03:authority_effect"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "single_culture_score",
+      "expected_error": "single_score_allowed",
+      "errors": [
+        "aggregation:single_score_allowed"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "missing_gaming_analysis",
+      "expected_error": "gaming_risks",
+      "errors": [
+        "CULT-M04:gaming_risks"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "unsupported_empirical_claim",
+      "expected_error": "unsupported-validation",
+      "errors": [
+        "CULT-M05:unsupported-validation"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "missing_privacy_boundary",
+      "expected_error": "privacy",
+      "errors": [
+        "CULT-M06:privacy"
+      ],
+      "rejected": true
+    },
+    {
+      "name": "missing_goodhart_analysis",
+      "expected_error": "goodhart-common-mode-analysis",
+      "errors": [
+        "goodhart-common-mode-analysis"
+      ],
+      "rejected": true
+    }
+  ],
+  "all_adverse_rejected": true,
+  "claim": "Deterministic candidate-definition checks only; not construct validity, calculation reliability, empirical evidence, telemetry authorization, causal inference, cultural health, permission or peer consensus."
+}
