@@ -94,6 +94,7 @@ contains commands or scripts.
 - [M03-S014 corrected review request v2](m03-s014-integrated-review-request-v2.md)
 - [M03-S014 corrected pre-request ledger snapshot v2](m03-s014-ledger-snapshot-v2.json)
 - [WAYMARK M03-S014 product repair recheck](waymark-m03-s014-product-recheck-v1.md)
+- [Git-blob and ledger portability validation](fixtures/git-blob-ledger-portability-validation-v1.json)
 - [Cultural-decision matrix integrator](integrate_cultural_decisions_matrix.py)
 - [Cultural-decision matrix integration validation](fixtures/cultural-matrix-integration-validation.json)
 - [Master Plan 1.0 → 1.1 predecessor crosswalk draft](predecessor-crosswalk-draft-v1.md)

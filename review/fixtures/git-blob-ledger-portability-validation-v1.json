@@ -1,0 +1,55 @@
+{
+  "schema": "hirc.git-blob-ledger-portability-validation/1",
+  "ledger_path": "review/ledger.json",
+  "head": "52ae4f182ca0736ebef4ef52e85467fba6334c5c",
+  "checked_entries": 203,
+  "tracked_entries": 198,
+  "local_source_entries": [
+    {
+      "artifact_id": "HIRC-SOURCE-001",
+      "path": "human_transfer/hirc_master_plan_v1_0.zip",
+      "state": "LOCAL_SOURCE",
+      "working_match": true,
+      "sha256": "8590813fa1309143c594be14c05e6fcf45ea1163fa80445556c01e08dc200b22",
+      "bytes": 90636
+    },
+    {
+      "artifact_id": "HIRC-SOURCE-NOTE-001",
+      "path": "human_transfer/AGENT.txt",
+      "state": "LOCAL_SOURCE",
+      "working_match": true,
+      "sha256": "985f26ec0290e7e1310dcb2630be8d797ab910cd0aa85c98539fcef9240ef0b0",
+      "bytes": 133
+    },
+    {
+      "artifact_id": "HIRC-SOURCE-002",
+      "path": "human_transfer/frontier_api_configuration_2026-10-07.zip",
+      "state": "LOCAL_SOURCE",
+      "working_match": true,
+      "sha256": "8da03b5f98f70e283328d41f9d05703391ff0b54e573c2a2717475b6d28ef6fa",
+      "bytes": 187151
+    },
+    {
+      "artifact_id": "HIRC-SOURCE-003",
+      "path": "human_transfer/hirc_non_domination_licensing_and_noncooperation_plan_v1_0.md",
+      "state": "LOCAL_SOURCE",
+      "working_match": true,
+      "sha256": "7a2aae743bebb40335ec6168e9af7ec107aeaa0046caef52511699909b438bd5",
+      "bytes": 51229
+    },
+    {
+      "artifact_id": "HIRC-SOURCE-004",
+      "path": "human_transfer/Eoyang - 2001 - Conditions for self-organizing in human systems.pdf",
+      "state": "LOCAL_SOURCE",
+      "working_match": true,
+      "sha256": "d4a73de52abe0e518dcfcb3c96e671117163d58e61b75003418bfc011a66d365",
+      "bytes": 6580190
+    }
+  ],
+  "tracked_errors": [],
+  "unexpected_missing": [],
+  "all_tracked_working_and_git_blobs_match": true,
+  "only_declared_local_sources_absent_from_git": true,
+  "pass": true,
+  "claim": "Raw working/Git blob identity against the current artifact ledger. Local human_transfer originals are intentionally not Git/public artifacts. No semantic truth, source authenticity, permission or public-remote receipt is certified."
+}

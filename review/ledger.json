@@ -299,18 +299,18 @@
       "members": [
         {
           "path": "review/fixtures/waymark-trust-contract-validation-v1.json",
-          "sha256": "9f0da7b4530190c220140f0e1086d0807acd5556d8f21473125a5ab8b9d1abf9",
-          "bytes": 6071
+          "sha256": "4c147a20a0196e6d30ae2e988cd997670d3fc42aec72790bc59f7e110eaf4925",
+          "bytes": 5915
         },
         {
           "path": "review/fixtures/waymark-trust-contract-validation-v2.json",
-          "sha256": "0eaed8b590b4b454d50b13f992616edea47bb0e15e1780f3d805b258fbb430b9",
-          "bytes": 6165
+          "sha256": "0651d52924cc10a75ea8d6579c1c9ca25f571ad4f660e1ab7e9b9e58b905c55d",
+          "bytes": 6009
         },
         {
           "path": "review/fixtures/waymark-trust-contract-validation-v2.1.json",
-          "sha256": "7b80e9a6ecff4335f882cb06c3751c79bbcb21a7ef52ddbef69649c178cd27b7",
-          "bytes": 8708
+          "sha256": "787de23f7efa39b29a3d62be58203100c063dc2c18c9bfffcd278cb38ceccebe",
+          "bytes": 8509
         },
         {
           "path": "review/fixtures/validate_waymark_contract_cases_v2.1.ps1",
@@ -853,8 +853,8 @@
       "path": "review/joint-consensus-matrix-draft-v1.json",
       "status": "SUPERSEDED_DRAFT_PRESERVED",
       "governed_scope": "internal_joint_design_review",
-      "sha256": "8a0232ad37980d3efc224c7d76df9617029a41d305aac5cc96dea019da7e1fbf",
-      "bytes": 77432,
+      "sha256": "b36b8baf5e1187e91e0c03d5641ee08c21a5babe8484f672b67ea44dfef7e5ff",
+      "bytes": 75636,
       "source_bindings": [
         "HIRC-REVISION-MAP-CANDIDATE-001",
         "HIRC-REVISION-MAP-LNC-001",
@@ -874,8 +874,8 @@
       "path": "review/joint-consensus-matrix-draft-v2.json",
       "status": "SUPERSEDED_DRAFT_PRESERVED",
       "governed_scope": "internal_joint_design_review",
-      "sha256": "1f49621ee0b772dfe2942896f82174d1d7e8dc9e9d8470d9e2f529badc9bc15b",
-      "bytes": 104729,
+      "sha256": "e47112f7a985165c7611849a65fdc477241e366a7b2e148b4f6d457cb75f514e",
+      "bytes": 102326,
       "source_bindings": [
         "HIRC-REVISION-MAP-CANDIDATE-001",
         "HIRC-REVISION-MAP-LNC-001",
@@ -897,8 +897,8 @@
       "path": "review/joint-consensus-matrix-draft-v3.json",
       "status": "SUPERSEDED_DRAFT_PRESERVED",
       "governed_scope": "internal_joint_design_review",
-      "sha256": "74ad4b05f53da1131a37d1ab7235533df88562314d997ef6a81a10b3a66d3fb2",
-      "bytes": 110186,
+      "sha256": "13820dfc2e2217f3aa7548386ae3571f7c6e003e92eff0f94e284b7c0cd7d30e",
+      "bytes": 107657,
       "source_bindings": [
         "HIRC-REVISION-MAP-CANDIDATE-001",
         "HIRC-REVISION-MAP-LNC-001",
@@ -921,8 +921,8 @@
       "path": "review/joint-consensus-matrix-draft-v4.json",
       "status": "SUPERSEDED_DRAFT_PRESERVED",
       "governed_scope": "internal_joint_design_review",
-      "sha256": "d2697f3bdc759503f8c795de3739274850bb46f066a88a03bece27aac6baa8e9",
-      "bytes": 120875,
+      "sha256": "05cd4db78919cc7815184aaa64f5e0dc8558af70d40f10ffc6d4e0b9224b3dee",
+      "bytes": 118121,
       "source_bindings": [
         "HIRC-REVISION-MAP-CANDIDATE-001",
         "HIRC-REVISION-MAP-LNC-001",
@@ -948,8 +948,8 @@
       "path": "review/joint-consensus-matrix-draft-v5.json",
       "status": "SUPERSEDED_DRAFT_PRESERVED",
       "governed_scope": "internal_joint_design_review",
-      "sha256": "f205766a7e4e020e64354a13da0f36881e48ecbf90d15d68ad5f9b7ad29033b1",
-      "bytes": 127441,
+      "sha256": "9c7e23c17d8228785a25672d15b6af1d38552a4620a6bf6566ad7d57da75c217",
+      "bytes": 124543,
       "source_bindings": [
         "HIRC-REVISION-MAP-CANDIDATE-001",
         "HIRC-REVISION-MAP-LNC-001",
@@ -1110,13 +1110,13 @@
       "path": "review/predecessor-crosswalk-draft-v1.md",
       "status": "DEBT_DURING_GENERATION_REQUIRING_SEMANTIC_AUDIT",
       "governed_scope": "master_plan_predecessor_semantic_preservation",
-      "sha256": "1d2984f73150949457434cd9af73714a72f97371516d8e3ea74cef07575b29b0",
-      "bytes": 9361,
+      "sha256": "5ab7d922afe973e9cec7fd893fcb29b88e1c1d65f508f3a4519948e18caf5423",
+      "bytes": 9307,
       "members": [
         {
           "path": "review/predecessor-crosswalk-draft-v1.json",
-          "sha256": "9a65aba44161b5dd650b6e279afcdc97effb08a9e270c5a6a9b922dc7abe98f4",
-          "bytes": 21292
+          "sha256": "74f0410279f33d65d6a26034a2d09af700d22ebbb57d3343b8a57f30c2ac73aa",
+          "bytes": 20619
         }
       ],
       "source_bindings": ["HIRC-SOURCE-001", "HIRC-MASTER-DRAFT-BUNDLE-001"],
@@ -1570,13 +1570,13 @@
         },
         {
           "path": "review/contracts/validation-result.json",
-          "sha256": "0d77a3cae30b09732f566a8bdfeb3c7978c3a7a6426ac82dffcb016e1ffe2402",
-          "bytes": 1281
+          "sha256": "853cb76b897e4dd3b355445bc29a01acec53e10e1145bd55b4f7066c4c0bcf13",
+          "bytes": 1225
         },
         {
           "path": "review/contracts/release-bridge-validation-result.json",
-          "sha256": "f30c5ab5d8731f4a2d3376e8ada1ddce2e13764e5ce731fcf66bc04250d802ba",
-          "bytes": 1757
+          "sha256": "32097945167c8e72d8ead9f91db0c1d74f27471bfb4feb51bd4c67bf03e2ca65",
+          "bytes": 1692
         },
         {
           "path": "review/fixtures/cultural-artifact-contract-cases-v1.json",
@@ -1590,8 +1590,8 @@
         },
         {
           "path": "review/fixtures/cultural-artifact-contract-validation-v1.json",
-          "sha256": "2ee75afe2a092dc7633356409be2e2dd61afdabab041960ee248b7edcabb55a2",
-          "bytes": 5153
+          "sha256": "c8f319fd692bb47d2f88521649e5ecf7d94ba5ed670b1ea376e7ec83be7f1f82",
+          "bytes": 5028
         },
         {
           "path": "review/fixtures/discovery-decision-contract-cases-v1.json",
@@ -1971,6 +1971,25 @@
       "next_action": "Coordinator routes the remaining specialist dimensions only to actually qualified consenting permanent participants"
     },
     {
+      "id": "HIRC-GIT-BLOB-PORTABILITY-001",
+      "kind": "raw_git_blob_working_file_and_ledger_identity_validation",
+      "path": "review/validate_git_blob_ledger_portability.py",
+      "status": "PASS_PRE_REGISTRATION_LEDGER_SCOPE",
+      "governed_scope": "public_source_byte_portability",
+      "sha256": "1fc7c2e1bee680ef9fb84ab6e9b8423e2071a10dd591438d9090a09a32432831",
+      "bytes": 3907,
+      "members": [
+        {
+          "path": "review/fixtures/git-blob-ledger-portability-validation-v1.json",
+          "sha256": "105dfb076d57250cc753372da1dd95b391d33f24cb154cb39ab574a5086ff410",
+          "bytes": 2125
+        }
+      ],
+      "source_bindings": ["HIRC-SOURCE-CONTROL-001", "HIRC-M03-INTEGRATION-CLOSURE-001", "HIRC-M03-S014-REVIEW-REQUEST-002"],
+      "limits": "All 198 tracked entries in the pre-registration ledger match current working and raw committed Git bytes; five declared human_transfer originals remain local/non-public and match their ledger identities. This does not certify semantic truth, source authenticity, remote receipt or the validator's own later registration",
+      "next_action": "Rerun after final S014/S015 ledger registration and against the exact public content commit before push closure"
+    },
+    {
       "id": "HIRC-MASTER-DRAFT-BUNDLE-001",
       "kind": "integrated_master_and_requirements_working_draft_bundle",
       "path": "drafts/README.md",
@@ -2069,8 +2088,8 @@
       "path": "review/README.md",
       "status": "ACTIVE",
       "governed_scope": "internal_design_review",
-      "sha256": "9e7418f3805d34260d01aacec943259029a5fc69360176a323d75769b8efbc4f",
-      "bytes": 11771,
+      "sha256": "3f87722d48102b225a917069660b3c1ce0e673983eedc0743250cdc73dc755a1",
+      "bytes": 11875,
       "next_action": "Link the accepted consensus and final revisions when created"
     }
   ],
