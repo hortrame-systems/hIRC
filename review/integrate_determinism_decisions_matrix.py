@@ -24,17 +24,29 @@ def insert_before(rows: list[dict], additions: list[dict], before_id: str) -> li
     return [*rows[:index], *additions, *rows[index:]]
 
 
-def build() -> tuple[dict, dict]:
-    predecessor = json.loads(PREDECESSOR.read_text(encoding="utf-8"))
-    revision_map = json.loads(REVISION_MAP.read_text(encoding="utf-8"))
-    requirements = json.loads(REQUIREMENTS.read_text(encoding="utf-8"))
+def unique_index(rows: list[dict], label: str, errors: list[str]) -> dict[str, dict]:
+    result: dict[str, dict] = {}
+    for row in rows:
+        row_id = row.get("id")
+        if row_id in result:
+            errors.append(f"duplicate-{label}-id:{row_id}")
+            continue
+        result[row_id] = row
+    return result
+
+
+def build_from(predecessor: dict, revision_map: dict, requirements: dict) -> tuple[dict, dict]:
     required_ids = {f"U{number}" for number in range(186, 192)}
     decision_ids = {f"DTM-{number:03d}" for number in range(1, 6)}
 
-    source_requirements = {row["id"]: row for row in requirements["requirements"] if row["id"] in required_ids}
-    map_requirements = {row["id"]: row for row in revision_map["new_user_requirements"]}
-    map_decisions = {row["id"]: row for row in revision_map["changes"]}
     errors: list[str] = []
+    source_requirements = unique_index(
+        [row for row in requirements["requirements"] if row.get("id") in required_ids],
+        "source-requirement",
+        errors,
+    )
+    map_requirements = unique_index(revision_map["new_user_requirements"], "map-requirement", errors)
+    map_decisions = unique_index(revision_map["changes"], "map-decision", errors)
     if set(source_requirements) != required_ids or set(map_requirements) != required_ids:
         errors.append("requirement-source-coverage")
     if set(map_decisions) != decision_ids:
@@ -133,6 +145,13 @@ def build() -> tuple[dict, dict]:
         "claim": "Deterministic authored-candidate row integration and predecessor semantic identity only; not independent review, peer consensus, implementation or runtime evidence.",
     }
     return output, validation
+
+
+def build() -> tuple[dict, dict]:
+    predecessor = json.loads(PREDECESSOR.read_text(encoding="utf-8"))
+    revision_map = json.loads(REVISION_MAP.read_text(encoding="utf-8"))
+    requirements = json.loads(REQUIREMENTS.read_text(encoding="utf-8"))
+    return build_from(predecessor, revision_map, requirements)
 
 
 def main() -> int:

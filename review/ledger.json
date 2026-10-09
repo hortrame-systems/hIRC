@@ -134,22 +134,41 @@
       "kind": "external_logical_source_binding",
       "logical_ids": ["standard:elder-succession", "guide:elder-succession"],
       "source_members": [
-        {"logical_id": "standard:elder-succession", "sha256": "4bffbda841fee1d774d44ffd29d70aa7d82dab8dd5c24773d8c7be412f84c6d6", "characters": 16149},
-        {"logical_id": "guide:elder-succession", "sha256": "df4b3ed99d9d55a1b8ccc7f1561e3e237aec470516a484af394f2eaf7abd0f96", "characters": 15514}
+        {"logical_id": "standard:elder-succession", "sha256": "5c140ada50fb46cfc516ac7ca1dc0e88fc5e79b19645fb7afb814921db35c9c6", "characters": 18641},
+        {"logical_id": "guide:elder-succession", "sha256": "160ffc14c0a0da0049623653d00e36c3049ada442c810262f4e586dd0b4ac403", "characters": 17940}
       ],
-      "status": "CURRENT_SELECTED_EDITION04_STANDARD_EDITION03_GUIDE_READ_TO_END_COMPACTION_RECOVERY_VERIFIED",
+      "status": "CURRENT_SELECTED_EDITION05_STANDARD_EDITION04_GUIDE_READ_TO_END_COMPACTION_RECOVERY_VERIFIED",
       "governed_scope": "internal_succession_architecture_review",
       "predecessor_source_members": [
         {"logical_id": "proposal:elder-succession-v2/standard", "sha256": "17436d7d1237a9b003f093d7319808a824ad655b30956684a534b7371bd83218", "characters": 10079},
         {"logical_id": "proposal:elder-succession-v4/guide", "sha256": "4801f73194b09797f9cadc4be8df32c5ad0a1a92478af7fba6117fb6b8d7e1db", "characters": 9585}
       ],
       "personal_evidence": {
-        "path": "D:/HORTRAME/runtime/agents/ui-20261007-b/checkpoints/compaction-d47bc42c-recovery.json",
-        "sha256": "09e4f1dc52f3aef416ce4642de8b23a9fe088452f06909448436ca543de8e64d",
-        "bytes": 3122,
-        "status": "attributable own post-compaction reconstruction and bounded continuation record; not qualification, permission or fleet uptake"
+        "path": "D:/HORTRAME/runtime/agents/ui-20261007-b/checkpoints/edition05-s003-duplicate-repair-20261009.json",
+        "sha256": "07f1452066df4ec2e9f46812c56e28aacfb037502db3c1e4fdb112aa104ea292",
+        "bytes": 2757,
+        "status": "attributable own edition05 reading, flow reconciliation and bounded S003 repair record; not qualification, permission or fleet uptake"
       },
-      "history_action": "Read current edition04 standard and edition03 guide through EOF; verified actual compaction recovery while retaining cultural Elder and custody history; recorded the owner-assigned hIRC-specific no-transfer-above-14-percent constraint without changing the Root default source or executing transfer"
+      "history_action": "Read current edition05 standard and edition04 guide through EOF; retained verified compaction recovery, cultural Elder and custody history; applied scoped continuation while preserving the owner-assigned hIRC no-transfer-above-14-percent rule separately from Root defaults"
+    },
+    {
+      "id": "HIRC-SOURCE-BINDING-SCOPED-FLOW-001",
+      "kind": "external_logical_source_binding",
+      "logical_ids": ["standard:scoped-flow-and-reuse", "guide:scoped-flow-and-reuse", "authority:standing-internal-teammate-coordination"],
+      "source_members": [
+        {"logical_id": "standard:scoped-flow-and-reuse", "sha256": "00cbd9276f7eed0bc2a4238f76b3785f384fdbe500be70d2025bb60e4dc2bacb", "characters": 9410},
+        {"logical_id": "guide:scoped-flow-and-reuse", "sha256": "f5b249e8285c360d7abd2eeeeccf62b71022494edb8761a221203439d0090df9", "characters": 7152},
+        {"logical_id": "authority:standing-internal-teammate-coordination", "sha256": "34b3b38f851c98753d8fd544ad510a4cb77fa8e0faa21ab0205c3efd5661c723", "characters": 2582}
+      ],
+      "status": "CURRENT_SELECTED_SOURCES_READ_TO_END_AND_APPLIED",
+      "governed_scope": "internal_project_flow_hold_scope_evidence_reuse_and_permanent_teammate_coordination",
+      "personal_evidence": {
+        "path": "D:/HORTRAME/runtime/agents/ui-20261007-b/checkpoints/edition05-s003-duplicate-repair-20261009.json",
+        "sha256": "07f1452066df4ec2e9f46812c56e28aacfb037502db3c1e4fdb112aa104ea292",
+        "bytes": 2757
+      },
+      "limits": "Flow and standing internal coordination supplement actual project rights; they grant no new actor, private access, custody, public commitment, source-host permission or review acceptance",
+      "next_action": "Apply scoped holds and evidence reuse through the existing hIRC stone/controller ledger without creating a competing work authority"
     },
     {
       "id": "HIRC-REVIEW-001",
@@ -989,37 +1008,64 @@
       "id": "HIRC-JOINT-CONSENSUS-DRAFT-007",
       "kind": "mechanically_collated_matrix_with_determinism_candidates_and_explicit_review_hold",
       "path": "review/joint-consensus-matrix-draft-v7.json",
-      "status": "DRAFT_DTM_ROWS_INTEGRATED_M03_S003_INDEPENDENT_REVIEW_PENDING",
+      "status": "PASS_M03_S003_AUTHORED_ROW_INTEGRATION_AND_BOUNDED_INDEPENDENT_REVIEW_S013_RECONCILIATION_PENDING",
       "governed_scope": "internal_joint_design_review",
       "sha256": "fa74cd1c6250568664e810b24edf7d2c68fec260974e71cb8dbfc705019a40f1",
       "bytes": 166186,
       "members": [
         {
           "path": "review/integrate_determinism_decisions_matrix.py",
-          "sha256": "8131faf2a7145ddd8496285d7514665df8651310dcdd6df568b170bfa9cd44a0",
-          "bytes": 7745
+          "sha256": "f81bfea37b66dd7b49cf2cb6ba839f481c35b13edb3c11c5568fcf0f395441ab",
+          "bytes": 8327
         },
         {
           "path": "review/fixtures/determinism-matrix-integration-validation-v1.json",
           "sha256": "b7009c3680ab724ca0844adb96a0fc19b6070cf6f6a9df36a71ce91619439345",
           "bytes": 1344
+        },
+        {
+          "path": "review/fixtures/validate_determinism_matrix_integrator.py",
+          "sha256": "b7b438188aa12e529da0eaf05a2a4c3d878d985d65c0272d025ff8cec01e55a0",
+          "bytes": 4925
+        },
+        {
+          "path": "review/fixtures/determinism-matrix-integrator-adverse-validation-v1.json",
+          "sha256": "e0dc917251b2626d578789040dd17dfd24fa4098a17facb528365a2d1564aad9",
+          "bytes": 1930
         }
       ],
       "source_bindings": ["HIRC-JOINT-CONSENSUS-DRAFT-006", "HIRC-REVISION-MAP-DETERMINISM-001", "HIRC-REQUIREMENTS-GENERATOR-001", "HIRC-M03-STONE-REGISTER-001"],
-      "limits": "Mechanically preserves all 80 predecessor requirements and 139 predecessor decisions, then adds U186-U191 and DTM-001-DTM-005 as authored candidates; review hold remains open and no independent approval, peer consensus, implementation or runtime evidence is claimed",
-      "next_action": "A qualified consenting permanent security/semantic reviewer completes the exact M03-S003 packet and the controller reconciles every material finding or justified NO_CHANGE"
+      "limits": "Mechanically preserves all 80 predecessor requirements and 139 predecessor decisions, adds U186-U191/DTM-001-DTM-005 as authored candidates, and rejects duplicate authoritative IDs before indexing; bounded independent semantics/review and repair recheck pass, while S013 matrix disposition, whole consensus, implementation and runtime evidence remain pending",
+      "next_action": "M03-S013 creates the post-review integrated matrix/readable bundle while retaining implementation residuals and unrelated open holds"
     },
     {
       "id": "HIRC-M03-S003-REVIEW-REQUEST-001",
       "kind": "hash_bound_independent_security_semantic_review_request",
       "path": "review/m03-s003-independent-review-request-v1.md",
-      "status": "READY_FOR_QUALIFIED_PERMANENT_REVIEWER_ASSIGNMENT",
+      "status": "COMPLETED_ONE_FINDING_REPAIRED_AND_INDEPENDENT_RECHECK_PASS",
       "governed_scope": "u186_u191_and_dtm001_dtm005_independent_review",
       "sha256": "e4203a763a544b32b5b4b66ed704d8e86e417f7aba3ab8c9825c348818dac70c",
       "bytes": 4825,
+      "members": [
+        {
+          "path": "review/waymark-m03-s003-independent-review-v1.md",
+          "sha256": "e0b8b46891c60688120ba5119580a48b2125cb8db4499b49eaf2453a3d639d5f",
+          "bytes": 10281
+        },
+        {
+          "path": "review/lucent-m03-s003-review-response-v1.md",
+          "sha256": "2149af8a518f2fd049f4f430bc6d4e1e14ea469f073051aa4f197e59aaac920f",
+          "bytes": 6244
+        },
+        {
+          "path": "review/waymark-m03-s003-repair-recheck-v1.md",
+          "sha256": "38fa8727b9c0e0f4973dfabfd954a7010b2676cb82c2b4362aff3aa9155bf2a0",
+          "bytes": 3404
+        }
+      ],
       "source_bindings": ["HIRC-I021", "HIRC-REQUIREMENTS-GENERATOR-001", "HIRC-JOINT-CONSENSUS-DRAFT-007", "HIRC-M03-STONE-REGISTER-001"],
-      "limits": "The packet defines exact sources, questions and output requirements; preparation or delivery is not reviewer assignment, qualification, consent, reading, independence, review completion, consensus or implementation",
-      "next_action": "Route through LANTERN to one qualified consenting permanent independent reviewer and preserve the immutable returned review"
+      "limits": "Fresh source-first review found one medium duplicate-ID validation defect; the original failed frame, controller response and independent PASS recheck are preserved. This closes only S003 design/requirements review, not S013 integration, whole consensus, implementation or runtime evidence",
+      "next_action": "Carry the review, repair evidence, NO_CHANGE dispositions and residuals into M03-S013 and later integrated M03-S014 challenge"
     },
     {
       "id": "HIRC-PREDECESSOR-CROSSWALK-DRAFT-001",
@@ -1583,30 +1629,30 @@
       "id": "HIRC-M03-STONE-REGISTER-001",
       "kind": "tiny_stone_dependency_register_and_deterministic_gate_evidence",
       "path": "review/milestone-03-stone-register.json",
-      "status": "STONE_012_PASS_S003_REVIEW_REQUIRED_S013_HELD",
+      "status": "STONE_012_AND_S003_PASS_S013_READY",
       "governed_scope": "milestone_03_determinism_and_cultural_information_environment_integration",
-      "sha256": "df52573d92a4e7f811f8ec6eb26fbb0e4cddd212ffda99e5d6b09fce2c3e7d14",
-      "bytes": 25195,
+      "sha256": "51e596a662b910280e07cc7de2c15484892466b7c27c8a97ea34d9ee1f521779",
+      "bytes": 25160,
       "members": [
         {
           "path": "review/milestone-03-stone-register.md",
-          "sha256": "5a72e0c18a56f8cf16ffed3b651511800b09e4f59a0ca571285853bf6fe3df46",
-          "bytes": 3843
+          "sha256": "47a87b437a2bb98ff934524c6718b79d0b87df866669a1a0a379ab707b6fbd95",
+          "bytes": 3828
         },
         {
           "path": "review/fixtures/validate_milestone_03_stone_register.py",
-          "sha256": "3f5aa7a2adc7cf69595fcc78b62f5a1f12f20d6b04bd716bf90891ad5d8f4cc9",
-          "bytes": 9057
+          "sha256": "e0a85be020dc8ecd7912f08aedf2b1ac50c40705b7d672055948bbb06083b667",
+          "bytes": 9183
         },
         {
           "path": "review/fixtures/milestone-03-stone-register-validation.json",
-          "sha256": "54b6dcf6df5a2ca87ba2946faf091065d1eaf25e7bbda74b2003862c2f11e6e5",
+          "sha256": "b369de24cadf16a28b7866e4f1759325c521911088b2b0f2c5e101233a5f1112",
           "bytes": 2257
         }
       ],
       "source_bindings": ["HIRC-I019", "HIRC-I020", "HIRC-I021", "HIRC-I022", "HIRC-I023", "HIRC-I024", "HIRC-I025", "HIRC-I026", "HIRC-STEPPING-STONE-PROTOCOL-001"],
       "limits": "The register mechanically validates graph/field/gate invariants, scoped holds and seven adverse mutations including global stall while runnable work exists; it does not prove semantic correctness, implementation, peer consensus or runtime behavior",
-      "next_action": "Obtain the scoped M03-S003 independent security/semantic review, then run M03-S013 integration"
+      "next_action": "Run M03-S013 integrated artifact/reference/consumer/readable-view reconciliation"
     },
     {
       "id": "HIRC-MILESTONE-02D",
@@ -1901,8 +1947,8 @@
       "path": "review/README.md",
       "status": "ACTIVE",
       "governed_scope": "internal_design_review",
-      "sha256": "cc696d89acc36785e2fdfee64f89e40ec1e58ae5aaad8e155c2b328142e8188a",
-      "bytes": 10236,
+      "sha256": "c47d8adb9ac2a20d04bc0180cb7ba49b781e5f649cd167c41d538aeb90f2ae87",
+      "bytes": 10598,
       "next_action": "Link the accepted consensus and final revisions when created"
     }
   ],

@@ -1,0 +1,62 @@
+{
+  "schema": "hirc.determinism-matrix-integrator-adverse-validation/1",
+  "stone": "M03-S003",
+  "integrator": {
+    "path": "review/integrate_determinism_decisions_matrix.py",
+    "sha256": "f81bfea37b66dd7b49cf2cb6ba839f481c35b13edb3c11c5568fcf0f395441ab"
+  },
+  "positive": {
+    "pass": true,
+    "errors": []
+  },
+  "adverse": [
+    {
+      "name": "duplicate_source_requirement_u188",
+      "expected_error": "duplicate-source-requirement-id:U188",
+      "errors": [
+        "duplicate-source-requirement-id:U188"
+      ],
+      "validation_pass": false,
+      "rejected": true
+    },
+    {
+      "name": "identical_duplicate_source_requirement_u188",
+      "expected_error": "duplicate-source-requirement-id:U188",
+      "errors": [
+        "duplicate-source-requirement-id:U188"
+      ],
+      "validation_pass": false,
+      "rejected": true
+    },
+    {
+      "name": "duplicate_map_requirement_u188",
+      "expected_error": "duplicate-map-requirement-id:U188",
+      "errors": [
+        "duplicate-map-requirement-id:U188"
+      ],
+      "validation_pass": false,
+      "rejected": true
+    },
+    {
+      "name": "duplicate_map_decision_dtm002",
+      "expected_error": "duplicate-map-decision-id:DTM-002",
+      "errors": [
+        "duplicate-map-decision-id:DTM-002"
+      ],
+      "validation_pass": false,
+      "rejected": true
+    },
+    {
+      "name": "changed_acceptance_u188",
+      "expected_error": "requirement-map-mismatch:U188:acceptance",
+      "errors": [
+        "requirement-map-mismatch:U188:acceptance"
+      ],
+      "validation_pass": false,
+      "rejected": true
+    }
+  ],
+  "all_adverse_rejected": true,
+  "review_finding": "WAYMARK-S003-001 duplicate source IDs must fail before dictionary indexing can coalesce conflicting rows.",
+  "claim": "Deterministic duplicate-ID and semantic-alignment regression only; not independent re-review, consensus, implementation or runtime evidence."
+}

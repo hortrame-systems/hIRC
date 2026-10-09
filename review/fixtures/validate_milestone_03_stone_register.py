@@ -173,6 +173,9 @@ def adverse_tests(data: dict) -> list[dict]:
     run("missing_adverse_cases", lambda d: d["stones"][3].update(adverse_cases=[]), "adverse_cases")
     run("missing_recovery", lambda d: d["stones"][4].update(recovery=""), "recovery")
     def make_global_stall(d: dict) -> None:
+        if d["execution_state"].get("runnable_stones"):
+            d["execution_state"]["state"] = "HELD"
+            return
         by_id = {stone["id"]: stone for stone in d["stones"]}
         by_id["M03-S012"]["status"] = "READY"
         d["execution_state"].update(
