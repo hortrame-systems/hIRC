@@ -33,6 +33,7 @@ contains commands or scripts.
 - [Security architecture candidate](lucent-security-architecture-candidate-v1.md)
 - [Foundation-kernel candidate](foundation-kernel-candidate-v1.md)
 - [Successor and whole-onboarding architecture candidate](successor-onboarding-architecture-candidate-v1.md)
+- [Generation-3 successor duty-to-role/source mapping](successor-role-source-mapping-g3-v1.json)
 - [Elder succession architecture supplement](successor-onboarding-architecture-supplement-2-elder.md)
 - [Agent sovereignty, instruction trust and cooperative competition candidate](agent-sovereignty-trust-competition-architecture-candidate-v1.md)
 - [Recursive Bayesian reliance supplement](agent-sovereignty-trust-competition-supplement-1.md)

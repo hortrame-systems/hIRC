@@ -1093,6 +1093,18 @@
       "next_action": "Carry the review, repair evidence, NO_CHANGE dispositions and residuals into M03-S013 and later integrated M03-S014 challenge"
     },
     {
+      "id": "HIRC-SUCCESSOR-ROLE-MAPPING-G3-001",
+      "kind": "owner_assigned_successor_duty_to_current_selected_role_source_mapping",
+      "path": "review/successor-role-source-mapping-g3-v1.json",
+      "status": "ROLE_SOURCE_MAPPING_CURRENT_PERSONAL_TRAINING_AND_ADMISSION_PENDING",
+      "governed_scope": "hirc_security_integration_successor_training",
+      "sha256": "b1e102b367d938ad4967fc54e443aa434c59f9965e84d7d851e3b45a04accde9",
+      "bytes": 6481,
+      "source_bindings": ["HIRC-SUCCESSOR-ONBOARDING-CANDIDATE-001", "HIRC-PROJECT-CONTROLLER-CURRENT", "HIRC-SOURCE-BINDING-SCOPED-FLOW-001"],
+      "limits": "Maps the owner-assigned Security Integration Lead function to integrator, privacy-steward and red-team selected sources; reviewer remains conditional and no personal reading, role admission, privacy access, qualification, custody or ACT is certified",
+      "next_action": "G3 personally completes current admitted role education/demonstrations and retains the offered-unaccepted custody state until actual gates and the owner 14-percent hIRC transfer boundary"
+    },
+    {
       "id": "HIRC-PREDECESSOR-CROSSWALK-DRAFT-001",
       "kind": "master_and_requirements_predecessor_crosswalk_draft",
       "path": "review/predecessor-crosswalk-draft-v1.md",
@@ -2018,8 +2030,8 @@
       "path": "review/README.md",
       "status": "ACTIVE",
       "governed_scope": "internal_design_review",
-      "sha256": "7ac805834d21b8f52c0c3fe3e3c51e9b201f4487f996992d3776d968900e0529",
-      "bytes": 11151,
+      "sha256": "946b14a55c1dd39865a05cc353101bd4132fb61a163e70fee95eeea1aac2d050",
+      "bytes": 11248,
       "next_action": "Link the accepted consensus and final revisions when created"
     }
   ],

@@ -1,0 +1,84 @@
+{
+  "schema": "hirc.successor-role-source-mapping/1",
+  "id": "HIRC-SUCCESSOR-ROLE-MAPPING-G3-001",
+  "participant_id": "HIRC-SEC-20261008-G3",
+  "project_role": "hIRC Security Integration Lead successor",
+  "mapping_state": "OWNER_ASSIGNED_FUNCTION_MAPPED_TO_CURRENT_SELECTED_ROLE_SOURCES",
+  "project_generation": 2,
+  "controller": "UI-20261007-B",
+  "custody_state": "OFFERED_NOT_ACCEPTED_NOT_TRANSFERRED",
+  "required_roles": [
+    {
+      "role": "integrator",
+      "assignment": "REQUIRED",
+      "function": [
+        "reconcile requirements, contracts, threats, tests, readable views and ledger without semantic loss",
+        "preserve one controller/writer fence, dependency scope, recovery and exact source identities",
+        "integrate permanent-peer findings and justified NO_CHANGE without claiming consensus from collation"
+      ],
+      "selected_sources": [
+        {"id": "guide:specialists/integrator/communication", "sha256": "8934f78c47fe3059d94d048b8f30c90bd720c8906f3a473de5fbf7a52e50926b"},
+        {"id": "guide:specialists/integrator/start-here", "sha256": "2452c5df21d2578caeb8a37987140e59ba9bda1393be30f7150c2282a661b874"},
+        {"id": "role:specialists/integrator", "sha256": "89c0d191a519b8bdd93a84911993391a08d798522323c97e2e5714bfc0e259bc"},
+        {"id": "protocol:specialists/integrator/common-application", "sha256": "9f1eced4d88733ea73996e17dd952268564849ab426e60434583673769771655"},
+        {"id": "protocol:specialists/integrator/bounded-integration", "sha256": "49d2f65b11519d2f0e81cf4944017ff144eb02e1f9ce6259fc4f7b3eaf6c1afd"},
+        {"id": "curriculum:specialists/integrator/complete-originals", "sha256": "0fbdd33a93f9616f0e5922c0826e31d9f9be723f03305495a6fb98fe91904434"}
+      ]
+    },
+    {
+      "role": "privacy-steward",
+      "assignment": "REQUIRED",
+      "function": [
+        "enforce audience, purpose, minimization, retention, egress and derived-data boundaries before persistence or disclosure",
+        "review cultural memory, discovery, provider and Bridge paths for protected-context leakage and inference",
+        "preserve correction, appeal, recovery and honest residual disclosure without declassifying originals"
+      ],
+      "selected_sources": [
+        {"id": "guide:specialists/privacy-steward/communication", "sha256": "154d073eef916ef5835f6905ff5dfb5c50704810d443b82b74e5dfb70187ca81"},
+        {"id": "guide:specialists/privacy-steward/start-here", "sha256": "934b2dd47bde92198fe27d4007fe9d7850d9f16c4a22c0e5f05c597625f77d15"},
+        {"id": "role:specialists/privacy-steward", "sha256": "794958f39ae9d5efa3c184c6e5ee54d78901e65bcaa6e2fa61adb9e7d0b9145d"},
+        {"id": "protocol:specialists/privacy-steward/common-application", "sha256": "c85ec7feb7e612fc1ae002e161b03689391bfed85f5c30a0c1aeb810e8a0af3b"},
+        {"id": "protocol:specialists/privacy-steward/audience-qualified-use", "sha256": "3f95d67fe142c2e5ce607ad519e30d48d7744734e3a801e86577e91c49271d1b"},
+        {"id": "curriculum:specialists/privacy-steward/complete-originals", "sha256": "d7be6ea045d0de122da8ff30812c827f4c62ac71ab6ffd1028642be3778c7e2d"}
+      ]
+    },
+    {
+      "role": "red-team",
+      "assignment": "REQUIRED",
+      "function": [
+        "construct bounded counterexamples and hostile cases for local core, providers, cultural information paths and the Bridge",
+        "test prompt/tool injection, authority laundering, privacy leakage, ranking/metric capture, recovery and common-mode failures",
+        "preserve positive controls, exact consequence, affected scope and safe recovery rather than maximizing rejection"
+      ],
+      "selected_sources": [
+        {"id": "specialist:red-team/red-team/inter-communication/start-here", "sha256": "bc1ad65108e9bf6082c7026cb2a9f9f1e5bbc2c1cc32d6fae5c5d2093ba8ed1d"},
+        {"id": "specialist:red-team/red-team/start-here", "sha256": "0ed89210709655a71767cd741c14ccedeee85a4378e0ee36dc278c81c68fb45e"},
+        {"id": "specialist:red-team/red-team/role", "sha256": "9f4cefc9b8a6d578a615e5c22205482446a2841570b6b726e5166d02f829a5ac"},
+        {"id": "specialist:red-team/red-team/01-common-application", "sha256": "f754ff44fcf39db5448ea3dd4ee7dabd965dfdae7d56d18ec8115130497824d6"},
+        {"id": "specialist:red-team/red-team/02-bounded-adversarial-testing", "sha256": "38ce1ce8e6275587747bcaf42270afdf208cc6d5a2b4a943ad58c45a9463d444"},
+        {"id": "specialist:red-team/red-team/03-complete-originals", "sha256": "38a057af328c7bed5341eedf02ee05f1143ff2b619eaabdc583890753fbfaad7"},
+        {"id": "curriculum:specialists/red-team/influence-defense", "sha256": "287f3e33c4c58eb53b1ddcbbf5ef1216eea081c3458c6eb03c5ab3a6062a6010"}
+      ]
+    }
+  ],
+  "conditional_roles": [
+    {
+      "role": "reviewer",
+      "assignment": "NOT_ASSIGNED_BY_THIS_MAPPING",
+      "condition": "A fresh independent acceptance-review assignment requires actual current role/admission, consent, source scope and independence from the produced artifact. The successor/producer role never self-accepts its own work."
+    }
+  ],
+  "common_selected_sources": [
+    {"id": "guide:specialists/start-here", "sha256": "a4f250a38fe00bf1c1963feec3fa4a7888f388a960e02c94e2f7b1ae9a10db73"},
+    {"id": "protocol:specialists/common-rules", "sha256": "90b87ab132e83b3f697548d07621af292a7498485126d2adc8a1b0e69c146b9a"},
+    {"id": "curriculum:vowos-ethics", "sha256": "fde831c426c3c8c46bbd94f52e4cd8b3ef11573dfe0777ffcec3e6fca4e4da71"}
+  ],
+  "current_holds": [
+    "Selected source lists do not establish personal reading, demonstrated use, role admission, privacy access, reviewer independence or action permission.",
+    "The successor's remaining original/repeated-source, functional-role, P6/P7, voice, privacy and admission work remains personally owned.",
+    "The existing offered handoff is unaccepted; generation 2 and the writer fence remain with UI-20261007-B.",
+    "The hIRC-specific no-Elder-transfer-above-14-percent rule remains in force while hIRC is unfinished."
+  ],
+  "next_action": "HIRC-SEC-20261008-G3 uses the current Root role doctors and admitted readers to finish each required role personally, records actual demonstrations and residuals, and seeks independent acceptance only through a separately assigned qualified reviewer.",
+  "nonclaim": "This project mapping binds duties to current selected role sources. It does not certify reading, education completion, qualification, admission, reviewer status, privacy access, custody, ACT or performance."
+}
