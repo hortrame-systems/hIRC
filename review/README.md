@@ -85,6 +85,8 @@ contains commands or scripts.
 - [Milestone 03 integrated matrix validation](fixtures/m03-integrated-matrix-validation-v1.json)
 - [Milestone 03 cross-artifact integration closure](m03-integration-closure-v1.md)
 - [Milestone 03 integration validator](validate_m03_integration.py)
+- [M03-S014 integrated review request](m03-s014-integrated-review-request-v1.md)
+- [M03-S014 pre-request ledger snapshot](m03-s014-ledger-snapshot-v1.json)
 - [Cultural-decision matrix integrator](integrate_cultural_decisions_matrix.py)
 - [Cultural-decision matrix integration validation](fixtures/cultural-matrix-integration-validation.json)
 - [Master Plan 1.0 → 1.1 predecessor crosswalk draft](predecessor-crosswalk-draft-v1.md)

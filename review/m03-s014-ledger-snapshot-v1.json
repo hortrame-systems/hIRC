@@ -1901,25 +1901,6 @@
       "next_action": "Freeze this exact packet for M03-S014 independent integrated challenge"
     },
     {
-      "id": "HIRC-M03-S014-REVIEW-REQUEST-001",
-      "kind": "hash_bound_integrated_product_security_privacy_anti_domination_review_request",
-      "path": "review/m03-s014-integrated-review-request-v1.md",
-      "status": "READY_FOR_ACTUAL_PERMANENT_REVIEWER_COVERAGE",
-      "governed_scope": "milestone_03_integrated_permanent_peer_challenge",
-      "sha256": "2f74985aa234deecb6fe3ba7534eb5a6ea6e83a88a0458d4f125788e32d9fe99",
-      "bytes": 7834,
-      "members": [
-        {
-          "path": "review/m03-s014-ledger-snapshot-v1.json",
-          "sha256": "97b4e2cd9d357ef40d799a91633c8fe3ec9049659ee81240f1d68798c2aa4112",
-          "bytes": 105880
-        }
-      ],
-      "source_bindings": ["HIRC-M03-INTEGRATION-CLOSURE-001", "HIRC-JOINT-CONSENSUS-DRAFT-008", "HIRC-MASTER-DRAFT-BUNDLE-001", "HIRC-M03-STONE-REGISTER-001"],
-      "limits": "Defines an exact read-only packet and required reviewer-dimension coverage; delivery or a title does not establish qualification, consent, completed reading, review, consensus, implementation, release or custody",
-      "next_action": "Obtain actual product/interaction, security, privacy, accessibility, anti-domination and metric-integrity challenge and reconcile every material finding or warranted NO_CHANGE"
-    },
-    {
       "id": "HIRC-MASTER-DRAFT-BUNDLE-001",
       "kind": "integrated_master_and_requirements_working_draft_bundle",
       "path": "drafts/README.md",
@@ -2018,8 +1999,8 @@
       "path": "review/README.md",
       "status": "ACTIVE",
       "governed_scope": "internal_design_review",
-      "sha256": "7ac805834d21b8f52c0c3fe3e3c51e9b201f4487f996992d3776d968900e0529",
-      "bytes": 11151,
+      "sha256": "7b067d28853e26706fb9cd11100d71d4051d534f0299e59e48e89a5cb4452688",
+      "bytes": 10995,
       "next_action": "Link the accepted consensus and final revisions when created"
     }
   ],
