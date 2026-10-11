@@ -1,0 +1,23 @@
+{
+  "schema": "hirc.m03-s015-public-push-receipt/1",
+  "status": "CONTENT_COMMIT_REMOTE_VERIFIED",
+  "branch": "codex/hirc-master-plan-security",
+  "content_commit": "df5b72713f0127e0789652f20870709827441c9f",
+  "remote_observation": {
+    "method": "git ls-remote origin refs/heads/codex/hirc-master-plan-security",
+    "observed_commit": "df5b72713f0127e0789652f20870709827441c9f",
+    "observed_at_utc": "2026-10-11T01:42:45.1396874Z",
+    "matched": true
+  },
+  "content": {
+    "commit_subject": "feat(hirc): complete milestone 03 alpha",
+    "files_changed": 182,
+    "publication_manifest_files": 180,
+    "validators": 21,
+    "tests": 140,
+    "expected_release_failures": 3
+  },
+  "privacy": "The content commit was staged from the validated public manifest. Private coordination, native chat identifiers, runtime-agent paths and owner-private evidence were excluded.",
+  "receipt_commit": "The Git commit containing this file publishes the observed content-commit receipt; its remote presence is verified separately before S015 becomes PASS.",
+  "nonclaim": "This receipt proves the observed branch ref for the content commit only. It does not establish release readiness, production, Bridge activation or the absence of unknown vulnerabilities."
+}
