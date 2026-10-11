@@ -1,0 +1,11 @@
+"""Single-owner constants shared by deterministic executable validators."""
+
+FULL_SUITE_TESTS = 140
+EXPECTED_RELEASE_FAILURES = 3
+ADAPTER_TESTS = 16
+DECISION_TESTS = 10
+MIGRATION_TESTS = 11
+OUTBOX_TESTS = 13
+RECOVERY_TESTS = 7
+STORE_TESTS = 13
+WITNESS_TESTS = 8

@@ -1,0 +1,125 @@
+{
+  "schema": "hirc.synthetic-evidence-resolver/1",
+  "entries": [
+    {
+      "ref": "synthetic:metric-signature",
+      "locator": "resolver:synthetic:metric-signature",
+      "content_sha256": "a8ebc6a3637249b9b70dc2358614e04f48854861af1c4aa6d87219d80eeb5a8f",
+      "content_bytes": 164,
+      "payload": {
+        "schema": "synthetic.verification-evidence/1",
+        "ref": "synthetic:metric-signature",
+        "observed_result": "PASS",
+        "basis": "bounded synthetic evidence for resolver testing"
+      }
+    },
+    {
+      "ref": "REF:EVALUATOR-ASSESSMENT",
+      "locator": "resolver:REF:EVALUATOR-ASSESSMENT",
+      "content_sha256": "ca0091e539b4cb1192903c1ff4dceea3b54c521f6fc5624c98706b585875d74f",
+      "content_bytes": 162,
+      "payload": {
+        "schema": "synthetic.verification-evidence/1",
+        "ref": "REF:EVALUATOR-ASSESSMENT",
+        "observed_result": "PASS",
+        "basis": "bounded synthetic evidence for resolver testing"
+      }
+    },
+    {
+      "ref": "REF:PRIOR-UNCERTAINTY",
+      "locator": "resolver:REF:PRIOR-UNCERTAINTY",
+      "content_sha256": "ddca9c62171c2334a7643fc2c84379ff6923579965fa6bb9c7516d9a95076533",
+      "content_bytes": 159,
+      "payload": {
+        "schema": "synthetic.verification-evidence/1",
+        "ref": "REF:PRIOR-UNCERTAINTY",
+        "observed_result": "PASS",
+        "basis": "bounded synthetic evidence for resolver testing"
+      }
+    },
+    {
+      "ref": "REF:POSTERIOR-UNCERTAINTY",
+      "locator": "resolver:REF:POSTERIOR-UNCERTAINTY",
+      "content_sha256": "90d34939bcdd56c4dc86da6bf5b02f246f28419b604e0df4b7a7d274dd787b13",
+      "content_bytes": 163,
+      "payload": {
+        "schema": "synthetic.verification-evidence/1",
+        "ref": "REF:POSTERIOR-UNCERTAINTY",
+        "observed_result": "PASS",
+        "basis": "bounded synthetic evidence for resolver testing"
+      }
+    },
+    {
+      "ref": "synthetic:calibration",
+      "locator": "resolver:synthetic:calibration",
+      "content_sha256": "ce31ded809c8e9fb98f7694968204ec7970d12a450f0c416157a6102ebada107",
+      "content_bytes": 159,
+      "payload": {
+        "schema": "synthetic.verification-evidence/1",
+        "ref": "synthetic:calibration",
+        "observed_result": "PASS",
+        "basis": "bounded synthetic evidence for resolver testing"
+      }
+    },
+    {
+      "ref": "synthetic:drift",
+      "locator": "resolver:synthetic:drift",
+      "content_sha256": "006977707fb17e32950665b35a3ce0ca5fd54cec38631e2f4ebdcd2e55e7ac45",
+      "content_bytes": 153,
+      "payload": {
+        "schema": "synthetic.verification-evidence/1",
+        "ref": "synthetic:drift",
+        "observed_result": "PASS",
+        "basis": "bounded synthetic evidence for resolver testing"
+      }
+    },
+    {
+      "ref": "synthetic:prior-sensitivity",
+      "locator": "resolver:synthetic:prior-sensitivity",
+      "content_sha256": "8f264396ce4794bc15052ffa19f7161bc09b57eef5b9fcd588b3209b51214671",
+      "content_bytes": 165,
+      "payload": {
+        "schema": "synthetic.verification-evidence/1",
+        "ref": "synthetic:prior-sensitivity",
+        "observed_result": "PASS",
+        "basis": "bounded synthetic evidence for resolver testing"
+      }
+    },
+    {
+      "ref": "synthetic:ppc",
+      "locator": "resolver:synthetic:ppc",
+      "content_sha256": "09fff56f14761674aa47ee088f4df8c3b16c951e73b40c4309b965cf3c2d50e7",
+      "content_bytes": 151,
+      "payload": {
+        "schema": "synthetic.verification-evidence/1",
+        "ref": "synthetic:ppc",
+        "observed_result": "PASS",
+        "basis": "bounded synthetic evidence for resolver testing"
+      }
+    },
+    {
+      "ref": "synthetic:dependence",
+      "locator": "resolver:synthetic:dependence",
+      "content_sha256": "49f21a4648a93bb8d2fc5a43e066fadd100947c5b0ccc5f3e67025b9ce27c7a7",
+      "content_bytes": 158,
+      "payload": {
+        "schema": "synthetic.verification-evidence/1",
+        "ref": "synthetic:dependence",
+        "observed_result": "PASS",
+        "basis": "bounded synthetic evidence for resolver testing"
+      }
+    },
+    {
+      "ref": "synthetic:missingness",
+      "locator": "resolver:synthetic:missingness",
+      "content_sha256": "393d0f81f5e5e2b9aac5585f2d38e322998bc1cb9fc2da8c3259bddc7675228e",
+      "content_bytes": 159,
+      "payload": {
+        "schema": "synthetic.verification-evidence/1",
+        "ref": "synthetic:missingness",
+        "observed_result": "PASS",
+        "basis": "bounded synthetic evidence for resolver testing"
+      }
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "schema": "hirc.m08-s011-validation/1",
+  "stone": "M08-S011",
+  "status": "PASS_READ_ONLY_VERIFICATION_SCOPE",
+  "checks": {
+    "failed_baseline_preserved": true,
+    "projection_baseline_preserved": true,
+    "store_tests_pass": true,
+    "store_test_count": true,
+    "read_only_regression_present": true,
+    "full_suite_pass": true,
+    "full_suite_test_count": true,
+    "expected_release_failures_preserved": true
+  },
+  "files": [
+    {
+      "path": "implementation/M08_RELEASE_HARDENING_PLAN.md",
+      "sha256": "0e2b21a00be42a7ec56773742486b8fcfd9b2fea40b0dd460268f3c2a7779df6",
+      "bytes": 6363
+    },
+    {
+      "path": "implementation/m08-s011-validation-v1-failed.json",
+      "sha256": "1ee1a9ff093259a51d5c34ac048d6adda57dc1699799514a27da55f0f865328f",
+      "bytes": 1184
+    },
+    {
+      "path": "implementation/m08-s011-validation-v2-failed.json",
+      "sha256": "7919fe6d744cedd3d8013423fc4ae51edafff1b04cf0c8f7f4a2ad3832f742b2",
+      "bytes": 1094
+    },
+    {
+      "path": "implementation/validate_m08_s011.py",
+      "sha256": "cb74978509a91231352b9598118174152fccf764ff2e42d6ccd17c7845647df1",
+      "bytes": 3923
+    },
+    {
+      "path": "implementation/validation_config.py",
+      "sha256": "6d79c9cfc737f963cf2d30202c59dc2d061e8a8b7b80a12251c0e4434d04f884",
+      "bytes": 262
+    },
+    {
+      "path": "src/hirc/store.py",
+      "sha256": "81dd7bb2541509082deb29d00d834ec4ec001584f7a175ae58fd376b0a07f79c",
+      "bytes": 34935
+    },
+    {
+      "path": "tests/test_store.py",
+      "sha256": "99d3be0598f08dcc6727cf16c81823b1e75fdcc5bd1534fc12a6fe9cdedadc5c",
+      "bytes": 11796
+    }
+  ],
+  "store_test_output": [
+    "test_correction_cannot_change_target_information_boundary (test_store.StoreTests.test_correction_cannot_change_target_information_boundary) ... ok",
+    "test_correction_cannot_target_missing_event (test_store.StoreTests.test_correction_cannot_target_missing_event) ... ok",
+    "test_correction_requires_and_preserves_target (test_store.StoreTests.test_correction_requires_and_preserves_target) ... ok",
+    "test_effectful_action_requires_authority (test_store.StoreTests.test_effectful_action_requires_authority) ... ok",
+    "test_initial_state_disables_every_high_risk_capability (test_store.StoreTests.test_initial_state_disables_every_high_risk_capability) ... ok",
+    "test_ordinary_update_and_delete_are_denied (test_store.StoreTests.test_ordinary_update_and_delete_are_denied) ... ok",
+    "test_payload_depth_size_and_utf8_limits_fail_closed (test_store.StoreTests.test_payload_depth_size_and_utf8_limits_fail_closed) ... ok",
+    "test_plaintext_status_is_explicit_and_sensitive_mode_fails_closed (test_store.StoreTests.test_plaintext_status_is_explicit_and_sensitive_mode_fails_closed) ... ok",
+    "test_same_inputs_produce_same_first_event_identity (test_store.StoreTests.test_same_inputs_produce_same_first_event_identity) ... ok",
+    "test_verifier_detects_privileged_tampering (test_store.StoreTests.test_verifier_detects_privileged_tampering) ... ok",
+    "test_verifier_rejects_noncanonical_duplicate_key_payload (test_store.StoreTests.test_verifier_rejects_noncanonical_duplicate_key_payload) ... ok",
+    "test_verifier_rejects_self_rehashed_impossible_correction_history (test_store.StoreTests.test_verifier_rejects_self_rehashed_impossible_correction_history) ... ok",
+    "test_verify_and_status_use_read_only_connections (test_store.StoreTests.test_verify_and_status_use_read_only_connections) ... ok",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 13 tests in 1.279s",
+    "",
+    "OK"
+  ],
+  "full_suite_output": [
+    ".................................................................xxx........................................................................",
+    "----------------------------------------------------------------------",
+    "Ran 140 tests in 20.149s",
+    "",
+    "OK (expected failures=3)"
+  ],
+  "repair": {
+    "finding_id": "M08-S011-F001",
+    "verify_read_only_default": true,
+    "status_read_only": true,
+    "iter_events_read_only": true,
+    "verified_snapshot_read_only": true,
+    "append_and_migration_explicitly_writable": true
+  },
+  "surviving_limits": [
+    "SQLite read-only mode does not protect against another privileged process mutating the file concurrently; verified snapshots and external witnesses remain required.",
+    "Filesystem and SQLite may still read WAL/journal state; this result only establishes the connection mode used by hIRC.",
+    "Live storage remains plaintext and independent penetration review remains open."
+  ],
+  "nonclaim": "M08-S011 local read-only verification connection repair only; not complete frozen-log or release assurance."
+}

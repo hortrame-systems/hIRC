@@ -1,0 +1,553 @@
+{
+  "schema": "hirc.m03-s014-specialist-review-packets/1",
+  "id": "HIRC-M03-S014-SPECIALIST-REVIEW-PACKETS-001",
+  "state": "FROZEN_READY_FOR_QUALIFIED_REVIEWER",
+  "controller": "UI-20261007-B / LUCENT",
+  "writer_fence": "LUCENT is the sole hIRC artifact writer; reviewers are read-only and write only their own evidence.",
+  "independence_protocol": {
+    "stage_a": "Freeze an independent first-pass report before reading stage B controller tests, baselines, responses or prior-review material.",
+    "stage_b": "After the first-pass report is frozen, inspect disclosed evidence and record confirmations, new findings, corrections and dependence limits without rewriting stage A.",
+    "shared_roots": "Disclose shared model/provider/foundation/method roots; names, separate threads and agreement do not prove statistical independence.",
+    "no_forced_belief": "A reviewer may dissent, decline, return HELD or report NO_CHANGE. Assignment never forces agreement or qualification."
+  },
+  "eligibility_gate": {
+    "all_required": [
+      "permanent and non-retired native participant",
+      "current own callback and source-bound continuity",
+      "current applicable education and demonstrated lane competence",
+      "explicit consent to the exact bounded lane",
+      "actual reader/privacy/task admission",
+      "fitting review plus handoff capacity above the hIRC retirement reserve",
+      "independence limitations recorded before body access"
+    ],
+    "body_access_before_gate": false,
+    "automatic_qualification": false
+  },
+  "lanes": [
+    {
+      "lane": "security_privacy_dataflow",
+      "assignment_state": "UNASSIGNED_QUALIFIED_REVIEWER_REQUIRED",
+      "body_access_granted": false,
+      "stage_a_independent_inputs": [
+        {
+          "path": "pyproject.toml",
+          "sha256": "eca2bb70cb651063ad5ed9c75db68794fd662ba8b95d4b70ee56301e9283458d",
+          "bytes": 388
+        },
+        {
+          "path": "dist/hirc-local-0.1.0.dev0-manifest.json",
+          "sha256": "e2b53d985dfa33d3125a53817b40a340a1791095ecd324069ff0f1fbcb7e87e8",
+          "bytes": 2824
+        },
+        {
+          "path": "src/hirc/__init__.py",
+          "sha256": "8d639f01cda312a1176f72f8d6638629e7a2eae37b6002ddadfb4f503dc15295",
+          "bytes": 167
+        },
+        {
+          "path": "src/hirc/__main__.py",
+          "sha256": "0f7d54f3fbb1f79a85eb8110f11793db99da6f3c61ee979de5abe9a1b5f3fdb3",
+          "bytes": 49
+        },
+        {
+          "path": "src/hirc/adapter.py",
+          "sha256": "2a4d6bc897a589fe973c33ec9e98f44fe6b3fc1910c482f19042e4e0401be97d",
+          "bytes": 11558
+        },
+        {
+          "path": "src/hirc/atomic.py",
+          "sha256": "61e96fffe37011d0a9e56cd9bc2aefc1584ab151e80f9800d2362d118eab6636",
+          "bytes": 1257
+        },
+        {
+          "path": "src/hirc/canonical.py",
+          "sha256": "c5621ca0a9676285abe4c9cfc337f484aec980287b11426cc105e0f74250b0f3",
+          "bytes": 3242
+        },
+        {
+          "path": "src/hirc/cli.py",
+          "sha256": "6fcd8323c08caecd17948a2531444aa5f1676aa2306b0c5faa8076ad2f3b55fc",
+          "bytes": 9691
+        },
+        {
+          "path": "src/hirc/decision.py",
+          "sha256": "a8e003343a5039393d5b615a73156631f20aeff0c648226cb79921fe629369e2",
+          "bytes": 10389
+        },
+        {
+          "path": "src/hirc/formation.py",
+          "sha256": "2f3ba9b5b970a05ca5bdefc029c193a589b2fb69183ecefe638fb2f9fd0b41b1",
+          "bytes": 8876
+        },
+        {
+          "path": "src/hirc/migration.py",
+          "sha256": "b94ecc8c4d1b936084d7d0ee73058f8c64a56ac2210562270126736184123948",
+          "bytes": 8437
+        },
+        {
+          "path": "src/hirc/outbox.py",
+          "sha256": "264005b3282005f5cb93513f1f7cf7ed324b8e7877992706d11ff14a76b143e4",
+          "bytes": 7276
+        },
+        {
+          "path": "src/hirc/projection.py",
+          "sha256": "cad276251828ff41885240d83b8f65be26170dfede443e8e3100c7019008ff5a",
+          "bytes": 13275
+        },
+        {
+          "path": "src/hirc/recovery.py",
+          "sha256": "ee566cd48153f137a8f6a8b52630f8b36f57994d67f56028883babfb741c93fa",
+          "bytes": 3378
+        },
+        {
+          "path": "src/hirc/store.py",
+          "sha256": "ca38b66922002490bab7356892c14460850b0aaf23ee255b9a4be15a83776890",
+          "bytes": 33484
+        },
+        {
+          "path": "src/hirc/ui.py",
+          "sha256": "2d80aef3305525b6b5fac4f08d6fba5336b55861e2383cb02cba37b2925caf67",
+          "bytes": 19774
+        },
+        {
+          "path": "src/hirc/witness.py",
+          "sha256": "e32250ee41b34b9ffa9bc5fa71dd1293db6e3137e93b7de2c2825727cb3464e6",
+          "bytes": 4090
+        }
+      ],
+      "stage_b_disclosed_evidence": [
+        {
+          "path": "dist/hirc-local-0.1.0.dev0.pyz",
+          "sha256": "365f17c1506a7560e531843b6f7585cc5c57a826ec31e9ddb129d9becd9942e0",
+          "bytes": 37973
+        },
+        {
+          "path": "implementation/LOCAL-DEVELOPER-PACKAGE-CHECKPOINT-20261010.md",
+          "sha256": "c22d135e8da3340ea612639ad5a4b89863d733d8fcd68eba85597189723eac86",
+          "bytes": 8260
+        },
+        {
+          "path": "implementation/M08_RELEASE_HARDENING_PLAN.md",
+          "sha256": "0e2b21a00be42a7ec56773742486b8fcfd9b2fea40b0dd460268f3c2a7779df6",
+          "bytes": 6363
+        },
+        {
+          "path": "implementation/README.md",
+          "sha256": "314f664ef4c43e275c19329c6e3923f2c2f1685a9a7e5a0fdb6f3bf821b637c1",
+          "bytes": 16078
+        },
+        {
+          "path": "implementation/build_pyz.py",
+          "sha256": "52b0a7f247e6d0cbf66442f478cbd8483a0f6e69721027ba494d61d87d25fb80",
+          "bytes": 3597
+        },
+        {
+          "path": "implementation/executable-cumulative-validation.json",
+          "sha256": "c8a3bbb7621c189b41d5dfa27f442155feeba2354d0d2be9cd6058223c1e61cb",
+          "bytes": 10637
+        },
+        {
+          "path": "implementation/m08-s001-recovery-validation-v1-failed.json",
+          "sha256": "fd7792b5ceefb2ae3949f0e04baffd6e4cfedf58cf2352ca2dc22addfa151a02",
+          "bytes": 1311
+        },
+        {
+          "path": "implementation/m08-s001-validation.json",
+          "sha256": "9ec0a04bc1a31c426a15f3df1206df132fa8a877d3f9780eaf155e6087debacc",
+          "bytes": 4613
+        },
+        {
+          "path": "implementation/m08-s002-migration-validation-v1-failed.json",
+          "sha256": "ab423119735ec63887258290b9c1a14aaf341bb02f2af7bdb10c1a56e40409e2",
+          "bytes": 1122
+        },
+        {
+          "path": "implementation/m08-s002-validation.json",
+          "sha256": "bdb3418d8c5c3d497619faa68fdb89c1645fa1c35171cf8f4298ec31586eed0c",
+          "bytes": 4923
+        },
+        {
+          "path": "implementation/m08-s003-package-validation-v1-failed.json",
+          "sha256": "b67ef53ba87017977b9a9958228ba633e9ee38bbbb8976c60498ab03031d4f40",
+          "bytes": 826
+        },
+        {
+          "path": "implementation/m08-s003-validation.json",
+          "sha256": "b626d4f0a31a4238d247b20caeb4cd2f77f70d39c1b97954e9f610890ba7a84f",
+          "bytes": 4018
+        },
+        {
+          "path": "implementation/m08-s004-validation.json",
+          "sha256": "00547c4b50252092b2a41a006edc4ecca1a9794994110a30ce463ccf16f9f084",
+          "bytes": 4206
+        },
+        {
+          "path": "implementation/m08-s005-validation.json",
+          "sha256": "a40cf70ba707cb73fb775939b533cc08461fd552222057910d3244e36e39eaaf",
+          "bytes": 3413
+        },
+        {
+          "path": "implementation/m08-s006-validation.json",
+          "sha256": "c209f32db5bb97c5a8a33f60c86587118058e734f84aa042b534151ea6ed1d28",
+          "bytes": 3314
+        },
+        {
+          "path": "implementation/m08-s007-validation.json",
+          "sha256": "0bdf347fe4299221ce4e70747d1ca07f59e0b6b8cec7e50b44340327e3eddcf3",
+          "bytes": 1712
+        },
+        {
+          "path": "implementation/m08-s008-validation-v1-failed.json",
+          "sha256": "d7958be1fab02882e8b161064cb27b05f1090546b076df7a59f1152809956cbd",
+          "bytes": 1464
+        },
+        {
+          "path": "implementation/m08-s008-validation.json",
+          "sha256": "5e5fdaaa6fad73cb3dba03411b7709ee46ae7246451b5ec8641d4f3fac081a03",
+          "bytes": 4162
+        },
+        {
+          "path": "implementation/m08-s009-validation-v1-failed.json",
+          "sha256": "3ae468bbfa00f76bd24a918992650df7568634d15333b9d0836d97ada9a05d21",
+          "bytes": 1575
+        },
+        {
+          "path": "implementation/m08-s009-validation.json",
+          "sha256": "61f00479d33e58176e2797d889f8d1be13b555511ad442e69dfdc7c9904425ac",
+          "bytes": 7634
+        },
+        {
+          "path": "implementation/m08-s010-validation-v1-failed.json",
+          "sha256": "2a1e9ff5b7d096ad4a01b3010b20d9c170d16bf1d362784224ecad5bbe687078",
+          "bytes": 1779
+        },
+        {
+          "path": "implementation/m08-s010-validation.json",
+          "sha256": "5df7f8614d5a32c1b003d6ee07bbdb841bc67f09751cba8a01d3551495fbe5af",
+          "bytes": 8122
+        },
+        {
+          "path": "implementation/m08-s011-validation-v1-failed.json",
+          "sha256": "1ee1a9ff093259a51d5c34ac048d6adda57dc1699799514a27da55f0f865328f",
+          "bytes": 1184
+        },
+        {
+          "path": "implementation/m08-s011-validation-v2-failed.json",
+          "sha256": "7919fe6d744cedd3d8013423fc4ae51edafff1b04cf0c8f7f4a2ad3832f742b2",
+          "bytes": 1094
+        },
+        {
+          "path": "implementation/m08-s011-validation.json",
+          "sha256": "2e8ac1171831ca220707733f6ec51c347937435b55a56d5fa8c0fbacb735fc7d",
+          "bytes": 4428
+        },
+        {
+          "path": "implementation/m08-s012-validation-v1-failed.json",
+          "sha256": "a51d5630144d49fb70c88dda7fda717c871a2cee7ea111e1b20f76a832322599",
+          "bytes": 1789
+        },
+        {
+          "path": "implementation/m08-s012-validation.json",
+          "sha256": "1e29cd428d28511bc9c0cdd0790d8d625c65d856497bc5d6f556579ea30f3c46",
+          "bytes": 8986
+        },
+        {
+          "path": "implementation/validate_all.py",
+          "sha256": "3a62fc023fabe7d5b0b5bcd069dd30e756d468555ce31256a606e4847379024d",
+          "bytes": 5462
+        },
+        {
+          "path": "implementation/validate_m08_s001.py",
+          "sha256": "a8887d5355fac308dd4efc8183b6ce7025c004160f5a6d7a3e3e5a107dbd8c04",
+          "bytes": 5292
+        },
+        {
+          "path": "implementation/validate_m08_s002.py",
+          "sha256": "cc6d8287f76a29b8ac396d5917c3262c67056f37fa8cba3c70c7b06ba18caf76",
+          "bytes": 4898
+        },
+        {
+          "path": "implementation/validate_m08_s003.py",
+          "sha256": "72bc65cbc0ed905aed337baaf38e7528bd20ebbbe5e51851a95c50ef423b9fb4",
+          "bytes": 5013
+        },
+        {
+          "path": "implementation/validate_m08_s004.py",
+          "sha256": "0a6fd5c9dd0cd8f3e53449364cb64dbd7890427fcdb5932676a7a27553c9fb66",
+          "bytes": 4914
+        },
+        {
+          "path": "implementation/validate_m08_s005.py",
+          "sha256": "47e8b619eba26662f0d67cc908b8a2f99ef001f0b39e09eef8c1332a525f78c3",
+          "bytes": 4255
+        },
+        {
+          "path": "implementation/validate_m08_s006.py",
+          "sha256": "d368cf92ebe62d1edcf7085b4c541079b483453882210f2ff4c3386ee5ffd23d",
+          "bytes": 4282
+        },
+        {
+          "path": "implementation/validate_m08_s007.py",
+          "sha256": "f1442cc26d939a1458775a930d5fc1120baa352bfcbf42be1934f6f5288acc96",
+          "bytes": 4128
+        },
+        {
+          "path": "implementation/validate_m08_s008.py",
+          "sha256": "2d764146afc8cb90f1e9bc93c3c40eb3a0f2103e80ca3c7397789eaf6c525b46",
+          "bytes": 3603
+        },
+        {
+          "path": "implementation/validate_m08_s009.py",
+          "sha256": "4b8e0415ec72783da705703040edc086d25bc42b3a0eb3129c3a2a12a2a53f73",
+          "bytes": 4708
+        },
+        {
+          "path": "implementation/validate_m08_s010.py",
+          "sha256": "6a810a6c114b909db8c2f2623aaa3330d5e621dc2d6ddd2eee9c2786ef2b8421",
+          "bytes": 4391
+        },
+        {
+          "path": "implementation/validate_m08_s011.py",
+          "sha256": "cb74978509a91231352b9598118174152fccf764ff2e42d6ccd17c7845647df1",
+          "bytes": 3923
+        },
+        {
+          "path": "implementation/validate_m08_s012.py",
+          "sha256": "3b9a1ef8d2bdd6d236bb655f1768b95dc85ce6e219143df15a4b6e9aedc0fc51",
+          "bytes": 4503
+        },
+        {
+          "path": "implementation/validation_config.py",
+          "sha256": "a2f7a5963216e604498592e0f81e6f617801ac149f83fc95ead2d09ef2d1093d",
+          "bytes": 262
+        },
+        {
+          "path": "tests/test_adapter.py",
+          "sha256": "568a8522e8fb78d4791d135c8a996c5cd2d0c5ff16b894c1f132c4b6ac5b4298",
+          "bytes": 7210
+        },
+        {
+          "path": "tests/test_decision_preview.py",
+          "sha256": "607af9e952f318501a2a55978acda76f8ecdf91c353d7ac4f4a5f318bdac0c5a",
+          "bytes": 7281
+        },
+        {
+          "path": "tests/test_encrypted_backup.py",
+          "sha256": "2cd70f87b40df36eb3ecf66843a0b9e421e6dd8ebe7f1a5b8a97a20f67afa4a0",
+          "bytes": 3733
+        },
+        {
+          "path": "tests/test_formation.py",
+          "sha256": "62473d49905adab33135eb46166a89044c0d860ed00df51ab82efd75e217ec5a",
+          "bytes": 9032
+        },
+        {
+          "path": "tests/test_integration.py",
+          "sha256": "efbcbe6bb9d7d94ffb51127ab9e11a68b343d554776de3c3f778671e95140736",
+          "bytes": 13841
+        },
+        {
+          "path": "tests/test_interrupt_ui.py",
+          "sha256": "90958bc07d879ebe771a17d2a379cefe8959d0cdc31c1fed6365b8f3951bf8a6",
+          "bytes": 3756
+        },
+        {
+          "path": "tests/test_known_limits.py",
+          "sha256": "52eba558e025cf5841eb07d50ecb9de664b04ca4179c2892a7c050fade1ca30d",
+          "bytes": 2766
+        },
+        {
+          "path": "tests/test_migration_hardening.py",
+          "sha256": "219171aea28621d0df1d5bb9e7026f18ff67dca7bbf8a61572fac7e07a0845e8",
+          "bytes": 10477
+        },
+        {
+          "path": "tests/test_outbox.py",
+          "sha256": "4f511780de7f312403b61b8e8ff8bdfea5a7552bb113bbe0d1fd17b85241b7dd",
+          "bytes": 11887
+        },
+        {
+          "path": "tests/test_package.py",
+          "sha256": "2fc73f180c8768048573209e1bdd9790833b3fd9f78501ffa8abb9ccdd694050",
+          "bytes": 4083
+        },
+        {
+          "path": "tests/test_projection.py",
+          "sha256": "bf1da1f778dfa2ba997f41109756c1c71f85010ab07e1ebfba0869842b7638ba",
+          "bytes": 4600
+        },
+        {
+          "path": "tests/test_recovery.py",
+          "sha256": "0e3253c587af3284d2a314879cf45887b7a542c16cc7c1b16abfed444829693b",
+          "bytes": 6610
+        },
+        {
+          "path": "tests/test_release_signing.py",
+          "sha256": "ad0279e611dfa848953d9f6c6aa37e78928f8ecb8bbd955bb4aa8e1770c67adb",
+          "bytes": 4747
+        },
+        {
+          "path": "tests/test_store.py",
+          "sha256": "0a9f61b0c706241af022fe0155cc41271352a7e07ccb07c39765137139d89590",
+          "bytes": 8587
+        },
+        {
+          "path": "tests/test_ui.py",
+          "sha256": "ad7d6bcdf5a9f2bb2ebccd2eb317e70e9dd48fb8c66af1c06551be317ed78189",
+          "bytes": 6342
+        },
+        {
+          "path": "tests/test_witness.py",
+          "sha256": "ab50affc1336c8c8b3e99566c83ad1741c3a0637fee1bc699e1e5daaa5fe7b40",
+          "bytes": 5594
+        }
+      ],
+      "questions": [
+        "Can any malformed, duplicate, oversized or noncanonical input cross a trust boundary without failing closed?",
+        "Can privileged or concurrent local mutation preserve a claimed-valid event, materialized state, backup, migration or witness relation?",
+        "Are observation, provider acceptance, authority, consent and external effect states kept distinct in every source and projection path?",
+        "Are read-only paths actually observational, and do write paths preserve atomicity, no-overwrite and exact rollback semantics?",
+        "Does the package contain exactly its declared source frame with network, credentials, Bridge and external effects disabled?",
+        "Which claims still depend on plaintext storage, key custody, external witness deployment, physical recovery, another OS or empirical UI testing?",
+        "Do any controls optimize behavior or agreement instead of shaping an inspectable information environment under participant sovereignty?"
+      ],
+      "required_return": [
+        "own qualification, consent, admission, capacity and independence statement",
+        "exact hashes actually read or executed",
+        "commands/tests actually run and their results",
+        "findings with consequence, severity, affected claim and repair criterion",
+        "explicit NO_CHANGE for reviewed dimensions with no finding",
+        "residuals and scopes not reviewed"
+      ]
+    },
+    {
+      "lane": "metric_evaluator",
+      "assignment_state": "UNASSIGNED_QUALIFIED_REVIEWER_REQUIRED",
+      "body_access_granted": false,
+      "stage_a_independent_inputs": [
+        {
+          "path": "review/master-structure-addendum-bayesian-trust-v1.md",
+          "sha256": "42b550683bbd27aa96ed43bfda0b5ca53ce19c319c9614e146de9edcc5f54aec",
+          "bytes": 2310
+        },
+        {
+          "path": "review/revision-map-addendum-bayesian-trust-v1.json",
+          "sha256": "d992bb12d9c95e9efe0a5fa763e68864868c735385a421320cd506b11e47e127",
+          "bytes": 6866
+        },
+        {
+          "path": "review/agent-sovereignty-trust-competition-architecture-candidate-v1.md",
+          "sha256": "d391281fd9030f97beeb968fa7306cbecce5727e321071baa4429520afd88b0b",
+          "bytes": 17807
+        },
+        {
+          "path": "review/contracts/hirc-bayesian-reliance.candidate.schema.v2.json",
+          "sha256": "ff308e1ab64a7936983fca195998659842e527de9e1057fe5c267f60649c3274",
+          "bytes": 10330
+        },
+        {
+          "path": "review/cultural-environment-quality-measures-v1.json",
+          "sha256": "3a7ebcaca6a91d0cd0e9138a43eca97ecf7c78a79746a2c604d846fe8aa1af5c",
+          "bytes": 16581
+        },
+        {
+          "path": "drafts/hirc_requirements_v1_1-draft.json",
+          "sha256": "985f0b77a91a83cb5da3b895f44218368a4d28e957c5b716466ea18402e26f69",
+          "bytes": 260630
+        },
+        {
+          "path": "review/joint-consensus-matrix-draft-v8.json",
+          "sha256": "45ccdb26641c8e04445d3fd4fea5ef6ca6c2992858a83cd898fa916c694967c2",
+          "bytes": 171010
+        },
+        {
+          "path": "drafts/hirc_threat_model_v1_0-draft.md",
+          "sha256": "11e50d9746257c28e6791e0ee85b53e873fae1ea6a8d6631361e948277455441",
+          "bytes": 29925
+        }
+      ],
+      "stage_b_disclosed_evidence": [
+        {
+          "path": "review/contracts/hirc-bayesian-reliance.candidate.schema.json",
+          "sha256": "900f074496cdefcb447c1c4d436a1f6952f01754e909f133f78e06fa2d73a9e8",
+          "bytes": 7207
+        },
+        {
+          "path": "review/contracts/fixtures/valid-bayesian-reliance.json",
+          "sha256": "c1fcb0b3a643dc89a9b3dac98460f4fb71d48ca62c19c15ea6cea8798c53985b",
+          "bytes": 1645
+        },
+        {
+          "path": "review/fixtures/validate_cultural_environment_measures.py",
+          "sha256": "70aad1a205d245408b8af871e67e464ca1d38a75de87789d008dee37e0d3887f",
+          "bytes": 6892
+        },
+        {
+          "path": "review/fixtures/cultural-environment-quality-measures-validation-v1.json",
+          "sha256": "65fa2626b9dc00c979e8e7ba49bdff7139b1a09b79cd102e6ac534e479547658",
+          "bytes": 2262
+        },
+        {
+          "path": "review/fixtures/waymark-trust-contract-cases-v1.json",
+          "sha256": "2f361a190ffe1ad2de435d9165d07b5d5cfd9842e2778e65ca3c98886d3311ae",
+          "bytes": 12410
+        },
+        {
+          "path": "review/fixtures/waymark-trust-contract-validation-v2.1.json",
+          "sha256": "787de23f7efa39b29a3d62be58203100c063dc2c18c9bfffcd278cb38ceccebe",
+          "bytes": 8509
+        },
+        {
+          "path": "review/fixtures/waymark-trust-contract-validation-notes.md",
+          "sha256": "74c4b86b2d63cf3df43c4ecc098969d3cac83825f1a04f0ef9872e55cd628066",
+          "bytes": 1782
+        },
+        {
+          "path": "review/m03-s014-integrated-review-request-v2.md",
+          "sha256": "b298168e18d77424c9d02c4ed6a7b04eecaa9ccde37750ab85c406d476edb04b",
+          "bytes": 7519
+        },
+        {
+          "path": "review/m03-integration-closure-v1.json",
+          "sha256": "b762554efe13a4ce6ad411aa2937a44a2fb4fe39b8f61593b45b259eb6e0a27c",
+          "bytes": 4463
+        },
+        {
+          "path": "review/waymark-sovereignty-trust-goal-challenge-v1.md",
+          "sha256": "44aa79b4a10de4853977e54235f2371bc11725383c170a215487c594921b4dbb",
+          "bytes": 15551
+        },
+        {
+          "path": "review/lucent-sovereignty-trust-goal-response-v1.md",
+          "sha256": "a5e086469e751fd54bce762646d7a793dcf31d198f10e9e1126dd9afaed25c5a",
+          "bytes": 4860
+        }
+      ],
+      "questions": [
+        "Are constructs operationally defined without rewarding agreement, obedience, imitation, retention or participation?",
+        "Do likelihoods, priors, updates and uncertainty states preserve missingness, dependence, shared causes and distribution shift?",
+        "Can a posterior or score silently become authority, permission, standing, punishment, ranking or behavioral control?",
+        "Are data provenance, privacy, small-group exposure, retention and correction propagated through every calculation and display?",
+        "Can gaming, Goodhart pressure, evaluator capture, clone choruses or common-mode model errors improve a score without improving the protected construct?",
+        "Which measures are only candidate diagnostics and which, if any, have enough empirical calibration for a decision rule?",
+        "Do negative, null, dissenting and withdrawal outcomes remain visible and non-retaliatory?"
+      ],
+      "required_return": [
+        "own qualification, consent, admission, capacity and independence statement",
+        "exact hashes actually read or executed",
+        "construct-to-observation and assumption map",
+        "findings with consequence and falsifiable repair criterion",
+        "explicit NO_CHANGE for reviewed dimensions with no finding",
+        "untested empirical bridges, uncertainty and residual dissent"
+      ]
+    }
+  ],
+  "stop_conditions": [
+    "source identity drift or missing artifact",
+    "privacy, audience, task or reader mismatch",
+    "reviewer refusal, retirement trigger or insufficient handoff reserve",
+    "unresolved executable failure in the reviewed frame",
+    "requested write, Bridge, production, publication or external effect"
+  ],
+  "nonclaim": "Exact staged review metadata only; not reviewer qualification, body access, performed review, M03-S014 acceptance, release or publication authority."
+}

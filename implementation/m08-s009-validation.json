@@ -1,0 +1,145 @@
+{
+  "schema": "hirc.m08-s009-validation/1",
+  "stone": "M08-S009",
+  "status": "PASS_ATOMIC_CREATE_IF_ABSENT_SCOPE",
+  "checks": {
+    "failed_baseline_preserved": true,
+    "recovery_tests_pass": true,
+    "recovery_test_count": true,
+    "migration_tests_pass": true,
+    "migration_test_count": true,
+    "witness_tests_pass": true,
+    "witness_test_count": true,
+    "backup_race_regression_present": true,
+    "migration_race_regression_present": true,
+    "witness_race_regression_present": true,
+    "full_suite_pass": true,
+    "full_suite_test_count": true,
+    "expected_release_failures_preserved": true
+  },
+  "files": [
+    {
+      "path": "implementation/M08_RELEASE_HARDENING_PLAN.md",
+      "sha256": "0e2b21a00be42a7ec56773742486b8fcfd9b2fea40b0dd460268f3c2a7779df6",
+      "bytes": 6363
+    },
+    {
+      "path": "implementation/m08-s009-validation-v1-failed.json",
+      "sha256": "3ae468bbfa00f76bd24a918992650df7568634d15333b9d0836d97ada9a05d21",
+      "bytes": 1575
+    },
+    {
+      "path": "implementation/validate_m08_s009.py",
+      "sha256": "4b8e0415ec72783da705703040edc086d25bc42b3a0eb3129c3a2a12a2a53f73",
+      "bytes": 4708
+    },
+    {
+      "path": "implementation/validation_config.py",
+      "sha256": "6d79c9cfc737f963cf2d30202c59dc2d061e8a8b7b80a12251c0e4434d04f884",
+      "bytes": 262
+    },
+    {
+      "path": "src/hirc/atomic.py",
+      "sha256": "61e96fffe37011d0a9e56cd9bc2aefc1584ab151e80f9800d2362d118eab6636",
+      "bytes": 1257
+    },
+    {
+      "path": "src/hirc/migration.py",
+      "sha256": "b94ecc8c4d1b936084d7d0ee73058f8c64a56ac2210562270126736184123948",
+      "bytes": 8437
+    },
+    {
+      "path": "src/hirc/recovery.py",
+      "sha256": "ee566cd48153f137a8f6a8b52630f8b36f57994d67f56028883babfb741c93fa",
+      "bytes": 3378
+    },
+    {
+      "path": "src/hirc/witness.py",
+      "sha256": "e32250ee41b34b9ffa9bc5fa71dd1293db6e3137e93b7de2c2825727cb3464e6",
+      "bytes": 4090
+    },
+    {
+      "path": "tests/test_migration_hardening.py",
+      "sha256": "219171aea28621d0df1d5bb9e7026f18ff67dca7bbf8a61572fac7e07a0845e8",
+      "bytes": 10477
+    },
+    {
+      "path": "tests/test_recovery.py",
+      "sha256": "0e3253c587af3284d2a314879cf45887b7a542c16cc7c1b16abfed444829693b",
+      "bytes": 6610
+    },
+    {
+      "path": "tests/test_witness.py",
+      "sha256": "ab50affc1336c8c8b3e99566c83ad1741c3a0637fee1bc699e1e5daaa5fe7b40",
+      "bytes": 5594
+    }
+  ],
+  "recovery_test_output": [
+    "test_backup_and_restore_preserve_all_views (test_recovery.RecoveryTests.test_backup_and_restore_preserve_all_views) ... ok",
+    "test_cli_backup_and_restore (test_recovery.RecoveryTests.test_cli_backup_and_restore) ... ok",
+    "test_concurrent_target_creation_is_never_overwritten (test_recovery.RecoveryTests.test_concurrent_target_creation_is_never_overwritten) ... ok",
+    "test_corrupt_source_is_rejected (test_recovery.RecoveryTests.test_corrupt_source_is_rejected) ... ok",
+    "test_existing_target_is_never_overwritten (test_recovery.RecoveryTests.test_existing_target_is_never_overwritten) ... ok",
+    "test_reopened_backup_matches_source_head (test_recovery.RecoveryTests.test_reopened_backup_matches_source_head) ... ok",
+    "test_truncated_backup_does_not_create_restore_target (test_recovery.RecoveryTests.test_truncated_backup_does_not_create_restore_target) ... ok",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 7 tests in 1.395s",
+    "",
+    "OK"
+  ],
+  "migration_test_output": [
+    "test_bounded_hundred_event_load_verifies (test_migration_hardening.MigrationHardeningTests.test_bounded_hundred_event_load_verifies) ... ok",
+    "test_cli_migrates_exact_v1 (test_migration_hardening.MigrationHardeningTests.test_cli_migrates_exact_v1) ... ok",
+    "test_concurrent_backup_target_creation_is_never_overwritten (test_migration_hardening.MigrationHardeningTests.test_concurrent_backup_target_creation_is_never_overwritten) ... ok",
+    "test_corrupt_chain_refuses_without_schema_change (test_migration_hardening.MigrationHardeningTests.test_corrupt_chain_refuses_without_schema_change) ... ok",
+    "test_duplicate_key_legacy_payload_refuses_without_schema_change (test_migration_hardening.MigrationHardeningTests.test_duplicate_key_legacy_payload_refuses_without_schema_change) ... ok",
+    "test_empty_v1_migrates (test_migration_hardening.MigrationHardeningTests.test_empty_v1_migrates) ... ok",
+    "test_existing_backup_target_refuses (test_migration_hardening.MigrationHardeningTests.test_existing_backup_target_refuses) ... ok",
+    "test_missing_legacy_trigger_refuses (test_migration_hardening.MigrationHardeningTests.test_missing_legacy_trigger_refuses) ... ok",
+    "test_seeded_invalid_identifiers_fail_without_store_damage (test_migration_hardening.MigrationHardeningTests.test_seeded_invalid_identifiers_fail_without_store_damage) ... ok",
+    "test_v2_source_is_not_silently_remigrated (test_migration_hardening.MigrationHardeningTests.test_v2_source_is_not_silently_remigrated) ... ok",
+    "test_valid_v1_event_chain_migrates_with_backup (test_migration_hardening.MigrationHardeningTests.test_valid_v1_event_chain_migrates_with_backup) ... ok",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 11 tests in 2.996s",
+    "",
+    "OK"
+  ],
+  "witness_test_output": [
+    "test_cli_reads_key_from_stdin_not_arguments (test_witness.WitnessTests.test_cli_reads_key_from_stdin_not_arguments) ... ok",
+    "test_concurrent_witness_creation_is_never_overwritten (test_witness.WitnessTests.test_concurrent_witness_creation_is_never_overwritten) ... ok",
+    "test_create_and_verify (test_witness.WitnessTests.test_create_and_verify) ... ok",
+    "test_existing_witness_is_not_overwritten (test_witness.WitnessTests.test_existing_witness_is_not_overwritten) ... ok",
+    "test_oversized_witness_file_is_rejected_before_parsing (test_witness.WitnessTests.test_oversized_witness_file_is_rejected_before_parsing) ... ok",
+    "test_privileged_tail_truncation_is_detected (test_witness.WitnessTests.test_privileged_tail_truncation_is_detected) ... ok",
+    "test_short_key_is_rejected (test_witness.WitnessTests.test_short_key_is_rejected) ... ok",
+    "test_wrong_key_and_changed_witness_are_rejected (test_witness.WitnessTests.test_wrong_key_and_changed_witness_are_rejected) ... ok",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 8 tests in 1.009s",
+    "",
+    "OK"
+  ],
+  "full_suite_output": [
+    ".................................................................xxx........................................................................",
+    "----------------------------------------------------------------------",
+    "Ran 140 tests in 21.710s",
+    "",
+    "OK (expected failures=3)"
+  ],
+  "repair": {
+    "finding_id": "M08-S009-F001",
+    "same_directory_required": true,
+    "windows_atomic_no_replace_rename": true,
+    "posix_atomic_no_replace_hard_link": true,
+    "concurrent_destination_preserved": true,
+    "migration_source_unchanged_when_backup_name_lost": true
+  },
+  "surviving_limits": [
+    "The Windows implementation is exercised here; the POSIX hard-link branch still needs a native POSIX run.",
+    "A same-user writer can mutate a published file afterward; protected witness/key custody and OS permissions remain separate controls.",
+    "This does not establish physical power-loss or directory-entry durability across every filesystem."
+  ],
+  "nonclaim": "M08-S009 local atomic no-overwrite repair only; not cross-platform filesystem or release assurance."
+}

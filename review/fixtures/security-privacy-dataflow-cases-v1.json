@@ -1,0 +1,16 @@
+{
+  "schema": "hirc.security-privacy-dataflow-cases/2",
+  "bindings": [
+    {"path": "review/contracts/hirc-request-case.candidate.schema.v2.json", "sha256": "a1cae1961a04eb682c158c6b1a1dcd4387374923180fa5f170816559327d2a0f", "bytes": 15859},
+    {"path": "review/contracts/hirc-transfer-case.candidate.schema.json", "sha256": "b88721ff78933bbc0d28e8985148facc2987ac046ef23ef079257c68a84d0880", "bytes": 16752},
+    {"path": "review/fixtures/security-request-state-cases-v1.json", "sha256": "b17fb6f7892bee1fc5a3f5d6c812ae4f270c241fffdc665ceb164e18becb3633", "bytes": 6715},
+    {"path": "review/fixtures/security-transfer-state-cases-v1.json", "sha256": "c37b15c97035e869c98143f06ba9e1a35e18176d047619d671312d568e29a426", "bytes": 5073},
+    {"path": "review/validate_security_privacy_dataflow.ps1", "sha256": "619adb0e5947be75ea3c5af01c71023cd920c56abfb81dd1d1b4d32143fbaefb", "bytes": 9435}
+  ],
+  "request_base": "review/fixtures/security-request-state-cases-v1.json#performed",
+  "transfer_base": "review/fixtures/security-transfer-state-cases-v1.json#package",
+  "positive": ["current_consent_request", "privacy_bound_effect", "encrypted_transfer", "legitimate_audience_attenuation"],
+  "adverse": ["stale_request_consent", "empty_request_audience", "missing_request_retention", "missing_derived_policy", "effect_missing_privacy_snapshot", "transfer_missing_consent", "transfer_missing_encryption", "transfer_missing_deletion_residual", "request_audience_widened_after_preview", "request_purpose_changed_after_preview", "transfer_audience_widened", "transfer_derived_policy_changed", "transfer_retention_changed", "transfer_encryption_downgraded", "transfer_residual_erased"],
+  "external_residuals": ["trusted prior-preview/source resolution", "actual consent", "encryption behavior", "deletion behavior", "runtime enforcement"],
+  "nonclaim": "These labels bind the executed local cases. They do not authenticate a co-edited record/digest or prove external resolver, consent, cryptography, deletion or runtime effects."
+}

@@ -1,0 +1,90 @@
+{
+  "schema": "hirc.milestone-03-public-evidence/1",
+  "status": "LOCAL_COMPLETE_PUBLICATION_PENDING",
+  "scope": "Public-safe exact evidence for Milestone 03 design, local alpha, review closure and remaining release holds.",
+  "artifacts": [
+    {
+      "path": "intent-register.json",
+      "sha256": "45c5efe04b15a862fb6db71e8fe7bea76037042c03c05ff480c444c8a3506eed",
+      "bytes": 95381
+    },
+    {
+      "path": "HIRC-CURRENT-DESCRIPTION.md",
+      "sha256": "c85743b928f5ed31e3f625efa751df8421f3ec03d1db887c1e7dfed040427918",
+      "bytes": 54276
+    },
+    {
+      "path": "drafts/hirc_requirements_v1_1-draft.json",
+      "sha256": "80f19b39beb96948bd45540e27852548b2364b52ffa6f00ff3457c45606b9ca1",
+      "bytes": 268585
+    },
+    {
+      "path": "review/joint-consensus-matrix-draft-v11.json",
+      "sha256": "1bb9a64a6416266322918f47ae32d01a611e0393dea9e59e9043f8b85b43718d",
+      "bytes": 188642
+    },
+    {
+      "path": "review/milestone-03-stone-register.json",
+      "sha256": "685434f0848ab9be6f73c377ae009f827d8899856a238df8fb21de439a670704",
+      "bytes": 28113
+    },
+    {
+      "path": "review/public/m03-s014-review-closure-v1.md",
+      "sha256": "dab9d6174d6b8afbfbfcfff9b14a2168d7d4fc40789101dc0324c5709fde19c0",
+      "bytes": 1508
+    },
+    {
+      "path": "src/hirc/store.py",
+      "sha256": "81dd7bb2541509082deb29d00d834ec4ec001584f7a175ae58fd376b0a07f79c",
+      "bytes": 34935
+    },
+    {
+      "path": "src/hirc/adapter.py",
+      "sha256": "0c5495c6e9f9556449323b703182dbdcd09d4ef8ddb1d7968aaa66e815f99981",
+      "bytes": 12399
+    },
+    {
+      "path": "implementation/executable-cumulative-validation.json",
+      "sha256": "ca639035b2e60e9cb4d825b215f183ea797b62f9f62b1701cbcac9b9405ceb9c",
+      "bytes": 10637
+    },
+    {
+      "path": "dist/hirc-local-0.1.0.dev0.pyz",
+      "sha256": "2976bbafddb17c66800fa9d7fb3645c2eda8625db62fe8a0a08a4b2c4657c1e1",
+      "bytes": 38349
+    },
+    {
+      "path": "dist/hirc-local-0.1.0.dev0-manifest.json",
+      "sha256": "d513d16348e3b3283f7e811714163504bfc0d9ff7b3a810a99ba6d640d857869",
+      "bytes": 2824
+    }
+  ],
+  "validation": {
+    "validators": 21,
+    "source_tree_tests": 140,
+    "expected_release_failures": 3,
+    "binding_mode": "fresh_sequential_execution"
+  },
+  "review_closure": {
+    "S014": "PASS_AT_DECLARED_M03_REVIEW_SCOPE",
+    "product_design": "PASS_AT_CORRECTED_DESIGN_FRAME",
+    "metric_evaluator": "PASS_AT_SYNTHETIC_CANDIDATE_CONTRACT_SCOPE",
+    "security_privacy_dataflow": "PASS_AT_STATIC_LOCAL_SOURCE_INTEGRITY_SCOPE",
+    "closed_security_findings": [
+      "SA-COT-F1",
+      "SA-COT-F2",
+      "SA-COT-F3",
+      "SA-COF-F1"
+    ]
+  },
+  "release_holds": [
+    "plaintext storage and backup encryption/key custody",
+    "rendered accessibility/usability",
+    "independent security/privacy and penetration review",
+    "broader crash/fuzz/soak/cross-machine recovery",
+    "protected external head witness and signed release manifest",
+    "M03 S014/S015 governance and public milestone closure"
+  ],
+  "privacy": "Native chat identifiers, private runtime paths, personal education records and internal delivery metadata are excluded from the publication manifest.",
+  "nonclaim": "Public evidence summary only; no production, Bridge, sensitive-data, publication-success or release-readiness claim."
+}

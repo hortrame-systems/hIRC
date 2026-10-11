@@ -1,0 +1,194 @@
+{
+  "schema": "hirc.m07-s001-validation/1",
+  "stone": "M07-S001",
+  "status": "PASS",
+  "checks": {
+    "formation_tests_pass": true,
+    "formation_test_count": true,
+    "full_suite_pass": true,
+    "full_suite_test_count": true,
+    "permanent_identity_only": true,
+    "held_gate_blocks_readiness": true,
+    "whole_study_and_demonstration_separate": true,
+    "complete_gates_derive_ready": true,
+    "admission_is_recorded_not_authenticated": true,
+    "admission_is_subset": true,
+    "authority_evidence_present": true
+  },
+  "files": [
+    {
+      "path": "implementation/M07_FORMATION_ADAPTER_PLAN.md",
+      "sha256": "6239abab5ef6c0593ce77063922c030428bc1df37db6f541db027669661aa524",
+      "bytes": 1784
+    },
+    {
+      "path": "implementation/README.md",
+      "sha256": "608abe3f9aade0b3249d55a7e5765a1d98fd6a4d0c3f9cdd4c77814cf8300bb2",
+      "bytes": 16078
+    },
+    {
+      "path": "src/hirc/formation.py",
+      "sha256": "2f3ba9b5b970a05ca5bdefc029c193a589b2fb69183ecefe638fb2f9fd0b41b1",
+      "bytes": 8876
+    },
+    {
+      "path": "tests/test_formation.py",
+      "sha256": "62473d49905adab33135eb46166a89044c0d860ed00df51ab82efd75e217ec5a",
+      "bytes": 9032
+    }
+  ],
+  "formation_test_output": [
+    "test_admission_before_ready_is_rejected (test_formation.FormationTests.test_admission_before_ready_is_rejected) ... ok",
+    "test_admission_must_be_an_authority_bound_observed_action (test_formation.FormationTests.test_admission_must_be_an_authority_bound_observed_action) ... ok",
+    "test_admission_requires_authority_evidence_references (test_formation.FormationTests.test_admission_requires_authority_evidence_references) ... ok",
+    "test_cli_exposes_the_same_formation_view (test_formation.FormationTests.test_cli_exposes_the_same_formation_view) ... ok",
+    "test_duplicate_native_binding_is_rejected (test_formation.FormationTests.test_duplicate_native_binding_is_rejected) ... ok",
+    "test_formation_boundary_widening_is_rejected (test_formation.FormationTests.test_formation_boundary_widening_is_rejected) ... ok",
+    "test_held_to_ready_to_admitted_progression (test_formation.FormationTests.test_held_to_ready_to_admitted_progression) ... ok",
+    "test_missing_gate_is_rejected (test_formation.FormationTests.test_missing_gate_is_rejected) ... ok",
+    "test_role_and_scope_escalation_are_rejected (test_formation.FormationTests.test_role_and_scope_escalation_are_rejected) ... ok",
+    "test_stale_assessment_admission_is_rejected (test_formation.FormationTests.test_stale_assessment_admission_is_rejected) ... ok",
+    "test_temporary_identity_is_rejected (test_formation.FormationTests.test_temporary_identity_is_rejected) ... ok",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 11 tests in 1.305s",
+    "",
+    "OK"
+  ],
+  "full_suite_output": [
+    ".................................................................xxx........................................................................",
+    "----------------------------------------------------------------------",
+    "Ran 140 tests in 19.718s",
+    "",
+    "OK (expected failures=3)"
+  ],
+  "control_view": {
+    "schema": "hirc.formation-view/1",
+    "store_head": "3bb9524a018817def955ad658408efb48553988cb2871972ddceedb927cdbde7",
+    "event_count": 4,
+    "formation_event_count": 4,
+    "participants": [
+      {
+        "participant_id": "participant:validator",
+        "identity_kind": "PERMANENT",
+        "native_id": "native:validator",
+        "task_id": "task:hirc",
+        "requested_roles": [
+          "role:integrator",
+          "role:reviewer"
+        ],
+        "requested_scopes": [
+          "scope:local-read",
+          "scope:local-review"
+        ],
+        "source_bindings": [
+          "source:foundation",
+          "source:role",
+          "source:task"
+        ],
+        "consent_state": "CONSENTED",
+        "status": "ADMISSION_RECORDED",
+        "latest_assessment_id": "assessment:ready",
+        "gates": {
+          "source_currency": {
+            "state": "PASS",
+            "evidence_refs": [
+              "evidence:source_currency"
+            ]
+          },
+          "whole_source_study": {
+            "state": "PASS",
+            "evidence_refs": [
+              "evidence:whole_source_study"
+            ]
+          },
+          "role_training": {
+            "state": "PASS",
+            "evidence_refs": [
+              "evidence:role_training"
+            ]
+          },
+          "task_training": {
+            "state": "PASS",
+            "evidence_refs": [
+              "evidence:task_training"
+            ]
+          },
+          "demonstrated_use": {
+            "state": "PASS",
+            "evidence_refs": [
+              "evidence:demonstrated_use"
+            ]
+          },
+          "peer_challenge": {
+            "state": "PASS",
+            "evidence_refs": [
+              "evidence:peer_challenge"
+            ]
+          },
+          "participant_consent": {
+            "state": "PASS",
+            "evidence_refs": [
+              "evidence:participant_consent"
+            ]
+          },
+          "native_identity_binding": {
+            "state": "PASS",
+            "evidence_refs": [
+              "evidence:native_identity_binding"
+            ]
+          },
+          "privacy_and_access_scope": {
+            "state": "PASS",
+            "evidence_refs": [
+              "evidence:privacy_and_access_scope"
+            ]
+          },
+          "fitting_capacity": {
+            "state": "PASS",
+            "evidence_refs": [
+              "evidence:fitting_capacity"
+            ]
+          }
+        },
+        "admission": {
+          "roles": [
+            "role:reviewer"
+          ],
+          "scopes": [
+            "scope:local-review"
+          ],
+          "authority_ref": "authority:owner",
+          "authority_evidence_refs": [
+            "evidence:owner-assignment"
+          ],
+          "authority_status": "UNVERIFIED_REFERENCE",
+          "effect_state": "OBSERVED"
+        },
+        "information_boundary": {
+          "privacy_class": "privacy:owner",
+          "audience": "audience:formation",
+          "purpose": "purpose:m07-validation"
+        },
+        "source_events": {
+          "proposed": "event:919bf3b75229f82511637bb10ceb6774e2846ffb481bbfb89d7e11530fffd18c",
+          "assessment": "event:ef378dcfdc97883c2e7b6497d22cd0318f339a28ccfa820a9e1c948f1914448f",
+          "admitted": "event:3bb9524a018817def955ad658408efb48553988cb2871972ddceedb927cdbde7"
+        }
+      }
+    ],
+    "source_events": [
+      "event:919bf3b75229f82511637bb10ceb6774e2846ffb481bbfb89d7e11530fffd18c",
+      "event:136e96b39da48258764e12cf5bf064494dcd791042f95d2fdbff4b9d6f778db1",
+      "event:ef378dcfdc97883c2e7b6497d22cd0318f339a28ccfa820a9e1c948f1914448f",
+      "event:3bb9524a018817def955ad658408efb48553988cb2871972ddceedb927cdbde7"
+    ],
+    "nonclaim": "A deterministic local formation projection and recorded admission are not native authentication, comprehension, qualification by themselves, source access or verified authority."
+  },
+  "surviving_limits": [
+    "Gate and authority references are attributable local metadata; this stone does not authenticate the native caller or verify that cited evidence is true.",
+    "ADMISSION_RECORDED is deliberately distinct from externally verified admission, permission or source access.",
+    "No model participant, provider, scheduler, network, external effect or Bridge path is created."
+  ],
+  "nonclaim": "M07-S001 deterministic local formation and recorded-admission projection only."
+}

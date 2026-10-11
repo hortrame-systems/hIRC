@@ -1,0 +1,22 @@
+{
+  "schema": "hirc.m08-s011-validation/1",
+  "stone": "M08-S011",
+  "status": "FAIL",
+  "finding": {
+    "id": "M08-S011-F001",
+    "title": "Verification opened the evidence store read-write",
+    "observed": {
+      "verify_connection_read_only": false,
+      "status_connection_read_only": false
+    },
+    "consequence": "A nominally observational integrity/status check opened SQLite in read-write mode, allowing recovery side effects and writable-file behavior at a frozen-log verification boundary.",
+    "required_repair": "Make public verification and status read-only by default while keeping explicit append/migration transactions writable."
+  },
+  "files": [
+    {"path": "src/hirc/store.py", "sha256": "4d9b1bf26f901c111c38a1926fa53b2b77f25483bf51670404594accec44e65f", "bytes": 33084},
+    {"path": "tests/test_store.py", "sha256": "914630502b95d67db71db4f467b087b5390487cba0082ae2dff858f661bdd042", "bytes": 7397}
+  ],
+  "test": "tests.test_store.StoreTests.test_verify_and_status_use_read_only_connections",
+  "failure": "observed [False, False], expected [True, True]",
+  "nonclaim": "Local connection-mode finding only; no actual evidence corruption is claimed."
+}

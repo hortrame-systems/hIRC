@@ -1,0 +1,25 @@
+{
+  "schema": "hirc.m08-s009-validation/1",
+  "stone": "M08-S009",
+  "status": "FAIL",
+  "finding": {
+    "id": "M08-S009-F001",
+    "title": "No-overwrite checks had publication races",
+    "attack": "A concurrent writer created the declared-new destination after the initial exists check and immediately before os.replace.",
+    "observed": {
+      "backup_returned_success": true,
+      "backup_concurrent_bytes_preserved": false,
+      "witness_returned_success": true,
+      "witness_concurrent_bytes_preserved": false
+    },
+    "consequence": "Backup/restore and head-witness creation could silently overwrite a concurrently created destination despite their no-overwrite contract.",
+    "required_repair": "Publish the fully fsynced temporary file through one atomic create-if-absent operation and fail closed when the destination already exists at publication time."
+  },
+  "files": [
+    {"path": "src/hirc/recovery.py", "sha256": "67c4cc10ab52f07edb0395f7b6a2c0f234e82b5b81b7b0d4c07077c2ae200efa", "bytes": 3170},
+    {"path": "src/hirc/witness.py", "sha256": "774a323237e392c85a652db29603d1ea41069e942d71dba5e81240fe82faee30", "bytes": 3831},
+    {"path": "tests/test_recovery.py", "sha256": "40e9c62c65c01636ac39f17daf518d19b42c3bc2111515792a134b07748908d7", "bytes": 5751},
+    {"path": "tests/test_witness.py", "sha256": "f0ad5e7095fe0e5bb415915e0304e90dc9ae576290c5385c3a0a9d2f2a6cb914", "bytes": 4423}
+  ],
+  "nonclaim": "Deterministic local race injection only; it does not establish a remote attacker or complete filesystem crash-consistency assurance."
+}

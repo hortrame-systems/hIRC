@@ -1,0 +1,162 @@
+{
+  "schema": "hirc.m06-s002-validation/1",
+  "stone": "M06-S002",
+  "status": "PASS",
+  "checks": {
+    "interrupt_tests_pass": true,
+    "interrupt_test_count": true,
+    "full_suite_pass": true,
+    "full_suite_test_count": true,
+    "exact_four_modes": true,
+    "all_previews_no_effect": true,
+    "cut_stops_current": true,
+    "high_returns_to_prior": true,
+    "low_keeps_current": true,
+    "custom_is_explicit": true,
+    "surface_contains_four_values": true,
+    "surface_has_no_form_submission": true,
+    "runtime_persistence_and_network_edges_absent": true,
+    "reference_head_matches": true
+  },
+  "files": [
+    {
+      "path": "implementation/M06_LOCAL_UI_PLAN.md",
+      "sha256": "e22258ad042607d4d2d451c13330dbeba9bd56712b92066848a37ec5ae82f29d",
+      "bytes": 2518
+    },
+    {
+      "path": "implementation/README.md",
+      "sha256": "608abe3f9aade0b3249d55a7e5765a1d98fd6a4d0c3f9cdd4c77814cf8300bb2",
+      "bytes": 16078
+    },
+    {
+      "path": "src/hirc/ui.py",
+      "sha256": "2d80aef3305525b6b5fac4f08d6fba5336b55861e2383cb02cba37b2925caf67",
+      "bytes": 19774
+    },
+    {
+      "path": "tests/test_interrupt_ui.py",
+      "sha256": "90958bc07d879ebe771a17d2a379cefe8959d0cdc31c1fed6365b8f3951bf8a6",
+      "bytes": 3756
+    },
+    {
+      "path": "implementation/m06-s001-browser-check-hold.md",
+      "sha256": "c357b63fc3244b28dbd15fd37b17313db1cf1a3b87443c0dbf875063ce47cdd3",
+      "bytes": 979
+    },
+    {
+      "path": "implementation/m06-s002-reference.html",
+      "sha256": "77a5f31a7b0b636924159719c6e27bf1a4404c6ba9de109a96e8dc9d8aa55f5e",
+      "bytes": 10655
+    }
+  ],
+  "interrupt_test_output": [
+    "test_custom_requires_explicit_instructions (test_interrupt_ui.InterruptUiTests.test_custom_requires_explicit_instructions) ... ok",
+    "test_every_preview_is_explicitly_no_effect (test_interrupt_ui.InterruptUiTests.test_every_preview_is_explicitly_no_effect) ... ok",
+    "test_four_modes_have_distinct_deterministic_order (test_interrupt_ui.InterruptUiTests.test_four_modes_have_distinct_deterministic_order) ... ok",
+    "test_surface_exposes_exact_four_choices_without_submission_edge (test_interrupt_ui.InterruptUiTests.test_surface_exposes_exact_four_choices_without_submission_edge) ... ok",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 4 tests in 0.086s",
+    "",
+    "OK"
+  ],
+  "full_suite_output": [
+    ".................................................................xxx........................................................................",
+    "----------------------------------------------------------------------",
+    "Ran 140 tests in 21.095s",
+    "",
+    "OK (expected failures=3)"
+  ],
+  "previews": {
+    "cut": {
+      "schema": "hirc.interruption-preview/1",
+      "mode": "cut",
+      "label": "Interrupt and cut",
+      "current_work": "Current work",
+      "new_task": "New task",
+      "order": [
+        "checkpoint current work",
+        "run the new task",
+        "stop the interrupted task"
+      ],
+      "return_behavior": "Do not return automatically; leave the interrupted task visible with its remaining state.",
+      "custom": null,
+      "safe_boundary_rule": "If an immediate cut would interrupt an unsafe in-flight effect, wait for the smallest safe boundary and explain the delay.",
+      "persisted": false,
+      "scheduled": false,
+      "authorized": false,
+      "effect_performed": false
+    },
+    "high": {
+      "schema": "hirc.interruption-preview/1",
+      "mode": "high",
+      "label": "Interrupt with high priority",
+      "current_work": "Current work",
+      "new_task": "New task",
+      "order": [
+        "checkpoint current work",
+        "suspend current work",
+        "run the new task",
+        "resume the exact prior task"
+      ],
+      "return_behavior": "Return automatically after the new task reaches its declared completion boundary.",
+      "custom": null,
+      "safe_boundary_rule": "If an immediate cut would interrupt an unsafe in-flight effect, wait for the smallest safe boundary and explain the delay.",
+      "persisted": false,
+      "scheduled": false,
+      "authorized": false,
+      "effect_performed": false
+    },
+    "low": {
+      "schema": "hirc.interruption-preview/1",
+      "mode": "low",
+      "label": "Interrupt with low priority",
+      "current_work": "Current work",
+      "new_task": "New task",
+      "order": [
+        "continue current work",
+        "queue the new task",
+        "run it at the current task's declared completion boundary"
+      ],
+      "return_behavior": "Do not interrupt the current task.",
+      "custom": null,
+      "safe_boundary_rule": "If an immediate cut would interrupt an unsafe in-flight effect, wait for the smallest safe boundary and explain the delay.",
+      "persisted": false,
+      "scheduled": false,
+      "authorized": false,
+      "effect_performed": false
+    },
+    "custom": {
+      "schema": "hirc.interruption-preview/1",
+      "mode": "custom",
+      "label": "Custom",
+      "current_work": "Current work",
+      "new_task": "New task",
+      "order": [
+        "apply the explicit custom ordering at the smallest safe boundary"
+      ],
+      "return_behavior": "Use only the stated pause, cancellation and resumption behavior; do not infer missing effects.",
+      "custom": "Pause now; resume after review",
+      "safe_boundary_rule": "If an immediate cut would interrupt an unsafe in-flight effect, wait for the smallest safe boundary and explain the delay.",
+      "persisted": false,
+      "scheduled": false,
+      "authorized": false,
+      "effect_performed": false
+    }
+  },
+  "reference": {
+    "schema": "hirc.ui-snapshot-result/1",
+    "path": "D:\\HORTRAME\\hIRC\\implementation\\m06-s002-reference.html",
+    "sha256": "77a5f31a7b0b636924159719c6e27bf1a4404c6ba9de109a96e8dc9d8aa55f5e",
+    "bytes": 10655,
+    "source_head": "75e9c0241f4a1cbefa2825bf0e5b7f774f75dde87c423b035bb50ba91c6e8645",
+    "read_only": true
+  },
+  "surviving_limits": [
+    "The choices are deterministic previews; no queue, checkpoint, scheduler or event persistence is implemented by this stone.",
+    "Rendered browser/keyboard/screen-reader interaction remains held by the existing local-file browser-policy boundary.",
+    "No authority, network, external effect or Bridge path is enabled."
+  ],
+  "nonclaim": "M06-S002 no-effect interruption preview only; not task scheduling or interruption execution."
+}

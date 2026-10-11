@@ -1,0 +1,83 @@
+{
+  "schema": "hirc.m04-s001-validation/1",
+  "stone": "M04-S001",
+  "status": "PASS",
+  "checks": {
+    "unit_tests": true,
+    "unit_test_count": true,
+    "network_imports_absent": true,
+    "store_valid": true,
+    "single_event_observed": true,
+    "head_matches_append": true,
+    "high_risk_capabilities_disabled": true
+  },
+  "files": [
+    {
+      "path": "pyproject.toml",
+      "sha256": "eca2bb70cb651063ad5ed9c75db68794fd662ba8b95d4b70ee56301e9283458d",
+      "bytes": 388
+    },
+    {
+      "path": "src/hirc/__init__.py",
+      "sha256": "8d639f01cda312a1176f72f8d6638629e7a2eae37b6002ddadfb4f503dc15295",
+      "bytes": 167
+    },
+    {
+      "path": "src/hirc/__main__.py",
+      "sha256": "0f7d54f3fbb1f79a85eb8110f11793db99da6f3c61ee979de5abe9a1b5f3fdb3",
+      "bytes": 49
+    },
+    {
+      "path": "src/hirc/canonical.py",
+      "sha256": "c5621ca0a9676285abe4c9cfc337f484aec980287b11426cc105e0f74250b0f3",
+      "bytes": 3242
+    },
+    {
+      "path": "src/hirc/cli.py",
+      "sha256": "6fcd8323c08caecd17948a2531444aa5f1676aa2306b0c5faa8076ad2f3b55fc",
+      "bytes": 9691
+    },
+    {
+      "path": "src/hirc/store.py",
+      "sha256": "81dd7bb2541509082deb29d00d834ec4ec001584f7a175ae58fd376b0a07f79c",
+      "bytes": 34935
+    },
+    {
+      "path": "tests/test_store.py",
+      "sha256": "99d3be0598f08dcc6727cf16c81823b1e75fdcc5bd1534fc12a6fe9cdedadc5c",
+      "bytes": 11796
+    },
+    {
+      "path": "implementation/README.md",
+      "sha256": "608abe3f9aade0b3249d55a7e5765a1d98fd6a4d0c3f9cdd4c77814cf8300bb2",
+      "bytes": 16078
+    }
+  ],
+  "unit_test_output": [
+    "test_correction_cannot_change_target_information_boundary (test_store.StoreTests.test_correction_cannot_change_target_information_boundary) ... ok",
+    "test_correction_cannot_target_missing_event (test_store.StoreTests.test_correction_cannot_target_missing_event) ... ok",
+    "test_correction_requires_and_preserves_target (test_store.StoreTests.test_correction_requires_and_preserves_target) ... ok",
+    "test_effectful_action_requires_authority (test_store.StoreTests.test_effectful_action_requires_authority) ... ok",
+    "test_initial_state_disables_every_high_risk_capability (test_store.StoreTests.test_initial_state_disables_every_high_risk_capability) ... ok",
+    "test_ordinary_update_and_delete_are_denied (test_store.StoreTests.test_ordinary_update_and_delete_are_denied) ... ok",
+    "test_payload_depth_size_and_utf8_limits_fail_closed (test_store.StoreTests.test_payload_depth_size_and_utf8_limits_fail_closed) ... ok",
+    "test_plaintext_status_is_explicit_and_sensitive_mode_fails_closed (test_store.StoreTests.test_plaintext_status_is_explicit_and_sensitive_mode_fails_closed) ... ok",
+    "test_same_inputs_produce_same_first_event_identity (test_store.StoreTests.test_same_inputs_produce_same_first_event_identity) ... ok",
+    "test_verifier_detects_privileged_tampering (test_store.StoreTests.test_verifier_detects_privileged_tampering) ... ok",
+    "test_verifier_rejects_noncanonical_duplicate_key_payload (test_store.StoreTests.test_verifier_rejects_noncanonical_duplicate_key_payload) ... ok",
+    "test_verifier_rejects_self_rehashed_impossible_correction_history (test_store.StoreTests.test_verifier_rejects_self_rehashed_impossible_correction_history) ... ok",
+    "test_verify_and_status_use_read_only_connections (test_store.StoreTests.test_verify_and_status_use_read_only_connections) ... ok",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 13 tests in 1.202s",
+    "",
+    "OK"
+  ],
+  "forbidden_imports": {},
+  "smoke": {
+    "event_id": "event:70f7c394c16f6d3824b846b645d412c4428c6ada6ac99a706724a87bafaad0da",
+    "event_hash": "70f7c394c16f6d3824b846b645d412c4428c6ada6ac99a706724a87bafaad0da",
+    "event_count": 1
+  },
+  "nonclaim": "Local dependency-free integrity-core evidence only; it does not validate the separate UI, agent execution, network security, production hardening, external-effect or Bridge scopes."
+}

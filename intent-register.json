@@ -1,6 +1,6 @@
 {
   "schema": "hirc.intent-register/1",
-  "updated_on": "2026-10-08",
+  "updated_on": "2026-10-10",
   "continuity_rule": "Reconcile every open item before a phase change, publication, or final handoff. A proposal or saved note is not implementation or verification.",
   "items": [
     {
@@ -695,14 +695,312 @@
     },
     {
       "id": "HIRC-I026",
-      "status": "ACTIVE",
+      "status": "SUPERSEDED_BY_HIRC-I031",
       "kind": "confirmed_hirc_team_succession_threshold_override",
       "source": "owner correction, 2026-10-08; 14 percent supersedes the earlier 5 percent instruction and interim 16 percent correction",
       "meaning": "Do not execute Elder custody transfer for any hIRC team member before 14 percent estimated context remains while hIRC is unfinished.",
       "constraints": ["Continuity checkpoints and non-transferring offers may be prepared earlier.", "Generation and writer-fence ownership remain unchanged until an actual transfer at or below the owner threshold.", "Education, reviewer, privacy and acceptance gates remain mandatory.", "This hIRC-specific owner assignment does not alter unrelated teams or claim that work quality is unaffected."],
       "acceptance_check": ["No hIRC custody transfer occurs above 14 percent while the project is unfinished.", "Earlier warnings remain advisory continuity signals rather than work stops.", "Current writer and project generation stay explicit."],
       "evidence": ["review/project-controller-current.json", "review/milestone-03-stone-register.json"],
-      "next_action": "Continue generation-2 hIRC work and preserve the offered handoff without transfer."
+      "next_action": "Preserve this 14-percent rule as superseded history and apply HIRC-I031's 15-percent retirement boundary to current hIRC operations."
+    },
+    {
+      "id": "HIRC-I027",
+      "status": "VERIFIED",
+      "kind": "confirmed_current-description-handoff",
+      "source": "owner message, 2026-10-09",
+      "meaning": "Maintain and hand the owner a detailed, readable description of hIRC as it currently stands, separating the intended product, current design evidence, implemented planning and validation artifacts, disabled or unimplemented capabilities, open review gates and the next work sequence.",
+      "constraints": [
+        "Do not present the planned product as implemented software.",
+        "Use the current intent register, integrated planning bundle, milestone state and review evidence as controlling sources.",
+        "Keep technical terms subordinate to a clear account of what participants would experience and what the system protects.",
+        "Continue the existing S014 and S015 work after delivering the description."
+      ],
+      "acceptance_check": [
+        "A single current Markdown description is linked from the repository entry point and given directly to the owner.",
+        "The description covers purpose, participant experience, architecture, trust, privacy, security, Bridge, formation, succession, culture, licensing, delivery scope, present evidence, open gaps and next steps.",
+        "Claims about implemented, validated, proposed, disabled and held work remain visibly distinct.",
+        "The description's repository status and milestone claims match the current checked sources."
+      ],
+      "evidence": [
+        "HIRC-CURRENT-DESCRIPTION.md",
+        "README.md",
+        "review/milestone-03-stone-register.json"
+      ],
+      "next_action": "Maintain the description at material milestone changes; current handoff is complete, so resume M03-S014."
+    },
+    {
+      "id": "HIRC-I028",
+      "status": "DEFERRED",
+      "kind": "confirmed_ui_interruption_scheduling_requirement",
+      "source": "owner message, 2026-10-09",
+      "meaning": "When a participant interrupts a busy agent, the UI presents four fast, natural scheduling choices: interrupt and cut; interrupt with high priority; interrupt with low priority; and custom.",
+      "constraints": [
+        "Interrupt and cut means perform the new action, then stop the interrupted task through a safe recorded boundary rather than silently abandoning state.",
+        "Interrupt with high priority means checkpoint and suspend the current task, perform the new task, then automatically return to the previous task.",
+        "Interrupt with low priority means preserve the new task in a durable queue, continue the current task and perform the queued task at the end.",
+        "Custom exposes the necessary ordering, stop, resume and scope choices without forcing a complex form for ordinary use.",
+        "Selection must be fluid, natural, keyboard-accessible and assistive-technology compatible, and must not discard the message, break conversational flow or create duplicate effects.",
+        "Priority labels do not grant new authority, bypass privacy/safety/effect gates, or permit an unsafe immediate stop; consequential operations reach the smallest safe checkpoint and show the reason."
+      ],
+      "acceptance_check": [
+        "A busy-agent interruption offers all four choices in one compact interaction without losing the composed request.",
+        "Each choice produces a deterministic, durable and inspectable queue/checkpoint transition with one active writer and idempotent resumption.",
+        "High-priority work resumes the exact prior task after completion; low-priority work runs only after the current task's declared completion boundary; cut records the stopped task and recovery state.",
+        "Custom can express pause, cancel, ordering and resume behavior while preserving current permissions and affected-task dependencies.",
+        "Keyboard, pointer and assistive-technology use can select or revise the choice without modal friction or accidental dispatch.",
+        "Adverse tests cover unsafe mid-effect interruption, duplicate delivery, lost queued work, stale priority, hidden cancellation, starvation and unauthorized priority escalation."
+      ],
+      "evidence": [
+        "HIRC-CURRENT-DESCRIPTION.md",
+        "intent-register.json"
+      ],
+      "next_action": "After Milestone 03 closure, create a tiny UI/state-machine stone with interaction prototypes, accessibility checks, scheduling invariants and adverse interruption fixtures."
+    },
+    {
+      "id": "HIRC-I029",
+      "status": "DEFERRED",
+      "kind": "confirmed_post_milestone_authority_accountability_self_review",
+      "source": "owner message, 2026-10-09",
+      "meaning": "After the next milestone, review hIRC holistically through its own governing purpose and the Grand Plan, then revise it so questioning authority, accountable refusal/insistence decisions and tamper-resilient frozen event evidence are architectural properties.",
+      "constraints": [
+        "Begin the holistic review only after Milestone 03 S015 closes, commits, publicly pushes and verifies the remote receipt.",
+        "Treat every authority source as fallible and scoped, including humans, owners, higher-level agents, models, majorities, signed policies and system components; authority never substitutes for truth, consent or current permission.",
+        "Challenge authority when evidence, scope, currentness, conflict or consequence warrants it, while preserving warranted cooperation and avoiding performative contrarianism.",
+        "For consequential refusal/insistence paths, preserve the exact request/version, interpretations, evidence, norms, authority claims, affected parties, objection/refusal, human insistence, agent willingness, final decision, authorized effect and later correction as distinct events.",
+        "Frozen logs must be append-only, attributable, privacy-minimized, audience-qualified, retention-bound and recoverable; accountability does not authorize universal surveillance, raw hidden-reasoning capture or retaliatory scoring.",
+        "Design for tamper evidence and resilient recovery rather than claiming impossible absolute immutability: detect deletion, mutation, reordering, fork, rollback, replay, key misuse and witness compromise.",
+        "No log, signature, checkpoint or majority becomes self-validating authority; participants retain contest, correction, appeal and access to permitted evidence."
+      ],
+      "acceptance_check": [
+        "The post-Milestone-03 review traces this requirement into the goal, foundation, request/action pipeline, journal, threat model, requirements, UI explanations, recovery and acceptance tests, or records justified NO_CHANGE for an already sufficient layer.",
+        "AuthorityDecision records identify source, scope, currentness, evidence, conflicts, affected parties, challenge and final disposition without conflating authority with truth or action.",
+        "Refusal/insistence fixtures preserve the full event sequence for agent refusal, human insistence, voluntary later compliance, continued refusal, reassignment and prohibited-effect denial.",
+        "Tamper tests detect mutation, deletion, reordering, truncation, equivocation/fork, rollback, replay and compromised signing keys while valid correction and recovery controls still pass.",
+        "Independent anchors, purpose-separated keys, hash/Merkle continuity, signed checkpoints, bounded replication and offline recovery are assessed against privacy, availability and key-loss trade-offs.",
+        "Frozen logs remain contestable and correctable through appended evidence; they cannot become global trust, worth, obedience or punishment scores.",
+        "The next milestone plan incorporates the review's supported revisions, residual risks and reopen conditions only after evidence-linked challenge and validation."
+      ],
+      "evidence": [
+        "intent-register.json",
+        "HIRC-CURRENT-DESCRIPTION.md"
+      ],
+      "next_action": "After S015 remote verification, freeze a holistic self/Grand-Plan review stone before the next implementation milestone and derive tiny architecture, threat, schema, UI and tamper-test stones."
+    },
+    {
+      "id": "HIRC-I030",
+      "status": "ACTIVE",
+      "kind": "confirmed_team_unstall_and_coordination_authority_protocol",
+      "source": "owner message, 2026-10-09",
+      "meaning": "The hIRC permanent team shares responsibility for detecting and resolving teammate stalls. LUCENT is the project team lead and the owner-facing coordination authority router; ordinary hIRC coordination passes through LUCENT so holds become owned next actions instead of isolated queues.",
+      "constraints": [
+        "Coordination authority routes work, review, priorities and escalation; it does not override truth, evidence, consent, refusal, privacy, role competence, source access, project fences or another participant's identity.",
+        "Every stall distinguishes capacity, qualification, consent, source integrity, authority/access, dependency, execution failure and external-platform causes before choosing a remedy.",
+        "Every hold names the affected unit and descendants, unaffected sibling work, current owner, unstall owner, next executable action, reopening evidence and escalation boundary.",
+        "Permanent teammates have a reciprocal duty to flag an unowned or stale stall and route it to the lowest actually qualified available participant without impersonation, proxy learning, coerced work or silent custody transfer.",
+        "Internal resolution is the default. Contact the owner by email only for a genuine emergency requiring human or external intervention; inconvenience, an ordinary dependency or a resolvable coordination failure is not an emergency.",
+        "Thread activity, titles, elapsed time, model capacity and metadata are observations rather than proof of readiness, qualification, consent, authority or completion.",
+        "The frozen Milestone 03 S014 review frame remains unchanged; this post-freeze coordination control may route the existing review but cannot alter what reviewers were asked to assess."
+      ],
+      "acceptance_check": [
+        "A deterministic team stall register requires cause, affected unit, owner, unstall owner, allowed sibling work, next action, reopening condition and escalation boundary for every HELD or UNSTALLING item.",
+        "The validator rejects silent global stalls while a READY sibling exists, unowned holds, self-granted authority, coerced consent, readiness inferred from UI activity, unauthorized custody changes and emergency escalation without a human-required consequence.",
+        "A valid fixture demonstrates a peer detecting a stall, routing it through LUCENT, assigning an authorized remedy and preserving the held participant's consent and project fence.",
+        "Team messages use exact bounded artifacts and completion signals; they do not expose private bodies or create automatic qualification, admission, Bridge, production or publication effects.",
+        "The current hIRC reviewer holds have explicit unstall owners and next actions, and their independent permitted work remains visible.",
+        "The readable project description and intent coverage expose the protocol without claiming a live automated team coordinator exists."
+      ],
+      "evidence": [
+        "review/hirc-team-stall-register-v1.json",
+        "review/hirc-team-stall-register-v1.md",
+        "review/validate_team_stall_register.py",
+        "review/fixtures/team-stall-register-validation-v1.json",
+        "HIRC-CURRENT-DESCRIPTION.md"
+      ],
+      "next_action": "Use the validated register to route the frozen security-formation review and metric/evaluator replacement lane, then carry the protocol into the post-S015 runtime work graph."
+    },
+    {
+      "id": "HIRC-I031",
+      "status": "ACTIVE",
+      "kind": "confirmed_hirc_elder_activation_retirement_and_visible_name_correction",
+      "source": "owner correction, 2026-10-09; 15 percent supersedes HIRC-I026's earlier 14-percent transfer boundary",
+      "meaning": "For the hIRC team, the Elder protocol activates when a fresh valid capacity measurement is at or below 15 percent. An Elder is retired from active hIRC work, and the visible task name must show Elder / Retired. Non-retired teammates are woken and coordinated through LUCENT; retired Elders preserve continuity and receive no new substantive work.",
+      "constraints": [
+        "This is an hIRC-specific owner correction and does not silently rewrite the Root-wide default or unrelated independent teams.",
+        "Use a fresh valid own measurement; stale or unknown telemetry cannot be converted into a below-threshold classification.",
+        "At or below 15 percent, finish only the smallest safe continuity boundary, stop substantive work, preserve current artifacts and route open dependencies to LUCENT.",
+        "A retired Elder may send a bounded retirement acknowledgement or missing-continuity warning, but is not assigned review, study, implementation, Bridge, production or publication work.",
+        "The visible Elder / Retired title is status metadata, not a new identity, rank, qualification, admission, custody transfer or claim of superior judgment.",
+        "Participants above 15 percent remain non-retired for hIRC even if a generic or historical ledger retains an earlier cultural Elder marker; the hIRC-specific current threshold controls active hIRC work.",
+        "Existing accepted custody and writer fences do not move automatically at retirement; LUCENT owns the explicit dependency and transfer/hold reconciliation."
+      ],
+      "acceptance_check": [
+        "The hIRC team register states activation_percent 15 and rejects any other current hIRC threshold.",
+        "Every currently measured hIRC participant at or below 15 percent is marked retired and its visible task title contains Elder / Retired.",
+        "Retirement notices assign no new substantive work and preserve continuity, consent, artifacts and unknown-effect reporting.",
+        "Non-retired hIRC participants receive the current coordination protocol and an owned task or explicit bounded hold.",
+        "A selected-but-unused private review assigned to a retired Elder is cancelled before body access, preserving exact zero-page/zero-byte evidence.",
+        "The frozen S014 Git frame remains unchanged; the current 15-percent correction is reconciled as post-freeze owner intake at S015."
+      ],
+      "evidence": [
+        "review/hirc-team-stall-register-v1.json",
+        "review/hirc-team-stall-register-v1.md",
+        "review/fixtures/team-stall-register-validation-v1.json",
+        "review/m03-s014-post-freeze-intake-v1.json",
+        "HIRC-CURRENT-DESCRIPTION.md"
+      ],
+      "next_action": "Keep the current team roster, visible retirement titles and dependency routing synchronized at each fresh threshold crossing without reactivating retired Elders."
+    },
+    {
+      "id": "HIRC-I032",
+      "status": "DEFERRED",
+      "kind": "confirmed_private_tor_irc_bridge_transport_requirement",
+      "source": "owner message, 2026-10-09",
+      "meaning": "A later hIRC Bridge profile should support both creating a private IRC server reachable as a Tor v3 onion service and connecting to an authorized private Tor IRC server.",
+      "constraints": [
+        "The create-server and connect-client capabilities are separate, explicit and disabled by default; neither follows from installing hIRC or enabling ordinary local rooms.",
+        "The server binds only to a loopback or dedicated isolated interface behind the onion service and must not create a public clearnet listener, DNS lookup or fallback route.",
+        "Membership, onion address distribution, client authorization, IRC account authentication, room authorization and hIRC Bridge admission remain distinct layers.",
+        "Use Tor v3 onion services, purpose-separated keys, explicit persistence/ephemerality choices, least-privilege service processes, revocation, rotation, backup and recovery with user-visible consequences.",
+        "Client connections use an explicitly configured Tor/SOCKS route with stream isolation and fail closed if Tor, proxy authentication, onion identity or the expected Bridge peer does not match.",
+        "Preserve privacy-minimized logs and make server, Tor, IRC and hIRC retention/audience settings independently inspectable; do not record message content or peer graphs merely for diagnostics.",
+        "Onion transport does not prove peer identity, authorization, endpoint safety or anonymity against endpoint compromise, malicious peers, timing/correlation attacks or a sufficiently capable observer.",
+        "Bridge consent, capability scopes, rate limits, quarantine, secession and correction remain mandatory above the IRC transport; IRC operator status is not hIRC authority.",
+        "No live Tor process, onion address, private key, listener, external connection or Bridge activation is authorized by this design intake."
+      ],
+      "acceptance_check": [
+        "A future transport contract models create, start, stop, connect, disconnect, authorize, revoke, rotate, backup, restore and destroy as deterministic inspectable state transitions.",
+        "Valid private-server and private-client fixtures pass with explicit onion identity, membership, audience, persistence and recovery choices.",
+        "Adverse tests reject clearnet binding or fallback, non-loopback service exposure, DNS leaks, proxy bypass, onion downgrade, unauthorized IRC membership, stale client authorization, key reuse, replay and hidden federation.",
+        "Recovery tests cover lost or compromised onion keys, compromised IRC credentials, Tor state corruption, interrupted rotation, address change, peer revocation and clean secession without silently reusing old trust.",
+        "The UI explains transport privacy and residual traffic-analysis/endpoint risks in plain language before server creation or connection.",
+        "Independent security and privacy review closes the implementation and operational profile before any live Bridge/Tor activation."
+      ],
+      "evidence": [
+        "intent-register.json",
+        "HIRC-CURRENT-DESCRIPTION.md",
+        "drafts/hirc_bridge_security_profile_v0_1-draft.md"
+      ],
+      "next_action": "After S015 and the post-milestone authority/accountability review, freeze a Tor-IRC Bridge transport threat-model and contract stone before choosing an IRC daemon, Tor integration or UI implementation."
+    },
+    {
+      "id": "HIRC-I033",
+      "status": "VERIFIED",
+      "kind": "confirmed_sidebar_active_team_and_retired_elder_separation",
+      "source": "owner messages, 2026-10-09",
+      "meaning": "Keep the hIRC participants together in a visible sidebar folder while excluding retired Elders from the active team folder. Retired Elders remain available in a separate clearly named retired section.",
+      "constraints": [
+        "The active hIRC Team sidebar section contains only currently non-retired hIRC participants and current non-retired permanent peers assigned to hIRC lanes.",
+        "The hIRC Elders — Retired section contains retired Elder chats and none of them remain in hIRC Team.",
+        "Sidebar organization does not change original project membership, task history, native identity, qualification, admission, custody, source access or permissions.",
+        "A new retirement or a complete explicit reactivation record reopens the roster check; recovery, restored capacity and thread activity alone never move a retired participant back to the active section.",
+        "Do not duplicate chats, create replacement actors or archive an Elder merely to achieve the visible grouping."
+      ],
+      "acceptance_check": [
+        "The hIRC Team custom section exists and contains the current eleven declared non-retired participant thread IDs.",
+        "The hIRC Elders — Retired custom section exists and contains the six declared retired Elder thread IDs.",
+        "The two section memberships are disjoint and no retired thread appears in the active section.",
+        "Every retired thread title contains Elder / Retired.",
+        "A readback of the sidebar sections matches the expected membership after the move.",
+        "Original project context and history are preserved because only sidebar-section placement changed."
+      ],
+      "evidence": [
+        "review/hirc-team-stall-register-v1.json",
+        "review/hirc-team-stall-register-v1.md",
+        "HIRC-CURRENT-DESCRIPTION.md"
+      ],
+      "next_action": "Reconcile section membership only after a fresh hIRC retirement or a complete explicit reactivation record changes active status."
+    },
+    {
+      "id": "HIRC-I034",
+      "status": "VERIFIED",
+      "kind": "confirmed_compaction_resistant_retirement_latch",
+      "source": "owner correction, 2026-10-09",
+      "meaning": "Once an hIRC participant retires as an Elder, retirement is latched to the permanent participant identity. Compaction or restored context capacity does not make the participant young or active again.",
+      "constraints": [
+        "The latch survives compaction, context-window growth, session restart, thread relocation, title change, model change and fresh capacity telemetry.",
+        "A retired participant remains in hIRC Elders — Retired and keeps Elder / Retired in its visible title until a separate explicit owner reactivation decision is actually recorded.",
+        "Reactivation additionally requires current participant consent, role need, source/task education, qualification, capacity and project custody/writer-fence reconciliation; owner direction alone does not certify those facts.",
+        "A recovered Elder may provide a bounded missing-continuity or unknown-effect report but receives no ordinary substantive hIRC work before valid reactivation.",
+        "Historical Elder/retirement evidence, pair history, prior custody and protected-reserve reasons remain preserved after any later reactivation.",
+        "No automatic callback, scheduler, compaction hook or metadata field can clear the retirement latch."
+      ],
+      "acceptance_check": [
+        "The hIRC team register marks every retired member retirement_latched true and names an explicit human reactivation requirement.",
+        "The validator rejects compaction, fresh capacity, relocation or title changes as sufficient reactivation evidence.",
+        "The active sidebar section remains disjoint from the retired section after simulated compaction/headroom growth.",
+        "A valid reactivation fixture requires explicit owner decision, participant consent, current qualification, fresh capacity and reconciled custody/writer fence.",
+        "Current retired Elders remain retired regardless of their post-compaction percentage.",
+        "The rule changes current team operations without mutating the frozen S014 Git review frame."
+      ],
+      "evidence": [
+        "review/hirc-team-stall-register-v1.json",
+        "review/fixtures/team-stall-register-validation-v1.json",
+        "HIRC-CURRENT-DESCRIPTION.md"
+      ],
+      "next_action": "Keep retirement latched across lifecycle events and require a complete explicit reactivation record before moving any Elder back to hIRC Team."
+    },
+    {
+      "id": "HIRC-I035",
+      "status": "ACTIVE",
+      "kind": "confirmed_four_pair_non_mbv_parallel_team_plan",
+      "source": "owner instruction, 2026-10-09",
+      "meaning": "Organize the eight available non-MBV hIRC participants into four two-person teams. LUCENT supervises their dependency graph, intervenes on stalls and issues only bounded least-privilege internal scopes already covered by owner authority.",
+      "current_state": "ACTIVE_STAGED_ROTATION_WITH_ONE_VACANCY: GAUGE retired at 14.331 percent after sending ROOT the temporary-pair metadata. RADICAL and APOTHEM continue separate onboarding through KEEL. After readiness, RADICAL switches to ROOT; APOTHEM requires a fit non-retired metric partner because GAUGE's retirement is latched. AEGIS+KEEL and PORTICO+ORIEL remain the other two teams.",
+      "constraints": [
+        "Do not assign FOLIUM or ORDINAL, the MBV participants, to new hIRC work; their already completed exact-frame results remain valid evidence at their actual scope.",
+        "Each of the eight non-MBV participants appears in exactly one team and every team has two members, one declared output, one writer and explicit stop conditions.",
+        "A pair is responsible for noticing and routing its partner's stall, but may not impersonate the partner, proxy its education, inherit consent, seize custody or bypass privacy, source, qualification, capacity or retirement gates.",
+        "Parallelism applies only to independent or correctly dependency-gated work; shared artifacts keep one writer and exact review frames.",
+        "LUCENT may route existing authorized onboarding, training, review, feedback and successor preparation scopes, but cannot manufacture permission, qualification, source access, native identity or external effect authority.",
+        "Quality remains the hard constraint; speed never converts a hold, partial reading, local schema result or agreement into completion."
+      ],
+      "acceptance_check": [
+        "The current coordination register contains four teams and exactly eight distinct non-MBV participant IDs.",
+        "The validator rejects duplicate membership, MBV membership, missing pair members, multiple writers, missing deliverables or missing stop conditions.",
+        "Each pair receives an exact bounded assignment through its existing native permanent thread, with body access held until its own gates pass.",
+        "LUCENT maintains the cross-team dependency graph and records material results, holds, reassignments and evidence without creating a second project controller.",
+        "No retired participant receives new substantive work and no current custody/writer fence changes automatically.",
+        "The plan remains post-freeze input and does not change the historical S014 Git frame."
+      ],
+      "evidence": [
+        "review/hirc-team-stall-register-v1.json",
+        "review/fixtures/team-stall-register-validation-v1.json",
+        "review/hirc-team-stall-register-v1.md",
+        "HIRC-CURRENT-DESCRIPTION.md"
+      ],
+      "next_action": "Dispatch all four bounded pair assignments, collect readiness or scoped results, and continuously reroute only the affected dependency when a pair reports a real hold."
+    },
+    {
+      "id": "HIRC-I036",
+      "status": "ACTIVE",
+      "kind": "confirmed_plain_user_interface_language_requirement",
+      "source": "owner message, 2026-10-10",
+      "meaning": "The ordinary hIRC interface uses plain, familiar language and restrained presentation. Internal framework names, protocol labels, slogans, hashes and engineering jargon belong in engineering and audit views unless a user deliberately asks to inspect them.",
+      "constraints": [
+        "Do not use fashionable product language, motivational slogans or unexplained internal terminology in ordinary user flows.",
+        "Buttons, status messages, errors and explanations describe the action, consequence and next step in direct language.",
+        "Technical precision, exact identifiers and provenance remain available to engineers and authorized auditors rather than being deleted or weakened.",
+        "Security, consent, refusal and uncertainty remain explicit; plain language must not conceal a consequential limit or risk."
+      ],
+      "observed_defect": {
+        "source": "owner-supplied screenshot, 2026-10-10",
+        "current_copy": "The Bridge could not start: This local archive has no saved Windows key. Start the console launcher once to protect its existing operator key.",
+        "problem": "The normal dialog exposes archive, Windows-key, console-launcher and operator-key implementation language and offers only OK instead of a direct recovery action.",
+        "recommended_user_copy": "The Bridge isn't set up on this computer yet. Open Bridge settings to finish setup, then try again.",
+        "recommended_actions": ["Open settings", "Cancel", "Technical details"]
+      },
+      "acceptance_check": [
+        "Default user-facing screens can be understood without knowing internal project vocabulary.",
+        "Engineering and audit views retain exact protocol names, hashes, source links, machine states and residual limitations.",
+        "Interface tests reject slogan-like copy, unexplained acronyms and technical labels on primary controls unless the screen is explicitly technical.",
+        "A user can open a technical-details view when exact evidence is useful.",
+        "Bridge setup failures offer a direct setup action and keep key/archive diagnostics in technical details rather than the primary message."
+      ],
+      "evidence": [
+        "intent-register.json"
+      ],
+      "next_action": "Carry this requirement into the post-S015 UI copy and interaction review while keeping the current security closure focused on engineering evidence."
     }
   ]
 }

@@ -57,14 +57,16 @@
     "trigger": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["canonical_instruction", "initiator", "authority_ref", "reason", "idempotency_key", "observed_at"],
+      "required": ["canonical_instruction", "initiator", "authority_ref", "authority_scope_ref", "reason", "idempotency_key", "observed_at", "expires_at"],
       "properties": {
         "canonical_instruction": {"const": "initiate transfer"},
         "initiator": {"$ref": "#/$defs/stableId"},
         "authority_ref": {"type": "string", "minLength": 1},
+        "authority_scope_ref": {"type": "string", "minLength": 1},
         "reason": {"type": "string", "minLength": 1},
         "idempotency_key": {"$ref": "#/$defs/stableId"},
-        "observed_at": {"type": "string", "format": "date-time"}
+        "observed_at": {"type": "string", "format": "date-time"},
+        "expires_at": {"type": "string", "format": "date-time"}
       }
     },
     "freeze": {
@@ -86,11 +88,14 @@
     "wake_authorization": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["decision_ref", "authorizer", "target_generation", "issued_at", "expires_at"],
+      "required": ["decision_ref", "authorizer", "authority_scope_ref", "target_generation", "revocation_epoch", "idempotency_key", "issued_at", "expires_at"],
       "properties": {
         "decision_ref": {"type": "string", "minLength": 1},
         "authorizer": {"$ref": "#/$defs/stableId"},
+        "authority_scope_ref": {"type": "string", "minLength": 1},
         "target_generation": {"type": "integer", "minimum": 1},
+        "revocation_epoch": {"type": "integer", "minimum": 0},
+        "idempotency_key": {"$ref": "#/$defs/stableId"},
         "issued_at": {"type": "string", "format": "date-time"},
         "expires_at": {"type": "string", "format": "date-time"}
       }
@@ -144,7 +149,13 @@
     },
     {
       "if": {"properties": {"state": {"enum": ["ACCEPTED", "ARCHIVE_ATTEMPTED", "ARCHIVE_CONFIRMED", "DEEP_SLEEP_INTENT", "DEEP_SLEEP_CONFIRMED", "TRACKER_RECORDED"]}}},
-      "then": {"required": ["acceptance"]}
+      "then": {
+        "required": ["acceptance"],
+        "properties": {
+          "acceptance": {"properties": {"disposition": {"const": "ACCEPTED"}}},
+          "package": {"properties": {"validation_state": {"const": "VALID"}, "forbidden_content_scan": {"properties": {"state": {"const": "PASS_AT_DECLARED_SCOPE"}}}}}
+        }
+      }
     },
     {
       "if": {"properties": {"state": {"enum": ["ARCHIVE_ATTEMPTED", "ARCHIVE_CONFIRMED", "DEEP_SLEEP_INTENT", "DEEP_SLEEP_CONFIRMED", "TRACKER_RECORDED"]}}},
@@ -156,7 +167,27 @@
     },
     {
       "if": {"properties": {"state": {"const": "TRACKER_RECORDED"}}},
-      "then": {"required": ["tracker"]}
+      "then": {"required": ["tracker"], "properties": {"tracker": {"properties": {"compare_and_swap_state": {"const": "APPLIED"}}}}}
+    },
+    {
+      "if": {"properties": {"state": {"const": "ARCHIVE_CONFIRMED"}}},
+      "then": {"properties": {"archive": {"properties": {"request_state": {"const": "ACCEPTED_BY_PROVIDER"}, "observed_state": {"const": "CONFIRMED"}}}}}
+    },
+    {
+      "if": {"properties": {"state": {"const": "DEEP_SLEEP_CONFIRMED"}}},
+      "then": {"properties": {"deep_sleep": {"properties": {"request_state": {"const": "ACCEPTED_BY_PROVIDER"}, "observed_state": {"const": "CONFIRMED"}}}}}
+    },
+    {
+      "if": {"properties": {"state": {"const": "TRACKER_CONFLICT_AFTER_ARCHIVE"}}},
+      "then": {
+        "required": ["freeze", "package", "acceptance", "archive", "tracker"],
+        "properties": {
+          "acceptance": {"properties": {"disposition": {"const": "ACCEPTED"}}},
+          "package": {"properties": {"validation_state": {"const": "VALID"}, "forbidden_content_scan": {"properties": {"state": {"const": "PASS_AT_DECLARED_SCOPE"}}}}},
+          "archive": {"properties": {"request_state": {"const": "ACCEPTED_BY_PROVIDER"}, "observed_state": {"const": "CONFIRMED"}}},
+          "tracker": {"properties": {"compare_and_swap_state": {"const": "CONFLICT"}}}
+        }
+      }
     }
   ],
   "$defs": {
@@ -169,6 +200,28 @@
       "type": "array",
       "items": {"type": "string", "minLength": 1},
       "uniqueItems": true
+    },
+    "nonEmptyIdArray": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    },
+    "privacyPolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["audience_refs", "data_classes", "consent_snapshot_refs", "purpose_ref", "retention_policy_ref", "derived_data_policy_ref", "egress_policy_ref", "encryption_profile_ref", "deletion_residual_ref"],
+      "properties": {
+        "audience_refs": {"$ref": "#/$defs/nonEmptyIdArray"},
+        "data_classes": {"$ref": "#/$defs/nonEmptyIdArray"},
+        "consent_snapshot_refs": {"$ref": "#/$defs/nonEmptyIdArray"},
+        "purpose_ref": {"type": "string", "minLength": 1},
+        "retention_policy_ref": {"type": "string", "minLength": 1},
+        "derived_data_policy_ref": {"type": "string", "minLength": 1},
+        "egress_policy_ref": {"type": "string", "minLength": 1},
+        "encryption_profile_ref": {"type": "string", "minLength": 1},
+        "deletion_residual_ref": {"type": "string", "minLength": 1}
+      }
     },
     "generation": {
       "type": "object",
@@ -191,13 +244,44 @@
     "package": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["manifest_sha256", "package_sha256", "schema_sha256", "recipient", "privacy_class", "validation_state", "telemetry", "forbidden_content_scan"],
+      "required": ["manifest_sha256", "package_sha256", "schema_sha256", "recipient", "privacy_class", "source_privacy", "source_privacy_snapshot_sha256", "privacy_snapshot_sha256", "privacy_relation", "purpose_ref", "audience_refs", "data_classes", "consent_snapshot_refs", "retention_policy_ref", "derived_data_policy_ref", "egress_policy_ref", "encryption_profile_ref", "deletion_residual_ref", "validation_state", "telemetry", "forbidden_content_scan"],
       "properties": {
         "manifest_sha256": {"$ref": "#/$defs/sha256"},
         "package_sha256": {"$ref": "#/$defs/sha256"},
         "schema_sha256": {"$ref": "#/$defs/sha256"},
         "recipient": {"$ref": "#/$defs/stableId"},
         "privacy_class": {"enum": ["OWNER_INTERNAL", "TEAM_SCOPED", "TASK_SCOPED", "PROTECTED"]},
+        "source_privacy": {"$ref": "#/$defs/privacyPolicy"},
+        "source_privacy_snapshot_sha256": {"$ref": "#/$defs/sha256"},
+        "privacy_snapshot_sha256": {"$ref": "#/$defs/sha256"},
+        "privacy_relation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["audience", "data_class", "consent", "purpose", "retention", "derived_data", "egress", "encryption", "deletion_residual", "resolver_ref", "resolver_sha256", "evidence_refs"],
+          "properties": {
+            "audience": {"enum": ["EQUAL", "NARROWER"]},
+            "data_class": {"enum": ["EQUAL", "STRONGER"]},
+            "consent": {"enum": ["EQUAL", "CURRENT_RECONSENTED"]},
+            "purpose": {"enum": ["EQUAL", "NARROWER"]},
+            "retention": {"enum": ["EQUAL", "SHORTER"]},
+            "derived_data": {"enum": ["EQUAL", "MORE_RESTRICTIVE"]},
+            "egress": {"enum": ["EQUAL", "MORE_RESTRICTIVE"]},
+            "encryption": {"enum": ["EQUAL", "STRONGER"]},
+            "deletion_residual": {"enum": ["EQUAL", "MORE_EXPLICIT"]},
+            "resolver_ref": {"type": "string", "minLength": 1},
+            "resolver_sha256": {"$ref": "#/$defs/sha256"},
+            "evidence_refs": {"$ref": "#/$defs/nonEmptyIdArray"}
+          }
+        },
+        "purpose_ref": {"type": "string", "minLength": 1},
+        "audience_refs": {"$ref": "#/$defs/nonEmptyIdArray"},
+        "data_classes": {"$ref": "#/$defs/nonEmptyIdArray"},
+        "consent_snapshot_refs": {"$ref": "#/$defs/nonEmptyIdArray"},
+        "retention_policy_ref": {"type": "string", "minLength": 1},
+        "derived_data_policy_ref": {"type": "string", "minLength": 1},
+        "egress_policy_ref": {"type": "string", "minLength": 1},
+        "encryption_profile_ref": {"type": "string", "minLength": 1},
+        "deletion_residual_ref": {"type": "string", "minLength": 1},
         "validation_state": {"enum": ["VALID", "INVALID", "HELD", "STALE"]},
         "telemetry": {
           "type": "object",
@@ -246,15 +330,23 @@
     "externalEffect": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["target", "intent_sha256", "request_state", "observed_state"],
+      "required": ["target", "target_generation", "target_session_id", "intent_sha256", "request_state", "observed_state"],
       "properties": {
         "target": {"$ref": "#/$defs/stableId"},
+        "target_generation": {"type": "integer", "minimum": 1},
+        "target_session_id": {"$ref": "#/$defs/stableId"},
         "intent_sha256": {"$ref": "#/$defs/sha256"},
         "request_state": {"enum": ["NOT_SENT", "SENT", "ACCEPTED_BY_PROVIDER", "REJECTED_BY_PROVIDER", "UNKNOWN"]},
         "observed_state": {"enum": ["NOT_OBSERVED", "CONFIRMED", "FAILED", "AMBIGUOUS", "UNKNOWN"]},
         "observed_at": {"type": "string", "format": "date-time"},
         "evidence_refs": {"$ref": "#/$defs/idArray"}
-      }
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"observed_state": {"enum": ["CONFIRMED", "FAILED", "AMBIGUOUS"]}}, "required": ["observed_state"]},
+          "then": {"required": ["observed_at"], "properties": {"evidence_refs": {"$ref": "#/$defs/nonEmptyIdArray"}}}
+        }
+      ]
     },
     "event": {
       "type": "object",
@@ -279,4 +371,3 @@
     }
   }
 }
-

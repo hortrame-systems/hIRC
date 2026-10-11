@@ -1,0 +1,102 @@
+{
+  "schema": "hirc.m03-s014-security-repair-audit-frame/1",
+  "id": "HIRC-M03-S014-SECURITY-REPAIR-AUDIT-FRAME-R003-001",
+  "state": "FROZEN_FOR_BOUNDED_SOURCE_INTEGRITY_AUDIT",
+  "frozen_s014_commit": "2b8d195fe640e24540142c49e3264b7989d165a6",
+  "working_head": "1c525e3b464c58b6e037faaf6bb76626b32364e4",
+  "completed_repairs": [
+    "M03-S014-SEC-R001",
+    "M03-S014-SEC-R002",
+    "M03-S014-SEC-R003"
+  ],
+  "members": [
+    {
+      "path": "review/contracts/hirc-request-case.candidate.schema.v2.json",
+      "sha256": "45f17f0abd21b164d0fc0b846f67da06d8fa2edf393d88330a3a52e5b7a01653",
+      "bytes": 14330
+    },
+    {
+      "path": "review/fixtures/security-request-state-cases-v1.json",
+      "sha256": "c0f8e226bd95bf05c313ae16064080404d72b86534b12c09ec3c36310a7524a8",
+      "bytes": 5397
+    },
+    {
+      "path": "review/validate_security_request_states.ps1",
+      "sha256": "62bf7f77c735059bf4ee6e5d4449fb307b311bca93e398edbdb4f2f18d967b56",
+      "bytes": 6038
+    },
+    {
+      "path": "review/fixtures/security-request-state-validation-v1.json",
+      "sha256": "05371b1d8b7fe6450f66f14702419271a4dab037e5ee6b9d5becb4a084fe7478",
+      "bytes": 2480
+    },
+    {
+      "path": "review/contracts/hirc-bridge-gate.candidate.schema.json",
+      "sha256": "de28cc4a03dead8ede8829376aa97199e91348813050df7e845eb507519f5b8a",
+      "bytes": 5659
+    },
+    {
+      "path": "review/fixtures/security-bridge-stage-cases-v1.json",
+      "sha256": "f863c6b98774776a527c43dd9033369b51547dd8414644162dbaa0496c41caac",
+      "bytes": 1836
+    },
+    {
+      "path": "review/validate_security_bridge_stages.ps1",
+      "sha256": "2b8310a4ca3fd2fdf4b8d42f940bf7e5df6148e399aff0831dcd52bf00cfa60c",
+      "bytes": 5554
+    },
+    {
+      "path": "review/fixtures/security-bridge-stage-validation-v1.json",
+      "sha256": "ea0373e5a0f60b9577943897c97da953d7c8fb08f1d3d56b045eaa59c7713a3e",
+      "bytes": 2222
+    },
+    {
+      "path": "review/contracts/hirc-release-profile.candidate.schema.json",
+      "sha256": "f753b15b5eacab01f5eae2e144c17afa54d809ead55f0c4fb4ace56861cffd05",
+      "bytes": 6459
+    },
+    {
+      "path": "review/fixtures/security-release-profile-cases-v1.json",
+      "sha256": "9bca815389ca18db5a4a067afd194f266bfc972560f596472a08785712506e73",
+      "bytes": 2047
+    },
+    {
+      "path": "review/validate_security_release_profile.ps1",
+      "sha256": "f40f513131bf3e969eb63231b54695c70e139316a7635346c5f022155dac0e5e",
+      "bytes": 4605
+    },
+    {
+      "path": "review/fixtures/security-release-profile-validation-v1.json",
+      "sha256": "070e602c72abc5de7fb86bcb146990dccf8ddec7198661c74f2f4fbd97cff6bf",
+      "bytes": 2651
+    },
+    {
+      "path": "review/m03-s014-security-repair-stones-v1.json",
+      "sha256": "f3645dfb61ec2070fc45f7c4f5e80be357291917b253b5e9a37fb196e59fb7dc",
+      "bytes": 10274
+    },
+    {
+      "path": "review/fixtures/m03-s014-security-repair-stones-validation-v1.json",
+      "sha256": "765860b0ebc62e79a5b3e3c63d7090c8a044201ca05f3209b3dfd61773c4c36d",
+      "bytes": 1442
+    },
+    {
+      "path": "review/contracts/README.md",
+      "sha256": "395ef6ac9907d617b22a3380309a198aff94258c3b0d0246fcf28a159dc7e9ba",
+      "bytes": 7378
+    },
+    {
+      "path": "review/README.md",
+      "sha256": "a13ba13502bbf7e6d53ed7c334fcfddc4950c73b9494a3d0c104eee230913b9b",
+      "bytes": 12908
+    },
+    {
+      "path": "review/ledger.json",
+      "sha256": "918fdf9a1aac91e5a532a9290767ad634a6361d3fb27a0214bac44b05b1cc932",
+      "bytes": 125847
+    }
+  ],
+  "scope": "Exact current source/fixture/validator/result/link/ledger membership only; no security semantic judgment or private body.",
+  "stop": "Input drift requires a new frame; auditor does not edit hIRC.",
+  "nonclaim": "Snapshot metadata for ORIEL audit, not ledger self-closure, independent security review, S014 acceptance or release."
+}

@@ -1,0 +1,97 @@
+{
+  "schema": "hirc.m08-s004-validation/1",
+  "stone": "M08-S004",
+  "status": "PASS_TOOLING_SCOPE_KEY_CUSTODY_INTEGRATION_HELD",
+  "checks": {
+    "witness_tests_pass": true,
+    "witness_test_count": true,
+    "full_suite_pass": true,
+    "full_suite_test_count": true,
+    "three_expected_release_failures": true,
+    "witness_created_and_verified": true,
+    "tail_chain_locally_self_consistent": true,
+    "external_witness_detects_truncation": true,
+    "key_not_stored": true,
+    "public_signature_not_claimed": true
+  },
+  "files": [
+    {
+      "path": "implementation/M08_RELEASE_HARDENING_PLAN.md",
+      "sha256": "0e2b21a00be42a7ec56773742486b8fcfd9b2fea40b0dd460268f3c2a7779df6",
+      "bytes": 6363
+    },
+    {
+      "path": "implementation/README.md",
+      "sha256": "608abe3f9aade0b3249d55a7e5765a1d98fd6a4d0c3f9cdd4c77814cf8300bb2",
+      "bytes": 16078
+    },
+    {
+      "path": "src/hirc/witness.py",
+      "sha256": "e32250ee41b34b9ffa9bc5fa71dd1293db6e3137e93b7de2c2825727cb3464e6",
+      "bytes": 4090
+    },
+    {
+      "path": "src/hirc/cli.py",
+      "sha256": "6fcd8323c08caecd17948a2531444aa5f1676aa2306b0c5faa8076ad2f3b55fc",
+      "bytes": 9691
+    },
+    {
+      "path": "tests/test_witness.py",
+      "sha256": "ab50affc1336c8c8b3e99566c83ad1741c3a0637fee1bc699e1e5daaa5fe7b40",
+      "bytes": 5594
+    },
+    {
+      "path": "tests/test_known_limits.py",
+      "sha256": "52eba558e025cf5841eb07d50ecb9de664b04ca4179c2892a7c050fade1ca30d",
+      "bytes": 2766
+    }
+  ],
+  "witness_test_output": [
+    "test_cli_reads_key_from_stdin_not_arguments (test_witness.WitnessTests.test_cli_reads_key_from_stdin_not_arguments) ... ok",
+    "test_concurrent_witness_creation_is_never_overwritten (test_witness.WitnessTests.test_concurrent_witness_creation_is_never_overwritten) ... ok",
+    "test_create_and_verify (test_witness.WitnessTests.test_create_and_verify) ... ok",
+    "test_existing_witness_is_not_overwritten (test_witness.WitnessTests.test_existing_witness_is_not_overwritten) ... ok",
+    "test_oversized_witness_file_is_rejected_before_parsing (test_witness.WitnessTests.test_oversized_witness_file_is_rejected_before_parsing) ... ok",
+    "test_privileged_tail_truncation_is_detected (test_witness.WitnessTests.test_privileged_tail_truncation_is_detected) ... ok",
+    "test_short_key_is_rejected (test_witness.WitnessTests.test_short_key_is_rejected) ... ok",
+    "test_wrong_key_and_changed_witness_are_rejected (test_witness.WitnessTests.test_wrong_key_and_changed_witness_are_rejected) ... ok",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 8 tests in 0.941s",
+    "",
+    "OK"
+  ],
+  "full_suite_output": [
+    ".................................................................xxx........................................................................",
+    "----------------------------------------------------------------------",
+    "Ran 140 tests in 19.545s",
+    "",
+    "OK (expected failures=3)"
+  ],
+  "control": {
+    "created": {
+      "path": "D:\\HORTRAME\\hIRC\\tests\\.tmp\\tmp7hbc5rs7\\head.json",
+      "sha256": "adb2edb3b6256242721831c8ec929fffef6c50b84d5f246b5e748dfc364e0b96",
+      "bytes": 478,
+      "event_count": 2,
+      "head_hash": "355aac9b3ef81e45b6f9e39348b28571be98e25a30ebb8650a43afcbc054414a",
+      "key_stored": false
+    },
+    "verified": {
+      "schema": "hirc.head-witness-verification/1",
+      "valid": true,
+      "event_count": 2,
+      "head_hash": "355aac9b3ef81e45b6f9e39348b28571be98e25a30ebb8650a43afcbc054414a",
+      "key_stored": false,
+      "independent_public_signature": false
+    },
+    "tail_chain_valid_without_witness": true,
+    "truncation_detected_with_witness": true
+  },
+  "surviving_limits": [
+    "No witness key is generated, stored, escrowed or distributed; operational key custody remains open.",
+    "HMAC is symmetric and does not provide an independently verifiable public signature.",
+    "Witness creation is not automatically required for every store mutation or backup; release integration remains open."
+  ],
+  "nonclaim": "M08-S004 keyed local witness tooling only; not deployed anti-rollback assurance or public release signing."
+}

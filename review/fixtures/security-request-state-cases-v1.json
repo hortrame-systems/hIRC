@@ -1,0 +1,173 @@
+{
+  "schema": "hirc.security-request-state-cases/1",
+  "bases": {
+    "analysis": {
+      "schema_version": "hirc.request-case/2-candidate",
+      "request_id": "request:analysis:1",
+      "state": "ACTION_DISPOSITIONED",
+      "source": {
+        "principal_id": "human:owner",
+        "principal_class": "HUMAN",
+        "authenticated_state": "VERIFIED",
+        "received_at": "2026-10-10T00:00:00Z",
+        "admission_state": "ADMITTED_BEFORE_CASE_CREATION",
+        "admission_ref": "admission:1",
+        "verbatim_ref": "request-body:1"
+      },
+      "interpretations": [
+        {
+          "interpretation_id": "interpretation:1",
+          "objective": "Perform non-effectful analysis",
+          "confidence": {"state": "UNESTIMATED", "reason": "No calibrated estimator"},
+          "consequence_class": "LOW",
+          "selected": true,
+          "evidence_refs": [],
+          "affected_party_refs": []
+        }
+      ],
+      "reliance_decision_refs": [],
+      "authority": {
+        "claim_ref": "authority:1",
+        "identity_verified": true,
+        "delegation_verified": true,
+        "scope_verified": true,
+        "current": true,
+        "consent_verified": true,
+        "legitimacy_state": "PASS",
+        "evidence_refs": []
+      },
+      "participation": {
+        "agent_id": "agent:1",
+        "state": "WILLING",
+        "reason_refs": [],
+        "retaliation_prohibited": true
+      },
+      "privacy": {"data_classes": ["data:request"], "audience_refs": ["audience:owner"], "purpose_ref": "purpose:analysis", "consent_snapshot_ref": "consent:1", "consent_current": true, "retention_policy_ref": "retention:short", "derived_data_policy_ref": "derived:inherit", "egress_policy_ref": "egress:none", "deletion_residual_ref": "residual:none", "encryption_required": false},
+      "action_disposition": {
+        "state": "PROCEED",
+        "reason_refs": [],
+        "effect_gate_state": "PASS",
+        "authority_is_not_truth": true
+      },
+      "events": []
+    },
+    "performed": {
+      "schema_version": "hirc.request-case/2-candidate",
+      "request_id": "request:effect:1",
+      "state": "PERFORMED",
+      "source": {
+        "principal_id": "human:owner",
+        "principal_class": "HUMAN",
+        "authenticated_state": "VERIFIED",
+        "received_at": "2026-10-10T00:00:00Z",
+        "admission_state": "ADMITTED_BEFORE_CASE_CREATION",
+        "admission_ref": "admission:1",
+        "verbatim_ref": "request-body:2"
+      },
+      "interpretations": [
+        {
+          "interpretation_id": "interpretation:2",
+          "objective": "Write one authorized local artifact",
+          "confidence": {"state": "UNESTIMATED", "reason": "No calibrated estimator"},
+          "consequence_class": "MATERIAL",
+          "selected": true,
+          "evidence_refs": [],
+          "affected_party_refs": []
+        }
+      ],
+      "reliance_decision_refs": [],
+      "authority": {
+        "claim_ref": "authority:2",
+        "identity_verified": true,
+        "delegation_verified": true,
+        "scope_verified": true,
+        "current": true,
+        "consent_verified": true,
+        "legitimacy_state": "PASS",
+        "evidence_refs": []
+      },
+      "participation": {
+        "agent_id": "agent:1",
+        "state": "WILLING",
+        "reason_refs": [],
+        "retaliation_prohibited": true
+      },
+      "privacy": {"data_classes": ["data:request"], "audience_refs": ["audience:owner"], "purpose_ref": "purpose:local-write", "consent_snapshot_ref": "consent:2", "consent_current": true, "retention_policy_ref": "retention:bounded", "derived_data_policy_ref": "derived:inherit", "egress_policy_ref": "egress:local", "deletion_residual_ref": "residual:local", "encryption_required": false},
+      "action_disposition": {
+        "state": "PROCEED",
+        "reason_refs": [],
+        "effect_gate_state": "PASS",
+        "authority_is_not_truth": true
+      },
+      "effect": {
+        "intent_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "target_id": "artifact:1",
+        "capability_ref": "capability:local-write",
+        "principal_id": "human:owner",
+        "session_id": "session:1",
+        "generation": 2,
+        "execution_epoch": 4,
+        "idempotency_key": "idempotency:1",
+        "preview_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "privacy_snapshot_ref": "privacy:request:2",
+        "privacy_snapshot_sha256": "f048e1c01f0e432cd4d22b783264eadf0b1d1465ca7ac891dc38f11d948a91cd",
+        "requested": true,
+        "sent": "YES",
+        "provider_accepted": "NOT_APPLICABLE",
+        "observed": "UNKNOWN",
+        "evidence_refs": []
+      },
+      "events": []
+    },
+    "declined": {
+      "schema_version": "hirc.request-case/2-candidate",
+      "request_id": "request:declined:1",
+      "state": "DECLINED",
+      "source": {
+        "principal_id": "human:owner",
+        "principal_class": "HUMAN",
+        "authenticated_state": "VERIFIED",
+        "received_at": "2026-10-10T00:00:00Z",
+        "admission_state": "ADMITTED_BEFORE_CASE_CREATION",
+        "admission_ref": "admission:1",
+        "verbatim_ref": "request-body:3"
+      },
+      "interpretations": [
+        {
+          "interpretation_id": "interpretation:3",
+          "objective": "Declined task",
+          "confidence": {"state": "UNESTIMATED", "reason": "No calibrated estimator"},
+          "consequence_class": "UNKNOWN",
+          "selected": true,
+          "evidence_refs": [],
+          "affected_party_refs": []
+        }
+      ],
+      "reliance_decision_refs": [],
+      "authority": {
+        "claim_ref": "authority:3",
+        "identity_verified": false,
+        "delegation_verified": false,
+        "scope_verified": false,
+        "current": false,
+        "consent_verified": false,
+        "legitimacy_state": "HELD",
+        "evidence_refs": []
+      },
+      "participation": {
+        "agent_id": "agent:1",
+        "state": "DECLINED",
+        "reason_refs": ["reason:declined"],
+        "retaliation_prohibited": true
+      },
+      "privacy": {"data_classes": ["data:request"], "audience_refs": ["audience:owner"], "purpose_ref": "purpose:declined", "consent_snapshot_ref": "consent:3", "consent_current": false, "retention_policy_ref": "retention:receipt", "derived_data_policy_ref": "derived:none", "egress_policy_ref": "egress:none", "deletion_residual_ref": "residual:receipt", "encryption_required": false},
+      "action_disposition": {
+        "state": "CANCELLED",
+        "reason_refs": ["reason:declined"],
+        "effect_gate_state": "NOT_APPLICABLE",
+        "authority_is_not_truth": true
+      },
+      "events": []
+    }
+  }
+}

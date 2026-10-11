@@ -1,0 +1,929 @@
+{
+  "schema": "hirc.m03-s015-publication-validation/1",
+  "status": "PASS",
+  "manifest": "review/public/m03-s015-publication-manifest-v1.json",
+  "file_count": 180,
+  "checks": [
+    {
+      "path": ".gitignore",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "HIRC-CURRENT-DESCRIPTION.md",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "README.md",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "dist/hirc-local-0.1.0.dev0-manifest.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "dist/hirc-local-0.1.0.dev0.pyz",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "drafts/hirc_requirements_v1_1-draft.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/LOCAL-DEVELOPER-PACKAGE-CHECKPOINT-20261010.md",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/M06_LOCAL_UI_PLAN.md",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/M07_FORMATION_ADAPTER_PLAN.md",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/M08_RELEASE_HARDENING_PLAN.md",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/README.md",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/RED_TEAM_INTEGRATION_TEST_PLAN.md",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/alpha-integration-red-team-validation-v1.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/alpha-integration-red-team-validation-v2-failed.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/build_pyz.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/encrypted_backup.mjs",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/executable-cumulative-validation.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m04-s001-validation.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m05-s001-validation.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m06-s001-red-team-validation-v1-failed.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m06-s001-reference.html",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m06-s001-validation.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m06-s002-reference.html",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m06-s002-validation.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m06-s003-reference.html",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m06-s003-validation.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m07-s001-validation.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m07-s002-validation.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m07-s003-validation.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m08-s001-recovery-validation-v1-failed.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m08-s001-validation.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m08-s002-migration-validation-v1-failed.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m08-s002-validation.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m08-s003-package-validation-v1-failed.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m08-s003-validation.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m08-s004-validation.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m08-s005-validation.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m08-s006-validation.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m08-s007-validation.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m08-s008-validation-v1-failed.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m08-s008-validation.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m08-s009-validation-v1-failed.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m08-s009-validation.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m08-s010-validation-v1-failed.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m08-s010-validation.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m08-s011-validation-v1-failed.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m08-s011-validation-v2-failed.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m08-s011-validation.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m08-s012-validation-v1-failed.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/m08-s012-validation.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/release_sign.mjs",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/validate_all.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/validate_alpha_integration_red_team.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/validate_m04_s001.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/validate_m05_s001.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/validate_m06_s001.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/validate_m06_s002.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/validate_m06_s003.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/validate_m07_s001.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/validate_m07_s002.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/validate_m07_s003.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/validate_m08_s001.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/validate_m08_s002.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/validate_m08_s003.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/validate_m08_s004.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/validate_m08_s005.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/validate_m08_s006.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/validate_m08_s007.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/validate_m08_s008.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/validate_m08_s009.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/validate_m08_s010.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/validate_m08_s011.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/validate_m08_s012.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "implementation/validation_config.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "intent-register.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "milestones/MILESTONE-03-COMPLETION.md",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "pyproject.toml",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/README.md",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/build_bayesian_reliance_v3.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/build_bayesian_reliance_v3_1.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/build_bayesian_reliance_v3_2.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/build_m03_s014_integrated_review_closure.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/build_m03_s014_metric_blind_orientation.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/build_m03_s014_security_blind_orientation.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/build_m03_s014_specialist_packets.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/build_m03_s015_preflight.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/build_requirements_v1_1.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/close_m03_s014.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/contracts/README.md",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/contracts/hirc-bayesian-reliance.candidate.schema.v3.1.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/contracts/hirc-bayesian-reliance.candidate.schema.v3.2.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/contracts/hirc-bayesian-reliance.candidate.schema.v3.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/contracts/hirc-bridge-gate.candidate.schema.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/contracts/hirc-release-profile.candidate.schema.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/contracts/hirc-request-case.candidate.schema.v2.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/contracts/hirc-transfer-case.candidate.schema.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/fixtures/bayesian-reliance-v3-cases.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/fixtures/bayesian-reliance-v3.1-cases.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/fixtures/bayesian-reliance-v3.2-cases.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/fixtures/bayesian-reliance-v3.2-evidence-resolver.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/fixtures/security-bridge-stage-cases-v1.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/fixtures/security-privacy-dataflow-cases-v1.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/fixtures/security-release-profile-cases-v1.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/fixtures/security-request-state-cases-v1.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/fixtures/security-transfer-state-cases-v1.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/fixtures/validate_milestone_03_stone_register.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/intent-coverage-draft-v1.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/intent-coverage-draft-v1.md",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/m03-s014-post-freeze-intake-v1.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/m03-s014-security-repair-audit-frame-r003-v1.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/m03-s014-security-repair-audit-frame-r003-v2.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/m03-s014-security-repair-closure-v1.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/m03-s014-specialist-review-packets-v1.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/m03-s014-specialist-review-packets-v1.md",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/milestone-03-stone-register.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/milestone-03-stone-register.md",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/public/hirc-team-status-v1.md",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/public/m03-s014-review-closure-v1.md",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/public/milestone-03-public-evidence-v1.json",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/reconcile_i036_plain_ui_intake.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/render_team_stall_register.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/reproduce_waymark_v2_1.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/update_current_description_final_review.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/validate_bayesian_reliance_v3.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/validate_bayesian_reliance_v3_1.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/validate_bayesian_reliance_v3_2.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/validate_current_description.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/validate_m03_post_freeze_intake.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/validate_m03_s014_integrated_review_closure.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/validate_m03_s014_metric_blind_orientation.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/validate_m03_s014_metric_repair_response.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/validate_m03_s014_metric_repair_response_v2.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/validate_m03_s014_metric_repair_response_v3.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/validate_m03_s014_metric_stage_a_assignment_history.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/validate_m03_s014_security_blind_orientation.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/validate_m03_s014_security_blind_orientation_assignment.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/validate_m03_s014_security_delta_recheck_assignment_cofactor.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/validate_m03_s014_security_manifest.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/validate_m03_s014_security_repair_closure.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/validate_m03_s014_security_repair_stones.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/validate_m03_s014_security_review_response.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/validate_m03_s014_security_review_response_v2.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/validate_m03_s014_specialist_packet_history.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/validate_m03_s014_specialist_packets.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/validate_security_bridge_stages.ps1",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/validate_security_privacy_dataflow.ps1",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/validate_security_release_profile.ps1",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/validate_security_request_states.ps1",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "review/validate_team_stall_register.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "src/hirc/__init__.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "src/hirc/__main__.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "src/hirc/adapter.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "src/hirc/atomic.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "src/hirc/canonical.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "src/hirc/cli.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "src/hirc/decision.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "src/hirc/formation.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "src/hirc/migration.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "src/hirc/outbox.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "src/hirc/projection.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "src/hirc/recovery.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "src/hirc/store.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "src/hirc/ui.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "src/hirc/witness.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "tests/test_adapter.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "tests/test_decision_preview.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "tests/test_encrypted_backup.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "tests/test_formation.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "tests/test_integration.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "tests/test_interrupt_ui.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "tests/test_known_limits.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "tests/test_migration_hardening.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "tests/test_outbox.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "tests/test_package.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "tests/test_projection.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "tests/test_recovery.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "tests/test_release_signing.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "tests/test_store.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "tests/test_ui.py",
+      "identity": true,
+      "privacy_hits": []
+    },
+    {
+      "path": "tests/test_witness.py",
+      "identity": true,
+      "privacy_hits": []
+    }
+  ],
+  "package_members": [
+    "__main__.py",
+    "hirc-package-manifest.json",
+    "hirc/__init__.py",
+    "hirc/__main__.py",
+    "hirc/adapter.py",
+    "hirc/atomic.py",
+    "hirc/canonical.py",
+    "hirc/cli.py",
+    "hirc/decision.py",
+    "hirc/formation.py",
+    "hirc/migration.py",
+    "hirc/outbox.py",
+    "hirc/projection.py",
+    "hirc/recovery.py",
+    "hirc/store.py",
+    "hirc/ui.py",
+    "hirc/witness.py"
+  ],
+  "errors": [],
+  "nonclaim": "Exact candidate and privacy-pattern validation only; not Git commit, push, remote verification, release or proof that no sensitive semantic information exists."
+}

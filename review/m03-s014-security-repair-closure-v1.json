@@ -1,0 +1,72 @@
+{
+  "schema": "hirc.m03-s014-security-repair-closure/1",
+  "id": "HIRC-M03-S014-SECURITY-REPAIR-CLOSURE-001",
+  "status": "READY_FOR_WHOLE_INDEPENDENT_SECURITY_REVIEW",
+  "controller": "UI-20261007-B / LUCENT",
+  "s014_state": "OPEN",
+  "s015_state": "HELD",
+  "whole_security_review_state": "PENDING",
+  "targets": [
+    {"path": "review/contracts/hirc-request-case.candidate.schema.v2.json", "sha256": "a1cae1961a04eb682c158c6b1a1dcd4387374923180fa5f170816559327d2a0f", "bytes": 15859},
+    {"path": "review/contracts/hirc-bridge-gate.candidate.schema.json", "sha256": "de28cc4a03dead8ede8829376aa97199e91348813050df7e845eb507519f5b8a", "bytes": 5659},
+    {"path": "review/contracts/hirc-release-profile.candidate.schema.json", "sha256": "335138a4024b097cfb250e24fd4c2d848a938d4b29fe94215746696e5947f56e", "bytes": 8692},
+    {"path": "review/contracts/hirc-transfer-case.candidate.schema.json", "sha256": "b88721ff78933bbc0d28e8985148facc2987ac046ef23ef079257c68a84d0880", "bytes": 16752},
+    {"path": "review/fixtures/security-request-state-cases-v1.json", "sha256": "b17fb6f7892bee1fc5a3f5d6c812ae4f270c241fffdc665ceb164e18becb3633", "bytes": 6715},
+    {"path": "review/fixtures/security-bridge-stage-cases-v1.json", "sha256": "f863c6b98774776a527c43dd9033369b51547dd8414644162dbaa0496c41caac", "bytes": 1836},
+    {"path": "review/fixtures/security-release-profile-cases-v1.json", "sha256": "dc321683b20bd82e32518d5fab9aaed60332abdff169dc1ad8ec8a2c1cd4e371", "bytes": 3561},
+    {"path": "review/fixtures/security-transfer-state-cases-v1.json", "sha256": "c37b15c97035e869c98143f06ba9e1a35e18176d047619d671312d568e29a426", "bytes": 5073},
+    {"path": "review/fixtures/security-privacy-dataflow-cases-v1.json", "sha256": "30ed083b02e590c0ed0ad5e75232e4bc8297e4930c6a59ffd02982c13e7b732a", "bytes": 2030},
+    {"path": "review/validate_security_request_states.ps1", "sha256": "bd51fabce8f2e4915f653c4e714edd3afba27a5f23bbe26f6d1caac41ef9412d", "bytes": 8003},
+    {"path": "review/validate_security_bridge_stages.ps1", "sha256": "2b8310a4ca3fd2fdf4b8d42f940bf7e5df6148e399aff0831dcd52bf00cfa60c", "bytes": 5554},
+    {"path": "review/validate_security_release_profile.ps1", "sha256": "170b8746b470116219df511906f5607580e84dbd2a7a48afe139fe614ce0533d", "bytes": 8544},
+    {"path": "review/validate_security_transfer_states.ps1", "sha256": "d9ce4a1c41903cbe0e0a37b10ed92243a97150f568206bec61fa832efb106f75", "bytes": 8686},
+    {"path": "review/validate_security_privacy_dataflow.ps1", "sha256": "619adb0e5947be75ea3c5af01c71023cd920c56abfb81dd1d1b4d32143fbaefb", "bytes": 9435},
+    {"path": "review/fixtures/security-request-state-validation-v1.json", "sha256": "d2b59f3970b1e3d4785f38f6349b2c485f286bfd4b0597f54e824b2f7ec83909", "bytes": 2757},
+    {"path": "review/fixtures/security-bridge-stage-validation-v1.json", "sha256": "ea0373e5a0f60b9577943897c97da953d7c8fb08f1d3d56b045eaa59c7713a3e", "bytes": 2222},
+    {"path": "review/fixtures/security-release-profile-validation-v1.json", "sha256": "63901462ccd226f3e9f5419dcf6d4b28a2b5fcee1632e8d5b189297927704902", "bytes": 4924},
+    {"path": "review/fixtures/security-transfer-state-validation-v1.json", "sha256": "2f4fa6b7235caa95412f7e2481fb61721da59511d90dd469a715b423b0119399", "bytes": 3964},
+    {"path": "review/fixtures/security-privacy-dataflow-validation-v1.json", "sha256": "e8657048f06d4b1a8f6008d08ec9ba0a0a2cfe513ba12527cdcb5ab850434df2", "bytes": 3731},
+    {"path": "review/m03-s014-security-repair-audit-frame-r003-v3.json", "sha256": "90e9516a275519bc397030c46549a8dc7c55b5e1dd518d4060c8266774905236", "bytes": 2207},
+    {"path": "review/m03-s014-security-repair-audit-frame-r005-v1.json", "sha256": "baa69e45b345c27b7e4ef29947c9cbfb517922a8240a0a05d43c8a6787e6e534", "bytes": 2960}
+  ],
+  "peer_reviews": [
+    {
+      "stone": "M03-S014-SEC-R003",
+      "reviewer": "FOLIUM",
+      "disposition": "PASS_LOCAL_SCOPE_WITH_RESIDUALS",
+      "evidence_sha256": "2a582801e6d79afe8372d145cd1925c5a509cbff99ee8fd04601f2dde6e997d3",
+      "accepted_local_scope": true,
+      "residuals_preserved": ["external authority", "external resolver", "absence truth", "clock/freshness", "actual release observation"]
+    },
+    {
+      "stone": "M03-S014-SEC-R004",
+      "reviewer": "ORDINAL",
+      "disposition": "PASS_SPECIFICATION_SCOPE_WITH_RESIDUALS",
+      "evidence_sha256": "bfb91f5cd2cc444d273afa661393c9f2456db7a6338c5613552885d16b83017f",
+      "accepted_local_scope": true,
+      "residuals_preserved": ["native platform effects", "actual custody", "runtime fence enforcement"]
+    },
+    {
+      "stone": "M03-S014-SEC-R005",
+      "reviewer": "ORDINAL",
+      "disposition": "PASS_LOCAL_SCOPE_WITH_RESIDUALS",
+      "evidence_sha256": "0b4d3a83ee62d8cb4cdee65d738b2d7c09ad08acf313a90fe70728c4fdfa9dea",
+      "accepted_local_scope": true,
+      "residuals_preserved": ["trusted prior-preview/source anchor", "resolver truth", "actual consent", "encryption/deletion behavior", "runtime enforcement"]
+    }
+  ],
+  "catalog_alignment": {
+    "state": "PASS_LOCAL_R006_CORRECTION_WHOLE_REVIEW_PENDING",
+    "change": "The privacy/dataflow case catalog now enumerates the executed four positive and fifteen adverse cases, and the wrapper rejects catalog drift.",
+    "semantic_core": "The previously peer-reviewed privacy relation functions and schemas are unchanged by this catalog-only correction.",
+    "review_boundary": "The current wrapper and exact packet still require the assigned non-MBV source-integrity and whole-security review lanes."
+  },
+  "residuals": [
+    {"id": "external_authority_and_resolver_truth", "state": "OPEN", "owner": "Security Assurance pair", "reopen_when": "An admitted exact resolver/authority/source-preview implementation and evidence are available."},
+    {"id": "actual_consent_encryption_deletion_and_runtime_enforcement", "state": "OPEN", "owner": "Security Assurance pair", "reopen_when": "Runtime mechanisms and effect evidence exist in an admitted test environment."},
+    {"id": "qualified_whole_packet_security_privacy_dataflow_review", "state": "OPEN", "owner": "AEGIS + KEEL under LUCENT supervision", "reopen_when": "A qualified consenting non-retired reviewer has current education, source access and fitting capacity."},
+    {"id": "s014_acceptance_and_s015_release", "state": "OPEN", "owner": "LUCENT", "reopen_when": "All specialist dimensions and integrated ledger/consumer checks pass at exact revisions."}
+  ],
+  "writer_fence": "LUCENT is the sole hIRC artifact writer. Review pairs are read-only and write only their own evidence.",
+  "nonclaim": "R001-R005 local repairs and scoped peer evidence are assembled for current whole review. This is not runtime assurance, whole security acceptance, S014 closure, S015 release, deployment or Bridge activation."
+}

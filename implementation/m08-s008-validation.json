@@ -1,0 +1,82 @@
+{
+  "schema": "hirc.m08-s008-validation/1",
+  "stone": "M08-S008",
+  "status": "PASS_LOCAL_INTEGRITY_REPAIR_SCOPE",
+  "checks": {
+    "failed_baseline_preserved": true,
+    "outbox_suite_pass": true,
+    "outbox_test_count": true,
+    "full_suite_pass": true,
+    "full_suite_test_count": true,
+    "three_expected_release_failures": true,
+    "stage_rebinding_regression_present": true,
+    "schema_weakening_regression_present": true
+  },
+  "files": [
+    {
+      "path": "implementation/M08_RELEASE_HARDENING_PLAN.md",
+      "sha256": "0e2b21a00be42a7ec56773742486b8fcfd9b2fea40b0dd460268f3c2a7779df6",
+      "bytes": 6363
+    },
+    {
+      "path": "implementation/m08-s008-validation-v1-failed.json",
+      "sha256": "d7958be1fab02882e8b161064cb27b05f1090546b076df7a59f1152809956cbd",
+      "bytes": 1464
+    },
+    {
+      "path": "implementation/validate_m08_s008.py",
+      "sha256": "2d764146afc8cb90f1e9bc93c3c40eb3a0f2103e80ca3c7397789eaf6c525b46",
+      "bytes": 3603
+    },
+    {
+      "path": "src/hirc/store.py",
+      "sha256": "81dd7bb2541509082deb29d00d834ec4ec001584f7a175ae58fd376b0a07f79c",
+      "bytes": 34935
+    },
+    {
+      "path": "tests/test_outbox.py",
+      "sha256": "be457b09c384a36f63ee25c7c40794b6af79ef137e15fc23738ddcbeb96558c1",
+      "bytes": 13838
+    }
+  ],
+  "outbox_test_output": [
+    "test_acceptance_only_stays_unknown (test_outbox.OutboxTests.test_acceptance_only_stays_unknown) ... ok",
+    "test_cli_records_and_reads_the_same_outbox (test_outbox.OutboxTests.test_cli_records_and_reads_the_same_outbox) ... ok",
+    "test_concurrent_duplicate_record_is_exactly_once_locally (test_outbox.OutboxTests.test_concurrent_duplicate_record_is_exactly_once_locally) ... ok",
+    "test_external_dispatch_flag_is_rejected_by_projection (test_outbox.OutboxTests.test_external_dispatch_flag_is_rejected_by_projection) ... ok",
+    "test_observed_run_records_three_separate_states (test_outbox.OutboxTests.test_observed_run_records_three_separate_states) ... ok",
+    "test_privileged_outbox_schema_weakening_is_detected (test_outbox.OutboxTests.test_privileged_outbox_schema_weakening_is_detected) ... ok",
+    "test_privileged_outbox_table_tampering_is_detected (test_outbox.OutboxTests.test_privileged_outbox_table_tampering_is_detected) ... ok",
+    "test_privileged_stage_rebinding_is_detected_after_trigger_restoration (test_outbox.OutboxTests.test_privileged_stage_rebinding_is_detected_after_trigger_restoration) ... ok",
+    "test_reopen_reproduces_outbox_view (test_outbox.OutboxTests.test_reopen_reproduces_outbox_view) ... ok",
+    "test_same_idempotency_key_for_different_request_is_rejected (test_outbox.OutboxTests.test_same_idempotency_key_for_different_request_is_rejected) ... ok",
+    "test_same_idempotent_run_does_not_append_twice (test_outbox.OutboxTests.test_same_idempotent_run_does_not_append_twice) ... ok",
+    "test_stage_request_or_information_boundary_mismatch_never_commits (test_outbox.OutboxTests.test_stage_request_or_information_boundary_mismatch_never_commits) ... ok",
+    "test_transition_before_enqueue_is_rejected (test_outbox.OutboxTests.test_transition_before_enqueue_is_rejected) ... ok",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 13 tests in 2.020s",
+    "",
+    "OK"
+  ],
+  "full_suite_output": [
+    ".................................................................xxx........................................................................",
+    "----------------------------------------------------------------------",
+    "Ran 140 tests in 20.006s",
+    "",
+    "OK (expected failures=3)"
+  ],
+  "repair": {
+    "finding_id": "M08-S008-F001",
+    "stage_payload_binding": true,
+    "stage_boundary_binding": true,
+    "exact_schema_object_set": true,
+    "event_chain_head_alone_sufficient": false
+  },
+  "surviving_limits": [
+    "A same-user privileged writer can still rewrite the event chain and requires the separately protected witness to make rollback detectable.",
+    "The local SQLite store remains plaintext and sensitive-data release remains blocked.",
+    "This repair is not an independent penetration review or cross-machine recovery result."
+  ],
+  "nonclaim": "M08-S008 local materialized-outbox integrity repair only; not sensitive-data, production or public release acceptance."
+}

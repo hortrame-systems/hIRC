@@ -1,6 +1,6 @@
 # Milestone 03 stone register
 
-**Status:** STONE_013_PASS_S014_READY
+**Status:** STONE_014_PASS_S015_READY
 
 **Canonical source:** `review/milestone-03-stone-register.json`
 
@@ -23,8 +23,8 @@ remain limited to each stone's declared evidence. Runtime and Bridge remain disa
 | M03-S011 | PASS | M03-S010 | Create and run adverse fixtures that distinguish information-environment support from behavioral control. | M03-S012 |
 | M03-S012 | PASS | M03-S011 | Define candidate environment-quality measures that do not reward agreement, participation, retention, imitation or ideological convergence. | M03-S013 |
 | M03-S013 | PASS | M03-S003, M03-S006, M03-S012 | Reconcile the accepted Milestone 03 candidate changes across master, explained view, requirements, matrix, threat model, delivery profile, coverage and ledger. | M03-S014 |
-| M03-S014 | READY | M03-S013 | Obtain independent permanent-peer product, security, privacy and anti-domination challenge and reconcile every consequence-bearing finding or justified NO_CHANGE. | M03-S015 |
-| M03-S015 | CAPTURED | M03-S014 | Close Milestone 03 with integration/recovery checks, cumulative report, ledger closure, commit, public push and directly verified remote receipt. | — |
+| M03-S014 | PASS | M03-S013 | Obtain independent permanent-peer product, security, privacy and anti-domination challenge and reconcile every consequence-bearing finding or justified NO_CHANGE. | M03-S015 |
+| M03-S015 | READY | M03-S014 | Close Milestone 03 with integration/recovery checks, cumulative report, ledger closure, commit, public push and directly verified remote receipt. | — |
 
 ## Gate
 

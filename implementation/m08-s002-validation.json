@@ -1,0 +1,101 @@
+{
+  "schema": "hirc.m08-s002-validation/1",
+  "stone": "M08-S002",
+  "status": "PASS",
+  "checks": {
+    "hardening_tests_pass": true,
+    "hardening_test_count": true,
+    "full_suite_pass": true,
+    "full_suite_test_count": true,
+    "deadlock_baseline_preserved": true,
+    "migration_verified": true,
+    "predecessor_preserved": true,
+    "bounded_load_valid": true
+  },
+  "files": [
+    {
+      "path": "implementation/M08_RELEASE_HARDENING_PLAN.md",
+      "sha256": "0e2b21a00be42a7ec56773742486b8fcfd9b2fea40b0dd460268f3c2a7779df6",
+      "bytes": 6363
+    },
+    {
+      "path": "implementation/README.md",
+      "sha256": "608abe3f9aade0b3249d55a7e5765a1d98fd6a4d0c3f9cdd4c77814cf8300bb2",
+      "bytes": 16078
+    },
+    {
+      "path": "src/hirc/migration.py",
+      "sha256": "b94ecc8c4d1b936084d7d0ee73058f8c64a56ac2210562270126736184123948",
+      "bytes": 8437
+    },
+    {
+      "path": "src/hirc/store.py",
+      "sha256": "81dd7bb2541509082deb29d00d834ec4ec001584f7a175ae58fd376b0a07f79c",
+      "bytes": 34935
+    },
+    {
+      "path": "src/hirc/cli.py",
+      "sha256": "6fcd8323c08caecd17948a2531444aa5f1676aa2306b0c5faa8076ad2f3b55fc",
+      "bytes": 9691
+    },
+    {
+      "path": "tests/test_migration_hardening.py",
+      "sha256": "219171aea28621d0df1d5bb9e7026f18ff67dca7bbf8a61572fac7e07a0845e8",
+      "bytes": 10477
+    },
+    {
+      "path": "implementation/m08-s002-migration-validation-v1-failed.json",
+      "sha256": "ab423119735ec63887258290b9c1a14aaf341bb02f2af7bdb10c1a56e40409e2",
+      "bytes": 1122
+    }
+  ],
+  "hardening_test_output": [
+    "test_bounded_hundred_event_load_verifies (test_migration_hardening.MigrationHardeningTests.test_bounded_hundred_event_load_verifies) ... ok",
+    "test_cli_migrates_exact_v1 (test_migration_hardening.MigrationHardeningTests.test_cli_migrates_exact_v1) ... ok",
+    "test_concurrent_backup_target_creation_is_never_overwritten (test_migration_hardening.MigrationHardeningTests.test_concurrent_backup_target_creation_is_never_overwritten) ... ok",
+    "test_corrupt_chain_refuses_without_schema_change (test_migration_hardening.MigrationHardeningTests.test_corrupt_chain_refuses_without_schema_change) ... ok",
+    "test_duplicate_key_legacy_payload_refuses_without_schema_change (test_migration_hardening.MigrationHardeningTests.test_duplicate_key_legacy_payload_refuses_without_schema_change) ... ok",
+    "test_empty_v1_migrates (test_migration_hardening.MigrationHardeningTests.test_empty_v1_migrates) ... ok",
+    "test_existing_backup_target_refuses (test_migration_hardening.MigrationHardeningTests.test_existing_backup_target_refuses) ... ok",
+    "test_missing_legacy_trigger_refuses (test_migration_hardening.MigrationHardeningTests.test_missing_legacy_trigger_refuses) ... ok",
+    "test_seeded_invalid_identifiers_fail_without_store_damage (test_migration_hardening.MigrationHardeningTests.test_seeded_invalid_identifiers_fail_without_store_damage) ... ok",
+    "test_v2_source_is_not_silently_remigrated (test_migration_hardening.MigrationHardeningTests.test_v2_source_is_not_silently_remigrated) ... ok",
+    "test_valid_v1_event_chain_migrates_with_backup (test_migration_hardening.MigrationHardeningTests.test_valid_v1_event_chain_migrates_with_backup) ... ok",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 11 tests in 2.770s",
+    "",
+    "OK"
+  ],
+  "full_suite_output": [
+    ".................................................................xxx........................................................................",
+    "----------------------------------------------------------------------",
+    "Ran 140 tests in 19.555s",
+    "",
+    "OK (expected failures=3)"
+  ],
+  "migration_control": {
+    "schema": "hirc.store-migration/1",
+    "from": "hirc.local-store/1",
+    "to": "hirc.local-store/2",
+    "source": "D:\\HORTRAME\\hIRC\\tests\\.tmp\\tmpg7hhq4h9\\v1.sqlite3",
+    "backup": "D:\\HORTRAME\\hIRC\\tests\\.tmp\\tmpg7hhq4h9\\v1.backup.sqlite3",
+    "backup_sha256": "022cc7a109aaaff84d660aa7b7ba5970b842409e24ed9550b0caf150607acc0a",
+    "backup_bytes": 28672,
+    "event_count": 1,
+    "head_hash": "eb0830b90d6634fb5c4dbad4b662bbd27177636f49030ef0b75946b4297decbf",
+    "outbox_items": 0,
+    "verified": true
+  },
+  "load_control": {
+    "events": 100,
+    "elapsed_seconds": 1.915218600013759,
+    "head_hash": "a2527862dc07aca50b18e4b248afd30ffa90ce578c55ec712f54405325e862e5"
+  },
+  "surviving_limits": [
+    "Only exact v1-to-v2 migration is supported; no future or unknown schema is inferred.",
+    "Seeded malformed identifiers and a 100-event local load are finite tests, not broad fuzzing or a throughput guarantee.",
+    "Power-loss injection, long soak, cross-machine restore, encrypted storage and independent security review remain open."
+  ],
+  "nonclaim": "M08-S002 exact predecessor migration and bounded local hardening evidence only."
+}

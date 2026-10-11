@@ -1,0 +1,19 @@
+{
+  "schema": "hirc.m08-s011-validation/1",
+  "stone": "M08-S011",
+  "status": "FAIL",
+  "finding": {
+    "id": "M08-S011-F002",
+    "title": "Projection snapshot readers remained read-write after verify/status repair",
+    "observed_connection_modes": [true, true, false, false],
+    "expected_connection_modes": [true, true, true, true],
+    "consequence": "Briefing, formation, outbox and UI projections used a writable connection through verified_snapshot, leaving an observational path outside the first repair.",
+    "required_repair": "Make iter_events and verified_snapshot explicitly read-only and keep all four observation paths under one regression."
+  },
+  "files": [
+    {"path": "src/hirc/store.py", "sha256": "bf1111121034685b91d0b87cd9066924468b259a7341e331d03dd21e962a765a", "bytes": 33083},
+    {"path": "tests/test_store.py", "sha256": "2931475839607d0c6c838bd1cd0caa850e6f6bbb048c04f0babe320d1a6873c2", "bytes": 7554}
+  ],
+  "failure": "observed [true, true, false, false]",
+  "nonclaim": "Connection-mode coverage extension only; no actual evidence mutation is claimed."
+}

@@ -1,0 +1,144 @@
+{
+  "schema": "hirc.m08-s010-validation/1",
+  "stone": "M08-S010",
+  "status": "PASS_BOUNDED_JSON_FILE_INGRESS_SCOPE",
+  "checks": {
+    "failed_baseline_preserved": true,
+    "adapter_tests_pass": true,
+    "decision_tests_pass": true,
+    "witness_tests_pass": true,
+    "oversized_ingress_regression_present": true,
+    "invalid_utf8_regression_present": true,
+    "bounded_witness_regression_present": true,
+    "full_suite_pass": true,
+    "full_suite_test_count": true,
+    "expected_release_failures_preserved": true
+  },
+  "files": [
+    {
+      "path": "implementation/M08_RELEASE_HARDENING_PLAN.md",
+      "sha256": "0e2b21a00be42a7ec56773742486b8fcfd9b2fea40b0dd460268f3c2a7779df6",
+      "bytes": 6363
+    },
+    {
+      "path": "implementation/m08-s010-validation-v1-failed.json",
+      "sha256": "2a1e9ff5b7d096ad4a01b3010b20d9c170d16bf1d362784224ecad5bbe687078",
+      "bytes": 1779
+    },
+    {
+      "path": "implementation/validate_m08_s010.py",
+      "sha256": "6a810a6c114b909db8c2f2623aaa3330d5e621dc2d6ddd2eee9c2786ef2b8421",
+      "bytes": 4391
+    },
+    {
+      "path": "implementation/validation_config.py",
+      "sha256": "6d79c9cfc737f963cf2d30202c59dc2d061e8a8b7b80a12251c0e4434d04f884",
+      "bytes": 262
+    },
+    {
+      "path": "src/hirc/canonical.py",
+      "sha256": "c5621ca0a9676285abe4c9cfc337f484aec980287b11426cc105e0f74250b0f3",
+      "bytes": 3242
+    },
+    {
+      "path": "src/hirc/cli.py",
+      "sha256": "6fcd8323c08caecd17948a2531444aa5f1676aa2306b0c5faa8076ad2f3b55fc",
+      "bytes": 9691
+    },
+    {
+      "path": "src/hirc/witness.py",
+      "sha256": "e32250ee41b34b9ffa9bc5fa71dd1293db6e3137e93b7de2c2825727cb3464e6",
+      "bytes": 4090
+    },
+    {
+      "path": "tests/test_adapter.py",
+      "sha256": "06b91ac800ee323691a25089f91129c8ba144942969a2bcdb38340551cab1c49",
+      "bytes": 9729
+    },
+    {
+      "path": "tests/test_decision_preview.py",
+      "sha256": "607af9e952f318501a2a55978acda76f8ecdf91c353d7ac4f4a5f318bdac0c5a",
+      "bytes": 7281
+    },
+    {
+      "path": "tests/test_witness.py",
+      "sha256": "ab50affc1336c8c8b3e99566c83ad1741c3a0637fee1bc699e1e5daaa5fe7b40",
+      "bytes": 5594
+    }
+  ],
+  "adapter_test_output": [
+    "test_acceptance_and_observation_remain_separate (test_adapter.AdapterTests.test_acceptance_and_observation_remain_separate) ... ok",
+    "test_acceptance_for_another_request_is_rejected (test_adapter.AdapterTests.test_acceptance_for_another_request_is_rejected) ... ok",
+    "test_acceptance_without_observation_stays_unknown (test_adapter.AdapterTests.test_acceptance_without_observation_stays_unknown) ... ok",
+    "test_adapter_declaring_network_or_effect_is_rejected (test_adapter.AdapterTests.test_adapter_declaring_network_or_effect_is_rejected) ... ok",
+    "test_adapter_payload_depth_and_size_limits_fail_closed (test_adapter.AdapterTests.test_adapter_payload_depth_and_size_limits_fail_closed) ... ok",
+    "test_adapter_run_nested_effect_claim_is_rejected (test_adapter.AdapterTests.test_adapter_run_nested_effect_claim_is_rejected) ... ok",
+    "test_cli_exposes_local_fake_and_acceptance_only_modes (test_adapter.AdapterTests.test_cli_exposes_local_fake_and_acceptance_only_modes) ... ok",
+    "test_cli_rejects_duplicate_json_keys (test_adapter.AdapterTests.test_cli_rejects_duplicate_json_keys) ... ok",
+    "test_cli_rejects_oversized_json_file_before_parsing (test_adapter.AdapterTests.test_cli_rejects_oversized_json_file_before_parsing) ... ok",
+    "test_command_shaped_payload_remains_inert (test_adapter.AdapterTests.test_command_shaped_payload_remains_inert) ... ok",
+    "test_direct_validation_bounds_self_rehashed_payload_before_acceptance (test_adapter.AdapterTests.test_direct_validation_bounds_self_rehashed_payload_before_acceptance) ... ok",
+    "test_nested_credential_shaped_fields_are_rejected (test_adapter.AdapterTests.test_nested_credential_shaped_fields_are_rejected) ... ok",
+    "test_provider_contract_is_implementation_neutral (test_adapter.AdapterTests.test_provider_contract_is_implementation_neutral) ... ok",
+    "test_request_tampering_is_rejected (test_adapter.AdapterTests.test_request_tampering_is_rejected) ... ok",
+    "test_same_request_is_deterministic (test_adapter.AdapterTests.test_same_request_is_deterministic) ... ok",
+    "test_self_rehashed_noncanonical_request_shapes_are_rejected (test_adapter.AdapterTests.test_self_rehashed_noncanonical_request_shapes_are_rejected) ... ok",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 16 tests in 0.109s",
+    "",
+    "OK"
+  ],
+  "decision_test_output": [
+    "test_allowed_action_requires_authority (test_decision_preview.DecisionPreviewTests.test_allowed_action_requires_authority) ... ok",
+    "test_cli_invalid_utf8_file_fails_closed (test_decision_preview.DecisionPreviewTests.test_cli_invalid_utf8_file_fails_closed) ... ok",
+    "test_cli_writes_preview_and_ui_escapes_its_content (test_decision_preview.DecisionPreviewTests.test_cli_writes_preview_and_ui_escapes_its_content) ... ok",
+    "test_correction_cannot_change_target_boundary (test_decision_preview.DecisionPreviewTests.test_correction_cannot_change_target_boundary) ... ok",
+    "test_declined_participation_remains_separate_from_allowed_effect (test_decision_preview.DecisionPreviewTests.test_declined_participation_remains_separate_from_allowed_effect) ... ok",
+    "test_preview_data_size_limit_fails_closed (test_decision_preview.DecisionPreviewTests.test_preview_data_size_limit_fails_closed) ... ok",
+    "test_preview_identity_detects_change_and_has_no_effect_flags (test_decision_preview.DecisionPreviewTests.test_preview_identity_detects_change_and_has_no_effect_flags) ... ok",
+    "test_refusal_requires_decline_or_abstain (test_decision_preview.DecisionPreviewTests.test_refusal_requires_decline_or_abstain) ... ok",
+    "test_self_consistent_but_semantically_invalid_preview_is_rejected (test_decision_preview.DecisionPreviewTests.test_self_consistent_but_semantically_invalid_preview_is_rejected) ... ok",
+    "test_unknown_input_field_is_rejected (test_decision_preview.DecisionPreviewTests.test_unknown_input_field_is_rejected) ... ok",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 10 tests in 0.131s",
+    "",
+    "OK"
+  ],
+  "witness_test_output": [
+    "test_cli_reads_key_from_stdin_not_arguments (test_witness.WitnessTests.test_cli_reads_key_from_stdin_not_arguments) ... ok",
+    "test_concurrent_witness_creation_is_never_overwritten (test_witness.WitnessTests.test_concurrent_witness_creation_is_never_overwritten) ... ok",
+    "test_create_and_verify (test_witness.WitnessTests.test_create_and_verify) ... ok",
+    "test_existing_witness_is_not_overwritten (test_witness.WitnessTests.test_existing_witness_is_not_overwritten) ... ok",
+    "test_oversized_witness_file_is_rejected_before_parsing (test_witness.WitnessTests.test_oversized_witness_file_is_rejected_before_parsing) ... ok",
+    "test_privileged_tail_truncation_is_detected (test_witness.WitnessTests.test_privileged_tail_truncation_is_detected) ... ok",
+    "test_short_key_is_rejected (test_witness.WitnessTests.test_short_key_is_rejected) ... ok",
+    "test_wrong_key_and_changed_witness_are_rejected (test_witness.WitnessTests.test_wrong_key_and_changed_witness_are_rejected) ... ok",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 8 tests in 1.070s",
+    "",
+    "OK"
+  ],
+  "full_suite_output": [
+    ".................................................................xxx........................................................................",
+    "----------------------------------------------------------------------",
+    "Ran 140 tests in 21.982s",
+    "",
+    "OK (expected failures=3)"
+  ],
+  "repair": {
+    "finding_id": "M08-S010-F001",
+    "predecode_byte_limit": true,
+    "strict_utf8": true,
+    "bounded_depth_and_canonical_size": true,
+    "cli_errors_fail_closed_to_held": true
+  },
+  "surviving_limits": [
+    "SQLite row materialization and encrypted-backup streaming have separate resource profiles not closed by this file-ingress repair.",
+    "Local filesystem availability and quota exhaustion remain operating-environment concerns.",
+    "No remote JSON input or network path is enabled."
+  ],
+  "nonclaim": "M08-S010 bounded local JSON file ingress repair only; not general denial-of-service or release assurance."
+}

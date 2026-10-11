@@ -1,0 +1,133 @@
+{
+  "schema": "hirc.m07-s003-validation/1",
+  "stone": "M07-S003",
+  "status": "PASS",
+  "checks": {
+    "outbox_tests_pass": true,
+    "outbox_test_count": true,
+    "full_suite_pass": true,
+    "full_suite_test_count": true,
+    "store_valid": true,
+    "two_items_six_events": true,
+    "observed_state_separate": true,
+    "unknown_not_promoted": true,
+    "external_dispatch_disabled": true,
+    "first_view_is_prefix": true
+  },
+  "files": [
+    {
+      "path": "implementation/M07_FORMATION_ADAPTER_PLAN.md",
+      "sha256": "6239abab5ef6c0593ce77063922c030428bc1df37db6f541db027669661aa524",
+      "bytes": 1784
+    },
+    {
+      "path": "implementation/README.md",
+      "sha256": "608abe3f9aade0b3249d55a7e5765a1d98fd6a4d0c3f9cdd4c77814cf8300bb2",
+      "bytes": 16078
+    },
+    {
+      "path": "src/hirc/store.py",
+      "sha256": "81dd7bb2541509082deb29d00d834ec4ec001584f7a175ae58fd376b0a07f79c",
+      "bytes": 34935
+    },
+    {
+      "path": "src/hirc/outbox.py",
+      "sha256": "264005b3282005f5cb93513f1f7cf7ed324b8e7877992706d11ff14a76b143e4",
+      "bytes": 7276
+    },
+    {
+      "path": "src/hirc/adapter.py",
+      "sha256": "0c5495c6e9f9556449323b703182dbdcd09d4ef8ddb1d7968aaa66e815f99981",
+      "bytes": 12399
+    },
+    {
+      "path": "src/hirc/cli.py",
+      "sha256": "6fcd8323c08caecd17948a2531444aa5f1676aa2306b0c5faa8076ad2f3b55fc",
+      "bytes": 9691
+    },
+    {
+      "path": "tests/test_outbox.py",
+      "sha256": "be457b09c384a36f63ee25c7c40794b6af79ef137e15fc23738ddcbeb96558c1",
+      "bytes": 13838
+    }
+  ],
+  "outbox_test_output": [
+    "test_acceptance_only_stays_unknown (test_outbox.OutboxTests.test_acceptance_only_stays_unknown) ... ok",
+    "test_cli_records_and_reads_the_same_outbox (test_outbox.OutboxTests.test_cli_records_and_reads_the_same_outbox) ... ok",
+    "test_concurrent_duplicate_record_is_exactly_once_locally (test_outbox.OutboxTests.test_concurrent_duplicate_record_is_exactly_once_locally) ... ok",
+    "test_external_dispatch_flag_is_rejected_by_projection (test_outbox.OutboxTests.test_external_dispatch_flag_is_rejected_by_projection) ... ok",
+    "test_observed_run_records_three_separate_states (test_outbox.OutboxTests.test_observed_run_records_three_separate_states) ... ok",
+    "test_privileged_outbox_schema_weakening_is_detected (test_outbox.OutboxTests.test_privileged_outbox_schema_weakening_is_detected) ... ok",
+    "test_privileged_outbox_table_tampering_is_detected (test_outbox.OutboxTests.test_privileged_outbox_table_tampering_is_detected) ... ok",
+    "test_privileged_stage_rebinding_is_detected_after_trigger_restoration (test_outbox.OutboxTests.test_privileged_stage_rebinding_is_detected_after_trigger_restoration) ... ok",
+    "test_reopen_reproduces_outbox_view (test_outbox.OutboxTests.test_reopen_reproduces_outbox_view) ... ok",
+    "test_same_idempotency_key_for_different_request_is_rejected (test_outbox.OutboxTests.test_same_idempotency_key_for_different_request_is_rejected) ... ok",
+    "test_same_idempotent_run_does_not_append_twice (test_outbox.OutboxTests.test_same_idempotent_run_does_not_append_twice) ... ok",
+    "test_stage_request_or_information_boundary_mismatch_never_commits (test_outbox.OutboxTests.test_stage_request_or_information_boundary_mismatch_never_commits) ... ok",
+    "test_transition_before_enqueue_is_rejected (test_outbox.OutboxTests.test_transition_before_enqueue_is_rejected) ... ok",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 13 tests in 2.075s",
+    "",
+    "OK"
+  ],
+  "full_suite_output": [
+    ".................................................................xxx........................................................................",
+    "----------------------------------------------------------------------",
+    "Ran 140 tests in 19.778s",
+    "",
+    "OK (expected failures=3)"
+  ],
+  "control_view": {
+    "schema": "hirc.outbox-view/1",
+    "store_head": "34e49089ee7b88989480e9a8ad0011904de94dc9b5e40a84f625a78c2f81042e",
+    "event_count": 6,
+    "items": [
+      {
+        "outbox_id": "outbox:44b2a2304acaa17ad4125eeb81dfdc7fc7f8b340a5c0d179ae394fd84a9fe927",
+        "request_id": "adapter-request:1e9cb9ec9b27cb84d7f2d03f6a565e413ccdf948f8eaedcaf1834843f31b6c0a",
+        "idempotency_key": "idempotency:observed",
+        "reported_state": "PROVIDER_ACCEPTED",
+        "observed_state": "OBSERVED",
+        "external_dispatch_enabled": false,
+        "source_events": {
+          "enqueued": "event:c9c976966543fd12a4681a4707fb08ae307206b55a8f1d978c0078bf5c20abcf",
+          "accepted": "event:2bb04c9918a426328bce969026a21806af025639d746244ff6e49fb803ebf02a",
+          "terminal": "event:b3aa7cd6b7983829d53199af32939743982aa8979ed50326d5cfa77756a011ca"
+        },
+        "information_boundary": {
+          "privacy_class": "privacy:owner",
+          "audience": "audience:owner",
+          "purpose": "purpose:m07-outbox-validation"
+        }
+      },
+      {
+        "outbox_id": "outbox:ef742acb1450d4a8b2bf2c61d4636d719c566762ba254cb745e752fd35c6f4c6",
+        "request_id": "adapter-request:2548f861dc5d70087258d6501e9596f9326e386c9109a6cb0b95580f224b0761",
+        "idempotency_key": "idempotency:uncertain",
+        "reported_state": "PROVIDER_ACCEPTED",
+        "observed_state": "UNKNOWN",
+        "external_dispatch_enabled": false,
+        "source_events": {
+          "enqueued": "event:ee372a87148f5d3d4794788826ecb80d00aa33b607856e0149225e3af73240e9",
+          "accepted": "event:aa8dfad0c68b1003896cf822d08d3250632201891fe95a17d323e31251565c92",
+          "terminal": "event:34e49089ee7b88989480e9a8ad0011904de94dc9b5e40a84f625a78c2f81042e"
+        },
+        "information_boundary": {
+          "privacy_class": "privacy:owner",
+          "audience": "audience:owner",
+          "purpose": "purpose:m07-outbox-validation"
+        },
+        "observation_error": "no local observation available"
+      }
+    ],
+    "external_dispatch_enabled": false,
+    "nonclaim": "The local outbox records fake-adapter states only; it does not dispatch a network or external effect."
+  },
+  "surviving_limits": [
+    "Exactly-once behavior is established only for this local SQLite transaction and deterministic duplicate fixture, not distributed systems or providers.",
+    "Provider acceptance and observed output are fake local evidence; no network dispatch or production observation occurs.",
+    "Schema migration, crash injection below SQLite's guarantees, backup/restore and cross-machine recovery remain M08 work."
+  ],
+  "nonclaim": "M07-S003 atomic local fake-provider outbox evidence only; external dispatch remains disabled."
+}

@@ -1,0 +1,52 @@
+{
+  "schema": "hirc.m08-s007-validation/1",
+  "stone": "M08-S007",
+  "status": "PASS_BOUNDED_LOCAL_SOAK_CRASH_SCOPE",
+  "checks": {
+    "five_hundred_events_valid": true,
+    "all_reopen_checkpoints_valid": true,
+    "child_exited_abruptly": true,
+    "uncommitted_transaction_rolled_back": true,
+    "backup_restore_head_matches": true,
+    "restored_count_matches": true
+  },
+  "files": [
+    {
+      "path": "implementation/M08_RELEASE_HARDENING_PLAN.md",
+      "sha256": "0e2b21a00be42a7ec56773742486b8fcfd9b2fea40b0dd460268f3c2a7779df6",
+      "bytes": 6363
+    },
+    {
+      "path": "implementation/validate_m08_s007.py",
+      "sha256": "f1442cc26d939a1458775a930d5fc1120baa352bfcbf42be1934f6f5288acc96",
+      "bytes": 4128
+    }
+  ],
+  "metrics": {
+    "events": 500,
+    "append_and_checkpoint_seconds": 18.157282100000884,
+    "checkpoints": [
+      {
+        "events": 100,
+        "valid": true,
+        "head_hash": "ff92c43e2a99dc43819020118cdc8d29c6f25ed74a7a0b08e70d5d817de2ff91"
+      },
+      {
+        "events": 250,
+        "valid": true,
+        "head_hash": "1ed2fd0db2b003a4fb9836fdddce7c5f21bef10e0f6d7cd3f3bc6751132340a4"
+      },
+      {
+        "events": 500,
+        "valid": true,
+        "head_hash": "3038364f7905b6315797cf8df6d7786d2d3809cbdecfbf3e0bf451b0692c7ad0"
+      }
+    ]
+  },
+  "surviving_limits": [
+    "Abrupt process exit is not physical power loss or storage-controller failure.",
+    "Five hundred events and one local run are not a long-duration production soak or throughput guarantee.",
+    "Cross-machine, encrypted live-store and independent security review remain open."
+  ],
+  "nonclaim": "M08-S007 bounded Windows-local soak and rollback evidence only."
+}

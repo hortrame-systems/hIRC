@@ -4,7 +4,7 @@
   "status": "DRAFT_CURRENT_INTAKE_COVERAGE",
   "intent_register": {
     "path": "intent-register.json",
-    "sha256": "3da344b6a834fe26acdcbbb2f86ca4104ff0e4f0769cfaac6aa0ce24297d2477"
+    "sha256": "45c5efe04b15a862fb6db71e8fe7bea76037042c03c05ff480c444c8a3506eed"
   },
   "revision_maps": [
     {
@@ -574,7 +574,7 @@
     },
     {
       "intent_id": "HIRC-I026",
-      "status": "ACTIVE",
+      "status": "SUPERSEDED_BY_HIRC-I031",
       "kind": "confirmed_hirc_team_succession_threshold_override",
       "coverage": "PROCESS_OR_HISTORY_MAPPED",
       "revision_map_ids": [],
@@ -588,7 +588,207 @@
       ],
       "missing_evidence_paths": [],
       "acceptance_check_count": 3,
-      "next_action": "Continue generation-2 hIRC work and preserve the offered handoff without transfer."
+      "next_action": "Preserve this 14-percent rule as superseded history and apply HIRC-I031's 15-percent retirement boundary to current hIRC operations."
+    },
+    {
+      "intent_id": "HIRC-I027",
+      "status": "VERIFIED",
+      "kind": "confirmed_current-description-handoff",
+      "coverage": "PROCESS_OR_HISTORY_MAPPED",
+      "revision_map_ids": [],
+      "process_or_history_artifact_ids": [
+        "HIRC-CURRENT-DESCRIPTION-001",
+        "HIRC-CONTINUITY-001",
+        "HIRC-M03-STONE-REGISTER-001"
+      ],
+      "evidence_paths": [
+        "HIRC-CURRENT-DESCRIPTION.md",
+        "README.md",
+        "review/milestone-03-stone-register.json"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 4,
+      "next_action": "Maintain the description at material milestone changes; current handoff is complete, so resume M03-S014."
+    },
+    {
+      "intent_id": "HIRC-I028",
+      "status": "DEFERRED",
+      "kind": "confirmed_ui_interruption_scheduling_requirement",
+      "coverage": "PROCESS_OR_HISTORY_MAPPED",
+      "revision_map_ids": [],
+      "process_or_history_artifact_ids": [
+        "HIRC-CURRENT-DESCRIPTION-001",
+        "HIRC-INTENT-001"
+      ],
+      "evidence_paths": [
+        "HIRC-CURRENT-DESCRIPTION.md",
+        "intent-register.json"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 6,
+      "next_action": "After Milestone 03 closure, create a tiny UI/state-machine stone with interaction prototypes, accessibility checks, scheduling invariants and adverse interruption fixtures."
+    },
+    {
+      "intent_id": "HIRC-I029",
+      "status": "DEFERRED",
+      "kind": "confirmed_post_milestone_authority_accountability_self_review",
+      "coverage": "PROCESS_OR_HISTORY_MAPPED",
+      "revision_map_ids": [],
+      "process_or_history_artifact_ids": [
+        "HIRC-CURRENT-DESCRIPTION-001",
+        "HIRC-INTENT-001",
+        "HIRC-M03-STONE-REGISTER-001"
+      ],
+      "evidence_paths": [
+        "intent-register.json",
+        "HIRC-CURRENT-DESCRIPTION.md"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 7,
+      "next_action": "After S015 remote verification, freeze a holistic self/Grand-Plan review stone before the next implementation milestone and derive tiny architecture, threat, schema, UI and tamper-test stones."
+    },
+    {
+      "intent_id": "HIRC-I030",
+      "status": "ACTIVE",
+      "kind": "confirmed_team_unstall_and_coordination_authority_protocol",
+      "coverage": "PROCESS_OR_HISTORY_MAPPED",
+      "revision_map_ids": [],
+      "process_or_history_artifact_ids": [
+        "HIRC-TEAM-STALL-REGISTER-001",
+        "HIRC-CURRENT-DESCRIPTION-001",
+        "HIRC-INTENT-001"
+      ],
+      "evidence_paths": [
+        "review/hirc-team-stall-register-v1.json",
+        "review/hirc-team-stall-register-v1.md",
+        "review/validate_team_stall_register.py",
+        "review/fixtures/team-stall-register-validation-v1.json",
+        "HIRC-CURRENT-DESCRIPTION.md"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 6,
+      "next_action": "Use the validated register to route the frozen security-formation review and metric/evaluator replacement lane, then carry the protocol into the post-S015 runtime work graph."
+    },
+    {
+      "intent_id": "HIRC-I031",
+      "status": "ACTIVE",
+      "kind": "confirmed_hirc_elder_activation_retirement_and_visible_name_correction",
+      "coverage": "PROCESS_OR_HISTORY_MAPPED",
+      "revision_map_ids": [],
+      "process_or_history_artifact_ids": [
+        "HIRC-TEAM-STALL-REGISTER-001",
+        "HIRC-CURRENT-DESCRIPTION-001",
+        "HIRC-INTENT-001"
+      ],
+      "evidence_paths": [
+        "review/hirc-team-stall-register-v1.json",
+        "review/hirc-team-stall-register-v1.md",
+        "review/fixtures/team-stall-register-validation-v1.json",
+        "review/m03-s014-post-freeze-intake-v1.json",
+        "HIRC-CURRENT-DESCRIPTION.md"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 6,
+      "next_action": "Keep the current team roster, visible retirement titles and dependency routing synchronized at each fresh threshold crossing without reactivating retired Elders."
+    },
+    {
+      "intent_id": "HIRC-I032",
+      "status": "DEFERRED",
+      "kind": "confirmed_private_tor_irc_bridge_transport_requirement",
+      "coverage": "PROCESS_OR_HISTORY_MAPPED",
+      "revision_map_ids": [],
+      "process_or_history_artifact_ids": [
+        "HIRC-CURRENT-DESCRIPTION-001",
+        "HIRC-INTENT-001",
+        "HIRC-MASTER-DRAFT-BUNDLE-001"
+      ],
+      "evidence_paths": [
+        "intent-register.json",
+        "HIRC-CURRENT-DESCRIPTION.md",
+        "drafts/hirc_bridge_security_profile_v0_1-draft.md"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 6,
+      "next_action": "After S015 and the post-milestone authority/accountability review, freeze a Tor-IRC Bridge transport threat-model and contract stone before choosing an IRC daemon, Tor integration or UI implementation."
+    },
+    {
+      "intent_id": "HIRC-I033",
+      "status": "VERIFIED",
+      "kind": "confirmed_sidebar_active_team_and_retired_elder_separation",
+      "coverage": "PROCESS_OR_HISTORY_MAPPED",
+      "revision_map_ids": [],
+      "process_or_history_artifact_ids": [
+        "HIRC-TEAM-STALL-REGISTER-001",
+        "HIRC-CURRENT-DESCRIPTION-001",
+        "HIRC-INTENT-001"
+      ],
+      "evidence_paths": [
+        "review/hirc-team-stall-register-v1.json",
+        "review/hirc-team-stall-register-v1.md",
+        "HIRC-CURRENT-DESCRIPTION.md"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 6,
+      "next_action": "Reconcile section membership only after a fresh hIRC retirement or a complete explicit reactivation record changes active status."
+    },
+    {
+      "intent_id": "HIRC-I034",
+      "status": "VERIFIED",
+      "kind": "confirmed_compaction_resistant_retirement_latch",
+      "coverage": "PROCESS_OR_HISTORY_MAPPED",
+      "revision_map_ids": [],
+      "process_or_history_artifact_ids": [
+        "HIRC-TEAM-STALL-REGISTER-001",
+        "HIRC-CURRENT-DESCRIPTION-001",
+        "HIRC-INTENT-001"
+      ],
+      "evidence_paths": [
+        "review/hirc-team-stall-register-v1.json",
+        "review/fixtures/team-stall-register-validation-v1.json",
+        "HIRC-CURRENT-DESCRIPTION.md"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 6,
+      "next_action": "Keep retirement latched across lifecycle events and require a complete explicit reactivation record before moving any Elder back to hIRC Team."
+    },
+    {
+      "intent_id": "HIRC-I035",
+      "status": "ACTIVE",
+      "kind": "confirmed_four_pair_non_mbv_parallel_team_plan",
+      "coverage": "PROCESS_OR_HISTORY_MAPPED",
+      "revision_map_ids": [],
+      "process_or_history_artifact_ids": [
+        "HIRC-TEAM-STALL-REGISTER-001",
+        "HIRC-CURRENT-DESCRIPTION-001",
+        "HIRC-INTENT-001"
+      ],
+      "evidence_paths": [
+        "review/hirc-team-stall-register-v1.json",
+        "review/fixtures/team-stall-register-validation-v1.json",
+        "review/hirc-team-stall-register-v1.md",
+        "HIRC-CURRENT-DESCRIPTION.md"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 6,
+      "next_action": "Dispatch all four bounded pair assignments, collect readiness or scoped results, and continuously reroute only the affected dependency when a pair reports a real hold."
+    },
+    {
+      "intent_id": "HIRC-I036",
+      "status": "ACTIVE",
+      "kind": "confirmed_plain_user_interface_language_requirement",
+      "coverage": "PROCESS_OR_HISTORY_MAPPED",
+      "revision_map_ids": [],
+      "process_or_history_artifact_ids": [
+        "HIRC-CURRENT-DESCRIPTION-001",
+        "HIRC-INTENT-001"
+      ],
+      "evidence_paths": [
+        "intent-register.json",
+        "HIRC-CURRENT-DESCRIPTION.md"
+      ],
+      "missing_evidence_paths": [],
+      "acceptance_check_count": 5,
+      "next_action": "Carry this requirement into the post-S015 UI copy and interaction review while keeping the current security closure focused on engineering evidence."
     }
   ],
   "unmapped_intent_ids": [],

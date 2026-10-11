@@ -1,0 +1,105 @@
+{
+  "schema": "hirc.m08-s001-validation/1",
+  "stone": "M08-S001",
+  "status": "PASS",
+  "checks": {
+    "recovery_tests_pass": true,
+    "recovery_test_count": true,
+    "full_suite_pass": true,
+    "full_suite_test_count": true,
+    "failed_baseline_preserved": true,
+    "network_process_imports_absent": true,
+    "backup_restore_heads_match": true,
+    "restored_store_valid": true,
+    "unencrypted_hold_explicit": true
+  },
+  "files": [
+    {
+      "path": "implementation/M08_RELEASE_HARDENING_PLAN.md",
+      "sha256": "0e2b21a00be42a7ec56773742486b8fcfd9b2fea40b0dd460268f3c2a7779df6",
+      "bytes": 6363
+    },
+    {
+      "path": "implementation/README.md",
+      "sha256": "608abe3f9aade0b3249d55a7e5765a1d98fd6a4d0c3f9cdd4c77814cf8300bb2",
+      "bytes": 16078
+    },
+    {
+      "path": "src/hirc/recovery.py",
+      "sha256": "ee566cd48153f137a8f6a8b52630f8b36f57994d67f56028883babfb741c93fa",
+      "bytes": 3378
+    },
+    {
+      "path": "src/hirc/store.py",
+      "sha256": "81dd7bb2541509082deb29d00d834ec4ec001584f7a175ae58fd376b0a07f79c",
+      "bytes": 34935
+    },
+    {
+      "path": "src/hirc/cli.py",
+      "sha256": "6fcd8323c08caecd17948a2531444aa5f1676aa2306b0c5faa8076ad2f3b55fc",
+      "bytes": 9691
+    },
+    {
+      "path": "tests/test_recovery.py",
+      "sha256": "0e3253c587af3284d2a314879cf45887b7a542c16cc7c1b16abfed444829693b",
+      "bytes": 6610
+    },
+    {
+      "path": "implementation/m08-s001-recovery-validation-v1-failed.json",
+      "sha256": "fd7792b5ceefb2ae3949f0e04baffd6e4cfedf58cf2352ca2dc22addfa151a02",
+      "bytes": 1311
+    }
+  ],
+  "recovery_test_output": [
+    "test_backup_and_restore_preserve_all_views (test_recovery.RecoveryTests.test_backup_and_restore_preserve_all_views) ... ok",
+    "test_cli_backup_and_restore (test_recovery.RecoveryTests.test_cli_backup_and_restore) ... ok",
+    "test_concurrent_target_creation_is_never_overwritten (test_recovery.RecoveryTests.test_concurrent_target_creation_is_never_overwritten) ... ok",
+    "test_corrupt_source_is_rejected (test_recovery.RecoveryTests.test_corrupt_source_is_rejected) ... ok",
+    "test_existing_target_is_never_overwritten (test_recovery.RecoveryTests.test_existing_target_is_never_overwritten) ... ok",
+    "test_reopened_backup_matches_source_head (test_recovery.RecoveryTests.test_reopened_backup_matches_source_head) ... ok",
+    "test_truncated_backup_does_not_create_restore_target (test_recovery.RecoveryTests.test_truncated_backup_does_not_create_restore_target) ... ok",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 7 tests in 1.374s",
+    "",
+    "OK"
+  ],
+  "full_suite_output": [
+    ".................................................................xxx........................................................................",
+    "----------------------------------------------------------------------",
+    "Ran 140 tests in 19.818s",
+    "",
+    "OK (expected failures=3)"
+  ],
+  "backup_control": {
+    "schema": "hirc.recovery-copy/1",
+    "operation": "backup",
+    "source": "D:\\HORTRAME\\hIRC\\tests\\.tmp\\tmpvuffqfmm\\m08-s001.sqlite3",
+    "destination": "D:\\HORTRAME\\hIRC\\tests\\.tmp\\tmpvuffqfmm\\backup.sqlite3",
+    "sha256": "83266eca8dba47603484c40935d8d5e1b5ec0f5f72b3ef4850bccea9a00f7856",
+    "bytes": 57344,
+    "event_count": 1,
+    "head_hash": "80b1ad814518412a64d368ef1add1ee8ca32074675c261fa0816ffc35320d3a3",
+    "encrypted": false,
+    "sensitive_data_release_allowed": false
+  },
+  "restore_control": {
+    "schema": "hirc.recovery-copy/1",
+    "operation": "restore",
+    "source": "D:\\HORTRAME\\hIRC\\tests\\.tmp\\tmpvuffqfmm\\backup.sqlite3",
+    "destination": "D:\\HORTRAME\\hIRC\\tests\\.tmp\\tmpvuffqfmm\\restored.sqlite3",
+    "sha256": "83266eca8dba47603484c40935d8d5e1b5ec0f5f72b3ef4850bccea9a00f7856",
+    "bytes": 57344,
+    "event_count": 1,
+    "head_hash": "80b1ad814518412a64d368ef1add1ee8ca32074675c261fa0816ffc35320d3a3",
+    "encrypted": false,
+    "sensitive_data_release_allowed": false
+  },
+  "forbidden_imports": [],
+  "surviving_limits": [
+    "Backups preserve plaintext SQLite data; sensitive-data release remains blocked pending supported encryption and key custody.",
+    "Finite Windows-local checks do not establish durability across every filesystem, power-loss point or storage-controller behavior.",
+    "Schema migration, fuzz/load/soak, clean package install, cross-machine recovery and empirical UI/security review remain open."
+  ],
+  "nonclaim": "M08-S001 verified local backup/restore evidence only; not production disaster-recovery assurance."
+}

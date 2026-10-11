@@ -1,0 +1,26 @@
+{
+  "schema": "hirc.m08-s012-validation/1",
+  "stone": "M08-S012",
+  "status": "FAIL",
+  "finding": {
+    "id": "M08-S012-F001",
+    "title": "Duplicate JSON keys bypassed raw payload tamper detection",
+    "observed": {
+      "event_head_unchanged": true,
+      "store_verify_valid": true,
+      "store_verify_errors": [],
+      "duplicate_file_result": {"authority_ref": "authority:real"}
+    },
+    "attack": "After dropping the update trigger, raw payload bytes were changed from one canonical key to duplicate keys whose final value preserved the decoded event. The trigger was exactly restored.",
+    "consequence": "Raw frozen-log bytes could change without changing the canonical event hash, and external JSON could carry parser-order ambiguity at authority-bearing fields.",
+    "required_repair": "Reject duplicate keys at every admitted JSON parse and require stored payload_json bytes to equal the exact canonical encoding used by the event hash."
+  },
+  "files": [
+    {"path": "src/hirc/canonical.py", "sha256": "fe0e0e7619e2396fbbdb157b09362311be6afbb08d13476f0760c0a2de022b6e", "bytes": 2758},
+    {"path": "src/hirc/store.py", "sha256": "e47f1d7efae9077174840956903f3e253aa6f1e58bd88cfc79daa8838e404ca1", "bytes": 33111},
+    {"path": "src/hirc/cli.py", "sha256": "25bcadf45b65d7b10ec82da27933823f33b309dc48238b2ffa9f2074d98c0a8c", "bytes": 9665},
+    {"path": "tests/test_store.py", "sha256": "0a9f61b0c706241af022fe0155cc41271352a7e07ccb07c39765137139d89590", "bytes": 8587},
+    {"path": "tests/test_adapter.py", "sha256": "568a8522e8fb78d4791d135c8a996c5cd2d0c5ff16b894c1f132c4b6ac5b4298", "bytes": 7210}
+  ],
+  "nonclaim": "Local parser and canonical-storage integrity finding; protected external witnesses remain required against privileged full-chain rewriting."
+}

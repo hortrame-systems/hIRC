@@ -1,0 +1,146 @@
+{
+  "schema": "hirc.m05-s001-validation/1",
+  "stone": "M05-S001",
+  "status": "PASS",
+  "checks": {
+    "unit_tests": true,
+    "unit_test_count": true,
+    "briefing_schema": true,
+    "blocked_work_held": true,
+    "sibling_still_ready": true,
+    "sibling_path_exposed": true,
+    "commitment_present": true,
+    "reported_not_observed": true,
+    "source_chain_bound": true
+  },
+  "files": [
+    {
+      "path": "src/hirc/projection.py",
+      "sha256": "cad276251828ff41885240d83b8f65be26170dfede443e8e3100c7019008ff5a",
+      "bytes": 13275
+    },
+    {
+      "path": "src/hirc/cli.py",
+      "sha256": "6fcd8323c08caecd17948a2531444aa5f1676aa2306b0c5faa8076ad2f3b55fc",
+      "bytes": 9691
+    },
+    {
+      "path": "src/hirc/store.py",
+      "sha256": "81dd7bb2541509082deb29d00d834ec4ec001584f7a175ae58fd376b0a07f79c",
+      "bytes": 34935
+    },
+    {
+      "path": "tests/test_projection.py",
+      "sha256": "bf1da1f778dfa2ba997f41109756c1c71f85010ab07e1ebfba0869842b7638ba",
+      "bytes": 4600
+    },
+    {
+      "path": "implementation/README.md",
+      "sha256": "608abe3f9aade0b3249d55a7e5765a1d98fd6a4d0c3f9cdd4c77814cf8300bb2",
+      "bytes": 16078
+    }
+  ],
+  "unit_test_output": [
+    "test_briefing_preserves_work_commitment_and_source_events (test_projection.ProjectionTests.test_briefing_preserves_work_commitment_and_source_events) ... ok",
+    "test_dependency_cycle_is_rejected (test_projection.ProjectionTests.test_dependency_cycle_is_rejected) ... ok",
+    "test_hold_blocks_only_its_work_and_exposes_sibling_path (test_projection.ProjectionTests.test_hold_blocks_only_its_work_and_exposes_sibling_path) ... ok",
+    "test_missing_reference_fails_projection (test_projection.ProjectionTests.test_missing_reference_fails_projection) ... ok",
+    "test_reported_and_observed_states_remain_distinct (test_projection.ProjectionTests.test_reported_and_observed_states_remain_distinct) ... ok",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 5 tests in 0.516s",
+    "",
+    "OK"
+  ],
+  "briefing_control": {
+    "schema": "hirc.return-briefing/1",
+    "store_head": "e693a921a26a7da895ffa4e1faf803124745bc45f6167bf6f56173748916a22d",
+    "event_count": 5,
+    "work": [
+      {
+        "work_id": "work:blocked",
+        "title": "Blocked",
+        "owner": "actor:validator",
+        "status": "HELD",
+        "declared_status": "OPEN",
+        "next_action": "Await evidence",
+        "dependencies": [],
+        "active_holds": [
+          "hold:blocked"
+        ],
+        "blocked_by": [],
+        "observations": [],
+        "information_boundary": {
+          "privacy_class": "privacy:owner",
+          "audience": "audience:owner",
+          "purpose": "purpose:work-recovery"
+        },
+        "source_events": {
+          "created": "event:941ddcd3978604ff04f63b7adf4021383e422f1bc391a16f479d1428ce83bc54",
+          "status": "event:941ddcd3978604ff04f63b7adf4021383e422f1bc391a16f479d1428ce83bc54"
+        }
+      },
+      {
+        "work_id": "work:ready",
+        "title": "Ready sibling",
+        "owner": "actor:validator",
+        "status": "OPEN",
+        "declared_status": "OPEN",
+        "next_action": "Continue",
+        "dependencies": [],
+        "active_holds": [],
+        "blocked_by": [],
+        "observations": [
+          {
+            "claim": "provider operation",
+            "reported_state": "PROVIDER_ACCEPTED",
+            "observed_state": "UNKNOWN",
+            "source_event": "event:e693a921a26a7da895ffa4e1faf803124745bc45f6167bf6f56173748916a22d"
+          }
+        ],
+        "information_boundary": {
+          "privacy_class": "privacy:owner",
+          "audience": "audience:owner",
+          "purpose": "purpose:work-recovery"
+        },
+        "source_events": {
+          "created": "event:35060e34c72cb6c13b9a6a1afa533302ac5b6d661f0facf8cac64c273ce044b6",
+          "status": "event:35060e34c72cb6c13b9a6a1afa533302ac5b6d661f0facf8cac64c273ce044b6"
+        }
+      }
+    ],
+    "commitments": [
+      {
+        "commitment_id": "commitment:one",
+        "work_id": "work:ready",
+        "owner": "actor:validator",
+        "description": "Complete sibling",
+        "status": "OPEN",
+        "information_boundary": {
+          "privacy_class": "privacy:owner",
+          "audience": "audience:owner",
+          "purpose": "purpose:work-recovery"
+        },
+        "source_events": {
+          "declared": "event:fc1ce4dee2fa2a7aeb7619ca4d31036f7c482b632db970f890596a8a9beb62d4",
+          "status": "event:fc1ce4dee2fa2a7aeb7619ca4d31036f7c482b632db970f890596a8a9beb62d4"
+        }
+      }
+    ],
+    "holds": [
+      {
+        "hold_id": "hold:blocked",
+        "work_id": "work:blocked",
+        "reason": "missing review",
+        "reopen_when": "review arrives",
+        "allowed_sibling_work": "work:ready",
+        "state": "ACTIVE",
+        "source_event": "event:783001c53cf82aa09a731a0481c38ba02ad734b1171ab07cdc230c8bde69b39c",
+        "cleared_event": null
+      }
+    ],
+    "corrections": [],
+    "unprojected_events": []
+  },
+  "nonclaim": "Deterministic local work projection and return-briefing evidence only; it does not validate scheduling, agent execution, authority, external observation, UI behavior or production recovery assurance."
+}

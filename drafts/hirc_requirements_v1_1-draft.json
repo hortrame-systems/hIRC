@@ -42,7 +42,7 @@
     {
       "id": "HIRC-REVISION-MAP-BAYESIAN-TRUST-001",
       "path": "review/revision-map-addendum-bayesian-trust-v1.json",
-      "sha256": "d992bb12d9c95e9efe0a5fa763e68864868c735385a421320cd506b11e47e127"
+      "sha256": "2cb589321b0c76d934734d33a4f23121760b7c86a9a736d6b9e88605c4a86d32"
     },
     {
       "id": "HIRC-REVISION-MAP-GOAL-EVOLUTION-001",
@@ -3757,10 +3757,17 @@
         "HIRC-REVISION-MAP-BAYESIAN-TRUST-001"
       ],
       "rationale_refs": [],
-      "security_privacy_impact": "PENDING_REQUIREMENT_LEVEL_ASSESSMENT",
-      "dependencies": [],
-      "acceptance_test_refs": [],
-      "evidence_status": "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED"
+      "security_privacy_impact": "V3.2 requires exact opportunity coverage, dependence partition/ESS, typed current uncertainty/fit/calibration/drift/expiry and resolver-backed evidence closure before ACTIVE; runtime remains not implemented.",
+      "dependencies": [
+        "HIRC-M03-S014-BAYESIAN-RELIANCE-V3_2-REPAIR-003"
+      ],
+      "acceptance_test_refs": [
+        "review/fixtures/bayesian-reliance-v3.2-validation.json",
+        "review/fixtures/waymark-v2.1-reproduction-validation.json",
+        "review/fixtures/m03-metric-matrix-repair-validation-v2.json",
+        "review/fixtures/m03-s014-matrix-reviewer-correction-validation-v1.json"
+      ],
+      "evidence_status": "V3_2_RESOLVER_BACKED_CANDIDATE_REPAIR_PASS_RUNTIME_AND_EMPIRICAL_VALIDATION_NOT_IMPLEMENTED"
     },
     {
       "id": "U161",
@@ -3776,10 +3783,17 @@
         "HIRC-REVISION-MAP-BAYESIAN-TRUST-001"
       ],
       "rationale_refs": [],
-      "security_privacy_impact": "PENDING_REQUIREMENT_LEVEL_ASSESSMENT",
-      "dependencies": [],
-      "acceptance_test_refs": [],
-      "evidence_status": "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED"
+      "security_privacy_impact": "The subject enum remains broad while every active use is scoped by context, exact source/evaluator evidence and no-authority governance; surveillance and universal scoring remain prohibited.",
+      "dependencies": [
+        "HIRC-M03-S014-BAYESIAN-RELIANCE-V3_2-REPAIR-003"
+      ],
+      "acceptance_test_refs": [
+        "review/fixtures/bayesian-reliance-v3.2-validation.json",
+        "review/fixtures/waymark-v2.1-reproduction-validation.json",
+        "review/fixtures/m03-metric-matrix-repair-validation-v2.json",
+        "review/fixtures/m03-s014-matrix-reviewer-correction-validation-v1.json"
+      ],
+      "evidence_status": "V3_2_RESOLVER_BACKED_CANDIDATE_REPAIR_PASS_RUNTIME_AND_EMPIRICAL_VALIDATION_NOT_IMPLEMENTED"
     },
     {
       "id": "U162",
@@ -3795,10 +3809,17 @@
         "HIRC-REVISION-MAP-BAYESIAN-TRUST-001"
       ],
       "rationale_refs": [],
-      "security_privacy_impact": "PENDING_REQUIREMENT_LEVEL_ASSESSMENT",
-      "dependencies": [],
-      "acceptance_test_refs": [],
-      "evidence_status": "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED"
+      "security_privacy_impact": "Reliance stays orthogonal to authority through a constant false direct-authority effect and prohibited consumer boundaries; the separate request/action authority path remains controlling.",
+      "dependencies": [
+        "HIRC-M03-S014-BAYESIAN-RELIANCE-V3_2-REPAIR-003"
+      ],
+      "acceptance_test_refs": [
+        "review/fixtures/bayesian-reliance-v3.2-validation.json",
+        "review/fixtures/waymark-v2.1-reproduction-validation.json",
+        "review/fixtures/m03-metric-matrix-repair-validation-v2.json",
+        "review/fixtures/m03-s014-matrix-reviewer-correction-validation-v1.json"
+      ],
+      "evidence_status": "V3_2_RESOLVER_BACKED_CANDIDATE_REPAIR_PASS_RUNTIME_AND_EMPIRICAL_VALIDATION_NOT_IMPLEMENTED"
     },
     {
       "id": "U163",
@@ -3814,10 +3835,17 @@
         "HIRC-REVISION-MAP-BAYESIAN-TRUST-001"
       ],
       "rationale_refs": [],
-      "security_privacy_impact": "PENDING_REQUIREMENT_LEVEL_ASSESSMENT",
-      "dependencies": [],
-      "acceptance_test_refs": [],
-      "evidence_status": "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED"
+      "security_privacy_impact": "V3.2 resolves metric/evaluator/uncertainty/model evidence through exact locator, content hash and byte count, while retaining evaluator conflicts/independence/calibration/appeal and empirical holds.",
+      "dependencies": [
+        "HIRC-M03-S014-BAYESIAN-RELIANCE-V3_2-REPAIR-003"
+      ],
+      "acceptance_test_refs": [
+        "review/fixtures/bayesian-reliance-v3.2-validation.json",
+        "review/fixtures/waymark-v2.1-reproduction-validation.json",
+        "review/fixtures/m03-metric-matrix-repair-validation-v2.json",
+        "review/fixtures/m03-s014-matrix-reviewer-correction-validation-v1.json"
+      ],
+      "evidence_status": "V3_2_RESOLVER_BACKED_CANDIDATE_REPAIR_PASS_RUNTIME_AND_EMPIRICAL_VALIDATION_NOT_IMPLEMENTED"
     },
     {
       "id": "U164",
@@ -3833,10 +3861,17 @@
         "HIRC-REVISION-MAP-BAYESIAN-TRUST-001"
       ],
       "rationale_refs": [],
-      "security_privacy_impact": "PENDING_REQUIREMENT_LEVEL_ASSESSMENT",
-      "dependencies": [],
-      "acceptance_test_refs": [],
-      "evidence_status": "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED"
+      "security_privacy_impact": "V3.2 retains content-addressed evaluation graph/nodes with parent closure, visited/cycle/depth checks and unresolved-to-held behavior plus exact dependence partition tests.",
+      "dependencies": [
+        "HIRC-M03-S014-BAYESIAN-RELIANCE-V3_2-REPAIR-003"
+      ],
+      "acceptance_test_refs": [
+        "review/fixtures/bayesian-reliance-v3.2-validation.json",
+        "review/fixtures/waymark-v2.1-reproduction-validation.json",
+        "review/fixtures/m03-metric-matrix-repair-validation-v2.json",
+        "review/fixtures/m03-s014-matrix-reviewer-correction-validation-v1.json"
+      ],
+      "evidence_status": "V3_2_RESOLVER_BACKED_CANDIDATE_REPAIR_PASS_RUNTIME_AND_EMPIRICAL_VALIDATION_NOT_IMPLEMENTED"
     },
     {
       "id": "U165",
@@ -3852,10 +3887,17 @@
         "HIRC-REVISION-MAP-BAYESIAN-TRUST-001"
       ],
       "rationale_refs": [],
-      "security_privacy_impact": "PENDING_REQUIREMENT_LEVEL_ASSESSMENT",
-      "dependencies": [],
-      "acceptance_test_refs": [],
-      "evidence_status": "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED"
+      "security_privacy_impact": "V3.2 retains exact boundary propagation, conservative mixed-class-to-PROTECTED join, non-penalty, no ranking and no permission effects.",
+      "dependencies": [
+        "HIRC-M03-S014-BAYESIAN-RELIANCE-V3_2-REPAIR-003"
+      ],
+      "acceptance_test_refs": [
+        "review/fixtures/bayesian-reliance-v3.2-validation.json",
+        "review/fixtures/waymark-v2.1-reproduction-validation.json",
+        "review/fixtures/m03-metric-matrix-repair-validation-v2.json",
+        "review/fixtures/m03-s014-matrix-reviewer-correction-validation-v1.json"
+      ],
+      "evidence_status": "V3_2_RESOLVER_BACKED_CANDIDATE_REPAIR_PASS_RUNTIME_AND_EMPIRICAL_VALIDATION_NOT_IMPLEMENTED"
     },
     {
       "id": "U166",
@@ -6267,9 +6309,17 @@
         "U160",
         "U161"
       ],
-      "joint_status": "PENDING_RECONCILIATION",
-      "final_artifact_refs": [],
-      "test_refs": []
+      "joint_status": "CONTROLLER_REPAIR_3_PASS_PEER_RECHECK_REQUIRED",
+      "final_artifact_refs": [
+        "HIRC-M03-S014-BAYESIAN-RELIANCE-V3_2-REPAIR-003",
+        "review/contracts/hirc-bayesian-reliance.candidate.schema.v3.2.json"
+      ],
+      "test_refs": [
+        "review/fixtures/bayesian-reliance-v3.2-validation.json",
+        "review/fixtures/waymark-v2.1-reproduction-validation.json",
+        "review/fixtures/m03-metric-matrix-repair-validation-v2.json",
+        "review/fixtures/m03-s014-matrix-reviewer-correction-validation-v1.json"
+      ]
     },
     {
       "id": "BRM-002",
@@ -6283,9 +6333,17 @@
       "basis": [
         "U160"
       ],
-      "joint_status": "PENDING_RECONCILIATION",
-      "final_artifact_refs": [],
-      "test_refs": []
+      "joint_status": "CONTROLLER_REPAIR_3_PASS_PEER_RECHECK_REQUIRED",
+      "final_artifact_refs": [
+        "HIRC-M03-S014-BAYESIAN-RELIANCE-V3_2-REPAIR-003",
+        "review/contracts/hirc-bayesian-reliance.candidate.schema.v3.2.json"
+      ],
+      "test_refs": [
+        "review/fixtures/bayesian-reliance-v3.2-validation.json",
+        "review/fixtures/waymark-v2.1-reproduction-validation.json",
+        "review/fixtures/m03-metric-matrix-repair-validation-v2.json",
+        "review/fixtures/m03-s014-matrix-reviewer-correction-validation-v1.json"
+      ]
     },
     {
       "id": "BRM-003",
@@ -6299,9 +6357,17 @@
       "basis": [
         "U163"
       ],
-      "joint_status": "PENDING_RECONCILIATION",
-      "final_artifact_refs": [],
-      "test_refs": []
+      "joint_status": "CONTROLLER_REPAIR_3_PASS_PEER_RECHECK_REQUIRED",
+      "final_artifact_refs": [
+        "HIRC-M03-S014-BAYESIAN-RELIANCE-V3_2-REPAIR-003",
+        "review/contracts/hirc-bayesian-reliance.candidate.schema.v3.2.json"
+      ],
+      "test_refs": [
+        "review/fixtures/bayesian-reliance-v3.2-validation.json",
+        "review/fixtures/waymark-v2.1-reproduction-validation.json",
+        "review/fixtures/m03-metric-matrix-repair-validation-v2.json",
+        "review/fixtures/m03-s014-matrix-reviewer-correction-validation-v1.json"
+      ]
     },
     {
       "id": "BRM-004",
@@ -6315,9 +6381,17 @@
       "basis": [
         "U164"
       ],
-      "joint_status": "PENDING_RECONCILIATION",
-      "final_artifact_refs": [],
-      "test_refs": []
+      "joint_status": "CONTROLLER_REPAIR_3_PASS_PEER_RECHECK_REQUIRED",
+      "final_artifact_refs": [
+        "HIRC-M03-S014-BAYESIAN-RELIANCE-V3_2-REPAIR-003",
+        "review/contracts/hirc-bayesian-reliance.candidate.schema.v3.2.json"
+      ],
+      "test_refs": [
+        "review/fixtures/bayesian-reliance-v3.2-validation.json",
+        "review/fixtures/waymark-v2.1-reproduction-validation.json",
+        "review/fixtures/m03-metric-matrix-repair-validation-v2.json",
+        "review/fixtures/m03-s014-matrix-reviewer-correction-validation-v1.json"
+      ]
     },
     {
       "id": "BRM-005",
@@ -6332,9 +6406,17 @@
       "basis": [
         "U162"
       ],
-      "joint_status": "PENDING_RECONCILIATION",
-      "final_artifact_refs": [],
-      "test_refs": []
+      "joint_status": "CONTROLLER_REPAIR_3_PASS_PEER_RECHECK_REQUIRED",
+      "final_artifact_refs": [
+        "HIRC-M03-S014-BAYESIAN-RELIANCE-V3_2-REPAIR-003",
+        "review/contracts/hirc-bayesian-reliance.candidate.schema.v3.2.json"
+      ],
+      "test_refs": [
+        "review/fixtures/bayesian-reliance-v3.2-validation.json",
+        "review/fixtures/waymark-v2.1-reproduction-validation.json",
+        "review/fixtures/m03-metric-matrix-repair-validation-v2.json",
+        "review/fixtures/m03-s014-matrix-reviewer-correction-validation-v1.json"
+      ]
     },
     {
       "id": "BRM-006",
@@ -6349,9 +6431,17 @@
         "HIRC-I015",
         "U162"
       ],
-      "joint_status": "PENDING_RECONCILIATION",
-      "final_artifact_refs": [],
-      "test_refs": []
+      "joint_status": "CONTROLLER_REPAIR_3_PASS_PEER_RECHECK_REQUIRED",
+      "final_artifact_refs": [
+        "HIRC-M03-S014-BAYESIAN-RELIANCE-V3_2-REPAIR-003",
+        "review/contracts/hirc-bayesian-reliance.candidate.schema.v3.2.json"
+      ],
+      "test_refs": [
+        "review/fixtures/bayesian-reliance-v3.2-validation.json",
+        "review/fixtures/waymark-v2.1-reproduction-validation.json",
+        "review/fixtures/m03-metric-matrix-repair-validation-v2.json",
+        "review/fixtures/m03-s014-matrix-reviewer-correction-validation-v1.json"
+      ]
     },
     {
       "id": "BRM-007",
@@ -6365,9 +6455,17 @@
       "basis": [
         "U165"
       ],
-      "joint_status": "PENDING_RECONCILIATION",
-      "final_artifact_refs": [],
-      "test_refs": []
+      "joint_status": "CONTROLLER_REPAIR_3_PASS_PEER_RECHECK_REQUIRED",
+      "final_artifact_refs": [
+        "HIRC-M03-S014-BAYESIAN-RELIANCE-V3_2-REPAIR-003",
+        "review/contracts/hirc-bayesian-reliance.candidate.schema.v3.2.json"
+      ],
+      "test_refs": [
+        "review/fixtures/bayesian-reliance-v3.2-validation.json",
+        "review/fixtures/waymark-v2.1-reproduction-validation.json",
+        "review/fixtures/m03-metric-matrix-repair-validation-v2.json",
+        "review/fixtures/m03-s014-matrix-reviewer-correction-validation-v1.json"
+      ]
     },
     {
       "id": "BRM-008",
@@ -6381,9 +6479,17 @@
       "basis": [
         "HIRC-I015"
       ],
-      "joint_status": "PENDING_RECONCILIATION",
-      "final_artifact_refs": [],
-      "test_refs": []
+      "joint_status": "CONTROLLER_REPAIR_3_PASS_PEER_RECHECK_REQUIRED",
+      "final_artifact_refs": [
+        "HIRC-M03-S014-BAYESIAN-RELIANCE-V3_2-REPAIR-003",
+        "review/contracts/hirc-bayesian-reliance.candidate.schema.v3.2.json"
+      ],
+      "test_refs": [
+        "review/fixtures/bayesian-reliance-v3.2-validation.json",
+        "review/fixtures/waymark-v2.1-reproduction-validation.json",
+        "review/fixtures/m03-metric-matrix-repair-validation-v2.json",
+        "review/fixtures/m03-s014-matrix-reviewer-correction-validation-v1.json"
+      ]
     },
     {
       "id": "BRM-009",
@@ -6399,9 +6505,17 @@
         "HIRC-I014",
         "HIRC-I015"
       ],
-      "joint_status": "PENDING_RECONCILIATION",
-      "final_artifact_refs": [],
-      "test_refs": []
+      "joint_status": "CONTROLLER_REPAIR_3_PASS_PEER_RECHECK_REQUIRED",
+      "final_artifact_refs": [
+        "HIRC-M03-S014-BAYESIAN-RELIANCE-V3_2-REPAIR-003",
+        "review/contracts/hirc-bayesian-reliance.candidate.schema.v3.2.json"
+      ],
+      "test_refs": [
+        "review/fixtures/bayesian-reliance-v3.2-validation.json",
+        "review/fixtures/waymark-v2.1-reproduction-validation.json",
+        "review/fixtures/m03-metric-matrix-repair-validation-v2.json",
+        "review/fixtures/m03-s014-matrix-reviewer-correction-validation-v1.json"
+      ]
     },
     {
       "id": "BRM-010",
@@ -6414,9 +6528,17 @@
       "basis": [
         "HIRC-SOVEREIGNTY-COMPETITION-CANDIDATE-001-S1"
       ],
-      "joint_status": "PENDING_RECONCILIATION",
-      "final_artifact_refs": [],
-      "test_refs": []
+      "joint_status": "CONTROLLER_REPAIR_3_PASS_PEER_RECHECK_REQUIRED",
+      "final_artifact_refs": [
+        "HIRC-M03-S014-BAYESIAN-RELIANCE-V3_2-REPAIR-003",
+        "review/contracts/hirc-bayesian-reliance.candidate.schema.v3.2.json"
+      ],
+      "test_refs": [
+        "review/fixtures/bayesian-reliance-v3.2-validation.json",
+        "review/fixtures/waymark-v2.1-reproduction-validation.json",
+        "review/fixtures/m03-metric-matrix-repair-validation-v2.json",
+        "review/fixtures/m03-s014-matrix-reviewer-correction-validation-v1.json"
+      ]
     },
     {
       "id": "GRM-001",

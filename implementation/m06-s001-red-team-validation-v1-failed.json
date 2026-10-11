@@ -1,0 +1,35 @@
+{
+  "schema": "hirc.m06-s001-red-team-validation/1",
+  "status": "PRESERVED_FAILED_BASELINE",
+  "run": "tests.test_integration before repair",
+  "total": 8,
+  "passed": [
+    "command_shaped_content_remains_inert_data",
+    "concurrent_writers_form_one_contiguous_chain",
+    "reopen_reproduces_head_and_briefing",
+    "uncommitted_destructive_transaction_rolls_back"
+  ],
+  "failed": [
+    {
+      "test": "tampered_chain_rejects_next_append",
+      "failure": "A privileged mutation of an existing event did not prevent the next append.",
+      "consequence": "A corrupt chain could be extended before later verification detected it."
+    },
+    {
+      "test": "missing_disabled_capability_rejects_next_append",
+      "failure": "Deleting the bridge disabled-capability row did not prevent the next append.",
+      "consequence": "Absence of a required disabled capability could be treated as an operable store."
+    },
+    {
+      "test": "briefing_inherits_privacy_audience_and_purpose",
+      "failure": "Derived work briefing omitted its information-boundary labels.",
+      "consequence": "A consumer could lose privacy, audience and purpose restrictions during derivation."
+    },
+    {
+      "test": "projection_rejects_silent_information_boundary_change",
+      "failure": "A later work status with a changed audience projected successfully.",
+      "consequence": "A derived work view could silently widen its audience without a governed transition."
+    }
+  ],
+  "nonclaim": "Local red-team baseline only. It does not establish exploitability outside the tested SQLite/CLI/projection frame or assess components that do not yet exist."
+}

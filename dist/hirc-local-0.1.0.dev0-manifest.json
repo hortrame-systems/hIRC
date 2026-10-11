@@ -1,0 +1,91 @@
+{
+  "artifact": "hirc-local-0.1.0.dev0.pyz",
+  "bytes": 38349,
+  "member_count": 17,
+  "network_or_external_effect_enabled": false,
+  "reproducible_inputs": {
+    "compression": "deflate-9",
+    "fixed_zip_time": "2026-10-10T00:00:00Z"
+  },
+  "schema": "hirc.pyz-build/1",
+  "sensitive_data_release_allowed": false,
+  "sha256": "2976bbafddb17c66800fa9d7fb3645c2eda8625db62fe8a0a08a4b2c4657c1e1",
+  "source_manifest_sha256": "74bdb77b9cd63ea84b6f59d25810da1e11587010e960ea3d89c8bb8e60f9b625",
+  "sources": [
+    {
+      "bytes": 167,
+      "path": "src/hirc/__init__.py",
+      "sha256": "8d639f01cda312a1176f72f8d6638629e7a2eae37b6002ddadfb4f503dc15295"
+    },
+    {
+      "bytes": 49,
+      "path": "src/hirc/__main__.py",
+      "sha256": "0f7d54f3fbb1f79a85eb8110f11793db99da6f3c61ee979de5abe9a1b5f3fdb3"
+    },
+    {
+      "bytes": 12399,
+      "path": "src/hirc/adapter.py",
+      "sha256": "0c5495c6e9f9556449323b703182dbdcd09d4ef8ddb1d7968aaa66e815f99981"
+    },
+    {
+      "bytes": 1257,
+      "path": "src/hirc/atomic.py",
+      "sha256": "61e96fffe37011d0a9e56cd9bc2aefc1584ab151e80f9800d2362d118eab6636"
+    },
+    {
+      "bytes": 3242,
+      "path": "src/hirc/canonical.py",
+      "sha256": "c5621ca0a9676285abe4c9cfc337f484aec980287b11426cc105e0f74250b0f3"
+    },
+    {
+      "bytes": 9691,
+      "path": "src/hirc/cli.py",
+      "sha256": "6fcd8323c08caecd17948a2531444aa5f1676aa2306b0c5faa8076ad2f3b55fc"
+    },
+    {
+      "bytes": 10389,
+      "path": "src/hirc/decision.py",
+      "sha256": "a8e003343a5039393d5b615a73156631f20aeff0c648226cb79921fe629369e2"
+    },
+    {
+      "bytes": 8876,
+      "path": "src/hirc/formation.py",
+      "sha256": "2f3ba9b5b970a05ca5bdefc029c193a589b2fb69183ecefe638fb2f9fd0b41b1"
+    },
+    {
+      "bytes": 8437,
+      "path": "src/hirc/migration.py",
+      "sha256": "b94ecc8c4d1b936084d7d0ee73058f8c64a56ac2210562270126736184123948"
+    },
+    {
+      "bytes": 7276,
+      "path": "src/hirc/outbox.py",
+      "sha256": "264005b3282005f5cb93513f1f7cf7ed324b8e7877992706d11ff14a76b143e4"
+    },
+    {
+      "bytes": 13275,
+      "path": "src/hirc/projection.py",
+      "sha256": "cad276251828ff41885240d83b8f65be26170dfede443e8e3100c7019008ff5a"
+    },
+    {
+      "bytes": 3378,
+      "path": "src/hirc/recovery.py",
+      "sha256": "ee566cd48153f137a8f6a8b52630f8b36f57994d67f56028883babfb741c93fa"
+    },
+    {
+      "bytes": 34935,
+      "path": "src/hirc/store.py",
+      "sha256": "81dd7bb2541509082deb29d00d834ec4ec001584f7a175ae58fd376b0a07f79c"
+    },
+    {
+      "bytes": 19774,
+      "path": "src/hirc/ui.py",
+      "sha256": "2d80aef3305525b6b5fac4f08d6fba5336b55861e2383cb02cba37b2925caf67"
+    },
+    {
+      "bytes": 4090,
+      "path": "src/hirc/witness.py",
+      "sha256": "e32250ee41b34b9ffa9bc5fa71dd1293db6e3137e93b7de2c2825727cb3464e6"
+    }
+  ]
+}

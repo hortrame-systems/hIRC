@@ -1,0 +1,8 @@
+{
+  "schema": "hirc.m08-s003-package-failed-baseline/1",
+  "status": "PRESERVED_VALIDATOR_FALSE_NEGATIVE",
+  "package_checks": "All four package tests passed; two builds were byte-identical; the archive manifest/CRC passed; the package ran from an unrelated directory without PYTHONPATH; network/effect and sensitive-release flags were false.",
+  "validator_failure": "The separate full source-tree unittest discovery omitted src from sys.path, producing eleven ModuleNotFoundError loader errors and an incorrect overall FAIL.",
+  "repair": "Add the repository src directory to the validator's own test-loader path only; do not add PYTHONPATH to packaged execution, whose no-PYTHONPATH evidence already passed.",
+  "nonclaim": "This is validator setup evidence, not a package runtime defect or a production release result."
+}

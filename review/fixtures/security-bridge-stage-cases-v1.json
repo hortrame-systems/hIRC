@@ -1,0 +1,31 @@
+{
+  "schema": "hirc.security-bridge-stage-cases/1",
+  "early_held": {
+    "schema_version": "hirc.bridge-gate/1-candidate",
+    "bridge_profile_id": "bridge:held:test",
+    "current_stage": "HELD",
+    "stages": {
+      "stage1": {"state": "HELD", "scope_ref": "scope:spec", "evidence_refs": []},
+      "stage2": {"state": "NOT_STARTED", "scope_ref": "scope:none", "evidence_refs": []},
+      "stage3": {"state": "NOT_STARTED", "scope_ref": "scope:none", "evidence_refs": []},
+      "stage4": {"state": "NOT_STARTED", "scope_ref": "scope:none", "evidence_refs": []},
+      "stage5": {"state": "NOT_STARTED", "scope_ref": "scope:none", "evidence_refs": []},
+      "stage6": {"state": "NOT_STARTED", "scope_ref": "scope:none", "evidence_refs": []},
+      "stage7": {"state": "NOT_STARTED", "scope_ref": "scope:none", "evidence_refs": []}
+    }
+  },
+  "stage7_decision": {
+    "schema_version": "hirc.bridge-gate/1-candidate",
+    "bridge_profile_id": "bridge:stage7:test",
+    "current_stage": "STAGE7_BROADER_ACTIVATION",
+    "stages": {
+      "stage1": {"state": "PASS", "scope_ref": "scope:s1", "evidence_refs": ["evidence:s1"]},
+      "stage2": {"state": "PASS", "scope_ref": "scope:s2", "evidence_refs": ["evidence:s2"]},
+      "stage3": {"state": "PASS", "scope_ref": "scope:s3", "evidence_refs": ["evidence:s3"]},
+      "stage4": {"state": "PASS", "scope_ref": "scope:s4", "evidence_refs": ["evidence:s4"]},
+      "stage5": {"state": "PASS", "scope_ref": "scope:s5", "evidence_refs": ["evidence:s5"]},
+      "stage6": {"state": "PASS", "scope_ref": "scope:pilot", "entry_authorization_ref": "authority:pilot", "stop_conditions_ref": "stop:pilot", "evidence_refs": ["evidence:pilot"]},
+      "stage7": {"state": "DECISION_AUTHORIZED", "scope_ref": "scope:stage7", "decision_ref": "decision:stage7", "evidence_refs": []}
+    }
+  }
+}

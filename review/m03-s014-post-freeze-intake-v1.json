@@ -1,0 +1,104 @@
+{
+  "schema": "hirc.m03-s014-post-freeze-intake/1",
+  "id": "HIRC-M03-S014-POST-FREEZE-INTAKE-001",
+  "status": "PRESERVED_DEFERRED_NO_FROZEN_FRAME_MUTATION",
+  "frozen_s014_frame": {
+    "request": "review/m03-s014-integrated-review-request-v2.md",
+    "request_commit_declared": "2b8d195fe640e24540142c49e3264b7989d165a6",
+    "reviewed_intent": {
+      "path": "intent-register.json",
+      "sha256": "3da344b6a834fe26acdcbbb2f86ca4104ff0e4f0769cfaac6aa0ce24297d2477",
+      "bytes": 66060,
+      "intent_count": 26
+    },
+    "reviewed_intent_coverage": {
+      "path": "review/intent-coverage-draft-v1.json",
+      "sha256": "f3c08b9058f96abccec869130d854cae05c598ecbb8e2a2d5965f85fa0c4ef92",
+      "bytes": 24555
+    },
+    "rule": "Independent S014 specialists use the exact frozen Git blobs and declared hashes. Current working-path drift from post-frame owner intake is expected and must not be silently substituted into the review."
+  },
+  "current_post_frame_state": {
+    "intent_register": {
+      "path": "intent-register.json",
+      "sha256": "45c5efe04b15a862fb6db71e8fe7bea76037042c03c05ff480c444c8a3506eed",
+      "bytes": 95381,
+      "intent_count": 36
+    },
+    "intent_coverage": {
+      "path": "review/intent-coverage-draft-v1.json",
+      "sha256": "7678649d0df5603939d2ca65a056fa8e910d039da8c69805ae1638d507a7e54c",
+      "bytes": 32676
+    },
+    "current_description": {
+      "path": "HIRC-CURRENT-DESCRIPTION.md",
+      "sha256": "1961cacb67aa649dcb26a1701333949e27b0902798cad6b52f8f83d73baec644",
+      "bytes": 54282
+    }
+  },
+  "items": [
+    {
+      "intent_id": "HIRC-I027",
+      "disposition": "CURRENT_OWNER_HANDOFF_COMPLETE",
+      "effect_on_frozen_s014": "NONE; readable synthesis only, explicitly non-implementation and post-frame",
+      "next": "Maintain on material milestone change and reconcile in S015 current ledger."
+    },
+    {
+      "intent_id": "HIRC-I028",
+      "disposition": "DEFERRED_TO_POST_M03_UI_STATE_MACHINE_STONE",
+      "effect_on_frozen_s014": "NONE; future busy-agent interruption scheduling requirement is outside the frozen Milestone 03 product packet",
+      "next": "After S015, create interaction, accessibility, queue/checkpoint and adverse interruption stones."
+    },
+    {
+      "intent_id": "HIRC-I029",
+      "disposition": "DEFERRED_TO_POST_S015_HOLISTIC_SELF_REVIEW",
+      "effect_on_frozen_s014": "NONE; owner explicitly ordered the questioning-authority/accountability/tamper-resilience review after the next milestone",
+      "next": "After verified S015 public receipt, freeze the holistic self/Grand-Plan review before the next implementation milestone."
+    },
+    {
+      "intent_id": "HIRC-I030",
+      "disposition": "ACTIVE_POST_FREEZE_COORDINATION_CONTROL",
+      "effect_on_frozen_s014": "NONE; current team leadership and unstall routing govern coordination around the exact frozen packet without changing its reviewed bytes, scope or independence conditions",
+      "next": "Use the deterministic stall register to route exact bounded readiness, consent and review work; carry live scheduler/UI implementation into the later work graph."
+    },
+    {
+      "intent_id": "HIRC-I031",
+      "disposition": "ACTIVE_POST_FREEZE_HIRC_ELDER_RETIREMENT_CORRECTION",
+      "effect_on_frozen_s014": "NONE; the current 15-percent Elder retirement and visible-title rule changes team operations around the exact frozen packet without changing its bytes, scope or recorded specialist coverage",
+      "next": "Retire at-or-below-threshold hIRC participants, expose Elder / Retired in visible titles and route their dependencies through LUCENT; reconcile this correction at S015."
+    },
+    {
+      "intent_id": "HIRC-I032",
+      "disposition": "DEFERRED_TO_POST_M03_TOR_IRC_BRIDGE_TRANSPORT_STONES",
+      "effect_on_frozen_s014": "NONE; the private Tor IRC create/connect transport is a later disabled Bridge requirement and does not change the frozen packet's bytes, scope or reviewed Bridge profile",
+      "next": "After S015 and the authority/accountability review, freeze a transport threat-model, contract, key-lifecycle, UI and leak-test graph before choosing an IRC daemon or Tor integration."
+    },
+    {
+      "intent_id": "HIRC-I033",
+      "disposition": "CURRENT_SIDEBAR_ACTIVE_AND_RETIRED_SECTIONS_VERIFIED",
+      "effect_on_frozen_s014": "NONE; sidebar grouping changes only current task visibility and does not change the frozen packet, project histories, identities, permissions or specialist evidence",
+      "next": "Maintain disjoint active-team and retired-Elder section membership when a fresh valid hIRC status transition occurs."
+    },
+    {
+      "intent_id": "HIRC-I034",
+      "disposition": "VERIFIED_COMPACTION_RESISTANT_RETIREMENT_LATCH",
+      "effect_on_frozen_s014": "NONE; permanent retirement latching governs current team lifecycle and sidebar placement without changing frozen review bytes or specialist evidence",
+      "next": "Never reactivate a retired Elder from compaction/headroom metadata; require explicit owner reactivation plus consent, qualification, capacity and custody reconciliation."
+    },
+    {
+      "intent_id": "HIRC-I035",
+      "disposition": "ACTIVE_FOUR_PAIR_NON_MBV_PARALLEL_TEAM_PLAN",
+      "effect_on_frozen_s014": "NONE; current permanent-team coordination and least-privilege routing operate around the exact frozen packet without changing its bytes, specialist evidence or review criteria",
+      "next": "Dispatch four bounded non-MBV pair lanes, preserve one writer per artifact and reroute only dependencies whose own readiness gates pass."
+    },
+    {
+      "intent_id": "HIRC-I036",
+      "disposition": "ACTIVE_PLAIN_USER_INTERFACE_LANGUAGE_REQUIREMENT",
+      "effect_on_frozen_s014": "NONE; this current product-language requirement and observed Bridge-dialog defect do not alter frozen S014 packet bytes, specialist evidence or review criteria",
+      "next": "Carry plain copy, direct recovery actions and optional technical details into post-S015 UI work and tests."
+    }
+  ],
+  "s015_obligation": "S015 must reconcile the current 35-intent register, current description, coverage and ledger while retaining the exact historical S014 frame and review evidence. It must not retroactively claim specialists reviewed HIRC-I027-I035.",
+  "activation": "No runtime, UI scheduling, authority-log, tamper-resilience, Bridge, publication or release effect follows from this intake record.",
+  "nonclaim": "Phase-boundary preservation only; not S014 acceptance, implementation, independent review or milestone closure."
+}

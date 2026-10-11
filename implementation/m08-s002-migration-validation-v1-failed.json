@@ -1,0 +1,10 @@
+{
+  "schema": "hirc.m08-s002-migration-failed-baseline/1",
+  "status": "PRESERVED_FAILED_BASELINE",
+  "test_run": "tests.test_migration_hardening",
+  "observed": "The run completed the bounded-load and corrupt-chain controls, then hung in empty_v1_migrates while sqlite3.Connection.backup was called from the same source connection after BEGIN IMMEDIATE.",
+  "consequence": "A migration could deadlock before preserving its predecessor or changing the schema.",
+  "repair": "Create and verify a transaction-consistent backup first, publish it atomically, then acquire a new immediate source transaction, reverify the exact source frame against the backup head/count and migrate only if unchanged.",
+  "validator_correction": "The first post-repair validator run falsely failed predecessor_preserved because it checked the temporary fixture path after the TemporaryDirectory had been removed. The check was moved inside the fixture lifetime; product migration tests were already passing.",
+  "nonclaim": "Observed on the Windows local SQLite fixture; it does not establish behavior for every SQLite build or filesystem."
+}

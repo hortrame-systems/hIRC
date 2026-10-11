@@ -1,0 +1,112 @@
+{
+  "schema": "hirc.m06-s003-validation/1",
+  "stone": "M06-S003",
+  "status": "PASS",
+  "checks": {
+    "decision_tests_pass": true,
+    "decision_test_count": true,
+    "full_suite_pass": true,
+    "full_suite_test_count": true,
+    "three_preview_kinds": true,
+    "participation_effect_separate": true,
+    "correction_boundary_exact": true,
+    "allowed_action_authority_bound": true,
+    "all_no_effect": true,
+    "all_preview_ids_rendered": true,
+    "reference_head_matches": true
+  },
+  "files": [
+    {
+      "path": "implementation/M06_LOCAL_UI_PLAN.md",
+      "sha256": "e22258ad042607d4d2d451c13330dbeba9bd56712b92066848a37ec5ae82f29d",
+      "bytes": 2518
+    },
+    {
+      "path": "implementation/README.md",
+      "sha256": "608abe3f9aade0b3249d55a7e5765a1d98fd6a4d0c3f9cdd4c77814cf8300bb2",
+      "bytes": 16078
+    },
+    {
+      "path": "src/hirc/decision.py",
+      "sha256": "a8e003343a5039393d5b615a73156631f20aeff0c648226cb79921fe629369e2",
+      "bytes": 10389
+    },
+    {
+      "path": "src/hirc/ui.py",
+      "sha256": "2d80aef3305525b6b5fac4f08d6fba5336b55861e2383cb02cba37b2925caf67",
+      "bytes": 19774
+    },
+    {
+      "path": "src/hirc/cli.py",
+      "sha256": "6fcd8323c08caecd17948a2531444aa5f1676aa2306b0c5faa8076ad2f3b55fc",
+      "bytes": 9691
+    },
+    {
+      "path": "tests/test_decision_preview.py",
+      "sha256": "607af9e952f318501a2a55978acda76f8ecdf91c353d7ac4f4a5f318bdac0c5a",
+      "bytes": 7281
+    },
+    {
+      "path": "implementation/m06-s001-browser-check-hold.md",
+      "sha256": "c357b63fc3244b28dbd15fd37b17313db1cf1a3b87443c0dbf875063ce47cdd3",
+      "bytes": 979
+    },
+    {
+      "path": "implementation/m06-s003-reference.html",
+      "sha256": "ce128db76724946116a06fdce1acf1a18d80587c7170684b046076fe041c81c5",
+      "bytes": 13749
+    }
+  ],
+  "decision_test_output": [
+    "test_allowed_action_requires_authority (test_decision_preview.DecisionPreviewTests.test_allowed_action_requires_authority) ... ok",
+    "test_cli_invalid_utf8_file_fails_closed (test_decision_preview.DecisionPreviewTests.test_cli_invalid_utf8_file_fails_closed) ... ok",
+    "test_cli_writes_preview_and_ui_escapes_its_content (test_decision_preview.DecisionPreviewTests.test_cli_writes_preview_and_ui_escapes_its_content) ... ok",
+    "test_correction_cannot_change_target_boundary (test_decision_preview.DecisionPreviewTests.test_correction_cannot_change_target_boundary) ... ok",
+    "test_declined_participation_remains_separate_from_allowed_effect (test_decision_preview.DecisionPreviewTests.test_declined_participation_remains_separate_from_allowed_effect) ... ok",
+    "test_preview_data_size_limit_fails_closed (test_decision_preview.DecisionPreviewTests.test_preview_data_size_limit_fails_closed) ... ok",
+    "test_preview_identity_detects_change_and_has_no_effect_flags (test_decision_preview.DecisionPreviewTests.test_preview_identity_detects_change_and_has_no_effect_flags) ... ok",
+    "test_refusal_requires_decline_or_abstain (test_decision_preview.DecisionPreviewTests.test_refusal_requires_decline_or_abstain) ... ok",
+    "test_self_consistent_but_semantically_invalid_preview_is_rejected (test_decision_preview.DecisionPreviewTests.test_self_consistent_but_semantically_invalid_preview_is_rejected) ... ok",
+    "test_unknown_input_field_is_rejected (test_decision_preview.DecisionPreviewTests.test_unknown_input_field_is_rejected) ... ok",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 10 tests in 0.127s",
+    "",
+    "OK"
+  ],
+  "full_suite_output": [
+    ".................................................................xxx........................................................................",
+    "----------------------------------------------------------------------",
+    "Ran 140 tests in 20.360s",
+    "",
+    "OK (expected failures=3)"
+  ],
+  "preview_ids": [
+    {
+      "kind": "REFUSAL",
+      "preview_id": "preview:37eb28300c45d5cfbd2345ef644b80063d8c19e9c983379e989884f73288e39f"
+    },
+    {
+      "kind": "CORRECTION",
+      "preview_id": "preview:6eee37c07daa450dec9e8b522a3cd9aaddbe4d0eef0d3bb8e188131daa92877a"
+    },
+    {
+      "kind": "CONSEQUENTIAL_ACTION",
+      "preview_id": "preview:1f2d02b7d69a4c6d1a21ad4a4ea609f4ccf11e301fa6883d7151aec3e774cc7d"
+    }
+  ],
+  "reference": {
+    "schema": "hirc.ui-snapshot-result/1",
+    "path": "D:\\HORTRAME\\hIRC\\implementation\\m06-s003-reference.html",
+    "sha256": "ce128db76724946116a06fdce1acf1a18d80587c7170684b046076fe041c81c5",
+    "bytes": 13749,
+    "source_head": "1440e499673e9e40aaafb48f2fe299224bad186ade10f4014dcd3cadc71bf7c3",
+    "read_only": true
+  },
+  "surviving_limits": [
+    "Previews are content-addressed local records, not signatures, participant consent, authority authentication or bound approval.",
+    "No decision preview is appended to the event store or permitted to perform an effect.",
+    "Rendered browser/keyboard/screen-reader interaction remains held by the existing local-file browser-policy boundary."
+  ],
+  "nonclaim": "M06-S003 deterministic no-effect preview scope only; not approval, persistence, execution or external observation."
+}

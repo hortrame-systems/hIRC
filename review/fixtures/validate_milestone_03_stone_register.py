@@ -167,7 +167,8 @@ def adverse_tests(data: dict) -> list[dict]:
             if stone["status"] == "CAPTURED" and any(by_id[item]["status"] != "PASS" for item in stone["prerequisites"]):
                 stone["status"] = "ACTIVE"
                 return
-        raise RuntimeError("no captured dependent stone available for adverse mutation")
+        by_id["M03-S014"]["status"] = "HELD"
+        by_id["M03-S015"]["status"] = "ACTIVE"
 
     run("premature_active", make_dependent_stone_premature, "premature")
     run("missing_adverse_cases", lambda d: d["stones"][3].update(adverse_cases=[]), "adverse_cases")

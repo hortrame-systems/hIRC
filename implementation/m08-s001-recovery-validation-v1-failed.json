@@ -1,0 +1,22 @@
+{
+  "schema": "hirc.m08-s001-recovery-failed-baseline/1",
+  "status": "PRESERVED_FAILED_BASELINE",
+  "total": 6,
+  "passed": 2,
+  "failed": 4,
+  "failure": "The first backup implementation called fsync on a read-only Windows file handle, which returned Errno 9 and prevented backup completion.",
+  "affected_tests": [
+    "backup_and_restore_preserve_all_views",
+    "cli_backup_and_restore",
+    "reopened_backup_matches_source_head",
+    "truncated_backup_does_not_create_restore_target"
+  ],
+  "passing_controls": [
+    "corrupt source rejected",
+    "existing target not overwritten"
+  ],
+  "repair": "Open the completed temporary SQLite copy with a writable binary handle for the durability flush, then rerun the unchanged recovery and CLI cases.",
+  "second_observed_failure": "After the fsync repair, five cases passed but corrupt/truncated verification could retain a Windows file lock long enough to break fixture cleanup because ordinary verification opened the source read-write.",
+  "second_repair": "Add an explicit read-only SQLite verification connection and use it for backup/restore source and copied-file checks; the unchanged six-case recovery suite then passed.",
+  "nonclaim": "Windows local fixture failure only; it does not establish behavior on other filesystems or crash conditions."
+}

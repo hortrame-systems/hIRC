@@ -1,0 +1,25 @@
+{
+  "schema": "hirc.m08-s010-validation/1",
+  "stone": "M08-S010",
+  "status": "FAIL",
+  "finding": {
+    "id": "M08-S010-F001",
+    "title": "CLI and witness JSON files were unbounded before parsing",
+    "observed": {
+      "invalid_utf8_decision_file": "uncaught UnicodeDecodeError",
+      "oversized_adapter_file_bytes_read_before_rejection": 1048577,
+      "oversized_adapter_return_code": 2
+    },
+    "consequence": "Malformed UTF-8 could escape the CLI's fail-closed error contract, and arbitrarily large JSON files were fully loaded before semantic size checks, permitting avoidable local memory exhaustion.",
+    "required_repair": "Read at most the configured limit plus one byte, reject excess bytes before decoding, decode strict UTF-8, parse with bounded depth/shape validation and route errors to HELD."
+  },
+  "files": [
+    {"path": "src/hirc/canonical.py", "sha256": "502ebff662f8d31fd25f32acc72eaa621fac4b058fbe5c44e2d062ea985162fa", "bytes": 1922},
+    {"path": "src/hirc/cli.py", "sha256": "bf827ddc9cbeb0d1029bc6fae1f99e6bd78f759a94cf824798ca03452d611149", "bytes": 9717},
+    {"path": "src/hirc/witness.py", "sha256": "368d116559d5a154466f349c59273693a35142b50d8ca35c2309717cb09e5ace", "bytes": 4038},
+    {"path": "tests/test_adapter.py", "sha256": "75b22c6ffa494f0d367465e28ac8a2372e0c56341aeef9a1b4738b8f4d59771c", "bytes": 5748},
+    {"path": "tests/test_decision_preview.py", "sha256": "471a21876a34358911c258566648e42172ed5f4410d23032d9ef7875cbd78d7d", "bytes": 6738},
+    {"path": "tests/test_witness.py", "sha256": "69bc45d8a86db3f0e8b8ec7b606d5c7248254b3796d579c2ef8edc186df9cdab", "bytes": 5197}
+  ],
+  "nonclaim": "Local parser-boundary evidence only; it does not establish remote input reachability or complete denial-of-service resistance."
+}

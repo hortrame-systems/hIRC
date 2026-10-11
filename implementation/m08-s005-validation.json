@@ -1,0 +1,74 @@
+{
+  "schema": "hirc.m08-s005-validation/1",
+  "stone": "M08-S005",
+  "status": "PASS_TOOLING_SCOPE_RELEASE_KEY_CUSTODY_HELD",
+  "checks": {
+    "node_available": true,
+    "signing_tests_pass": true,
+    "signing_test_count": true,
+    "full_suite_pass": true,
+    "full_suite_test_count": true,
+    "three_expected_release_failures": true,
+    "ephemeral_generate_sign_verify": true,
+    "private_key_encrypted": true,
+    "envelope_has_no_private_material": true
+  },
+  "files": [
+    {
+      "path": "implementation/M08_RELEASE_HARDENING_PLAN.md",
+      "sha256": "0e2b21a00be42a7ec56773742486b8fcfd9b2fea40b0dd460268f3c2a7779df6",
+      "bytes": 6363
+    },
+    {
+      "path": "implementation/README.md",
+      "sha256": "608abe3f9aade0b3249d55a7e5765a1d98fd6a4d0c3f9cdd4c77814cf8300bb2",
+      "bytes": 16078
+    },
+    {
+      "path": "implementation/release_sign.mjs",
+      "sha256": "1a3f81800db121bdfeb0c13cf5e15b50378883b22e8ac3bb0f6b3b3f21274527",
+      "bytes": 4081
+    },
+    {
+      "path": "tests/test_release_signing.py",
+      "sha256": "ad0279e611dfa848953d9f6c6aa37e78928f8ecb8bbd955bb4aa8e1770c67adb",
+      "bytes": 4747
+    },
+    {
+      "path": "dist/hirc-local-0.1.0.dev0-manifest.json",
+      "sha256": "d513d16348e3b3283f7e811714163504bfc0d9ff7b3a810a99ba6d640d857869",
+      "bytes": 2824
+    }
+  ],
+  "signing_test_output": [
+    "test_generate_sign_verify_exact_manifest (test_release_signing.ReleaseSigningTests.test_generate_sign_verify_exact_manifest) ... ok",
+    "test_signature_envelope_contains_no_private_key_or_passphrase (test_release_signing.ReleaseSigningTests.test_signature_envelope_contains_no_private_key_or_passphrase) ... ok",
+    "test_tampered_manifest_is_rejected (test_release_signing.ReleaseSigningTests.test_tampered_manifest_is_rejected) ... ok",
+    "test_targets_are_not_overwritten (test_release_signing.ReleaseSigningTests.test_targets_are_not_overwritten) ... ok",
+    "test_wrong_passphrase_and_short_generation_passphrase_fail (test_release_signing.ReleaseSigningTests.test_wrong_passphrase_and_short_generation_passphrase_fail) ... ok",
+    "test_wrong_public_key_is_rejected (test_release_signing.ReleaseSigningTests.test_wrong_public_key_is_rejected) ... ok",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 6 tests in 1.691s",
+    "",
+    "OK"
+  ],
+  "full_suite_output": [
+    ".................................................................xxx........................................................................",
+    "----------------------------------------------------------------------",
+    "Ran 140 tests in 19.687s",
+    "",
+    "OK (expected failures=3)"
+  ],
+  "control": {
+    "public_key_fingerprint_sha256": "aa50dc0a40476e1c569767764fb0c69fc016fae472476fc61f7f9a381819a57d",
+    "manifest_sha256": "d513d16348e3b3283f7e811714163504bfc0d9ff7b3a810a99ba6d640d857869",
+    "actual_release_signature_published": false
+  },
+  "surviving_limits": [
+    "Only ephemeral test keys were generated; no actual release key or signature was created.",
+    "Release-key owner, authorization, OS-vault/HSM custody, escrow, rotation, revocation and publication remain open.",
+    "The signed object is exact manifest bytes; independent release review and M03 governance remain required."
+  ],
+  "nonclaim": "M08-S005 Ed25519 signing/verification tooling only; not an authorized signed release."
+}

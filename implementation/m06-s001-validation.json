@@ -1,0 +1,90 @@
+{
+  "schema": "hirc.m06-s001-validation/1",
+  "stone": "M06-S001",
+  "status": "PASS",
+  "checks": {
+    "ui_tests_pass": true,
+    "ui_test_count": true,
+    "full_suite_pass": true,
+    "full_suite_test_count": true,
+    "reference_is_read_only": true,
+    "reference_head_matches": true,
+    "open_work_runnable": true,
+    "direct_hold_visible": true,
+    "dependent_block_visible": true,
+    "navigation_controls_present": true,
+    "restrictive_csp_present": true,
+    "no_remote_resource": true,
+    "dangerous_dom_sinks_absent": true
+  },
+  "files": [
+    {
+      "path": "implementation/M06_LOCAL_UI_PLAN.md",
+      "sha256": "e22258ad042607d4d2d451c13330dbeba9bd56712b92066848a37ec5ae82f29d",
+      "bytes": 2518
+    },
+    {
+      "path": "implementation/README.md",
+      "sha256": "608abe3f9aade0b3249d55a7e5765a1d98fd6a4d0c3f9cdd4c77814cf8300bb2",
+      "bytes": 16078
+    },
+    {
+      "path": "src/hirc/ui.py",
+      "sha256": "2d80aef3305525b6b5fac4f08d6fba5336b55861e2383cb02cba37b2925caf67",
+      "bytes": 19774
+    },
+    {
+      "path": "src/hirc/cli.py",
+      "sha256": "6fcd8323c08caecd17948a2531444aa5f1676aa2306b0c5faa8076ad2f3b55fc",
+      "bytes": 9691
+    },
+    {
+      "path": "tests/test_ui.py",
+      "sha256": "ad7d6bcdf5a9f2bb2ebccd2eb317e70e9dd48fb8c66af1c06551be317ed78189",
+      "bytes": 6342
+    },
+    {
+      "path": "implementation/m06-s001-browser-check-hold.md",
+      "sha256": "c357b63fc3244b28dbd15fd37b17313db1cf1a3b87443c0dbf875063ce47cdd3",
+      "bytes": 979
+    },
+    {
+      "path": "implementation/m06-s001-reference.html",
+      "sha256": "b967139fda7f281411430cef84fe87348a41846d52e42217059511f39981f696",
+      "bytes": 12537
+    }
+  ],
+  "ui_test_output": [
+    "test_cli_writes_the_same_atomic_snapshot (test_ui.UiSnapshotTests.test_cli_writes_the_same_atomic_snapshot) ... ok",
+    "test_parsed_surface_has_unique_ids_exact_hashes_and_no_active_external_edge (test_ui.UiSnapshotTests.test_parsed_surface_has_unique_ids_exact_hashes_and_no_active_external_edge) ... ok",
+    "test_snapshot_has_accessible_controls_and_information_boundary (test_ui.UiSnapshotTests.test_snapshot_has_accessible_controls_and_information_boundary) ... ok",
+    "test_snapshot_is_deterministic_and_hostile_markup_stays_inert (test_ui.UiSnapshotTests.test_snapshot_is_deterministic_and_hostile_markup_stays_inert) ... ok",
+    "test_snapshot_rejects_wrong_schema (test_ui.UiSnapshotTests.test_snapshot_rejects_wrong_schema) ... ok",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 5 tests in 0.461s",
+    "",
+    "OK"
+  ],
+  "full_suite_output": [
+    ".................................................................xxx........................................................................",
+    "----------------------------------------------------------------------",
+    "Ran 140 tests in 20.644s",
+    "",
+    "OK (expected failures=3)"
+  ],
+  "reference": {
+    "schema": "hirc.ui-snapshot-result/1",
+    "path": "D:\\HORTRAME\\hIRC\\implementation\\m06-s001-reference.html",
+    "sha256": "b967139fda7f281411430cef84fe87348a41846d52e42217059511f39981f696",
+    "bytes": 12537,
+    "source_head": "664db93a0aec1dcb261a388d92b628b6690c6e18e02b68d9561bce3a4979841a",
+    "read_only": true
+  },
+  "surviving_limits": [
+    "Static source and unit checks do not establish browser-engine, screen-reader, zoom/reflow, forced-colors, pointer-target or human-usability behavior.",
+    "The snapshot is read-only. Interruption preview is validated separately in M06-S002; actual interruption persistence plus refusal, correction and trusted-preview state transitions remain outside this stone.",
+    "No listener, provider, network, external effect or Bridge path is implemented."
+  ],
+  "nonclaim": "M06-S001 local read-only snapshot only; not complete UI acceptance or release assurance."
+}

@@ -1,0 +1,28 @@
+{
+  "schema": "hirc.m08-s008-validation/1",
+  "stone": "M08-S008",
+  "status": "FAIL",
+  "finding": {
+    "id": "M08-S008-F001",
+    "title": "Privileged outbox stage rebinding survived verification",
+    "attack": "Two OBSERVED stage rows were rebound to each other's immutable events after dropping and exactly restoring the delete trigger.",
+    "observed": "Store.verify returned valid=true with the original event count and head hash.",
+    "consequence": "A privileged local writer could corrupt outbox stage associations without changing the witnessed event-chain head, causing false integrity acceptance and deterministic replay denial of service.",
+    "required_repair": "Bind every materialized stage row to the outbox_id, request_id, disabled-dispatch flag and information boundary carried by its immutable source event."
+  },
+  "files": [
+    {
+      "path": "src/hirc/store.py",
+      "sha256": "03676e43a19bbdb4828235f8b9d15d1cd95675d2c1725f8e4c1346ad51e7e2e1",
+      "bytes": 28921
+    },
+    {
+      "path": "tests/test_outbox.py",
+      "sha256": "05b0b2231515d982413d6b8b32547e5703f1374c8e94ca5d4ac209510559896d",
+      "bytes": 10236
+    }
+  ],
+  "test": "tests.test_outbox.OutboxTests.test_privileged_stage_rebinding_is_detected_after_trigger_restoration",
+  "failure": "AssertionError: True is not false",
+  "nonclaim": "One deterministic local integrity attack; it does not establish remote exploitability or complete the release review."
+}

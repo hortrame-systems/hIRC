@@ -1,0 +1,51 @@
+{
+  "schema": "hirc.security-release-profile-cases/1",
+  "ready": {
+    "schema_version": "hirc.release-profile/1-candidate",
+    "profile_id": "release:first",
+    "version": "1",
+    "state": "READY_FOR_RELEASE",
+    "acceptance_object": "ENABLED_PROFILE",
+    "plan_edition_ref": "plan:1.1",
+    "foundation_manifest_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "goal_version_ref": "goal:2",
+    "source_set_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "build_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "environment_ref": "environment:local:first",
+    "environment_manifest_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+    "release_authority_ref": "authority:release:1",
+    "release_authority_sha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "assurance_profile_ref": "assurance:first:1",
+    "assurance_binding": {"profile_sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff", "required_control_set_sha256": "f6c7c578dc4597476675e7edf1e6a39b3ac3104304f5828021c767ef67d2460a", "required_test_set_sha256": "538d1f9c6e135f531f405c70ee2343cab8c9fc75c5e956578446eba65adc710e", "resolver_ref": "resolver:assurance:1", "resolver_sha256": "1111111111111111111111111111111111111111111111111111111111111111", "resolved_at": "2026-10-10T00:00:00Z"},
+    "release_subject_sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+    "release_evidence_bundle_sha256": "3333333333333333333333333333333333333333333333333333333333333333",
+    "evaluated_at": "2026-10-10T12:30:00Z",
+    "required_control_ids": ["control:core"],
+    "required_test_ids": ["test:core"],
+    "release_evidence_refs": ["evidence:release-ready"],
+    "enabled_capabilities": [
+      {"capability_id": "capability:local-analysis", "route_ref": "route:local", "effect_ceiling_ref": "effect:none", "control_refs": ["control:core"], "test_refs": ["test:core"]}
+    ],
+    "disabled_capabilities": [
+      {"capability_id": "capability:bridge", "state": "UNAVAILABLE", "enforcement_refs": ["control:core"], "absence_proof": {"subject_sha256": "2222222222222222222222222222222222222222222222222222222222222222", "verifier_ref": "verifier:absence:1", "verifier_sha256": "4444444444444444444444444444444444444444444444444444444444444444", "observed_at": "2026-10-10T00:20:00Z", "evidence_refs": ["evidence:absence"]}, "listener_absence_verified": true, "scheduler_absence_verified": true, "credential_absence_verified": true, "grant_absence_verified": true}
+    ],
+    "core_controls": [
+      {"control_id": "control:core", "state": "PASS", "evidence_refs": ["evidence:control"]}
+    ],
+    "tests": [
+      {"test_id": "test:core", "applicability": "REQUIRED", "state": "PASS", "evidence_refs": ["evidence:test"]}
+    ],
+    "residual_refs": ["residual:first"],
+    "recovery_ref": "recovery:first"
+  },
+  "released_observation": {
+    "intent_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+    "subject_sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+    "build_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "environment_manifest_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+    "request_state": "ACCEPTED_BY_PROVIDER",
+    "observed_state": "CONFIRMED",
+    "observed_at": "2026-10-10T00:00:00Z",
+    "evidence_refs": ["evidence:observed-release"]
+  }
+}

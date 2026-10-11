@@ -1,0 +1,47 @@
+{
+  "schema": "hirc.alpha-integration-red-team-failed-baseline/2",
+  "status": "PRESERVED_FAILED_BASELINE",
+  "run": "tests.test_integration after the first repair batch and before the second repair batch",
+  "total": 18,
+  "passed": 12,
+  "failed": [
+    {
+      "test": "correction_cannot_widen_target_boundary",
+      "failure": "A correction could use a wider audience than its target event.",
+      "consequence": "Correction metadata or content could escape the target's information boundary."
+    },
+    {
+      "test": "held_dependency_blocks_transitive_descendants",
+      "failure": "A direct and transitive dependent of held work remained OPEN.",
+      "consequence": "A return briefing could recommend work whose prerequisite is explicitly held."
+    },
+    {
+      "test": "invalid_allowed_sibling_fails_projection",
+      "failure": "A hold could name a nonexistent item as independently runnable sibling work.",
+      "consequence": "The anti-stall path could point to work that cannot be executed."
+    },
+    {
+      "test": "missing_append_only_trigger_rejects_next_append",
+      "failure": "Removing an append-only enforcement trigger did not block the next append.",
+      "consequence": "The store could continue operating after loss of an advertised immutability control."
+    },
+    {
+      "test": "projection_does_not_trust_separate_verify_then_read",
+      "failure": "Projection verified one database state and then read a later tampered state.",
+      "consequence": "A briefing could present content that was never part of the verified chain."
+    },
+    {
+      "test": "reinitialize_refuses_to_repair_corrupt_capability_state",
+      "failure": "Reinitializing a corrupted existing store silently recreated deleted disabled-capability state.",
+      "consequence": "Evidence of integrity drift could be erased by an ordinary initialization command."
+    }
+  ],
+  "passing_controls": [
+    "original eight-test repaired batch",
+    "double-clear rejection without chain damage",
+    "duplicate-work rejection without chain damage",
+    "effect-state non-promotion",
+    "projection failure preserves the source chain"
+  ],
+  "nonclaim": "Deterministic local SQLite/store/projection baseline only; it does not establish exploitability or cover absent UI, provider, network, Bridge or packaging components."
+}

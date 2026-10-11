@@ -82,4 +82,67 @@ and reference closure remain separate.
 `../fixtures/waymark-trust-contract-validation-v2.1.json` repairs the target
 trace with exact v2 paths/hashes, adapted-input hashes, retained harness identity,
 PowerShell/runtime and validator-module identity. It is the current bounded
-structural/semantic fixture result.
+historical product-review fixture result for its pinned v2 revision.
+
+The controller's M03-S014 preliminary security repair R001 strengthens the request
+v2 candidate again. Effect records now bind target, capability, principal,
+session, generation, execution epoch, idempotency key and trusted preview digest.
+Schema conditions reject stale/failed authority with `PROCEED`, declined
+participation with effectful dispositions, performed work without an effect,
+contradictory requested/sent/accepted/observed states and more than one selected
+interpretation. Request and performed-effect records also bind a canonical privacy
+snapshot, so an in-record audience or purpose change without the matching snapshot
+update is rejected. Resolving that snapshot against the trusted prior preview is
+an external gate; co-editing both the record and its digest is not authorization.
+`../fixtures/security-request-state-validation-v1.json` records three valid
+controls, eleven rejected security/privacy mutations and the four historical
+WAYMARK request cases at their expected valid/adverse dispositions. This is a
+controller repair; runtime dispatch and qualified whole-packet review remain open.
+
+Security repair R002 strengthens the Bridge staged-gate candidate. A stage marked
+`PASS` now requires nonempty evidence; stage-6 authorization/in-progress/pass
+requires explicit entry authority and stop conditions; stage-7 authorization/
+in-progress/pass requires its decision. The paired deterministic validator also
+enforces a monotonic passed prefix and rejects future-stage advancement hidden
+behind an earlier current or held stage. Three valid histories pass and five
+evidence/order/authorization bypasses fail. This remains design-state evidence,
+not protocol implementation, hostile-lab evidence or Bridge activation.
+
+Security repair R003 strengthens the release-profile candidate. It binds exact
+build, environment, release authority and assurance profile identities; declares
+the required control/test coverage; requires release evidence and an observed
+release for `RELEASED`; and makes disabled listener, scheduler, credential and
+grant absence true at release. The deterministic companion rejects empty or
+all-N/A assurance, coverage mismatch, enabled/disabled overlap and unobserved
+release. Per-capability evidence, exact assurance-set hashes, strict relative
+timestamps, subject binding and nonempty disabled-capability absence evidence are
+required. Four valid profiles pass, including enabled-only and disabled-only
+profiles, and seventeen adverse variants fail. The single-sided controls close a
+reviewer-found null-array execution defect. Deployment, external resolver truth,
+runtime assurance and release authorization remain open; the corrected-frame peer
+recheck is tracked separately.
+
+Security repair R004 strengthens the transfer candidate after ORDINAL's exact
+read-only specification review. Accepted states require accepted disposition,
+valid packages and passed forbidden-content scans; confirmed archive/sleep require
+provider acceptance plus observed confirmation and evidence; tracker closure
+requires applied CAS while post-archive conflict preserves a valid accepted/
+archived record. Trigger and wake records now bind scope, expiry, revocation epoch
+and idempotency. Deterministic relations additionally reject generation/session/
+epoch, recipient, manifest, archive/sleep target and time-order mismatches. Five
+valid lifecycle controls pass and twelve adverse variants fail. Native platform
+effects and actual custody remain outside this evidence.
+
+Security repair R005 requires request and transfer records to carry explicit
+data classes, audiences, purpose, consent snapshot/currentness, retention,
+derived-data, egress and deletion-residual bindings. Effect records bind the exact
+privacy snapshot; transfer packages additionally require recipient-bound encryption
+profiles. Transfer packages bind both source and current canonical privacy
+snapshots and a typed relation for audience, purpose, data class, consent,
+retention, derived data, egress, encryption and deletion residuals. Four valid
+controls pass, including legitimate audience attenuation, and fifteen widening or
+loss variants fail. These checks establish local relation and binding behavior,
+not trusted source-snapshot resolution, real consent, cryptographic protection,
+deletion effectiveness or privacy certification. A co-edited source snapshot and
+digest therefore remains invalid until the external resolver admits it. The
+corrected-frame peer recheck remains open.

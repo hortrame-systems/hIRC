@@ -1,0 +1,98 @@
+{
+  "schema": "hirc.m08-s003-validation/1",
+  "stone": "M08-S003",
+  "status": "PASS_PACKAGE_SCOPE_RELEASE_HELD",
+  "checks": {
+    "package_tests_pass": true,
+    "package_test_count": true,
+    "full_suite_pass": true,
+    "full_suite_test_count": true,
+    "three_expected_release_failures": true,
+    "two_builds_identical": true,
+    "release_package_matches_manifest": true,
+    "archive_crc_pass": true,
+    "entrypoint_and_manifest_present": true,
+    "runs_without_pythonpath": true,
+    "network_effect_disabled": true,
+    "sensitive_release_held": true
+  },
+  "files": [
+    {
+      "path": "implementation/M08_RELEASE_HARDENING_PLAN.md",
+      "sha256": "0e2b21a00be42a7ec56773742486b8fcfd9b2fea40b0dd460268f3c2a7779df6",
+      "bytes": 6363
+    },
+    {
+      "path": "implementation/README.md",
+      "sha256": "608abe3f9aade0b3249d55a7e5765a1d98fd6a4d0c3f9cdd4c77814cf8300bb2",
+      "bytes": 16078
+    },
+    {
+      "path": "implementation/build_pyz.py",
+      "sha256": "52b0a7f247e6d0cbf66442f478cbd8483a0f6e69721027ba494d61d87d25fb80",
+      "bytes": 3597
+    },
+    {
+      "path": "tests/test_package.py",
+      "sha256": "2fc73f180c8768048573209e1bdd9790833b3fd9f78501ffa8abb9ccdd694050",
+      "bytes": 4083
+    },
+    {
+      "path": "implementation/m08-s003-package-validation-v1-failed.json",
+      "sha256": "b67ef53ba87017977b9a9958228ba633e9ee38bbbb8976c60498ab03031d4f40",
+      "bytes": 826
+    },
+    {
+      "path": "dist/hirc-local-0.1.0.dev0.pyz",
+      "sha256": "2976bbafddb17c66800fa9d7fb3645c2eda8625db62fe8a0a08a4b2c4657c1e1",
+      "bytes": 38349
+    },
+    {
+      "path": "dist/hirc-local-0.1.0.dev0-manifest.json",
+      "sha256": "d513d16348e3b3283f7e811714163504bfc0d9ff7b3a810a99ba6d640d857869",
+      "bytes": 2824
+    }
+  ],
+  "package_test_output": [
+    "test_archive_has_only_declared_code_and_manifest (test_package.PackageTests.test_archive_has_only_declared_code_and_manifest) ... ok",
+    "test_package_runs_without_pythonpath_from_unrelated_directory (test_package.PackageTests.test_package_runs_without_pythonpath_from_unrelated_directory) ... ok",
+    "test_packaged_cli_executes_local_work_loop (test_package.PackageTests.test_packaged_cli_executes_local_work_loop) ... ok",
+    "test_two_builds_are_byte_identical (test_package.PackageTests.test_two_builds_are_byte_identical) ... ok",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 4 tests in 1.963s",
+    "",
+    "OK"
+  ],
+  "full_suite_output": [
+    ".................................................................xxx........................................................................",
+    "----------------------------------------------------------------------",
+    "Ran 140 tests in 20.039s",
+    "",
+    "OK (expected failures=3)"
+  ],
+  "package": {
+    "schema": "hirc.pyz-build/1",
+    "artifact": "hirc-local-0.1.0.dev0.pyz",
+    "sha256": "2976bbafddb17c66800fa9d7fb3645c2eda8625db62fe8a0a08a4b2c4657c1e1",
+    "bytes": 38349,
+    "member_count": 17,
+    "source_manifest_sha256": "74bdb77b9cd63ea84b6f59d25810da1e11587010e960ea3d89c8bb8e60f9b625",
+    "reproducible_inputs": {
+      "fixed_zip_time": "2026-10-10T00:00:00Z",
+      "compression": "deflate-9"
+    },
+    "network_or_external_effect_enabled": false,
+    "sensitive_data_release_allowed": false
+  },
+  "release_holds": [
+    "plaintext store and backup: encryption and key-custody design absent",
+    "rendered browser, keyboard, screen-reader and human-usability evidence absent",
+    "independent security/privacy review and penetration testing absent",
+    "long soak, broader fuzzing, power-loss and cross-machine recovery incomplete",
+    "protected external head witness for privileged truncation absent",
+    "independently verifiable package-manifest signature absent",
+    "M03 S014/S015 governance and public milestone closure incomplete"
+  ],
+  "nonclaim": "Reproducible dependency-free developer package only; not a sensitive-data, production or public release."
+}

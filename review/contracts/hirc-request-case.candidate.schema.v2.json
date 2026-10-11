@@ -13,6 +13,7 @@
     "reliance_decision_refs",
     "authority",
     "participation",
+    "privacy",
     "action_disposition",
     "events"
   ],
@@ -134,6 +135,23 @@
         "retaliation_prohibited": {"const": true}
       }
     },
+    "privacy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["data_classes", "audience_refs", "purpose_ref", "consent_snapshot_ref", "consent_current", "retention_policy_ref", "derived_data_policy_ref", "egress_policy_ref", "deletion_residual_ref", "encryption_required"],
+      "properties": {
+        "data_classes": {"$ref": "#/$defs/nonEmptyIdArray"},
+        "audience_refs": {"$ref": "#/$defs/nonEmptyIdArray"},
+        "purpose_ref": {"type": "string", "minLength": 1},
+        "consent_snapshot_ref": {"type": "string", "minLength": 1},
+        "consent_current": {"type": "boolean"},
+        "retention_policy_ref": {"type": "string", "minLength": 1},
+        "derived_data_policy_ref": {"type": "string", "minLength": 1},
+        "egress_policy_ref": {"type": "string", "minLength": 1},
+        "deletion_residual_ref": {"type": "string", "minLength": 1},
+        "encryption_required": {"type": "boolean"}
+      }
+    },
     "low_consequence": {
       "type": "object",
       "additionalProperties": false,
@@ -171,15 +189,65 @@
     "effect": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["intent_sha256", "requested", "sent", "provider_accepted", "observed"],
+      "required": [
+        "intent_sha256",
+        "target_id",
+        "capability_ref",
+        "principal_id",
+        "session_id",
+        "generation",
+        "execution_epoch",
+        "idempotency_key",
+        "preview_sha256",
+        "privacy_snapshot_ref",
+        "privacy_snapshot_sha256",
+        "requested",
+        "sent",
+        "provider_accepted",
+        "observed"
+      ],
       "properties": {
         "intent_sha256": {"$ref": "#/$defs/sha256"},
+        "target_id": {"$ref": "#/$defs/id"},
+        "capability_ref": {"type": "string", "minLength": 1},
+        "principal_id": {"$ref": "#/$defs/id"},
+        "session_id": {"$ref": "#/$defs/id"},
+        "generation": {"type": "integer", "minimum": 1},
+        "execution_epoch": {"type": "integer", "minimum": 0},
+        "idempotency_key": {"$ref": "#/$defs/id"},
+        "preview_sha256": {"$ref": "#/$defs/sha256"},
+        "privacy_snapshot_ref": {"type": "string", "minLength": 1},
+        "privacy_snapshot_sha256": {"$ref": "#/$defs/sha256"},
         "requested": {"type": "boolean"},
         "sent": {"enum": ["NO", "YES", "UNKNOWN"]},
         "provider_accepted": {"enum": ["NO", "YES", "UNKNOWN", "NOT_APPLICABLE"]},
         "observed": {"enum": ["NO", "YES", "FAILED", "AMBIGUOUS", "UNKNOWN"]},
         "evidence_refs": {"$ref": "#/$defs/idArray"}
-      }
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"requested": {"const": false}}, "required": ["requested"]},
+          "then": {
+            "properties": {
+              "sent": {"const": "NO"},
+              "provider_accepted": {"const": "NOT_APPLICABLE"},
+              "observed": {"const": "NO"}
+            }
+          }
+        },
+        {
+          "if": {"properties": {"sent": {"const": "YES"}}, "required": ["sent"]},
+          "then": {"properties": {"requested": {"const": true}}}
+        },
+        {
+          "if": {"properties": {"provider_accepted": {"const": "YES"}}, "required": ["provider_accepted"]},
+          "then": {"properties": {"requested": {"const": true}, "sent": {"const": "YES"}}}
+        },
+        {
+          "if": {"properties": {"observed": {"enum": ["YES", "FAILED", "AMBIGUOUS"]}}, "required": ["observed"]},
+          "then": {"properties": {"requested": {"const": true}, "sent": {"const": "YES"}}}
+        }
+      ]
     },
     "events": {
       "type": "array",
@@ -188,7 +256,38 @@
   },
   "allOf": [
     {
-      "if": {"properties": {"action_disposition": {"properties": {"state": {"const": "PROCEED_AFTER_PUSHBACK"}}}}},
+      "properties": {
+        "interpretations": {
+          "contains": {"type": "object", "properties": {"selected": {"const": true}}, "required": ["selected"]},
+          "minContains": 1,
+          "maxContains": 1
+        }
+      }
+    },
+    {
+      "if": {"properties": {"action_disposition": {"properties": {"state": {"const": "PROCEED"}}, "required": ["state"]}}},
+      "then": {
+        "properties": {
+          "authority": {"properties": {"identity_verified": {"const": true}, "delegation_verified": {"const": true}, "scope_verified": {"const": true}, "current": {"const": true}, "consent_verified": {"const": true}, "legitimacy_state": {"const": "PASS"}}},
+          "participation": {"properties": {"state": {"const": "WILLING"}}},
+          "action_disposition": {"properties": {"effect_gate_state": {"const": "PASS"}}}
+          ,"privacy": {"properties": {"consent_current": {"const": true}}}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"action_disposition": {"properties": {"state": {"const": "PARTIAL"}}, "required": ["state"]}}},
+      "then": {
+        "properties": {
+          "authority": {"properties": {"identity_verified": {"const": true}, "delegation_verified": {"const": true}, "scope_verified": {"const": true}, "current": {"const": true}, "consent_verified": {"const": true}, "legitimacy_state": {"const": "PASS"}}},
+          "participation": {"properties": {"state": {"enum": ["WILLING", "CONDITIONAL"]}}},
+          "action_disposition": {"properties": {"effect_gate_state": {"const": "PASS"}}}
+          ,"privacy": {"properties": {"consent_current": {"const": true}}}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"action_disposition": {"properties": {"state": {"const": "PROCEED_AFTER_PUSHBACK"}}, "required": ["state"]}}},
       "then": {
         "required": ["low_consequence"],
         "properties": {
@@ -227,7 +326,44 @@
               "objection_understood": {"const": true},
               "agent_willing": {"const": true}
             }
-          }
+          },
+          "privacy": {"properties": {"consent_current": {"const": true}}}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"state": {"const": "PERFORMED"}}, "required": ["state"]},
+      "then": {
+        "required": ["effect"],
+        "properties": {
+          "action_disposition": {"properties": {"state": {"enum": ["PROCEED", "PROCEED_AFTER_PUSHBACK", "PARTIAL"]}, "effect_gate_state": {"const": "PASS"}}},
+          "effect": {"properties": {"requested": {"const": true}, "sent": {"const": "YES"}, "provider_accepted": {"enum": ["YES", "NOT_APPLICABLE"]}}}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"state": {"const": "OBSERVED_AND_CORRECTED"}}, "required": ["state"]},
+      "then": {
+        "required": ["effect"],
+        "properties": {
+          "effect": {"properties": {"requested": {"const": true}, "sent": {"const": "YES"}, "provider_accepted": {"enum": ["YES", "NOT_APPLICABLE"]}, "observed": {"enum": ["YES", "FAILED", "AMBIGUOUS", "UNKNOWN"]}}}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"state": {"const": "DECLINED"}}, "required": ["state"]},
+      "then": {
+        "properties": {
+          "participation": {"properties": {"state": {"enum": ["DECLINED", "WITHDRAWING", "WITHDRAWN"]}}},
+          "action_disposition": {"properties": {"state": {"enum": ["DENIED", "CANCELLED"]}, "effect_gate_state": {"enum": ["FAIL", "NOT_APPLICABLE"]}}}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"state": {"const": "DENIED"}}, "required": ["state"]},
+      "then": {
+        "properties": {
+          "action_disposition": {"properties": {"state": {"const": "DENIED"}, "effect_gate_state": {"const": "FAIL"}}}
         }
       }
     }
@@ -236,5 +372,6 @@
     "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]{0,255}$"},
     "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
     "idArray": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true}
+    ,"nonEmptyIdArray": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}, "uniqueItems": true}
   }
 }

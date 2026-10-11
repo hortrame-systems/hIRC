@@ -1,0 +1,313 @@
+{
+  "schema": "hirc.executable-cumulative-validation/1",
+  "status": "PASS_WITH_DECLARED_RELEASE_HOLDS",
+  "validator_count": 21,
+  "results": [
+    {
+      "stone": "M04-S001",
+      "validator": {
+        "path": "implementation/validate_m04_s001.py",
+        "sha256": "49418139bdbfa896dcd11725cef3245378b2dcb0004614006ee590805b78dcac",
+        "bytes": 4268
+      },
+      "result": {
+        "path": "implementation/m04-s001-validation.json",
+        "sha256": "1886e49642d0d020cd89e7232236284dc1e72745e8d4014be1a8f140ba58dfbe",
+        "bytes": 4017,
+        "status": "PASS"
+      }
+    },
+    {
+      "stone": "M05-S001",
+      "validator": {
+        "path": "implementation/validate_m05_s001.py",
+        "sha256": "8666b252a1cc0b921a3ca01454315c7f0a6d41f09fa6c188d66275680bd91e82",
+        "bytes": 4430
+      },
+      "result": {
+        "path": "implementation/m05-s001-validation.json",
+        "sha256": "07689c2dda091c0e5130d6331dce6225ab343c9f02b4f42f8a702c50c220fc1e",
+        "bytes": 5291,
+        "status": "PASS"
+      }
+    },
+    {
+      "stone": "ALPHA-RED-TEAM",
+      "validator": {
+        "path": "implementation/validate_alpha_integration_red_team.py",
+        "sha256": "be96c530a2885e7d3899e2710305f376d0c67d5d001595a9a2b60f48c944351a",
+        "bytes": 4635
+      },
+      "result": {
+        "path": "implementation/alpha-integration-red-team-validation-v1.json",
+        "sha256": "0aef9467ac64c953f7e0b16a5ab78e6fbcc6a4d3723796c0ea1c1c550cc83ebc",
+        "bytes": 26128,
+        "status": "PASS"
+      }
+    },
+    {
+      "stone": "M06-S001",
+      "validator": {
+        "path": "implementation/validate_m06_s001.py",
+        "sha256": "332923fa4d75284278ae4c52cc1f59f4ac7338af9aea129e89cccb2b483b5baf",
+        "bytes": 5806
+      },
+      "result": {
+        "path": "implementation/m06-s001-validation.json",
+        "sha256": "007b061e727acee437b11ceb969ac66765c4bb6f0500ffd8dccc0d78987468b5",
+        "bytes": 3881,
+        "status": "PASS"
+      }
+    },
+    {
+      "stone": "M06-S002",
+      "validator": {
+        "path": "implementation/validate_m06_s002.py",
+        "sha256": "0abde3423d4a20a2c99f42dcab59b1f243a29fec036e48fda309e0d8edd77e4c",
+        "bytes": 5359
+      },
+      "result": {
+        "path": "implementation/m06-s002-validation.json",
+        "sha256": "0ea28cdff3780526c0c9793e528d9e3e8d16b0d246b1bea3a290bab2ef1048fb",
+        "bytes": 6475,
+        "status": "PASS"
+      }
+    },
+    {
+      "stone": "M06-S003",
+      "validator": {
+        "path": "implementation/validate_m06_s003.py",
+        "sha256": "ed0bb5699d334607cf757280069580c78d07c2293cfbb42fd6fb1aaba0663ad5",
+        "bytes": 6889
+      },
+      "result": {
+        "path": "implementation/m06-s003-validation.json",
+        "sha256": "6e07c8749c2e850a771b44aa63ac6a5598397ce0739d92ad96b2a0d712c61856",
+        "bytes": 5176,
+        "status": "PASS"
+      }
+    },
+    {
+      "stone": "M07-S001",
+      "validator": {
+        "path": "implementation/validate_m07_s001.py",
+        "sha256": "d8d5bd340a9a09bc0ea17ac33fea4c612c3b7e763b9d3f2c994154799843283c",
+        "bytes": 6324
+      },
+      "result": {
+        "path": "implementation/m07-s001-validation.json",
+        "sha256": "2c95568c3ef849bd3ef0234e9af27dcf02e0c38414ed6c6d3386adc4fc9ee7d5",
+        "bytes": 7622,
+        "status": "PASS"
+      }
+    },
+    {
+      "stone": "M07-S002",
+      "validator": {
+        "path": "implementation/validate_m07_s002.py",
+        "sha256": "97e66025b12ae8e365887cef60b6c48c404c1ee5fe926cbd256d8a9872e19aa7",
+        "bytes": 5056
+      },
+      "result": {
+        "path": "implementation/m07-s002-validation.json",
+        "sha256": "748aa5bdafc7a475e11b4913ee606d01ee9e52ce76be54b4547497ba7222c8e1",
+        "bytes": 9067,
+        "status": "PASS"
+      }
+    },
+    {
+      "stone": "M07-S003",
+      "validator": {
+        "path": "implementation/validate_m07_s003.py",
+        "sha256": "04c3f6f8d91c17e597e9736628de90d469367accfb15ad14fe464b3888ac406e",
+        "bytes": 5166
+      },
+      "result": {
+        "path": "implementation/m07-s003-validation.json",
+        "sha256": "6ebd88fd471236d849984aea422ac7f70e705f01b0cc5d5b24a00fceb6750093",
+        "bytes": 6665,
+        "status": "PASS"
+      }
+    },
+    {
+      "stone": "M08-S001",
+      "validator": {
+        "path": "implementation/validate_m08_s001.py",
+        "sha256": "a8887d5355fac308dd4efc8183b6ce7025c004160f5a6d7a3e3e5a107dbd8c04",
+        "bytes": 5292
+      },
+      "result": {
+        "path": "implementation/m08-s001-validation.json",
+        "sha256": "edafd967fc110d9d5635d2e5d951788ded1acc84ad54ccf70cc4b50605daf9a6",
+        "bytes": 4618,
+        "status": "PASS"
+      }
+    },
+    {
+      "stone": "M08-S002",
+      "validator": {
+        "path": "implementation/validate_m08_s002.py",
+        "sha256": "cc6d8287f76a29b8ac396d5917c3262c67056f37fa8cba3c70c7b06ba18caf76",
+        "bytes": 4898
+      },
+      "result": {
+        "path": "implementation/m08-s002-validation.json",
+        "sha256": "57132c12fbc49505aaf51c57dc43996dabd1a02b76b956e5c504ac31cc0f1840",
+        "bytes": 4928,
+        "status": "PASS"
+      }
+    },
+    {
+      "stone": "M08-S003",
+      "validator": {
+        "path": "implementation/validate_m08_s003.py",
+        "sha256": "72bc65cbc0ed905aed337baaf38e7528bd20ebbbe5e51851a95c50ef423b9fb4",
+        "bytes": 5013
+      },
+      "result": {
+        "path": "implementation/m08-s003-validation.json",
+        "sha256": "6bc53bed7905098f9077e4e7edd5f4cbe26c3216f056acda5cdcc121d05c16bb",
+        "bytes": 4023,
+        "status": "PASS_PACKAGE_SCOPE_RELEASE_HELD"
+      }
+    },
+    {
+      "stone": "M08-S004",
+      "validator": {
+        "path": "implementation/validate_m08_s004.py",
+        "sha256": "0a6fd5c9dd0cd8f3e53449364cb64dbd7890427fcdb5932676a7a27553c9fb66",
+        "bytes": 4914
+      },
+      "result": {
+        "path": "implementation/m08-s004-validation.json",
+        "sha256": "6dcb2249685c03485b7bd8d6c48e2200d35e851a5076c1fc5146f96f769fbfb8",
+        "bytes": 4211,
+        "status": "PASS_TOOLING_SCOPE_KEY_CUSTODY_INTEGRATION_HELD"
+      }
+    },
+    {
+      "stone": "M08-S005",
+      "validator": {
+        "path": "implementation/validate_m08_s005.py",
+        "sha256": "47e8b619eba26662f0d67cc908b8a2f99ef001f0b39e09eef8c1332a525f78c3",
+        "bytes": 4255
+      },
+      "result": {
+        "path": "implementation/m08-s005-validation.json",
+        "sha256": "e999ccdbe05bab617aa1141c3435533699a76351f0d24a132123e18f7d1f6ef6",
+        "bytes": 3418,
+        "status": "PASS_TOOLING_SCOPE_RELEASE_KEY_CUSTODY_HELD"
+      }
+    },
+    {
+      "stone": "M08-S006",
+      "validator": {
+        "path": "implementation/validate_m08_s006.py",
+        "sha256": "d368cf92ebe62d1edcf7085b4c541079b483453882210f2ff4c3386ee5ffd23d",
+        "bytes": 4282
+      },
+      "result": {
+        "path": "implementation/m08-s006-validation.json",
+        "sha256": "caf6f25824b46ee49df104f011e30edb19f5bd1ec08d5f8832d1cfeb8b26f202",
+        "bytes": 3319,
+        "status": "PASS_ENCRYPTED_BACKUP_TOOLING_SCOPE_LIVE_STORAGE_CUSTODY_HELD"
+      }
+    },
+    {
+      "stone": "M08-S007",
+      "validator": {
+        "path": "implementation/validate_m08_s007.py",
+        "sha256": "f1442cc26d939a1458775a930d5fc1120baa352bfcbf42be1934f6f5288acc96",
+        "bytes": 4128
+      },
+      "result": {
+        "path": "implementation/m08-s007-validation.json",
+        "sha256": "ffae032b743c5553921b56ae48cb08dd830bc769cbd093790e52a6aaa1914411",
+        "bytes": 1712,
+        "status": "PASS_BOUNDED_LOCAL_SOAK_CRASH_SCOPE"
+      }
+    },
+    {
+      "stone": "M08-S008",
+      "validator": {
+        "path": "implementation/validate_m08_s008.py",
+        "sha256": "2d764146afc8cb90f1e9bc93c3c40eb3a0f2103e80ca3c7397789eaf6c525b46",
+        "bytes": 3603
+      },
+      "result": {
+        "path": "implementation/m08-s008-validation.json",
+        "sha256": "982fdb9484b7b6db78572e241e1a81ed422babba44edde3cfbfd2cb96b02bfcd",
+        "bytes": 4339,
+        "status": "PASS_LOCAL_INTEGRITY_REPAIR_SCOPE"
+      }
+    },
+    {
+      "stone": "M08-S009",
+      "validator": {
+        "path": "implementation/validate_m08_s009.py",
+        "sha256": "4b8e0415ec72783da705703040edc086d25bc42b3a0eb3129c3a2a12a2a53f73",
+        "bytes": 4708
+      },
+      "result": {
+        "path": "implementation/m08-s009-validation.json",
+        "sha256": "7b3dfb806dcfe9ad1db2a26701a622fc74a16e6cc75252e8952afca0d907a121",
+        "bytes": 7639,
+        "status": "PASS_ATOMIC_CREATE_IF_ABSENT_SCOPE"
+      }
+    },
+    {
+      "stone": "M08-S010",
+      "validator": {
+        "path": "implementation/validate_m08_s010.py",
+        "sha256": "6a810a6c114b909db8c2f2623aaa3330d5e621dc2d6ddd2eee9c2786ef2b8421",
+        "bytes": 4391
+      },
+      "result": {
+        "path": "implementation/m08-s010-validation.json",
+        "sha256": "c7b5da0f1306e17f391f9f328ec391b26c3011e7c7af61d20d13dfd79f5d7418",
+        "bytes": 8471,
+        "status": "PASS_BOUNDED_JSON_FILE_INGRESS_SCOPE"
+      }
+    },
+    {
+      "stone": "M08-S011",
+      "validator": {
+        "path": "implementation/validate_m08_s011.py",
+        "sha256": "cb74978509a91231352b9598118174152fccf764ff2e42d6ccd17c7845647df1",
+        "bytes": 3923
+      },
+      "result": {
+        "path": "implementation/m08-s011-validation.json",
+        "sha256": "8f9e0e7653fe4e31035bb17c3b83f5e93e6dd3935b7db1db474fad0783e78653",
+        "bytes": 4758,
+        "status": "PASS_READ_ONLY_VERIFICATION_SCOPE"
+      }
+    },
+    {
+      "stone": "M08-S012",
+      "validator": {
+        "path": "implementation/validate_m08_s012.py",
+        "sha256": "3b9a1ef8d2bdd6d236bb655f1768b95dc85ce6e219143df15a4b6e9aedc0fc51",
+        "bytes": 4503
+      },
+      "result": {
+        "path": "implementation/m08-s012-validation.json",
+        "sha256": "cbf04ac37f4f92df70723586862c945a528a4f73db9963ca358d17355d6fa5c0",
+        "bytes": 9660,
+        "status": "PASS_CANONICAL_JSON_AMBIGUITY_REPAIR_SCOPE"
+      }
+    }
+  ],
+  "full_suite_tests": 140,
+  "expected_release_failures": 3,
+  "binding_mode": "fresh_sequential_execution",
+  "release_holds": [
+    "plaintext storage and backup encryption/key custody",
+    "rendered accessibility/usability",
+    "independent security/privacy and penetration review",
+    "broader crash/fuzz/soak/cross-machine recovery",
+    "protected external head witness and signed release manifest",
+    "M03 S014/S015 governance and public milestone closure"
+  ],
+  "nonclaim": "Cumulative local executable evidence only; no sensitive-data, production or public release acceptance."
+}

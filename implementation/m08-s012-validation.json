@@ -1,0 +1,155 @@
+{
+  "schema": "hirc.m08-s012-validation/1",
+  "stone": "M08-S012",
+  "status": "PASS_CANONICAL_JSON_AMBIGUITY_REPAIR_SCOPE",
+  "checks": {
+    "failed_baseline_preserved": true,
+    "store_tests_pass": true,
+    "adapter_tests_pass": true,
+    "migration_tests_pass": true,
+    "stored_payload_regression_present": true,
+    "file_ingress_regression_present": true,
+    "legacy_migration_regression_present": true,
+    "full_suite_pass": true,
+    "full_suite_test_count": true,
+    "expected_release_failures_preserved": true
+  },
+  "files": [
+    {
+      "path": "implementation/M08_RELEASE_HARDENING_PLAN.md",
+      "sha256": "0e2b21a00be42a7ec56773742486b8fcfd9b2fea40b0dd460268f3c2a7779df6",
+      "bytes": 6363
+    },
+    {
+      "path": "implementation/m08-s012-validation-v1-failed.json",
+      "sha256": "a51d5630144d49fb70c88dda7fda717c871a2cee7ea111e1b20f76a832322599",
+      "bytes": 1789
+    },
+    {
+      "path": "implementation/validate_m08_s012.py",
+      "sha256": "3b9a1ef8d2bdd6d236bb655f1768b95dc85ce6e219143df15a4b6e9aedc0fc51",
+      "bytes": 4503
+    },
+    {
+      "path": "implementation/validation_config.py",
+      "sha256": "6d79c9cfc737f963cf2d30202c59dc2d061e8a8b7b80a12251c0e4434d04f884",
+      "bytes": 262
+    },
+    {
+      "path": "src/hirc/canonical.py",
+      "sha256": "c5621ca0a9676285abe4c9cfc337f484aec980287b11426cc105e0f74250b0f3",
+      "bytes": 3242
+    },
+    {
+      "path": "src/hirc/cli.py",
+      "sha256": "6fcd8323c08caecd17948a2531444aa5f1676aa2306b0c5faa8076ad2f3b55fc",
+      "bytes": 9691
+    },
+    {
+      "path": "src/hirc/store.py",
+      "sha256": "81dd7bb2541509082deb29d00d834ec4ec001584f7a175ae58fd376b0a07f79c",
+      "bytes": 34935
+    },
+    {
+      "path": "src/hirc/migration.py",
+      "sha256": "b94ecc8c4d1b936084d7d0ee73058f8c64a56ac2210562270126736184123948",
+      "bytes": 8437
+    },
+    {
+      "path": "tests/test_store.py",
+      "sha256": "99d3be0598f08dcc6727cf16c81823b1e75fdcc5bd1534fc12a6fe9cdedadc5c",
+      "bytes": 11796
+    },
+    {
+      "path": "tests/test_adapter.py",
+      "sha256": "06b91ac800ee323691a25089f91129c8ba144942969a2bcdb38340551cab1c49",
+      "bytes": 9729
+    },
+    {
+      "path": "tests/test_migration_hardening.py",
+      "sha256": "219171aea28621d0df1d5bb9e7026f18ff67dca7bbf8a61572fac7e07a0845e8",
+      "bytes": 10477
+    }
+  ],
+  "store_test_output": [
+    "test_correction_cannot_change_target_information_boundary (test_store.StoreTests.test_correction_cannot_change_target_information_boundary) ... ok",
+    "test_correction_cannot_target_missing_event (test_store.StoreTests.test_correction_cannot_target_missing_event) ... ok",
+    "test_correction_requires_and_preserves_target (test_store.StoreTests.test_correction_requires_and_preserves_target) ... ok",
+    "test_effectful_action_requires_authority (test_store.StoreTests.test_effectful_action_requires_authority) ... ok",
+    "test_initial_state_disables_every_high_risk_capability (test_store.StoreTests.test_initial_state_disables_every_high_risk_capability) ... ok",
+    "test_ordinary_update_and_delete_are_denied (test_store.StoreTests.test_ordinary_update_and_delete_are_denied) ... ok",
+    "test_payload_depth_size_and_utf8_limits_fail_closed (test_store.StoreTests.test_payload_depth_size_and_utf8_limits_fail_closed) ... ok",
+    "test_plaintext_status_is_explicit_and_sensitive_mode_fails_closed (test_store.StoreTests.test_plaintext_status_is_explicit_and_sensitive_mode_fails_closed) ... ok",
+    "test_same_inputs_produce_same_first_event_identity (test_store.StoreTests.test_same_inputs_produce_same_first_event_identity) ... ok",
+    "test_verifier_detects_privileged_tampering (test_store.StoreTests.test_verifier_detects_privileged_tampering) ... ok",
+    "test_verifier_rejects_noncanonical_duplicate_key_payload (test_store.StoreTests.test_verifier_rejects_noncanonical_duplicate_key_payload) ... ok",
+    "test_verifier_rejects_self_rehashed_impossible_correction_history (test_store.StoreTests.test_verifier_rejects_self_rehashed_impossible_correction_history) ... ok",
+    "test_verify_and_status_use_read_only_connections (test_store.StoreTests.test_verify_and_status_use_read_only_connections) ... ok",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 13 tests in 1.153s",
+    "",
+    "OK"
+  ],
+  "adapter_test_output": [
+    "test_acceptance_and_observation_remain_separate (test_adapter.AdapterTests.test_acceptance_and_observation_remain_separate) ... ok",
+    "test_acceptance_for_another_request_is_rejected (test_adapter.AdapterTests.test_acceptance_for_another_request_is_rejected) ... ok",
+    "test_acceptance_without_observation_stays_unknown (test_adapter.AdapterTests.test_acceptance_without_observation_stays_unknown) ... ok",
+    "test_adapter_declaring_network_or_effect_is_rejected (test_adapter.AdapterTests.test_adapter_declaring_network_or_effect_is_rejected) ... ok",
+    "test_adapter_payload_depth_and_size_limits_fail_closed (test_adapter.AdapterTests.test_adapter_payload_depth_and_size_limits_fail_closed) ... ok",
+    "test_adapter_run_nested_effect_claim_is_rejected (test_adapter.AdapterTests.test_adapter_run_nested_effect_claim_is_rejected) ... ok",
+    "test_cli_exposes_local_fake_and_acceptance_only_modes (test_adapter.AdapterTests.test_cli_exposes_local_fake_and_acceptance_only_modes) ... ok",
+    "test_cli_rejects_duplicate_json_keys (test_adapter.AdapterTests.test_cli_rejects_duplicate_json_keys) ... ok",
+    "test_cli_rejects_oversized_json_file_before_parsing (test_adapter.AdapterTests.test_cli_rejects_oversized_json_file_before_parsing) ... ok",
+    "test_command_shaped_payload_remains_inert (test_adapter.AdapterTests.test_command_shaped_payload_remains_inert) ... ok",
+    "test_direct_validation_bounds_self_rehashed_payload_before_acceptance (test_adapter.AdapterTests.test_direct_validation_bounds_self_rehashed_payload_before_acceptance) ... ok",
+    "test_nested_credential_shaped_fields_are_rejected (test_adapter.AdapterTests.test_nested_credential_shaped_fields_are_rejected) ... ok",
+    "test_provider_contract_is_implementation_neutral (test_adapter.AdapterTests.test_provider_contract_is_implementation_neutral) ... ok",
+    "test_request_tampering_is_rejected (test_adapter.AdapterTests.test_request_tampering_is_rejected) ... ok",
+    "test_same_request_is_deterministic (test_adapter.AdapterTests.test_same_request_is_deterministic) ... ok",
+    "test_self_rehashed_noncanonical_request_shapes_are_rejected (test_adapter.AdapterTests.test_self_rehashed_noncanonical_request_shapes_are_rejected) ... ok",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 16 tests in 0.088s",
+    "",
+    "OK"
+  ],
+  "migration_test_output": [
+    "test_bounded_hundred_event_load_verifies (test_migration_hardening.MigrationHardeningTests.test_bounded_hundred_event_load_verifies) ... ok",
+    "test_cli_migrates_exact_v1 (test_migration_hardening.MigrationHardeningTests.test_cli_migrates_exact_v1) ... ok",
+    "test_concurrent_backup_target_creation_is_never_overwritten (test_migration_hardening.MigrationHardeningTests.test_concurrent_backup_target_creation_is_never_overwritten) ... ok",
+    "test_corrupt_chain_refuses_without_schema_change (test_migration_hardening.MigrationHardeningTests.test_corrupt_chain_refuses_without_schema_change) ... ok",
+    "test_duplicate_key_legacy_payload_refuses_without_schema_change (test_migration_hardening.MigrationHardeningTests.test_duplicate_key_legacy_payload_refuses_without_schema_change) ... ok",
+    "test_empty_v1_migrates (test_migration_hardening.MigrationHardeningTests.test_empty_v1_migrates) ... ok",
+    "test_existing_backup_target_refuses (test_migration_hardening.MigrationHardeningTests.test_existing_backup_target_refuses) ... ok",
+    "test_missing_legacy_trigger_refuses (test_migration_hardening.MigrationHardeningTests.test_missing_legacy_trigger_refuses) ... ok",
+    "test_seeded_invalid_identifiers_fail_without_store_damage (test_migration_hardening.MigrationHardeningTests.test_seeded_invalid_identifiers_fail_without_store_damage) ... ok",
+    "test_v2_source_is_not_silently_remigrated (test_migration_hardening.MigrationHardeningTests.test_v2_source_is_not_silently_remigrated) ... ok",
+    "test_valid_v1_event_chain_migrates_with_backup (test_migration_hardening.MigrationHardeningTests.test_valid_v1_event_chain_migrates_with_backup) ... ok",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 11 tests in 3.450s",
+    "",
+    "OK"
+  ],
+  "full_suite_output": [
+    ".................................................................xxx........................................................................",
+    "----------------------------------------------------------------------",
+    "Ran 140 tests in 22.173s",
+    "",
+    "OK (expected failures=3)"
+  ],
+  "repair": {
+    "finding_id": "M08-S012-F001",
+    "duplicate_keys_rejected_at_ingress": true,
+    "stored_payload_exact_canonical_bytes_required": true,
+    "legacy_migration_requires_canonical_payload": true,
+    "same_head_raw_payload_rewrite_rejected": true
+  },
+  "surviving_limits": [
+    "Canonical raw payload validation does not defeat a privileged full-chain rewrite without a protected external witness.",
+    "Other serialization formats and future remote adapters require their own ambiguity controls.",
+    "Live storage remains plaintext and independent penetration review remains open."
+  ],
+  "nonclaim": "M08-S012 local canonical-JSON ambiguity repair only; not complete tamper-proof or release assurance."
+}

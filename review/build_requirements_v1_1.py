@@ -110,10 +110,10 @@ def build() -> dict:
                 "superseded_by": [],
                 "governing_sources": [map_id],
                 "rationale_refs": (list(payload.get("source_intents", [])) + list(item.get("invariant_refs", []))) if cultural else [],
-                "security_privacy_impact": "PENDING_REQUIREMENT_LEVEL_ASSESSMENT",
-                "dependencies": [],
-                "acceptance_test_refs": [],
-                "evidence_status": "BOUNDED_PEER_AGREEMENT_NOT_IMPLEMENTED" if bounded else "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED",
+                "security_privacy_impact": item.get("security_privacy_impact", "PENDING_REQUIREMENT_LEVEL_ASSESSMENT"),
+                "dependencies": list(item.get("dependencies", [])),
+                "acceptance_test_refs": list(item.get("acceptance_test_refs", [])),
+                "evidence_status": item.get("evidence_status", "BOUNDED_PEER_AGREEMENT_NOT_IMPLEMENTED" if bounded else "OWNER_REQUEST_CAPTURED_NOT_IMPLEMENTED"),
             }
             if cultural:
                 requirement["invariant_refs"] = list(item.get("invariant_refs", []))
@@ -129,9 +129,9 @@ def build() -> dict:
                 "targets": change["targets"],
                 "change": change["change"],
                 "basis": change.get("basis", []),
-                "joint_status": "AGREED_BOUNDED" if bounded else "PENDING_RECONCILIATION",
-                "final_artifact_refs": [],
-                "test_refs": [],
+                "joint_status": change.get("joint_status", "AGREED_BOUNDED" if bounded else "PENDING_RECONCILIATION"),
+                "final_artifact_refs": list(change.get("final_artifact_refs", [])),
+                "test_refs": list(change.get("test_refs", [])),
             })
 
     by_id = {item["id"]: item for item in requirements}
