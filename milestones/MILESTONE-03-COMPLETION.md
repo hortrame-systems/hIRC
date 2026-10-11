@@ -1,6 +1,6 @@
 # hIRC Milestone 03 completion report
 
-**Milestone content state:** public content commit verified; receipt publication in progress
+**Milestone state:** PASS; public content and receipt commits verified
 **Branch:** `codex/hirc-master-plan-security`
 **Baseline before this milestone:** `1c525e3b464c58b6e037faaf6bb76626b32364e4`
 
@@ -78,6 +78,7 @@ Bridge, network, production, sensitive-data and release capabilities remain off.
 The privacy-validated content commit is
 `df5b72713f0127e0789652f20870709827441c9f`. A direct `git ls-remote` query
 observed the public branch at that exact commit after the push. The public receipt
-records that observation. S015 becomes PASS only after the receipt commit is also
-observed on the remote; a push request is never treated as proof that the remote
-changed.
+commit is `cc4af0dbd6c02cedf49ed1ea1e3da30732e0a4cf`; a second direct query
+observed the branch at that receipt commit. S015 is therefore PASS. The containing
+closure commit records this already-satisfied condition; a push request was never
+treated as proof that the remote changed.

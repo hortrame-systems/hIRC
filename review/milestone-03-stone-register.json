@@ -2,7 +2,7 @@
   "schema": "hirc.stone-register/1",
   "milestone_id": "HIRC-M03",
   "title": "Determinism and cultural information-environment integration",
-  "status": "STONE_014_PASS_S015_READY",
+  "status": "MILESTONE_03_PASS",
   "created_on": "2026-10-08",
   "control": {
     "goal_ref": "HIRC-GOAL-VERSION-002",
@@ -33,13 +33,9 @@
   ],
   "advance_rule": "A stone may become ACTIVE only when every prerequisite is PASS. A dependent stone remains CAPTURED or HELD otherwise. Each PASS is limited to its declared claim and evidence.",
   "execution_state": {
-    "state": "RUNNABLE",
-    "ready_stones": [
-      "M03-S015"
-    ],
-    "runnable_stones": [
-      "M03-S015"
-    ],
+    "state": "COMPLETE",
+    "ready_stones": [],
+    "runnable_stones": [],
     "scoped_holds": [],
     "rule": "A HELD or review-gated stone blocks only its descendants. When any unrelated stone is READY, the milestone remains RUNNABLE and the controller executes the highest-value READY work."
   },
@@ -618,7 +614,7 @@
     {
       "id": "M03-S015",
       "outcome": "Close Milestone 03 with integration/recovery checks, cumulative report, ledger closure, commit, public push and directly verified remote receipt.",
-      "status": "READY",
+      "status": "PASS",
       "prerequisites": [
         "M03-S014"
       ],
@@ -648,7 +644,22 @@
       "independent_review": "Prior stone M03-S014 must PASS; closure itself receives deterministic evidence review.",
       "recovery": "Keep LOCAL_COMPLETE_PUSH_HELD or FAILED with exact repair owner until the missing closure condition is satisfied.",
       "stop_condition": "Do not claim milestone completion until the public remote contains the content and receipt state and all completion layers are reconciled.",
-      "next_eligible": []
+      "next_eligible": [],
+      "result": {
+        "content_commit": "df5b72713f0127e0789652f20870709827441c9f",
+        "receipt_commit": "cc4af0dbd6c02cedf49ed1ea1e3da30732e0a4cf",
+        "receipt": {
+          "path": "review/public/m03-s015-public-push-receipt-v1.json",
+          "sha256": "4f6e26eb9119b7364a3664761636a8dc5f7a013557c7da6b1bb623ffcca9ed31",
+          "bytes": 1260
+        },
+        "closure": {
+          "path": "review/public/m03-s015-final-closure-v1.json",
+          "sha256": "1a7a0a416f72113061ed1f68e1913d3b0b7d2c50fb10ac20b788433740589849",
+          "bytes": 1070
+        },
+        "remote_verified": true
+      }
     }
   ]
 }

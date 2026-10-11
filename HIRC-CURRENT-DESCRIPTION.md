@@ -818,7 +818,7 @@ Milestone 03 contains sixteen ordered stones including S001A:
 - **S001 through S013:** PASS at their declared planning, schema, fixture,
   integration and independent-review scopes.
 - **S014:** PASS at the declared integrated peer-review and finding-reconciliation scope.
-- **S015:** READY for milestone-wide integration, privacy, ledger, commit and remote closure.
+- **S015:** PASS; the privacy-validated content and receipt commits were directly verified on the public remote.
 
 S014's product, accessibility-requirements, anti-domination and privacy-facing
 review found three material contract/portability issues. They were repaired and
@@ -874,10 +874,9 @@ The nine-person reviewer pool therefore has these current states:
 - TORSION and LATTICE: held on capacity/context constraints; and
 - FIDUCIAL and RESOLVENT: permanently retired under the latched rule.
 
-The deterministic S015 preflight now advances from S014 closure into final
-integration, privacy, ledger, milestone-report, commit and remote-verification
-work. Commit and public push eligibility remain false until every S015 check is
-reconciled on the final exact tree.
+The deterministic S015 preflight passed without blockers or local failures. The
+privacy-validated content commit and its receipt commit were pushed and directly
+observed on the public remote. Milestone 03 is complete at its declared scope.
 
 The post-freeze team-stall protocol is active as a coordination control. It keeps
 the current reviewer holds, owners, permitted sibling work and unstall routes in
@@ -967,15 +966,10 @@ milestone and publication closure:
 
 This implementation progress does not close S014, S015 or any release claim.
 
-After S014 passes, S015 must run milestone-wide integration and recovery checks,
-close every applicable ledger layer, write the cumulative Milestone 03 report,
-commit the governed state, push it publicly and verify the remote ref directly.
-
-At the inspected baseline, the local branch was clean at
-`1c525e3b464c58b6e037faaf6bb76626b32364e4`, twenty commits ahead of public
-`origin/codex/hirc-master-plan-security` at
-`ad592842efb4aa2134b3e9dd72adf4acf7134a9e`. The public push is intentionally
-held until Milestone 03 closure.
+S015 ran milestone-wide integration, recovery, privacy and ledger checks, wrote
+the cumulative report and published the governed public-safe tree. The content
+commit is `df5b72713f0127e0789652f20870709827441c9f`; the public receipt commit is
+`cc4af0dbd6c02cedf49ed1ea1e3da30732e0a4cf`. Direct remote queries observed both.
 
 ## 21. What remains unimplemented or unresolved
 
@@ -1004,23 +998,14 @@ technology stack.
 
 ## 22. Immediate next sequence
 
-The current justified sequence has two non-conflicting tracks:
+Milestone 03 is closed. The next authorized planning boundary is:
 
-1. keep using the validated team stall/unstall register;
-2. reconcile every S014 closure artifact, source/test identity and current readable view into the ledger;
-3. run S015 milestone-wide integration, recovery, privacy and publication checks;
-4. write the detailed cumulative Milestone 03 report;
-5. rerun the complete gate on the final exact tree;
-6. commit and publicly push the governed milestone; and
-7. verify the public remote and preserve its receipt;
-8. preserve the M06-S002 four-choice no-effect interruption preview regressions;
-9. close the remaining sensitive-storage, rendered UI, independent security/
-    privacy, broader hardening and M03 governance holds before any release claim;
-10. keep M04/M05/red-team/M06 regressions and ledger pins current after every
-    coherent executable change.
-
-No S015 or public-completion claim is made until the committed remote ref and its
-receipt match the final governed tree.
+1. preserve the verified public content and receipt commits;
+2. perform the deferred post-milestone authority, accountability and tamper-resilience review from HIRC-I029;
+3. carry the plain-language UI requirement and observed Bridge setup-dialog defect into the next UI work;
+4. preserve the four no-effect interruption choices and all 140 current tests;
+5. plan the next tiny stones for rendered UI, sensitive storage, external witness custody, broader security/privacy testing and disabled Bridge transports; and
+6. keep production, sensitive-data, network, Bridge and release capabilities off until their own later gates pass.
 
 ## 23. How to read the current project
 

@@ -196,7 +196,7 @@ def main() -> int:
         {item: stone_by_id[item]["status"] for item in passed_stones},
     )
     check("stone-s014", stone_by_id["M03-S014"]["status"] == "PASS", stone_by_id["M03-S014"]["status"])
-    check("stone-s015", stone_by_id["M03-S015"]["status"] == "READY", stone_by_id["M03-S015"]["status"])
+    check("stone-s015", stone_by_id["M03-S015"]["status"] == "PASS", stone_by_id["M03-S015"]["status"])
 
     check("description-counts", all(term in description for term in ("36 owner-linked items", "237 generated requirements", "144 decision rows")), "36/237/144")
     check(
@@ -248,7 +248,8 @@ def main() -> int:
     head = git("rev-parse", "HEAD")
     remote = git("rev-parse", "origin/codex/hirc-master-plan-security")
     check("described-baseline-head", "1c525e3b464c58b6e037faaf6bb76626b32364e4" in description, head)
-    check("described-remote-head", "ad592842efb4aa2134b3e9dd72adf4acf7134a9e" in description, remote)
+    check("described-content-commit", "df5b72713f0127e0789652f20870709827441c9f" in description, "content-commit-present")
+    check("described-remote-head", "cc4af0dbd6c02cedf49ed1ea1e3da30732e0a4cf" in description and remote == "cc4af0dbd6c02cedf49ed1ea1e3da30732e0a4cf", remote)
 
     failures = [item["name"] for item in checks if not item["pass"]]
     result = {

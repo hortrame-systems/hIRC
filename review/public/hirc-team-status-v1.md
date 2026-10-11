@@ -9,7 +9,7 @@ private runtime paths, personal education records or internal delivery metadata.
 - Metric/evaluator review: complete at the synthetic candidate-contract scope.
 - Security, privacy and dataflow source review: complete at the static local source-integrity scope.
 - Milestone 03 S014: PASS.
-- Milestone 03 S015: final integration, privacy, ledger, commit and remote verification in progress.
+- Milestone 03 S015: PASS; the public content and receipt commits were directly verified on the remote branch.
 
 The security review closed four source-level findings involving outbox boundary
 binding, correction-chain verification, adapter-request shape validation and

@@ -1,6 +1,6 @@
 {
   "schema": "hirc.milestone-03-public-evidence/1",
-  "status": "LOCAL_COMPLETE_PUBLICATION_PENDING",
+  "status": "PUBLIC_MILESTONE_COMPLETE",
   "scope": "Public-safe exact evidence for Milestone 03 design, local alpha, review closure and remaining release holds.",
   "artifacts": [
     {
@@ -86,5 +86,10 @@
     "M03 S014/S015 governance and public milestone closure"
   ],
   "privacy": "Native chat identifiers, private runtime paths, personal education records and internal delivery metadata are excluded from the publication manifest.",
+  "publication": {
+    "content_commit": "df5b72713f0127e0789652f20870709827441c9f",
+    "receipt_commit": "cc4af0dbd6c02cedf49ed1ea1e3da30732e0a4cf",
+    "both_observed_on_remote": true
+  },
   "nonclaim": "Public evidence summary only; no production, Bridge, sensitive-data, publication-success or release-readiness claim."
 }

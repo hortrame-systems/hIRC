@@ -1,0 +1,24 @@
+{
+  "schema": "hirc.m03-s015-final-closure/1",
+  "status": "PASS",
+  "branch": "codex/hirc-master-plan-security",
+  "content_commit": "df5b72713f0127e0789652f20870709827441c9f",
+  "receipt_commit": "cc4af0dbd6c02cedf49ed1ea1e3da30732e0a4cf",
+  "remote_observation": {
+    "method": "git ls-remote origin refs/heads/codex/hirc-master-plan-security",
+    "observed_commit": "cc4af0dbd6c02cedf49ed1ea1e3da30732e0a4cf",
+    "observed_at_utc": "2026-10-11T01:43:44.3619482Z",
+    "matched_receipt_commit": true
+  },
+  "gates": {
+    "S001_through_S014": "PASS",
+    "validators": 21,
+    "tests": 140,
+    "expected_release_failures": 3,
+    "publication_privacy": "PASS",
+    "content_remote_verified": true,
+    "receipt_remote_verified": true
+  },
+  "milestone": "Milestone 03 is complete. The final Git commit containing this closure records the already-satisfied remote content-and-receipt condition.",
+  "nonclaim": "Milestone completion is not product release, production readiness, Bridge activation, sensitive-data approval or absence of unknown vulnerabilities."
+}
